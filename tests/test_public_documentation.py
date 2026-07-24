@@ -1,4 +1,5 @@
 import unittest
+import tomllib
 from pathlib import Path
 
 
@@ -8,6 +9,7 @@ LATENTATLAS_DOC = ROOT / "docs" / "latentatlas-evidence-and-action-architecture.
 CATEGORYVANTAGE_DOC = ROOT / "docs" / "categoryvantage-governed-kernel-architecture.md"
 FROZEN_REVIEW_DOC = ROOT / "docs" / "frozen-masked-review.md"
 CITATION = ROOT / "CITATION.cff"
+PYPROJECT = ROOT / "pyproject.toml"
 
 
 class PublicDocumentationTests(unittest.TestCase):
@@ -100,6 +102,8 @@ class PublicDocumentationTests(unittest.TestCase):
     def test_citation_and_community_files_are_present(self):
         readme = README.read_text(encoding="utf-8")
         citation = CITATION.read_text(encoding="utf-8")
+        project = tomllib.loads(PYPROJECT.read_text(encoding="utf-8"))
+        project_version = project["project"]["version"]
 
         expected_paths = (
             "CITATION.cff",
@@ -114,7 +118,8 @@ class PublicDocumentationTests(unittest.TestCase):
             self.assertTrue((ROOT / relative_path).is_file(), relative_path)
 
         self.assertIn("CITATION.cff", readme)
-        self.assertIn("version: 0.1.0", citation)
+        self.assertEqual("0.2.0", project_version)
+        self.assertIn(f"version: {project_version}", citation)
         for doi in (
             "10.5281/zenodo.20161629",
             "10.5281/zenodo.21243387",

@@ -7,7 +7,7 @@ authors:
     given-names: "Huseyin"
     email: "huseyin@latentatlas.ai"
     website: "https://latentatlas.ai/"
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-07-24
 url: "https://github.com/latentatlas/latentatlas-evidence-evals"
 repository-code: "https://github.com/latentatlas/latentatlas-evidence-evals"
