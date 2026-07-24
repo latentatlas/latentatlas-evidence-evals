@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latentatlas-evidence-evals"
+version = "0.1.0"
+description = "Deterministic evidence qualification and action-time authority evaluation for AI workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Huseyin Buldurgan", email = "huseyin@latentatlas.ai" }
+]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+latentatlas-evals = "latentatlas.cli:main"
+
+[tool.setuptools]
+packages = ["latentatlas"]
