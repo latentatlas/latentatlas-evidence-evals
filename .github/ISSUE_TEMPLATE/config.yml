@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/latentatlas/latentatlas-evidence-evals/security/policy
+    about: Review the security policy before reporting sensitive information.
