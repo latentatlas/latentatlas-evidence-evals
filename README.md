@@ -155,6 +155,12 @@ This implementation accompanies three public research notes:
 The latest public findings and the frozen masked-review summary are available
 at [latentatlas.ai/authority-leases](https://latentatlas.ai/authority-leases/).
 
+## Citation
+
+Software and research-note citation metadata is available in
+[`CITATION.cff`](CITATION.cff). GitHub also exposes this metadata through its
+**Cite this repository** control.
+
 ## Implementation profile
 
 The package runs locally on Python 3.11+, uses deterministic evaluation rules,

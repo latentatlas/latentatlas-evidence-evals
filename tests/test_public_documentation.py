@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 LATENTATLAS_DOC = ROOT / "docs" / "latentatlas-evidence-and-action-architecture.md"
 CATEGORYVANTAGE_DOC = ROOT / "docs" / "categoryvantage-governed-kernel-architecture.md"
+CITATION = ROOT / "CITATION.cff"
 
 
 class PublicDocumentationTests(unittest.TestCase):
@@ -79,6 +80,31 @@ class PublicDocumentationTests(unittest.TestCase):
 
         for relative_path in expected_paths:
             self.assertTrue((ROOT / relative_path).exists(), relative_path)
+
+    def test_citation_and_community_files_are_present(self):
+        readme = README.read_text(encoding="utf-8")
+        citation = CITATION.read_text(encoding="utf-8")
+
+        expected_paths = (
+            "CITATION.cff",
+            "CONTRIBUTING.md",
+            "CODE_OF_CONDUCT.md",
+            ".github/ISSUE_TEMPLATE/bug_report.yml",
+            ".github/ISSUE_TEMPLATE/research_question.yml",
+            ".github/ISSUE_TEMPLATE/config.yml",
+            ".github/pull_request_template.md",
+        )
+        for relative_path in expected_paths:
+            self.assertTrue((ROOT / relative_path).is_file(), relative_path)
+
+        self.assertIn("CITATION.cff", readme)
+        self.assertIn("version: 0.1.0", citation)
+        for doi in (
+            "10.5281/zenodo.20161629",
+            "10.5281/zenodo.21243387",
+            "10.5281/zenodo.21432540",
+        ):
+            self.assertIn(doi, citation)
 
 
 if __name__ == "__main__":

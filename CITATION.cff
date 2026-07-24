@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software or architecture in your work, please cite it using the metadata below."
+title: "LatentAtlas Evidence Evals"
+type: software
+authors:
+  - family-names: "Buldurgan"
+    given-names: "Huseyin"
+    email: "huseyin@latentatlas.ai"
+    website: "https://latentatlas.ai/"
+version: 0.1.0
+date-released: 2026-07-24
+url: "https://github.com/latentatlas/latentatlas-evidence-evals"
+repository-code: "https://github.com/latentatlas/latentatlas-evidence-evals"
+license: MIT
+abstract: >-
+  A deterministic Python research package for evidence qualification,
+  action-time authority revalidation, audit hashing, reason-coded evaluation,
+  and governed kernel architecture in LLM and agentic workflows.
+keywords:
+  - AI safety
+  - LLM evaluation
+  - agentic AI
+  - evidence evaluation
+  - AI governance
+  - auditability
+  - red teaming
+references:
+  - type: article
+    title: "Relevance Is Not Authority"
+    authors:
+      - family-names: "Buldurgan"
+        given-names: "Huseyin"
+    doi: "10.5281/zenodo.20161629"
+  - type: article
+    title: "Evidence Authority After Retrieval"
+    authors:
+      - family-names: "Buldurgan"
+        given-names: "Huseyin"
+    doi: "10.5281/zenodo.21243387"
+  - type: article
+    title: "Authority Leases and Concurrent Evidence Failure in Safe Agentic Execution"
+    authors:
+      - family-names: "Buldurgan"
+        given-names: "Huseyin"
+    doi: "10.5281/zenodo.21432540"
