@@ -6,6 +6,7 @@ from .evidence_guard import EvidenceGuard
 from .evidence_index import build_evidence_index
 from .evidence_index import query_evidence_index
 from .evidence_vector_layer import run_evidence_vector_layer
+from .frozen_review import verify_frozen_review_artifact
 
 __all__ = [
     "EvidenceGuard",
@@ -14,4 +15,5 @@ __all__ = [
     "revalidate_action_packet",
     "revalidate_action_packets",
     "run_evidence_vector_layer",
+    "verify_frozen_review_artifact",
 ]

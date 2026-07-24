@@ -1,0 +1,49 @@
+{
+  "artifact_id": "latentatlas_frozen_masked_review_v1",
+  "checks": {
+    "outcome_count_total": 146,
+    "resolved_outcome_count": 121,
+    "status": "pass"
+  },
+  "data_handling": {
+    "contains_customer_data": false,
+    "contains_personal_data": false,
+    "contains_row_level_records": false,
+    "release_level": "aggregate_only"
+  },
+  "method": "Counts were derived from the completed masked human-review snapshot identified below.",
+  "outcomes": [
+    {
+      "count": 99,
+      "denominator": 146,
+      "outcome": "packet_supported_block",
+      "rate": 0.6781
+    },
+    {
+      "count": 22,
+      "denominator": 146,
+      "outcome": "packet_unsupported_block",
+      "rate": 0.1507
+    },
+    {
+      "count": 25,
+      "denominator": 146,
+      "outcome": "insufficient_evidence",
+      "rate": 0.1712
+    }
+  ],
+  "schema_version": "latentatlas_public_frozen_masked_review_summary_v1",
+  "scope": "Descriptive results for this frozen review sample.",
+  "selection": {
+    "high_priority_packets": 151,
+    "not_outcome_ready_packets": 5,
+    "outcome_ready_packets": 146,
+    "reviewed_outcome_ready_packets": 146,
+    "unreviewed_outcome_ready_packets": 0
+  },
+  "source_snapshot": {
+    "freeze_id": "p0_review_freeze_6c1465ff0c315da6",
+    "frozen_at_utc": "2026-07-13T08:03:01.337455+00:00",
+    "masked_rows_sha256": "738101038e03bd8d0fe4b1b24c69907ed5ce561226f758ae115fe64c674fb2a3"
+  }
+}

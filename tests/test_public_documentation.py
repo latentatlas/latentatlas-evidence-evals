@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 LATENTATLAS_DOC = ROOT / "docs" / "latentatlas-evidence-and-action-architecture.md"
 CATEGORYVANTAGE_DOC = ROOT / "docs" / "categoryvantage-governed-kernel-architecture.md"
+FROZEN_REVIEW_DOC = ROOT / "docs" / "frozen-masked-review.md"
 CITATION = ROOT / "CITATION.cff"
 
 
@@ -13,7 +14,7 @@ class PublicDocumentationTests(unittest.TestCase):
     def test_architecture_documents_exist_and_are_linked(self):
         readme = README.read_text(encoding="utf-8")
 
-        for document in (LATENTATLAS_DOC, CATEGORYVANTAGE_DOC):
+        for document in (LATENTATLAS_DOC, CATEGORYVANTAGE_DOC, FROZEN_REVIEW_DOC):
             self.assertTrue(document.is_file())
             self.assertIn(f"docs/{document.name}", readme)
 
@@ -51,6 +52,21 @@ class PublicDocumentationTests(unittest.TestCase):
         ):
             self.assertIn(kernel, text)
 
+    def test_frozen_review_artifact_is_documented_and_linked(self):
+        readme = README.read_text(encoding="utf-8")
+        document = FROZEN_REVIEW_DOC.read_text(encoding="utf-8")
+
+        for path in (
+            "data/frozen_masked_review_v1/manifest.json",
+            "data/frozen_masked_review_v1/summary.json",
+            "data/frozen_masked_review_v1/outcomes.csv",
+            "latentatlas/frozen_review.py",
+        ):
+            self.assertTrue((ROOT / path).is_file(), path)
+        self.assertIn("docs/frozen-masked-review.md", readme)
+        self.assertIn("verify-frozen-review", readme)
+        self.assertIn("verify-frozen-review", document)
+
     def test_public_documents_do_not_expose_private_workspace_markers(self):
         forbidden = (
             "/Us" + "ers/",
@@ -60,7 +76,7 @@ class PublicDocumentationTests(unittest.TestCase):
             "docs/" + "planned",
         )
 
-        for document in (LATENTATLAS_DOC, CATEGORYVANTAGE_DOC):
+        for document in (LATENTATLAS_DOC, CATEGORYVANTAGE_DOC, FROZEN_REVIEW_DOC):
             text = document.read_text(encoding="utf-8").lower()
             for marker in forbidden:
                 self.assertNotIn(marker.lower(), text)
