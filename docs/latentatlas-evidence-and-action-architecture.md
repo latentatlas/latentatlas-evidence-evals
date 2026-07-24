@@ -208,6 +208,9 @@ high-priority evaluation packets. Of these, 146 were outcome-ready:
 These counts describe the frozen evaluation sample and make both missed
 evidence and over-blocking observable under one review contract.
 
+The aggregate counts, source-snapshot digest, and executable integrity checks
+are included in the [frozen masked-review artifact](frozen-masked-review.md).
+
 ## Code-to-Architecture Map
 
 | Architecture responsibility | Public implementation |
@@ -219,6 +222,8 @@ evidence and over-blocking observable under one review contract.
 | Decision and manifest verification | [`latentatlas/verify_outputs.py`](../latentatlas/verify_outputs.py) |
 | Authority-lease revalidation | [`latentatlas/action_time_revalidation.py`](../latentatlas/action_time_revalidation.py) |
 | Reproducible command-line entry points | [`latentatlas/cli.py`](../latentatlas/cli.py) |
+| Frozen-review artifact verification | [`latentatlas/frozen_review.py`](../latentatlas/frozen_review.py) |
+| Aggregate frozen-review data and manifest | [`data/frozen_masked_review_v1/`](../data/frozen_masked_review_v1/) |
 | Synthetic evidence and action packets | [`examples/`](../examples/) |
 | Failure-oriented executable checks | [`tests/`](../tests/) |
 

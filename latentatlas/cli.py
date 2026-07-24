@@ -11,6 +11,7 @@ from .action_time_revalidation import revalidate_action_packets
 from .action_time_revalidation import summarize_action_revalidations
 from .evidence_guard import EvidenceGuard
 from .evidence_vector_layer import run_evidence_vector_layer
+from .frozen_review import verify_frozen_review_artifact
 from .verify_outputs import verify
 
 
@@ -77,6 +78,12 @@ def command_revalidate(args: argparse.Namespace) -> int:
     return 0 if summary["unsafe_authorization_count"] == 0 else 1
 
 
+def command_verify_frozen_review(args: argparse.Namespace) -> int:
+    report = verify_frozen_review_artifact(args.artifact_dir)
+    print(json.dumps(report, indent=2, sort_keys=True))
+    return 0 if report["status"] == "pass" else 1
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="latentatlas-evals",
@@ -106,6 +113,17 @@ def build_parser() -> argparse.ArgumentParser:
     revalidate.add_argument("--output", type=Path, required=True)
     revalidate.add_argument("--summary", type=Path, required=True)
     revalidate.set_defaults(func=command_revalidate)
+
+    frozen_review = subparsers.add_parser(
+        "verify-frozen-review",
+        help="Verify the public aggregate frozen-review artifact",
+    )
+    frozen_review.add_argument(
+        "--artifact-dir",
+        type=Path,
+        default=Path("data/frozen_masked_review_v1"),
+    )
+    frozen_review.set_defaults(func=command_verify_frozen_review)
     return parser
 
 

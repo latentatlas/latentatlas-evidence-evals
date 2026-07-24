@@ -20,7 +20,8 @@ reproducible.
 - Machine-readable reason codes and explicit review/revalidation routes.
 - End-to-end CLI workflows, synthetic datasets, unit tests, and GitHub Actions.
 - A frozen masked review covering 151 evaluation packets, including 146
-  outcome-ready packets.
+  outcome-ready packets, published as an aggregate-only artifact with
+  executable integrity checks.
 - An applied six-kernel CategoryVantage architecture for identity, evidence,
   truth, publication, action, and learning.
 
@@ -41,6 +42,9 @@ reproducible.
 - A [CategoryVantage governed-kernel case study](docs/categoryvantage-governed-kernel-architecture.md)
   showing how the same control discipline can separate identity, evidence,
   truth, publication, action, and learning in a commercial system.
+- A [frozen masked-review artifact](docs/frozen-masked-review.md) containing
+  aggregate counts, a source-snapshot digest, a public manifest, and an
+  executable verifier.
 - Synthetic examples, negative controls, and unit tests.
 
 ## System flow
@@ -110,6 +114,13 @@ python -m latentatlas revalidate-actions \
   --summary outputs/action-summary.json
 ```
 
+Verify the frozen masked-review artifact:
+
+```bash
+python -m latentatlas verify-frozen-review \
+  --artifact-dir data/frozen_masked_review_v1
+```
+
 ## Example decision surfaces
 
 Evidence qualification returns fields such as:
@@ -154,6 +165,10 @@ This implementation accompanies three public research notes:
 
 The latest public findings and the frozen masked-review summary are available
 at [latentatlas.ai/authority-leases](https://latentatlas.ai/authority-leases/).
+The repository also includes the machine-readable
+[`summary.json`](data/frozen_masked_review_v1/summary.json),
+[`outcomes.csv`](data/frozen_masked_review_v1/outcomes.csv), and
+[`manifest.json`](data/frozen_masked_review_v1/manifest.json).
 
 ## Citation
 
