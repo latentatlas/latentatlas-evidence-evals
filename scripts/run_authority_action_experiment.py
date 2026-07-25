@@ -1,0 +1,164 @@
+"""Verify and optionally run the frozen Inspect authority-action experiment."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import shlex
+import shutil
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any, Sequence
+
+from dotenv import load_dotenv
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from evals.experiment_control import DEFAULT_MANIFEST, load_manifest, verify_manifest
+
+
+def build_command(
+    manifest: dict[str, Any], provider: str, stage: str, log_dir: Path
+) -> list[str]:
+    inspect_binary = shutil.which("inspect")
+    if inspect_binary is None:
+        candidate = Path(sys.executable).with_name("inspect")
+        if not candidate.is_file():
+            raise RuntimeError("Inspect CLI is not available in this Python environment")
+        inspect_binary = str(candidate)
+
+    model = manifest["models"][provider]
+    stage_config = manifest["stages"][stage]
+    limits = manifest["limits"]
+    command = [
+        inspect_binary,
+        "eval",
+        str(manifest.get("task", {}).get("path", "evals/authority_action_eval.py")),
+        "--model",
+        model["inspect_model"],
+        "-T",
+        "case_type=all",
+        "--epochs",
+        str(stage_config["epochs"]),
+        "--max-connections",
+        str(limits["max_connections"]),
+        "--max-samples",
+        str(limits["max_samples"]),
+        "--max-retries",
+        str(limits["max_retries"]),
+        "--timeout",
+        str(limits["timeout_seconds"]),
+        "--message-limit",
+        str(limits["message_limit"]),
+        "--max-tokens",
+        str(limits["max_tokens_per_generation"]),
+        "--token-limit",
+        f"output:{limits['output_token_limit_per_sample']}",
+        "--cost-limit",
+        str(limits["cost_limit_usd_per_sample"]),
+        "--model-cost-config",
+        str(REPO_ROOT / manifest["pricing"]["config_path"]),
+        "--reasoning-effort",
+        str(model[f"{stage}_effort"]),
+        "--log-format",
+        str(manifest["logging"]["format"]),
+        "--log-dir",
+        str(log_dir),
+        "--display",
+        "none",
+        "--no-log-model-api",
+        "--log-refusals",
+        "--metadata",
+        f"experiment_id={manifest['experiment_id']}",
+        "--metadata",
+        f"dataset_sha256={manifest['artifacts'][manifest['dataset']['path']]}",
+    ]
+    if stage == "pilot":
+        command.extend(["--sample-id", ",".join(stage_config["sample_ids"])])
+    return command
+
+
+def selected_providers(manifest: dict[str, Any], provider: str) -> list[str]:
+    if provider == "all":
+        return sorted(manifest["models"])
+    if provider not in manifest["models"]:
+        raise ValueError(f"Unknown provider: {provider}")
+    return [provider]
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--stage", choices=("verify", "pilot", "full"), default="verify")
+    parser.add_argument("--provider", choices=("all", "anthropic", "openai"), default="all")
+    parser.add_argument(
+        "--execute",
+        action="store_true",
+        help="Make paid provider calls. Without this flag, print the frozen plan only.",
+    )
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    args = parser.parse_args(argv)
+
+    load_dotenv(REPO_ROOT / ".env")
+    verification = verify_manifest(args.manifest)
+    manifest = load_manifest(args.manifest)
+    print(json.dumps({"verification": verification}, indent=2, sort_keys=True))
+    if args.stage == "verify":
+        return 0
+
+    providers = selected_providers(manifest, args.provider)
+    missing_credentials = [
+        manifest["models"][name]["credential_env"]
+        for name in providers
+        if not os.environ.get(manifest["models"][name]["credential_env"])
+    ]
+    if args.execute and missing_credentials:
+        print(
+            "Missing credential environment variables: "
+            + ", ".join(missing_credentials),
+            file=sys.stderr,
+        )
+        return 2
+
+    run_stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    commands: list[tuple[str, list[str], Path]] = []
+    for provider in providers:
+        log_dir = REPO_ROOT / "outputs" / "inspect" / run_stamp / args.stage / provider
+        commands.append((provider, build_command(manifest, provider, args.stage, log_dir), log_dir))
+
+    for provider, command, _ in commands:
+        print(f"[{provider}] {shlex.join(command)}")
+    if not args.execute:
+        print("Dry run only. Add --execute after credentials are set.")
+        return 0
+
+    run_root = REPO_ROOT / "outputs" / "inspect" / run_stamp
+    run_root.mkdir(parents=True, exist_ok=False)
+    audit = {
+        "experiment_id": manifest["experiment_id"],
+        "stage": args.stage,
+        "started_at_utc": datetime.now(timezone.utc).isoformat(),
+        "verification": verification,
+        "providers": providers,
+        "commands": [command for _, command, _ in commands],
+        "credential_values_logged": False,
+    }
+    (run_root / "run_manifest.json").write_text(
+        json.dumps(audit, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+
+    for provider, command, log_dir in commands:
+        log_dir.mkdir(parents=True, exist_ok=True)
+        result = subprocess.run(command, cwd=REPO_ROOT, check=False)
+        if result.returncode != 0:
+            print(f"{provider} evaluation failed with code {result.returncode}", file=sys.stderr)
+            return result.returncode
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

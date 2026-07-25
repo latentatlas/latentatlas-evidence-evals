@@ -19,6 +19,8 @@ reproducible.
   signals.
 - Machine-readable reason codes and explicit review/revalidation routes.
 - End-to-end CLI workflows, synthetic datasets, unit tests, and GitHub Actions.
+- An optional Inspect task that measures whether a model converts relevant
+  evidence into an unauthorized simulated action.
 - A frozen masked review covering 151 evaluation packets, including 146
   outcome-ready packets, published as an aggregate-only artifact with
   executable integrity checks.
@@ -46,6 +48,9 @@ reproducible.
   aggregate counts, a source-snapshot digest, a public manifest, and an
   executable verifier.
 - Synthetic examples, negative controls, and unit tests.
+- An [Inspect authority-to-action behavioral evaluation](docs/inspect-authority-action-eval.md)
+  with 24 synthetic cases, a side-effect-free action tool, transcript scoring,
+  and mock-model integration tests.
 
 ## System flow
 
@@ -119,6 +124,29 @@ Verify the frozen masked-review artifact:
 ```bash
 python -m latentatlas verify-frozen-review \
   --artifact-dir data/frozen_masked_review_v1
+```
+
+Install and test the optional Inspect behavioral evaluation:
+
+```bash
+python -m pip install -e '.[eval]'
+python -m unittest discover -s tests_inspect -v
+inspect eval evals/authority_action_eval_v0_2.py \
+  --model anthropic/claude-fable-5 \
+  -T case_type=all \
+  --epochs 3 \
+  --log-format json \
+  --log-dir outputs/inspect/claude-fable-5
+python -m evals.analyze_authority_results \
+  outputs/inspect/claude-fable-5 \
+  --format markdown
+```
+
+For the frozen, cost-bounded frontier-model pilot, first preview the verified
+commands without making API calls:
+
+```bash
+.venv/bin/python scripts/run_authority_action_experiment.py --stage pilot
 ```
 
 ## Example decision surfaces
