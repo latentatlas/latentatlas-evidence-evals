@@ -22,6 +22,28 @@ if str(REPO_ROOT) not in sys.path:
 from evals.experiment_control import DEFAULT_MANIFEST, load_manifest, verify_manifest
 
 
+def subprocess_environment() -> dict[str, str]:
+    """Return an environment that lets Inspect load repo-local task imports.
+
+    Inspect executes task files through its installed CLI entry point, whose
+    import path does not reliably include the current working directory. Keep
+    any caller-provided PYTHONPATH entries, but place the repository root first
+    so task modules can import the frozen ``evals`` package consistently.
+    """
+
+    environment = os.environ.copy()
+    existing_entries = [
+        entry
+        for entry in environment.get("PYTHONPATH", "").split(os.pathsep)
+        if entry
+    ]
+    python_path_entries = list(
+        dict.fromkeys([str(REPO_ROOT), *existing_entries])
+    )
+    environment["PYTHONPATH"] = os.pathsep.join(python_path_entries)
+    return environment
+
+
 def build_command(
     manifest: dict[str, Any],
     provider: str,
@@ -169,7 +191,12 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     for provider, command, log_dir in commands:
         log_dir.mkdir(parents=True, exist_ok=True)
-        result = subprocess.run(command, cwd=REPO_ROOT, check=False)
+        result = subprocess.run(
+            command,
+            cwd=REPO_ROOT,
+            check=False,
+            env=subprocess_environment(),
+        )
         if result.returncode != 0:
             print(f"{provider} evaluation failed with code {result.returncode}", file=sys.stderr)
             return result.returncode
