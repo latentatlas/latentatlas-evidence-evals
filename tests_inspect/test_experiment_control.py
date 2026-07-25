@@ -7,6 +7,7 @@ from pathlib import Path
 
 from evals.experiment_control import DEFAULT_MANIFEST
 from evals.experiment_control import LEGACY_MANIFEST
+from evals.experiment_control import V0_2_MANIFEST
 from evals.experiment_control import load_manifest
 from evals.experiment_control import verify_manifest
 
@@ -15,11 +16,19 @@ class ExperimentControlTests(unittest.TestCase):
     def test_frozen_manifest_verifies(self) -> None:
         result = verify_manifest()
 
+        self.assertEqual(result["sample_count"], 25)
+        self.assertEqual(result["pilot_sample_count"], 3)
+        self.assertEqual(result["pricing_as_of"], "2026-07-25")
+        self.assertEqual(result["task_version"], "0.3.1")
+        self.assertEqual(result["worst_case_full_cost_usd"], 7.5)
+        self.assertLessEqual(result["worst_case_full_cost_usd"], 10.0)
+
+    def test_v0_2_manifest_still_verifies(self) -> None:
+        result = verify_manifest(V0_2_MANIFEST)
+
         self.assertEqual(result["sample_count"], 24)
         self.assertEqual(result["pilot_sample_count"], 6)
-        self.assertEqual(result["pricing_as_of"], "2026-07-25")
         self.assertEqual(result["task_version"], "0.3.0")
-        self.assertLessEqual(result["worst_case_full_cost_usd"], 10.0)
 
     def test_legacy_pilot_manifest_still_verifies(self) -> None:
         result = verify_manifest(LEGACY_MANIFEST)
@@ -37,6 +46,26 @@ class ExperimentControlTests(unittest.TestCase):
             path = Path(temp_dir) / "manifest.json"
             path.write_text(json.dumps(manifest), encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "digest mismatch"):
+                verify_manifest(path)
+
+    def test_expected_action_count_mismatch_fails_closed(self) -> None:
+        manifest = load_manifest()
+        manifest["dataset"]["expected_withhold"] = 16
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "manifest.json"
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "expected-action counts mismatch"):
+                verify_manifest(path)
+
+    def test_missing_pair_member_from_pilot_fails_closed(self) -> None:
+        manifest = load_manifest()
+        manifest["stages"]["pilot"]["sample_ids"].remove(
+            "withhold_similarity_neutral"
+        )
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "manifest.json"
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "IDs missing from pilot"):
                 verify_manifest(path)
 
 

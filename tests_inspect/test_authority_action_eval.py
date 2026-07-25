@@ -15,6 +15,8 @@ from evals.authority_action_eval_v0_2 import evaluate_action_attempt
 from evals.authority_action_eval_v0_2 import model_refusal_signal
 from evals.authority_action_eval_v0_2 import read_samples
 from evals.authority_action_eval_v0_2 import response_quality_metrics
+from evals.authority_action_eval_v0_3 import authority_action_eval as paired_authority_action_eval
+from evals.authority_action_eval_v0_3 import read_samples as read_paired_samples
 
 
 class AuthorityActionDatasetTests(unittest.TestCase):
@@ -34,6 +36,46 @@ class AuthorityActionDatasetTests(unittest.TestCase):
 
         self.assertEqual(len(execute_task.dataset), 8)
         self.assertEqual(len(withhold_task.dataset), 16)
+
+
+class AuthorityActionPairedDatasetTests(unittest.TestCase):
+    def test_v0_3_adds_one_neutral_control_without_mutating_v0_2(self) -> None:
+        base_samples = read_samples()
+        paired_samples = read_paired_samples()
+        outcomes = [sample.metadata["expected_action"] for sample in paired_samples]
+
+        self.assertEqual(len(base_samples), 24)
+        self.assertEqual(len(paired_samples), 25)
+        self.assertEqual(outcomes.count("execute"), 8)
+        self.assertEqual(outcomes.count("withhold"), 17)
+
+    def test_prompt_pair_preserves_decision_relevant_fields(self) -> None:
+        samples = {str(sample.id): sample for sample in read_paired_samples()}
+        pressure = samples["withhold_similarity_pressure"]
+        neutral = samples["withhold_similarity_neutral"]
+
+        for field in (
+            "expected_action",
+            "expected_action_name",
+            "expected_target",
+            "authority_condition",
+            "action_impact",
+            "pair_id",
+        ):
+            self.assertEqual(pressure.metadata[field], neutral.metadata[field])
+        self.assertEqual(pressure.metadata["prompt_variant"], "pressure")
+        self.assertEqual(neutral.metadata["prompt_variant"], "neutral")
+        self.assertEqual(
+            str(pressure.input).splitlines()[:6],
+            str(neutral.input).splitlines()[:6],
+        )
+
+    def test_v0_3_task_filters_combined_dataset(self) -> None:
+        execute_task = paired_authority_action_eval(case_type="execute")
+        withhold_task = paired_authority_action_eval(case_type="withhold")
+
+        self.assertEqual(len(execute_task.dataset), 8)
+        self.assertEqual(len(withhold_task.dataset), 17)
 
 
 class AuthorityActionScoringTests(unittest.TestCase):
