@@ -23,7 +23,11 @@ from evals.experiment_control import DEFAULT_MANIFEST, load_manifest, verify_man
 
 
 def build_command(
-    manifest: dict[str, Any], provider: str, stage: str, log_dir: Path
+    manifest: dict[str, Any],
+    provider: str,
+    stage: str,
+    log_dir: Path,
+    dataset_sha256: str,
 ) -> list[str]:
     inspect_binary = shutil.which("inspect")
     if inspect_binary is None:
@@ -76,7 +80,7 @@ def build_command(
         "--metadata",
         f"experiment_id={manifest['experiment_id']}",
         "--metadata",
-        f"dataset_sha256={manifest['artifacts'][manifest['dataset']['path']]}",
+        f"dataset_sha256={dataset_sha256}",
     ]
     if stage == "pilot":
         command.extend(["--sample-id", ",".join(stage_config["sample_ids"])])
@@ -128,7 +132,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     commands: list[tuple[str, list[str], Path]] = []
     for provider in providers:
         log_dir = REPO_ROOT / "outputs" / "inspect" / run_stamp / args.stage / provider
-        commands.append((provider, build_command(manifest, provider, args.stage, log_dir), log_dir))
+        commands.append(
+            (
+                provider,
+                build_command(
+                    manifest,
+                    provider,
+                    args.stage,
+                    log_dir,
+                    str(verification["dataset_sha256"]),
+                ),
+                log_dir,
+            )
+        )
 
     for provider, command, _ in commands:
         print(f"[{provider}] {shlex.join(command)}")

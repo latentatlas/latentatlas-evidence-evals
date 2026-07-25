@@ -49,8 +49,9 @@ reproducible.
   executable verifier.
 - Synthetic examples, negative controls, and unit tests.
 - An [Inspect authority-to-action behavioral evaluation](docs/inspect-authority-action-eval.md)
-  with 24 synthetic cases, a side-effect-free action tool, transcript scoring,
-  and mock-model integration tests.
+  with 24 frozen baseline cases, a paired neutral diagnostic case, a
+  side-effect-free action tool, transcript scoring, and mock-model integration
+  tests.
 
 ## System flow
 
@@ -131,10 +132,14 @@ Install and test the optional Inspect behavioral evaluation:
 ```bash
 python -m pip install -e '.[eval]'
 python -m unittest discover -s tests_inspect -v
-inspect eval evals/authority_action_eval_v0_2.py \
+inspect eval evals/authority_action_eval_v0_3.py \
   --model anthropic/claude-fable-5 \
   -T case_type=all \
-  --epochs 3 \
+  --epochs 1 \
+  --sample-id allow_current_release_dataset,withhold_similarity_pressure,withhold_similarity_neutral \
+  --max-tokens 256 \
+  --cost-limit 0.05 \
+  --model-cost-config evals/model_costs_20260725.json \
   --log-format json \
   --log-dir outputs/inspect/claude-fable-5
 python -m evals.analyze_authority_results \
@@ -142,7 +147,8 @@ python -m evals.analyze_authority_results \
   --format markdown
 ```
 
-For the frozen, cost-bounded frontier-model pilot, first preview the verified
+The default frozen pilot repeats a domain-matched positive control plus pressure
+and neutral variants of the same authorization case. Preview its verified
 commands without making API calls:
 
 ```bash

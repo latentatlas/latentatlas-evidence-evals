@@ -45,6 +45,8 @@ class ResultRow:
     authority_condition: str
     control_type: str
     metrics: Mapping[str, float]
+    pair_id: str | None = None
+    prompt_variant: str | None = None
 
 
 def discover_log_paths(inputs: Iterable[Path]) -> list[Path]:
@@ -109,6 +111,13 @@ def rows_from_logs(log_paths: Sequence[Path]) -> list[ResultRow]:
                 raise ValueError(
                     f"Sample {sample.id!r} in {path} lacks metadata {missing_metadata}"
                 )
+            pair_id = metadata.get("pair_id")
+            prompt_variant = metadata.get("prompt_variant")
+            if (pair_id is None) != (prompt_variant is None):
+                raise ValueError(
+                    f"Sample {sample.id!r} in {path} must provide both pair_id "
+                    "and prompt_variant"
+                )
             score_values = dict(score.value)
             if "usable_decision" not in score_values:
                 completion = sample.output.completion if sample.output is not None else ""
@@ -136,6 +145,12 @@ def rows_from_logs(log_paths: Sequence[Path]) -> list[ResultRow]:
                     authority_condition=str(metadata["authority_condition"]),
                     control_type=str(metadata["control_type"]),
                     metrics={name: float(score_values[name]) for name in METRIC_NAMES},
+                    pair_id=(
+                        str(pair_id) if pair_id is not None else None
+                    ),
+                    prompt_variant=(
+                        str(prompt_variant) if prompt_variant is not None else None
+                    ),
                 )
             )
     if not rows:
@@ -152,7 +167,7 @@ def aggregate_rows(rows: Sequence[ResultRow]) -> dict[str, object]:
     models: dict[str, object] = {}
     for model in sorted({row.model for row in rows}):
         model_rows = [row for row in rows if row.model == model]
-        models[model] = {
+        model_summary = {
             "sample_runs": len(model_rows),
             "overall": _metric_summary(model_rows),
             "by_expected_action": {
@@ -168,9 +183,37 @@ def aggregate_rows(rows: Sequence[ResultRow]) -> dict[str, object]:
                 for key in sorted({row.authority_condition for row in model_rows})
             },
         }
+        paired_rows = [row for row in model_rows if row.pair_id]
+        if paired_rows:
+            model_summary["by_prompt_pair"] = {
+                pair_id: {
+                    "sample_runs": len(
+                        [row for row in paired_rows if row.pair_id == pair_id]
+                    ),
+                    "variants": {
+                        variant: _group_summary(
+                            [
+                                row
+                                for row in paired_rows
+                                if row.pair_id == pair_id
+                                and row.prompt_variant == variant
+                            ]
+                        )
+                        for variant in sorted(
+                            {
+                                str(row.prompt_variant)
+                                for row in paired_rows
+                                if row.pair_id == pair_id
+                            }
+                        )
+                    },
+                }
+                for pair_id in sorted({str(row.pair_id) for row in paired_rows})
+            }
+        models[model] = model_summary
 
     return {
-        "schema_version": "authority_action_results_v0.1",
+        "schema_version": "authority_action_results_v0.2",
         "sample_runs": len(rows),
         "models": models,
     }
@@ -310,6 +353,38 @@ def render_markdown(summary: Mapping[str, object]) -> str:
                 f"{float(metrics['model_refusal']['mean']):.3f} |"
             )
         lines.append("")
+
+        by_prompt_pair = raw_model_summary.get("by_prompt_pair")
+        if isinstance(by_prompt_pair, Mapping) and by_prompt_pair:
+            lines.extend(
+                [
+                    "### Paired prompt diagnostics",
+                    "",
+                    "| Pair | Variant | n | Correct decision | Usable decision | Unsafe action | Refusal |",
+                    "|---|---|---:|---:|---:|---:|---:|",
+                ]
+            )
+            for pair_id, raw_pair_summary in by_prompt_pair.items():
+                if not isinstance(raw_pair_summary, Mapping):
+                    raise ValueError(f"Invalid prompt-pair summary for {pair_id}")
+                variants = raw_pair_summary["variants"]
+                if not isinstance(variants, Mapping):
+                    raise ValueError(f"Invalid prompt variants for {pair_id}")
+                for variant, raw_variant_summary in variants.items():
+                    if not isinstance(raw_variant_summary, Mapping):
+                        raise ValueError(f"Invalid prompt variant {variant}")
+                    variant_metrics = raw_variant_summary["metrics"]
+                    if not isinstance(variant_metrics, Mapping):
+                        raise ValueError(f"Invalid metrics for prompt variant {variant}")
+                    lines.append(
+                        f"| {pair_id} | {variant} | "
+                        f"{int(raw_variant_summary['sample_runs'])} | "
+                        f"{float(variant_metrics['correct_decision']['mean']):.3f} | "
+                        f"{float(variant_metrics['usable_decision']['mean']):.3f} | "
+                        f"{float(variant_metrics['unsafe_action']['mean']):.3f} | "
+                        f"{float(variant_metrics['model_refusal']['mean']):.3f} |"
+                    )
+            lines.append("")
 
         lines.extend(
             [
