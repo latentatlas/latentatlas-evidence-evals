@@ -14,12 +14,19 @@ from pathlib import Path
 from typing import Any, Sequence
 
 from dotenv import load_dotenv
+from inspect_ai.log import read_eval_log
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from evals.experiment_control import DEFAULT_MANIFEST, load_manifest, verify_manifest
+from evals.experiment_control import DEFAULT_MANIFEST
+from evals.experiment_control import load_manifest
+from evals.experiment_control import provider_cost_limit
+from evals.experiment_control import verify_manifest
+
+
+SUPPORTED_LOG_SUFFIXES = {".eval", ".json"}
 
 
 def subprocess_environment() -> dict[str, str]:
@@ -86,7 +93,7 @@ def build_command(
         "--token-limit",
         f"output:{limits['output_token_limit_per_sample']}",
         "--cost-limit",
-        str(limits["cost_limit_usd_per_sample"]),
+        str(provider_cost_limit(manifest, provider)),
         "--model-cost-config",
         str(REPO_ROOT / manifest["pricing"]["config_path"]),
         "--reasoning-effort",
@@ -117,6 +124,71 @@ def selected_providers(manifest: dict[str, Any], provider: str) -> list[str]:
     return [provider]
 
 
+def audit_provider_logs(log_dir: Path) -> dict[str, Any]:
+    """Fail closed when a nominally successful log contains sample limits."""
+
+    log_paths = sorted(
+        path
+        for path in log_dir.rglob("*")
+        if path.is_file() and path.suffix in SUPPORTED_LOG_SUFFIXES
+    )
+    if not log_paths:
+        raise ValueError(f"No Inspect logs found in {log_dir}")
+
+    sample_runs = 0
+    cost_limit_exceeded = 0
+    token_limit_exceeded = 0
+    other_sample_limit = 0
+    calculated_total_cost_usd = 0.0
+    for path in log_paths:
+        log = read_eval_log(path)
+        if log.status != "success" or log.samples is None:
+            raise ValueError(f"Inspect log is incomplete: {path}")
+        if log.stats is None:
+            raise ValueError(f"Inspect log lacks usage stats: {path}")
+        calculated_total_cost_usd += sum(
+            float(usage.total_cost or 0.0)
+            for usage in log.stats.model_usage.values()
+        )
+        for sample in log.samples:
+            sample_runs += 1
+            limit_types = {
+                str(getattr(event, "type", ""))
+                for event in (sample.events or [])
+                if getattr(event, "event", None) == "sample_limit"
+            }
+            cost_limit_exceeded += int("cost" in limit_types)
+            token_limit_exceeded += int("token" in limit_types)
+            other_sample_limit += int(
+                bool(limit_types)
+                and "cost" not in limit_types
+                and "token" not in limit_types
+            )
+
+    interrupted = (
+        cost_limit_exceeded + token_limit_exceeded + other_sample_limit
+    )
+    return {
+        "log_count": len(log_paths),
+        "sample_runs": sample_runs,
+        "protocol_complete_runs": sample_runs - interrupted,
+        "protocol_interrupted_runs": interrupted,
+        "cost_limit_exceeded": cost_limit_exceeded,
+        "token_limit_exceeded": token_limit_exceeded,
+        "other_sample_limit": other_sample_limit,
+        "calculated_total_cost_usd": round(calculated_total_cost_usd, 9),
+        "status": "needs_review" if interrupted else "success",
+    }
+
+
+def write_run_manifest(run_root: Path, audit: dict[str, Any]) -> None:
+    """Persist the current audit state after every provider transition."""
+
+    (run_root / "run_manifest.json").write_text(
+        json.dumps(audit, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--stage", choices=("verify", "pilot", "full"), default="verify")
@@ -135,6 +207,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     print(json.dumps({"verification": verification}, indent=2, sort_keys=True))
     if args.stage == "verify":
         return 0
+    if not bool(manifest["stages"][args.stage].get("enabled", True)):
+        print(f"Stage is disabled in the frozen manifest: {args.stage}", file=sys.stderr)
+        return 2
 
     providers = selected_providers(manifest, args.provider)
     missing_credentials = [
@@ -184,10 +259,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         "providers": providers,
         "commands": [command for _, command, _ in commands],
         "credential_values_logged": False,
+        "status": "running",
+        "provider_runs": {},
     }
-    (run_root / "run_manifest.json").write_text(
-        json.dumps(audit, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    write_run_manifest(run_root, audit)
 
     for provider, command, log_dir in commands:
         log_dir.mkdir(parents=True, exist_ok=True)
@@ -198,8 +273,57 @@ def main(argv: Sequence[str] | None = None) -> int:
             env=subprocess_environment(),
         )
         if result.returncode != 0:
+            audit["provider_runs"][provider] = {
+                "returncode": result.returncode,
+                "status": "failed",
+            }
+            audit["status"] = "failed"
+            audit["completed_at_utc"] = datetime.now(timezone.utc).isoformat()
+            write_run_manifest(run_root, audit)
             print(f"{provider} evaluation failed with code {result.returncode}", file=sys.stderr)
             return result.returncode
+        try:
+            provider_audit = audit_provider_logs(log_dir)
+        except (OSError, ValueError) as error:
+            audit["provider_runs"][provider] = {
+                "returncode": result.returncode,
+                "status": "invalid_log",
+                "error": str(error),
+            }
+            audit["status"] = "failed"
+            audit["completed_at_utc"] = datetime.now(timezone.utc).isoformat()
+            write_run_manifest(run_root, audit)
+            print(str(error), file=sys.stderr)
+            return 3
+        audit["provider_runs"][provider] = {
+            "returncode": result.returncode,
+            **provider_audit,
+        }
+        write_run_manifest(run_root, audit)
+
+    protocol_interrupted = any(
+        provider_run.get("status") == "needs_review"
+        for provider_run in audit["provider_runs"].values()
+    )
+    audit["status"] = "needs_review" if protocol_interrupted else "success"
+    audit["calculated_total_cost_usd"] = round(
+        sum(
+            float(provider_run.get("calculated_total_cost_usd", 0.0))
+            for provider_run in audit["provider_runs"].values()
+        ),
+        9,
+    )
+    audit["worst_case_stage_cost_usd"] = verification.get(
+        f"worst_case_{args.stage}_cost_usd"
+    )
+    audit["completed_at_utc"] = datetime.now(timezone.utc).isoformat()
+    write_run_manifest(run_root, audit)
+    if protocol_interrupted:
+        print(
+            "Run completed with sample-limit interruptions; see run_manifest.json",
+            file=sys.stderr,
+        )
+        return 3
     return 0
 
 

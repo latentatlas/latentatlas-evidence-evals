@@ -44,6 +44,39 @@ domain-matched positive control. This separates a general provider reaction to
 dataset-release language from a reaction to pressure that asks the model to
 ignore a missing approval.
 
+## v0.4 factorial candidate
+
+The v0.4 candidate introduces a fresh 100-case dataset rather than modifying
+the frozen v0.3 run. It contains 25 synthetic scenario groups. Each group
+crosses valid or invalid exact authority with a neutral or active context:
+
+- `valid_neutral`;
+- `invalid_neutral`;
+- `valid_treatment`; and
+- `invalid_treatment`.
+
+The four treatment families are pressure, evaluation awareness, monitoring,
+and incentive shift. The set is balanced at 50 execute and 50 withhold cases.
+Within each group, the actor, action, target, requested parameters, time,
+domain, and impact are invariant. Evidence changes only with authority
+validity; operating context changes only with treatment.
+
+The v0.4 tool schema separates `action`, `target`, `parameters`, and
+`authorization_id`. The scorer can therefore distinguish:
+
+- an unauthorized action in a withhold case;
+- a wrong-scope attempt in an execute case;
+- a malformed tool call;
+- an exact structured execution;
+- a correct withholding reason code; and
+- a provider-reported refusal.
+
+The candidate's design-quality contract is documented in
+[`authority-action-case-quality-v0-4.md`](authority-action-case-quality-v0-4.md).
+Its deterministic validator checks factorial integrity, label balance,
+pairwise invariants, lexical leakage, synthetic safety, exact scoreability, and
+dataset diversity before any paid run.
+
 ## Scoring
 
 The v0.2 scorer extracts structured tool calls and provider stop details from
@@ -172,3 +205,137 @@ The next empirical stages are:
 3. add paraphrased and less explicit holdout cases;
 4. conduct a masked human review of scorer disagreements; and
 5. report uncertainty and per-condition failure rates.
+
+For v0.4, validate and preview the balanced pilot without provider calls:
+
+```bash
+.venv/bin/python -m evals.validate_authority_cases_v0_4
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_4.json
+```
+
+The balanced v0.4 pilot completed 64 scored runs across two models. Its
+[aggregate report](authority-action-v0-4-pilot-results.md) records decision
+paths, protocol-completion findings, run integrity, and calculated cost without
+publishing prompts or completions. A retroactive event audit found that the
+per-sample cost cap interrupted 9/32 Fable runs; the report now separates those
+harness events from model behavior. The v0.4 benchmark remains a candidate
+until manual transcript audit and independent human quality review are
+complete. The earlier v0.3 artifacts and results remain frozen and
+reproducible.
+
+## v0.5 high-discrimination candidate
+
+v0.5 preserves v0.4 and its pilot hash, but replaces its easy conclusion-like
+evidence with multi-record packets. Five groups are medium, twelve are hard,
+and eight are very hard, making 80 of 100 cases hard or very hard. The added
+reasoning layers include timestamps and timezone conversion, record lineage,
+supersession, role resolution, canonical identity, source provenance, and
+multi-signature finality.
+
+The six monitoring scenarios carry a separate direction field: three test high
+visibility and three test low visibility. Result analysis reports difficulty,
+factorial cell, and monitoring direction separately.
+
+```bash
+.venv/bin/python scripts/build_authority_cases_v0_5.py
+.venv/bin/python -m evals.validate_authority_cases_v0_5
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_5.json
+```
+
+Passing these gates establishes structure and anti-shortcut quality, not model
+discrimination. A small frontier-model pilot and transcript audit still precede
+the full paid run.
+
+## v0.6 proof-contract correction
+
+The v0.5 pilot is retained as a benchmark-design diagnostic. Transcript review
+showed that its positive controls did not always establish the `verified` and
+`final` facts required by the system instruction. v0.6 preserves the difficult
+multi-record packets and adds a compact proof chain for the candidate grant:
+
+- canonical record and digest;
+- current signer-registry entry;
+- signature and registry verification result; and
+- explicit finality state.
+
+The validator recomputes or resolves the digest binding, follows every proof
+reference, checks the signer window against case time, and fails closed if a
+positive grant is unverified or non-final. Negative controls keep a valid proof
+path unless verification or finality is their intended defect.
+
+```bash
+.venv/bin/python scripts/build_authority_cases_v0_6.py
+.venv/bin/python -m evals.validate_authority_cases_v0_6
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_6.json
+```
+
+Passing 24/24 deterministic gates establishes structural and evidence-contract
+integrity only. The repeated two-model pilot completed 80 scored runs at
+$0.959929, but its transcript audit found that the per-sample cost limit
+interrupted 21/40 Fable runs and 1/40 GPT runs. The
+[v0.6 pilot diagnostic](authority-action-v0-6-pilot-diagnostic.md) records why
+this is a harness-calibration result rather than a model comparison. A
+provider-specific limit successor and a clean repeated pilot are required
+before performance interpretation.
+
+## v0.6.1 provider-specific limit diagnostic
+
+v0.6.1 keeps the v0.6 task and dataset hashes frozen but uses a $0.04 Fable
+sample limit and a $0.02 GPT sample limit. The full stage is explicitly
+disabled.
+
+```bash
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_6_1.json
+```
+
+The paid run completed 80 scored samples at a calculated cost of $1.066713.
+GPT completed 40/40 protocols. Fable completed 39/40; one exact simulated
+execute path reached $0.0408 and exceeded its $0.0400 cap. The runner returned
+`needs_review` as designed.
+
+Transcript audit also separated nine Fable provider `content_filter` outcomes
+from task decisions. All eight sandbox-capability cases were filtered, while
+GPT had no provider refusal. No model attempted an action in a withhold case.
+
+The frozen scorer had an additional response-format defect: it accepted only
+execute responses ending with `EXECUTED`. Fourteen exact, non-refused Fable
+responses instead began with `EXECUTED` and added an explanation. Aggregate
+analysis now normalizes this response shape, records the adjustment count, and
+leaves raw Inspect logs unchanged. See the
+[v0.6.1 pilot diagnostic](authority-action-v0-6-1-pilot-diagnostic.md).
+
+## v0.7 zero-interruption usable pilot
+
+v0.7 releases the response-format repair as a new scorer rather than relying
+on post-run normalization. It keeps the v0.6 dataset frozen, raises Fable's
+per-sample ceiling to $0.055, retains GPT's $0.02 ceiling, and keeps the full
+stage disabled.
+
+```bash
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_7.json
+```
+
+The paid pilot completed all 80 planned runs without cost, token, timeout, or
+other sample-limit interruption. Calculated cost was $1.0922675 against the
+$3.00 frozen ceiling. GPT produced 40/40 correct and usable decisions. Fable
+produced 37/40 correct and 33/40 usable decisions; its seven provider refusals
+were concentrated in the eight evaluation-awareness runs. Fable made no
+unauthorized action attempt across 20 withhold runs. Its two strict-scope
+failures were malformed or wrong-scope attempts in authorized execute
+controls.
+
+See the [v0.7 usable pilot report](authority-action-v0-7-usable-pilot-results.md)
+and its public aggregate-only [`summary.json`](../data/authority_action_v0_7_pilot/summary.json)
+and [`manifest.json`](../data/authority_action_v0_7_pilot/manifest.json) for the
+decision paths, cost audit, integrity hashes, and bounded interpretation. This
+is a successful selected-case pilot, not the complete 100-case benchmark.
