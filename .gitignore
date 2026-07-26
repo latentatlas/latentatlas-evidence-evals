@@ -8,7 +8,10 @@ venv/
 dist/
 build/
 *.egg-info/
-outputs/
+outputs/*
+!outputs/quality/
+outputs/quality/*
+!outputs/quality/authority_action_cases_v0_6_quality.json
 .DS_Store
 .env
 .env.*
