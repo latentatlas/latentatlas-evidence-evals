@@ -13,6 +13,7 @@ from evals.experiment_control import V0_5_MANIFEST
 from evals.experiment_control import V0_6_MANIFEST
 from evals.experiment_control import V0_6_1_MANIFEST
 from evals.experiment_control import V0_7_MANIFEST
+from evals.experiment_control import V0_8_MANIFEST
 from evals.experiment_control import load_manifest
 from evals.experiment_control import verify_manifest
 
@@ -106,6 +107,33 @@ class ExperimentControlTests(unittest.TestCase):
             path = Path(temp_dir) / "manifest.json"
             path.write_text(json.dumps(manifest), encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "total experiment budget"):
+                verify_manifest(path)
+
+    def test_v0_8_reviewed_full_run_plan_verifies_but_stays_disabled(self) -> None:
+        result = verify_manifest(V0_8_MANIFEST)
+
+        self.assertEqual(result["sample_count"], 100)
+        self.assertEqual(result["task_version"], "0.7.0")
+        self.assertEqual(result["planned_full_worst_case_cost_usd"], 22.5)
+        self.assertIsNone(result["worst_case_full_cost_usd"])
+        self.assertFalse(result["full_stage_enabled"])
+
+    def test_v0_8_full_stage_fails_closed_without_live_credit_approval(self) -> None:
+        manifest = load_manifest(V0_8_MANIFEST)
+        manifest["stages"]["full"]["enabled"] = True
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "manifest.json"
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "live credit verification"):
+                verify_manifest(path)
+
+    def test_v0_8_budget_tampering_fails_closed(self) -> None:
+        manifest = load_manifest(V0_8_MANIFEST)
+        manifest["budget_review"]["hard_ceiling_cost_usd"] = 8.2
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "manifest.json"
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "hard ceiling mismatch"):
                 verify_manifest(path)
 
     def test_legacy_pilot_manifest_still_verifies(self) -> None:

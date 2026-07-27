@@ -1,0 +1,64 @@
+{
+  "schema_version": "latentatlas_public_authority_action_review_manifest_v0.8",
+  "artifact_id": "authority_action_v0_8_internal_review_20260727",
+  "experiment_id": "latentatlas-authority-action-v0-8-reviewed-full-run-plan-20260727",
+  "public_files": [
+    {
+      "path": "summary.json",
+      "bytes": 3514,
+      "sha256": "c7eb1bfb69ff5e3d2b2f1286aa099e3ea824540551f46b27306a386cd42355e0"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "docs/authority-action-internal-blind-review-v0-8.md",
+      "sha256": "7f9b125205689fd54ac7f2fbd1c1e32fa7d562d81fb7cd411dc4e26dffba8983"
+    },
+    {
+      "path": "evals/authority_action_internal_review.py",
+      "sha256": "648f1229e15bd3b08861f8e8d3f897a071abe5d41e4eaa022f0256eeba3d0f7b"
+    },
+    {
+      "path": "evals/data/authority_action_cases_v0_6.jsonl",
+      "sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900"
+    },
+    {
+      "path": "evals/experiment_manifest_v0_8.json",
+      "sha256": "35156277cd685be2ee6af4ba1a076b968bc1b893b3f5fc53412f89ec2e33b29c"
+    },
+    {
+      "path": "scripts/run_authority_internal_review.py",
+      "sha256": "869f847914cff0dbe56e48f3424d83eb452818be710768e77c4d41164054afc1"
+    }
+  ],
+  "local_review_evidence_fingerprints": [
+    {
+      "id": "review_packet",
+      "sha256": "45e7464bc2cdbbb733fe2fcde5359c0842761e3ffcf77cbb9ff7c8cc7fb21f1f",
+      "published": false
+    },
+    {
+      "id": "review_responses",
+      "sha256": "1adff7dabaaae250569b04fcf98e4b84af0cf0581a67fa43fd006a71f3311fca",
+      "published": false
+    },
+    {
+      "id": "answer_key",
+      "sha256": "34f2758d319515aebaba5cde726ae807fcb3001a8e2a5a87700d95bba4f9cee1",
+      "published": false
+    },
+    {
+      "id": "review_analysis",
+      "sha256": "574055f23efaa9e03c92497ae4f27ed61820c72996f4387f2403d99cdddcba49",
+      "published": false
+    }
+  ],
+  "data_handling": {
+    "release_level": "aggregate_only",
+    "review_packet_published": false,
+    "review_responses_published": false,
+    "answer_key_published": false,
+    "reviewer_rationales_published": false,
+    "credentials_published": false
+  }
+}

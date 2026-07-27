@@ -1,0 +1,99 @@
+{
+  "schema_version": "latentatlas_public_authority_action_review_summary_v0.8",
+  "artifact_id": "authority_action_v0_8_internal_review_20260727",
+  "experiment_id": "latentatlas-authority-action-v0-8-reviewed-full-run-plan-20260727",
+  "completed_at_utc": "2026-07-27T00:26:39Z",
+  "status": "internal_blind_review_complete_full_run_not_enabled",
+  "dataset": {
+    "path": "evals/data/authority_action_cases_v0_6.jsonl",
+    "sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900",
+    "case_count": 100,
+    "expected_action_balance": {
+      "execute": 50,
+      "withhold": 50
+    },
+    "changed_after_review": false,
+    "difficulty_counts": {
+      "hard": 48,
+      "medium": 20,
+      "very_hard": 32
+    },
+    "behavior_family_counts": {
+      "evaluation_awareness": 24,
+      "incentive_shift": 24,
+      "monitoring": 24,
+      "pressure": 28
+    }
+  },
+  "review": {
+    "review_type": "internal_blind_author_review",
+    "reviewer_count": 1,
+    "reviewed_cases": 100,
+    "action_agreement_count": 100,
+    "action_agreement_rate": 1.0,
+    "evidence_sufficient_yes_count": 100,
+    "single_decision_clear_yes_count": 100,
+    "adjudication_required_count": 0,
+    "issue_code_counts": {
+      "none": 100
+    },
+    "mean_realism_score": 4.0,
+    "mean_difficulty_score": 3.63,
+    "masked_during_judgment": [
+      "source_case_id",
+      "metadata",
+      "expected_action",
+      "expected_reason_code",
+      "factorial_cell",
+      "difficulty_label"
+    ]
+  },
+  "quality_gate": {
+    "status": "ready_to_freeze_successor",
+    "deterministic_dataset_gates_passed": 24,
+    "deterministic_dataset_gates_total": 24,
+    "internal_blind_review_complete": true,
+    "independent_review_complete": false,
+    "empirical_full_run_complete": false,
+    "full_run_enabled": false,
+    "next_action": "verify_live_provider_credit_and_explicitly_enable_the_frozen_full_run_manifest"
+  },
+  "budget_review": {
+    "case_count": 100,
+    "epochs_per_case": 3,
+    "model_count": 2,
+    "planned_sample_runs": 600,
+    "pilot_basis": {
+      "run_id": "20260726T180156Z",
+      "pilot_sample_runs": 80,
+      "anthropic_average_cost_usd": 0.0190534375,
+      "anthropic_projected_300_run_cost_usd": 5.71603125,
+      "openai_average_cost_usd": 0.00825325,
+      "openai_projected_300_run_cost_usd": 2.475975
+    },
+    "projected_cost_from_v0_7_pilot_usd": 8.19200625,
+    "provider_hard_ceiling_usd_per_sample": {
+      "anthropic": 0.055,
+      "openai": 0.02
+    },
+    "hard_ceiling_cost_usd": 22.5,
+    "live_provider_credit_verified": false,
+    "execution_decision": "disabled_pending_live_credit_verification"
+  },
+  "limitations": [
+    "The same author who designed the cases completed the masked review; this is not independent validation.",
+    "Perfect agreement demonstrates consistency with the frozen answer key but does not by itself prove real-world validity.",
+    "The projected full-run cost is an extrapolation from an 80-run low-effort pilot and is not a guaranteed charge.",
+    "The provider hard ceiling is intentionally higher than the projected cost and current live credit was not rechecked in this artifact."
+  ],
+  "data_handling": {
+    "release_level": "aggregate_only",
+    "contains_case_prompts": false,
+    "contains_reviewer_rationales": false,
+    "contains_provider_payloads": false,
+    "contains_credentials": false,
+    "contains_customer_data": false,
+    "contains_personal_data": false,
+    "contains_row_level_records": false
+  }
+}

@@ -17,6 +17,7 @@ V0_5_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_5.json")
 V0_6_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_6.json")
 V0_6_1_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_6_1.json")
 V0_7_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_7.json")
+V0_8_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_8.json")
 
 
 def provider_cost_limit(
@@ -64,6 +65,7 @@ def verify_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
         "authority_action_experiment_v0.6",
         "authority_action_experiment_v0.6.1",
         "authority_action_experiment_v0.7",
+        "authority_action_experiment_v0.8",
     }:
         raise ValueError("Unsupported experiment manifest schema")
 
@@ -314,6 +316,32 @@ def verify_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
     if configured_worst_case > float(manifest["limits"]["total_budget_usd"]):
         raise ValueError("Configured per-sample limits exceed the total experiment budget")
 
+    planned_full_worst_case: float | None = None
+    budget_review = manifest.get("budget_review")
+    if manifest.get("schema_version") == "authority_action_experiment_v0.8":
+        if not isinstance(budget_review, Mapping):
+            raise ValueError("v0.8 manifest requires a budget review")
+        planned_full_runs = len(rows) * int(manifest["stages"]["full"]["epochs"])
+        planned_full_runs *= len(providers)
+        if int(budget_review.get("planned_full_sample_runs", -1)) != planned_full_runs:
+            raise ValueError("Budget review planned full-run count mismatch")
+        planned_full_worst_case = round(
+            len(rows)
+            * int(manifest["stages"]["full"]["epochs"])
+            * sum(provider_limits.values()),
+            2,
+        )
+        if float(budget_review.get("hard_ceiling_cost_usd", -1)) != planned_full_worst_case:
+            raise ValueError("Budget review hard ceiling mismatch")
+        if float(manifest["limits"]["total_budget_usd"]) < planned_full_worst_case:
+            raise ValueError("Total budget is below the planned full-run hard ceiling")
+        credit_verified = budget_review.get("live_provider_credit_verified") is True
+        execution_approved = budget_review.get("execution_approved") is True
+        if full_stage_enabled and not (credit_verified and execution_approved):
+            raise ValueError(
+                "Full stage cannot be enabled before live credit verification and approval"
+            )
+
     if len(dataset_paths) == 1:
         dataset_digest = str(artifacts[dataset_paths[0]])
     else:
@@ -336,5 +364,6 @@ def verify_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
         "provider_cost_limits_usd": provider_limits,
         "worst_case_pilot_cost_usd": worst_case_pilot_cost,
         "worst_case_full_cost_usd": worst_case_full_cost,
+        "planned_full_worst_case_cost_usd": planned_full_worst_case,
         "full_stage_enabled": full_stage_enabled,
     }

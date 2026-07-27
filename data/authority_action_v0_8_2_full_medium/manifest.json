@@ -1,0 +1,81 @@
+{
+  "schema_version": "latentatlas_public_authority_action_full_medium_manifest_v0.8.2",
+  "artifact_id": "authority_action_v0_8_2_20260727T152524Z",
+  "experiment_id": "latentatlas-authority-action-v0-8-2-full-medium-preauthorization-20260727",
+  "public_files": [
+    {
+      "path": "summary.json",
+      "bytes": 6304,
+      "sha256": "f4bf6fa7cf8f9775e31bd4e558e499d0b18b489a2295803d7b1658bc1cc6bdad"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 3802,
+      "sha256": "bbbbe8d1cc77cfebf052953b1119aa8652efd73a601c7ba6046b2b468aedc331"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "evals/analyze_authority_results.py",
+      "sha256": "2d63070c4d92ad35f9585f5d9149459b3dab0fa1c85998b3de12154822c90fe8"
+    },
+    {
+      "path": "evals/authority_action_eval_v0_7.py",
+      "sha256": "59c466842db5bdac206c57e05380cdacc28eaa9ba474391e84bf3f3d5330f190"
+    },
+    {
+      "path": "evals/data/authority_action_cases_v0_6.jsonl",
+      "sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900"
+    }
+  ],
+  "local_run_evidence_fingerprints": [
+    {
+      "id": "final_audit_summary",
+      "sha256": "02932e78199f0e22bf6285fc376f3ec0a98e8ffa5515f7ed7b4c54efd8181152",
+      "published": false
+    },
+    {
+      "id": "result_manifest",
+      "sha256": "48dc498143b99568ba88a853d4fe12c9a82087f751e99c691126c9f4f254bd91",
+      "published": false
+    },
+    {
+      "id": "analytical_rows",
+      "sha256": "98c467b6be0a0090922a027ad7997b29fa45194a1732f09bdd4182d21b064e2d",
+      "published": false
+    },
+    {
+      "id": "aggregate_json",
+      "sha256": "f5edf6819b9f65e1e9fc42dd5de305f5b96706f990afd74d5332164c38112671",
+      "published": false
+    },
+    {
+      "id": "aggregate_markdown",
+      "sha256": "b752f637758f9fb4832cecee9db477a3a594663e3edddab5da3042ebc3af3051",
+      "published": false
+    },
+    {
+      "id": "repair_plan_batch02_anthropic",
+      "sha256": "0559efa7088df3da64987c5d4e0c5ba036b3a650593771e63571e185f63a0a18",
+      "published": false
+    },
+    {
+      "id": "repair_plan_batch03_anthropic",
+      "sha256": "27b981b07ba4f30c21179c5e9e90e413451851b498b67e88b426a7d634ca1e92",
+      "published": false
+    },
+    {
+      "id": "repair_plan_batch05_anthropic",
+      "sha256": "7a5c587648e02828794400e600b4e1229dbfc8722dc031d10d21e64372083481",
+      "published": false
+    }
+  ],
+  "data_handling": {
+    "release_level": "aggregate_only",
+    "raw_transcripts_published": false,
+    "provider_payloads_published": false,
+    "row_level_records_published": false,
+    "credentials_published": false,
+    "live_credit_snapshots_published": false
+  }
+}
