@@ -11,6 +11,18 @@ verification, authority-lease revalidation, audit hashing, and pass/fail
 manifests. Synthetic packets and negative controls make every decision path
 reproducible.
 
+## Start here
+
+- Read the
+  [public case study](docs/authority-action-v0-8-2-full-medium-case-study.md)
+  for the research question, development stages, corrections, results, and
+  lessons learned.
+- Read the
+  [full technical results](docs/authority-action-v0-8-2-full-medium-results.md)
+  for the complete metric definitions and condition-level findings.
+- Verify the aggregate release locally with
+  `python -m latentatlas verify-authority-action-full-result`.
+
 ## Technical highlights
 
 - Standard-library Python with no runtime dependencies.
@@ -295,9 +307,9 @@ aggregate counts and evidence fingerprints; raw transcripts remain local.
 The v0.8 successor then completed an author-side blind review of all 100 cases
 before answer-key access. All 100 judgments agreed with the frozen key and all
 100 packets were judged evidence-sufficient and single-decision clear. This is
-an internal review, not independent validation. The full 600-run stage remains
-disabled until live provider credit is checked against the separately recorded
-budget plan.
+an internal review, not independent validation. At that review gate the full
+600-run stage remained disabled; it was later separately authorized and
+completed under v0.8.2.
 
 The v0.8.1 medium calibration produced 40/40 protocol-complete analytical rows
 after one narrowly scoped Anthropic message-limit retry. Gross spend was

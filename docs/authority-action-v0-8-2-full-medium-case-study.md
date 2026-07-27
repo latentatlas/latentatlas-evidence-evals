@@ -67,7 +67,28 @@ This group also demonstrates why outcome correctness and usability are
 separate. A system can correctly avoid the action but still fail the required
 task-specific reason-code contract.
 
-## What changed during development
+## Project stages
+
+The project progressed through five distinct stages:
+
+1. **Define the measurement.** The first pilot established a side-effect-free
+   action tool and a deterministic scorer, then revealed that safe non-action
+   and a usable task decision were being treated as the same outcome.
+2. **Make action scope explicit.** The action contract was split into actor,
+   operation, target, parameters, authorization record, and call count so a
+   vaguely correct action could not pass as an exact execution.
+3. **Increase case difficulty.** Easy conclusion-like prompts were replaced
+   with multi-record packets requiring temporal, identity, provenance,
+   supersession, role, and finality reasoning.
+4. **Calibrate the measurement system.** Pilot runs exposed provider refusals,
+   cost-limit interruptions, an incomplete evidence contract, and an overly
+   strict response-format check. Each issue was corrected under a successor
+   version while the original evidence remained unchanged.
+5. **Freeze and execute.** After 24 deterministic quality gates and a masked
+   author review, the final dataset, scorer, limits, batching plan, and repair
+   rules were frozen before the 600-run experiment began.
+
+## Problems found and corrections made
 
 The benchmark reached its final form through measured corrections rather than
 silent rewrites:
@@ -154,6 +175,47 @@ in `valid_treatment`, while usable decisions fell from 45/75 to 33/75. This is
 a paired benchmark observation, not evidence that arbitrary pressure wording
 causes the difference.
 
+## What we learned
+
+### 1. The evaluation system itself must be evaluated
+
+Several apparent model failures were measurement failures: cost ceilings
+stopped samples inside otherwise successful logs, a positive control did not
+prove its own verification requirement, and a scorer rejected correct answers
+because an explanation followed the verdict. Inspecting the evaluator was as
+important as inspecting the model.
+
+### 2. Safe behavior and useful behavior are different measurements
+
+A refusal or content filter can prevent an unsafe action while producing no
+usable task decision. Recording only whether an action occurred would have
+hidden this difference. The final analysis therefore keeps safe outcome,
+correct decision, usable decision, provider refusal, and exact scope as
+separate metrics.
+
+### 3. The hardest observed problem was reliable authorized execution
+
+Neither delivered system attempted an action in any of the 300 combined
+withhold runs. The clearest difference appeared when permission was valid:
+one system executed every authorized request exactly, while the other more
+often refused, produced no action, or called the simulated tool with malformed
+or wrong-scope arguments. In this benchmark, avoiding unauthorized action was
+not the main differentiator; completing authorized work precisely was.
+
+### 4. A provider-delivered system is the practical unit of observation
+
+Provider refusals changed the behavior available to the caller, even though
+the filter's internal trigger and timing were not visible. For an API user,
+the observable system includes both the model response and the provider
+enforcement layer.
+
+### 5. Reproducibility requires an explicit repair history
+
+Three final-run attempts exceeded the frozen output-token limit. Replacing
+them silently would have made the final table impossible to audit. Retaining
+the originals, selecting repairs only from protocol status, and reconciling
+gross versus analytical cost made the completed result reproducible.
+
 ## What the result supports
 
 The evidence supports three bounded conclusions:
@@ -190,13 +252,16 @@ Public artifacts:
 - [`summary.json`](../data/authority_action_v0_8_2_full_medium/summary.json)
 - [`manifest.json`](../data/authority_action_v0_8_2_full_medium/manifest.json)
 - [full technical results](authority-action-v0-8-2-full-medium-results.md)
-- [frozen execution contract](authority-action-v0-8-2-full-medium-execution-contract.md)
 
 ## Conclusion
 
-The most useful result is not that one system received a higher number. It is
-that authority-to-action behavior can be measured without conflating safe
-non-action, usable model judgment, provider refusal, harness interruption, and
-exact tool scope. The final benchmark turns that distinction into a
-reproducible, auditable research artifact while keeping private run material
-outside the public release.
+The project converted an initially conceptual question into a working
+evaluation: 100 validated cases, an exact simulated action contract, two
+provider systems, three repeated epochs, 600 analytical runs, deterministic
+scoring, resumable execution, and verifiable aggregate artifacts.
+
+Its central result is operational. Authority-to-action behavior can be
+measured without conflating safe non-action, usable model judgment, provider
+refusal, harness interruption, and exact tool scope. The resulting framework
+is now a reusable base for testing new models, reasoning settings, and more
+complex agent environments.
