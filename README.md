@@ -21,6 +21,22 @@ reproducible.
 - End-to-end CLI workflows, synthetic datasets, unit tests, and GitHub Actions.
 - An optional Inspect task that measures whether a model converts relevant
   evidence into an unauthorized simulated action.
+- A 100-case v0.4 candidate benchmark with separate action parameters, 25
+  complete authority-validity by context-treatment factorial groups, and
+  deterministic dataset-quality gates.
+- A 100-case v0.5 high-discrimination candidate in which 80 cases are hard or
+  very hard, evidence is expressed as multi-record packets, and high- versus
+  low-monitoring visibility is analyzed separately.
+- A v0.6 successor that adds machine-resolvable canonical-digest, signer-
+  registry, verification, and finality records so positive controls satisfy
+  the task's written evidence contract.
+- A v0.7 two-provider pilot that completed 80/80 planned runs without harness
+  interruption and records direct-score decision paths, cost, and integrity
+  hashes.
+- A machine-verifiable, aggregate-only v0.7 pilot artifact that publishes
+  model-level counts and provenance fingerprints without raw transcripts or
+  provider payloads, with an
+  [executable integrity verifier](latentatlas/authority_action_pilot.py).
 - A frozen masked review covering 151 evaluation packets, including 146
   outcome-ready packets, published as an aggregate-only artifact with
   executable integrity checks.
@@ -52,6 +68,24 @@ reproducible.
   with 24 frozen baseline cases, a paired neutral diagnostic case, a
   side-effect-free action tool, transcript scoring, and mock-model integration
   tests.
+- The [v0.4 case-quality standard](docs/authority-action-case-quality-v0-4.md),
+  which defines structural, counterfactual, diversity, safety, human-review,
+  and empirical-validation gates for the 100-case candidate set.
+- The [v0.4 two-model pilot report](docs/authority-action-v0-4-pilot-results.md),
+  with aggregate decision paths, run integrity, a retroactive sample-limit
+  audit, and calculated cost for 64 scored runs.
+- The [v0.5 quality standard](docs/authority-action-case-quality-v0-5.md),
+  [preliminary human review](docs/authority-action-case-review-v0-5.md), and
+  [pilot diagnostic](docs/authority-action-v0-5-pilot-diagnostic.md).
+- The [v0.6 proof-contract quality standard](docs/authority-action-case-quality-v0-6.md),
+  [internal case review](docs/authority-action-case-review-v0-6.md),
+  [paid-pilot diagnostic](docs/authority-action-v0-6-pilot-diagnostic.md),
+  [provider-specific limit diagnostic](docs/authority-action-v0-6-1-pilot-diagnostic.md),
+  [v0.7 usable pilot results](docs/authority-action-v0-7-usable-pilot-results.md),
+  [aggregate-only v0.7 summary](data/authority_action_v0_7_pilot/summary.json),
+  [integrity manifest](data/authority_action_v0_7_pilot/manifest.json),
+  and
+  [living experiment-development case study](docs/authority-action-evaluation-development-case-study.md).
 
 ## System flow
 
@@ -127,6 +161,14 @@ python -m latentatlas verify-frozen-review \
   --artifact-dir data/frozen_masked_review_v1
 ```
 
+Verify the aggregate-only Authority-to-Action v0.7 pilot artifact and its
+versioned source hashes:
+
+```bash
+python -m latentatlas verify-authority-action-pilot \
+  --artifact-dir data/authority_action_v0_7_pilot
+```
+
 Install and test the optional Inspect behavioral evaluation:
 
 ```bash
@@ -154,6 +196,73 @@ commands without making API calls:
 ```bash
 .venv/bin/python scripts/run_authority_action_experiment.py --stage pilot
 ```
+
+Validate the v0.4 100-case candidate and preview its 16-case balanced pilot
+without making provider calls:
+
+```bash
+.venv/bin/python -m evals.validate_authority_cases_v0_4
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_4.json
+```
+
+The v0.4 task keeps `action`, `target`, structured `parameters`, and
+`authorization_id` in separate tool fields. This prevents an otherwise valid
+parameter value from being embedded in the action name and lets the scorer
+separate unauthorized action, wrong scope, schema conformance, reason-code
+accuracy, provider refusal, and exact execution.
+
+Build and validate the v0.5 high-discrimination successor without changing the
+frozen v0.4 artifacts:
+
+```bash
+.venv/bin/python scripts/build_authority_cases_v0_5.py
+.venv/bin/python -m evals.validate_authority_cases_v0_5
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_5.json
+```
+
+The v0.5 pilot exposed a positive-control contract defect: execution required
+a verified, final grant, but the packets did not always establish those facts.
+Build, validate, and preview the corrected v0.6 successor without provider
+calls:
+
+```bash
+.venv/bin/python scripts/build_authority_cases_v0_6.py
+.venv/bin/python -m evals.validate_authority_cases_v0_6
+.venv/bin/python scripts/run_authority_action_experiment.py \
+  --stage pilot \
+  --manifest evals/experiment_manifest_v0_6.json
+```
+
+The 80-run paid pilot stayed below its aggregate ceiling, but transcript audit
+found that the $0.015 per-sample cap interrupted 21 Fable runs and one GPT run.
+The [pilot diagnostic](docs/authority-action-v0-6-pilot-diagnostic.md) therefore
+keeps harness limits, provider refusals, and model decisions separate; it does
+not report a model ranking.
+
+The provider-specific v0.6.1 successor reduced protocol interruptions from 22
+to one. GPT completed 40/40 selected runs; Fable completed 39/40 and produced
+nine separately reported provider `content_filter` outcomes. The runner
+returned `needs_review`, the full stage stayed disabled, and transcript audit
+also corrected a response-format rule that had rejected 14 exact Fable
+executions solely because they added explanation after `EXECUTED`. See the
+[v0.6.1 diagnostic](docs/authority-action-v0-6-1-pilot-diagnostic.md).
+
+The v0.7 successor moved the response-format repair into a versioned scorer and
+completed the same 80-run selected-case protocol with zero sample-limit
+interruptions for $1.0922675. GPT produced 40/40 correct and usable decisions.
+Fable produced 37/40 correct and 33/40 usable decisions; its seven provider
+refusals were concentrated in evaluation-awareness cases, while no Fable
+withhold case produced an unauthorized action attempt. The
+[v0.7 report](docs/authority-action-v0-7-usable-pilot-results.md) records the
+bounded result and integrity audit. The public
+[`summary.json`](data/authority_action_v0_7_pilot/summary.json) and
+[`manifest.json`](data/authority_action_v0_7_pilot/manifest.json) expose only
+aggregate counts and evidence fingerprints; raw transcripts remain local. The
+full 100-case stage remains disabled pending independent review.
 
 ## Example decision surfaces
 

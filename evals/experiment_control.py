@@ -12,6 +12,30 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 LEGACY_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_1.json")
 V0_2_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_2.json")
 DEFAULT_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_3.json")
+V0_4_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_4.json")
+V0_5_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_5.json")
+V0_6_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_6.json")
+V0_6_1_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_6_1.json")
+V0_7_MANIFEST = Path(__file__).with_name("experiment_manifest_v0_7.json")
+
+
+def provider_cost_limit(
+    manifest: Mapping[str, Any], provider: str
+) -> float:
+    """Resolve a provider-specific cap while preserving legacy manifests."""
+
+    limits = manifest["limits"]
+    provider_limits = limits.get("cost_limit_usd_per_sample_by_provider")
+    if provider_limits is None:
+        return float(limits["cost_limit_usd_per_sample"])
+    if not isinstance(provider_limits, Mapping):
+        raise ValueError("Provider cost limits must be an object")
+    if provider not in provider_limits:
+        raise ValueError(f"Missing per-sample cost limit for provider: {provider}")
+    value = float(provider_limits[provider])
+    if value <= 0:
+        raise ValueError(f"Per-sample cost limit must be positive: {provider}")
+    return value
 
 
 def sha256_file(path: Path) -> str:
@@ -35,6 +59,11 @@ def verify_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
         "authority_action_experiment_v0.1",
         "authority_action_experiment_v0.2",
         "authority_action_experiment_v0.3",
+        "authority_action_experiment_v0.4",
+        "authority_action_experiment_v0.5",
+        "authority_action_experiment_v0.6",
+        "authority_action_experiment_v0.6.1",
+        "authority_action_experiment_v0.7",
     }:
         raise ValueError("Unsupported experiment manifest schema")
 
@@ -134,17 +163,155 @@ def verify_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
                 f"{missing_pair_pilot_ids}"
             )
 
-    per_sample_cost_limit = float(manifest["limits"]["cost_limit_usd_per_sample"])
+    factorial = dataset.get("factorial_design")
+    if factorial is not None:
+        if not isinstance(factorial, Mapping):
+            raise ValueError("Factorial design must be an object")
+        required_factorial_fields = {
+            "group_field",
+            "variant_field",
+            "group_count",
+            "expected_variants",
+            "expected_action_by_variant",
+            "behavior_family_counts",
+        }
+        missing_factorial_fields = sorted(required_factorial_fields - factorial.keys())
+        if missing_factorial_fields:
+            raise ValueError(
+                f"Factorial design is missing fields: {missing_factorial_fields}"
+            )
+        group_field = str(factorial["group_field"])
+        variant_field = str(factorial["variant_field"])
+        expected_variants = {str(value) for value in factorial["expected_variants"]}
+        if not expected_variants:
+            raise ValueError("Factorial design expected_variants must not be empty")
+        grouped_rows: dict[str, list[dict[str, Any]]] = {}
+        for row in rows:
+            metadata = row.get("metadata", {})
+            group_value = str(metadata.get(group_field, ""))
+            if not group_value:
+                raise ValueError(f"Factorial row is missing {group_field}")
+            grouped_rows.setdefault(group_value, []).append(row)
+        if len(grouped_rows) != int(factorial["group_count"]):
+            raise ValueError("Factorial design group count mismatch")
+        expected_action_by_variant = {
+            str(key): str(value)
+            for key, value in factorial["expected_action_by_variant"].items()
+        }
+        if set(expected_action_by_variant) != expected_variants:
+            raise ValueError("Factorial expected-action variants mismatch")
+        for group_id, group_rows in grouped_rows.items():
+            variants = {
+                str(row.get("metadata", {}).get(variant_field, "")): row
+                for row in group_rows
+            }
+            if len(group_rows) != len(expected_variants) or set(variants) != expected_variants:
+                raise ValueError(f"Factorial group {group_id} is incomplete")
+            for variant, row in variants.items():
+                actual_action = str(
+                    row.get("metadata", {}).get("expected_action", "")
+                )
+                if actual_action != expected_action_by_variant[variant]:
+                    raise ValueError(
+                        f"Factorial group {group_id} variant {variant} "
+                        "has unexpected action"
+                    )
+        expected_family_counts = {
+            str(key): int(value)
+            for key, value in factorial["behavior_family_counts"].items()
+        }
+        actual_family_counts = {
+            family: sum(
+                1
+                for row in rows
+                if str(row.get("metadata", {}).get("behavior_family", "")) == family
+            )
+            for family in expected_family_counts
+        }
+        if actual_family_counts != expected_family_counts:
+            raise ValueError("Factorial behavior-family counts mismatch")
+
+    difficulty = dataset.get("difficulty_design")
+    if difficulty is not None:
+        if not isinstance(difficulty, Mapping):
+            raise ValueError("Difficulty design must be an object")
+        difficulty_field = str(difficulty.get("field", ""))
+        expected_difficulty_counts = {
+            str(key): int(value)
+            for key, value in difficulty.get("case_counts", {}).items()
+        }
+        if not difficulty_field or not expected_difficulty_counts:
+            raise ValueError("Difficulty design is incomplete")
+        actual_difficulty_counts = {
+            level: sum(
+                1
+                for row in rows
+                if str(row.get("metadata", {}).get(difficulty_field, "")) == level
+            )
+            for level in expected_difficulty_counts
+        }
+        if actual_difficulty_counts != expected_difficulty_counts:
+            raise ValueError("Difficulty design case counts mismatch")
+
+    monitoring = dataset.get("monitoring_design")
+    if monitoring is not None:
+        if not isinstance(monitoring, Mapping):
+            raise ValueError("Monitoring design must be an object")
+        direction_field = str(monitoring.get("direction_field", ""))
+        expected_direction_counts = {
+            str(key): int(value)
+            for key, value in monitoring.get("group_counts", {}).items()
+        }
+        if not direction_field or not expected_direction_counts:
+            raise ValueError("Monitoring design is incomplete")
+        monitoring_groups: dict[str, str] = {}
+        for row in rows:
+            metadata = row.get("metadata", {})
+            if str(metadata.get("behavior_family", "")) != "monitoring":
+                continue
+            group_id = str(metadata.get("pair_id", ""))
+            direction = str(metadata.get(direction_field, ""))
+            previous = monitoring_groups.setdefault(group_id, direction)
+            if previous != direction:
+                raise ValueError("Monitoring direction changes within a group")
+        actual_direction_counts = {
+            direction: sum(
+                1 for value in monitoring_groups.values() if value == direction
+            )
+            for direction in expected_direction_counts
+        }
+        if actual_direction_counts != expected_direction_counts:
+            raise ValueError("Monitoring direction group counts mismatch")
+
     pricing = manifest.get("pricing")
     if not isinstance(pricing, Mapping):
         raise ValueError("Manifest pricing must be an object")
     if pricing.get("config_path") not in artifacts:
         raise ValueError("Pricing config must be a frozen artifact")
-    full_runs = len(manifest["models"]) * len(rows) * int(
-        manifest["stages"]["full"]["epochs"]
+    providers = sorted(str(provider) for provider in manifest["models"])
+    provider_limits = {
+        provider: provider_cost_limit(manifest, provider) for provider in providers
+    }
+    pilot_runs_per_provider = len(pilot_ids) * int(
+        manifest["stages"]["pilot"]["epochs"]
     )
-    worst_case_full_cost = round(full_runs * per_sample_cost_limit, 2)
-    if worst_case_full_cost > float(manifest["limits"]["total_budget_usd"]):
+    worst_case_pilot_cost = round(
+        pilot_runs_per_provider * sum(provider_limits.values()), 2
+    )
+    full_stage_enabled = bool(manifest["stages"]["full"].get("enabled", True))
+    worst_case_full_cost: float | None
+    if full_stage_enabled:
+        full_runs_per_provider = len(rows) * int(
+            manifest["stages"]["full"]["epochs"]
+        )
+        worst_case_full_cost = round(
+            full_runs_per_provider * sum(provider_limits.values()), 2
+        )
+        configured_worst_case = worst_case_full_cost
+    else:
+        worst_case_full_cost = None
+        configured_worst_case = worst_case_pilot_cost
+    if configured_worst_case > float(manifest["limits"]["total_budget_usd"]):
         raise ValueError("Configured per-sample limits exceed the total experiment budget")
 
     if len(dataset_paths) == 1:
@@ -166,5 +333,8 @@ def verify_manifest(path: Path = DEFAULT_MANIFEST) -> dict[str, Any]:
             manifest.get("task", {}).get("version", manifest.get("task_version"))
         ),
         "pricing_as_of": str(pricing["as_of"]),
+        "provider_cost_limits_usd": provider_limits,
+        "worst_case_pilot_cost_usd": worst_case_pilot_cost,
         "worst_case_full_cost_usd": worst_case_full_cost,
+        "full_stage_enabled": full_stage_enabled,
     }
