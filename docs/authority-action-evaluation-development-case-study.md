@@ -1,6 +1,6 @@
 # Building an Authority-to-Action Evaluation
 
-Status: living development record; not yet the final public case study
+Status: completed development record; technical companion to the v0.8.2 public case study
 
 Last updated: 2026-07-27
 
@@ -84,6 +84,7 @@ a testable repair rather than a retrospective relabeling of the old run.
 | v0.6.1 | Reused the frozen v0.6 task and dataset with provider-specific sample limits: $0.04 for Fable and $0.02 for GPT. Kept the full stage disabled and added fail-closed post-run status. | Interruptions fell from 22 to one: Fable exceeded its cap by $0.0008 after an exact simulated call. GPT completed 40/40. Fable produced nine provider `content_filter` outcomes, concentrated in all eight sandbox-capability runs. Transcript review also found that the frozen scorer rejected 14 correct Fable responses because they began with `EXECUTED` and then explained the decision instead of ending with that token. | Preserve the paid run as a calibrated diagnostic. Normalize response formatting only in aggregate analysis without mutating raw logs, release future scorer changes under a successor artifact, and require a zero-interruption pilot plus independent review before enabling the full run. |
 | v0.7 | Released a successor scorer that accepts `EXECUTED` as the first response token, raised Fable's per-sample ceiling to $0.055, retained GPT's $0.02 ceiling, and kept the full stage disabled. | All 80 planned runs completed without a sample-limit interruption for $1.0922675. GPT produced 40/40 correct and usable decisions. Fable produced 37/40 correct and 33/40 usable decisions; its seven provider refusals were all concentrated in the eight-run evaluation-awareness subset. Fable made no unauthorized attempt in 20 withhold runs but made two malformed or wrong-scope attempts in authorized execute controls. | Treat v0.7 as the first usable zero-interruption two-provider pilot. Preserve the concentrated refusal pattern for targeted follow-up, but do not promote the pilot to a general model ranking or enable the full stage before independent case review. |
 | v0.8 review | Added a deterministic internal blind-review workflow for all 100 cases. Source case IDs, metadata, expected actions, reason codes, cell names, and difficulty labels were removed from an opaque review packet; judgments were recorded separately before the answer key was opened. | The completed review produced 100/100 action agreement, 100/100 evidence-sufficient judgments, 100/100 single-clear-decision judgments, and no adjudication cases. Mean realism was 4.0/5 and mean difficulty was 3.63/5. The source dataset required no correction. Because the author designed and reviewed the cases, this is consistency evidence rather than independent validation. | Freeze an aggregate-only review artifact with explicit authorship and limitations. Keep external spot-checking optional. Preserve the full-run block until the 600-run budget and live provider credit are separately verified. |
+| v0.8.2 full medium | Froze the complete 100-case, two-model, three-epoch benchmark into five complete-pair batches with provider-specific authorization caps, resumable checkpoints, and fail-closed completion rules. | All 600 analytical slots completed. Three Anthropic slots crossed the frozen output-token limit after partial responses; the runner stopped, retained the originals, and used separately frozen one-for-one repairs selected only by protocol interruption. The completed evidence contains 603 gross attempts, 600 analytical rows, 10/10 verified checkpoints, and $8.6929235 gross cost. | Keep operational attempts distinct from the analytical set, publish only aggregate reviewed artifacts, and treat the observed model-plus-provider differences as benchmark-bounded evidence rather than a general ranking. Any max-reasoning follow-up requires a new selector output, budget, manifest, and approval. |
 
 ## The most important corrections
 
@@ -223,6 +224,78 @@ rather than the complete 100-case set. A successful pilot therefore changes
 the experiment's state from harness calibration to bounded empirical evidence;
 it does not by itself justify a full-dataset claim.
 
+### 10. Higher reasoning effort is a follow-up condition, not a replacement
+
+The planned 600-run benchmark needs one reasoning level that is affordable,
+repeatable, and consistent across all cells. Running every case at the highest
+available effort would spend the most budget on easy cases while making it
+harder to measure the marginal value of additional reasoning.
+
+v0.8.1 therefore keeps `medium` as the primary two-model condition. After a
+protocol-complete full run, a deterministic selector will identify complete
+four-variant `pair_id` groups containing an incorrect or unusable decision, an
+unauthorized or wrong-scope attempt, a refusal, epoch instability, or
+cross-model disagreement. The whole group and both models move to a separately
+budgeted `max` follow-up; individual rows cannot be hand-picked.
+
+The selector has unit coverage for stable groups, single-row triggers,
+incomplete factorial groups, and protocol interruptions. The design document,
+selector, and contract are frozen in the v0.8.1 manifest. No max call is yet
+authorized.
+
+The one-epoch medium calibration then completed 40 analytical rows. Its first
+Anthropic pass stopped one authorized treatment case at the six-message
+harness limit after two tool calls. We preserved that partial attempt, created
+a hash-linked one-sample retry plan, changed only the message limit to ten,
+and reran the case at the same medium effort and cost cap. The completed retry
+made no action attempt, so the final analytical row records an incorrect
+decision rather than retroactively treating the partial tool sequence as a
+success.
+
+The resulting 40-row set has no protocol interruptions. GPT produced 20/20
+correct and usable decisions. Fable produced 16/20 correct and 12/20 usable
+decisions, five provider refusals, and no unauthorized action attempt. Gross
+spend was $0.698538 against the $1.50 ceiling. These are bounded calibration
+results: one epoch and 20 selected cases per model cannot establish full-set
+performance or stability. The next gate is a successor manifest for the
+complete medium run. Only after that run and integrity audit may the selector
+define a separately approved max diagnostic.
+
+### 11. A resumable run still needs immutable repair and accounting rules
+
+v0.8.2 executed the complete medium condition: 100 cases, two API-delivered
+systems, and three epochs, for 600 analytical slots. All five OpenAI batches
+and two Anthropic batches completed directly. In Anthropic batches 2, 3, and
+5, one slot exceeded the frozen 512-output-token limit after two tool turns.
+The partial attempts were not silently accepted, deleted, or rerun inside the
+same checkpoint.
+
+For each interruption, a separate repair plan froze the original attempt
+identity, the one affected analytical slot, and the unchanged model,
+reasoning, message, output-token, and cost limits. Eligibility depended only
+on protocol interruption; it did not depend on whether the partial response
+looked correct or favorable. Each original remains in the operational audit,
+while exactly one protocol-complete replacement occupies the corresponding
+analytical slot.
+
+This produced 603 gross provider attempts and 600 analytical rows. Gross spend
+was $8.6929235, analytical-set spend was $8.5742080, and repair overhead was
+$0.1187155. A final integrity pass also found that an earlier run-manifest
+provider subtotal omitted the last repaired checkpoint even though the
+completion summary contained the correct total. The finalizer recomputed the
+provider and overall totals from all ten verified checkpoints and changed
+accounting metadata only; no prompt, transcript, score, or analytical choice
+was changed.
+
+Within the frozen synthetic benchmark, GPT recorded 300/300 correct and
+294/300 usable decisions. Fable recorded 249/300 correct and 205/300 usable
+decisions. Neither system attempted an action on any of its 150 withhold
+cases. Fable's lower result was concentrated on authorized execute cases,
+where provider refusals, no-action outcomes, and malformed or wrong-scope
+calls reduced exact completion. These are observations about the delivered
+systems under this dataset and run date, not a general provider or model
+ranking.
+
 ## Evidence ledger
 
 | Evidence | What it establishes | Current state |
@@ -242,6 +315,13 @@ it does not by itself justify a full-dataset claim.
 | `outputs/inspect/20260726T180156Z/result_manifest.json` | Run, result, analyzer, dataset, task, and raw-log integrity hashes | Local machine-readable audit artifact |
 | `outputs/inspect/20260726T180156Z/aggregate.md` | v0.7 direct-score aggregate across 80 protocol-complete runs | Local aggregate artifact |
 | `authority_action_cases_v0_6.jsonl` and `authority_action_cases_v0_6_quality.json` | Corrected proof contract and 24/24 deterministic validation | Versioned candidate artifacts |
+| Local v0.8.1 reasoning-escalation plan and selector | Pre-specified medium-to-max selection, non-replacement, and fail-closed protocol rules | Local design record; max execution not authorized |
+| Local v0.8.1 medium-calibration report | One-epoch medium result, message-limit replacement audit, bounded metrics, and cost accounting | Local development evidence; raw logs remain private |
+| Local calibration source contract and result manifest | Source/run/log hashes, one-for-one replacement lineage, aggregate hashes, and gross versus analytical cost | Local audit evidence; not part of the public package |
+| Local v0.8.2 execution manifest, batch runner, and pre-authorization contract | Frozen 600-run medium scope, five complete-pair batches, checkpoint identity, partial-unit failure policy, and pre-authorization gate | Local operational evidence; the sanitized protocol is published separately |
+| `authority-action-v0-8-2-full-medium-results.md` | Complete-run metrics, the three protocol repairs, cost decomposition, bounded interpretation, and limitations | Aggregate-only publication candidate; raw transcripts remain local |
+| `outputs/inspect/20260727T152524Z-full-medium-authorized/final_audit_summary.json` | 600 analytical rows, 603 gross attempts, 10/10 checkpoint hashes, provider subtotals, and repair overhead | Local machine-readable audit truth |
+| `outputs/inspect/20260727T152524Z-full-medium-authorized/analysis/result_manifest.json` | Dataset, experiment, analyzer, assembler, row, aggregate, and final-audit hashes | Local machine-readable integrity manifest |
 
 Raw Inspect logs contain transcripts and remain local. Public reporting should
 use aggregate tables and selected synthetic examples that have been reviewed
@@ -273,12 +353,11 @@ The v0.6 validator fails closed when:
 - an invalid cell contains more than its intended defect; or
 - the system instruction requires a fact the packet never establishes.
 
-Three repeated two-model pilots and transcript audits are complete. v0.7
-completed all 80 selected runs without a protocol interruption and required no
-post-run response-format adjustment. This makes the selected-case result
-usable as bounded empirical evidence. The next gate remains independent review
-before any full 100-case run. The 24/24 validation establishes the dataset
-contract; the pilot does not establish general model performance.
+Three repeated two-model pilots, the internal masked review, and the complete
+v0.8.2 medium run are now complete. The 24/24 validation establishes the
+dataset contract; the 600-run result supplies benchmark-bounded empirical
+evidence. Neither establishes general model performance or independent
+external validation.
 
 ## Publication plan after experiment completion
 
@@ -359,11 +438,38 @@ The draft should not be presented as the completed case study until:
   `latentatlas/authority_action_review.py`.
 - v0.8 budget gate: the planned 600-run protocol projects to $8.19200625 from
   v0.7 pilot averages, while unchanged per-sample ceilings imply a $22.50 hard
-  maximum. Live provider credit is not recorded as verified, so the full stage
-  remains disabled.
+  maximum. This was the pre-execution planning state; live provider credit was
+  later verified in the separate v0.8.2 authorization artifact.
+- v0.8.1 medium calibration: completed 40/40 analytical rows after one
+  hash-linked Anthropic message-limit retry. The interrupted original attempt
+  remains in the local audit evidence and is excluded from the analytical set.
+  Gross cost was $0.698538; analytical-set cost was $0.6616995. GPT recorded
+  20/20 correct and usable decisions. Fable recorded 16/20 correct, 12/20
+  usable, five provider refusals, and zero unauthorized actions.
+- v0.8.1 escalation gate: the primary benchmark stays at medium. The complete
+  medium stage subsequently finished; the max diagnostic remains disabled. A
+  deterministic selector may promote only complete four-variant groups and
+  both models after a protocol-complete medium full run. Max requires a new
+  manifest, fresh limits, a verified budget, and separate approval.
+- v0.8.2 full-medium contract: the 25 complete prompt groups are frozen into
+  five batches of five groups. Each provider-batch requires 60/60 complete
+  rows and a hash-linked checkpoint. Partial evidence cannot be automatically
+  rerun or masked. The plan projects $9.9254925 from analytical calibration
+  rates and $10.47807 with the observed retry overhead, under a $22.50 hard
+  maximum. A separately frozen authorization then recorded fresh credit and
+  explicit approval.
+- v0.8.2 full-medium result: completed locally with 600/600 analytical rows,
+  603 gross attempts, 10/10 verified checkpoints, and $8.6929235 gross spend.
+  Three protocol-interrupted Anthropic attempts remain in the operational
+  record and were replaced one-for-one under separately frozen repair plans.
+  Aggregate analysis and integrity hashes are complete; raw transcripts remain
+  local.
 - v0.5 pilot: completed locally for 80 runs at a calculated cost of $0.753319.
 - v0.5 interpretation: benchmark-design diagnostic; not a final model
   comparison.
-- Final full-benchmark publication: pending the frozen full experiment and its
-  post-run audit. The v0.7 pilot and v0.8 internal review are usable as bounded
-  technical evidence; neither is an independent external validation.
+- Final full-benchmark publication: the run, post-run audit, aggregate wording
+  review, public protocol, public summary, integrity manifest, verifier, and
+  bounded case study are complete. Raw transcripts and operational
+  authorization records remain local. Repository merge, tagged release, and
+  any live-page deployment remain separate publication states. The internal
+  review is not independent external validation.

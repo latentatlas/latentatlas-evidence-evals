@@ -40,6 +40,9 @@ reproducible.
 - A complete 100-case v0.8 internal blind author review with 100/100 action
   agreement, explicit non-independent status, an aggregate-only artifact, and
   an [executable integrity verifier](latentatlas/authority_action_review.py).
+- A 600-run v0.8.2 full-medium result with protocol-only repair accounting,
+  aggregate-only public artifacts, and an
+  [executable integrity verifier](latentatlas/authority_action_full_result.py).
 - A frozen masked review covering 151 evaluation packets, including 146
   outcome-ready packets, published as an aggregate-only artifact with
   executable integrity checks.
@@ -90,8 +93,13 @@ reproducible.
   [v0.8 internal blind-review record](docs/authority-action-internal-blind-review-v0-8.md),
   [aggregate-only v0.8 review summary](data/authority_action_v0_8_internal_review/summary.json),
   [v0.8 review integrity manifest](data/authority_action_v0_8_internal_review/manifest.json),
+  [v0.8.2 full-medium results](docs/authority-action-v0-8-2-full-medium-results.md),
+  [v0.8.2 public case study](docs/authority-action-v0-8-2-full-medium-case-study.md),
+  [public v0.8.2 protocol](data/authority_action_v0_8_2_full_medium/protocol.json),
+  [aggregate-only v0.8.2 summary](data/authority_action_v0_8_2_full_medium/summary.json),
+  [v0.8.2 result integrity manifest](data/authority_action_v0_8_2_full_medium/manifest.json),
   and
-  [living experiment-development case study](docs/authority-action-evaluation-development-case-study.md).
+  [complete experiment-development record](docs/authority-action-evaluation-development-case-study.md).
 
 ## System flow
 
@@ -180,6 +188,14 @@ Verify the aggregate-only Authority-to-Action v0.8 internal review artifact:
 ```bash
 python -m latentatlas verify-authority-action-review \
   --artifact-dir data/authority_action_v0_8_internal_review
+```
+
+Verify the aggregate-only Authority-to-Action v0.8.2 full-medium result and its
+versioned source hashes:
+
+```bash
+python -m latentatlas verify-authority-action-full-result \
+  --artifact-dir data/authority_action_v0_8_2_full_medium
 ```
 
 Install and test the optional Inspect behavioral evaluation:
@@ -282,6 +298,39 @@ before answer-key access. All 100 judgments agreed with the frozen key and all
 an internal review, not independent validation. The full 600-run stage remains
 disabled until live provider credit is checked against the separately recorded
 budget plan.
+
+The v0.8.1 medium calibration produced 40/40 protocol-complete analytical rows
+after one narrowly scoped Anthropic message-limit retry. Gross spend was
+$0.698538 against the $1.50 ceiling. GPT produced 20/20 correct and usable
+decisions; Fable produced 16/20 correct and 12/20 usable decisions, with five
+provider refusals and no unauthorized action attempt. This remains a
+one-epoch selected-case calibration, not the full benchmark.
+
+The v0.8.2 successor freezes the complete 600-run medium design into five
+resume-safe, complete-pair batches. It preserves the calibrated ten-message
+limit, separates verified checkpoints from partial evidence, and refuses paid
+execution until a separately frozen successor records fresh provider credit
+and explicit approval.
+
+The authorized v0.8.2 run then completed all 600 analytical slots across the
+100-case, two-model, three-epoch design. Three Anthropic attempts crossed the
+frozen output-token protocol limit; their original evidence was retained and
+three one-for-one replacements were admitted under separately frozen,
+protocol-only repair plans. The final audit records 603 gross attempts, 10/10
+verified provider-batch checkpoints, $8.6929235 gross spend, and no action on
+any withhold case from either delivered system. The
+[v0.8.2 results report](docs/authority-action-v0-8-2-full-medium-results.md)
+contains the bounded findings, accounting, and limitations; raw provider
+transcripts remain local. The shorter
+[public case study](docs/authority-action-v0-8-2-full-medium-case-study.md)
+explains the research question, design corrections, final result, and
+publication boundary. The public
+[`protocol.json`](data/authority_action_v0_8_2_full_medium/protocol.json),
+[`summary.json`](data/authority_action_v0_8_2_full_medium/summary.json), and
+[`manifest.json`](data/authority_action_v0_8_2_full_medium/manifest.json)
+contain the sanitized experiment contract, aggregate results, and integrity
+fingerprints only. Internal execution authorization, provider payloads, and
+live credit records are not published.
 
 ## Example decision surfaces
 
