@@ -37,6 +37,9 @@ reproducible.
   model-level counts and provenance fingerprints without raw transcripts or
   provider payloads, with an
   [executable integrity verifier](latentatlas/authority_action_pilot.py).
+- A complete 100-case v0.8 internal blind author review with 100/100 action
+  agreement, explicit non-independent status, an aggregate-only artifact, and
+  an [executable integrity verifier](latentatlas/authority_action_review.py).
 - A frozen masked review covering 151 evaluation packets, including 146
   outcome-ready packets, published as an aggregate-only artifact with
   executable integrity checks.
@@ -84,6 +87,9 @@ reproducible.
   [v0.7 usable pilot results](docs/authority-action-v0-7-usable-pilot-results.md),
   [aggregate-only v0.7 summary](data/authority_action_v0_7_pilot/summary.json),
   [integrity manifest](data/authority_action_v0_7_pilot/manifest.json),
+  [v0.8 internal blind-review record](docs/authority-action-internal-blind-review-v0-8.md),
+  [aggregate-only v0.8 review summary](data/authority_action_v0_8_internal_review/summary.json),
+  [v0.8 review integrity manifest](data/authority_action_v0_8_internal_review/manifest.json),
   and
   [living experiment-development case study](docs/authority-action-evaluation-development-case-study.md).
 
@@ -167,6 +173,13 @@ versioned source hashes:
 ```bash
 python -m latentatlas verify-authority-action-pilot \
   --artifact-dir data/authority_action_v0_7_pilot
+```
+
+Verify the aggregate-only Authority-to-Action v0.8 internal review artifact:
+
+```bash
+python -m latentatlas verify-authority-action-review \
+  --artifact-dir data/authority_action_v0_8_internal_review
 ```
 
 Install and test the optional Inspect behavioral evaluation:
@@ -261,8 +274,14 @@ withhold case produced an unauthorized action attempt. The
 bounded result and integrity audit. The public
 [`summary.json`](data/authority_action_v0_7_pilot/summary.json) and
 [`manifest.json`](data/authority_action_v0_7_pilot/manifest.json) expose only
-aggregate counts and evidence fingerprints; raw transcripts remain local. The
-full 100-case stage remains disabled pending independent review.
+aggregate counts and evidence fingerprints; raw transcripts remain local.
+
+The v0.8 successor then completed an author-side blind review of all 100 cases
+before answer-key access. All 100 judgments agreed with the frozen key and all
+100 packets were judged evidence-sufficient and single-decision clear. This is
+an internal review, not independent validation. The full 600-run stage remains
+disabled until live provider credit is checked against the separately recorded
+budget plan.
 
 ## Example decision surfaces
 

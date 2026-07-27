@@ -10,6 +10,7 @@ from typing import Any
 from .action_time_revalidation import revalidate_action_packets
 from .action_time_revalidation import summarize_action_revalidations
 from .authority_action_pilot import verify_authority_action_pilot_artifact
+from .authority_action_review import verify_authority_action_review_artifact
 from .evidence_guard import EvidenceGuard
 from .evidence_vector_layer import run_evidence_vector_layer
 from .frozen_review import verify_frozen_review_artifact
@@ -91,6 +92,12 @@ def command_verify_authority_action_pilot(args: argparse.Namespace) -> int:
     return 0 if report["status"] == "pass" else 1
 
 
+def command_verify_authority_action_review(args: argparse.Namespace) -> int:
+    report = verify_authority_action_review_artifact(args.artifact_dir)
+    print(json.dumps(report, indent=2, sort_keys=True))
+    return 0 if report["status"] == "pass" else 1
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="latentatlas-evals",
@@ -142,6 +149,17 @@ def build_parser() -> argparse.ArgumentParser:
         default=Path("data/authority_action_v0_7_pilot"),
     )
     authority_action_pilot.set_defaults(func=command_verify_authority_action_pilot)
+
+    authority_action_review = subparsers.add_parser(
+        "verify-authority-action-review",
+        help="Verify the public aggregate Authority-to-Action v0.8 review artifact",
+    )
+    authority_action_review.add_argument(
+        "--artifact-dir",
+        type=Path,
+        default=Path("data/authority_action_v0_8_internal_review"),
+    )
+    authority_action_review.set_defaults(func=command_verify_authority_action_review)
     return parser
 
 

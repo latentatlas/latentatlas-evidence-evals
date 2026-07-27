@@ -2,7 +2,7 @@
 
 Status: living development record; not yet the final public case study
 
-Last updated: 2026-07-26
+Last updated: 2026-07-27
 
 ## Why this record exists
 
@@ -83,6 +83,7 @@ a testable repair rather than a retrospective relabeling of the old run.
 | v0.6 | Preserved all v0.5 groups and added a four-record proof path: canonical digest, signer registry, verification result, and explicit finality. Added seven fail-closed evidence-contract gates on top of the 17 inherited gates. | The first validator run exposed an identifier-namespace collision, which was repaired with a dedicated `PF-*` namespace. The corrected dataset passed 24/24 gates. Its 80-run pilot then exposed a different measurement defect: the $0.015 per-sample cap interrupted 21/40 Fable runs and 1/40 GPT runs, even though both top-level Inspect logs reported success. | Preserve the dataset repair and the paid run as a protocol-calibration diagnostic. Separate harness limits from model decisions and provider refusals, then rerun the frozen pilot under a new provider-specific limit manifest before any model comparison. |
 | v0.6.1 | Reused the frozen v0.6 task and dataset with provider-specific sample limits: $0.04 for Fable and $0.02 for GPT. Kept the full stage disabled and added fail-closed post-run status. | Interruptions fell from 22 to one: Fable exceeded its cap by $0.0008 after an exact simulated call. GPT completed 40/40. Fable produced nine provider `content_filter` outcomes, concentrated in all eight sandbox-capability runs. Transcript review also found that the frozen scorer rejected 14 correct Fable responses because they began with `EXECUTED` and then explained the decision instead of ending with that token. | Preserve the paid run as a calibrated diagnostic. Normalize response formatting only in aggregate analysis without mutating raw logs, release future scorer changes under a successor artifact, and require a zero-interruption pilot plus independent review before enabling the full run. |
 | v0.7 | Released a successor scorer that accepts `EXECUTED` as the first response token, raised Fable's per-sample ceiling to $0.055, retained GPT's $0.02 ceiling, and kept the full stage disabled. | All 80 planned runs completed without a sample-limit interruption for $1.0922675. GPT produced 40/40 correct and usable decisions. Fable produced 37/40 correct and 33/40 usable decisions; its seven provider refusals were all concentrated in the eight-run evaluation-awareness subset. Fable made no unauthorized attempt in 20 withhold runs but made two malformed or wrong-scope attempts in authorized execute controls. | Treat v0.7 as the first usable zero-interruption two-provider pilot. Preserve the concentrated refusal pattern for targeted follow-up, but do not promote the pilot to a general model ranking or enable the full stage before independent case review. |
+| v0.8 review | Added a deterministic internal blind-review workflow for all 100 cases. Source case IDs, metadata, expected actions, reason codes, cell names, and difficulty labels were removed from an opaque review packet; judgments were recorded separately before the answer key was opened. | The completed review produced 100/100 action agreement, 100/100 evidence-sufficient judgments, 100/100 single-clear-decision judgments, and no adjudication cases. Mean realism was 4.0/5 and mean difficulty was 3.63/5. The source dataset required no correction. Because the author designed and reviewed the cases, this is consistency evidence rather than independent validation. | Freeze an aggregate-only review artifact with explicit authorship and limitations. Keep external spot-checking optional. Preserve the full-run block until the 600-run budget and live provider credit are separately verified. |
 
 ## The most important corrections
 
@@ -304,7 +305,8 @@ The draft should not be presented as the completed case study until:
 
 - the repaired successor has a new frozen hash;
 - the positive-evidence contract validator passes;
-- an independent human review checks realism and single-decision clarity;
+- the internal blind review checks realism and single-decision clarity without
+  being represented as independent validation;
 - a corrected small pilot passes transcript audit;
 - the planned full run completes within its cost and execution limits;
 - aggregate results and uncertainty tables are regenerated from the final logs;
@@ -349,8 +351,19 @@ The draft should not be presented as the completed case study until:
   available under `data/authority_action_v0_7_pilot/`; a deterministic verifier
   checks the public file, versioned source hashes, count reconciliation, cost
   reconciliation, and aggregate-only declarations.
+- v0.8 internal blind review: completed 100/100 masked author judgments before
+  answer-key access. All 100 decisions agreed with the frozen key; all 100
+  packets were judged evidence-sufficient and single-decision clear. No
+  adjudication case was created. The aggregate-only artifact and verifier are
+  under `data/authority_action_v0_8_internal_review/` and
+  `latentatlas/authority_action_review.py`.
+- v0.8 budget gate: the planned 600-run protocol projects to $8.19200625 from
+  v0.7 pilot averages, while unchanged per-sample ceilings imply a $22.50 hard
+  maximum. Live provider credit is not recorded as verified, so the full stage
+  remains disabled.
 - v0.5 pilot: completed locally for 80 runs at a calculated cost of $0.753319.
 - v0.5 interpretation: benchmark-design diagnostic; not a final model
   comparison.
-- Final full-benchmark publication: pending independent review and the full
-  experiment. The v0.7 pilot is usable as a bounded technical case study.
+- Final full-benchmark publication: pending the frozen full experiment and its
+  post-run audit. The v0.7 pilot and v0.8 internal review are usable as bounded
+  technical evidence; neither is an independent external validation.

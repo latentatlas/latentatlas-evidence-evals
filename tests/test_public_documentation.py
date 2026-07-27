@@ -9,6 +9,7 @@ LATENTATLAS_DOC = ROOT / "docs" / "latentatlas-evidence-and-action-architecture.
 CATEGORYVANTAGE_DOC = ROOT / "docs" / "categoryvantage-governed-kernel-architecture.md"
 FROZEN_REVIEW_DOC = ROOT / "docs" / "frozen-masked-review.md"
 AUTHORITY_ACTION_REPORT = ROOT / "docs" / "authority-action-v0-7-usable-pilot-results.md"
+AUTHORITY_ACTION_REVIEW = ROOT / "docs" / "authority-action-internal-blind-review-v0-8.md"
 CITATION = ROOT / "CITATION.cff"
 PYPROJECT = ROOT / "pyproject.toml"
 
@@ -84,6 +85,20 @@ class PublicDocumentationTests(unittest.TestCase):
         self.assertIn("verify-authority-action-pilot", readme)
         self.assertIn("verify-authority-action-pilot", report)
 
+    def test_authority_action_review_artifact_is_documented_and_linked(self):
+        readme = README.read_text(encoding="utf-8")
+        review = AUTHORITY_ACTION_REVIEW.read_text(encoding="utf-8")
+
+        for path in (
+            "data/authority_action_v0_8_internal_review/manifest.json",
+            "data/authority_action_v0_8_internal_review/summary.json",
+            "latentatlas/authority_action_review.py",
+        ):
+            self.assertTrue((ROOT / path).is_file(), path)
+            self.assertIn(path, readme)
+        self.assertIn("verify-authority-action-review", readme)
+        self.assertIn("verify-authority-action-review", review)
+
     def test_public_documents_do_not_expose_private_workspace_markers(self):
         forbidden = (
             "/Us" + "ers/",
@@ -98,6 +113,7 @@ class PublicDocumentationTests(unittest.TestCase):
             CATEGORYVANTAGE_DOC,
             FROZEN_REVIEW_DOC,
             AUTHORITY_ACTION_REPORT,
+            AUTHORITY_ACTION_REVIEW,
         ):
             text = document.read_text(encoding="utf-8").lower()
             for marker in forbidden:
