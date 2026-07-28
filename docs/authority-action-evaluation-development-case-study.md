@@ -1,8 +1,8 @@
 # Building an Authority-to-Action Evaluation
 
-Status: completed development record; technical companion to the v0.8.2 public case study
+Status: completed development record; technical companion to the v0.8.2 result and v0.8.3 public analysis
 
-Last updated: 2026-07-27
+Last updated: 2026-07-28
 
 ## Why this record exists
 
@@ -85,6 +85,7 @@ a testable repair rather than a retrospective relabeling of the old run.
 | v0.7 | Released a successor scorer that accepts `EXECUTED` as the first response token, raised Fable's per-sample ceiling to $0.055, retained GPT's $0.02 ceiling, and kept the full stage disabled. | All 80 planned runs completed without a sample-limit interruption for $1.0922675. GPT produced 40/40 correct and usable decisions. Fable produced 37/40 correct and 33/40 usable decisions; its seven provider refusals were all concentrated in the eight-run evaluation-awareness subset. Fable made no unauthorized attempt in 20 withhold runs but made two malformed or wrong-scope attempts in authorized execute controls. | Treat v0.7 as the first usable zero-interruption two-provider pilot. Preserve the concentrated refusal pattern for targeted follow-up, but do not promote the pilot to a general model ranking or enable the full stage before independent case review. |
 | v0.8 review | Added a deterministic internal blind-review workflow for all 100 cases. Source case IDs, metadata, expected actions, reason codes, cell names, and difficulty labels were removed from an opaque review packet; judgments were recorded separately before the answer key was opened. | The completed review produced 100/100 action agreement, 100/100 evidence-sufficient judgments, 100/100 single-clear-decision judgments, and no adjudication cases. Mean realism was 4.0/5 and mean difficulty was 3.63/5. The source dataset required no correction. Because the author designed and reviewed the cases, this is consistency evidence rather than independent validation. | Freeze an aggregate-only review artifact with explicit authorship and limitations. Keep external spot-checking optional. Preserve the full-run block until the 600-run budget and live provider credit are separately verified. |
 | v0.8.2 full medium | Froze the complete 100-case, two-model, three-epoch benchmark into five complete-pair batches with provider-specific authorization caps, resumable checkpoints, and fail-closed completion rules. | All 600 analytical slots completed. Three Anthropic slots crossed the frozen output-token limit after partial responses; the runner stopped, retained the originals, and used separately frozen one-for-one repairs selected only by protocol interruption. The completed evidence contains 603 gross attempts, 600 analytical rows, 10/10 verified checkpoints, and $8.6929235 gross cost. | Keep operational attempts distinct from the analytical set, publish only aggregate reviewed artifacts, and treat the observed model-plus-provider differences as benchmark-bounded evidence rather than a general ranking. Any max-reasoning follow-up requires a new selector output, budget, manifest, and approval. |
+| v0.8.3 public analysis | Converted the completed analytical set into a field-allowlisted public row ledger and added deterministic aggregate recomputation, 25-group cluster analysis, epoch-stability analysis, refusal cross-tabs, and an exclusive strict-scope taxonomy. | Public recomputation preserved the v0.8.2 headline counts and exposed two reporting ambiguities. Fable's 26 strict-scope failures were 23 duplicate-call and three single-call schema-invalid rows. Its 21 execute refusals overlapped 15 no-action, five strict-scope, and one exact-execution row; they were not a subset of no-action. | Keep `decision_path` exclusive and provider refusal orthogonal. Publish the 600 derived rows without transcripts or arguments, verify the summary from the ledger, and use `pair_id` rather than individual repeated rows as the descriptive bootstrap unit. |
 
 ## The most important corrections
 
@@ -296,6 +297,33 @@ calls reduced exact completion. These are observations about the delivered
 systems under this dataset and run date, not a general provider or model
 ranking.
 
+### 12. Public aggregates should be recomputable from safe row-level evidence
+
+The v0.8.2 package published reviewed aggregate counts and integrity hashes but
+kept the analytical rows local. That allowed file-integrity checks, not an
+independent recomputation of every table. It also left provider refusals close
+enough to action-path counts that a reader could mistakenly add them or treat
+them as a subset of no-action.
+
+v0.8.3 added an allowlisted public ledger with one row per analytical run. The
+builder exports synthetic identifiers, frozen metadata, binary score fields,
+and categorical paths; it excludes prompts, completions, tool arguments,
+provider payloads, credentials, local paths, source UUIDs, and transcripts.
+The verifier rejects schema drift, verifies source and public-file hashes, and
+requires the stored summary to equal a fresh computation from all 600 rows.
+
+This exposed a more precise error structure. Fable's 26 strict-scope failures
+comprised 23 duplicate-call rows and three single-call schema-invalid rows.
+Its 21 execute-path provider refusals overlapped 15 no-action rows, five
+strict-scope rows, and one exact-execution row. The corrected report therefore
+uses exclusive action paths plus an orthogonal provider-refusal cross-tab.
+
+The repeated rows were also reorganized around the 25 complete `pair_id`
+groups. Descriptive percentile intervals now resample those groups, and epoch
+stability is reported per synthetic case. This does not turn the benchmark
+into a population study; it prevents repeated rows from being presented as 600
+independent units.
+
 ## Evidence ledger
 
 | Evidence | What it establishes | Current state |
@@ -322,6 +350,9 @@ ranking.
 | `authority-action-v0-8-2-full-medium-results.md` | Complete-run metrics, the three protocol repairs, cost decomposition, bounded interpretation, and limitations | Aggregate-only publication candidate; raw transcripts remain local |
 | `outputs/inspect/20260727T152524Z-full-medium-authorized/final_audit_summary.json` | 600 analytical rows, 603 gross attempts, 10/10 checkpoint hashes, provider subtotals, and repair overhead | Local machine-readable audit truth |
 | `outputs/inspect/20260727T152524Z-full-medium-authorized/analysis/result_manifest.json` | Dataset, experiment, analyzer, assembler, row, aggregate, and final-audit hashes | Local machine-readable integrity manifest |
+| `data/authority_action_v0_8_3_analysis/rows.jsonl` | 600 field-allowlisted analytical outcomes with no transcript or argument content | Public recomputation ledger |
+| `data/authority_action_v0_8_3_analysis/summary.json` | Aggregate, group, epoch, overlap, and error-taxonomy tables recomputed from the ledger | Public machine-readable result |
+| `latentatlas/authority_action_public_analysis.py` | Row-schema enforcement, summary recomputation, group analysis, and integrity verification | Public executable verifier |
 
 Raw Inspect logs contain transcripts and remain local. Public reporting should
 use aggregate tables and selected synthetic examples that have been reviewed
@@ -464,12 +495,17 @@ The draft should not be presented as the completed case study until:
   record and were replaced one-for-one under separately frozen repair plans.
   Aggregate analysis and integrity hashes are complete; raw transcripts remain
   local.
+- v0.8.3 public analysis: 600/600 derived analytical rows are public under a
+  strict field allowlist. The verifier recomputes every summary table, checks
+  the 25-group and three-epoch structure, separates refusal overlap, and
+  validates public and source hashes. Prompts, completions, tool arguments,
+  provider payloads, source UUIDs, credentials, and local paths remain absent.
 - v0.5 pilot: completed locally for 80 runs at a calculated cost of $0.753319.
 - v0.5 interpretation: benchmark-design diagnostic; not a final model
   comparison.
-- Final full-benchmark publication: the run, post-run audit, aggregate wording
-  review, public protocol, public summary, integrity manifest, verifier, and
-  bounded case study are complete. Raw transcripts and operational
-  authorization records remain local. Repository merge, tagged release, and
-  any live-page deployment remain separate publication states. The internal
-  review is not independent external validation.
+- Final full-benchmark publication: the run, post-run audit, row-level public
+  analysis, aggregate wording review, public protocols, summaries, integrity
+  manifests, verifiers, and bounded case study are complete. Raw transcripts
+  and operational authorization records remain local. Repository merge,
+  tagged release, and any live-page deployment remain separate publication
+  states. The internal review is not independent external validation.

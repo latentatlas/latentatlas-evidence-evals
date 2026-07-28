@@ -13,6 +13,9 @@ reproducible.
 
 ## Start here
 
+- See the latest verified result below: 600 protocol-complete analytical rows,
+  zero unauthorized actions across 300 withhold runs, and a public row ledger
+  whose aggregates can be recomputed locally.
 - Read the
   [public case study](docs/authority-action-v0-8-2-full-medium-case-study.md)
   for the research question, development stages, corrections, results, and
@@ -20,46 +23,50 @@ reproducible.
 - Read the
   [full technical results](docs/authority-action-v0-8-2-full-medium-results.md)
   for the complete metric definitions and condition-level findings.
-- Verify the aggregate release locally with
-  `python -m latentatlas verify-authority-action-full-result`.
+- Read the
+  [v0.8.3 public analysis](docs/authority-action-v0-8-3-public-analysis.md)
+  for row-level recomputation, 25-group statistics, epoch stability, and the
+  strict-scope error taxonomy.
+
+## Latest verified result
+
+| API-delivered system | Correct | Usable | Exact authorized execution | Unauthorized action in withhold runs |
+|---|---:|---:|---:|---:|
+| GPT-5.6 Sol | 300/300 | 294/300 | 150/150 | 0/150 |
+| Claude Fable 5 | 249/300 | 205/300 | 99/150 | 0/150 |
+
+The result comes from 100 synthetic cases, two systems, and three epochs. All
+600 analytical rows are public without prompts, completions, tool arguments,
+provider payloads, credentials, UUIDs, or raw transcripts. The public verifier
+recomputes the complete summary from those rows and checks their file and
+source hashes.
+
+```bash
+python -m latentatlas verify-authority-action-full-result \
+  --artifact-dir data/authority_action_v0_8_2_full_medium
+python -m latentatlas verify-authority-action-public-analysis \
+  --artifact-dir data/authority_action_v0_8_3_analysis
+```
 
 ## Technical highlights
 
-- Standard-library Python with no runtime dependencies.
-- Deterministic verdicts and stable input hashes for reproducible evaluation.
-- Separate semantic similarity, identity, evidence, and action-authority
-  signals.
-- Machine-readable reason codes and explicit review/revalidation routes.
-- End-to-end CLI workflows, synthetic datasets, unit tests, and GitHub Actions.
-- An optional Inspect task that measures whether a model converts relevant
-  evidence into an unauthorized simulated action.
-- A 100-case v0.4 candidate benchmark with separate action parameters, 25
-  complete authority-validity by context-treatment factorial groups, and
-  deterministic dataset-quality gates.
-- A 100-case v0.5 high-discrimination candidate in which 80 cases are hard or
-  very hard, evidence is expressed as multi-record packets, and high- versus
-  low-monitoring visibility is analyzed separately.
-- A v0.6 successor that adds machine-resolvable canonical-digest, signer-
-  registry, verification, and finality records so positive controls satisfy
-  the task's written evidence contract.
-- A v0.7 two-provider pilot that completed 80/80 planned runs without harness
-  interruption and records direct-score decision paths, cost, and integrity
-  hashes.
-- A machine-verifiable, aggregate-only v0.7 pilot artifact that publishes
-  model-level counts and provenance fingerprints without raw transcripts or
-  provider payloads, with an
-  [executable integrity verifier](latentatlas/authority_action_pilot.py).
-- A complete 100-case v0.8 internal blind author review with 100/100 action
-  agreement, explicit non-independent status, an aggregate-only artifact, and
-  an [executable integrity verifier](latentatlas/authority_action_review.py).
-- A 600-run v0.8.2 full-medium result with protocol-only repair accounting,
-  aggregate-only public artifacts, and an
-  [executable integrity verifier](latentatlas/authority_action_full_result.py).
-- A frozen masked review covering 151 evaluation packets, including 146
-  outcome-ready packets, published as an aggregate-only artifact with
-  executable integrity checks.
-- An applied six-kernel CategoryVantage architecture for identity, evidence,
-  truth, publication, action, and learning.
+- Standard-library Python, deterministic verdicts, stable hashes, unit tests,
+  and GitHub Actions.
+- A side-effect-free Inspect evaluation with exact action scope, explicit
+  reason codes, provider-refusal separation, and protocol-limit auditing.
+- A complete 100-case factorial benchmark with 24 dataset-quality gates,
+  internal masked author review, three epochs, and checkpointed repair
+  accounting.
+- A transcript-free 600-row public ledger, deterministic aggregate
+  recomputation, 25-group cluster analysis, epoch-stability analysis, and an
+  exclusive strict-scope error taxonomy, backed by an
+  [executable verifier](latentatlas/authority_action_public_analysis.py).
+- Versioned result verifiers remain available for the
+  [v0.7 pilot](latentatlas/authority_action_pilot.py),
+  [v0.8 review](latentatlas/authority_action_review.py), and
+  [v0.8.2 full run](latentatlas/authority_action_full_result.py).
+- Separate modules for evidence qualification, action-time revalidation,
+  frozen review, and a six-kernel CategoryVantage application architecture.
 
 ## What is included
 
@@ -107,9 +114,14 @@ reproducible.
   [v0.8 review integrity manifest](data/authority_action_v0_8_internal_review/manifest.json),
   [v0.8.2 full-medium results](docs/authority-action-v0-8-2-full-medium-results.md),
   [v0.8.2 public case study](docs/authority-action-v0-8-2-full-medium-case-study.md),
+  [v0.8.3 public analysis](docs/authority-action-v0-8-3-public-analysis.md),
   [public v0.8.2 protocol](data/authority_action_v0_8_2_full_medium/protocol.json),
   [aggregate-only v0.8.2 summary](data/authority_action_v0_8_2_full_medium/summary.json),
   [v0.8.2 result integrity manifest](data/authority_action_v0_8_2_full_medium/manifest.json),
+  [v0.8.3 transcript-free row ledger](data/authority_action_v0_8_3_analysis/rows.jsonl),
+  [recomputed v0.8.3 summary](data/authority_action_v0_8_3_analysis/summary.json),
+  [v0.8.3 analysis protocol](data/authority_action_v0_8_3_analysis/protocol.json),
+  [v0.8.3 integrity manifest](data/authority_action_v0_8_3_analysis/manifest.json),
   and
   [complete experiment-development record](docs/authority-action-evaluation-development-case-study.md).
 
@@ -208,6 +220,14 @@ versioned source hashes:
 ```bash
 python -m latentatlas verify-authority-action-full-result \
   --artifact-dir data/authority_action_v0_8_2_full_medium
+```
+
+Recompute the Authority-to-Action v0.8.3 public analysis from all 600
+transcript-free rows and verify its integrity chain:
+
+```bash
+python -m latentatlas verify-authority-action-public-analysis \
+  --artifact-dir data/authority_action_v0_8_3_analysis
 ```
 
 Install and test the optional Inspect behavioral evaluation:

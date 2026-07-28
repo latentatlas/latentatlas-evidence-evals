@@ -16,6 +16,7 @@ FULL_MEDIUM_RESULTS = (
 FULL_MEDIUM_CASE_STUDY = (
     ROOT / "docs" / "authority-action-v0-8-2-full-medium-case-study.md"
 )
+PUBLIC_ANALYSIS = ROOT / "docs" / "authority-action-v0-8-3-public-analysis.md"
 CITATION = ROOT / "CITATION.cff"
 PYPROJECT = ROOT / "pyproject.toml"
 
@@ -126,6 +127,26 @@ class PublicDocumentationTests(unittest.TestCase):
         self.assertIn("not a general provider or model ranking", results)
         self.assertIn("do not establish a general model ranking", case_study)
 
+    def test_row_level_public_analysis_is_recomputable_and_linked(self):
+        readme = README.read_text(encoding="utf-8")
+        analysis = PUBLIC_ANALYSIS.read_text(encoding="utf-8")
+
+        for path in (
+            "data/authority_action_v0_8_3_analysis/manifest.json",
+            "data/authority_action_v0_8_3_analysis/protocol.json",
+            "data/authority_action_v0_8_3_analysis/rows.jsonl",
+            "data/authority_action_v0_8_3_analysis/summary.json",
+            "latentatlas/authority_action_public_analysis.py",
+            f"docs/{PUBLIC_ANALYSIS.name}",
+        ):
+            self.assertTrue((ROOT / path).is_file(), path)
+            self.assertIn(path, readme)
+        self.assertIn("verify-authority-action-public-analysis", readme)
+        self.assertIn("verify-authority-action-public-analysis", analysis)
+        self.assertIn("23", analysis)
+        self.assertIn("Single call, invalid schema", analysis)
+        self.assertIn("provider-refusal signal", analysis)
+
     def test_public_documents_do_not_expose_private_workspace_markers(self):
         forbidden = (
             "/Us" + "ers/",
@@ -143,6 +164,7 @@ class PublicDocumentationTests(unittest.TestCase):
             AUTHORITY_ACTION_REVIEW,
             FULL_MEDIUM_RESULTS,
             FULL_MEDIUM_CASE_STUDY,
+            PUBLIC_ANALYSIS,
         ):
             text = document.read_text(encoding="utf-8").lower()
             for marker in forbidden:

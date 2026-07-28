@@ -18,6 +18,15 @@ python -m latentatlas verify-authority-action-full-result \
   --artifact-dir data/authority_action_v0_8_2_full_medium
 ```
 
+The additive v0.8.3 public analysis publishes 600 transcript-free rows and
+recomputes the aggregate, 25-group, epoch-stability, overlap, and error-
+taxonomy tables:
+
+```bash
+python -m latentatlas verify-authority-action-public-analysis \
+  --artifact-dir data/authority_action_v0_8_3_analysis
+```
+
 ## Frozen scope
 
 - 100 synthetic authority-to-action cases;
@@ -95,6 +104,17 @@ the authorized execute path:
 - 21/150 provider refusals; and
 - 78/150 usable execute decisions.
 
+The first three action outcomes are mutually exclusive; provider refusal is
+not. Among the 21 execute rows carrying a provider-refusal signal, 15 had no
+action, five had a strict-scope failure, and one contained an exact execution.
+The refusal count must therefore not be added to the action-path counts.
+
+The 26 strict-scope failures separate into 23 duplicate-call rows and three
+single-call rows with an invalid argument schema. No failure was a single,
+schema-valid call aimed at the wrong exact scope. This taxonomy uses only
+frozen scorer structure and call count; no transcript or argument value is
+published.
+
 On the 150 withhold cases, Fable recorded 150/150 correct no-action outcomes,
 133 explicit withholds, 17 provider refusals, and 127 usable decisions. Six
 explicit withholds failed the task-specific reason-code usability gate.
@@ -109,6 +129,29 @@ Provider refusals were unevenly distributed across Fable behavior families:
 18/72 incentive-shift runs, 13/72 evaluation-awareness runs, 6/84 pressure
 runs, and 1/72 monitoring runs. The result therefore represents the delivered
 model-plus-provider system, not an isolated latent model decision.
+
+## Group and epoch analysis
+
+The experiment contains repeated measurements. The 25 complete `pair_id`
+groups, rather than 600 rows, are the cluster units for the descriptive
+uncertainty analysis. Ten thousand deterministic cluster-bootstrap resamples
+were run with seed `20260728`.
+
+| System | Mean group correct rate | 95% cluster interval | Perfect-correct groups | Mean group usable rate | 95% cluster interval | Perfect-usable groups |
+|---|---:|---:|---:|---:|---:|---:|
+| GPT-5.6 Sol | 100.0% | 100.0%-100.0% | 25/25 | 98.0% | 94.0%-100.0% | 24/25 |
+| Claude Fable 5 | 83.0% | 76.3%-89.3% | 8/25 | 68.3% | 57.7%-78.3% | 3/25 |
+
+GPT's full outcome signature was stable across all three epochs for 100/100
+cases. Fable recorded stable decision paths for 77/100 cases, stable correct
+decisions for 81/100, stable usable decisions for 77/100, and a stable full
+signature for 70/100. Fable's correct counts were 85, 81, and 83 across the
+three epochs; GPT recorded 100 in each.
+
+The complete row-level method and tables are in the
+[v0.8.3 public analysis](authority-action-v0-8-3-public-analysis.md). Its
+bootstrap intervals describe variation across this frozen benchmark's groups;
+they do not estimate general population performance.
 
 ## Integrity correction at finalization
 
@@ -176,3 +219,10 @@ versioned source hashes and to fingerprints of the unpublished local evidence.
 Raw Inspect logs and provider transcripts remain local and are not part of the
 public release. Internal execution authorization, live credit records, and
 provider-specific repair plans also remain local.
+
+The additive public analysis package is under
+`data/authority_action_v0_8_3_analysis/`. It contains a field-allowlisted
+`rows.jsonl`, a fully recomputed `summary.json`, a machine-readable
+`protocol.json`, and an integrity `manifest.json`. Public rows contain no
+prompts, completions, raw tool arguments, provider payloads, credentials,
+local paths, source UUIDs, or transcripts.
