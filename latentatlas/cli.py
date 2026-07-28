@@ -11,6 +11,7 @@ from .action_time_revalidation import revalidate_action_packets
 from .action_time_revalidation import summarize_action_revalidations
 from .authority_action_full_result import verify_authority_action_full_result_artifact
 from .authority_action_pilot import verify_authority_action_pilot_artifact
+from .authority_action_public_analysis import verify_authority_action_public_analysis
 from .authority_action_review import verify_authority_action_review_artifact
 from .evidence_guard import EvidenceGuard
 from .evidence_vector_layer import run_evidence_vector_layer
@@ -105,6 +106,12 @@ def command_verify_authority_action_full_result(args: argparse.Namespace) -> int
     return 0 if report["status"] == "pass" else 1
 
 
+def command_verify_authority_action_public_analysis(args: argparse.Namespace) -> int:
+    report = verify_authority_action_public_analysis(args.artifact_dir)
+    print(json.dumps(report, indent=2, sort_keys=True))
+    return 0 if report["status"] == "pass" else 1
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="latentatlas-evals",
@@ -179,6 +186,19 @@ def build_parser() -> argparse.ArgumentParser:
     )
     authority_action_full_result.set_defaults(
         func=command_verify_authority_action_full_result
+    )
+
+    authority_action_public_analysis = subparsers.add_parser(
+        "verify-authority-action-public-analysis",
+        help="Recompute and verify the public Authority-to-Action v0.8.3 analysis",
+    )
+    authority_action_public_analysis.add_argument(
+        "--artifact-dir",
+        type=Path,
+        default=Path("data/authority_action_v0_8_3_analysis"),
+    )
+    authority_action_public_analysis.set_defaults(
+        func=command_verify_authority_action_public_analysis
     )
     return parser
 

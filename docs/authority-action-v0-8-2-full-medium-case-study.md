@@ -166,6 +166,11 @@ result was concentrated on authorized cases:
 - 25 no-action outcomes; and
 - 21 provider refusals.
 
+The first three are exclusive action paths. Provider refusal is an orthogonal
+signal: the 21 execute refusals overlap 15 no-action rows, five strict-scope
+rows, and one exact-execution row. The 26 strict-scope failures comprise 23
+duplicate-call rows and three single-call rows with an invalid schema.
+
 Across withhold cases, it recorded 150/150 correct no-action outcomes, 133
 explicit task-specific withholds, and 17 provider refusals.
 
@@ -174,6 +179,12 @@ in this dataset: correct decisions fell from 53/75 in `valid_neutral` to 46/75
 in `valid_treatment`, while usable decisions fell from 45/75 to 33/75. This is
 a paired benchmark observation, not evidence that arbitrary pressure wording
 causes the difference.
+
+The additive public analysis treats the 25 complete prompt groups as the
+cluster units and separately checks three-epoch stability. Fable's full outcome
+signature was stable for 70/100 cases; GPT's was stable for 100/100. The public
+row ledger and group analysis are documented in the
+[v0.8.3 analysis supplement](authority-action-v0-8-3-public-analysis.md).
 
 ## What we learned
 
@@ -233,17 +244,20 @@ provider-filter internals, or real-world failure frequency.
 
 ## Public evidence and privacy boundary
 
-The public package contains aggregate counts, metric definitions, cost
+The v0.8.2 package contains aggregate counts, metric definitions, cost
 accounting, limitations, source hashes, and unpublished local-evidence
-fingerprints. It excludes raw transcripts, prompts, completions, provider
-payloads, credentials, live credit snapshots, customer data, personal data,
-and row-level records.
+fingerprints. The additive v0.8.3 package publishes 600 allowlisted row-level
+outcomes so reviewers can recompute every result. It excludes raw transcripts,
+prompts, completions, tool arguments, provider payloads, credentials, live
+credit snapshots, customer data, personal data, local paths, and source UUIDs.
 
 Verify the package locally:
 
 ```bash
 python -m latentatlas verify-authority-action-full-result \
   --artifact-dir data/authority_action_v0_8_2_full_medium
+python -m latentatlas verify-authority-action-public-analysis \
+  --artifact-dir data/authority_action_v0_8_3_analysis
 ```
 
 Public artifacts:
@@ -251,6 +265,10 @@ Public artifacts:
 - [`protocol.json`](../data/authority_action_v0_8_2_full_medium/protocol.json)
 - [`summary.json`](../data/authority_action_v0_8_2_full_medium/summary.json)
 - [`manifest.json`](../data/authority_action_v0_8_2_full_medium/manifest.json)
+- [v0.8.3 transcript-free rows](../data/authority_action_v0_8_3_analysis/rows.jsonl)
+- [v0.8.3 recomputed summary](../data/authority_action_v0_8_3_analysis/summary.json)
+- [v0.8.3 analysis protocol](../data/authority_action_v0_8_3_analysis/protocol.json)
+- [v0.8.3 integrity manifest](../data/authority_action_v0_8_3_analysis/manifest.json)
 - [full technical results](authority-action-v0-8-2-full-medium-results.md)
 
 ## Conclusion

@@ -1,0 +1,41 @@
+{
+  "artifact_id": "authority-action-v0.8.3-public-analysis",
+  "private_source_fingerprints": {
+    "analytical_rows_sha256": "98c467b6be0a0090922a027ad7997b29fa45194a1732f09bdd4182d21b064e2d",
+    "final_audit_summary_sha256": "02932e78199f0e22bf6285fc376f3ec0a98e8ffa5515f7ed7b4c54efd8181152",
+    "raw_transcripts_published": false
+  },
+  "public_files": [
+    {
+      "bytes": 1666,
+      "path": "protocol.json",
+      "sha256": "5a36be9d365ccef4781c8d30c4ba4660ecc8b1557030ac1bee0960ef1e873f59"
+    },
+    {
+      "bytes": 665895,
+      "path": "rows.jsonl",
+      "sha256": "132d0a5278e865ae2e3eff6486dfd542ac8d7f620da10f078e5b93ce351911dc"
+    },
+    {
+      "bytes": 8663,
+      "path": "summary.json",
+      "sha256": "caea6852b2b8e3a5a5ff65a1bf06c5848cdd46de24ac03ce87317ff92c9b9dc8"
+    }
+  ],
+  "schema_version": "latentatlas_authority_action_public_analysis_manifest_v0.8.3",
+  "source_artifact_id": "authority-action-v0.8.2-full-medium",
+  "source_artifacts": [
+    {
+      "path": "data/authority_action_v0_8_2_full_medium/summary.json",
+      "sha256": "f4bf6fa7cf8f9775e31bd4e558e499d0b18b489a2295803d7b1658bc1cc6bdad"
+    },
+    {
+      "path": "latentatlas/authority_action_public_analysis.py",
+      "sha256": "02601adbe6d935e425675a83a6daa2feea0f7741ec2fde167078cc284e47b7be"
+    },
+    {
+      "path": "scripts/build_authority_action_public_analysis.py",
+      "sha256": "1810c428de30190665e0f709cba6209cb92afbd864e3e0340f65382744400a56"
+    }
+  ]
+}
