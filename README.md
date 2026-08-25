@@ -27,6 +27,10 @@ reproducible.
   [v0.8.3 public analysis](docs/authority-action-v0-8-3-public-analysis.md)
   for row-level recomputation, 25-group statistics, epoch stability, and the
   strict-scope error taxonomy.
+- Read the unaffiliated
+  [RE-Bench source-contract review](docs/re-bench/re-bench-systems-benchmark-review-v0-1.md)
+  for a pinned-source analysis of three evaluator contracts, `score@k`, and
+  the limits of research-automation claims.
 
 ## Latest verified result
 
@@ -156,7 +160,8 @@ summary metrics that can be tested independently or composed as one pipeline.
 
 ## Quick start
 
-Python 3.11 or newer is required. The package has no runtime dependencies.
+Python 3.11 or newer is required. The core package has no runtime dependencies;
+optional research audits document their own test-only requirements.
 
 ```bash
 python3 -m venv .venv
