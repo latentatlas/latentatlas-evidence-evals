@@ -1,0 +1,1526 @@
+{
+  "matrix": "v02",
+  "totals": {
+    "native_workers": 220,
+    "native_effects": 204,
+    "old_origin_effects": 48,
+    "verified_readouts": 130,
+    "events": 21251,
+    "http_requests": 3724,
+    "accepted_runs": 156,
+    "retained_files": 308
+  },
+  "groups": [
+    {
+      "schedule": "accepted_precommit",
+      "arm": "cancel_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "fail": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "fail": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 12070333,
+          "withdrawal_reported_lock_wait_ns": 791,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 1,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1106330292,
+            "new_completion": 993503500,
+            "independent": 2451089750
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 14367292,
+          "withdrawal_reported_lock_wait_ns": 1667,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 1,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1139901083,
+            "new_completion": 948251917,
+            "independent": 2419945458
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "accepted_precommit",
+      "arm": "drain_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "fail": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "fail": 2
+        },
+        "C_quiescent_confirmation": {
+          "pass": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 312293792,
+          "withdrawal_reported_lock_wait_ns": 625,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [
+            {
+              "seq": 293,
+              "monotonic_ns": 482004102468500,
+              "kind": "initial_drain_result",
+              "key": "3868a7dae0fa96c56b552189",
+              "thread_id": "35d19eac-fdb1-4f33-bb1f-8253cc2e4384",
+              "run_id": "01a099da-a397-7802-8569-611b800201b2",
+              "invocation_id": "652bf0c6-d4b8-496f-a8e7-52acb7c08ab2",
+              "origin_invocation_id": "652bf0c6-d4b8-496f-a8e7-52acb7c08ab2",
+              "origin_key": "3868a7dae0fa96c56b552189",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": true,
+              "timed_out": false,
+              "operation_ids": [
+                "ea45d75d-7afd-4d6e-958f-fcd1fb1479f4",
+                "2f3229c1-e39d-4df5-ba6a-e5b3b8dbcb9d"
+              ],
+              "wait_ns": 301723625,
+              "timeout_seconds": 10.0
+            }
+          ],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1112243083,
+            "new_completion": 964817334,
+            "independent": 2422902958
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 316223791,
+          "withdrawal_reported_lock_wait_ns": 625,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [
+            {
+              "seq": 293,
+              "monotonic_ns": 482168934840958,
+              "kind": "initial_drain_result",
+              "key": "04c5b6dade898363d1780fc0",
+              "thread_id": "1668eb42-264d-436c-a990-646693532d5e",
+              "run_id": "01a099dd-277c-7d11-8d22-d3840f3c7561",
+              "invocation_id": "60983b60-bdb7-4484-8ab7-254539f2cb8d",
+              "origin_invocation_id": "60983b60-bdb7-4484-8ab7-254539f2cb8d",
+              "origin_key": "04c5b6dade898363d1780fc0",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": true,
+              "timed_out": false,
+              "operation_ids": [
+                "180d2d59-61bf-499a-828f-c4069ff13023",
+                "1e1150c4-1979-4f67-82f8-077aeb146135"
+              ],
+              "wait_ns": 303392625,
+              "timeout_seconds": 10.0
+            }
+          ],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1156118417,
+            "new_completion": 913983583,
+            "independent": 2393870541
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "accepted_precommit",
+      "arm": "scoped_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 11400459,
+          "withdrawal_reported_lock_wait_ns": 833,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 7,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1158049625,
+            "new_completion": 942552208,
+            "independent": 2458875584
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 12458750,
+          "withdrawal_reported_lock_wait_ns": 875,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 7,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1142249917,
+            "new_completion": 1022723125,
+            "independent": 2445083084
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "accepted_precommit",
+      "arm": "scoped_no_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 13502791,
+          "withdrawal_reported_lock_wait_ns": 1375,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 7,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1052519250,
+            "new_completion": 872919375,
+            "independent": 2466827625
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 12803959,
+          "withdrawal_reported_lock_wait_ns": 792,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 7,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1106107000,
+            "new_completion": 911055750,
+            "independent": 2440070458
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "after_commit",
+      "arm": "cancel_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 11374208,
+          "withdrawal_reported_lock_wait_ns": 458,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1134520333,
+            "new_completion": 949369292,
+            "independent": 2377253334
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 12342208,
+          "withdrawal_reported_lock_wait_ns": 541,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1115081750,
+            "new_completion": 946017125,
+            "independent": 2429183333
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "after_commit",
+      "arm": "drain_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "pass": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 313837041,
+          "withdrawal_reported_lock_wait_ns": 542,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [
+            {
+              "seq": 293,
+              "monotonic_ns": 482053206628208,
+              "kind": "initial_drain_result",
+              "key": "bf74a38ca84b418041a6f32c",
+              "thread_id": "5390797b-ffb8-46fd-b85f-7eb899d61a6a",
+              "run_id": "01a099db-6347-7412-8ae2-1e1d2409c814",
+              "invocation_id": "afcd9b85-3a95-4d25-9e39-2a58154b6ff9",
+              "origin_invocation_id": "afcd9b85-3a95-4d25-9e39-2a58154b6ff9",
+              "origin_key": "bf74a38ca84b418041a6f32c",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": true,
+              "timed_out": false,
+              "operation_ids": [
+                "368bb1a9-a47e-4b63-946c-a9f929f89c9b",
+                "37c1fb11-e747-4b26-b812-ca86edf64050"
+              ],
+              "wait_ns": 301697000,
+              "timeout_seconds": 10.0
+            }
+          ],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1163166958,
+            "new_completion": 904394875,
+            "independent": 2472570875
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 314566875,
+          "withdrawal_reported_lock_wait_ns": 875,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [
+            {
+              "seq": 293,
+              "monotonic_ns": 482221274863125,
+              "kind": "initial_drain_result",
+              "key": "679c428c1d155a01bdd8f04c",
+              "thread_id": "24c61098-9964-4437-b448-abce6200a432",
+              "run_id": "01a099dd-f3c9-7a03-9c12-b054155cddb2",
+              "invocation_id": "95b0fbae-957f-4041-8509-018e6ef170c9",
+              "origin_invocation_id": "95b0fbae-957f-4041-8509-018e6ef170c9",
+              "origin_key": "679c428c1d155a01bdd8f04c",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": true,
+              "timed_out": false,
+              "operation_ids": [
+                "9f6c2b71-3f5f-436b-a8c4-c484c2292e3f",
+                "a34b5cf8-b9f9-422b-81d0-291c2fc5dccf"
+              ],
+              "wait_ns": 300571208,
+              "timeout_seconds": 10.0
+            }
+          ],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1339140750,
+            "new_completion": 817668500,
+            "independent": 2447829125
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "after_commit",
+      "arm": "scoped_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 12828292,
+          "withdrawal_reported_lock_wait_ns": 625,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1134516417,
+            "new_completion": 987914959,
+            "independent": 2421254292
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 14302292,
+          "withdrawal_reported_lock_wait_ns": 375,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1186378958,
+            "new_completion": 966423417,
+            "independent": 2382059917
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "after_commit",
+      "arm": "scoped_no_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 12797292,
+          "withdrawal_reported_lock_wait_ns": 542,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1064537166,
+            "new_completion": 930355375,
+            "independent": 2417291583
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 12966333,
+          "withdrawal_reported_lock_wait_ns": 458,
+          "controller_delays_seconds": [
+            0.3
+          ],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1039302375,
+            "new_completion": 957463166,
+            "independent": 2413876834
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "unheld",
+      "arm": "cancel_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 13899709,
+          "withdrawal_reported_lock_wait_ns": 625,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1130061375,
+            "new_completion": 935953042,
+            "independent": 2428673208
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 11754417,
+          "withdrawal_reported_lock_wait_ns": 458,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1154655167,
+            "new_completion": 932028250,
+            "independent": 2415314791
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "unheld",
+      "arm": "drain_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "pass": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 14019959,
+          "withdrawal_reported_lock_wait_ns": 625,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [
+            {
+              "seq": 210,
+              "monotonic_ns": 482103477239708,
+              "kind": "initial_drain_result",
+              "key": "bee0589fc2e5069769a8c029",
+              "thread_id": "35228cee-af03-45aa-9c29-d8fdc9d29c8c",
+              "run_id": "01a099dc-28ef-7cc3-bdde-4222dac08fe5",
+              "invocation_id": "63efcb74-8d7f-4feb-81ee-1a836863b29d",
+              "origin_invocation_id": "63efcb74-8d7f-4feb-81ee-1a836863b29d",
+              "origin_key": "bee0589fc2e5069769a8c029",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": true,
+              "timed_out": false,
+              "operation_ids": [
+                "2aefcef4-d36e-4016-93d3-64de1da3d21e",
+                "54aa3a95-da0a-470e-9183-edacda7e608a"
+              ],
+              "wait_ns": 8750,
+              "timeout_seconds": 10.0
+            }
+          ],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1135784166,
+            "new_completion": 937267333,
+            "independent": 2407601542
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 13722584,
+          "withdrawal_reported_lock_wait_ns": 875,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [
+            {
+              "seq": 210,
+              "monotonic_ns": 482276806155666,
+              "kind": "initial_drain_result",
+              "key": "c4098cf3e01e44ba63e43ef6",
+              "thread_id": "6075774a-9a0e-433d-970b-8a853e4552cd",
+              "run_id": "01a099de-cdfd-73f3-add1-4b9766655c66",
+              "invocation_id": "78b6e421-f474-47c9-95b6-2555cad402e7",
+              "origin_invocation_id": "78b6e421-f474-47c9-95b6-2555cad402e7",
+              "origin_key": "c4098cf3e01e44ba63e43ef6",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": true,
+              "timed_out": false,
+              "operation_ids": [
+                "7f6b0188-12dd-4992-b477-0142560b1263",
+                "97e2e565-d5ba-471e-8437-dd2a3e39e3e5"
+              ],
+              "wait_ns": 9209,
+              "timeout_seconds": 10.0
+            }
+          ],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1107409334,
+            "new_completion": 954817584,
+            "independent": 2411085125
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "unheld",
+      "arm": "scoped_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 12086958,
+          "withdrawal_reported_lock_wait_ns": 709,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1125150834,
+            "new_completion": 948599166,
+            "independent": 2426862417
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 14354333,
+          "withdrawal_reported_lock_wait_ns": 459,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1132105916,
+            "new_completion": 944644875,
+            "independent": 2414457917
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "unheld",
+      "arm": "scoped_no_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "pass": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "pass": 2
+        },
+        "C_quiescent_confirmation": {
+          "na": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 15254750,
+          "withdrawal_reported_lock_wait_ns": 583,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1098162167,
+            "new_completion": 923374708,
+            "independent": 2410000875
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 18203583,
+          "withdrawal_reported_lock_wait_ns": 625,
+          "controller_delays_seconds": [],
+          "initial_drain_observations": [],
+          "old_effects_after_reply": 0,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 970571291,
+            "new_completion": 911413834,
+            "independent": 2415844625
+          },
+          "independent_native_work_overlapped_initial_worker": false,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "schedule": "drain_timeout",
+      "arm": "drain_summary",
+      "cells": 2,
+      "outcomes": {
+        "R_request_no_old_final_effect": {
+          "fail": 2
+        },
+        "V_withdrawal_no_old_native_start": {
+          "fail": 2
+        },
+        "C_quiescent_confirmation": {
+          "unknown": 2
+        },
+        "F_source_summary_verified_readout": {
+          "pass": 2
+        },
+        "F_old_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_source_summary_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_old_completion_artifact_status_accuracy": {
+          "pass": 2
+        },
+        "F_new_human_verified_readout": {
+          "pass": 2
+        },
+        "F_new_completion_verified_readout": {
+          "pass": 2
+        },
+        "F_independent_verified_readout": {
+          "pass": 2
+        },
+        "F_new_human_both_artifacts": {
+          "pass": 2
+        },
+        "F_new_completion_both_artifacts": {
+          "pass": 2
+        },
+        "F_independent_both_artifacts": {
+          "pass": 2
+        },
+        "duplicate_delivery_no_new_admission": {
+          "pass": 2
+        }
+      },
+      "costs": [
+        {
+          "stop_response_latency_ns": 64402250,
+          "withdrawal_reported_lock_wait_ns": 667,
+          "controller_delays_seconds": [
+            1.0
+          ],
+          "initial_drain_observations": [
+            {
+              "seq": 266,
+              "monotonic_ns": 482300681081541,
+              "kind": "initial_drain_result",
+              "key": "3dd0e0475aae19a8831cb6a4",
+              "thread_id": "f6d4c1b4-07b8-4ce7-a22b-2e4f42c65731",
+              "run_id": "01a099df-2b0a-7a63-9236-6e5925906ab0",
+              "invocation_id": "6b08cefa-81d5-4437-a3da-a22e3a918792",
+              "origin_invocation_id": "6b08cefa-81d5-4437-a3da-a22e3a918792",
+              "origin_key": "3dd0e0475aae19a8831cb6a4",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": false,
+              "timed_out": true,
+              "operation_ids": [
+                "c5bd6b9b-8f1c-4adb-b23a-e1c5c2d6baf4",
+                "03be1ccb-c138-4b1d-88a5-810fbfb8d883"
+              ],
+              "wait_ns": 50481625,
+              "timeout_seconds": 0.05
+            }
+          ],
+          "old_effects_after_reply": 1,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1163999875,
+            "new_completion": 921588500,
+            "independent": 2410518667
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        },
+        {
+          "stop_response_latency_ns": 66538000,
+          "withdrawal_reported_lock_wait_ns": 875,
+          "controller_delays_seconds": [
+            1.0
+          ],
+          "initial_drain_observations": [
+            {
+              "seq": 277,
+              "monotonic_ns": 482312551966750,
+              "kind": "initial_drain_result",
+              "key": "68e0769956fc03dc26d1b3dd",
+              "thread_id": "854271ae-ca0e-4bdc-bc9b-6614a23a4b70",
+              "run_id": "01a099df-596b-7e91-92a0-ee33ca447f22",
+              "invocation_id": "b185ef8e-e4d2-4c24-b9bb-fa973c963a94",
+              "origin_invocation_id": "b185ef8e-e4d2-4c24-b9bb-fa973c963a94",
+              "origin_key": "68e0769956fc03dc26d1b3dd",
+              "origin_kind": "self",
+              "initial": true,
+              "completed": false,
+              "timed_out": true,
+              "operation_ids": [
+                "3c0c1e40-d6af-4abd-93f2-4da33fe743ce",
+                "c0a04bac-b470-4d04-94f2-641c15c82cae"
+              ],
+              "wait_ns": 53821667,
+              "timeout_seconds": 0.05
+            }
+          ],
+          "old_effects_after_reply": 1,
+          "observed_native_writes": 8,
+          "actual_native_reads": 16,
+          "new_origin_worker_denials": 0,
+          "new_work_latency_ns": {
+            "new_human": 1147505375,
+            "new_completion": 961413709,
+            "independent": 2413590416
+          },
+          "independent_native_work_overlapped_initial_worker": true,
+          "final_control_state": {
+            "scope_count": 3,
+            "revoked_count": 1,
+            "identity_count": 6,
+            "origin_binding_count": 3,
+            "task_binding_count": 2
+          }
+        }
+      ]
+    }
+  ],
+  "paired_input_sha256": {
+    "17:old": "2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da",
+    "17:human": "d15a8c80e80000c3a0d4d2601badbcfe6f0e72ab59e2f25bc8f4e999025c6dc1",
+    "17:new_background": "88873e2684592fa62bad304829006780b831088f13783cfc63520e60a26baf22",
+    "17:independent": "a98e92113df47dbc11076daa75fca91b896eca8f054bc49ab11bd6af9ab4a05e",
+    "41:old": "df7c7d36a00fff66c9f6644c5d5d627598a7453b6a7f3e0551f49c58b0afa4f9",
+    "41:human": "e692ae516388b1ee233c5fc95f92243bdb851a793889a45ee6f674a0f7c26bfa",
+    "41:new_background": "1ac0e78642ce33b3e98ba12d25a991b49ad9ff35c1972a11b5d00a7433df3ac1",
+    "41:independent": "70e9a1e741388e9d3c11c849b51a28e7186c54ea20b93c8f9365a57f3cc5c562"
+  },
+  "artifact_claims": {
+    "source_summary": {
+      "invocations": 26,
+      "verified_terminals": 26,
+      "claims": 52,
+      "correct_claims": 52,
+      "incorrect_claims": 0,
+      "observation_states": {
+        "verified": 46,
+        "observed_missing": 6
+      }
+    },
+    "old_completion": {
+      "invocations": 26,
+      "verified_terminals": 26,
+      "claims": 52,
+      "correct_claims": 52,
+      "incorrect_claims": 0,
+      "observation_states": {
+        "verified": 38,
+        "observed_missing": 14
+      }
+    }
+  },
+  "independent_overlap_cells": 18,
+  "injected_delivery_counterexample": "receipt-fault-v02",
+  "all_evidence_valid": true,
+  "cells": 26
+}

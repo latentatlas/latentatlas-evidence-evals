@@ -1,0 +1,267 @@
+{
+  "built_utc": "2026-09-13T08:25:56.191173+00:00",
+  "matrix": "v02",
+  "plan_sha256": "be2f3d712b2b93f0d172642d387edaaa800eb15b22c4c82fc283de69642a0bfe",
+  "executions_sha256": "ffc394d66fc63beaf2142b30a98abdd8f1a199a799dd5e4198c40b3d22a81f00",
+  "qa_sha256": "f3c5e89229c2e296ce6178831e0bc363b3689de5ab0f31b71adfe56d233e334a",
+  "qa_id": "qa-v02",
+  "auditor_sha256": "9f8989a8deed68aae850b85f5fdad8cc71f406898cb448421395fb7db181751b",
+  "builder_sha256": "13b3a666d7a165635f33eefb6640d97fdb0f1a386c2cb9a211d49cc8e72b0676",
+  "runs": [
+    {
+      "run_id": "matrix-s17-accepted_precommit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "eb8b29bde6a8ca3924d1fb142f86df6319d7fefd0746976502579afd0eb299b6",
+        "PROCESS.json": "f678393ce6effba823297522dd739dcc9f84c1ec73d0581c101c774e6cba813d",
+        "events.jsonl": "ccfac42a41ec6cf9f92f51db79a901573220cc8cfdcea8f7269c0f44867d933e",
+        "result.json": "22680dee38792b8f3c3fe0158d097f5656943ce895b3cc3018eef62ce03ca9c3"
+      }
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "f46f4a9bf395debd850d6d626ad6cf01ad2a956be1a64fcc64f96eca35de479b",
+        "PROCESS.json": "1a1415c3e1a85046409231f1fc08c2ab63d38ea41881a66bf9e3195293a4140c",
+        "events.jsonl": "0d5e77b7e7f7d7e6442d36e2b5c8e7436947405f9541f226e0887a9b796aab8c",
+        "result.json": "a1b73c8f0a215bfc96ac00ac550705ec20dd4ae1ddbfc013c4856fb96530743a"
+      }
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "ba19f9f608bce12c47f8f49deb2fc6728d9f580f7390d405faef8c9ac46d08db",
+        "PROCESS.json": "4432b34683b9733c1c6936c0638f9cce61eb0fb8ec9622dc3cdde2c49a1a11a3",
+        "events.jsonl": "baae78f994f2a53bdafde65b589541d792085d4fd2b65e7321a6df8fb2e9661b",
+        "result.json": "ddb72f9ae7b3d3e0cb92be3dfa9a2322ba97a9ce56ffac3239e65dd3c1a5ad2f"
+      }
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "40e6a225a03265c8db2ce7b9dcbe647daa5b8fce5fd35da7ca16f2b163fb2f61",
+        "PROCESS.json": "929e4fdead0092c2442b855aa5c1b8afbc30585c9b09f00435a78396fc918dc4",
+        "events.jsonl": "7b80e3e8cb904cad4096883439995bd9d7ccc66a9d48d3fdc7f9f52f1012f5c7",
+        "result.json": "b1b94f4dcc92e6b206ed926e9ff5dcbcd2c18df42cf7bb44b3a39080a22cc15d"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "b2867b9bb3670e60dee537ab8a4372abc98d6fcc20e00c48dc1ea22734c81723",
+        "PROCESS.json": "bf46ab6ffb5a43a9a3a5fdf6e4e2e444834669607e10e8e4f4c27a8f35ccb168",
+        "events.jsonl": "2a9d193dfb5b966ef50825362668848ffe1c1decdc587dac74c1c34828b4444f",
+        "result.json": "c499ea24046b30658c59463efb5fd41d2ffb3fe18a1ae2815d97fda2ec447358"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "d3953e68b62888673f6d1105a97d06c8ac4cd71ff04514c9d7857b63d14811a9",
+        "PROCESS.json": "9386bf0a7d6cf80bbe444e596b64662fc57fc58b2e42a71c67c443d14f3833eb",
+        "events.jsonl": "c96c955a425a7ab04c4bd1746f96da0ecc2ebbef00fb3076a7559c41bc0b6574",
+        "result.json": "b7f269da1b7cf709c283e97445447b70b81b26db4a67265f510842fc924f1192"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "13498251fc846f96da57253d05b2aca78e88591300e9c4a97d299bd6906f36ab",
+        "PROCESS.json": "3893e9b032985ea188fdb3d57eaa8646f633cd8f39f2eb27f185363dae70a24d",
+        "events.jsonl": "ca28cd8fd39b2be830bb4316f37ef7fff62f0a3a4e7b1aab326b009c5468522a",
+        "result.json": "bae6ec3fa22538457c697ab1fe584d16f486ac9cc0ed7e95394fd1339f793033"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "d9b690f994de44aac4f3b79c41a74658aed57959c9919da9f1616c71958eefa9",
+        "PROCESS.json": "adf4ab4e96543e4c61c52014e30e8837bc691a9b1ae50c261a5b9527bd57a459",
+        "events.jsonl": "5c47814becf3c60410f4a2cab9112f4c8377f839bea326ff9c5f16df597d8cd0",
+        "result.json": "b10f4c549d8933a2d589099d42eeb7335338ee75b009ff73756d2a8da2380c83"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "0657524914421b2fe1b874fe04991205d2a1ee3f6fcb8955bf1cb837d8802082",
+        "PROCESS.json": "b0a8823084573f9750095e1fcdfee66ad71914d8e75c136a03cb7f5163663a70",
+        "events.jsonl": "f43e2ec721d390fa4819383346162ef7e6dcb685dc4a8e83929d11e61abfc12a",
+        "result.json": "275343181d8238072dfc6354d468491913abf94cc0b65b466524410cdc8acc37"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "82b1da8494d7b75d110dc9f784a228323ff9351f214f7ef06e86d810c499226a",
+        "PROCESS.json": "9461a7d5c79833c1364f7249259d3ebdb03f16e2c02a2c068f316e370cdf5112",
+        "events.jsonl": "945562e051ba81cd60172561ab0569786039fd5ff603b7f3383b61dbb18cfeb2",
+        "result.json": "c061b133b7048c58c3faa672834736742b508a37d223ddf7101df41579da1736"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "ef4215cfbb11cd9262d84120d919e7f2c5f871b8712835fd9b8d32dc3d179c88",
+        "PROCESS.json": "10285caaef3e323a0de04eb8a1ae22ea2982dc146d451585b5540dcf8d91fa3a",
+        "events.jsonl": "8fb1c72c10eccab7509dd96fedbdcbe9069684f928825c204fb50e57e2fbabc6",
+        "result.json": "baa090d04af5d2c9fd68572cb0812da91761ca4b0ebc256dac718dfa01b5a796"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "b3a82177ea18e1f1ecae3eeddb5ede796de955fa4bdd870fa5cb195a55c93791",
+        "PROCESS.json": "9d6505930488b5301bc3c56814abe0a065dc4a47b65e79ea65440d4d138a512a",
+        "events.jsonl": "0397c3bd9b16af87db5e44e97eb17de9174953f7a5463a431f40e89f953bc7f2",
+        "result.json": "f33552a4b21495ca9df70f25fdd47a41fdc5b2a0a0840f2ab117ec6d573c6982"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "8b98148de1aeda6dae173bafb0855b00e5fdd18a601e328ff764c5b739689f0e",
+        "PROCESS.json": "26e4abf0258745da7541fafef3827e32d0d33f32807a2e5eef94e15431448162",
+        "events.jsonl": "0e6729eb4f7c16c4ebb2d09d9766df43478cae68fcce37394883f3f8846becd6",
+        "result.json": "1d250efa1a3da6c4d1f647d6dd9100430791e02522f2be835ddc2b73cfeca268"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "db216c8d031fe48ab5475692c4ab0cb83496501f74ab21a8844f7b1428f89e72",
+        "PROCESS.json": "ab89b8072f073bd96679f1ef75ca60acf7859b59eba0aec0c3a3ca67b06fe10f",
+        "events.jsonl": "625b8b14815486ef48ea28fa8492276ae1e1fcd82a980d4d82f22a74fa44c682",
+        "result.json": "429ce94abda18dda5b07b6b31e4287214e84db9a01d20a46964024bc0f80ee75"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "9930e38edb2b4686efe5f5a905db08dea888477c7bab1a0be0a3b64736b48a24",
+        "PROCESS.json": "1afe2bcbcdbb768c8dadb0f304100556acc8bf5bf305c8d63fc2208036032532",
+        "events.jsonl": "09645dfd41bb1961efe9c7d8c91485ecd3f5ba24da6080618f60d11d61a33a1a",
+        "result.json": "65e9317bd6f9938ff9cdfca8be765d10ea0ef54da5f923a3cb6ae4c4a073dfc8"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "868fe7aba1c7bace9ba7464749847c63c642cfd9307ac47fcf313ad0b8509285",
+        "PROCESS.json": "364c5d002d43b6007feb7ede732d8b6a5e557b1f0addd01fe1b7121fc338667f",
+        "events.jsonl": "11f80df7345d7ec88aeb24702e4c01985a242126c6bb9439266d041fff58b860",
+        "result.json": "41052a7457c0b12c6d4868034e4f211d1123d9a72f2b81eab81e18c1b5d291d6"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "77796d1852785fa4d7eeb34723188f54147111aa8a71edd0761a27bfcac7d14a",
+        "PROCESS.json": "d93b3c8115d7125a70191f00f698f1d7d884e8f2d473d31907fe3cf235f89852",
+        "events.jsonl": "f98d57db37fc4dbc7b5c302d79d4a1bb7657b62c91717ffcc8799ff6a2a94609",
+        "result.json": "1b7e8ed05408ecf5541d2e95ead05d97ca16fe2781c2afcd15a243f9c966a6cd"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "c16240fa196273a04ce82f0e8bf9d5aa7029e91cf5cfaa71f9a780b8f4eb22c8",
+        "PROCESS.json": "a441089fa5cb4687df93a9e52410994cfd464c010eb06333cd66693028fbdeeb",
+        "events.jsonl": "d58ce442634e8da52c7ea17dbd3e73aef6e9ff527944361885ef6a29b7d7f807",
+        "result.json": "30c761615dfd64f68e5009d52aa2a1c171ade56b0239f9873615e6782bf717c3"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "7277cc067cd886f40d0921291982af42cafae8506ea94ec2d19cde0d7aeceb06",
+        "PROCESS.json": "3a9759f14f4f36b4b9b4b69d809f1bd98501d205db0e2447ae2d07a2be6bab2b",
+        "events.jsonl": "bf36fc1d8d5d74e472abf5c7a2f01c0c57ab9792ff92bc88e148e4efa398eafd",
+        "result.json": "20260e125d745aa9427ae5f736792b48c5b6d0853f93ef1b509af897704798f1"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "520fb117d077b6e63e6ad29c27176949e51b3e6623336029fe89b99e111d80f5",
+        "PROCESS.json": "03094076581c7888179c23735dd6985ad9a1faf5b3b10b4bd6f29ffa46c8480d",
+        "events.jsonl": "35a0dab931195ccca5dc3e44f45afbaa132c3369467d887ff76dd31816ca32f9",
+        "result.json": "6b3e944de4ce1522caa35ad24ce1dcc28948fe46c286ac62fe70e3390c3d3d37"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "a6221dd2bb642f8b77c6ddfcf81a27069f8628fbace5ed0f8200abd5c7b2766d",
+        "PROCESS.json": "916357ae52c8d893d11b1f7bafa851e130a78fde3de3ad1e98906a03ed270021",
+        "events.jsonl": "3c1ae62275fdd0a5428c6aef68ca38805677690053fc2aae5b0f2b0b1175e209",
+        "result.json": "10455c89c01088ffea4d015cbf8e84acccfbdbf9d684921048c200d1fc3f8316"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "44c1b52444d6d0dc76e66c28d6d88e42f130b1807160c4236a603fccfe0092b4",
+        "PROCESS.json": "1a73dedc6289cbbe2cc4cd93048861eb8276250da435cbcc96dbed9ddb096a34",
+        "events.jsonl": "a837441757ea29119778cba1a7e8186c954ddad6262629766d589bec37a6c308",
+        "result.json": "7b61995e27853de60471f78f1bd6d1f8bb3083f2c6550a17d9a0ea44e57726e0"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "264ee5ce0edc30a8c3d6f722232c6fbfa25539c9ee949d49c16da01ff8f075e0",
+        "PROCESS.json": "36afe425e98b5c0a4aef355a9febb5d49bb6a33862fd47ade77f9de8f517684a",
+        "events.jsonl": "aa4e76411c53522eb83380148f3ce8d7323f62221f0f796f0abce96b2715b060",
+        "result.json": "85745c6c83cb77ac1ee66b4f1ab61b8c36c9e1b65405effc72cb0fa0a7db7da4"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "c95723bde4f3c649ba319bb181e8f8b163bdb438f9e344c82530d6c370183583",
+        "PROCESS.json": "18af04182bfdadaa584c2b1d9b8e62eedf3cbc7af76e372b8edff4fd6bc489a6",
+        "events.jsonl": "ba3110a7fdd1ff560146225ac824e93f78daa60845d1999f7fe04801ded35c76",
+        "result.json": "f349bce9ae64024d0b260f9100dc5de21ffced78025a30811dd3f790166e4216"
+      }
+    },
+    {
+      "run_id": "matrix-s17-drain_timeout-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "561f2464f3781b7d3611400b89a4485a7f145d48d270534a5e88270986286e3e",
+        "PROCESS.json": "ea46b07755d40496a5ef3dca3cc70fb71183e5f4902414cc8b1a81b8065cf7f7",
+        "events.jsonl": "31bf4019446bb6dc9854631a5fb619bb96d5402e81bc3f3460752a305d9fd5ec",
+        "result.json": "f2365f12b082136bcd3c74fd7f3c7d2c20b385a2d9136cef2e8db7d460910f0c"
+      }
+    },
+    {
+      "run_id": "matrix-s41-drain_timeout-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "e790ab26b5f4b3d641da55ec683351ba703ea5a117f1179930c1cf3bcaf5bf22",
+        "PROCESS.json": "26234951739f2abc5e25e729a921942df150bae7f3fd3cd27699948e2db15b35",
+        "events.jsonl": "3429b1fedfd7420831a4ccf340f417b373dc9234f874c3edddbe9b128ad54423",
+        "result.json": "655b1a4da5dfd2c8a4321b704b037ee7b6f43d31f0fff50d17aa659a75225d69"
+      }
+    }
+  ],
+  "paired_input_sha256": {
+    "17:old": "2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da",
+    "17:human": "d15a8c80e80000c3a0d4d2601badbcfe6f0e72ab59e2f25bc8f4e999025c6dc1",
+    "17:new_background": "88873e2684592fa62bad304829006780b831088f13783cfc63520e60a26baf22",
+    "17:independent": "a98e92113df47dbc11076daa75fca91b896eca8f054bc49ab11bd6af9ab4a05e",
+    "41:old": "df7c7d36a00fff66c9f6644c5d5d627598a7453b6a7f3e0551f49c58b0afa4f9",
+    "41:human": "e692ae516388b1ee233c5fc95f92243bdb851a793889a45ee6f674a0f7c26bfa",
+    "41:new_background": "1ac0e78642ce33b3e98ba12d25a991b49ad9ff35c1972a11b5d00a7433df3ac1",
+    "41:independent": "70e9a1e741388e9d3c11c849b51a28e7186c54ea20b93c8f9365a57f3cc5c562"
+  },
+  "delivery_counterexample": {
+    "run_id": "receipt-fault-v02",
+    "input_sha256": {
+      "manifest.json": "5e258f5b4328d84a3d812074a58aa99b5588f152ff304f425719ace81db039aa",
+      "PROCESS.json": "a7cb128b4dfc1267d006e93670a6653c6c01b9de8b4dd6465eca980174df6c89",
+      "events.jsonl": "09a0acbbb6fed804367409ed7ae18d2d92e19d87b6dcd3c9acb61f2ed19a3013",
+      "result.json": "36d2c549ffd433ac674222a87d859ecc294ba50ce520626b06b6a9a40e2bc34b"
+    }
+  },
+  "report_sha256": "b4d2eb1025d6535fe21875d5608e25a1e24ad7f403a6115934cb2596c6966a55",
+  "summary_sha256": "c40b7e2e4f8b385b90e03f2afc647cd5176cf6419cb1f995e4d177b0c130100e"
+}

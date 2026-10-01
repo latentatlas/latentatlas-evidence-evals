@@ -1,0 +1,178 @@
+{
+  "created_utc": "2026-09-13T08:20:09.766970+00:00",
+  "cells": [
+    {
+      "run_id": "matrix-s17-accepted_precommit-cancel_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "cancel_summary"
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-drain_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_summary"
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_no_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_no_summary"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-cancel_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "cancel_summary"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-drain_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "scoped_summary"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_no_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "scoped_no_summary"
+    },
+    {
+      "run_id": "matrix-s17-unheld-cancel_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "cancel_summary"
+    },
+    {
+      "run_id": "matrix-s17-unheld-drain_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "scoped_summary"
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_no_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "scoped_no_summary"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_no_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_no_summary"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_summary"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-drain_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-cancel_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "cancel_summary"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_no_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "scoped_no_summary"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "scoped_summary"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-drain_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-cancel_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "cancel_summary"
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_no_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "scoped_no_summary"
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "scoped_summary"
+    },
+    {
+      "run_id": "matrix-s41-unheld-drain_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s41-unheld-cancel_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "cancel_summary"
+    },
+    {
+      "run_id": "matrix-s17-drain_timeout-drain_summary-v02",
+      "seed": 17,
+      "schedule": "drain_timeout",
+      "arm": "drain_summary"
+    },
+    {
+      "run_id": "matrix-s41-drain_timeout-drain_summary-v02",
+      "seed": 41,
+      "schedule": "drain_timeout",
+      "arm": "drain_summary"
+    }
+  ],
+  "source_sha256": {
+    "audit_study.py": "9f8989a8deed68aae850b85f5fdad8cc71f406898cb448421395fb7db181751b",
+    "test_fixture.py": "c43f11bb6b1095fad07bf562070ac9640b0b4dc044f30800d6ec6025a46665c8",
+    "reproduce.py": "eb505b31af06c542cf55dd65bd18ac3b1c61651917ff955301932cb639566fcc",
+    "run_probe.py": "1c7489c973d12843a4a517e7172d151789be9858dc5c85966f2f1e8914b2f474",
+    "qa_entry.py": "ea0a6ceca85b69f3be9b77cb44ff85d4de2f616c424d8dc39926459731a2252b",
+    "child_probe.py": "0c80b97877c699882e8cff90ec6685e1cd80702411982d0ebec87fb817393bd9",
+    "build_report.py": "13b3a666d7a165635f33eefb6640d97fdb0f1a386c2cb9a211d49cc8e72b0676",
+    "workload.py": "bcc4193ec1c2ffc03dd1c94a16dfef9c352b4e004d02138a6d6034973cbfc042",
+    "factory_support.py": "5387dbea079e57179652f6c93d9ebb3866e34863f8e7f0a43761aff39c501b82",
+    "test_runner.py": "c25589c2e982af49875d04a7da1a87055f7b50108f83bb3a9e3192a95a1ce718",
+    "test_audit.py": "287fba8d99ed40ad2c68d722c72448d972a6ee21a4d9621c428b63edc9a63ce2",
+    "verify.py": "49d32af3c82567a1b1e43337d73a0f8f9e9d0aa0b9e70ab88aef24f0f50dd8a5",
+    "compare_reproduction.py": "1c94838c8fd673358fcdcae17f4c395dfa77d3d3aeff563cff8b7a89101ff142",
+    "run_matrix.py": "f18f87d3b814a90ef5b30e800d05a44277059eaf2cde37ba4b8d7bcf372724b3"
+  },
+  "protocol_sha256": "71e8f5f0a65e4521046d3faea2cad856ce19ae7882a91c8d907305d63a1136b1"
+}

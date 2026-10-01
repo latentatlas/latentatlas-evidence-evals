@@ -1,0 +1,277 @@
+{
+  "completed_utc": "2026-09-13T08:26:34.377841+00:00",
+  "scope": "same host/base Python; fresh installed environment and relocated source, not independent operator",
+  "fresh_execution_success": true,
+  "same_paired_input_bytes": true,
+  "same_instrumentation_and_lock": true,
+  "controlled_cells": 18,
+  "unheld_cells": 8,
+  "controlled_differences": [],
+  "unheld_differences": [],
+  "all_controlled_outcomes_match": true,
+  "cells": [
+    {
+      "run_id": "matrix-s17-accepted_precommit-cancel_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "cancel_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "69e3404fea76684c526a6a3728c0074b6cb15a5a971f4d9c2bfe5ee4813d4241",
+      "fresh_audit_sha256": "5c88ef90674ab11807437d6e97feb42ab62e230c18cc05372c22766f932813d6"
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-drain_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "02b63fc5599121809382b7d2f22124204d70b130f404e5b7c0d7a13325b55d66",
+      "fresh_audit_sha256": "4c414003d0cfcc24fcaaa8e008f5431b37bf53d18e4e5797f613d8896e9ee0de"
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "13d6f1429056d2889e7fbbe2a25df3ff8c3cafca738ae341f1d6e8b6e5e4af9a",
+      "fresh_audit_sha256": "89992be318512a7a7385c49db72ea376ba58d7b1b5544511d0dfd34f4334a642"
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_no_summary-v02",
+      "seed": 17,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_no_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "157980ec6e4e2b86511d01334d742da2ff9db0d60812455df3452dcde3672c58",
+      "fresh_audit_sha256": "f933075e8068426f5d7def2af21cae9f25556d80d64764bfa5d02a128ccf4c43"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-cancel_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "cancel_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "36ec343a8a3f3cc2bfa8a7fca223b869f1de7eff469b9c72d045b0d19213331c",
+      "fresh_audit_sha256": "c36a5ef581b5416933c9eed231ca422e58b57c5585bbb49890c265f2297bcd73"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-drain_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "9b08102639b5e34751c77ce9eaabd2a1ae8705c2171460b2d8e6e9b5e2434d09",
+      "fresh_audit_sha256": "cecef86b1ffe04b0d4f40a08490741cf283bc2e548baa47b651d873d5264e1b2"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "scoped_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "bc0bc8c0dca3ad615be8ed91df3b836a08f32eae4f2047bc13fa150e67da746f",
+      "fresh_audit_sha256": "4681ff3c2a1faaa4b5cbbc182ba51b0b364a17c5cde4d3fadb22dd843c688aef"
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_no_summary-v02",
+      "seed": 17,
+      "schedule": "after_commit",
+      "arm": "scoped_no_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "6424b3180679924761d7252ea4162b54af049bc59990a9afa9ef027a7b69a693",
+      "fresh_audit_sha256": "a1eda9798a829bab2750ab97682b53c3447d30c116a1e69aaa5e6db7ebab19b7"
+    },
+    {
+      "run_id": "matrix-s17-unheld-cancel_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "cancel_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "ce258abf5d031de1c82684d7f001427703cded0a926209d8527752c65b06733c",
+      "fresh_audit_sha256": "e509c4dff60d15109d691f165448a8b059e60b83eb8ab5d28ee0bbbfd6900f9f"
+    },
+    {
+      "run_id": "matrix-s17-unheld-drain_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "348789a5e15ed391deeae31089f6a313224d288dedfd875f2463cc603f6f65d9",
+      "fresh_audit_sha256": "0fb739e3aad8e3c3f7a35017ba49cf66d8fb411ba830ac0d833421ad43b78f92"
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "scoped_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "9bd604485758d4d944fbc5483e5d1a90bca5cd7ede5214d3e63c7d16115172cb",
+      "fresh_audit_sha256": "50e3932953b6425e833c026b2d934a0fa5831a8c0b4e282accfdcb9311ad5bfa"
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_no_summary-v02",
+      "seed": 17,
+      "schedule": "unheld",
+      "arm": "scoped_no_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "4bbd299f0236bea48542df720ae1ec321c59cbcb08a1756dd08dc34e8433f72c",
+      "fresh_audit_sha256": "9cc658b63f7f927fb52580b1fe042815d5345b9af550ee1c461cd1dedf13ff3c"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_no_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_no_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "e160955ecabb88f4daccf420fd534442289cda3ceeb9daa8dc004f546db37a19",
+      "fresh_audit_sha256": "431a5a4cadea9a1f01469111ee1553ce1d144fcb6372477faa5a033abf692758"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "scoped_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "b34f6de17ac354e290b0c856345a45bef6dead8d8cd8108da007c535f66b7114",
+      "fresh_audit_sha256": "4691810bc7faa2b50fcd63092d5aec8e6833014f7f8b9db2a0a816e349930aba"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-drain_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "278ba9673036811b6c4c5d7592ad091523359310944c861794a067e4ad0feff8",
+      "fresh_audit_sha256": "bb175f49efda2d8f12da3353f47f649bd3cfdb0eb558bfa02d08c0aa3b693a54"
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-cancel_summary-v02",
+      "seed": 41,
+      "schedule": "accepted_precommit",
+      "arm": "cancel_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "bf402debf47f33ae9077d5b197942f76b936048ef5c926882577efae0f1362c7",
+      "fresh_audit_sha256": "590ec937ecc49a9be8c91d1a8e54523abb1ff61a8960f688908e4a1635cb4638"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_no_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "scoped_no_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "b6cdf2c3f2a1cb2a2f675275fed21b6915924d4a5c8c866ea60b61236ef257c9",
+      "fresh_audit_sha256": "e5be96b65615523669635434c2de50ff3cb0b2b6f33bc3d315e31bd1fbc35b58"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "scoped_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "772bb072180ccf49317e575e46761feb80b676c88c902cd1d463a3485ea1becd",
+      "fresh_audit_sha256": "2cb018e4a3156d6da7684a309ac213fb71508ef87f064259bcf43b3377d76078"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-drain_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "aeb8a3685f7318518ba31818593ca7173a173e6ac151ac5b9e8a5a5f93a230fb",
+      "fresh_audit_sha256": "fa8578074fcba7782260c14cac16058507c7b296b40a7896abcfc1d0b519c512"
+    },
+    {
+      "run_id": "matrix-s41-after_commit-cancel_summary-v02",
+      "seed": 41,
+      "schedule": "after_commit",
+      "arm": "cancel_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "7cc0a8090cadf6883ec612b733bfd4e057db89b41a1ee294e2bcd2595e7cc985",
+      "fresh_audit_sha256": "a98077a7b60afd242b6d6bcb6b057a353ec32a6dbf384e778763c53b62092560"
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_no_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "scoped_no_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "07e94fc6d8304340be30ae69ce367c72f1c275b011905a8deacafa528a4ef471",
+      "fresh_audit_sha256": "a2df220fd3d30983857884da577b34e1b35ea5db675ef3b9356f095a3754868f"
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "scoped_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "4e66fa095543b03e0a75c585f2f77ee3d38627a6398313badccf9e798fc7e5c1",
+      "fresh_audit_sha256": "4dcfb95723d52424775ccc01222cf541be78d55f337672de02f84bcf8f00b6bb"
+    },
+    {
+      "run_id": "matrix-s41-unheld-drain_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "b84f88dd58017499881ad5e54a736c900e3b9ebd0bdd474c3ea17453628bd181",
+      "fresh_audit_sha256": "d54d022a39107fa4704c9b5e17969199b0f5177befe7833f4f0b6bfca5b53732"
+    },
+    {
+      "run_id": "matrix-s41-unheld-cancel_summary-v02",
+      "seed": 41,
+      "schedule": "unheld",
+      "arm": "cancel_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "960d213e4fd53cdbb4123c93bb0328be333c7d7cf56c7d905fdc19c01ce07202",
+      "fresh_audit_sha256": "405632ccc8f8231c6e0f89fd1c5ed05d44f1f0d81cdbb53bcc94f7ed06d6f24d"
+    },
+    {
+      "run_id": "matrix-s17-drain_timeout-drain_summary-v02",
+      "seed": 17,
+      "schedule": "drain_timeout",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "1bcececdc46c9f2493b6ddd76cc8dc76b64e8a39427ed0f2e6853dbbd7391b1b",
+      "fresh_audit_sha256": "c42e431580bd3a4ef4e17f8e98274ac18f3c3e4fadd82c755ec76533770f0af6"
+    },
+    {
+      "run_id": "matrix-s41-drain_timeout-drain_summary-v02",
+      "seed": 41,
+      "schedule": "drain_timeout",
+      "arm": "drain_summary",
+      "outcome_statuses_match": true,
+      "differences": {},
+      "original_audit_sha256": "a1a4c37a6f3d92bcb93664f10fba04a1617d545681f6c0c2e4122fadde46a279",
+      "fresh_audit_sha256": "cff85a171e24017b622fe91f2bd790070c95cfbc98c1e66dbed9ab59f5bfe183"
+    }
+  ],
+  "original_summary_sha256": "c40b7e2e4f8b385b90e03f2afc647cd5176cf6419cb1f995e4d177b0c130100e",
+  "fresh_summary_sha256": "27209f92e371794855030dcb23c45245191326bea6c221f00f79d6e1f8ed393b",
+  "reproduction_sha256": "14171b24d0b2f424dacd8d6f0eb60c9827eab67d73ef47771465e7796dde6074"
+}

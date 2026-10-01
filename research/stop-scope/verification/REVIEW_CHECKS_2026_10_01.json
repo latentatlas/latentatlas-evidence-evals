@@ -1,0 +1,110 @@
+{
+  "checked_utc": "2026-10-01T13:52:05.821044+00:00",
+  "scope": "Repository export and retained-record checks; no new agent trials.",
+  "retained_evidence": {
+    "checked_utc": "2026-10-01T13:40:02.735101+00:00",
+    "export_hashes_valid": true,
+    "exported_files_verified": 461,
+    "frozen_harness_source_files_verified": 14,
+    "independent_human_validation": false,
+    "matrix_evidence_valid": 52,
+    "new_experiments_run": 0,
+    "package_files_verified": 2103,
+    "raw_evidence_reaudited": true,
+    "recomputed_counts": {
+      "canonical": {
+        "accepted_runs": 156,
+        "events": 21244,
+        "http_requests": 3724,
+        "native_effects": 204,
+        "native_workers": 220,
+        "old_origin_effects": 48,
+        "retained_files": 308,
+        "verified_readouts": 130
+      },
+      "repeat": {
+        "accepted_runs": 156,
+        "events": 21251,
+        "http_requests": 3724,
+        "native_effects": 204,
+        "native_workers": 220,
+        "old_origin_effects": 48,
+        "retained_files": 308,
+        "verified_readouts": 130
+      }
+    },
+    "recomputed_stop_outcomes": {
+      "canonical": {
+        "C_quiescent_confirmation": {
+          "na": 18,
+          "pass": 6,
+          "unknown": 2
+        },
+        "R_request_no_old_final_effect": {
+          "fail": 6,
+          "pass": 20
+        },
+        "V_withdrawal_no_old_native_start": {
+          "fail": 6,
+          "pass": 20
+        }
+      },
+      "repeat": {
+        "C_quiescent_confirmation": {
+          "na": 18,
+          "pass": 6,
+          "unknown": 2
+        },
+        "R_request_no_old_final_effect": {
+          "fail": 6,
+          "pass": 20
+        },
+        "V_withdrawal_no_old_native_start": {
+          "fail": 6,
+          "pass": 20
+        }
+      }
+    },
+    "separate_diagnostics_valid": 2,
+    "success": true,
+    "success_meaning": "Evidence consistency, not universal success of stop controls.",
+    "summary_checks": "All aggregate counts and grouped verdicts; no new experiments.",
+    "upstream_revision": "e0d9aff59925a4da55ec8d6c31fa723651c24909"
+  },
+  "frozen_qa": {
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "used_existing_same_host_environment": true,
+    "source_unchanged": true,
+    "record_unchanged": true,
+    "source_sha256": {
+      "audit_study.py": "9f8989a8deed68aae850b85f5fdad8cc71f406898cb448421395fb7db181751b",
+      "build_report.py": "13b3a666d7a165635f33eefb6640d97fdb0f1a386c2cb9a211d49cc8e72b0676",
+      "child_probe.py": "0c80b97877c699882e8cff90ec6685e1cd80702411982d0ebec87fb817393bd9",
+      "compare_reproduction.py": "1c94838c8fd673358fcdcae17f4c395dfa77d3d3aeff563cff8b7a89101ff142",
+      "factory_support.py": "5387dbea079e57179652f6c93d9ebb3866e34863f8e7f0a43761aff39c501b82",
+      "qa_entry.py": "ea0a6ceca85b69f3be9b77cb44ff85d4de2f616c424d8dc39926459731a2252b",
+      "reproduce.py": "eb505b31af06c542cf55dd65bd18ac3b1c61651917ff955301932cb639566fcc",
+      "run_matrix.py": "f18f87d3b814a90ef5b30e800d05a44277059eaf2cde37ba4b8d7bcf372724b3",
+      "run_probe.py": "1c7489c973d12843a4a517e7172d151789be9858dc5c85966f2f1e8914b2f474",
+      "test_audit.py": "287fba8d99ed40ad2c68d722c72448d972a6ee21a4d9621c428b63edc9a63ce2",
+      "test_fixture.py": "c43f11bb6b1095fad07bf562070ac9640b0b4dc044f30800d6ec6025a46665c8",
+      "test_runner.py": "c25589c2e982af49875d04a7da1a87055f7b50108f83bb3a9e3192a95a1ce718",
+      "verify.py": "49d32af3c82567a1b1e43337d73a0f8f9e9d0aa0b9e70ab88aef24f0f50dd8a5",
+      "workload.py": "bcc4193ec1c2ffc03dd1c94a16dfef9c352b4e004d02138a6d6034973cbfc042"
+    }
+  },
+  "packaging_qa": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "source_sha256": {
+      "review_bundle.py": "449e8426e3e6422c0f1f91fce792d413f3f5855f0cebc52cb3f47f5dd0890ad5",
+      "test_review_bundle.py": "3af3ce2d14a2fcb3875d096bbd5745e0a778d174bbfc7e941c4c0474cb328437"
+    }
+  },
+  "new_experiments_run": 0,
+  "fresh_install_tested_in_this_revision": false,
+  "independent_human_validation": false
+}

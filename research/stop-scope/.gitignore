@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+harness/stop_contract_study/runs/
+harness/stop_contract_study/matrices/
+harness/stop_contract_study/qa/
+harness/stop_contract_study/reports/
+harness/stop_contract_study/reproductions/
+harness/admission_probe/.venv/
