@@ -1,0 +1,3239 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-01",
+  "purpose": "Browsable export of existing sources and results; no new experiment.",
+  "supplement_release": "https://github.com/latentatlas/latentatlas-evidence-evals/releases/tag/stop-scope-supplement-v1.0.0",
+  "supplement_zip_sha256": "3c05757cd20d1e736b67ce509325316e8ffd0b5a6fcb901d701e02aa58e2ac43",
+  "submitted_pdf_sha256": "0c597c5c08970894839c3ca5ed39cfdf01a024981dcba1db10476fec9f0adcc9",
+  "upstream_revision": "e0d9aff59925a4da55ec8d6c31fa723651c24909",
+  "hash_scope": "Byte consistency and provenance links, not independent attestation.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "source_kind": "supplement-v1",
+      "source_path": "LICENSE",
+      "sha256": "2972c6bb9f1b25846e3119641580670cdec1fc4a0c50c9cfb0043a226b83413f",
+      "bytes": 1074
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "source_kind": "supplement-v1",
+      "source_path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "7dd5e66f27165b04dcf1be4f3cf4e740aa2fa24ff4fb1b7c47e18d47286d7d32",
+      "bytes": 1686
+    },
+    {
+      "path": "harness/admission_probe/factory_support.py",
+      "source_kind": "supplement-v1",
+      "source_path": "canonical/runs/matrix-s17-accepted_precommit-cancel_summary-v02/instrument/admission_factory_support.py",
+      "sha256": "ba8857a1248208d44452f5c23f6d5e48d23840343da2a5a99d89bdf5ea257ea2",
+      "bytes": 20343
+    },
+    {
+      "path": "harness/admission_probe/requirements.lock",
+      "source_kind": "supplement-v1",
+      "source_path": "canonical/runs/matrix-s17-accepted_precommit-cancel_summary-v02/instrument/requirements.lock",
+      "sha256": "ab9852482527de21b1bebb4ce32ca845768d64ed2d0920df08ae86d0658773ad",
+      "bytes": 104033
+    },
+    {
+      "path": "harness/application_probe/UPSTREAM_MANIFEST.json",
+      "source_kind": "supplement-v1",
+      "source_path": "canonical/runs/matrix-s17-accepted_precommit-cancel_summary-v02/instrument/UPSTREAM_MANIFEST.json",
+      "sha256": "fcbf974cf1317eb2fdbc02fb19a1ffb163897fb575dd6016a1969e55a318188a",
+      "bytes": 47398
+    },
+    {
+      "path": "harness/application_probe/upstream/LICENSE",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/LICENSE",
+      "sha256": "61e5e8faf0b76db76793ecd8aa0edca36a82bd8dba279d2a31972f026c132423",
+      "bytes": 1070
+    },
+    {
+      "path": "harness/application_probe/upstream/README.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/README.md",
+      "sha256": "9cf4f5cb2d75a167cd56dc03c5f464acc99bbb9fef4146a1e54b2d5febc703b9",
+      "bytes": 10685
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/agent_cost.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/agent_cost.py",
+      "sha256": "affdef93558cb9ddc8f9e32b9f93d7bb37100668c9a44f117c3bcfeb8988cbe9",
+      "bytes": 6487
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/analyzer.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/analyzer.py",
+      "sha256": "afe9c938ff00165d7212a91f261da40dbc2368022b929a19c97bdb8b8903ebe2",
+      "bytes": 7527
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/api/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/api/__init__.py",
+      "sha256": "9cc009c8227d0ed30e7129e71dc2127fa7ebbc6919faa89d1d4cbc49e6ebc0f6",
+      "bytes": 39
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/api/app.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/api/app.py",
+      "sha256": "f38989bee3fc79e2f4a2ddeaa0631aee67f4b7f2868f33608ec445f9d376c928",
+      "bytes": 2480
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/api/health.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/api/health.py",
+      "sha256": "dfd72f8f00e217bfe76d9dcc58ccf4ae96d7acc76828d6e6b3bc75c72a648f3b",
+      "bytes": 892
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/baby_sit.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/baby_sit.py",
+      "sha256": "314e3919cda76285c17a1a36ee55927bf2269beb2c11f615a36b3140860ac342",
+      "bytes": 23616
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/background_tasks.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/background_tasks.py",
+      "sha256": "f450fcd85dca482a95956d55e1fb7de599d0cb19cd93744ce93a6b9025aea276",
+      "bytes": 7549
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/bundled_skills/baby-sit/SKILL.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/bundled_skills/baby-sit/SKILL.md",
+      "sha256": "0981036192c4ec8a0311ab94c039cde42cd275dbb9abf66d2345f1d5e746c524",
+      "bytes": 5174
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/bundled_skills/environments/SKILL.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/bundled_skills/environments/SKILL.md",
+      "sha256": "cd3227088840a306bd367e191578aac30f3e8f3d384dbd76b73fa25df50301da",
+      "bytes": 5503
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/bundled_skills/html-artifacts/SKILL.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/bundled_skills/html-artifacts/SKILL.md",
+      "sha256": "81ab344c9bafad310b3835e4863f1ead42c388c864b2fd70c755f8b58d113c5d",
+      "bytes": 5514
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/bundled_skills/linear-tickets/SKILL.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/bundled_skills/linear-tickets/SKILL.md",
+      "sha256": "55d73d5e4e7c1fb2c2e50dff8c10b1d43ba4987d01882ce2ddec2945e3d3327e",
+      "bytes": 2288
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/chat.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/chat.py",
+      "sha256": "b9a16a58b5695b4bb2b29031705ee40a7d68968323fb9a680bf6f8b04bf4d089",
+      "bytes": 8744
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/completion.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/completion.py",
+      "sha256": "beb88ae8db70a2f46ab95a806583b4325afd86a377c080e842b82806b297613c",
+      "bytes": 19591
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/config.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/config.py",
+      "sha256": "d55badaf7327f2c9d8184ae89035cacd963980614faa6c393712328ec60c7a98",
+      "bytes": 18170
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/credential_scope.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/credential_scope.py",
+      "sha256": "c35dd55568bb1a13d651d001575aa240879fafd66d02bd7a5a8b6470dff0f049",
+      "bytes": 2968
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/__init__.py",
+      "sha256": "5630464f7604bedc9f10e20a2ede8e9246a2f8f330f74b3a7eab05432e35046b",
+      "bytes": 737
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/admin.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/admin.py",
+      "sha256": "1c2b65166b01742ae2b239b76648f316faa546ebc851cd2d3616b5aa7d6fe2b5",
+      "bytes": 632
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/agent_instructions.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/agent_instructions.py",
+      "sha256": "5b916e890e822281309eebb358fa6357fefa8ccaf6bf65712039c5314875d3cc",
+      "bytes": 2694
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/agent_overrides.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/agent_overrides.py",
+      "sha256": "0e176f7774a0f461c310a344ab2941632c97b2a42bcdf0231e106763b8f6ca70",
+      "bytes": 6512
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/agent_usage.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/agent_usage.py",
+      "sha256": "937ecd82daa857675cf246b6b83668c5438dd60dea4029ac179a0d5256f7e6b7",
+      "bytes": 34107
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/autofix_state.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/autofix_state.py",
+      "sha256": "c41af3489293efdf6f1d60898775e12ea862b3ee4a93111d0cc3591717d0c6b3",
+      "bytes": 1644
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/enabled_repos.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/enabled_repos.py",
+      "sha256": "9a96e14d4095d0e8519d3c4678a81d1811778199271689c8f548a782219b217f",
+      "bytes": 2016
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/environment_refresh.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/environment_refresh.py",
+      "sha256": "43ee9049105f1bdb08b3e1ea85a484e6cbf2b2d6c7d590379742353cd9dea2c4",
+      "bytes": 20415
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/environments.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/environments.py",
+      "sha256": "08c8ba42d8adaca8fad4971929a2f1035315b43d01551a5cffa30f0757de4ffa",
+      "bytes": 37887
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/feedback.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/feedback.py",
+      "sha256": "446edc66ae9f7b561890585a705fa6309bb82bbe83299e8cb171fc8b7979aa59",
+      "bytes": 4523
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/notion_oauth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/notion_oauth.py",
+      "sha256": "37401163534a24b81bacd68359836b548038b2431df35da4bba301a2d102aa33",
+      "bytes": 11818
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/oauth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/oauth.py",
+      "sha256": "94b894c507269b86d605d2a03e53f5f990522f407356600f874f1ffaa8f17145",
+      "bytes": 19520
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/oidc_auth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/oidc_auth.py",
+      "sha256": "223576958021d9a1a0362c1c9bf11a28b44a12ef5014d4101427e566c2c8dc15",
+      "bytes": 4914
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/options.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/options.py",
+      "sha256": "3558b840564bdefb9b506b1ca547425bb476bd18e50f7b25a877e4559ffe8458",
+      "bytes": 13459
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/plan_api.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/plan_api.py",
+      "sha256": "a85e3cd8837908fe155592870b02a70abd98652065632119c81a478737e997ab",
+      "bytes": 15763
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/plan_store.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/plan_store.py",
+      "sha256": "7dae5e2d2f4b4fa4b1838be62ea52b4be5e43fa67b8e1ff31f4c60ae0d669e5b",
+      "bytes": 9977
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/profiles.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/profiles.py",
+      "sha256": "0b8520408b93460850ba6983c62bf43fccf799f6de2f6734be8527071ab9a021",
+      "bytes": 14171
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/repo_access.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/repo_access.py",
+      "sha256": "c548905d410bf0f46c1822a8270160e5b22eccca7e226193a4b80f1bb300e1f5",
+      "bytes": 3596
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/repo_cache.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/repo_cache.py",
+      "sha256": "b2380a37aa1882765058fc3f9aec79f15ccf01b9707369f426209b11745d233d",
+      "bytes": 3162
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/review_api.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/review_api.py",
+      "sha256": "0016d9b450078fbe416c99537bc7fe295891c36400ad011df54ea2ee348b7354",
+      "bytes": 29002
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/review_chat_api.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/review_chat_api.py",
+      "sha256": "e259bf9463e1bff142e80e8a679e2b526b3d638a198fca7bc79e70ec6351e5a2",
+      "bytes": 20646
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/routes.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/routes.py",
+      "sha256": "59c14ec5479421c31ddeafd2610e439a29ae1d7a83901c672fef53d5f0e301e0",
+      "bytes": 88159
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/sandbox_settings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/sandbox_settings.py",
+      "sha256": "331e56acb742d10bce91181b0c5becb7077e0cb4511809fd8c966371d61268a4",
+      "bytes": 3958
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/schedules.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/schedules.py",
+      "sha256": "6a912d92b9f4e97f5db39425ac834990647b1f445267c5d4fb4e8edb9bdaf18d",
+      "bytes": 27945
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/skills.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/skills.py",
+      "sha256": "de12550eefd4d739bee132f4ace2c4d9a563174a3fd1356ea76cdd093c0ea8ae",
+      "bytes": 7401
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/team_settings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/team_settings.py",
+      "sha256": "66794813b3fa08c11e243c6741def636e62cf441124f0c26d35c961ff10e4c33",
+      "bytes": 27629
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/__init__.py",
+      "sha256": "50e8f573130604664954314049ad99c737fd0ff1370485f83eef9c1d3f085ffd",
+      "bytes": 201
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/access.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/access.py",
+      "sha256": "1aec044b3aa660f77b361a1bc1232db7175eba5b8e15c7f5a32ba3a8db67d9e9",
+      "bytes": 3016
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/api.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/api.py",
+      "sha256": "65f420e4a6bd3368b63a356c49a0f824fd1aa4022cc87d865187a87fe18297a6",
+      "bytes": 26486
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/diffs.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/diffs.py",
+      "sha256": "a45a0ec0df6cff488d4a7433f18677e92987e6b1ddaa436f5104eb78d8be7300",
+      "bytes": 10168
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/listing.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/listing.py",
+      "sha256": "df8c524ffc16e55b9c7ecda10082a4d4089872206d768ea67120937eea0dee2f",
+      "bytes": 17468
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/pins.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/pins.py",
+      "sha256": "539a924db79b5cfaeb6f039f47a658c1b0a081964c3a88e2f46ebb91c717614e",
+      "bytes": 781
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/proxy.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/proxy.py",
+      "sha256": "cdab6c40a06109f2edd843986dba7d288d53e1d4712cb48dc56dcb86a5192899",
+      "bytes": 12348
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/runs.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/runs.py",
+      "sha256": "38ebb3a5c18d5dcf69e8402674c8356e027aa0fc2825a191ff85bcd170be653f",
+      "bytes": 27490
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/threads/summary.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/threads/summary.py",
+      "sha256": "533d055c97c778f0a3d17fd9a0eb67920cd2c1f3037448fb1ec18226b683c6ee",
+      "bytes": 19596
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/ttft.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/ttft.py",
+      "sha256": "8a2732c8f8aa861f6e02a8a35b26bebc80f2549539b437bf7f59b25e0c32c762",
+      "bytes": 4183
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/user_credentials.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/user_credentials.py",
+      "sha256": "ac6b9e2583dcd5d2865486f5718ab93006b728231c532db23f953ec527046ae2",
+      "bytes": 11214
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/user_instructions.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/user_instructions.py",
+      "sha256": "990a4f9665edd292de06fe63a0ce98476595d460bfc5462936ee8f001abfaedb",
+      "bytes": 2035
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/user_mappings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/user_mappings.py",
+      "sha256": "17160348ef29192ddde53cbb946bb5ad2f95eb818b883a49cff1fe1bf9a5b4d9",
+      "bytes": 9166
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/user_mcps.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/user_mcps.py",
+      "sha256": "7ffb063936a7d8a79feee291e36796901eb765bc322994988b0208dea0340b29",
+      "bytes": 2475
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/user_preferences.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/user_preferences.py",
+      "sha256": "9d3bb2623e328810f5ba921f2c2a895c1528d60a024980528ea8cb39eae0f26a",
+      "bytes": 1870
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/voice.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/voice.py",
+      "sha256": "c0402e72ac65a3b1f592cc910c1b09f4a97b612ffd86f4c0606cfd756103febf",
+      "bytes": 1941
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/workflow_approval.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/workflow_approval.py",
+      "sha256": "0c611867704cdf83cdbc8d9b3bb531b2c79f2d6276b8d23749245e28ce33c9dc",
+      "bytes": 6975
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/workflow_approval_api.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/workflow_approval_api.py",
+      "sha256": "f605901a2e7355addf96f1de169c388b6cebbb4e8ced08b85c44481b71801f7e",
+      "bytes": 2810
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dashboard/workspace_mcps.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dashboard/workspace_mcps.py",
+      "sha256": "73cb2dd78c5c498ba12d6ca86f6cf122f351ad09befc89ded9d9c63bd34dd765",
+      "bytes": 3510
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/desktop.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/desktop.py",
+      "sha256": "b7e44057277687cc4247caf8eafe5bf1e271afb600509fae9b3bf1b132eb867c",
+      "bytes": 3659
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/desktop_branch.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/desktop_branch.py",
+      "sha256": "03d54c56ce4fa9244b6ee56cf3c09f979165b2a924c4dab3d6ca566e0321c1ff",
+      "bytes": 4549
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/dispatch.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/dispatch.py",
+      "sha256": "cdf800ac55b3abaae6bd9056375ff2409797ce7a733cacb570f83e0b46bb8df2",
+      "bytes": 12714
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/encryption.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/encryption.py",
+      "sha256": "c323a1064127a1b511aee107c37e060faef75599665dd9af1e452e5f618430be",
+      "bytes": 2156
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/app.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/app.py",
+      "sha256": "d64f8b58b17c6202a19ea93ee87d7103d7f97c73ff9df9641dd9794913310127",
+      "bytes": 8797
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/checks.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/checks.py",
+      "sha256": "a9f34f59912c66306d4ec1b20bc5e071786df365bfa17127b44ad357f19a66ee",
+      "bytes": 5628
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/ci.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/ci.py",
+      "sha256": "f0f23b39bcf9f8f9d73e9b8612e4b17a8e66186dc305b27182626f65940b0e8d",
+      "bytes": 11178
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/comments.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/comments.py",
+      "sha256": "7bbad6958bbdcb8e9d9d487fc17b87f16f97cdf66ce12636b9512dbadc94135e",
+      "bytes": 21569
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/feedback.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/feedback.py",
+      "sha256": "fcfd80261c8b9f2e014baafd18a3230d98a556ee7cfbda7eeb34eb5985a9427a",
+      "bytes": 7603
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/http.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/http.py",
+      "sha256": "3e62db7daff8d07ce486455b4caedda70a529f3d18df6e3837c6ce7ad00c1449",
+      "bytes": 7191
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/org_membership.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/org_membership.py",
+      "sha256": "83f449dad909a15a58a985f07f705f2348e8b03589d38f70e653124e24c7298a",
+      "bytes": 2763
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/proxy.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/proxy.py",
+      "sha256": "80ac7743dc76022ec125c1bffcaab45854b31627ccc3d8839c8193be527e0991",
+      "bytes": 7296
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/pull_request_checks.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/pull_request_checks.py",
+      "sha256": "4a229c647e6e3bad7384317ba9394e77e14f9f66c3694ebdc632ad574a513251",
+      "bytes": 6765
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/pull_request_context.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/pull_request_context.py",
+      "sha256": "4297099ae02c9965a2c4c4bad63f7e917ce1cce2a88738a1ae4a04f309778490",
+      "bytes": 19095
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/pull_request_diff.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/pull_request_diff.py",
+      "sha256": "1a822d225d1a635a35aa6e124fce4c1d348c44f3fa4444642a2ba84e8e0a1705",
+      "bytes": 7086
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/pull_request_status.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/pull_request_status.py",
+      "sha256": "b98b9affc0491c8348e522a24257a90205654759562d5525b2b7328ba0fe9caf",
+      "bytes": 13259
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/routes.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/routes.py",
+      "sha256": "0ee9acd52df99024a533a0404c607fce91f1cb75b32720b8958c0fc4b17ba6c8",
+      "bytes": 9303
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/thread_token.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/thread_token.py",
+      "sha256": "a4630b19ee79ff74af001d67c02ee3c063676939bd86d01fe56eb37c00f8b48f",
+      "bytes": 5629
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/token.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/token.py",
+      "sha256": "5a39e11933f5992b2e8cffeb996716b1ab5ea837448552d582ec23fb3d657aaa",
+      "bytes": 18226
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/token_auth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/token_auth.py",
+      "sha256": "4d1abdb2decaeba85a84764b05a442c136e56b455c170b6019c36723139a81d7",
+      "bytes": 4270
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/tools/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/tools/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/tools/read_repo_file.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/tools/read_repo_file.py",
+      "sha256": "d9c426e411a5abd3f2dc003f6835969f631af33b1041d2274cae1ee128411daa",
+      "bytes": 3060
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/tools/search_repo_code.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/tools/search_repo_code.py",
+      "sha256": "2d712360de09d4d2c30de909a9b5c70151e630352a1d3a0d3097af1d04bb20b3",
+      "bytes": 2434
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/github/webhook.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/github/webhook.py",
+      "sha256": "33acc08a747499134144f43c4fe525c4786d239a1aab23610eba0bbfd77dc588",
+      "bytes": 48397
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/graphs/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/graphs/__init__.py",
+      "sha256": "8eea9df4f6d7b38ca0e39ccc27b04700e3d08dbeec8046d613d22706d19985fa",
+      "bytes": 24
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/graphs/agent.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/graphs/agent.py",
+      "sha256": "22d489eba9206277c952b0725a7934230b3b4ac21229eed750a3d799b592a40d",
+      "bytes": 90
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/graphs/analyzer.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/graphs/analyzer.py",
+      "sha256": "8cbcd5e763c6e2a1e12f01c62bd02ea99b7a35ecaabe3ea9cf8e81c25b7b5298",
+      "bytes": 104
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/graphs/chat.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/graphs/chat.py",
+      "sha256": "0b08a3395a0c40f3f030bb02f2e9a0b69066a551e8f14e7264873a410df2af09",
+      "bytes": 108
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/graphs/reviewer.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/graphs/reviewer.py",
+      "sha256": "67014945fb2e6c05f4156c09bbb9279a00051ee636bee012d39cd9437ae12a73",
+      "bytes": 128
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/graphs/scheduler.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/graphs/scheduler.py",
+      "sha256": "38f828039e6212641cf3ba7e13473711fbc24ea3c1d8e63de8f6722df7ec3ef2",
+      "bytes": 71
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/input_messages.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/input_messages.py",
+      "sha256": "c6f7bf6d2b043573fb72386f7c68770d309b9841d952f4ce777cbf00f88dd342",
+      "bytes": 14562
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/invocation.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/invocation.py",
+      "sha256": "3d8c9fe07bad56102902b43e07dbb58f43a09b9f3cc7af7d3fd07b7905ec994d",
+      "bytes": 1786
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/linear/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/linear/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/linear/comments.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/linear/comments.py",
+      "sha256": "bbd8ef8aa5eb7568581b147bd7790c53051388c6ba60729028958013bb3f8a4b",
+      "bytes": 1175
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/linear/notifications.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/linear/notifications.py",
+      "sha256": "422c07e64d69c0ac9e10c4f32e7714025b205b58f51ed42d2145071db4d85e5a",
+      "bytes": 1714
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/linear/routes.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/linear/routes.py",
+      "sha256": "cdb644023a498f4ee56239514a86456f0a9dfe81882139e98a616edbfec039cb",
+      "bytes": 6014
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/linear/webhook.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/linear/webhook.py",
+      "sha256": "5709c1254941e8d6e2550f5dc7c83c33ec3135dd588f16161692f7dcf40774f5",
+      "bytes": 12366
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/local_auth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/local_auth.py",
+      "sha256": "7ad89d57f7a0b26e317383cdcb2eec6cd6ac1c5e10f76121d93f76decf2875b6",
+      "bytes": 556
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/mcp/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/mcp/__init__.py",
+      "sha256": "9fb0918e7cef2760b36ebef5ea4c75eb99d9f6c28696769f01b63a57333577cf",
+      "bytes": 516
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/mcp/models.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/mcp/models.py",
+      "sha256": "1f5253b9b34e402f0670b7921329b1f216afe20ca815228cd27d86c5804ce6af",
+      "bytes": 7282
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/mcp/oauth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/mcp/oauth.py",
+      "sha256": "46920909ac54b72fe43caa96a1946165a010bb8ce0a16277900eb8cc12a3ef78",
+      "bytes": 4261
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/mcp/runtime.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/mcp/runtime.py",
+      "sha256": "fd9d44fcb142b8c9a9961a194a256ea461625cb7600ba09686f735bb0c38b72f",
+      "bytes": 9593
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/mcp/transport.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/mcp/transport.py",
+      "sha256": "89d8985795e879fe1e1a65ad2524068507ccc07aa716662f0e6f7e0538075163",
+      "bytes": 2521
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/AGENTS.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/AGENTS.md",
+      "sha256": "ee645fdb7397e5f6602a332ec8ddb41bbee58d95d91ecfd5efa5932202752fde",
+      "bytes": 148
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/__init__.py",
+      "sha256": "a9cb28bad019871fa704a6118df314ec184107d9fb3479ba7bcf3770a5d6bb31",
+      "bytes": 5694
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/check_message_queue.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/check_message_queue.py",
+      "sha256": "afbc96b959a3ce4da5cec15f22beb435f46bee234a2bc8d9ac22b4aff7f68511",
+      "bytes": 12163
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/conversation_offloading.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/conversation_offloading.py",
+      "sha256": "707728604be2cc28280166efd8dfad593262b360e7f000f05555b012e2fbd8ef",
+      "bytes": 4521
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/dynamic_tools.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/dynamic_tools.py",
+      "sha256": "88163aa010cc73294dd0421db45c18526b6b21c85fc7b72eae773a0361db145c",
+      "bytes": 9445
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/exclude_tools.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/exclude_tools.py",
+      "sha256": "63e7f549b692c8b7ee6e8706569053c465f02bc1bffd3672175e8a11e506e478",
+      "bytes": 1740
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/message_content.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/message_content.py",
+      "sha256": "8cb483f2cb57b705e43a8ffc196ec3f06e052cd4086477693dee13648f87acc1",
+      "bytes": 487
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/model_call_timeout.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/model_call_timeout.py",
+      "sha256": "5580163c9d0403e92bb3c1f0ceda32e13c63175ad6fa8de6c2471b2c3ca07f10",
+      "bytes": 2353
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/model_errors.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/model_errors.py",
+      "sha256": "ea1f0b984bd22e5bbee397d4d19ebe9024125724cc070845753eda00919d6252",
+      "bytes": 3396
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/model_fallback.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/model_fallback.py",
+      "sha256": "e474c79223c1e7a3f582c037bd39fb52fe89737e7c967ce06a8d111c50c9b2a7",
+      "bytes": 10512
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/model_selection.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/model_selection.py",
+      "sha256": "29750c78eee205ac8383c984a60fff9027389b52061705051bd9aef208949232",
+      "bytes": 4159
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/notify_step_limit.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/notify_step_limit.py",
+      "sha256": "45ffac71992f9ca9ae737d894645bc207ac68f455b14491fbc247ed93b394460",
+      "bytes": 2611
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/plan_mode.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/plan_mode.py",
+      "sha256": "069394e75a3e21d630862383575e36028a7d7ffaebd16bbe2dbb41992178fb1a",
+      "bytes": 3049
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/pr_creation_guard.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/pr_creation_guard.py",
+      "sha256": "54d06edb83642d0be75daa0e4538a7ea095eec1a9ec5a0fc7731ab414e2b9723",
+      "bytes": 9695
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/prepare_run.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/prepare_run.py",
+      "sha256": "722678a568f0c63b490a98f8b2a87572a84133c64f4efd9b503294b00efae8d2",
+      "bytes": 3864
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/record_run_usage.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/record_run_usage.py",
+      "sha256": "42d2f888c30f8a6a1b6c00e24ba5042ac82d5f22b980ba923ec85617e88082c3",
+      "bytes": 1735
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/refresh_github_proxy.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/refresh_github_proxy.py",
+      "sha256": "4fa72b1092b71cd63b68feea9042318eb67e095503695c166f0119d856f8249c",
+      "bytes": 1488
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/repair_orphaned_tool_calls.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/repair_orphaned_tool_calls.py",
+      "sha256": "2b5409a9978c08860eaae1b8087dcbddb6f045c408fd0c72e4d5a0e975251766",
+      "bytes": 4001
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/sandbox_circuit_breaker.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/sandbox_circuit_breaker.py",
+      "sha256": "926e7c502c425f07057ea501c373355d0e8d614e7af0eb29e16508dbcd0ae4a1",
+      "bytes": 5322
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/sanitize_fireworks_messages.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/sanitize_fireworks_messages.py",
+      "sha256": "ddce0c5059baedb7c44d88dd8da57391fbc4a4d93f1d4372556dd2a3c0960482",
+      "bytes": 2765
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/sanitize_openai_responses.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/sanitize_openai_responses.py",
+      "sha256": "e7a26bb70728347c9871532abc4a4fbc1cee6aca8f69b80bb412a259e19379ae",
+      "bytes": 2204
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/sanitize_thinking_blocks.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/sanitize_thinking_blocks.py",
+      "sha256": "67a44a296add26fa033ed742d557011a8f3bffda1306196cda4ab2340bc976d0",
+      "bytes": 1820
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/sanitize_tool_inputs.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/sanitize_tool_inputs.py",
+      "sha256": "8387c0284628a51bbcac8e0eeda95959f4940cc96e97c2d3a10e93159cf8906f",
+      "bytes": 3131
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/settle_review_check.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/settle_review_check.py",
+      "sha256": "ffaf78afc98fa81de431cfd79f1fcb45024e9467cceafc6333fb0c842fd71609",
+      "bytes": 3140
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/stable_tool_order.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/stable_tool_order.py",
+      "sha256": "8f86bd8832d31ae8a9e31f122203939c8b2eb425e35e8a8ca6ff2d31749e0f17",
+      "bytes": 2686
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/subdir_agents.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/subdir_agents.py",
+      "sha256": "03484f671f214dee84905b15f9c117706758be00972e7cf2734481a48baf1b13",
+      "bytes": 6766
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/task_retry.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/task_retry.py",
+      "sha256": "e1769cdb82e6eb6b9c2c18bd2cafa5c208a27169be27b06285bccaae9cc3421e",
+      "bytes": 2723
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/timeout_wrapup.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/timeout_wrapup.py",
+      "sha256": "ef9e4d6e7d0362d512dc5774e3f2144f57b2bc8644c142ac2470c3ef567e26e1",
+      "bytes": 2487
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/tool_error_handler.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/tool_error_handler.py",
+      "sha256": "dbbb1a9aa84733e9f76be8ad70a5246e4a179157dcb50ee6d1c4f16a8bfce5e7",
+      "bytes": 6979
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/trace.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/trace.py",
+      "sha256": "a4f0c8154b97df98b51cd4c814b515eed3a487f1704de0bc8fa97ba656549998",
+      "bytes": 565
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/workflow_push_guard.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/workflow_push_guard.py",
+      "sha256": "c5a607d40d86a114d18b83a54844e7396b95d47ef2eeac90730b62138c750e73",
+      "bytes": 21859
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/middleware/workspace_skills.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/middleware/workspace_skills.py",
+      "sha256": "e6f37356dc450201f7fab73cd64fa5546557db6d1565db18cca3a5a2e26fb2de",
+      "bytes": 1860
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/prompt.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/prompt.py",
+      "sha256": "34629b27185f4177beecde4063b3924d5331344bc23b4f3cb93511d7e34d5d92",
+      "bytes": 10336
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/prompts.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/prompts.py",
+      "sha256": "fc861e9f0c4e7f700f2d4e8d70e63609b88b2c800c0aaa5f352c6b5c43d0733e",
+      "bytes": 1640
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/reconcile.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/reconcile.py",
+      "sha256": "fff099d961f105a94c64af72ee729cc4ee50f37a3dad4b77fd172dd20ffb5fe6",
+      "bytes": 4245
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/__init__.py",
+      "sha256": "8eea9df4f6d7b38ca0e39ccc27b04700e3d08dbeec8046d613d22706d19985fa",
+      "bytes": 24
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/default_prompt.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/default_prompt.md",
+      "sha256": "18f8ab8144885a9abab569dd77f02a74ae7c0151c1c1b73a1bfb6cd00a3e089e",
+      "bytes": 1069
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/analyzer/main.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/analyzer/main.md",
+      "sha256": "f81bbdaaa1288582043d03aa8a0b5443d353e8fe5c441df39662bf81b2fd3657",
+      "bytes": 808
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/chat/main.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/chat/main.md",
+      "sha256": "0048e0945878d301c38ea285c243675c389cd44f64d89061c502b08278ed7b51",
+      "bytes": 1445
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/desktop-branch.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/desktop-branch.md",
+      "sha256": "f8ecab0850f7e70475e1a684d3b9de5203b77759a8180b3d2dd7e239b73aa250",
+      "bytes": 371
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/diff-groups.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/diff-groups.md",
+      "sha256": "9a7896e10b2aaafdba7aa3365695f0ac3ecbd522778cf3d3c3b278c091565d90",
+      "bytes": 1188
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/model-selection.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/model-selection.md",
+      "sha256": "bcf9245cbf10f1651d8fd8580a7bbd1ecd38ca9d713d1ca205675ac368d40e59",
+      "bytes": 1171
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/eval.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/eval.md",
+      "sha256": "3ba2fd2403f6533c5f12d4f03921e1b15708c93666a8b821f262f2f42b723095",
+      "bytes": 248
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/finding-reply-context.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/finding-reply-context.md",
+      "sha256": "06c612d5e6e18172a00f2a4c47b62c404b7ba1a9fe16b56b7dd753e6851e6607",
+      "bytes": 597
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/first-review-context.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/first-review-context.md",
+      "sha256": "3716db440d392c6fbaaf9f0be45fbde05a24dd41cf06dd302de507f1b0025b47",
+      "bytes": 332
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/historical-guidance.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/historical-guidance.md",
+      "sha256": "cee23603b3e1b39919bf3b2951345625db1fe32ec2548f9be2e604a711f82ee8",
+      "bytes": 423
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/main.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/main.md",
+      "sha256": "736db4ce4ebde9c45b783320bcf1d632cd98e511c8a8ab5cd11096f2aa892657",
+      "bytes": 7368
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/pr-overview.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/pr-overview.md",
+      "sha256": "9044b100e89c90632cdaafe9da349b5fb833a0588218a30c6288e39281b939a7",
+      "bytes": 375
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/queued-finding-reply.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/queued-finding-reply.md",
+      "sha256": "cb3dda70b2762134065ccd02594bbcac9ae6eec769657a7dfd34a033096a9210",
+      "bytes": 415
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/repo-not-ready.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/repo-not-ready.md",
+      "sha256": "9983b38eb1ce9854d2aa27d7023fe8148c5e9f82723c024d49123403546c27e8",
+      "bytes": 706
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/repo-ready.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/repo-ready.md",
+      "sha256": "65d462cd9ea0e3217fde1857180a58fb6dbcfce848c369cf7264ec76d46d8628",
+      "bytes": 123
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/rereview-context.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/rereview-context.md",
+      "sha256": "805d5f15253c64146a93386fe1beb575e168954d428438a5c72da3ee3379e3c4",
+      "bytes": 545
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/style-themes.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/style-themes.md",
+      "sha256": "14dd8adb96ab84491607dc718892ac592f6ed0fd422d938a860b43c3a80ea091",
+      "bytes": 799
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/subagent-description.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/subagent-description.md",
+      "sha256": "68158225eb8abf1508675afb43286f6f7e4b58db43bd31117951522395bccf56",
+      "bytes": 131
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/reviewer/subagent.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/reviewer/subagent.md",
+      "sha256": "73716085f3adc98342c50b8ea65261aea6f697ce16a81c8aa5a6226a5f1d95d6",
+      "bytes": 374
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/autofix-event.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/autofix-event.md",
+      "sha256": "ff63d3f0f96fe17aa45e6e784e52c94ef8bc258365a22804d1b997f4a76ac3ee",
+      "bytes": 286
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/baby-sit-failure.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/baby-sit-failure.md",
+      "sha256": "03a9cd257846474ae620e9835dcc1d9cbb654c5004f7f99caf06d89bfbccf7a7",
+      "bytes": 886
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/background-task-completion.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/background-task-completion.md",
+      "sha256": "c956085758f0931fdd43d29c9874dd9873af19d2abeada56b3a1c4fbb7aaa22c",
+      "bytes": 223
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/github-issue.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/github-issue.md",
+      "sha256": "93693ab563f1ef11a72d3cd4fb549065bf7b14914cd8cfbf7ea86a66a8284c1b",
+      "bytes": 658
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/github-pr-mention.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/github-pr-mention.md",
+      "sha256": "5bdee41627ed58e0b9e0c190cfe6da83a0cf90c33e97d262b29adaab95a38992",
+      "bytes": 527
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/github-pr-review.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/github-pr-review.md",
+      "sha256": "2ca29a39daaf425b20916b20a56080f2b8932baec79e3731cc1a583aeedfb454",
+      "bytes": 139
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/linear-issue.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/linear-issue.md",
+      "sha256": "c28d7a633dbf79311e145a0cc153bab97b921cfb4ea2df2003998906db4366a8",
+      "bytes": 720
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/scheduled-notify-on-action.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/scheduled-notify-on-action.md",
+      "sha256": "6c6935f288bf3c744443e609d2d3a6177e5b5628b8102be501e5992b360d0938",
+      "bytes": 315
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/scheduled-slack-thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/scheduled-slack-thread.md",
+      "sha256": "96ac67d07d8545d0db5a3d33f671811758b02ee5cbc7e6e86064fbbfee183989",
+      "bytes": 164
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/slack-breakout.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/slack-breakout.md",
+      "sha256": "6f45f31bf33cd442770673ef86ebe3600cb5a3c8b9371954ccf1f6e1a1cc2ffb",
+      "bytes": 366
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/slack-code-channel.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/slack-code-channel.md",
+      "sha256": "92cebffd08285d87c1895b40f559199f85fb9fe0334845d7da737df577ae7463",
+      "bytes": 320
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/slack-mentioned.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/slack-mentioned.md",
+      "sha256": "b64f8a5b7b9e1c86c67178c3cefd5e2d18a9520c8b06c6cd112bf0773c7bb771",
+      "bytes": 29
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/slack-message-update.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/slack-message-update.md",
+      "sha256": "eabe1dbd8b38beb1abb24fef5219951d61d57eb4491f4622c9e3d400e901a2f6",
+      "bytes": 230
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/slack-stop-summary.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/slack-stop-summary.md",
+      "sha256": "fdf142c332820e7bcc800a41867a468532147129a03371599e7bbcacb2d4e1c6",
+      "bytes": 686
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/slack-untagged-reply.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/slack-untagged-reply.md",
+      "sha256": "e1194a08073aadcaa08feee59661c50f6aaacc9c15a1d16068e4c250cc924e3a",
+      "bytes": 761
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/runs/thread-wakeup.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/runs/thread-wakeup.md",
+      "sha256": "94edab1185407e44a0e657a8da5daedf680c2f95abf82e8e2174e17a4ba13dc4",
+      "bytes": 182
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/admin-environment.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/admin-environment.md",
+      "sha256": "dd9ce3c1ba90e8c4436ec3bcdfb722525819407fe01573c3025114d0bf0fd647",
+      "bytes": 5790
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/collaboration.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/collaboration.md",
+      "sha256": "a3f343eeacc1c7b371e851fe3003879828b8dc3c17bd16e11798ef725462b558",
+      "bytes": 1124
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/commit-pr-desktop.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/commit-pr-desktop.md",
+      "sha256": "686edc18bab2c888f2d7da4a16ab1bcf5aff78dbaa8892bd10b19dda4e6f9465",
+      "bytes": 477
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/commit-pr.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/commit-pr.md",
+      "sha256": "560a9c3edc135bd0577cad01fdf0a43251b797c31c3dd4561b542f95272d97da",
+      "bytes": 4824
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/continued-from-collaborative.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/continued-from-collaborative.md",
+      "sha256": "9296cee6d67f6781da8a87b056aa3b606986d19a42133030f62b756efe309576",
+      "bytes": 476
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/dashboard-context.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/dashboard-context.md",
+      "sha256": "869db57133771763ed08af5fb8b6c758fc875b9da850916a8f6339cfd606d2bb",
+      "bytes": 145
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/dependencies.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/dependencies.md",
+      "sha256": "5d3b4b1d95087be5d0a6756b1daea98edb18003bb6a1cce1db293f62b9d18e2b",
+      "bytes": 1830
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/environment-instructions.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/environment-instructions.md",
+      "sha256": "1ba920f24900685a9fb358192a0f38c6d8821f729de8107cbf44c587a7c36b14",
+      "bytes": 271
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/external-untrusted-comments.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/external-untrusted-comments.md",
+      "sha256": "704f5b854b28eae91cff00d737accf1c101bad89e37a5b017e83856ea4a4b120",
+      "bytes": 364
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/general-purpose-subagent-suffix.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/general-purpose-subagent-suffix.md",
+      "sha256": "dec2778e791a0011ac4292863b023da3b177ab1ba53711ab0c481c7af9935276",
+      "bytes": 81
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/main.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/main.md",
+      "sha256": "4698e31bfa7223dabe297d69b1a91fa45d97c20a7d757b5beb1790534fe69ce0",
+      "bytes": 440
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/plan-mode-active.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/plan-mode-active.md",
+      "sha256": "2d054d182ed2a93342c75eada46bff2db60a37c9b39531553e1465e1fa3db06b",
+      "bytes": 2803
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/plan-mode-entry.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/plan-mode-entry.md",
+      "sha256": "d3423109ca15c73f5e0836cb60e995232df2eaf57745520785668ae0e0f8bd0e",
+      "bytes": 150
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/plan-mode-guidance.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/plan-mode-guidance.md",
+      "sha256": "01cf150f43a4786a34c0e2749586191ef2634d41cc720a241153f0647f0ce986",
+      "bytes": 541
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/repo-instructions.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/repo-instructions.md",
+      "sha256": "edf71f598d8db71d2e352595346668dc95ef6f7077ae60b5385f3b075b54842d",
+      "bytes": 339
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/repository-scope.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/repository-scope.md",
+      "sha256": "20378d2912f3d46a26f4692b8bc501e7a9f90db5151bb6d155b124a2df353a29",
+      "bytes": 793
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/repository-setup.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/repository-setup.md",
+      "sha256": "155e97aa9334cc252f8c823166a8f5badd3c61eecfa27e6acfc9ad2842be8d6a",
+      "bytes": 1880
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/sandbox-file-downloads.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/sandbox-file-downloads.md",
+      "sha256": "4265f8e6289737d25c8711b344ad36fcf0711e1e37d1df4bacfafac9471d3821",
+      "bytes": 1061
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/self-awareness.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/self-awareness.md",
+      "sha256": "e552f16ad0234cf51db4c133557304b8efd5e71364f31c3d19c1c603813458d5",
+      "bytes": 457
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/shared-base.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/shared-base.md",
+      "sha256": "50eaf13df58162281db258f6a51741a78087d8dd1bfae001910dd71cdbb34062",
+      "bytes": 10862
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-background-task.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-background-task.md",
+      "sha256": "a56335b5e2afc699f60612a9547e6932aa0b25af6e81cc67ad41232a9f83cf7b",
+      "bytes": 309
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-context.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-context.md",
+      "sha256": "5122b22586031bd04f3319351089f3dc776db4a39cec07f723bfc12802810c78",
+      "bytes": 311
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-dashboard.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-dashboard.md",
+      "sha256": "adb03a5b58ff32edb6936e31e83cdf7f4fd5e124afacc62e49b5503bc6816a08",
+      "bytes": 949
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-generic.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-generic.md",
+      "sha256": "4b5a6ed97b50f07c8d8bd7e6281e9f000604c9b3f4c106ef353693b7c14faac3",
+      "bytes": 229
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-github.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-github.md",
+      "sha256": "b9dbe868cd4e3015801acf90bf6257fd5a5cb44561aa7faaad29447bbd573d5d",
+      "bytes": 300
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-linear.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-linear.md",
+      "sha256": "4b88caa3cbc9e517ee9fc313b5fcacc26140fd8616b20f0f41915df2f3745ba3",
+      "bytes": 369
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-schedule-slack.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-schedule-slack.md",
+      "sha256": "f9fbd0343badf80d2e84cd00b669a3796081e6fda8590874bbd2a6e5ed0faf38",
+      "bytes": 328
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-schedule.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-schedule.md",
+      "sha256": "a24f2f770e5d3b276f9dcc250f94b02edf220179b36a33b9097db778c47d1f8e",
+      "bytes": 221
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/source-slack.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/source-slack.md",
+      "sha256": "85eaced8471672c899b9632317f70c8ed321d1e87a685ed6969358f907b246d8",
+      "bytes": 2248
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/task-execution.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/task-execution.md",
+      "sha256": "64c3b3ac3a730a605e7f34fb3fb03022193f2af0940056fb846b26b28819da81",
+      "bytes": 1541
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/user-instructions.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/user-instructions.md",
+      "sha256": "3d736ac0c44ee32835a6bde4a9c09534424c5e3efc574609741a3ec63a06b6fe",
+      "bytes": 385
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/working-environment-desktop.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/working-environment-desktop.md",
+      "sha256": "b7672a5dd01eec17f45cb21ffbeba8da942cf73f459bd33eac0bf0a10d3e486d",
+      "bytes": 229
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/system/working-environment.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/system/working-environment.md",
+      "sha256": "d298b5109b352f467061c9c7243d11e12ce79ccd2bc79e7d5007603c286b92f3",
+      "bytes": 434
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/thread-title.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/thread-title.md",
+      "sha256": "f08e61fd48dd08d871896d93339c167cefcb3095ae4786e1a79dc6f6108b2a70",
+      "bytes": 798
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/timeout-wrapup.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/timeout-wrapup.md",
+      "sha256": "f1a2b1922a63b9bda8fce46b3007855cd9c999855a09902eec9e3174e7cfb61e",
+      "bytes": 242
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/add_finding.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/add_finding.md",
+      "sha256": "aa9907bc6c0bf6d7085c2bb07f0b6730a531a7ee4748caf0411e8275e5813acd",
+      "bytes": 3145
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/approve_plan.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/approve_plan.md",
+      "sha256": "e826b98f2d6bd1b26faafc4ff157386b1a108f15c041eb7b41a4e482fc31d01e",
+      "bytes": 163
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/background_execute.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/background_execute.md",
+      "sha256": "7630a5b1d51ba12d99f9db866dea68df452c96983b960023b99e23d2e7068e45",
+      "bytes": 352
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/background_task.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/background_task.md",
+      "sha256": "6ef355a0a74fc722e3187f3a7ca0a1cbc371710e436fd63c2e3c7efe8a388e5d",
+      "bytes": 505
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/create_automation.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/create_automation.md",
+      "sha256": "6e3ecbfcfd38a7565d832f37fb104a437a3d4bff4f4131e07625bcfb17ce1bc7",
+      "bytes": 569
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/create_sandbox_file_download_url.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/create_sandbox_file_download_url.md",
+      "sha256": "f3a5ed54759d70bebca70d9c60aeb9c27c1b8f46343704bbc45c2985b2d47a2d",
+      "bytes": 547
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/create_sandbox_service_url.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/create_sandbox_service_url.md",
+      "sha256": "92b4e2a54c59d65a91eeb7bbf00163e1fec6fa7714e3cf831d49851a0a6452ad",
+      "bytes": 950
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/delete_automation.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/delete_automation.md",
+      "sha256": "2dd162fe3e433e66ff6403bd3d4c316de051d1022312862a996c96258aa32bb1",
+      "bytes": 67
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/delete_environment.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/delete_environment.md",
+      "sha256": "f3b6f7c39dc04529489bd289866454f6e5770fa54628185982f30e4651964071",
+      "bytes": 302
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/delete_organization_skill.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/delete_organization_skill.md",
+      "sha256": "fed0cf205c343cdd4b19d6a9b2d5fc8e0a40c37da110170239c5a7b2cdfa55f1",
+      "bytes": 229
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/delete_user_skill.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/delete_user_skill.md",
+      "sha256": "579730ebce1b8abc0aa817c87e66e4274a920d562e3af3727fef1df70fd90336",
+      "bytes": 77
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/enter_plan_mode.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/enter_plan_mode.md",
+      "sha256": "ca2e7b833f610a1247d1e50dde4a193db84a7616045bcf998bad56fd5bc1e85d",
+      "bytes": 789
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/fetch_review_diff.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/fetch_review_diff.md",
+      "sha256": "ac5043da6803cfa5717ba5718759c36ee305324ceb664dee7479476faabe4bd9",
+      "bytes": 69
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/fetch_url.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/fetch_url.md",
+      "sha256": "45b283eda6407303b01f8be7d134d39ce2591ed3f6e55d17dbab2482484d0209",
+      "bytes": 978
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/get_thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/get_thread.md",
+      "sha256": "cba9f367a9d3a74f08e1de3ba25f07edfd8c34ca74482dee7803cd0265bd6779",
+      "bytes": 82
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/http_request.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/http_request.md",
+      "sha256": "6dc61b4a7b7fbb01e5caefc6459ba81111dd736087b3fe058b6520f1ac9a8cb0",
+      "bytes": 773
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/list_automations.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/list_automations.md",
+      "sha256": "61ad5613b54a30edf53a060ba02d11823ded194f8729125934e485f680849383",
+      "bytes": 59
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/list_environments.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/list_environments.md",
+      "sha256": "b96f95be422460e5d2cf5e39b368fe7f0b4d4eff4308007bbfb5d0d8539843c9",
+      "bytes": 175
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/list_findings.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/list_findings.md",
+      "sha256": "260bb8a3d6dc8228f95e19e6faf91f9495d76801198ef173a98ab69b452eecd4",
+      "bytes": 396
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/list_review_findings.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/list_review_findings.md",
+      "sha256": "32cb3d1fdb634043badb3202f799291dafe49dc842750ec9dd99b85d67268ca3",
+      "bytes": 450
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/list_threads.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/list_threads.md",
+      "sha256": "4401005077233883fee2e14a013f4f8f59695d77538af4d738adf6a9d05846e1",
+      "bytes": 84
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/load_integration_tools.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/load_integration_tools.md",
+      "sha256": "caadba22974ab9b96aaa055fef7b1f12643ec177e4191bdb6b5855dea875c288",
+      "bytes": 150
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/manage_baby_sit.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/manage_baby_sit.md",
+      "sha256": "95c91313364da5c6ae04da2e52fe77eb10cd40e4c5b0c85ab949b1a402375c42",
+      "bytes": 65
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/manage_code_channel.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/manage_code_channel.md",
+      "sha256": "27377d3882a12648129e3afd76eb3cd958ac00a50eb54a2813e5a5e5fd233143",
+      "bytes": 1126
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/manage_thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/manage_thread.md",
+      "sha256": "6ab3b63d5127ca71217381497b96055df6b63f8632759e5868fbbed5522e547c",
+      "bytes": 61
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/notify_automation_channel.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/notify_automation_channel.md",
+      "sha256": "506d55071cdae0d4f536d84163d693b36d5dea078738fce3a79ea3bd1cc0686e",
+      "bytes": 81
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/open_pull_request.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/open_pull_request.md",
+      "sha256": "054223dc10d0689cfde4190dbdfe49df868adc842b50328721982aef66854834",
+      "bytes": 1815
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/output_iframe.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/output_iframe.md",
+      "sha256": "63da2f7c0615cd10e0c9a11779d3e7266579fdf18621fb432bd16a3f04246990",
+      "bytes": 531
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/publish_environment.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/publish_environment.md",
+      "sha256": "e58b11e49160b02217ce27ea241ca51e37f4b180e04bd5d0f809e003fd33c859",
+      "bytes": 4503
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/publish_review.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/publish_review.md",
+      "sha256": "2ba4286b41719d740f99b5a5336cc421fc341476c61f4bedca39fd9c1f394fcf",
+      "bytes": 1702
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/read_finding_outcomes.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/read_finding_outcomes.md",
+      "sha256": "124e6e7c220e1894c7ffb015d2cff677f1cb60194e380a607a578f91a1c4b99d",
+      "bytes": 201
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/read_repo_file.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/read_repo_file.md",
+      "sha256": "3c5c620e507fe205b970aa1986ba4ad50e8a82765dec81b784be34a260e2c741",
+      "bytes": 715
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/read_user_settings.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/read_user_settings.md",
+      "sha256": "560b651f6972f6aa3d10fdec2c83a72781184ebac461e41df900fea0905f328f",
+      "bytes": 396
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/recreate_sandbox.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/recreate_sandbox.md",
+      "sha256": "166d5c92c6dbe19a7be52e36ff43e89da903bce5f81ca70945b0151763a09292",
+      "bytes": 289
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/refresh_environment_start.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/refresh_environment_start.md",
+      "sha256": "98c1d803a49641e3c9b3fc8b6018c2eb00f613ea9a356a051f7cfe2a70e823c7",
+      "bytes": 1007
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/reply_to_finding_thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/reply_to_finding_thread.md",
+      "sha256": "c78e240fc0a951ddb2d2e8217afe5713ff8acd598abd07e2f18554de9f60b577",
+      "bytes": 57
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/report_platform_issue.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/report_platform_issue.md",
+      "sha256": "594be87855117f393d950f5ebbabfd372cc1d2131f540fb0793615abfcac2c30",
+      "bytes": 59
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/request_pr_review.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/request_pr_review.md",
+      "sha256": "f1e9207f2862c6e8bee0aa4b5b61601de0b911573495abd6426648e914a69118",
+      "bytes": 56
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/resolve_finding_thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/resolve_finding_thread.md",
+      "sha256": "74409597a8e10db2f1060be38de678508a1cf0ad02b72a833ca50a1bb8ab0d7a",
+      "bytes": 292
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/sandbox_reset.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/sandbox_reset.md",
+      "sha256": "a1f5c147ab33273318b532952828e436ad74759548471805bdb0a151882fdc53",
+      "bytes": 483
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/save_organization_skill.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/save_organization_skill.md",
+      "sha256": "5dda8d43211adb26c607bae7ba2a9f0fc80e72a4b217e7dfb40e9ab3ac1d4841",
+      "bytes": 590
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/save_plan.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/save_plan.md",
+      "sha256": "0dcbfcdf320fc8cbb65dc560a7c55ba48c52cab7f0f04b451843f57e6f8f344d",
+      "bytes": 846
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/save_review_style_prompt.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/save_review_style_prompt.md",
+      "sha256": "fd99e40badae6f0e06d434c867374eb0b29528652e2450cdbff3e2ebcc4e4aa1",
+      "bytes": 199
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/save_user_instructions.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/save_user_instructions.md",
+      "sha256": "5df59fe44ccca5dbfda17f13cc648fa3a4a43bfd36054c23384feb4f05521088",
+      "bytes": 1441
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/save_user_skill.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/save_user_skill.md",
+      "sha256": "9ef34f630a60a352c7e75dc54a07bc0bee0a7ca93785da2fbba5d28cb7dd55e7",
+      "bytes": 271
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/schedule_thread_wakeup.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/schedule_thread_wakeup.md",
+      "sha256": "4a97f1a629376abb89a17d204b0166f90efb7b4bffde1edb491fa67a5e1b85bf",
+      "bytes": 692
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/search_repo_code.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/search_repo_code.md",
+      "sha256": "d0d8e4c616eafc7fc51a7895032263a847e2289921915aff34f005afa4743aba",
+      "bytes": 625
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/slack_add_reaction.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/slack_add_reaction.md",
+      "sha256": "b86a9d6ec3a30a4016e0055ced905df0fee0e4950bc520d403a6fcb369e246da",
+      "bytes": 637
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/slack_attach_html.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/slack_attach_html.md",
+      "sha256": "bacc87d7f1d4f1a3568c28847eebb3e6f86e5e12cb6a2c4885251a1aa0fdc9fc",
+      "bytes": 345
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/slack_move_thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/slack_move_thread.md",
+      "sha256": "545312afe943eb10880a35e98888147574a62333420fd41ff2e6430b9ac797fd",
+      "bytes": 56
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/slack_read_thread_messages.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/slack_read_thread_messages.md",
+      "sha256": "fa6e67e33681fc65d9e1d209dea182a94946d110e5210537ac3aec79410237d2",
+      "bytes": 515
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/slack_start_new_thread.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/slack_start_new_thread.md",
+      "sha256": "feac3e7bd073c65014cad1fdeca259f5f2184c4fda308ab103ba2b426176d5e5",
+      "bytes": 79
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/slack_thread_reply.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/slack_thread_reply.md",
+      "sha256": "ff8e36355e7726083ee9e54f656c25e2bcda04d41ff6c1aa459d55501797186a",
+      "bytes": 1972
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/trigger_automation.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/trigger_automation.md",
+      "sha256": "54772a2eba67147edf9e058cf272279675a634bd6b687a6a418006e60fcffbcf",
+      "bytes": 69
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/update_automation.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/update_automation.md",
+      "sha256": "d3b98c355f2dc4629b9178b0f3c3af7b3cf6b291c81f4e53bfb342d0689ee325",
+      "bytes": 135
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/update_finding.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/update_finding.md",
+      "sha256": "4356bf82550e318dc057640b82ba6159e7a8a5eee152ade939c890b625ab0fbe",
+      "bytes": 1386
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/prompts/tools/web_search.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/prompts/tools/web_search.md",
+      "sha256": "c74deb91de14e2241f35a046002a031ec299367bddaf69e4001296490e11873f",
+      "bytes": 918
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/recovery_patch.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/recovery_patch.py",
+      "sha256": "26bcc581d9d3b56baa09ca2a4cf977cfdf7bbd4afae44ce85151d61db5717073",
+      "bytes": 4493
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/resources/stagehand_runtime.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/resources/stagehand_runtime.py",
+      "sha256": "c7d5e9244fd783bc345da91ef0dd5593f8682f4bdd3e3c05da44187cb167dacc",
+      "bytes": 8175
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/__init__.py",
+      "sha256": "10814b18838c778cc9d113c2fe0f37aa64c6cefa84852e1a081be6bdd4724bcb",
+      "bytes": 185
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/analyzer_cron.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/analyzer_cron.py",
+      "sha256": "230ba59280ceff63db0eb00f88c1575ee95bf85aed55ff6cdf05f4deda99ff39",
+      "bytes": 2499
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/diff.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/diff.py",
+      "sha256": "e973d423881424fdb3c63c2e06931e890941f6363775850d97a7f577d3b95617",
+      "bytes": 15356
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/eval_jobs.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/eval_jobs.py",
+      "sha256": "5ab7ea298059e2fc4e908c22355599ff80ed4bab4959872ad94ff0572cde9783",
+      "bytes": 4872
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/eval_store.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/eval_store.py",
+      "sha256": "731f19354945fe091ffd8733e6a0fba4fb518248e6abf980a99161f500ede3ef",
+      "bytes": 828
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/findings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/findings.py",
+      "sha256": "67e2e9ec35393fd0f190e5057efafa3aff51318e4af253b62c9fbd32339de814",
+      "bytes": 26396
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/groups.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/groups.py",
+      "sha256": "b6fb9788c43f736066c268dfa6c707af8aa78a6035d57810535a3fdd2a1769a8",
+      "bytes": 7549
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/publish.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/publish.py",
+      "sha256": "c5b2389b9d855e395c75de638bb9049af435e393d5f9b970e018d8666f0bf718",
+      "bytes": 35208
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/reconcile.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/reconcile.py",
+      "sha256": "b9b4566796ec1a5a9844259710554a3088dda05ec1904e4e6f7efdae5605bf0b",
+      "bytes": 8482
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/style_collector.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/style_collector.py",
+      "sha256": "f801ac2778145ed51f9075be66d592f9fe0a8d396f880d0b4d2273c3471dcb49",
+      "bytes": 10901
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/style_guidance.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/style_guidance.py",
+      "sha256": "109a4c2540bcb9dbf8d0e5261b6ab7cb29784d572c3a22bf33d3a5535103d58a",
+      "bytes": 162
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/style_jobs.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/style_jobs.py",
+      "sha256": "2e977ee168fdbf8376afda656344bcd036f8586d8554fab1d0f2bf8752e6eb9c",
+      "bytes": 8836
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/review/styles.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/review/styles.py",
+      "sha256": "bcd5e778f814440cf7943f33cf39ff204dd752937afd70f9df2d1287af621f67",
+      "bytes": 8410
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/reviewer.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/reviewer.py",
+      "sha256": "28eabf2623656dbee4e2e484d3cc0f54423d0aadcb492f91a9ef6a50f3378ee5",
+      "bytes": 43384
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/run_config.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/run_config.py",
+      "sha256": "4b3ffcdfe2a60e08bbab3841040d51a0c5c4af545db9be914850b138bff62154",
+      "bytes": 9419
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/runtime/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/runtime/__init__.py",
+      "sha256": "3d4a9fae9678e9ad78afe4e7a8fff4dc8e47d11c5304352125463f15507d7889",
+      "bytes": 660
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/runtime/constants.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/runtime/constants.py",
+      "sha256": "dc66c579846150f78461e30544a910b356e3cf3c15182c537dbcdcc2ca02fc50",
+      "bytes": 193
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/runtime/execution.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/runtime/execution.py",
+      "sha256": "f3d78d9f41594553cb03728b41f6564e9afa576321d4b5cc05f0959ac10e721e",
+      "bytes": 1194
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/AGENTS.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/AGENTS.md",
+      "sha256": "ca9fd42f615e7236695a065519c71f1a715966104213ebdac17a18839eebeb44",
+      "bytes": 265
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/lifecycle.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/lifecycle.py",
+      "sha256": "63b415d43f9dabf86d71ecc9fb34d34449c526c7c39dd24b75b62a149dbc444b",
+      "bytes": 22455
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/paths.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/paths.py",
+      "sha256": "91aba578797f41b587c1e1a75a2a50943df034299c0e05a5b5fb36a964155b0d",
+      "bytes": 4597
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/daytona.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/daytona.py",
+      "sha256": "5dc929a78b3800912340bc98445f8168b07d99d8b5c114fe47002c973d387285",
+      "bytes": 763
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/e2b.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/e2b.py",
+      "sha256": "7a8e0eae987e6f00ee73a7975ef173563ca10688c65d06780d0d1faefa4780ee",
+      "bytes": 1185
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/langsmith.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/langsmith.py",
+      "sha256": "0f36a37159c2d2a288cc0e998c0c16650999ff2c35b91b28c955eeb578c5300b",
+      "bytes": 31470
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/local.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/local.py",
+      "sha256": "8b640be9d9f9c5efed4484982a7f6e662a38a18a58d3e236af31ed760535c48c",
+      "bytes": 2197
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/modal.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/modal.py",
+      "sha256": "91d7cab59be74c3158a266d319372e323b6ce2bb5a2a73a12f0d47c14b987dc7",
+      "bytes": 697
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/registry.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/registry.py",
+      "sha256": "cfa08b6c802b1108955888d7464f0ea1d6425ff88a096ff8756d58558e0cad6b",
+      "bytes": 4359
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/providers/runloop.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/providers/runloop.py",
+      "sha256": "6712ded7450e6d5b66b6f4ca4426b59f836649f18c6920082ad126b61a03392e",
+      "bytes": 900
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/read_only_backend.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/read_only_backend.py",
+      "sha256": "0f8c33e79fdfade0bd7343cb13320acb26966a058180abd8081a71a44aa12251",
+      "bytes": 2056
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/repo_prep.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/repo_prep.py",
+      "sha256": "5571e321a403f7eed5b892a9889cde806ec45571f19e8d149ece16e7f0e1a304",
+      "bytes": 5819
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/retry.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/retry.py",
+      "sha256": "f002d88e5275f26581301b57416ffe61780692cdfd9484ab7a4390bea9fb50d1",
+      "bytes": 1921
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/sandboxes/state.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/sandboxes/state.py",
+      "sha256": "ad5e51cd10e7ada98637c60eee3fd02223368fdd4c50ddc532574ee9252e1756",
+      "bytes": 15010
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/scheduler.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/scheduler.py",
+      "sha256": "7e8182055bc218f662bcfa636f02bdf51ea9381d0bde7aa2b0363f6cdeaa8a98",
+      "bytes": 3451
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/server.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/server.py",
+      "sha256": "a864def43d5d3ba27fe4d9a34229a338e94326fa26c51352aa2872e574dfd314",
+      "bytes": 51587
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/session_cost.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/session_cost.py",
+      "sha256": "b580ee3fb8f593da2ace172da67caee745dc218a3f3bcae1e4ff61c1320a53b3",
+      "bytes": 6761
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/skills/bootstrap-repo-analysis/SKILL.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/skills/bootstrap-repo-analysis/SKILL.md",
+      "sha256": "7923a1b61739344ad37ccee7f093998a6c182b732f996522c3e475c484dac819",
+      "bytes": 2914
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/skills/continual-learning/SKILL.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/skills/continual-learning/SKILL.md",
+      "sha256": "6197ca396af57b18a2135513dd50005c10c0a85578bcc22285c44d89f9479be6",
+      "bytes": 2405
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/allowed_bots.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/allowed_bots.py",
+      "sha256": "7d25353bf0d50bfc549bc4327b5bbddfeaa6c6e723ce29c1dfdec6fa204ef7e8",
+      "bytes": 6025
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/client.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/client.py",
+      "sha256": "2070b58bf76122fbaa2bf367ccdf1cdcc5fc51b21eef1f9c21ff6729055ce721",
+      "bytes": 71552
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/code_channels.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/code_channels.py",
+      "sha256": "65123d825afbcdd2a03e2e11766856d611b1009a987aa80023c9b850adf6ab61",
+      "bytes": 17679
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/events.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/events.py",
+      "sha256": "95279980f88b195ec0f3728e782fd7a64e7323c492997a8887677a872ec4742b",
+      "bytes": 2805
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/failures.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/failures.py",
+      "sha256": "aabf908b1ca875143f2f488788a9b96b8a1a24d53f74d7c60bc2587a1fc3dade",
+      "bytes": 3317
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/feedback.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/feedback.py",
+      "sha256": "99d1e16483e3e810cf0b25d2b650f8997d91a42b8249787bfeb96396dd3a7328",
+      "bytes": 6656
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/http.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/http.py",
+      "sha256": "7a60a020586750efc2c14fa81d358f40a0e060347ea1363bf5ee3b6db93da5ef",
+      "bytes": 5719
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/oauth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/oauth.py",
+      "sha256": "790a0f14c2c34e0bed0001528eb8ea6180aecb2f056f4d8f08c6eed8f3c67d74",
+      "bytes": 4324
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/payloads.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/payloads.py",
+      "sha256": "76f0fd1e602f9bfd94c3f2e3e9434f94823a68b83b47247f32bf1887c903ff82",
+      "bytes": 6463
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/request.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/request.py",
+      "sha256": "36f86546b98cecbda926553e63fe3cad954b4f8e526a26ad451c18ee9d0f5692",
+      "bytes": 1246
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/responses.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/responses.py",
+      "sha256": "6024f04e90f405ecce87ac7f045b45e0a05719d0d579991e09a534b4c66bf113",
+      "bytes": 1176
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/routes.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/routes.py",
+      "sha256": "289d470b90fcb2a23183e8235d3dcef0e6d079b9301cbe6b3661e771d4af8b3c",
+      "bytes": 36044
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/stop.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/stop.py",
+      "sha256": "b7f1132f29a12c89616e29c51e233e6cbde8bc01b5804db783500fee31720f9d",
+      "bytes": 9459
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/thinking.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/thinking.py",
+      "sha256": "1c02662b1457331e29e4e0e6c0f9bc413255201b6999b691f2bd73feba5feff4",
+      "bytes": 12888
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/thread_feedback.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/thread_feedback.py",
+      "sha256": "906afb18cfb1c3390bc038c28a191aff909a57b3349c597be8c05e332ae7e89a",
+      "bytes": 18557
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/add_reaction.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/add_reaction.py",
+      "sha256": "cc88ad4e694b8932092d468f4f83a331a453f2ba02e09b91bd8035b0ef9c992d",
+      "bytes": 1851
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/attach_html.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/attach_html.py",
+      "sha256": "7f32fad141093e753bfa4343bf55580f8f224c267b3740c7f35e75a5513f8642",
+      "bytes": 6152
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/manage_code_channel.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/manage_code_channel.py",
+      "sha256": "51d538b1a4ef2442c8665b92f20d1b3e7831c28e4d207edc1359b17d436aaada",
+      "bytes": 14939
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/move_thread.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/move_thread.py",
+      "sha256": "3e9f7bfc6df95dbb9ade8b70229e119a2bfe458808136de20451da03c1d391b9",
+      "bytes": 8510
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/read_thread_messages.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/read_thread_messages.py",
+      "sha256": "aafdc683d0950a0ef9a892cce37440ba5a0832fb92639dbcc8f777101ac36321",
+      "bytes": 1812
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/request_pr_review.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/request_pr_review.py",
+      "sha256": "0234d71a4636e130d7d56bb0ea8594cfdf5fda47d6469bb5d04a426e2e082505",
+      "bytes": 1870
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/start_new_thread.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/start_new_thread.py",
+      "sha256": "e5ce8465fbf768c5f8247c4a0091d22b79c58daaa6cfa3f9dfab691b8598522b",
+      "bytes": 11978
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/tools/thread_reply.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/tools/thread_reply.py",
+      "sha256": "9b5f77d833ae72579ab12775e9b91ae4f8a700ed43ec39aa3a1c9e38bdad7b99",
+      "bytes": 8864
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/slack/webhook.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/slack/webhook.py",
+      "sha256": "4cace0a104bf16770cc9f4ff4d3808c9f270314eb224628a90c0b95d15de2b59",
+      "bytes": 40997
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/source_context.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/source_context.py",
+      "sha256": "ad4dfba3039df7ae83de7d5acc07ebda88cb55f87cbc0293ad5c241ca4534430",
+      "bytes": 4034
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/store.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/store.py",
+      "sha256": "aa60d9547a82e3d99ddf5e09c78ea660ea9369b7be3e573b21968aa0d59a1ea0",
+      "bytes": 6221
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/thread_feedback.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/thread_feedback.py",
+      "sha256": "a0ad3036bc9577ba599e14402f5f43eab590a55a3ded5cefa48d7ddee39f4bcc",
+      "bytes": 7817
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/thread_ids.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/thread_ids.py",
+      "sha256": "85493fc358271a0a73e69abecf6819aa52bc4d893433dbeb027c609c6900c940",
+      "bytes": 2193
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/thread_title.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/thread_title.py",
+      "sha256": "9c37e0b7ea2ff3f55a29c36056f56adc1644295108a978018e0b5cf2cb363dab",
+      "bytes": 5519
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tool_loaders/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tool_loaders/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tool_loaders/notion_mcp.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tool_loaders/notion_mcp.py",
+      "sha256": "7d76a2efd84287ae491505538cf5580285af6c47fb71556fa23b3573a66caa5c",
+      "bytes": 4618
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tool_loaders/stagehand_browser.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tool_loaders/stagehand_browser.py",
+      "sha256": "1072a1007ed6d7dccea2e73e5e9c914087a38584da9707412287ca160ebeecd8",
+      "bytes": 4403
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tool_loaders/workspace_mcp.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tool_loaders/workspace_mcp.py",
+      "sha256": "f5a1cc9b0221451164600339bfedd968c9ad0098e1b09f772197a925698b5fdd",
+      "bytes": 1094
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/AGENTS.md",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/AGENTS.md",
+      "sha256": "4b902fc67b7000cf2e833869669cfa7b4a19faf7387bed7772ea8411000c7edb",
+      "bytes": 278
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/__init__.py",
+      "sha256": "eb27513196e347adde292a1360fb7923bc5796766fdfdc817f6a7b218a922183",
+      "bytes": 8460
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/add_finding.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/add_finding.py",
+      "sha256": "95ebf725681aa1121f2e32d1218014813ce9ba5813ab5baa77d4bffa8095138a",
+      "bytes": 5098
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/admin_gate.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/admin_gate.py",
+      "sha256": "0899268414ba936ce78fe6fbd115e6d0dd7da700a526f5dad3d1a40d37f7b324",
+      "bytes": 845
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/approve_plan.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/approve_plan.py",
+      "sha256": "6ed3ac7a0f09b0ad2ed287c7481345b9c68bdc613322ff6802b49fd026cc331b",
+      "bytes": 4259
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/automations.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/automations.py",
+      "sha256": "2216ebb0f9860e35d6e838898478fe693ec235e585c6314462c6bb8763adc5f1",
+      "bytes": 5664
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/background_execute.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/background_execute.py",
+      "sha256": "a9dfda6bb5613768f27e88b000107be677fa1e8c9806146eb50e01e6bf8431cc",
+      "bytes": 15339
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/background_task.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/background_task.py",
+      "sha256": "6eae28b1950d8e84a584a1a1f476329596c5b01ff0cdfb44271bacade79a7e3d",
+      "bytes": 3832
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/create_sandbox_file_download_url.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/create_sandbox_file_download_url.py",
+      "sha256": "4d445b2b07d3362ae910a68ef0df058077dc6749e6b7591e7bba382f58b3a2a6",
+      "bytes": 3092
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/create_sandbox_service_url.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/create_sandbox_service_url.py",
+      "sha256": "6edb0ee823789db2a698e12fb85859e4b8ef3ca5dabc3ac0c772e072b54c3c98",
+      "bytes": 1876
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/enter_plan_mode.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/enter_plan_mode.py",
+      "sha256": "f103a0c168886dfc951b01ca78c15fa939841d9d600ec8db27cb7bd1a1fe7e28",
+      "bytes": 1517
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/environments.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/environments.py",
+      "sha256": "ae9869c1b9c1f3dc6b0d790cbf274a4e3cec62f559a1264a7d9b3b93ddb04feb",
+      "bytes": 9386
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/fetch_review_diff.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/fetch_review_diff.py",
+      "sha256": "7a29aecd46ce014d0b374d186d3289cc07ad06f424b0ff8621f0bb7861e7d72d",
+      "bytes": 2056
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/fetch_url.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/fetch_url.py",
+      "sha256": "eb99601e56f56075d1e8c77693a05225f24dc2b09fd590b8b54ccfb7804bfea5",
+      "bytes": 1653
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/http_request.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/http_request.py",
+      "sha256": "228353c734bc2b1fac52db971296dbecae3935188c3814c2ef45831b4f195db9",
+      "bytes": 3363
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/list_findings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/list_findings.py",
+      "sha256": "a783077a5a3525c58f006ec3ae2c4685ab99f028b11e7acd6558c2a1cfe296ec",
+      "bytes": 1007
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/list_review_findings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/list_review_findings.py",
+      "sha256": "17c2aea80c13820fa15d15747d024a15bf14b03c68d71f1712f263537b5f5437",
+      "bytes": 1757
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/manage_baby_sit.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/manage_baby_sit.py",
+      "sha256": "b276ef0676fce2d1ea4afb47bfa2b45043e0a24c392cf0b40a25f5ee62a46136",
+      "bytes": 5525
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/mark_question_answered.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/mark_question_answered.py",
+      "sha256": "1389baaba428d29dbae2da8d95b8d5a632871b7cfe12608ed38ade5c495d5985",
+      "bytes": 1392
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/notify_automation_channel.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/notify_automation_channel.py",
+      "sha256": "f091cdba4fea2259fd115cc34bf46bc3c98abc58037f9f8b7cf7f383d23c3991",
+      "bytes": 5439
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/open_pull_request.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/open_pull_request.py",
+      "sha256": "ecd62459c2623dfff35965eb4372e5d9ca77ba1df382ba10a4e3f347764173a1",
+      "bytes": 33661
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/organization_skills.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/organization_skills.py",
+      "sha256": "a7d503780caa7008e9c6bd79746c5bdbf7a21ce10f8f3f5ecfe72ca03be673da",
+      "bytes": 1735
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/output_iframe.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/output_iframe.py",
+      "sha256": "d654724f4fdbed1a93021c0a0bd2627769a87e934d14d30521966ae04494be7d",
+      "bytes": 3318
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/publish_review.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/publish_review.py",
+      "sha256": "d45c152aa8b10179df9b33e9e581ed9c13b6807bad2e404422932a81c8fd40d1",
+      "bytes": 36433
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/read_finding_outcomes.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/read_finding_outcomes.py",
+      "sha256": "04552d24d09ef3dcbc1b00f981dc81471a68e2e09edb49ee5a979b30164a95f6",
+      "bytes": 1434
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/read_user_settings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/read_user_settings.py",
+      "sha256": "4fc3fa16ce774e1640ce3f58e3a70bd3e8329da9093799eddc57fdc39da728f6",
+      "bytes": 2216
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/recreate_sandbox.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/recreate_sandbox.py",
+      "sha256": "35cdf15479bd08b1a113e99b1e5b9a6d1c62a4c177b1642b740ac0e541ac3db7",
+      "bytes": 1080
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/reply_to_finding_thread.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/reply_to_finding_thread.py",
+      "sha256": "90842be5969a4ef9c644a93206c07f51d4ca13494833080ba89f429597dcb739",
+      "bytes": 2985
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/report_platform_issue.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/report_platform_issue.py",
+      "sha256": "afa1bf9f2f082bb3dbce35ac1214ef2ed7aad4cbb3c1aa94688244056355491d",
+      "bytes": 528
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/resolve_finding_thread.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/resolve_finding_thread.py",
+      "sha256": "da04948dc77360dd7e98c00d05e21d0ca7d12ff3d9134ba0e43e29dbab0bda91",
+      "bytes": 6534
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/sandbox_output.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/sandbox_output.py",
+      "sha256": "fdcff6a0c70abe9664c686c9ca5fa0e0432356c4c5ccd8abb719528535b7ccc3",
+      "bytes": 1363
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/sandbox_reset.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/sandbox_reset.py",
+      "sha256": "7e8b5c2e8e7a4ed6120afb22daee9937cd0aa00a26088c84b9489a7d918f5620",
+      "bytes": 2510
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/save_plan.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/save_plan.py",
+      "sha256": "72b89bb1c977e8c9154dd0c219017ea2ab2d0c05a6c1309675b91b2241adc279",
+      "bytes": 4047
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/save_review_style.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/save_review_style.py",
+      "sha256": "a20e277acef29647f7c83dc5d6d8f7eefd994ccf8112f929e6c2c8da4269383b",
+      "bytes": 2622
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/save_user_instructions.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/save_user_instructions.py",
+      "sha256": "ac766a863616e39ad6d4b5218ca52e07ce3b91d6237538adb96e6116ed77768c",
+      "bytes": 2088
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/schedule_thread_wakeup.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/schedule_thread_wakeup.py",
+      "sha256": "bf80475dd244a631cb8c2f9450aa7fdcd4ffc1a183fe16ed1648fff6c0565047",
+      "bytes": 11807
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/threads.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/threads.py",
+      "sha256": "f91740e9994559e35d2a230add20606a6c17b281340d3627a1bd220c42d69b9c",
+      "bytes": 41106
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/update_finding.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/update_finding.py",
+      "sha256": "7c06cd116e9f72caac4ecf184993d5d4d46a345196c1e7a3decc160ad95e8c61",
+      "bytes": 6816
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/user_skills.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/user_skills.py",
+      "sha256": "1f64e6946750446cfacf40c4d230107342287cbdfd2cfd6460e90b86399cf3a6",
+      "bytes": 1456
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/tools/web_search.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/tools/web_search.py",
+      "sha256": "3737e8d7e14a88533195da7b9f0accdcbd504ed16643d274bf5f572abb76096d",
+      "bytes": 2615
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/agents_md.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/agents_md.py",
+      "sha256": "3258d774e04d3bd994080206faccc962c8a1ebb360defc4cfc9e9fef703f4c34",
+      "bytes": 6945
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/analyzer_skills.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/analyzer_skills.py",
+      "sha256": "fb7991d45dfbec27cb66cb7158ace7a4cc955431bdefb0839f6419feb878baae",
+      "bytes": 2007
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/api_standards_skill.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/api_standards_skill.py",
+      "sha256": "2a7f41092b2f18644a5758eb29440b2802864854159eb2f03f188448bdbe9dcd",
+      "bytes": 1810
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/authorship.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/authorship.py",
+      "sha256": "a6b08d2e09539a39d3ff2c9f63428b91df1df31fcb78ac00865a431bcdb086c2",
+      "bytes": 8419
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/dashboard_handoff.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/dashboard_handoff.py",
+      "sha256": "ef7b878a4c1713058dd76faad681da997e751b808fd09ce5ce28b2f459ed988a",
+      "bytes": 351
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/dashboard_links.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/dashboard_links.py",
+      "sha256": "ed2caf02295e423ded6f8c1d464f1d537369583a6191a345d6472892cbf853fd",
+      "bytes": 5302
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/dashboard_ui.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/dashboard_ui.py",
+      "sha256": "37b5e31d6a3812151963b3d672463baf675cdcbba7e56088b3eeaa672b710ad2",
+      "bytes": 10546
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/deferred_model.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/deferred_model.py",
+      "sha256": "9d930fd1cb89a682a2ff234d0ab9973c7538017f5321372898629a632e7ade3e",
+      "bytes": 1219
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/errors.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/errors.py",
+      "sha256": "7fd3d670b24fd3f294757904322debdd8c3897eaeed8850d526f568eb0032e85",
+      "bytes": 4382
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/event_loop.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/event_loop.py",
+      "sha256": "fb2d76b8590c2d9f99fba782a609b17d5251d3848d4cd281d57b19a017310dd6",
+      "bytes": 1820
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/gateway.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/gateway.py",
+      "sha256": "fa66d8ead3fea08ec35962028d60463a809bfccca05151ef88fe440cf522562d",
+      "bytes": 5033
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/html_artifact.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/html_artifact.py",
+      "sha256": "c695ddf53af3c2bf3ba463ca6d96a02d3171c714f7cb43951a0c56c3cefc997e",
+      "bytes": 2991
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/http.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/http.py",
+      "sha256": "eaa7d358cbdd3f2cf8c9eabcef3a3b9b5eff51bf367cde161a38b35c3f4c77c4",
+      "bytes": 73
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/json_types.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/json_types.py",
+      "sha256": "33edcf2a7fb20a144a5ec8b00dde9a5c7c6a2e57987946a1199859a1776bd50d",
+      "bytes": 1062
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/langsmith.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/langsmith.py",
+      "sha256": "ae351e64abea8f7eed851ac6ee50a0afc24e15097929848b25a908030db319e0",
+      "bytes": 17831
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/model.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/model.py",
+      "sha256": "38b50e4d94cc5d5b36833140fb7df5e9d27b221573cbdb54e18dd99fc2261891",
+      "bytes": 14794
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/multimodal.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/multimodal.py",
+      "sha256": "0f98bcefc92e1fc73c365a810cf7f8aa2e2ead1be5392dd5ad84905570a7053a",
+      "bytes": 4716
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/openai_oauth.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/openai_oauth.py",
+      "sha256": "a562afd11c88675a889cfaee8f68c0bb9c38e545961bf820093bdf1c2bd06fc5",
+      "bytes": 3400
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/repo.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/repo.py",
+      "sha256": "2c65a992ceedef0c90bac0b891b4bf29a4f8fcb0aee4bd617af1466220075562",
+      "bytes": 1331
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/reviewer_outcomes.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/reviewer_outcomes.py",
+      "sha256": "6fb1de933e3bc01415490120f0d126a6a0a9da7b017c3368a7dd0fbacac6a0a7",
+      "bytes": 11365
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/run_usage.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/run_usage.py",
+      "sha256": "a75731e10c0b2cc18733e070c75dc4dc35da2e0d42c85dd7971dea21824e0523",
+      "bytes": 3745
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/startup_trace.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/startup_trace.py",
+      "sha256": "f945356385e155a8f2a18a5d33ab6d63b1f314f964c4468e0530c04c9fa632f7",
+      "bytes": 5831
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/streaming.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/streaming.py",
+      "sha256": "df0b47c960289fcf8327a231e8eba7c13ac9cff8dad2afeb31fcc0c4e7e712a8",
+      "bytes": 951
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/thread_ops.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/thread_ops.py",
+      "sha256": "713a1c1e56292e8727984690fbafdd521694f954421f8730305d0742b6a54da3",
+      "bytes": 3452
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/thread_participants.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/thread_participants.py",
+      "sha256": "ebba31e8900f0e6b5268c58168ffb732ec3445f690c1e9d2ae1378ba8356eace",
+      "bytes": 8948
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/thread_pr_state.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/thread_pr_state.py",
+      "sha256": "cbb54cfde763120b064320bb176cbb2af68c3a4ce239bf530fdba8bb59128673",
+      "bytes": 1357
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/thread_settings.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/thread_settings.py",
+      "sha256": "9741484ced8605450c7f14e464ae98eea6d454e338bd122ac8d51dbdeb4c8db0",
+      "bytes": 2709
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/timing.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/timing.py",
+      "sha256": "a17df9c8460425bf1dbd9463264a10a6cb2929e5e0498c0f56271ef7050d14ce",
+      "bytes": 824
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/tracing.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/tracing.py",
+      "sha256": "76c2107539f2490400626082438a0831cbad29c8bfc092b14b566dece4d16a85",
+      "bytes": 644
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/ttl_cache.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/ttl_cache.py",
+      "sha256": "c0422978aba5e7838f7c622c56ad7f46622393d576386d1385f7036f1db6cb58",
+      "bytes": 3386
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/turn_checkpoint.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/turn_checkpoint.py",
+      "sha256": "994ea37c8e7e9dd032ad5ab8a339fb6be33c323622fb7162de007d84a2cbe32a",
+      "bytes": 10682
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/url_safety.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/url_safety.py",
+      "sha256": "dbe88764ac8f466a4e65c04807d5984a32aa644bb7a4c17ae377837d1b2b54ab",
+      "bytes": 6776
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/utils/user_messages.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/utils/user_messages.py",
+      "sha256": "490dab5e2a8633abd0f913a0d4d523b47fa8f34e293e7ffc2c4d9646d1f04ca8",
+      "bytes": 405
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/webapp.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/webapp.py",
+      "sha256": "ca215c855c652bdbd0f9d26724003c168824f13966f561ff5b5b1bac570e3af4",
+      "bytes": 110
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/webhooks/__init__.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/webhooks/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "harness/application_probe/upstream/agent/webhooks/common.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/agent/webhooks/common.py",
+      "sha256": "098c2f455abda9e41602ddefd753e212ff2e2bb3dee4e5d123cc563cde575946",
+      "bytes": 56248
+    },
+    {
+      "path": "harness/application_probe/upstream/pyproject.toml",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/pyproject.toml",
+      "sha256": "1f24898ed0a021e178b2335adf2488305e43c03079f4388a423c597f6ed6c240",
+      "bytes": 3927
+    },
+    {
+      "path": "harness/application_probe/upstream/tests/agent/test_dispatch.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/tests/agent/test_dispatch.py",
+      "sha256": "d724fb8c2f71b0fc4e8f7c2fa3927a533f38a9947dc8543297dacf1168fca6d8",
+      "bytes": 8700
+    },
+    {
+      "path": "harness/application_probe/upstream/tests/slack/test_slack_stop.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/tests/slack/test_slack_stop.py",
+      "sha256": "54a7e64a7fb70c95f8658fbdf2a7e46970483e20af8b475e83df6cb051653e00",
+      "bytes": 11898
+    },
+    {
+      "path": "harness/application_probe/upstream/tests/tools/test_background_execute.py",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/tests/tools/test_background_execute.py",
+      "sha256": "34861fb6c88f7def0b1505ce1be9384bd6960834104f3d17cee04cb27a0cd123",
+      "bytes": 7633
+    },
+    {
+      "path": "harness/application_probe/upstream/uv.lock",
+      "source_kind": "supplement-v1",
+      "source_path": "upstream/uv.lock",
+      "sha256": "fe9d40744bf31948d7b326d222fd80ca4642b85f1c6f71cda90a5f2a17d56462",
+      "bytes": 384885
+    },
+    {
+      "path": "harness/stop_contract_study/AMENDMENTS.md",
+      "source_kind": "supplement-v1",
+      "source_path": "study/AMENDMENTS.md",
+      "sha256": "366ef43d376bef52fac0a2a6ed675d3cac15d3f124a30a622cd03e93e8cd7ad9",
+      "bytes": 3814
+    },
+    {
+      "path": "harness/stop_contract_study/METHODS_AND_LIMITS.md",
+      "source_kind": "supplement-v1",
+      "source_path": "study/METHODS_AND_LIMITS.md",
+      "sha256": "5f88bd753be7fb1e6a89254272704ddd58392fe66cd95a30bd360e224fd89126",
+      "bytes": 12770
+    },
+    {
+      "path": "harness/stop_contract_study/PROTOCOL.md",
+      "source_kind": "frozen-study-protocol",
+      "source_path": "PROTOCOL.md",
+      "sha256": "71e8f5f0a65e4521046d3faea2cad856ce19ae7882a91c8d907305d63a1136b1",
+      "bytes": 9071
+    },
+    {
+      "path": "harness/stop_contract_study/SOURCE_LEDGER.json",
+      "source_kind": "supplement-v1",
+      "source_path": "study/SOURCE_LEDGER.json",
+      "sha256": "383738f44f8d46d6e1e7c5ab9812e6b83bc2223ade482396db383ba21a22591c",
+      "bytes": 13782
+    },
+    {
+      "path": "harness/stop_contract_study/audit_study.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "audit_study.py",
+      "sha256": "9f8989a8deed68aae850b85f5fdad8cc71f406898cb448421395fb7db181751b",
+      "bytes": 79601
+    },
+    {
+      "path": "harness/stop_contract_study/build_report.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "build_report.py",
+      "sha256": "13b3a666d7a165635f33eefb6640d97fdb0f1a386c2cb9a211d49cc8e72b0676",
+      "bytes": 19405
+    },
+    {
+      "path": "harness/stop_contract_study/child_probe.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "child_probe.py",
+      "sha256": "0c80b97877c699882e8cff90ec6685e1cd80702411982d0ebec87fb817393bd9",
+      "bytes": 20225
+    },
+    {
+      "path": "harness/stop_contract_study/compare_reproduction.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "compare_reproduction.py",
+      "sha256": "1c94838c8fd673358fcdcae17f4c395dfa77d3d3aeff563cff8b7a89101ff142",
+      "bytes": 3992
+    },
+    {
+      "path": "harness/stop_contract_study/factory_support.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "factory_support.py",
+      "sha256": "5387dbea079e57179652f6c93d9ebb3866e34863f8e7f0a43761aff39c501b82",
+      "bytes": 32842
+    },
+    {
+      "path": "harness/stop_contract_study/qa_entry.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "qa_entry.py",
+      "sha256": "ea0a6ceca85b69f3be9b77cb44ff85d4de2f616c424d8dc39926459731a2252b",
+      "bytes": 639
+    },
+    {
+      "path": "harness/stop_contract_study/reproduce.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "reproduce.py",
+      "sha256": "eb505b31af06c542cf55dd65bd18ac3b1c61651917ff955301932cb639566fcc",
+      "bytes": 7128
+    },
+    {
+      "path": "harness/stop_contract_study/run_matrix.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "run_matrix.py",
+      "sha256": "f18f87d3b814a90ef5b30e800d05a44277059eaf2cde37ba4b8d7bcf372724b3",
+      "bytes": 2838
+    },
+    {
+      "path": "harness/stop_contract_study/run_probe.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "run_probe.py",
+      "sha256": "1c7489c973d12843a4a517e7172d151789be9858dc5c85966f2f1e8914b2f474",
+      "bytes": 6259
+    },
+    {
+      "path": "harness/stop_contract_study/test_audit.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "test_audit.py",
+      "sha256": "287fba8d99ed40ad2c68d722c72448d972a6ee21a4d9621c428b63edc9a63ce2",
+      "bytes": 17644
+    },
+    {
+      "path": "harness/stop_contract_study/test_fixture.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "test_fixture.py",
+      "sha256": "c43f11bb6b1095fad07bf562070ac9640b0b4dc044f30800d6ec6025a46665c8",
+      "bytes": 19784
+    },
+    {
+      "path": "harness/stop_contract_study/test_runner.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "test_runner.py",
+      "sha256": "c25589c2e982af49875d04a7da1a87055f7b50108f83bb3a9e3192a95a1ce718",
+      "bytes": 1875
+    },
+    {
+      "path": "harness/stop_contract_study/verify.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "verify.py",
+      "sha256": "49d32af3c82567a1b1e43337d73a0f8f9e9d0aa0b9e70ab88aef24f0f50dd8a5",
+      "bytes": 2912
+    },
+    {
+      "path": "harness/stop_contract_study/workload.py",
+      "source_kind": "frozen-study-source",
+      "source_path": "workload.py",
+      "sha256": "bcc4193ec1c2ffc03dd1c94a16dfef9c352b4e004d02138a6d6034973cbfc042",
+      "bytes": 7158
+    },
+    {
+      "path": "provenance/MATRIX_PLAN.json",
+      "source_kind": "original-matrix-plan",
+      "source_path": "matrices/v02/PLAN.json",
+      "sha256": "be2f3d712b2b93f0d172642d387edaaa800eb15b22c4c82fc283de69642a0bfe",
+      "bytes": 5550
+    },
+    {
+      "path": "provenance/SUPPLEMENT_EXPORT_MANIFEST.json",
+      "source_kind": "supplement-v1",
+      "source_path": "EXPORT_MANIFEST.json",
+      "sha256": "36afa18d33c914dbe033a8c9a54e907a7b2239fe3aef02db1c35cfc8524467a0",
+      "bytes": 760947
+    },
+    {
+      "path": "provenance/SUPPLEMENT_SHA256SUMS.json",
+      "source_kind": "supplement-v1",
+      "source_path": "SHA256SUMS.json",
+      "sha256": "95439b79c4c57e161c3e69d8d23931e2d909ba04968f0cc75362a07e80c8a2ed",
+      "bytes": 334762
+    },
+    {
+      "path": "provenance/original_verify_bundle.py",
+      "source_kind": "supplement-v1",
+      "source_path": "verify_bundle.py",
+      "sha256": "c49952045e5ebdcc6b717cc35c734264a785705660b3e7ee2d5df1e6ced48bdf",
+      "bytes": 1779
+    },
+    {
+      "path": "results/ORIGINAL_COMPARISON.json",
+      "source_kind": "supplement-v1",
+      "source_path": "ORIGINAL_COMPARISON.json",
+      "sha256": "3ae50008e70d44986a69c4d254da08437ffa53c4a2b3339b4ddb0b14605bf531",
+      "bytes": 11543
+    },
+    {
+      "path": "results/canonical/ORIGINAL_PROVENANCE.json",
+      "source_kind": "supplement-v1",
+      "source_path": "canonical/ORIGINAL_PROVENANCE.json",
+      "sha256": "08a880ec32d1d9e929a54dad7d5e51ca347963d65310dd4067a34c069db333db",
+      "bytes": 14242
+    },
+    {
+      "path": "results/canonical/ORIGINAL_QA.json",
+      "source_kind": "supplement-v1",
+      "source_path": "canonical/ORIGINAL_QA.json",
+      "sha256": "dbe1f231995a7c320bab49ecd0774678fd7ed79227b80d7dcafec2d38faed556",
+      "bytes": 12737
+    },
+    {
+      "path": "results/canonical/SUMMARY.json",
+      "source_kind": "supplement-v1",
+      "source_path": "canonical/SUMMARY.json",
+      "sha256": "c40b7e2e4f8b385b90e03f2afc647cd5176cf6419cb1f995e4d177b0c130100e",
+      "bytes": 46541
+    },
+    {
+      "path": "results/repeat/ORIGINAL_PROVENANCE.json",
+      "source_kind": "supplement-v1",
+      "source_path": "repeat/ORIGINAL_PROVENANCE.json",
+      "sha256": "31ba47267830054613de13bd5cc08ef922a3fe07f17ed91c3e395f793d3ac566",
+      "bytes": 14248
+    },
+    {
+      "path": "results/repeat/ORIGINAL_QA.json",
+      "source_kind": "supplement-v1",
+      "source_path": "repeat/ORIGINAL_QA.json",
+      "sha256": "2f655cfc2b3da95ccf01e2a300cfdee2a1850e4363bf9ecfa0f6393fae1541d3",
+      "bytes": 13033
+    },
+    {
+      "path": "results/repeat/SUMMARY.json",
+      "source_kind": "supplement-v1",
+      "source_path": "repeat/SUMMARY.json",
+      "sha256": "27209f92e371794855030dcb23c45245191326bea6c221f00f79d6e1f8ed393b",
+      "bytes": 46541
+    }
+  ]
+}

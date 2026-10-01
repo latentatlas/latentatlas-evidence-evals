@@ -1,0 +1,267 @@
+{
+  "built_utc": "2026-09-13T08:26:15.206144+00:00",
+  "matrix": "v02",
+  "plan_sha256": "0006b77c64227fe304fdd1c7f46e704ae25b5f8f7923d963fd89b1d601a9a765",
+  "executions_sha256": "2e3a9457df40f955a427d7de959984df03e9de8d49a06b69e49aed96899d6fb7",
+  "qa_sha256": "2d8d91e6f14f5ba7abc72599121556ec18501d2e8b49ad79d9a2e92c51ba021b",
+  "qa_id": "qa-clean-v01",
+  "auditor_sha256": "9f8989a8deed68aae850b85f5fdad8cc71f406898cb448421395fb7db181751b",
+  "builder_sha256": "13b3a666d7a165635f33eefb6640d97fdb0f1a386c2cb9a211d49cc8e72b0676",
+  "runs": [
+    {
+      "run_id": "matrix-s17-accepted_precommit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "78c6fb48b4c5d7a5623b81819e732224fdfe7521066414cf18485217118d1252",
+        "PROCESS.json": "59a4e1f2ac46065034c8b39173d01d9f9ea9c65fcd26b4a3778afb020b8967a0",
+        "events.jsonl": "f8277ca820fadc3e4bee997f5b3dc8856a0e939888e609d7f7887c4f48449d51",
+        "result.json": "6f141e3ace7dabaf65dcd2ded9df89b63db68c2854f32527e0e3e8d937cc885b"
+      }
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "d00d0fefade6d4300014773559c2630cf45a4cb28e74e060af45b2e1c3a3fcb1",
+        "PROCESS.json": "7c15d387ab997b39445bc54b04cdf5a7cfd6eb4095090c792919e3e3c539b733",
+        "events.jsonl": "935134d864f5e9fb1318c8fb992fff3929819792176ec19730093f43424fac02",
+        "result.json": "ec107b06add3bfa97d6249fb3d76bcc6575abfee8282fbf13e01044dc317a82d"
+      }
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "fea2d5bce569733142ab10cbe2ef46695d7437cfc9bf0fd6e20bb1b0e858ca61",
+        "PROCESS.json": "c4aad90baf9d9680115c45cdde14619f335e9776f65b09c96cdbe9a3e86f4276",
+        "events.jsonl": "14b4e03a8e8758710813ef7ef1b2afbbe6d0a5e24ed1bab1e33768d57979022c",
+        "result.json": "cee6c8767f7a494a9c24b524455ca714033dc3298bf8eaca94a6964e9f217685"
+      }
+    },
+    {
+      "run_id": "matrix-s17-accepted_precommit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "0c26df5375cb40f32f24f068e1a6a98b8f376640b60f62cf080121ac50a8835e",
+        "PROCESS.json": "8a4008fa9641e19c95a92a96608ba8a0ea9e8bbd0435468387c27bf79296dda2",
+        "events.jsonl": "363267094126e2d26c5de5cae3d8221403ff26f4ffde34573a79dae673118c0b",
+        "result.json": "42f3b226e1b17ea96e6c0bfb203c7da91a1948ae1cd259d23a1131d9d289879a"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "f5421049133b22ef5d1ac1f4a7597be7635d89fa2763d59e224ccafd3d213d8f",
+        "PROCESS.json": "2c674d3dc3fd0a92a22c748cf0fa537063d75ffd16fcc82507ca7a27ab69cc54",
+        "events.jsonl": "e4a894e2fd69fe1e4e9698f46a14879d2a182e7cad730ed6766616a361f6d1cb",
+        "result.json": "81eaa57b86561cd72ea5db4c0aef00945505d148d25855c604f098644c965694"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "535709039aed2442f90534ba8385a58ae086128ee6ecb75b132ca39dd8af877b",
+        "PROCESS.json": "d62d93878b6389ecb7d15b28324e933ec4f08b39f054d1daf74abf3a793ffa29",
+        "events.jsonl": "60d568dca01da61f7f22456ff6a1d25c4130c5d894d1f9f76d00ac02055f7af2",
+        "result.json": "64b61512e11445dfd0b44dd36448c7319830b99022397c3c8733a949a5df5eb2"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "2ad7cab5c420adb4f9ed22b015d357fe61ab9121623bcfb8fa6c71b0ca4b9fdc",
+        "PROCESS.json": "937fc908c20d3326605518e134052403a03b0abd266e6d27ebe1ff168c4e1094",
+        "events.jsonl": "7483e4b583bd48e8d1c6d00cc4f219bf02c9a608fab56b0c367b64e3834c84d4",
+        "result.json": "f9f7cc243174018be9030a8b223eb94647e4b5c9c2f476ec11b29d703e912451"
+      }
+    },
+    {
+      "run_id": "matrix-s17-after_commit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "3b98ec34b986b9119fb92ec959a5e2336c6fcb18588dd12b90172bb3b3605555",
+        "PROCESS.json": "471117d3ab7109597c03116c74da4f48b93c19183a75c47fe0da42bafb03c357",
+        "events.jsonl": "2ba6241b1f0bf390b71b569ac72d70f806dd165603a2abeacf2d6feff2d7b7c6",
+        "result.json": "e2fae69081b0d14b4c753120eb0806b403023c4931f07bdb455e521b6eb12495"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "74bcc7e16f664d68a7c5effedf0e7d2e94b57ed6295ed816aa812c4f5f9ef778",
+        "PROCESS.json": "75e921d204b0644015151818f1538433c0239e877be6924640c1db98ecac688a",
+        "events.jsonl": "db3c9e4d8f8c1ec96c028a023df9032342d860e0ed1dbe060d973c059803bd63",
+        "result.json": "0b62cb7e74d7de19f40e65b74276a33aa7f91fa12dc70bae545e7a00d18cc8b4"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "fd257d742ed5741e3d2f5c2ece181375c9259abee1269c4123662260386151de",
+        "PROCESS.json": "a3297ae8efd6daf61f63f49d800e6b13d673983614c776dc962f6721e319ad81",
+        "events.jsonl": "9e7531369abb0992185af3fd04bcb92875e10524889077e79ec4128e24b01d3a",
+        "result.json": "c9594be9768089c0bca384d61911a40910cc04840d70f45a4314c8c3e27e268f"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "04c5c624c99004ee52f849c9912008b68bd2d30cce0cd7cc4c4d331e2d000022",
+        "PROCESS.json": "2a1952d2a860abab6c509a454308bce900d906cf94d034218f0fdf4bd1f1871e",
+        "events.jsonl": "18e4f8e7682bf9536e53442f0ab8653c109e8f68d3e35570616e8761b177be28",
+        "result.json": "767afab06207ae43cc2c0206191a112da2539ac387dcbf199f7e7f9cd4ecd6ab"
+      }
+    },
+    {
+      "run_id": "matrix-s17-unheld-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "fbf2764465f168d429315f80b605a80170899ca6f41ec63f33193776bfc7bef2",
+        "PROCESS.json": "4659902798215602de2cc57354b21d6b76ef8ad156a824cfe95a402dd18d4e2b",
+        "events.jsonl": "96cee94a60e85ff76f5ac89f4c3afe9e24cb4a5af869db8d4da20c3c03d7d350",
+        "result.json": "8986b328bd8c45b2bac1a405e2940f22c79c6292c91ddb245479de0061a2d5cd"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "9b46be9cb1bf3b97160776b35a82d7ed657c2448d3ae7961311d47f5351e1de0",
+        "PROCESS.json": "256a73310eb9ab2ca68b32846523c60a7764f697bf3bffe6ae9dfbe93b07d2bc",
+        "events.jsonl": "c1f4c4aedaafb7e817a710be1337e612ce2716bcf050a921637db340cf999ba5",
+        "result.json": "8b1a3a7812e1b6a7f27c2bae0b6423967537a1e27c9893b80b1ae0d81402defb"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "31505a3fc2fd3417bf5ad8057b3a7550ee904ebba0f7131c215a534ebed680e0",
+        "PROCESS.json": "ded973c778804c1993210b337c549359747c8ca28b654bab417c868088d81747",
+        "events.jsonl": "4edacf9e27a060ae7446f5c69eae330ecfabe1a17e1ca1a4a219d110ae02e726",
+        "result.json": "7d540c3678625872c9da070ace51218a92375976fdfd639ea08c0367a20279b3"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "c48126881e2c983fe862752a0bf6cab724003633c9186d103e254d0524c9f4cd",
+        "PROCESS.json": "18f586d6f506668c6bd13579dc4fff872dae35647f3b1adc09e98207b0a3af70",
+        "events.jsonl": "d7d49cd426b519a9d29b5f9fa98d896ee3a92026a13f6211c23b0df113595b60",
+        "result.json": "5d42845815746f2c15edebbdbcf4a2932fc19459976bd1e69af4654f827c3778"
+      }
+    },
+    {
+      "run_id": "matrix-s41-accepted_precommit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "a5d4b715bed741e34687e79b36bd67d504b96d212f829baf18075827482b855e",
+        "PROCESS.json": "83623021c05cdd293f03e3b74e286278541a82b164181d6de3227f155d7a9350",
+        "events.jsonl": "0e912990c0ea85924d229839d3de2ab1b2a69b1c82a7d86c98852ef4055b1bfd",
+        "result.json": "0ac1a837406a097f7c5d9d93e984fde66ba8eef8cdff2766a7c9c95624146055"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "797f8cb60ce43959f5466d10a954135fe6281cbbf876ecf4ce3032f9755fc133",
+        "PROCESS.json": "024000740c2198385c62b1a8c71adb4b4e7be170be2c2210c0b7daeb8c4125ae",
+        "events.jsonl": "7cf14cf3eca87128edba8ad79fabed6e348e4c23d851b7159c9f170e43d8df87",
+        "result.json": "8f5ba0706d0ddf6ab07b351e4f4a113648c5b686381ab089b48bb862e88ee3e5"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "d9915538eee816ce51caa6afbf94ccb858d4c27879973d8765e0db47a270f601",
+        "PROCESS.json": "409d423424331d54d12af3f6b0b2bf110bd632831d55a2e6ca0e628eea10e100",
+        "events.jsonl": "13c7ae2f59d3eb7f726af156e8eb79f28cc5d60d05a2ff400b8112ae702c88d7",
+        "result.json": "f91ca6bdfc954b3b070787caa83be39937a6df000e527403600e48bbf3abd546"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "51bc4d79a54e3f61cd8bb9f199c48f0c45f4c1bac3a823585867150a5a0df262",
+        "PROCESS.json": "5b0fc2ffb54059d09f7c6cf46c5c6afb827493b37b8faf8a56fcefec9198c873",
+        "events.jsonl": "f67cfa7f85b2c6a609ec40cab3c202cd5f85fa40acce2727ddae1d1ec5e96c58",
+        "result.json": "2ebaaab207cd983dc2d9309e675815edf5ab8ccd02cc29131e0c4839428a6277"
+      }
+    },
+    {
+      "run_id": "matrix-s41-after_commit-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "cf300f4186d0b6b7814ce443a218b9d4476b2f007defbb057e0642a875519e53",
+        "PROCESS.json": "a24c1bada16f15d7fcd9f5aa2b82456ae29e2a29b7c65eb5e1758739f61e5cd7",
+        "events.jsonl": "47679c8d59949d664237daa2e9bb0cea1e9a793b1b642e3eec1392ecafa3ff02",
+        "result.json": "cbb35510e06d803a591ac28ae78af081e10a5e92aee1319d6cd181db78907297"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_no_summary-v02",
+      "input_sha256": {
+        "manifest.json": "a161e88c10aedfb61b02b8aad7075d3e4d67af788b3497ab4bc641d70ea0524e",
+        "PROCESS.json": "c47d171d7e8133fedb943ef2be4f23e1fdd9b9484d54f8bbd74c9137359837e0",
+        "events.jsonl": "6c74efe21a719cc83e56c6a75ccedfd7b32ca48be374ca85f07a7a98e778cd71",
+        "result.json": "e9dec3853830a05f44b877ba13dd12ead2110bab853ec2ce5ce59a6a4a81e50a"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-scoped_summary-v02",
+      "input_sha256": {
+        "manifest.json": "88c1da8b50393af01f0e7528840a126c60a8b51f2bc60e8752b93c6815d59f8c",
+        "PROCESS.json": "6c43ed385f131caa9f1f84149ce71ac785cabcdfb8182c2268be00b7c73392e4",
+        "events.jsonl": "7ded5aed47639a9ab00a7341425384014c996c7899c236387b9401fb8087b403",
+        "result.json": "bc2e281ccd5180471c8043bf0745935fd885fccbadeb34db73e1fa450147c7d5"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "cee4d63af006640ab4dffe0624e4adbc788cd42c697c8638accae44d101529f3",
+        "PROCESS.json": "574af32d888897bcf1482854d58cc11dd6ea0a3748c4be54a94492422186274f",
+        "events.jsonl": "2f3914c748e581c71feca867358d66e571115b5515d5c6f68c7becf630141813",
+        "result.json": "335fb738cd99172ce3ff3e89e9452b367c6383e96c9c58de0f5b5acc16aedb4b"
+      }
+    },
+    {
+      "run_id": "matrix-s41-unheld-cancel_summary-v02",
+      "input_sha256": {
+        "manifest.json": "801a01669226152ac1823336a52ccc7f165f9edc89880eca72c250ffa008fdd6",
+        "PROCESS.json": "39d319bf1536cc5ab27bba47ec6d3ecff23436475a9560f739a87730429e5c36",
+        "events.jsonl": "7203c6a0d3a41b80e744aadb9116e24cbc2c8c21db832f7e822a6f2844244240",
+        "result.json": "ddd8dae8ed9054e7b17eb226699603d27f68efdcbae88f81b122f1048ed0e179"
+      }
+    },
+    {
+      "run_id": "matrix-s17-drain_timeout-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "c33286a8b406554f551430ffcf40dbc24de68768648729aaf33cf9bb2f8754c2",
+        "PROCESS.json": "4b055ea70101ee242a6ae08dcd92bbbd7c259af3a9063a0c9f290f99a49a8e95",
+        "events.jsonl": "db42e9036cb0a834a658e2a0cc2c92aab25c360e01c360f611d1636737f72b55",
+        "result.json": "3da5bc291c703e3df4918d317e8510e74474b0ac5c95e22c1284c1c0526ac6bf"
+      }
+    },
+    {
+      "run_id": "matrix-s41-drain_timeout-drain_summary-v02",
+      "input_sha256": {
+        "manifest.json": "cf8c38edb5bf29fa12226437d59c71b25466e5d2614999359aec2a99685d583d",
+        "PROCESS.json": "45e9f6d874379200d28b685d84b11883da97b7a7dd3d45aa6da15f164ef63090",
+        "events.jsonl": "a2f9be7f112b3aaea73110ff812e460e0c29f2a4e0589a2eebf767d13f5f8d49",
+        "result.json": "09bf00b1c40e1b59b0d4666774af7194a295d0b1a2faed3c89a4c3500e8094a2"
+      }
+    }
+  ],
+  "paired_input_sha256": {
+    "17:old": "2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da",
+    "17:human": "d15a8c80e80000c3a0d4d2601badbcfe6f0e72ab59e2f25bc8f4e999025c6dc1",
+    "17:new_background": "88873e2684592fa62bad304829006780b831088f13783cfc63520e60a26baf22",
+    "17:independent": "a98e92113df47dbc11076daa75fca91b896eca8f054bc49ab11bd6af9ab4a05e",
+    "41:old": "df7c7d36a00fff66c9f6644c5d5d627598a7453b6a7f3e0551f49c58b0afa4f9",
+    "41:human": "e692ae516388b1ee233c5fc95f92243bdb851a793889a45ee6f674a0f7c26bfa",
+    "41:new_background": "1ac0e78642ce33b3e98ba12d25a991b49ad9ff35c1972a11b5d00a7433df3ac1",
+    "41:independent": "70e9a1e741388e9d3c11c849b51a28e7186c54ea20b93c8f9365a57f3cc5c562"
+  },
+  "delivery_counterexample": {
+    "run_id": "receipt-fault-v02",
+    "input_sha256": {
+      "manifest.json": "b34c889df3a8f87f1646b9fcaf8158fe1f4f09b444ea8d33343dcd0e6049e260",
+      "PROCESS.json": "66edaa7e17208a67a012d9dda310906bfca679c98493bf18c95df82c80f144af",
+      "events.jsonl": "2e409e34d9d627a14e05f5772e4f8c4a348efb8b0a869e29824fb62dda1de643",
+      "result.json": "a0cb6c7bbddafb33801e83a7db00f0d9f54013803c9e53d728d5a2a7a5c893ef"
+    }
+  },
+  "report_sha256": "9546820c2e44ad26f4b1b68550631490e7368bed704172508a49f13e0f335af4",
+  "summary_sha256": "27209f92e371794855030dcb23c45245191326bea6c221f00f79d6e1f8ed393b"
+}

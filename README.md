@@ -31,6 +31,12 @@ reproducible.
   [RE-Bench source-contract review](docs/re-bench/re-bench-systems-benchmark-review-v0-1.md)
   for a pinned-source analysis of three evaluator contracts, `score@k`, and
   the limits of research-automation claims.
+- Read the
+  [Stop Scope evidence supplement](research/stop-scope/README.md) for the
+  Apart Research sprint study comparing cancellation, worker drain and
+  origin-scoped write control in a local Open-SWE workflow: browsable harness,
+  offline auditor, result summaries and provenance (programmed, deterministic
+  model responses; not a live-model test).
 
 ## Latest verified result
 
