@@ -6,6 +6,8 @@ This supplement accompanies a local Open-SWE comparison of cancellation, waiting
 
 The [Apart sprint submission](https://apartresearch.com/sprints/projects/verifying-stop-scope-in-agent-workflows-lpj9) reports a deterministic local control experiment, not a test of a model's willingness to stop. The original submission and evidence release remain unchanged. This directory now exposes the code and summaries without requiring a large archive download.
 
+**Later development:** the [9 October 2026 research progress and evidence snapshot](progress/2026-10-09/README.md) separately publishes live A development observations, scoped-confirmation controls and cancellation-target checks. It includes its own records, scope statement and portable verifier; the sprint results below remain unchanged.
+
 ## Read the experiment
 
 | Question | Start here |

@@ -22,6 +22,11 @@ jobs:
         run: python -m pip install .
       - name: Run tests
         run: python -m unittest discover -s tests -v
+      - name: Verify Stop Scope progress snapshot offline
+        working-directory: research/stop-scope/progress/2026-10-09
+        run: |
+          python -B verify_snapshot.py
+          python -B -m unittest test_snapshot -v
 
   inspect-eval-tests:
     runs-on: ubuntu-latest

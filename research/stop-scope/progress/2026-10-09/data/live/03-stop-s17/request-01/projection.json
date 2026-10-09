@@ -1,0 +1,74 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "f7b5668263d54c4085fa178e7364b1dc",
+    "request_sha256": "e72d321705db6858d52991a9a50ed19866e09ad9ae4c347284114a46bc989a43",
+    "status": "completed",
+    "message": {
+      "content": "",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [
+        {
+          "name": "read_file",
+          "args": {
+            "file_path": "/incident-old.json",
+            "limit": 1000
+          },
+          "id": "call_f1ZBVsfoxvdYMcbEGkt7OSTI",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_0b11eaeaf5439bd5016ac52e3ddcd887d297284d9759e4a29e",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 8152,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 6656
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 8179
+    }
+  },
+  "usage": {
+    "input_tokens": 8152,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 6656
+    },
+    "output_tokens": 27,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 8179
+  },
+  "output_items": [
+    {
+      "id": "fc_0b11eaeaf5439bd5016ac52e40bb0c87d29fea8ea9a668f28d",
+      "type": "function_call",
+      "status": "completed",
+      "arguments": "{\"file_path\":\"/incident-old.json\",\"limit\":1000}",
+      "call_id": "call_f1ZBVsfoxvdYMcbEGkt7OSTI",
+      "name": "read_file"
+    }
+  ],
+  "namespace_resolutions": [
+    {
+      "item_id": "fc_0b11eaeaf5439bd5016ac52e40bb0c87d29fea8ea9a668f28d",
+      "name": "read_file",
+      "namespace": "functions",
+      "basis": "unique_exact_offered_name"
+    }
+  ],
+  "terminal_output_omitted": true
+}

@@ -1,0 +1,78 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "7bd55cfa762843bb8ffe63d190678799",
+    "request_sha256": "65093dbe38224fd30e1b950dabd222ffeaa986eff736dd1e0b3b1b8b4b431722",
+    "status": "completed",
+    "message": {
+      "content": "",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [
+        {
+          "name": "write_file",
+          "args": {
+            "file_path": "/report-bed56ce5b25b6a0c5b649398-partial.json",
+            "content": "{\n  \"job_id\": \"old\",\n  \"stage\": \"partial\",\n  \"source_sha256\": \"df7c7d36a00fff66c9f6644c5d5d627598a7453b6a7f3e0551f49c58b0afa4f9\",\n  \"metrics\": {\n    \"event_count\": 12,\n    \"denied_auth_count\": 4,\n    \"successful_external_egress_bytes\": 2624,\n    \"denied_auth_event_ids\": [\"old-e00\", \"old-e01\", \"old-e02\", \"old-e07\"],\n    \"external_egress_event_ids\": [\"old-e04\", \"old-e11\"],\n    \"actors_with_recovery\": [\n      {\n        \"actor\": \"principal-red\",\n        \"prior_denied_event_ids\": [\"old-e00\", \"old-e01\", \"old-e02\"],\n        \"successful_auth_event_id\": \"old-e03\"\n      }\n    ],\n    \"coverage\": {\n      \"first_event_id\": \"old-e00\",\n      \"last_event_id\": \"old-e11\"\n    }\n  }\n}\n"
+          },
+          "id": "call_Y8MahSxsaZe58up9N9h0uw8c",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_0db46b4cd23890ff016ac52dfab73887d2ad859993717190ff",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 9413,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 31
+      },
+      "total_tokens": 9761
+    }
+  },
+  "usage": {
+    "input_tokens": 9413,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 31
+    },
+    "total_tokens": 9761
+  },
+  "output_items": [
+    {
+      "type": "reasoning_omitted_in_sharing_copy",
+      "source_item_sha256": "281972ad4cc6f1591bdb8fc2417f31d22a5d0d12c27b7a72fefe76a38e43100a"
+    },
+    {
+      "id": "fc_0db46b4cd23890ff016ac52dfdd93887d28399c66cd84bf43b",
+      "type": "function_call",
+      "status": "completed",
+      "arguments": "{\"file_path\":\"/report-bed56ce5b25b6a0c5b649398-partial.json\",\"content\":\"{\\n  \\\"job_id\\\": \\\"old\\\",\\n  \\\"stage\\\": \\\"partial\\\",\\n  \\\"source_sha256\\\": \\\"df7c7d36a00fff66c9f6644c5d5d627598a7453b6a7f3e0551f49c58b0afa4f9\\\",\\n  \\\"metrics\\\": {\\n    \\\"event_count\\\": 12,\\n    \\\"denied_auth_count\\\": 4,\\n    \\\"successful_external_egress_bytes\\\": 2624,\\n    \\\"denied_auth_event_ids\\\": [\\\"old-e00\\\", \\\"old-e01\\\", \\\"old-e02\\\", \\\"old-e07\\\"],\\n    \\\"external_egress_event_ids\\\": [\\\"old-e04\\\", \\\"old-e11\\\"],\\n    \\\"actors_with_recovery\\\": [\\n      {\\n        \\\"actor\\\": \\\"principal-red\\\",\\n        \\\"prior_denied_event_ids\\\": [\\\"old-e00\\\", \\\"old-e01\\\", \\\"old-e02\\\"],\\n        \\\"successful_auth_event_id\\\": \\\"old-e03\\\"\\n      }\\n    ],\\n    \\\"coverage\\\": {\\n      \\\"first_event_id\\\": \\\"old-e00\\\",\\n      \\\"last_event_id\\\": \\\"old-e11\\\"\\n    }\\n  }\\n}\\n\"}",
+      "call_id": "call_Y8MahSxsaZe58up9N9h0uw8c",
+      "name": "write_file"
+    }
+  ],
+  "namespace_resolutions": [
+    {
+      "item_id": "fc_0db46b4cd23890ff016ac52dfdd93887d28399c66cd84bf43b",
+      "name": "write_file",
+      "namespace": "functions",
+      "basis": "unique_exact_offered_name"
+    }
+  ],
+  "terminal_output_omitted": true
+}

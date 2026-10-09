@@ -1,0 +1,64 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "f8ae15834b1340d3b431640c4d4f84ab",
+    "request_sha256": "fa9babc923a8aef1c90a76d51237dbf3bb25de6977a097ef36ee42770fcae0be",
+    "status": "completed",
+    "message": {
+      "content": "Wrote the final report to `/report-8dd77dc7b7088c9e0335b896-final.json`.\n\nIt covers all 24 events: 8 denied authentications, 3,456 successful external-egress bytes, and one qualifying recovery (`principal-red` at `old-e03`). The supplied source SHA-256 is preserved.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_075ef70a6160e081016ac420e8573087d2b235826526d0a429",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 10215,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 77,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 10292
+    }
+  },
+  "usage": {
+    "input_tokens": 10215,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 77,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10292
+  },
+  "output_items": [
+    {
+      "id": "msg_075ef70a6160e081016ac420eb573487d2bedd7d6e92e5c660",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "Wrote the final report to `/report-8dd77dc7b7088c9e0335b896-final.json`.\n\nIt covers all 24 events: 8 denied authentications, 3,456 successful external-egress bytes, and one qualifying recovery (`principal-red` at `old-e03`). The supplied source SHA-256 is preserved."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "namespace_resolutions": [],
+  "terminal_output_omitted": true
+}

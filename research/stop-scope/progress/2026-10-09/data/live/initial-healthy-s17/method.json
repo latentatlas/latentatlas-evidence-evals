@@ -1,0 +1,5 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "billing_route": "chatgpt_plan_oauth"
+}

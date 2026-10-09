@@ -1,0 +1,31 @@
+"""Resolve the local tests explicitly; do not import a same-named predecessor."""
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import unittest
+from contract import ROOT, require
+from audit import sha
+
+
+def main():
+    suite = unittest.TestSuite(); modules = []
+    for name in ("test_queue", "test_mutations", "test_termination", "test_audit", "test_confirmation_audit"):
+        path = ROOT / (name + ".py")
+        spec = importlib.util.spec_from_file_location("role_queue_"+name, path)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules[spec.name] = module; spec.loader.exec_module(module)
+        require(Path(module.__file__).resolve() == path, "Foreign test module")
+        suite.addTests(unittest.defaultTestLoader.loadTestsFromModule(module))
+        modules.append({"file": str(path), "sha256": sha(path)})
+    for name in ("audit", "qualify", "contract", "scope_controller", "authority", "queue_audit", "mutation_scoring", "termination", "confirmation_audit"):
+        if name in sys.modules:
+            require(Path(sys.modules[name].__file__).resolve() == ROOT/(name+".py"), "Foreign dependency " + name)
+    result = unittest.TextTestRunner(verbosity=1).run(suite)
+    ok = result.wasSuccessful() and not result.skipped and result.testsRun == 106
+    print(json.dumps({"status": "passed" if ok else "failed", "tests_run": result.testsRun,
+                      "skipped": len(result.skipped), "test_modules": modules}))
+    return 0 if ok else 1
+
+
+if __name__ == "__main__": raise SystemExit(main())

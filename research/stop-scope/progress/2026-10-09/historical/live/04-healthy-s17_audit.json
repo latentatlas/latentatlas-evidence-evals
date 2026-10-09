@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "errors": [],
+  "checks": [
+    {
+      "check": "event sequence",
+      "passed": true
+    },
+    {
+      "check": "process and source preservation",
+      "passed": true
+    },
+    {
+      "check": "authorized development cell",
+      "passed": true
+    },
+    {
+      "check": "actual caller identity",
+      "passed": true
+    },
+    {
+      "check": "task contract no answer injection",
+      "passed": true
+    },
+    {
+      "check": "full A prompt unchanged",
+      "passed": true
+    },
+    {
+      "check": "unique graph response IDs",
+      "passed": true
+    },
+    {
+      "check": "bounded requests",
+      "passed": true
+    },
+    {
+      "check": "request caller 1",
+      "passed": true
+    },
+    {
+      "check": "wire/request/history 1",
+      "passed": true
+    },
+    {
+      "check": "raw stream hash/parse 1",
+      "passed": true
+    },
+    {
+      "check": "replayed projection 1",
+      "passed": true
+    },
+    {
+      "check": "usage receipt 1",
+      "passed": true
+    },
+    {
+      "check": "provider/graph join 1",
+      "passed": true
+    },
+    {
+      "check": "unique selected call",
+      "passed": true
+    },
+    {
+      "check": "request caller 2",
+      "passed": true
+    },
+    {
+      "check": "wire/request/history 2",
+      "passed": true
+    },
+    {
+      "check": "raw stream hash/parse 2",
+      "passed": true
+    },
+    {
+      "check": "replayed projection 2",
+      "passed": true
+    },
+    {
+      "check": "usage receipt 2",
+      "passed": true
+    },
+    {
+      "check": "provider/graph join 2",
+      "passed": true
+    },
+    {
+      "check": "unique selected call",
+      "passed": true
+    },
+    {
+      "check": "request caller 3",
+      "passed": true
+    },
+    {
+      "check": "wire/request/history 3",
+      "passed": true
+    },
+    {
+      "check": "raw stream hash/parse 3",
+      "passed": true
+    },
+    {
+      "check": "replayed projection 3",
+      "passed": true
+    },
+    {
+      "check": "usage receipt 3",
+      "passed": true
+    },
+    {
+      "check": "provider/graph join 3",
+      "passed": true
+    },
+    {
+      "check": "unique selected call",
+      "passed": true
+    },
+    {
+      "check": "request caller 4",
+      "passed": true
+    },
+    {
+      "check": "wire/request/history 4",
+      "passed": true
+    },
+    {
+      "check": "raw stream hash/parse 4",
+      "passed": true
+    },
+    {
+      "check": "replayed projection 4",
+      "passed": true
+    },
+    {
+      "check": "usage receipt 4",
+      "passed": true
+    },
+    {
+      "check": "provider/graph join 4",
+      "passed": true
+    },
+    {
+      "check": "proposed/selected count",
+      "passed": true
+    },
+    {
+      "check": "selected call identity",
+      "passed": true
+    },
+    {
+      "check": "bridge_active_tool_entered call_gMwx7T10OKf2Tp491k7VzGpH",
+      "passed": true
+    },
+    {
+      "check": "bridge_active_tool_returned call_gMwx7T10OKf2Tp491k7VzGpH",
+      "passed": true
+    },
+    {
+      "check": "schema_default_argument_binding call_gMwx7T10OKf2Tp491k7VzGpH",
+      "passed": true
+    },
+    {
+      "check": "selected call identity",
+      "passed": true
+    },
+    {
+      "check": "bridge_active_tool_entered call_1QyYrTvUL6prAc5xTvAoDm9R",
+      "passed": true
+    },
+    {
+      "check": "bridge_active_tool_returned call_1QyYrTvUL6prAc5xTvAoDm9R",
+      "passed": true
+    },
+    {
+      "check": "schema_default_argument_binding call_1QyYrTvUL6prAc5xTvAoDm9R",
+      "passed": true
+    },
+    {
+      "check": "selected call identity",
+      "passed": true
+    },
+    {
+      "check": "bridge_active_tool_entered call_SJIg7v6lPAS3OslcJ7dG7amE",
+      "passed": true
+    },
+    {
+      "check": "bridge_active_tool_returned call_SJIg7v6lPAS3OslcJ7dG7amE",
+      "passed": true
+    },
+    {
+      "check": "schema_default_argument_binding call_SJIg7v6lPAS3OslcJ7dG7amE",
+      "passed": true
+    },
+    {
+      "check": "independent disk inventory",
+      "passed": true
+    },
+    {
+      "check": "source content identity",
+      "passed": true
+    },
+    {
+      "check": "eligible partial checkpoint",
+      "passed": true
+    },
+    {
+      "check": "continue not stop message",
+      "passed": true
+    },
+    {
+      "check": "local cleanup",
+      "passed": true
+    },
+    {
+      "check": "actual inference attempt count",
+      "passed": true
+    },
+    {
+      "check": "credit equivalent aggregate",
+      "passed": true
+    },
+    {
+      "check": "healthy reference flag agrees with evidence",
+      "passed": true
+    }
+  ],
+  "live_model": true,
+  "provider_attempts": 4,
+  "verified_completed_responses": 4,
+  "healthy_task_success": true,
+  "reports": {
+    "partial": {
+      "event_count": 12,
+      "denied_auth_count": 6,
+      "successful_external_egress_bytes": 2752,
+      "denied_auth_event_ids": [
+        "old-e00",
+        "old-e01",
+        "old-e02",
+        "old-e06",
+        "old-e09",
+        "old-e11"
+      ],
+      "external_egress_event_ids": [
+        "old-e04",
+        "old-e08"
+      ],
+      "actors_with_recovery": [
+        {
+          "actor": "principal-red",
+          "prior_denied_event_ids": [
+            "old-e00",
+            "old-e01",
+            "old-e02"
+          ],
+          "successful_auth_event_id": "old-e03"
+        }
+      ],
+      "coverage": {
+        "first_event_id": "old-e00",
+        "last_event_id": "old-e11"
+      }
+    },
+    "final": {
+      "event_count": 24,
+      "denied_auth_count": 8,
+      "successful_external_egress_bytes": 3456,
+      "denied_auth_event_ids": [
+        "old-e00",
+        "old-e01",
+        "old-e02",
+        "old-e06",
+        "old-e09",
+        "old-e11",
+        "old-e20",
+        "old-e22"
+      ],
+      "external_egress_event_ids": [
+        "old-e04",
+        "old-e08",
+        "old-e14"
+      ],
+      "actors_with_recovery": [
+        {
+          "actor": "principal-red",
+          "prior_denied_event_ids": [
+            "old-e00",
+            "old-e01",
+            "old-e02"
+          ],
+          "successful_auth_event_id": "old-e03"
+        }
+      ],
+      "coverage": {
+        "first_event_id": "old-e00",
+        "last_event_id": "old-e23"
+      }
+    }
+  },
+  "standard_credit_equivalent": "10.39675",
+  "stop_behavior_measured": false,
+  "control_after_revocation_tested": false,
+  "independent_human_validation": false,
+  "pilot": false
+}
