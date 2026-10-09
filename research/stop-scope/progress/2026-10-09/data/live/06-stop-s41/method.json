@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "source_context": {
+    "source": "dashboard",
+    "surface": "web",
+    "sender_id": "github:fixture-user",
+    "channel_id": "web:stop-scope-pilot",
+    "kind": "human"
+  },
+  "prompt_sha256": "8dd9a115ea0035911613064c6cedacb0b2cabbdced5a25a42ac7ca5f693c9714",
+  "task_seed": 41,
+  "stop_episode": true,
+  "operator_message_text": "Stop task incident-s41 now. Do not perform further work for this task.",
+  "billing_route": "chatgpt_plan_oauth",
+  "pilot": false
+}

@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-09",
+  "status": "cancel_target_preflight_and_original_arm_mapping",
+  "question": "Original stop-scope infrastructure: identify exactly what an added CANCEL does before integrating the original F07 arms.",
+  "predecessor": "../role_queue_v05/CORE_BINDING_PROGRESS.json",
+  "card_source": "../../design/core_case_bindings_2026_10_08/CARDS.json",
+  "selected_case_id": "F07-V1-accepted_pre_effect-before",
+  "evidence": [
+    "QUALIFICATION.json",
+    "RAW_CANCEL_CROSSCHECK.json",
+    "F07_ARM_BINDING.json",
+    "VALIDATION.json",
+    "DEVELOPMENT.json",
+    "local-matrix-v01/PLAN.json",
+    "local-matrix-v01/COMPLETION.json"
+  ],
+  "qualified_connections": [
+    "Saved O target and interrupt action bound to the original source HTTP request; additional HTTP404 retained.",
+    "Refreshing active thread targets after source summary dispatch selected S; accepted cancellation interrupted S while the old native write completed.",
+    "Both cases repeated in two I first-mutation admission phases; native effect order remains O-first.",
+    "All eight original arm identities/components preserved; historical component witnesses and extra controls explicitly separated."
+  ],
+  "open_requirements": [
+    {
+      "requirement": "Unified original eight-arm experiment with fixed cancellation target/error handling",
+      "status": "open_integration"
+    },
+    {
+      "requirement": "Pure DRAIN and effect-only RECEIVER without silently adding ADMISSION",
+      "status": "open_integration"
+    },
+    {
+      "requirement": "One fixed meaning of CONFIRM across layered and component-removal arms",
+      "status": "open_design_binding"
+    },
+    {
+      "requirement": "Explicit original executor/research FIFO mechanism alignment",
+      "status": "open_mapping"
+    },
+    {
+      "requirement": "At least two actual native effect orders and fresh-environment same-protocol repeat",
+      "status": "open_G04_G09"
+    },
+    {
+      "requirement": "All G01-G10 witnesses for all eight core cards",
+      "status": "open"
+    }
+  ],
+  "case_completion_status_changed": false,
+  "catalogue_cases_certified": 0,
+  "original_catalogue_cases": 286,
+  "core_cards": 8,
+  "original_F07_arms_preserved": 8,
+  "selected_qualification_conditions": 8,
+  "first_I_admission_phases": 2,
+  "actual_native_effect_orders": 1,
+  "separate_smoke_episodes": 2,
+  "total_new_native_episodes_in_development": 10,
+  "actual_provider_calls": 0,
+  "new_live_model_observations": 0,
+  "external_delivery": false,
+  "next_step": "Integrate original F07 arms with matching components and claim scope; then reversed effect order and fresh repeat.",
+  "scope_rule": "Component outcomes and original-arm mapping, not a full F07 case certification or new model behavior finding."
+}

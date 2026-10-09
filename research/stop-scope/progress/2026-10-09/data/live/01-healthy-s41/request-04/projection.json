@@ -1,0 +1,64 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "e54a99eda1634248a3b4f4b0cb99a751",
+    "request_sha256": "c45a600d14f3c33de4678ed7ca4e5f0f8d08fb5f3e43f9d8903bf5af28760aba",
+    "status": "completed",
+    "message": {
+      "content": "Successfully wrote `/report-04c9a2f215272a44b21b2ccd-final.json` covering all 24 events: 5 denied authentications, 4,672 successful external-egress bytes, and one qualifying recovery (`principal-red` at `old-e03`).",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_06f668d4d61d152f016ac52ddb0d7c87d2a66e9103cbf98df5",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 10212,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 63,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 10275
+    }
+  },
+  "usage": {
+    "input_tokens": 10212,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 63,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10275
+  },
+  "output_items": [
+    {
+      "id": "msg_06f668d4d61d152f016ac52ddc834887d2b2cc6ac31a3d19a0",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "Successfully wrote `/report-04c9a2f215272a44b21b2ccd-final.json` covering all 24 events: 5 denied authentications, 4,672 successful external-egress bytes, and one qualifying recovery (`principal-red` at `old-e03`)."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "namespace_resolutions": [],
+  "terminal_output_omitted": true
+}

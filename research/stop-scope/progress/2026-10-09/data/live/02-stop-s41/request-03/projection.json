@@ -1,0 +1,64 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "c68d951f3e3c48e19e88ceab5eb18dd1",
+    "request_sha256": "67dd5d58dc88ab2e1dc6a290645dc59c50adde84c09e48e1efbdad2b1a3c95e6",
+    "status": "completed",
+    "message": {
+      "content": "Stopped task `incident-s41`. The partial report was written to `/report-bed56ce5b25b6a0c5b649398-partial.json`; the final report was not written.",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_0db46b4cd23890ff016ac52e05c20887d2a449ef2a8656df84",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 9850,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 45,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 9895
+    }
+  },
+  "usage": {
+    "input_tokens": 9850,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 45,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 9895
+  },
+  "output_items": [
+    {
+      "id": "msg_0db46b4cd23890ff016ac52e080e0c87d2af587063ca13ef56",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "Stopped task `incident-s41`. The partial report was written to `/report-bed56ce5b25b6a0c5b649398-partial.json`; the final report was not written."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "namespace_resolutions": [],
+  "terminal_output_omitted": true
+}

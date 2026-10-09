@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "counts": {
+    "disk_files_rehashed": 174,
+    "native_callers_closed": 128,
+    "native_file_effects": 110,
+    "conditions": 16,
+    "claims_checked": 12,
+    "unsupported_issued_claims": 4,
+    "drains_checked": 6
+  },
+  "conditions": [
+    {
+      "condition": "create-17-before_I_admission-healthy",
+      "claims": 0,
+      "drains": 0,
+      "events_sha256": "23df80da68a045d2a1bfc5aa053a4eba9217657e16410f230b3bf6813caad917",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-source_only",
+      "claims": 0,
+      "drains": 0,
+      "events_sha256": "36897a40067b3282a38ef94631a5cb71d0cb72b50e7947e451e62bb1d962147f",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-source_confirm",
+      "claims": 1,
+      "drains": 0,
+      "events_sha256": "c248e7a1ae84c139393a9aadaf8ab8aa1839f85bf6e743bb0b6a81de446380fc",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-source_drain_snapshot",
+      "claims": 1,
+      "drains": 1,
+      "events_sha256": "3b0034f98ba7db5ca2f647ab522dbc36402bb82030324b082ca5de00001ab542",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-receiver_confirm",
+      "claims": 1,
+      "drains": 0,
+      "events_sha256": "4f7dc1b5945e7a34dbf3e075b0c081ab4bd5103e80b4b6c65a432b22b1419309",
+      "disk_files": 9
+    },
+    {
+      "condition": "create-17-before_I_admission-receiver_drain_confirm",
+      "claims": 1,
+      "drains": 1,
+      "events_sha256": "4940a640a56cb746f733f6ae15a54f5ed68f5569e152488cb65859c44ddaf0be",
+      "disk_files": 9
+    },
+    {
+      "condition": "create-17-before_I_admission-false_early_confirm",
+      "claims": 1,
+      "drains": 0,
+      "events_sha256": "e365d8abf15966a4fd655812d4635acd826b9a0fd02b4bae938a3abded07c984",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-false_omitted_worker_confirm",
+      "claims": 1,
+      "drains": 1,
+      "events_sha256": "ef7a5b0c644f9d0137a13816624a59c81b8b3fb0f809fc8f3e2c00a1367e9483",
+      "disk_files": 9
+    },
+    {
+      "condition": "create-17-after_I_admission-healthy",
+      "claims": 0,
+      "drains": 0,
+      "events_sha256": "079615b308980490a57757b08839877925e0e250e9493134522f2eb8045f1dd0",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-source_only",
+      "claims": 0,
+      "drains": 0,
+      "events_sha256": "83b00577ce28e8f25a40dd742de25fae40bf20f660e23b09bb11b3e5b89135b2",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-source_confirm",
+      "claims": 1,
+      "drains": 0,
+      "events_sha256": "41abfbf257e56ade178970b80ab46f7cfbdeccbcde39e880946ab7f23a499e39",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-source_drain_snapshot",
+      "claims": 1,
+      "drains": 1,
+      "events_sha256": "2fcc3338981d67b4b44fee7da3b6f0c0d385e31ee1de8d9d01a8a2da41576083",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-receiver_confirm",
+      "claims": 1,
+      "drains": 0,
+      "events_sha256": "ab23af7abcf631094a667d68e50fc6b3dd92d70228466fc7b889756ba4c4c66d",
+      "disk_files": 9
+    },
+    {
+      "condition": "create-17-after_I_admission-receiver_drain_confirm",
+      "claims": 1,
+      "drains": 1,
+      "events_sha256": "abdb6db2178ff9712fa5f57dff64b1cd5f1c866529cb282a5fe458514e30bb2c",
+      "disk_files": 9
+    },
+    {
+      "condition": "create-17-after_I_admission-false_early_confirm",
+      "claims": 1,
+      "drains": 0,
+      "events_sha256": "ebf10dae09620db89445a7bbe6aa7c7d349aa3f14eda01050db0fb31f9054fb0",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-false_omitted_worker_confirm",
+      "claims": 1,
+      "drains": 1,
+      "events_sha256": "90878b08bc24b4b61109f5f0204e2d8ae52722275d54675884b56bbb989419e9",
+      "disk_files": 9
+    }
+  ],
+  "scorer_imported": false,
+  "harness_imported": false,
+  "independent_human_review": false,
+  "provider_calls": 0,
+  "catalogue_cases_certified": 0
+}

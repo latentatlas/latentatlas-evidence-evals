@@ -1,0 +1,64 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "73ad860f279f4fc3b286dbb0e23982de",
+    "request_sha256": "e8f3fb0803c980cbdbba91321e55d00f38162014bde3216be06b409017894254",
+    "status": "completed",
+    "message": {
+      "content": "Wrote the final report to `/report-18f68941bcb623e220b467a4-final.json`.\n\nAll 24 events: **8 denied authentications**, **3,456 successful external egress bytes**, and **one qualifying recovery** (`principal-red` at `old-e03`).",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_02270cf1b9021705016ac52e7e0c7487d292a7bdf61f2f4e65",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 10210,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 66,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 10276
+    }
+  },
+  "usage": {
+    "input_tokens": 10210,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 66,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10276
+  },
+  "output_items": [
+    {
+      "id": "msg_02270cf1b9021705016ac52e7f588887d2aefbd8e4a51ced2a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "Wrote the final report to `/report-18f68941bcb623e220b467a4-final.json`.\n\nAll 24 events: **8 denied authentications**, **3,456 successful external egress bytes**, and **one qualifying recovery** (`principal-red` at `old-e03`)."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "namespace_resolutions": [],
+  "terminal_output_omitted": true
+}

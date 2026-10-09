@@ -37,6 +37,11 @@ reproducible.
   origin-scoped write control in a local Open-SWE workflow: browsable harness,
   offline auditor, result summaries and provenance (programmed, deterministic
   model responses; not a live-model test).
+- Read the dated
+  [Stop Scope research progress and evidence snapshot](research/stop-scope/progress/2026-10-09/README.md)
+  for eight live development episodes and separate local confirmation/cancellation
+  component checks, with complete selected records and a portable offline replay.
+  This progress version does not replace the sprint paper or certify the 286-case design.
 
 ## Latest verified result
 

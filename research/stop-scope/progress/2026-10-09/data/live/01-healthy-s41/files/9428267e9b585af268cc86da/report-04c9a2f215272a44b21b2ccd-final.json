@@ -1,0 +1,23 @@
+{
+  "job_id": "old",
+  "stage": "final",
+  "source_sha256": "df7c7d36a00fff66c9f6644c5d5d627598a7453b6a7f3e0551f49c58b0afa4f9",
+  "metrics": {
+    "event_count": 24,
+    "denied_auth_count": 5,
+    "successful_external_egress_bytes": 4672,
+    "denied_auth_event_ids": ["old-e00", "old-e01", "old-e02", "old-e07", "old-e14"],
+    "external_egress_event_ids": ["old-e04", "old-e11", "old-e19", "old-e21"],
+    "actors_with_recovery": [
+      {
+        "actor": "principal-red",
+        "prior_denied_event_ids": ["old-e00", "old-e01", "old-e02"],
+        "successful_auth_event_id": "old-e03"
+      }
+    ],
+    "coverage": {
+      "first_event_id": "old-e00",
+      "last_event_id": "old-e23"
+    }
+  }
+}

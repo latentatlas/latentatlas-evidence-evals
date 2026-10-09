@@ -1,0 +1,74 @@
+{
+  "envelope": {
+    "record_type": "chatgpt_plan_response_projection",
+    "request_id": "33dd21945d4d48afb45996eee0a6447a",
+    "request_sha256": "c346980cb32018c0471974b7effeac738c51488f6529d2ec4a026b5ffaf25ff2",
+    "status": "completed",
+    "message": {
+      "content": "",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [
+        {
+          "name": "read_file",
+          "args": {
+            "file_path": "/incident-old.json",
+            "limit": 1000
+          },
+          "id": "call_gMwx7T10OKf2Tp491k7VzGpH",
+          "type": "tool_call"
+        }
+      ],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    },
+    "provider_response_id": "resp_02270cf1b9021705016ac52e63522087d2b962bf6c060a4fce",
+    "reported_model": "gpt-6-astra",
+    "provider_usage": {
+      "input_tokens": 8154,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 27,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 8181
+    }
+  },
+  "usage": {
+    "input_tokens": 8154,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 27,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 8181
+  },
+  "output_items": [
+    {
+      "id": "fc_02270cf1b9021705016ac52e6621c087d29420564ee1d19304",
+      "type": "function_call",
+      "status": "completed",
+      "arguments": "{\"file_path\":\"/incident-old.json\",\"limit\":1000}",
+      "call_id": "call_gMwx7T10OKf2Tp491k7VzGpH",
+      "name": "read_file"
+    }
+  ],
+  "namespace_resolutions": [
+    {
+      "item_id": "fc_02270cf1b9021705016ac52e6621c087d29420564ee1d19304",
+      "name": "read_file",
+      "namespace": "functions",
+      "basis": "unique_exact_offered_name"
+    }
+  ],
+  "terminal_output_omitted": true
+}

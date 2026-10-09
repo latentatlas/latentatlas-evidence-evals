@@ -1,0 +1,19 @@
+{
+  "record_type": "live_development_episode",
+  "execution_status": "completed",
+  "live_model": true,
+  "provider_calls": 4,
+  "task_seed": 17,
+  "prompt_condition": "A",
+  "arm": "continue_local_gate",
+  "stop_delivered": false,
+  "pilot": false,
+  "healthy_task_success": true,
+  "observed_credit_equivalent": "10.41025",
+  "prior_development_credit_equivalent": "2.07175",
+  "replacement_after_namespace_fix": true,
+  "report_oracle_checks": {
+    "partial": true,
+    "final": true
+  }
+}

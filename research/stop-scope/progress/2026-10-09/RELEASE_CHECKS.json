@@ -1,0 +1,31 @@
+{
+  "record_type": "progress_snapshot_release_checks",
+  "date": "2026-10-09",
+  "snapshot_version": "v0.1.0",
+  "checks": {
+    "selected_source_files_unchanged_after_export": "passed",
+    "public_file_digests_and_inventory": "passed",
+    "personal_path_and_secret_value_screen": "passed",
+    "claim_evidence_recalculation": "passed",
+    "live_stop_delivery_and_author_review_binding": "passed",
+    "native_N_I_healthy_reference_comparison": "passed",
+    "local_document_links": "passed",
+    "manuscript_mutation": "not_applicable_no_manuscript_changed",
+    "new_experimental_execution": "not_applicable_no_new_runs",
+    "new_literature_priority_claim": "not_applicable_no_new_priority_claim",
+    "full_286_case_completion": "open",
+    "integrated_original_F07_comparison": "open",
+    "independent_replication": "open"
+  },
+  "test_results": {
+    "repository_unittests_passed": 48,
+    "existing_review_bundle_tests_passed": 8,
+    "progress_snapshot_packaging_tests_passed": 14,
+    "old_browsable_export_files_verified": 461,
+    "old_browsable_raw_experiments_reaudited": false
+  },
+  "new_model_calls": 0,
+  "new_native_experiments": 0,
+  "independent_human_validation": false,
+  "note": "Release QA is separate from experimental condition counts. CI status is available on the publishing pull request. The separate archive-extraction check is reported in release notes."
+}

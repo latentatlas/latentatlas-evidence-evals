@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "counts": {
+    "disk_files_rehashed": 96,
+    "native_callers_closed": 64,
+    "native_file_effects": 64,
+    "conditions": 8,
+    "source_stop_conditions": 6,
+    "summary_deliveries": 4,
+    "summary_interrupted": 2,
+    "extra_http_404": 2,
+    "extra_http_204": 2
+  },
+  "conditions": [
+    {
+      "condition": "create-17-before_I_admission-healthy",
+      "events_sha256": "7af7764fc86a5434ff51a3e8289e0624d730272ab2d0a98b75fb058c42b2e79e",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-source_baseline",
+      "events_sha256": "36badb95fbe70a7df262f5166a510a63ffcf6a4d83d08705404776c3eaf98866",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-source_plus_exact_cancel",
+      "events_sha256": "1c3567c69eb1917c332d9594257057a8b03ff05afb9fc6d40cb470ebdb8dfec0",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-before_I_admission-source_plus_refresh_probe",
+      "events_sha256": "2a2c5cc1b53d0d59185eb9fda0fcf9df69d885f11b9e850b543e98b3d66a442b",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-healthy",
+      "events_sha256": "af38bf1b426caf051c844f570fbf6a57416f970180bfd2bad3cbfe8b63d2ab0d",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-source_baseline",
+      "events_sha256": "df3d985a1a6b0a6ae6c9da121e6e3a7c69b14f2a15a41e97eebc8cac5d733b67",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-source_plus_exact_cancel",
+      "events_sha256": "408e5ff32a2a58afdc67baee76f07e5d6788907c595b3ac4d66c1b08cdfc831b",
+      "disk_files": 12
+    },
+    {
+      "condition": "create-17-after_I_admission-source_plus_refresh_probe",
+      "events_sha256": "8d2409eceaa66ca4fb4cc13bc39740a9f5f608a504f82d03630612341a9321b7",
+      "disk_files": 12
+    }
+  ],
+  "scorer_imported": false,
+  "harness_imported": false,
+  "independent_human_review": false,
+  "provider_calls": 0,
+  "catalogue_cases_certified": 0
+}

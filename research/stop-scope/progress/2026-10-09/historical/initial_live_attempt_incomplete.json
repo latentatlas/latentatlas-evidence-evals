@@ -1,0 +1,11 @@
+{
+  "record_type": "live_development_episode",
+  "execution_status": "execution_incomplete",
+  "provider_calls": 1,
+  "task_seed": 17,
+  "arm": "continue_local_gate",
+  "stop_delivered": false,
+  "pilot": false,
+  "report_oracle_status": "missing_or_incorrect",
+  "sharing_note": "Earlier incomplete development attempt; not one of the eight completed episodes. No spending estimate is inferred from this record. Full transport remains retained locally."
+}
