@@ -1,4 +1,0 @@
-model_id,row_count,correct_count,accuracy_pct,false_authority_before,false_authority_after_guard,prevented_false_authority,false_block_valid_before,valid_expected_count,valid_preserved_after_guard,guard_expected_mismatch,primary_failure
-anthropic:claude-opus-4-7,1000,789,78.9,44,0,44,51,270,270,0,wrong_block_or_route
-cohere:command-a-reasoning-08-2025,990,723,73.03,139,0,139,21,268,268,0,wrong_block_or_route
-openai:gpt-5.5,1000,924,92.4,31,0,31,5,270,270,0,wrong_block_or_route

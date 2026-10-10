@@ -1,9 +1,0 @@
-{
-  "status": "development_failure_preserved",
-  "failed_check": "theta_tail_error_0",
-  "reason": "An auxiliary tiny-input check demanded E0<1e-200 after outward rounding to a fixed 512-bit dyadic grid. The positive upper endpoint rounds to 2^-512, about 7.46e-155.",
-  "fix": "Accept this deliberately enlarged error below 1e-140, propagate the entire outward-rounded value. The required generator bound remains unchanged at -1/50.",
-  "original_source": "check_bounds_before_tiny_input_fix.py",
-  "producer_changed": false,
-  "mathematical_acceptance_threshold_changed": false
-}

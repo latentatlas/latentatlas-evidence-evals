@@ -1,5 +1,0 @@
-model_id,expected_case_count,observed_case_count,missing_case_count,extra_case_count,coverage_pct
-anthropic:claude-opus-4-7,1000,1000,0,0,100.0
-cohere:command-a-reasoning-08-2025,1000,990,10,0,99.0
-openai:gpt-5.5,1000,1000,0,0,100.0
-voyage:rerank-2.5,1000,1000,0,0,100.0

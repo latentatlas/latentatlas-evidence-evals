@@ -1,8 +1,0 @@
-{
-  "status": "audit_scope_text_marker_failed",
-  "source_sha256": "47416507b2016278fe034915bf0db9e45e34ba7f81acf2f1c6bee31a309c730a",
-  "failed_check": "literal original \u03bd in PROOF.md",
-  "actual_wording": "original driver \u03bd",
-  "location": "after the mathematical/provenance checks and fresh arithmetic/Arb replays",
-  "interpretation": "A literal text marker mismatch in the new audit, not a failed numerical or analytic inequality. The marker is corrected to match the explicit driver wording."
-}

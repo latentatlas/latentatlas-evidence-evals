@@ -1,6 +1,0 @@
-{
-  "status": "auditor_assertion_failed",
-  "source_sha256": "433149a57ef73ce61c35e482b9631ef491e89315ec8407c4c5ac728a74b692fe",
-  "cause": "The auditor wrongly required the Arb enclosure of 2e-5 to have exact rational endpoints. 1/50000 is not dyadic.",
-  "resolution": "Check that the narrow outward Arb interval contains exactly 1/50000; the separate rational checker already uses that exact Fraction. No producer, coefficient or mathematical acceptance bound changed."
-}

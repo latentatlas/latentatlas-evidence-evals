@@ -1,6 +1,0 @@
-measure,count,denominator,rate,claim_boundary
-High-priority rows,151,,,Freeze size only.
-Reviewed review-eligible high-priority rows,146,146,100.0%,"Freeze completeness, not population coverage."
-Packet-supported block,99,146,67.8%,Frozen reviewed set only; packet evidence supported the conservative block.
-Packet-unsupported block,22,146,15.1%,Frozen reviewed set only; not model-wide false-positive rate and not direct proof the real-world action was safe.
-Insufficient evidence,25,146,17.1%,"Evidence insufficiency, not success or failure."

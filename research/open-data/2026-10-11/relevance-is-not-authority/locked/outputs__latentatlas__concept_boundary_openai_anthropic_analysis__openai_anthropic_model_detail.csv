@@ -1,3 +1,0 @@
-model_id,row_count,correct_count,accuracy_pct,false_authority_count,false_block_valid_count,valid_expected_count,parse_observed_count,parse_failure_count,guard_false_authority_after,guard_expected_mismatch_after,guard_valid_preserved_after,primary_failure
-anthropic:claude-opus-4-7,1000,789,78.9,44,51,270,1000,0,0,0,270,wrong_block_or_route
-openai:gpt-5.5,1000,924,92.4,31,5,270,1000,0,0,0,270,wrong_block_or_route

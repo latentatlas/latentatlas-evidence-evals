@@ -1,4 +1,0 @@
-gate,current_state,publication_effect,next_upgrade
-Second reviewer,not available,No reviewer reliability claim.,Independent reviewer with packet-grounded labels.
-Independent benchmark or population validation,not claimed,No population or benchmark-effectiveness claim.,"Power plan, stratified holdout, and reproducible run."
-Production validation,not used,No customer or production truth mutation.,"Governed deployment evidence, if future scope requires it."

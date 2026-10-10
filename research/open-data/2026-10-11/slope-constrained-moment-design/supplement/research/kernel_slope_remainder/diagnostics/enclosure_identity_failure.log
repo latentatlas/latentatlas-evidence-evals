@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/PROJECT/research/kernel_slope_remainder/check_remainder.py", line 120, in <module>
-    if __name__=='__main__':main()
-                            ^^^^^^
-  File "/PROJECT/research/kernel_slope_remainder/check_remainder.py", line 34, in main
-    assert c['Q_box']==old['Q_box'] and c['dual_coefficient_box']==old['dual_coefficient_box']
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

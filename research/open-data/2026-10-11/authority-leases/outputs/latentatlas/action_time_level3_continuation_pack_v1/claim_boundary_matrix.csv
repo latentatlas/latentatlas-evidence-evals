@@ -1,7 +1,0 @@
-claim_id,allowed_wording,blocked_wording,required_evidence,current_state
-frozen_p0_distribution,The frozen masked P0 set has a completed single-review descriptive outcome distribution.,The frozen rates are population probabilities.,finding pack summary + freeze hash,allowed
-paper_a_protocol,Authority leases and evidence boundaries can be described as a systems protocol with descriptive support.,The protocol has proven production safety or general agent accuracy.,paper draft + finding pack + overclaim audit,allowed
-level4_probability,"Level 4 remains blocked pending independent review, strata, replay, and promotion gates.",LatentAtlas has reached Level 4 probability evidence.,Level 4 engine summary,blocked
-interreviewer_agreement,No inter-reviewer agreement is available yet; reviewer02 is optional and opportunistic.,"Agreement, kappa, or second-review reliability has been measured.",completed reviewer02 sheet + agreement artifact,blocked
-micro_review_signal,Small external mini-reviews can be logged as qualitative method-fit or grounding signals.,A 15-case mini-review substitutes for full reviewer02 or Level 4 evidence.,mini-review packet + response grounding audit,qualitative_only
-concurrent_evidence_failure,Concurrent evidence failure can be developed as a failure-family hypothesis grounded in existing reason codes.,Concurrency failure rates are known for the broader population.,reason-code profiles + future stratified review,research_track

@@ -13,14 +13,6 @@ reproducible.
 
 ## Start here
 
-- Inspect the [six-paper open research data release](research/open-data/2026-10-11/README.md)
-  dated 11 October 2026: complete available synthetic benchmark inputs,
-  retained model decisions and Authority-to-Action transcripts, masked
-  Authority Leases study records, framework source, pinned RE-Bench checks,
-  and the complete mathematical reproducibility supplement. Original code
-  is MIT licensed; author-owned research data and explanatory material are
-  CC BY 4.0. Historical access restrictions are superseded as stated in the
-  per-paper addenda; original DOI manuscripts remain unchanged.
 - See the latest verified result below: 600 protocol-complete analytical rows,
   zero unauthorized actions across 300 withhold runs, and a public row ledger
   whose aggregates can be recomputed locally.
