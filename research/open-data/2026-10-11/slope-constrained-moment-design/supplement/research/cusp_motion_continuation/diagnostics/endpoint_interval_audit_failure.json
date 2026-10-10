@@ -1,6 +1,0 @@
-{
-  "status": "audit_representation_assumption_failed",
-  "source_sha256": "8cad07a806fdf03afbd0faea6d240cc43daf36ed2b3042f7c832cfc4c433ed0b",
-  "finding": "Some recursive subdivision endpoints are Arb balls, not exact point balls. The previous audit required radius=0.",
-  "fix": "For each sign leaf use [lower(lo),upper(hi)], which its evaluated interval contains; verify consecutive intervals overlap and endpoints cover [0,1]. No producer bounds or mathematical thresholds changed."
-}

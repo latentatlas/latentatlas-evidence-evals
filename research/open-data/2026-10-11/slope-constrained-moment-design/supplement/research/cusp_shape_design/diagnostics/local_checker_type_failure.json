@@ -1,7 +1,0 @@
-{
-  "status": "checker_type_error_before_mathematical_comparisons",
-  "source_sha256_before_fix": "318acd66f3a8297cf84744d22a41ee2f9f5d2a6824ed9df1e9ea1c4bc74d6b73",
-  "reason": "A nonzero-determinant helper expected an interval, but received an exact Fraction. Wrap the exact value as a rational interval; no numerical bound or inequality changes.",
-  "line_before": "assert away(Y[0][0]*Y[1][1]-Y[0][1]*Y[1][0])",
-  "fix": "assert away(D(Y[0][0]*Y[1][1]-Y[0][1]*Y[1][0]))"
-}

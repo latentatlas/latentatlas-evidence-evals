@@ -1,7 +1,0 @@
-{
-  "status": "checker_failed_before_decision",
-  "source_sha256": "e46e0f2b2b777b5bf9022bcf3f877f414313fb4eaa303710802d898fb9eab7a1",
-  "exception": "AttributeError: 'RI' object has no attribute 'contains'",
-  "location": "continuation_check, cusp_preconditioner_invertible",
-  "correction": "Test whether the exact rational endpoints lie strictly on one side of zero; no mathematical threshold changes."
-}

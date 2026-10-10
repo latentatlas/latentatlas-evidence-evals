@@ -1,5 +1,0 @@
-{
-  "status": "checker_type_error_before_mathematical_comparisons",
-  "source_sha256_before_fix": "e07d7efd30d0ed2b01d85df589574f4dae528e5841bd8d66e568c26fd4ddceb9",
-  "reason": "The independent D interval type intentionally has no int/D reverse division. Convert the numerator -16 to D(-16); no numerical bound or inequality changes."
-}

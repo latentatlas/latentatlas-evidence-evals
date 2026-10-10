@@ -1,6 +1,0 @@
-offset sign -1.0, D0: distance/radius=1.358821e-8, pass=True
-offset sign -1.0, D1: distance/radius=3.075606e-8, pass=True
-offset sign -1.0, D3: distance/radius=7.516175e-8, pass=True
-offset sign 1.0, D0: distance/radius=1.358434e-8, pass=True
-offset sign 1.0, D1: distance/radius=3.075389e-8, pass=True
-offset sign 1.0, D3: distance/radius=7.513124e-8, pass=True

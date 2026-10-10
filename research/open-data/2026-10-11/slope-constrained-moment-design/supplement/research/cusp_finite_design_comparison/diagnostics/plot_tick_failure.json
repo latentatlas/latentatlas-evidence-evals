@@ -1,8 +1,0 @@
-{
-  "phase": "figure_canvas_check",
-  "status": "failed_before_output",
-  "assertion": "AssertionError: ['$\\\\mathdefault{10^{3}}$']",
-  "source_sha256": "4ca0bec917cb7567dc891212b07d8da9baa7818314ff13fec74e4b4036bafbab",
-  "cause": "Automatic log-axis major locator produced an off-axis tick label outside the canvas.",
-  "resolution": "Set the intended major ticks explicitly; retain the canvas check. No mathematical input or bound was changed."
-}

@@ -1,6 +1,0 @@
-claim_tier,claim_state,allowed_public_claim,blocked_public_claim,evidence_needed_to_upgrade
-Conceptual boundary,conceptual contribution,Evidence can be true but still fail action-time authority.,All AI execution failures are concurrency failures.,None for conceptual framing; keep scope bounded.
-Protocol proposal,protocol proposal,"Authority leases define actor, action, target, evidence, permission, policy, expiry, and impact checks.",The protocol is production-validated across deployments.,Independent implementation and production-side audit logs.
-Frozen-set descriptive evidence,frozen-set descriptive evidence,146 masked high-priority cases were reviewed with explicit labels.,The frozen-set rates generalize to a broader population.,Larger stratified sample with independent review.
-Closure checks plus local proxy replay,closure artifact plus local proxy replay,"Fail-closed fields, negative controls, and local replay improve auditability.",Live causal reduction in unsupported blocks.,Prospective benchmark or production A/B evidence.
-Independent benchmark validation,not claimed,Not claimed.,"Population-level probability, reviewer reliability, or benchmark effectiveness.","Independent reviewers, power plan, stratified holdout, and reproducible benchmark run."

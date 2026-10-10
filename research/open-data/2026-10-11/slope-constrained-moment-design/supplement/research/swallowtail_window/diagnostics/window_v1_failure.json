@@ -1,8 +1,0 @@
-{
-  "status": "evaluation_failed_before_certificate",
-  "source_sha256": {
-    "model.py": "cdeaa18698b5407d2d963195e54159777a89fef8776687075c2f6cf29d20682e",
-    "probe_window.py": "d0409a6e4254ec0bde2c3f964dd17c69968853f85ba957d3ecab25c9566eee5a"
-  },
-  "reason": "python-flint arb.__pow__ on a real interval crossing zero returns nan even for a Python integer exponent. The corrected v2 uses monotone endpoint integer powers with explicit zero crossing for even powers. No numerical certificate was produced by the failed probe."
-}

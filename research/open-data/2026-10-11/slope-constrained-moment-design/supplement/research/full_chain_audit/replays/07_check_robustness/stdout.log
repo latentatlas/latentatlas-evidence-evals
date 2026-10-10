@@ -1,9 +1,0 @@
-R07 independent rational cell 1 passed
-R07 independent rational cell 11 passed
-R07 independent rational cell 21 passed
-R07 independent rational cell 29 passed
-R07 independent rational cell 31 passed
-R07 independent rational cell 41 passed
-R07 independent rational cell 51 passed
-R07 independent rational cell 58 passed
-{"status": "independent_rational_robustness_checks_passed", "cells_checked": 58, "joins_checked": 57, "certificate_sha256": "c76fcf61f81b6579b549dd456da050baf4f83c52b1a589ef523084c16d9a51bf", "source_sha256": "98bd0a820fdddb5b587d4cc9553dda6941f02c9a4df23ef0a18a77113a0cc277", "readable_rate_bounds": ["0.0003", "0.003"], "max_displacement_display": 3.6576834156954695e-05, "seam_max_ratio_display": 0.13002220198316436, "third_range_display": [0.004927211839713967, 0.016568846743391617], "elapsed_seconds": 89.4215358339934}

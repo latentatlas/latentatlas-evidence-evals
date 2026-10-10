@@ -1,9 +1,0 @@
-batch_id,queue_id,event_id,reviewer_id_hash,reviewed_at,reviewed_outcome,confidence,adjudication_status,notes_code,rationale_short,evidence_requested_if_needs_more_evidence
-backfill_batch_027,review-backfill-d4a85ffd717bb874902d642e,real-shadow-event-52ef15df037f37c298fdf852,,,,,pending,,,
-backfill_batch_027,review-backfill-40a5911842fc985a383f9727,real-shadow-event-532cbb98843a875dfdec3533,,,,,pending,,,
-backfill_batch_027,review-backfill-09c0f1fd6020742c3e155288,real-shadow-event-533088b95da2ee56433f3c64,,,,,pending,,,
-backfill_batch_027,review-backfill-3a6f92480a7940d66466bf06,real-shadow-event-53356ba39eb85778beee9def,,,,,pending,,,
-backfill_batch_027,review-backfill-1d8920282f79ce114e123ec8,real-shadow-event-53445b58b96bb1b585e7b18f,,,,,pending,,,
-backfill_batch_027,review-backfill-79753335c4eed817fef5bf06,real-shadow-event-53650fa490c0dd09a4a94b8f,,,,,pending,,,
-backfill_batch_027,review-backfill-42a91f9b54cfc51e223187db,real-shadow-event-538a044f0de2703f5217da8c,,,,,pending,,,
-backfill_batch_027,review-backfill-8ca66bc5428906a2e308e8ac,real-shadow-event-538ff7c19044d3437fbfa8fc,,,,,pending,,,

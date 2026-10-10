@@ -1,6 +1,0 @@
-family,rows_replayed,decision_time_only_block_count,action_time_policy_block_count,action_time_policy_hold_or_revalidate_count,local_avoidable_overblock_or_hold_rate,claim_boundary
-Stale evidence read,48,48,18,30,0.6250,"Label-conditioned diagnostic replay on frozen high-priority rows; not independent policy validation, causal proof, or population rate."
-State changed before execution,48,48,18,30,0.6250,"Label-conditioned diagnostic replay on frozen high-priority rows; not independent policy validation, causal proof, or population rate."
-Expired or missing authority,146,146,99,47,0.3219,"Label-conditioned diagnostic replay on frozen high-priority rows; not independent policy validation, causal proof, or population rate."
-Visibility mistaken for truth,7,7,0,7,1.0000,"Label-conditioned diagnostic replay on frozen high-priority rows; not independent policy validation, causal proof, or population rate."
-Identity and timing split,4,4,4,0,0.0000,"Label-conditioned diagnostic replay on frozen high-priority rows; not independent policy validation, causal proof, or population rate."

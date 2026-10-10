@@ -1,7 +1,0 @@
-{
-  "status": "rational_checker_exact_dyadic_decode_corrected",
-  "prior_source_sha256": "10a767b3641de1d4c69961fd79d56c3c5e00454feed934e18d94e38bc247abb0",
-  "failed_check": "Expected exact dyadic",
-  "diagnosis": "An exact dyadic endpoint need not lie on the checker interval grid of 2^-512. The old helper rounded first and then demanded a singleton. Point data must be decoded as exact Fraction values before grid arithmetic. Local products of exact upper endpoints are compared using exact rational multiplication.",
-  "mathematical_certificate_modified": false
-}

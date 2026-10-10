@@ -1,7 +1,0 @@
-flowchart LR
-    A["Frozen reviewed rows"] --> B["Decision-time-only policy"]
-    B --> C["Block from prior signal"]
-    A --> D["Action-time authority policy"]
-    D --> E["Block packet-supported blocks only"]
-    D --> F["Hold or revalidate unsupported or insufficient-evidence cases"]
-    F --> G["Local avoidable overblock/hold delta"]

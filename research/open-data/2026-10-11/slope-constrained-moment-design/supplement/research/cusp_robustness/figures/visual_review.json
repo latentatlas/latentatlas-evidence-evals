@@ -1,9 +1,0 @@
-{
-  "status": "visually_reviewed",
-  "review": "Both final PNGs inspected. Titles, axes, legends and captions are separated and readable. SVGs were produced from the same figures; no scientific data changed during layout correction.",
-  "files": {
-    "uniform_robustness.png": "ffa4ba45f5e132c67d0fda8a622fea1fd74cdb5bec14461c4631d716090ed7bc",
-    "pinned_direction.png": "770a801e49302ff5a403c7e6ddf6bebdb75ac86268e86252622fe16e76881845"
-  },
-  "scope": "Visual QA only; not a mathematical proof."
-}

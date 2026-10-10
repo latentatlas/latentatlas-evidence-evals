@@ -1,7 +1,0 @@
-certified endpoint fold sample 1 ratio [1.0249463277283 +/- 4.66e-14]
-certified endpoint fold sample 16 ratio [1.024946323357 +/- 5.53e-13]
-certified endpoint fold sample 32 ratio [1.0249463102 +/- 1.92e-11]
-{
-  "status": "128_endpoint_fold_contractions_passed",
-  "elapsed_seconds": 3.455618708001566
-}

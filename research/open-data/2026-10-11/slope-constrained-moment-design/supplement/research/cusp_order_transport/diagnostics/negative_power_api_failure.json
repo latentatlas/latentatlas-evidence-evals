@@ -1,8 +1,0 @@
-{
-  "status": "development_failure_preserved",
-  "error": "AssertionError: symbolic helper P.__pow__ only accepts nonnegative integers",
-  "location": "moment_scaling_0 in check_algebra.py",
-  "fix": "Write inverse monomials with exact division, which the frozen helper supports. No mathematical formula or prior frozen file changed.",
-  "original_source": "check_algebra_before_negative_power_fix.py",
-  "mathematical_conclusion_before_fix": false
-}
