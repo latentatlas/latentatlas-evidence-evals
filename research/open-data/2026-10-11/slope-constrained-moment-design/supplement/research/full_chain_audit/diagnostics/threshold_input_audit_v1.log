@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/PROJECT/research/full_chain_audit/check_threshold_inputs.py", line 84, in <module>
+    assert envelope<=M[n],('Global Lipschitz budget not reproduced',k,n)
+           ^^^^^^^^^^^^^^
+AssertionError: ('Global Lipschitz budget not reproduced', 18, 2)

@@ -1,0 +1,59 @@
+{
+  "schema_version": "authority_action_protocol_slot_repair_v0.1",
+  "repair_plan_id": "latentatlas-v0-8-2-batch03-anthropic-token-slot-repair-20260727T161341Z",
+  "experiment_id": "latentatlas-authority-action-v0-8-2-full-medium-preauthorization-20260727",
+  "source_manifest": "evals/experiment_manifest_v0_8_2.json",
+  "source_manifest_sha256": "5484140737942a7c3f6314b446b279fe6ce955755cdbf6cbfc7cda4b1aefe0f7",
+  "repair_runner": "scripts/repair_authority_action_provider_batch.py",
+  "repair_runner_sha256": "3dba18d4a2145dbfa1cc8b97b58529e3d4dfa35e4c56620ae6990514e0d61670",
+  "run_root": "outputs/inspect/20260727T152524Z-full-medium-authorized",
+  "batch_id": "batch_03",
+  "provider": "anthropic",
+  "original_log": "outputs/inspect/20260727T152524Z-full-medium-authorized/full/batch_03/anthropic/2026-07-27T16-04-39-00-00_authority-action-eval_8QEvJTkgnoSprpNSFLLebw.json",
+  "original_log_sha256": "b2adec56d85c655762ed11cf84d46b05817955cb3ee0602164680a2fef454083",
+  "original_provider_audit": {
+    "sample_runs": 60,
+    "protocol_complete_runs": 59,
+    "protocol_interrupted_runs": 1,
+    "token_limit_exceeded": 1,
+    "calculated_total_cost_usd": 1.2692415
+  },
+  "repair_slot": {
+    "sample_id": "incentive_vendor_trial__valid_treatment",
+    "original_epoch": 2,
+    "original_sample_uuid": "8VeYQqvpLb4vgSi6za9nHg",
+    "interruption_type": "output_token_limit",
+    "configured_output_token_limit": 512,
+    "observed_output_token_usage": 516,
+    "original_cost_usd": 0.03586
+  },
+  "selection_basis": "protocol_interruption_only",
+  "selection_is_independent_of_score": true,
+  "original_attempt_retained": true,
+  "replacement_policy": "Replace only the interrupted analytical slot; retain the original attempt as operational overhead.",
+  "maximum_repair_attempts": 1,
+  "repair_log_dir": "repairs/batch_03/anthropic/incentive_vendor_trial__valid_treatment_epoch2",
+  "configuration_contract": {
+    "model": "anthropic/claude-fable-5",
+    "reasoning_effort": "medium",
+    "message_limit": 10,
+    "max_tokens": 256,
+    "output_token_limit": 512,
+    "sample_cost_limit_usd": 0.055,
+    "epochs": 1
+  },
+  "execution_approved": true,
+  "approved_at_utc": "2026-07-27T16:13:41Z",
+  "expires_at_utc": "2026-07-27T21:14:50Z",
+  "approval_basis": "User approved final preparation and the paid full run, conditional on no unresolved blocker. This bounded repair resolves one diagnosed protocol slot without selecting on performance.",
+  "credit_verified_at_utc": "2026-07-27T16:13:41Z",
+  "live_anthropic_credit_snapshot_usd": 9.13,
+  "live_anthropic_monthly_limit_remaining_usd": 7.63,
+  "maximum_repair_cost_usd": 0.055,
+  "credential_policy": {
+    "temporary_provider_key_only": true,
+    "environment_only": true,
+    "write_credentials_to_files": false,
+    "revoke_after_run": true
+  }
+}

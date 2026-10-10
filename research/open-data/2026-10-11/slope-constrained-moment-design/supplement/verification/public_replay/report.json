@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-23T10:06:18.258982+00:00",
+  "runs": [
+    {
+      "name": "finite_optimum",
+      "command": [
+        "/PROJECT/.venv-math/bin/python",
+        "-B",
+        "research/finite_slope_optimum/audit_snapshot.py"
+      ],
+      "started_utc": "2026-09-23T10:02:43.629455+00:00",
+      "elapsed_seconds": 0.21088895900174975,
+      "exit_code": 0,
+      "log_sha256": "82dccba6251a1869959580bb9b340ee49bd6bb485d0b3ec9f4747d6bdbfb6658"
+    },
+    {
+      "name": "finite_fourth_order",
+      "command": [
+        "/PROJECT/.venv-math/bin/python",
+        "-B",
+        "research/finite_slope_fourth_order/audit_snapshot.py"
+      ],
+      "started_utc": "2026-09-23T10:02:43.629653+00:00",
+      "elapsed_seconds": 0.22317337500862777,
+      "exit_code": 0,
+      "log_sha256": "cdad06657acb356f55ee13fc3688df83ff69f7c88a61e87665c0a0bc2a2cebf8"
+    },
+    {
+      "name": "infinite_fourth_order",
+      "command": [
+        "/PROJECT/.venv-math/bin/python",
+        "-B",
+        "research/infinite_slope_fourth_order/audit_snapshot.py",
+        "--with-arb"
+      ],
+      "started_utc": "2026-09-23T10:02:43.840809+00:00",
+      "elapsed_seconds": 0.28978945800918154,
+      "exit_code": 0,
+      "log_sha256": "6b7aa3ba92f20474ba76c9b559a7aca8abb902ac1eaf8daf2e73be7ff58461db"
+    },
+    {
+      "name": "theta_transport_dependency_chain",
+      "command": [
+        "/PROJECT/.venv-math/bin/python",
+        "-B",
+        "research/cusp_order_transport/audit_snapshot.py",
+        "--with-arb"
+      ],
+      "started_utc": "2026-09-23T10:02:43.853364+00:00",
+      "elapsed_seconds": 214.25377724997816,
+      "exit_code": 0,
+      "log_sha256": "ada5cbc909e809684eceab394b7026e571e21141e6402be8701b309ad5ead753"
+    }
+  ],
+  "frozen_packages": 32,
+  "frozen_file_entries": 1334,
+  "frozen_inputs_unchanged": true,
+  "all_selected_commands_passed": true,
+  "analytic_text_formally_verified": false,
+  "external_expert_review_performed": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "independent_rational_pinned_design_rank_and_norm_bracket_passed",
+  "readable_minimum_norm_bracket": [
+    "0.00000000039603640200",
+    "0.00000023803280902557"
+  ],
+  "fourth_derivative_times_1e13": [
+    "-9.7629645301",
+    "-9.7629645300"
+  ],
+  "control_determinant_times_1e40": [
+    "-4.4646224041",
+    "-4.4646224040"
+  ]
+}

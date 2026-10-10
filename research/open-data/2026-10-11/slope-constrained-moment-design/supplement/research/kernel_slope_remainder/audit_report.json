@@ -1,0 +1,61 @@
+{
+  "status": "R16_evidence_and_prior_preservation_checks_passed",
+  "prior_manifest_count": 16,
+  "prior_package_file_counts": {
+    "cusp_connection": 27,
+    "cusp_geometry": 25,
+    "cusp_literature": 12,
+    "cusp_pinned_family": 98,
+    "cusp_region": 24,
+    "cusp_robustness": 34,
+    "cusp_shape_design": 47,
+    "cusp_verified": 25,
+    "cusp_width": 49,
+    "full_chain_audit": 260,
+    "kernel_design_principle": 23,
+    "kernel_norm_threshold": 28,
+    "kernel_slope_asymptotics": 33,
+    "kernel_slope_budget": 25,
+    "kernel_slope_threshold": 25,
+    "swallowtail_window": 45
+  },
+  "prior_frozen_file_entries": 780,
+  "scope": "Uniform explicit remainder for every M>=0.00002 at the original exact Q.",
+  "minimum_slope_budget": "0.00002",
+  "lower_remainder_constant": "9.624e-33",
+  "upper_remainder_constant": "2.167e-32",
+  "relative_excess_error_upper_at_minimum_budget": "0.001178",
+  "threshold_bracket_at_minimum_budget": [
+    "0.00000000091787309568619750",
+    "0.00000000091787309964331750"
+  ],
+  "threshold_width_improvement_factor_lower": "871.846",
+  "contraction_checked_for_all_half_widths_up_to": "1/16384",
+  "three_center_box": [
+    512,
+    768,
+    384
+  ],
+  "independent_rational_check_passed": true,
+  "separate_differentiation_comparisons": 3360,
+  "separate_precisions": [
+    80,
+    110
+  ],
+  "numerical_ramp_reconstruction_passed": true,
+  "numerical_ramp_is_rigorous_witness": false,
+  "exact_algebra_factors": 5,
+  "scientific_figures_visually_reviewed": 2,
+  "previous_certificates_modified": false,
+  "exact_finite_budget_optimizer_claimed": false,
+  "sharp_remainder_order_claimed": false,
+  "physical_application_claimed": false,
+  "mass_constraint_added": false,
+  "R10_window_transferred": false,
+  "external_review": false,
+  "literature_priority_established": false,
+  "analytic_status": "Explicit quantitative fixed-point and remainder proof draft supported by rigorous numerical enclosures; no formal or external review.",
+  "trust_boundary": "R15 exact optimizer/zero identities plus local Arb derivative and infinite-tail envelopes. Independent rational implications and numerical corroboration do not replace the analytic proof.",
+  "audit_source_sha256": "ed88504bd7724f7387607b59493fdb79008719a7aa9cb204dc18312ffc1c0136",
+  "closed_utc": "2026-09-21T07:55:32.874704+00:00"
+}

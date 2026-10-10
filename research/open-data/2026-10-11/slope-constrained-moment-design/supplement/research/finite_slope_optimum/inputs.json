@@ -1,0 +1,11 @@
+{
+  "domain": ["-1", "1"],
+  "beta": "1/4",
+  "target": "1/8",
+  "q0": "1",
+  "q1": "(x^2-1/4)*(1+beta*x)",
+  "half_widths": ["1/5", "1/10", "1/20", "1/50", "1/100", "1/200"],
+  "center_shift_initial_bracket": ["-1/100", "0"],
+  "bisection_steps": 210,
+  "scope": "Compact two-switch polynomial example; not the theta family."
+}

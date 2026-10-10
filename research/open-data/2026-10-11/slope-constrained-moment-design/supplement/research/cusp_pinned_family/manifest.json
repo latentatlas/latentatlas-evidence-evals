@@ -1,0 +1,458 @@
+{
+  "created_utc": "2026-09-20T14:45:33.237267+00:00",
+  "scope": "Selected Q-pinning four-cosine direction: full cusp sheet, uniform finite root geometry and strict fold nesting in nu and physical epsilon.",
+  "audit": {
+    "status": "r08_evidence_links_and_preservation_checks_passed",
+    "preserved_packages": [
+      {
+        "package": "cusp_verified",
+        "files": 25,
+        "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96"
+      },
+      {
+        "package": "cusp_region",
+        "files": 24,
+        "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5"
+      },
+      {
+        "package": "cusp_connection",
+        "files": 27,
+        "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1"
+      },
+      {
+        "package": "cusp_geometry",
+        "files": 25,
+        "manifest_sha256": "b3a1846431be58d2f3c5d45749f218aa4efebaca431e3ebd2ffe454ff7e22621"
+      },
+      {
+        "package": "cusp_width",
+        "files": 49,
+        "manifest_sha256": "eb7847154285acfa09fecb73aece53863409e29c62ed8045bde87f4974cf6dc8"
+      },
+      {
+        "package": "cusp_literature",
+        "files": 12,
+        "manifest_sha256": "2d48fc9cfa5e40c376e1adf8f09b6ff62f9312dc515787d4dba37745d1bf40ab"
+      },
+      {
+        "package": "cusp_robustness",
+        "files": 34,
+        "manifest_sha256": "0036bd2da3d52098743149eb645e934a088bb7a437d72cfa8e97ef7d326489c6"
+      }
+    ],
+    "preserved_scientific_files": 196,
+    "preserved_original_files": 40,
+    "prior_dependency_audit": "passed",
+    "continuum_cells": 232,
+    "nu_joins": 228,
+    "rho_joins": 174,
+    "new_central_H_moments": 4002,
+    "exact_polynomial_identities": 2,
+    "rigorous_shift_comparisons": 21,
+    "independent_numerical_moments": 9,
+    "narrow_cusp_contractions": 21,
+    "finite_fold_contractions": 144,
+    "finite_width_comparisons": 24,
+    "figures_reviewed": 2,
+    "local_markdown_links_checked": 28,
+    "latex_compiled": false,
+    "external_mathematical_review": false,
+    "literature_priority_established": false,
+    "trust_boundary": "See PROOF.md section 8 and the checker reports. Provenance auditing does not independently establish the saved analytic/integral/Taylor enclosures.",
+    "audit_source_sha256": "0ccea7e3e845b3faca37e8f8f27165955218c66cd81df4609465b82e5e497de7"
+  },
+  "files": [
+    {
+      "path": "ARASTIRMA_NOTU.md",
+      "sha256": "97d6004cd2408cf443ad8932b6c0f7133a53e94abd56c370ca46f8ef963b7a98"
+    },
+    {
+      "path": "DIAGNOSTICS.md",
+      "sha256": "11da5fa482728079e9f7d978ae8c28653be6cac9852acb6a7a77661c0fb186c0"
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "e300f7b02758bdcea1166febbbe28a30299eb3351304e2a49b770f4b6640e78e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f54d7cd97590c40962f75df6ba35a871494bdd8866b4c3961762184a88fc35e9"
+    },
+    {
+      "path": "THEOREM_APPENDIX.tex",
+      "sha256": "b79246b922d7bae00bb8201b0dee34139c2a558f0e4d5cbc60c290f8aa9526bd"
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "3d0f4e78874757ea167aff8a5c8d287abbaa36aacdf3f9a587c89adf88ce5b71"
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "0ccea7e3e845b3faca37e8f8f27165955218c66cd81df4609465b82e5e497de7"
+    },
+    {
+      "path": "build_moment_cache.py",
+      "sha256": "190979c9dccaad2edb6685aa0e0974f6dd1d54618be1800e16d60c61c74c7b3d"
+    },
+    {
+      "path": "cache/cell_00.json",
+      "sha256": "6c522c736312b35f5312ac6f1f4f9e54fa7f5c5170cd931e557643a79d07daa2"
+    },
+    {
+      "path": "cache/cell_01.json",
+      "sha256": "6ed29e8c46cd1967e880cd6f5f305c4a9aab38a26bef017e38fc32209b283398"
+    },
+    {
+      "path": "cache/cell_02.json",
+      "sha256": "155c10de4fc066c53204e9e9d29fea5549fc2dcdf384ebd01a9db9d029485929"
+    },
+    {
+      "path": "cache/cell_03.json",
+      "sha256": "dad387cf593e22d86e9c6e1e82c5eede682e5ba1eeedba729055846a1ac8cf9e"
+    },
+    {
+      "path": "cache/cell_04.json",
+      "sha256": "42411fdac054553cc18a8fba55e7e7ea7d5710dd29174ffe8d57a945a76f208d"
+    },
+    {
+      "path": "cache/cell_05.json",
+      "sha256": "077e4a1c838a84752d0c4ca7c59df6e53f3dc4582597eb8dcec71f4f9fd7ba23"
+    },
+    {
+      "path": "cache/cell_06.json",
+      "sha256": "7dbe54fce5df490b7ce2524893adaeb0ee72928ad78298721bed9f28b4e9b02c"
+    },
+    {
+      "path": "cache/cell_07.json",
+      "sha256": "a5a55ab7e343fd144e0c6e41009de4c908d003fc1b873d48ae45021c65875ff7"
+    },
+    {
+      "path": "cache/cell_08.json",
+      "sha256": "e538f9ed0788d196daadbccc9154f494b7fc23aabe1ab007aebb3635c34bcb51"
+    },
+    {
+      "path": "cache/cell_09.json",
+      "sha256": "3b75b7343405cd65115e263b8c0e7650352fa61ebef877b73efdd3df4037d3dd"
+    },
+    {
+      "path": "cache/cell_10.json",
+      "sha256": "13823b13c17059b9c11efd40662e40b3226fb6c679862d3bcc827b565c1abaaa"
+    },
+    {
+      "path": "cache/cell_11.json",
+      "sha256": "f7eb4e68a0099645bd0f57519208f64dda9c715f0d2de7cf3b52cff3100b9446"
+    },
+    {
+      "path": "cache/cell_12.json",
+      "sha256": "192bfb7c9a6e0568cf019917e77aecfd835f0c11cc920d0f552ef719db6b6758"
+    },
+    {
+      "path": "cache/cell_13.json",
+      "sha256": "cb03ee04e75eba695566421a8e1183463fb1d0aa635c7557b2999e11649caecf"
+    },
+    {
+      "path": "cache/cell_14.json",
+      "sha256": "76534b8c5122b4aa6e3c701dbde6603b4f2d7136b36fc79351b4f6bfc8586538"
+    },
+    {
+      "path": "cache/cell_15.json",
+      "sha256": "a1600b733a84006743ac664b253e327a0ea02b6f89e426205052de8ba74db588"
+    },
+    {
+      "path": "cache/cell_16.json",
+      "sha256": "3c214a2c1ced2d640bc7f32ebfc2d1de93a6dcf7edcb9d5ae0d2fc0c5f4fe2a3"
+    },
+    {
+      "path": "cache/cell_17.json",
+      "sha256": "e732db51741bedb9cf1d7a5a6cefd2c581bb6c6d6f9e7e94a4a2c6f6fb604ab1"
+    },
+    {
+      "path": "cache/cell_18.json",
+      "sha256": "0bb31c36df7675136bb67fafed6be571148c2bc95ab573e530307e078ee5c63e"
+    },
+    {
+      "path": "cache/cell_19.json",
+      "sha256": "e5d9d2ee47e3d57a96a08044189503c2d02df9e9f27c831f1b81fbca42789513"
+    },
+    {
+      "path": "cache/cell_20.json",
+      "sha256": "6920e3ddf5afdec3f70c5276b9601c9187563b551f3691c5291c11f69f1ea15c"
+    },
+    {
+      "path": "cache/cell_21.json",
+      "sha256": "53c42700c02ab36e3f8ea2498c1849792966f95f948f510c67acbbe141eec4e4"
+    },
+    {
+      "path": "cache/cell_22.json",
+      "sha256": "857f78f6b3616269bcd26c3af8743bf191c19100dd4c64ea4f2eed0694577456"
+    },
+    {
+      "path": "cache/cell_23.json",
+      "sha256": "9f652ce2bf382977972275636d1cdfa60040682da26b2fef2d92900f7bb15719"
+    },
+    {
+      "path": "cache/cell_24.json",
+      "sha256": "f8417eb0cf28f9b6c4bcfa772fc9b66cb085c62667a0528d63a3c6e452beaa9e"
+    },
+    {
+      "path": "cache/cell_25.json",
+      "sha256": "7f3b6c448610450571b7e9705ed82cefaeac9651f3aa3d01065cab06bb28417a"
+    },
+    {
+      "path": "cache/cell_26.json",
+      "sha256": "18b42d9792ab2d31e39a4141f08749f197b88b8f84339daedc80a7aee260e85e"
+    },
+    {
+      "path": "cache/cell_27.json",
+      "sha256": "58cbeb68589fff9d74cd15df3be16be10b4092bbeee17ea2db5b8c22a632d631"
+    },
+    {
+      "path": "cache/cell_28.json",
+      "sha256": "a00d4b15f1a9356ebc8495068166a1e5ab17e8717ba643d941737cc591865224"
+    },
+    {
+      "path": "cache/cell_29.json",
+      "sha256": "62de10b8fee2f95701053a4ac95204f27d87b54016e99a76494619fa919bbf09"
+    },
+    {
+      "path": "cache/cell_30.json",
+      "sha256": "137f45f3e73783d7b97eeaa98db4d53e39edb218918e9da6b7c42339cca71077"
+    },
+    {
+      "path": "cache/cell_31.json",
+      "sha256": "3708c574d49c83c8d93da87a622e0adea2e1cae7ebab244be2b2f624867a1ca8"
+    },
+    {
+      "path": "cache/cell_32.json",
+      "sha256": "a990bbb5b00170b4be3c7d512934e1de6cea447944a26edbb5dc77f156e124f1"
+    },
+    {
+      "path": "cache/cell_33.json",
+      "sha256": "8afcfc6c4385975871bfb0758b92fad23229446ba7b73d6991f6d3b6c12b9641"
+    },
+    {
+      "path": "cache/cell_34.json",
+      "sha256": "eaca9b5dc1f74746f2ef25887b111a5e55ffd63bcd2028f65fb1edc14bb83da2"
+    },
+    {
+      "path": "cache/cell_35.json",
+      "sha256": "b584b89f06799b294ca4942b94a54daca179c8d3d720c99b25aed6ed02ff4595"
+    },
+    {
+      "path": "cache/cell_36.json",
+      "sha256": "486d19b348cb77dacbd41ee039e67d9070c8acc14900489097b94cfca885049e"
+    },
+    {
+      "path": "cache/cell_37.json",
+      "sha256": "f8097521cb4c8cdb90cf4d56adcf9ea9d6cd183fffa7675b5413fed9bfacf424"
+    },
+    {
+      "path": "cache/cell_38.json",
+      "sha256": "23ce97fe8249bfa0a11aa252fe27a6e7521cfb948dc2600318ecbe918ca29358"
+    },
+    {
+      "path": "cache/cell_39.json",
+      "sha256": "67fda0eb82b825f4ad6ee56a1d43ef1b8b6917a93504ab7d205e1799e0e6355f"
+    },
+    {
+      "path": "cache/cell_40.json",
+      "sha256": "540ac47a9f1c1aa6804e68b39adb705c82b8e8699cbf9ab10f1d0c8eab3b2e62"
+    },
+    {
+      "path": "cache/cell_41.json",
+      "sha256": "d26932ff0d46b66d37f4ad08c9eb91b564d9c56793ca8c1448690eb8a0e50ee0"
+    },
+    {
+      "path": "cache/cell_42.json",
+      "sha256": "c17e3dcf5dcccb6bca5ff4ad5ba170306f3aeae80c84b6bb5447525ad2c6c125"
+    },
+    {
+      "path": "cache/cell_43.json",
+      "sha256": "d5ef1ef6014c2eed144013f669c1e3b5888843d45d4bec6f465d9892c320e6f7"
+    },
+    {
+      "path": "cache/cell_44.json",
+      "sha256": "1d7d67bb6b227c3f58ec1a0bb502d46104b887d1df872c1521860ddba7c079f4"
+    },
+    {
+      "path": "cache/cell_45.json",
+      "sha256": "87c96f960aa894fab072bbb1f4576beb5111b5b2bc4aa24674c4abd89ce7e899"
+    },
+    {
+      "path": "cache/cell_46.json",
+      "sha256": "d480a931dce403341440e9af93e0c1f494530337c79fc263a4ea30b42255af21"
+    },
+    {
+      "path": "cache/cell_47.json",
+      "sha256": "8098fcae53dd6bd1446bd12d7a9f670610c3e38d0d483c57db5d0fb0f197caca"
+    },
+    {
+      "path": "cache/cell_48.json",
+      "sha256": "7f91d8169e256b5fc249bbc9a773d4b9bf05982a4620c6939123a36ad7227eeb"
+    },
+    {
+      "path": "cache/cell_49.json",
+      "sha256": "6f1d9faa4c650d2f0749318def55a7e21aa3ee63c8af9e67d25c8c4d1defa194"
+    },
+    {
+      "path": "cache/cell_50.json",
+      "sha256": "0593b7af0dd3229728cb2eed306813264f18d38a17a898c7b49bc09115619799"
+    },
+    {
+      "path": "cache/cell_51.json",
+      "sha256": "7c743d97aa50ea76d692cd2d9a1330baf6f20f87191c7d119b5c9779ea509fdd"
+    },
+    {
+      "path": "cache/cell_52.json",
+      "sha256": "00dcb2232678773fb9be12f3e71e41846f7a850c5098bda7308145adc9e4b79e"
+    },
+    {
+      "path": "cache/cell_53.json",
+      "sha256": "770be1bab0055f9ad3c15e12fee709fcf8fb35a3a1a3a82cff0e4a48bdd4b300"
+    },
+    {
+      "path": "cache/cell_54.json",
+      "sha256": "91b1f251eaa1a7d7240ed24676f6e6269992f5bd1d3a91810dfc540ed9a2e861"
+    },
+    {
+      "path": "cache/cell_55.json",
+      "sha256": "72a863aef536e002245d6eb8b4e6f607df96a070c996b413af724a9e88f48fc6"
+    },
+    {
+      "path": "cache/cell_56.json",
+      "sha256": "ce358bdb07522da1924fb70e4518b6feb76060f3d3d102600ffac38a02513fca"
+    },
+    {
+      "path": "cache/cell_57.json",
+      "sha256": "f147db174a1f10ef6cfa3a310b8010f48ea12d06d1023eb52fa46f5a9e1e61a3"
+    },
+    {
+      "path": "cache/index.json",
+      "sha256": "ebdc9df5825a5dd63b49ea903257884699d8551c9db1bdcf83dc177843e60ae3"
+    },
+    {
+      "path": "certify_family.py",
+      "sha256": "9a57a9e1be62c4ac1c55d96272a6ab1f79221edefeb983ba088d7b054f06c235"
+    },
+    {
+      "path": "certify_fold_samples.py",
+      "sha256": "b82aae3d2f4fb7f31d089d8e791387d82c4eb841f6f377c02f7ff3f4f1004198"
+    },
+    {
+      "path": "certify_points.py",
+      "sha256": "e1ae0fda0f496fb00d3bd789ea9ee897a34ef8705d75d66b482ea51209c9837a"
+    },
+    {
+      "path": "check_family.py",
+      "sha256": "c33c935dda3656378812a243fa45ce1ec7596ad298c4ad298ad3ff1217c8e2d9"
+    },
+    {
+      "path": "check_samples.py",
+      "sha256": "795e86873539ad6d41f596612f2c14133bd8b823fe1b1821f01de78632b4280b"
+    },
+    {
+      "path": "crosscheck_integrals.py",
+      "sha256": "59591a72ed638b6b8621da011921f8d36d4fa94fc604fbafe82a1fe10df88561"
+    },
+    {
+      "path": "diagnostics/four_slabs.json",
+      "sha256": "66f25439846e8b17def1aec0e1aedeae36a7c76261c16f2558a5468c24816e94"
+    },
+    {
+      "path": "diagnostics/plane_full_rho.json",
+      "sha256": "d18ae757e891773259c79f641b15fbcc976f4d02beee552c4dcdbcedff066b3e"
+    },
+    {
+      "path": "diagnostics/rational_sample.json",
+      "sha256": "498961fcc587199f5cfe133ed5b7ed09265fb0e1b5b0bad7853c7f626e73a51e"
+    },
+    {
+      "path": "diagnostics/six_points.json",
+      "sha256": "e0689813251347cf67543bdc81ed4d0964ef78813d87c72d8bc9a192fa22e24b"
+    },
+    {
+      "path": "diagnostics/two_slabs.json",
+      "sha256": "2887cf4988ea5931eff21fe41b0103b5b049b4ffbd00ac1f822e63eb62e174da"
+    },
+    {
+      "path": "explore_family.py",
+      "sha256": "70a2c0014e5f49c7b453ff6a693778c78b35105f1ce8f97766721fee580361a4"
+    },
+    {
+      "path": "figures/finite_fold_comparison.png",
+      "sha256": "e15772a0b409b5a4dce3719f2471df6019d94d51d14b4a1250d9fd4efe5fa4ef"
+    },
+    {
+      "path": "figures/finite_fold_comparison.svg",
+      "sha256": "49cfcc7b816835cea179df5ed01c8a258fdcff650d5ded4df0e64e367681a3e6"
+    },
+    {
+      "path": "figures/metadata.json",
+      "sha256": "fed8c1754804f2ef054e3ab85871a46afbade3f11c0eba47c61ac5b05515296e"
+    },
+    {
+      "path": "figures/pinned_cusp_sheet.png",
+      "sha256": "1f238e78878644ee9431087608caa823876955b519b93de0f448f0985693605f"
+    },
+    {
+      "path": "figures/pinned_cusp_sheet.svg",
+      "sha256": "6811ca8e120a140a24696d8c4a4a10effb45bad26aa71625cee791d73c77ca91"
+    },
+    {
+      "path": "figures/visual_review.json",
+      "sha256": "61503262e59b1461b2fefecc95483cb7de550bf8464afb7caaf60f09891b4ecd"
+    },
+    {
+      "path": "pinned_model.py",
+      "sha256": "50ebee7ad01716ba681a3b77c6c8bef758bcf99779fecf1a7aba392c545e3ae4"
+    },
+    {
+      "path": "plane_model.py",
+      "sha256": "b73daa27627476d97eec6e13750a7c220daf802d968a4a5b2c490b954e596b05"
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "b27465a6d6d1f5223f8bc9b2ab5491658912ca24d2e297d5fec297beded92049"
+    },
+    {
+      "path": "results/family_certificate.json",
+      "sha256": "b6f7640c3972c3bfe99fc229ac033d5a0a196ec2f044dfcc3c61b77cccf44633"
+    },
+    {
+      "path": "results/fold_samples.json",
+      "sha256": "e5acac0fb789c4a51085204620ca9d666d119016f133a58ceac8496968d28147"
+    },
+    {
+      "path": "results/integral_crosscheck.json",
+      "sha256": "3a4e6993e33ae894dfebb9326e4cc2958c399eb1f389331d5a09b8927d15851d"
+    },
+    {
+      "path": "results/key_results.json",
+      "sha256": "c80ec2caac13da29c2cc24fb5eadc4fb6c81b129ac22ba53b92e6b3760210e27"
+    },
+    {
+      "path": "results/point_certificates.json",
+      "sha256": "78e299f9c059b8ded33982cba3b3745c91e198a0efac39fc64a7bb8ccc5baff0"
+    },
+    {
+      "path": "results/rational_check.json",
+      "sha256": "e09a90e87f6cc57de8f8155a924b2076b6897b07a5b47ec8b8bd212033b5a0a8"
+    },
+    {
+      "path": "results/sample_check.json",
+      "sha256": "4c3d3a21f95f57fd1036079fdbbc7710a00edd893579cb7e3a935d58451f2f3d"
+    },
+    {
+      "path": "summarize_results.py",
+      "sha256": "75793dd19cdb9fc9df531f7450712e8ce74f70c22d50b5ad402da5ff7a0c03cf"
+    },
+    {
+      "path": "trial_plane.py",
+      "sha256": "1fce9f499608eb0f1455d77e46fcbec3ce2375d3f8b13d405a0e4c73bcee6467"
+    },
+    {
+      "path": "trial_slabs.py",
+      "sha256": "d12510542316c7fb49b744aba5064bcce28606aad6026b95c5fd9d59007b5d9a"
+    }
+  ]
+}

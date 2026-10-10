@@ -1,0 +1,44 @@
+{
+  "status": "exact_identity_rational_bounds_and_numerical_check_passed",
+  "certificate_sha256": "adf403e1aaae15f28be2c011ac876df9eb4fe588642afb3c68e426979d9a4046",
+  "source_sha256": "66d167e8861e5de388ad49ed73c24b6836adfc3c4e0535d81116cf037a8efae4",
+  "exact_symbolic_identity": "All three degree-four cofactor identities vanish by exact integer monomial cancellation.",
+  "h_sup_norm": "exactly 1; attained at u=pi/2",
+  "amplitude_interval": [
+    "-1/2",
+    "1/2"
+  ],
+  "readable_response_ratio_upper": "0.401 for both D3 and D4",
+  "readable_nondegeneracy_factor": "D3_epsilon >= 0.7995 D3_original > 0; |D4_epsilon| >= 0.7995 |D4_original| > 0",
+  "rows": [
+    {
+      "order": 0,
+      "direct_moment": "1.63643794202199724338736050320138394997674562292516781539197792467211010080466428120569087e-96",
+      "difference": "3.428025057e-113"
+    },
+    {
+      "order": 1,
+      "direct_moment": "-2.5689298379175304553570680464549222767620154226563902741559681241863159943828106934617617e-96",
+      "difference": "1.192859782e-113"
+    },
+    {
+      "order": 2,
+      "direct_moment": "3.17762634468250602756886098038955625687116381969564383768952786248124214917191433992109734e-96",
+      "difference": "9.895934754e-115"
+    },
+    {
+      "order": 3,
+      "direct_moment": "-0.000000000000133734417800137409642729291520623057447925806085215154765932536708706874302881368027278845",
+      "difference": "5.843462373e-115"
+    },
+    {
+      "order": 4,
+      "direct_moment": "0.000000000000389087242416930078442097063655866853218331179999423462637047538884942203336887590826482683",
+      "difference": "3.952150443e-115"
+    }
+  ],
+  "numerical_method": "mpmath 105 dps; 12 terms, [0,2], 32 Gauss-Legendre panels; numerical support, not a second interval proof.",
+  "trust_boundary": "Saved original and shifted-frequency Arb integral enclosures are inputs; cofactor signs, nonlinear normalization and finite-amplitude inequalities are separately checked with rational intervals.",
+  "scope": "One explicit direction; one fixed cusp Q in nu=0. No large-amplitude assertion for the whole arc, fold transport or the full finite root window.",
+  "elapsed_seconds": 6.244666333999703
+}

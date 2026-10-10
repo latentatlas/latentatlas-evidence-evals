@@ -1,0 +1,19 @@
+{
+  "inspected_utc": "2026-09-21T23:18:21.568714+00:00",
+  "png_sha256": "56a0f39b19baa9d6d589fc1ab9e31880a1bea76109638e9db1065573f703ba0d",
+  "native_dimensions": [
+    2340,
+    1044
+  ],
+  "review_display_dimensions": [
+    2048,
+    914
+  ],
+  "panels": 2,
+  "no_clipped_text": true,
+  "no_overlapping_labels": true,
+  "proved_bounds_and_diagnostic_points_distinguished": true,
+  "derivative_band_not_claimed_constant_derivative": true,
+  "finite_M_monotonicity_not_claimed": true,
+  "inspection_method": "Assistant visual inspection of the rendered PNG, separate from interval and plot-data checks."
+}

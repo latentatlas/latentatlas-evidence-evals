@@ -1,0 +1,285 @@
+\section{Fourth-order value asymptotics}\label{sec:general}
+At each simple zero \(z_k\) of \(q_*\), write
+\[
+ Q_k=(q_j(z_k))_{j<m},\quad r_k=q_*'(z_k),\quad
+ t_k=q_*''(z_k),\quad u_k=q_*'''(z_k),\quad
+ \gamma_k=|r_k|,\quad \sigma_k=\sgn r_k.
+\]
+Define the following quantities whenever their series converge:
+\begin{align}
+ \Gamma&=\sum_k\gamma_k,&
+ G&=2\sum_k\frac{Q_kQ_k^{\mathsf T}}{\gamma_k},\label{eq:GB}\\
+ B_j&=\frac13\sum_k\sigma_k
+       \left(\frac{q_j(z_k)t_k}{r_k}-q_j'(z_k)\right),&
+ v&=G^{-1}B,\nonumber\\
+ R&=\sum_k\left(\frac{t_k^2}{36\gamma_k}
+                    -\frac{\sigma_ku_k}{60}\right),&
+ P&=\frac12B^{\mathsf T}G^{-1}B,\qquad \Xi=R-P.\label{eq:RP}
+\end{align}
+Here \(G\) is an \(m\)-by-\(m\) matrix and \(B,v\in\R^m\).
+
+\subsection{Countably many switches}
+We impose the following hypotheses on \(X=[0,\infty)\).
+\begin{enumerate}[label=(H\arabic*),leftmargin=*]
+\item The functions \(q_j\) are in \(L^1(X)\) and are locally \(C^3\).
+The sign certificate \eqref{eq:signcertificate} holds, \(q_*(0)\ne0\), and
+the positive zeros \(z_k\) tend to infinity with positive minimum separation.
+\item There are disjoint neighborhoods \(N_k=[z_k-\rho,z_k+\rho]\subset(0,\infty)\),
+with a common \(\rho>0\), and a bounded open neighborhood \(U\) of \(b^*\).
+For every \(b\in U\), \(q_b\) has exactly one zero \(z_k(b)\) in each \(N_k\)
+and no other zeros. The orientations remain \(\sigma_k\).
+The functions \(z_k(b)\) are \(C^1\), have a common Lipschitz constant, and
+\(|z_k(b)-z_k|<\rho/4\).
+\item There are \(L_k>0\) such that
+\(|q_b(x)|\geq L_k|x-z_k(b)|\) on \(N_k\) for all \(b\in U\).
+Set
+\[
+ E_k=\sum_{j=0}^m\sum_{\ell=0}^3\sup_{N_k}|q_j^{(\ell)}|,
+ \quad C_U=1+\sup_{b\in U}\sum_{j<m}|b_j|,
+ \quad K_k=\frac{C_UE_k}{6L_k}.
+\]
+The weighted condition is
+\begin{equation}\label{eq:weighted}
+ \sum_kE_k(1+K_k)^2<\infty.
+\end{equation}
+The sequence \(K_k\) need not be bounded.
+\item Some \(m\) vectors among the \(Q_k\) are linearly independent.
+\end{enumerate}
+
+\begin{theorem}\label{thm:infinite}
+Under {\rm(H1)--(H4)}, all the series in \eqref{eq:GB}--\eqref{eq:RP}
+converge absolutely, \(G\) is positive definite, and \eqref{eq:problem}
+has an optimizer for all sufficiently large \(M\). Moreover,
+\begin{align}
+ \delta(M)&=\delta_0+C_2M^{-2}+C_4M^{-4}+o(M^{-4}),\label{eq:expansion}\\
+ C_2&=\frac{\delta_0^3\Gamma}{3D},&
+ C_4&=\delta_0^5\left(\frac{\Gamma^2}{3D^2}-\frac{R}{D}
+                          +\frac{P}{D}\right).\label{eq:coefficients}
+\end{align}
+The term \(P\) is nonnegative and is unchanged by any invertible linear
+change of basis of the lower moment functions \(q_0,\ldots,q_{m-1}\).
+\end{theorem}
+
+We give the proof, including the tail and exact-feasibility steps.
+For an average over \([-1,1]\), write
+\(\mathbb E h(y)=\frac12\int_{-1}^1h(y)\dd y\).
+
+\begin{lemma}[Balanced ramps]\label{lem:ramps}
+For all \(b\in U\) sufficiently close to \(b^*\) and all sufficiently small
+\(a>0\), there is a unique center \(c_k\in(z_k(b)-a,z_k(b)+a)\) satisfying
+\begin{equation}\label{eq:balance}
+ \mathbb E q_b(c_k+ay)=0.
+\end{equation}
+Its displacement satisfies
+\[
+ |c_k-z_k(b)|\leq\min\{a,K_ka^2\}.
+\]
+The function equal to \(\sgn q_b\) outside the ramp intervals and equal
+to \(\sigma_k(x-c_k)/a\) on \([c_k-a,c_k+a]\) maximizes \(H_b(a)\).
+\end{lemma}
+\begin{proof}
+At \(c=z_k(b)-a\) and \(c=z_k(b)+a\), the averaged function has opposite
+signs. Between them its derivative is
+\([q_b(c+a)-q_b(c-a)]/(2a)\), of strict sign \(\sigma_k\).
+Taylor's theorem gives
+\(|q_b(c)-\mathbb E q_b(c+ay)|\leq C_UE_ka^2/6\).
+The crossing bound then proves the displacement estimate.
+
+On a balanced interval \([\ell,r]\), put
+\(J(x)=\int_\ell^xq_b(t)\dd t\).
+There is just one change of sign of \(q_b\), and
+\(J(\ell)=J(r)=0\), \(\sigma_kJ(x)<0\) inside.
+For any competitor \(s\), integration by parts gives
+\[
+ \int_\ell^rq_b(s-s_a)
+   =-\int_\ell^rJ(x)(s'(x)-\sigma_k/a)\dd x\leq0.
+\]
+Outside these intervals, \(s_a=\sgn q_b\) maximizes the integrand
+pointwise. The intervals are disjoint for small \(a\).
+The infinite sum is justified by the integrable bound \(2|q_b|\).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:infinite}]
+\emph{Convergence and coefficients.}
+Differentiating the zero equation gives
+\(\partial_{b_j}z_k=q_j(z_k)/r_k\).
+The common root Lipschitz bound in (H2) therefore bounds \(Q_k/r_k\).
+Also \(|t_k/r_k|\leq6K_k\).
+These estimates and \eqref{eq:weighted} imply absolute convergence of
+\(\Gamma,G,B,R\). Condition (H4) makes \(G\) positive definite.
+
+Choose the trial multiplier \(b(a)=b^*+va^2\) and its balanced ramp
+profile \(s_a\). This trial multiplier is not asserted to solve the exact
+dual optimization problem. Define
+\begin{equation}\label{eq:kappa}
+ \kappa_k=\frac{Q_k^{\mathsf T}v-t_k/6}{r_k}.
+\end{equation}
+Implicit differentiation of the zero equation and
+\eqref{eq:balance}, for each fixed \(k\), give
+\[
+ \Delta_k:=c_k-z_k=\kappa_ka^2+o(a^2).
+\]
+Uniformly in \(k\), for a fixed constant \(C\),
+\begin{equation}\label{eq:displacements}
+ |\Delta_k|\leq a+C\norm{v}a^2\leq2a,\qquad
+ |\Delta_k|/a^2\leq K_k+C\norm{v}.
+\end{equation}
+The first estimate and the second serve different purposes; we do not
+replace them by a false uniform bound on \(\kappa_k\).
+
+\emph{Summed moment expansions.}
+For \(H_j(t)=\int_t^\infty q_j(x)\dd x\), the moment change at a switch is
+\[
+ 2\sigma_k\{\mathbb E H_j(z_k+\Delta_k+ay)-H_j(z_k)\}.
+\]
+Only these differences are summed; separate sums of the \(H_j(z_k)\)
+are unnecessary. If \(h=\Delta_k+ay\), then
+\[
+ \mathbb E h=\Delta_k,\quad
+ \mathbb E h^2=\Delta_k^2+a^2/3,\quad
+ \mathbb E h^3=\Delta_k^3+\Delta_ka^2,\quad
+ \mathbb E h^4=\Delta_k^4+2\Delta_k^2a^2+a^4/5 .
+\]
+Taylor expansion and \eqref{eq:displacements} now yield
+\begin{align}
+ \int q_js_a&=a^2(B-Gv)_j+o(a^2)=o(a^2)\quad(j<m),\label{eq:defect}\\
+ \int q_*s_a&=D-\frac{\Gamma a^2}{3}
+ -a^4\sum_k\sigma_k
+ \left(r_k\kappa_k^2+\frac{t_k\kappa_k}{3}+\frac{u_k}{60}\right)
+ +o(a^4).\label{eq:targetexp}
+\end{align}
+Here the normalized lower moment terms and the target terms are dominated
+by a constant times \(E_k(1+K_k)^2\).
+For example, \(r_k\Delta_k^2/a^4\) uses the second bound in
+\eqref{eq:displacements}; terms of degree at least four use
+\(|\Delta_k|\leq2a\) as well. The Taylor remainder divided by \(a^4\)
+tends to zero for each fixed \(k\), by continuity of \(q_*'''\), and has
+the same summable majorant. Dominated convergence proves both displayed
+expansions.
+
+Completing the square with \eqref{eq:kappa} gives
+\[
+ -\sum_k\sigma_k
+ (r_k\kappa_k^2+t_k\kappa_k/3+u_k/60)
+   =R-\tfrac12v^{\mathsf T}Gv=\Xi .
+\]
+Since \(q_{b(a)}=q_*-a^2\sum v_jq_j\),
+\eqref{eq:defect} also gives the support expansion
+\begin{equation}\label{eq:supportexp}
+ H_{b(a)}(a)=D-\Gamma a^2/3+\Xi a^4+o(a^4).
+\end{equation}
+For a general trial vector \(v\), its fourth coefficient would be
+\(R+\tfrac12v^{\mathsf T}Gv-B^{\mathsf T}v\);
+its minimum occurs at \(G^{-1}B\).
+
+\emph{Exact moment repair.}
+Select the \(m\) independent switches from (H4), and move only their
+centers by a vector \(e\). At \(a=0,e=0\), the derivative of the lower
+moment map has columns \(-2\sigma_kQ_k\), so it is invertible.
+For small \(a\) this derivative remains uniformly close to that invertible
+matrix. A contraction with that matrix as preconditioner, on a ball of
+radius a fixed multiple of the defect in \eqref{eq:defect}, gives a
+continuous solution \(e(a)=o(a^2)\).
+Indeed its forcing is \(o(a^2)\), and its derivative norm can be made
+less than \(1/2\), so that this ball maps into itself.
+Ramp intervals remain disjoint and the amplitude and slope bounds are
+unchanged. The derivative of the \(q_*\) moment with respect to each
+selected center is \(O(a^2)\), while its second derivative is bounded.
+Consequently the repair changes that moment by
+\(O(a^2|e|+|e|^2)=o(a^4)\).
+The repaired profile \(\widetilde s_a\) therefore has exact lower
+moments and
+\begin{equation}\label{eq:primalexp}
+ S(a):=\int q_m\widetilde s_a
+      =D-\Gamma a^2/3+\Xi a^4+o(a^4).
+\end{equation}
+
+Put \(A(a)=f/S(a)\) and \(M(a)=A(a)/a\).
+The feasible function \(A(a)\widetilde s_a\) has amplitude \(A(a)\)
+and slope at most \(M(a)\). Both functions are continuous for small
+positive \(a\), \(A(a)\to\delta_0\), and \(M(a)\to\infty\).
+The image of this interval under \(M(a)\) is an interval unbounded
+above, hence contains all sufficiently large budgets. No monotonicity
+of this parametrization is needed.
+
+\emph{Attainment and matching lower bound.}
+For a fixed sufficiently large \(M\), a minimizing sequence is uniformly
+bounded and equicontinuous. A diagonal Arzel\`a--Ascoli argument gives a
+locally uniform limit. Dominated convergence against each \(q_j\in L^1\)
+preserves the moments, and the norm and Lipschitz bounds pass to the
+limit. Thus the optimum is attained.
+
+For any feasible amplitude \(A\), use
+\(a=A/M\), \(s=g/A\), and the trial multiplier at that \(a\). Then
+\[
+ f=\int q_{b(a)}g\leq A H_{b(a)}(a).
+\]
+The preceding feasible upper bound and \(\delta(M)\geq\delta_0\)
+show that the minimizing amplitude tends to \(\delta_0\).
+The support and primal expansions therefore have matching scalar
+inversions. Explicitly, with
+\(t=\Gamma/(3D)\), \(e=\Xi/D\), the equation to this order is
+\[
+ A\{1-t(A/M)^2+e(A/M)^4+o(M^{-4})\}=\delta_0 .
+\]
+Its increasing polynomial part has derivative bounded away from zero
+near \(\delta_0\). The remainder is uniform for \(A\) in a compact
+neighborhood of \(\delta_0\). Substitution yields
+\[
+ A=\delta_0+t\delta_0^3M^{-2}
+                   +(3t^2-e)\delta_0^5M^{-4}+o(M^{-4}),
+\]
+which proves \eqref{eq:coefficients}. In particular the factor \(3\)
+accounts for the dependence \(a=A/M\).
+Finally, a lower-moment basis change \(Q\mapsto LQ\) gives
+\(G\mapsto LGL^{\mathsf T}\), \(B\mapsto LB\), and leaves \(P\) unchanged.
+\end{proof}
+
+\subsection{Finite switch sets and the role of the constraints}
+\begin{proposition}\label{prop:finite}
+On a compact interval, suppose the \(q_j\) are \(C^2\), that
+\eqref{eq:signcertificate} holds, that all zeros of \(q_*\) are finitely
+many simple interior zeros, with no endpoint zeros, and that the \(Q_k\)
+span \(\R^m\). For all sufficiently large \(M\), the optimum in
+\eqref{eq:problem} is unique and consists of constant plateaus joined by
+linear ramps. Its value satisfies
+\[
+ \delta(M)=\delta_0+\frac{\delta_0^3\Gamma}{3D}M^{-2}+o(M^{-3}).
+\]
+If \(q_*\) is \(C^3\) near the zeros, the full expansion
+\eqref{eq:expansion}--\eqref{eq:coefficients} holds with finite sums.
+\end{proposition}
+\begin{proof}
+Root separation and sign persistence are automatic on a compact interval
+after shrinking the neighborhood of \(b^*\).
+The balance equations define centers \(c_k(a,b)\).
+At \(a=0\) the lower-moment map of their ramp profile has \(b\)-derivative
+\(-G\). Expressing its local contributions as averages of primitives
+shows that this map is \(C^2\), including at \(a=0\).
+The implicit function theorem supplies an even \(C^2\) multiplier \(b(a)\)
+which makes all lower moments exactly zero.
+Thus \(b(a)=b^*+va^2+o(a^2)\), with \(v\) as above.
+
+Lemma~\ref{lem:ramps} proves exact support optimality.
+Equality forces \(s=\sgn q_b\) on every plateau and
+\(s'=\sigma_k/a\) almost everywhere in every ramp, because
+\(\sigma_kJ<0\) there. Continuity fixes all endpoint values.
+The support maximizer, and hence the constrained optimizer at the
+resulting budget, is unique.
+The target satisfies \(S(a)=D-\Gamma a^2/3+o(a^3)\) under \(C^2\)
+regularity; its derivative is \(O(a)\).
+Hence \(M(a)=f/(aS(a))\) has negative derivative for small \(a>0\)
+and covers all sufficiently large budgets. The scalar inversion gives
+the stated second-order result. If \(q_*\) is \(C^3\) near the switches,
+the finite version of \eqref{eq:targetexp} gives the fourth coefficient.
+\end{proof}
+
+\begin{remark}
+The sign of \(C_4\) is not fixed by positivity of an underlying weight.
+The nonnegative quantity \(P\) has a more specific interpretation.
+For the fixed residual \(q_*\), the unconstrained ramp support has
+fourth coefficient \(R\); imposing the lower moments gives \(\Xi=R-P\).
+Thus the loss at this order is \(Pa^4\).
+This does not compare the original \(q_m\) problem with a different
+problem in which all lower constraints have simply been deleted.
+\end{remark}

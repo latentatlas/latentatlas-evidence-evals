@@ -1,0 +1,22 @@
+{
+  "case_count": 146,
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "generated_at_utc": "2026-07-14T12:11:54.425261+00:00",
+  "mode": "latentatlas_action_time_p0_reviewer_pack",
+  "outputs": {
+    "casebook": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_casebook.md",
+    "cases": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_cases.csv",
+    "codebook": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_adjudication_codebook.md",
+    "instructions": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_instructions.md",
+    "manifest": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_manifest.json",
+    "response_template": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_response_sheet_blank.csv",
+    "summary": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_summary.json"
+  },
+  "production_truth_mutation": false,
+  "raw_source_rows_read": false,
+  "response_template_rows": 146,
+  "reviewer_pack_schema_version": "latentatlas_action_time_p0_reviewer_pack_v1",
+  "status": "pass"
+}

@@ -1,0 +1,112 @@
+{
+  "status": "exact_algebra_and_certificate_crosschecks_passed",
+  "check_groups": 8,
+  "checks": [
+    {
+      "name": "five_piece_lower_moment",
+      "passed": true,
+      "reason": "Exact five-piece integration; centers separated by one preserve the lower moment."
+    },
+    {
+      "name": "five_piece_target",
+      "passed": true,
+      "reason": "Direct polynomial antiderivatives; no assumed target formula in the integration."
+    },
+    {
+      "name": "two_balance_equations",
+      "passed": true,
+      "reason": "Both cell averages equal b exactly when the center-shift equation vanishes."
+    },
+    {
+      "name": "target_stationarity",
+      "passed": true,
+      "reason": "Differentiating the independently integrated target recovers the balance equation."
+    },
+    {
+      "name": "positive_gain_identity",
+      "passed": true,
+      "reason": "Exact identity modulo the balance equation; no asymptotic truncation."
+    },
+    {
+      "name": "base_constants_and_general_shifts",
+      "passed": true,
+      "reason": "Differentiate q at the two roots, then apply the general G inverse B and center formulas."
+    },
+    {
+      "name": "uniform_geometric_and_monotonicity_bounds",
+      "passed": true,
+      "reason": "Rational inequalities for every 0<a<=1/5, combined with the symbolic identities and analytic proof."
+    },
+    {
+      "name": "six_rational_certificates_direct_integrals",
+      "passed": true,
+      "reason": "Read rational root brackets, integrate all five pieces and both balance cells independently of the producer target formula. Interval overlap is corroboration, not an independent optimality proof."
+    }
+  ],
+  "rows": [
+    {
+      "a": "1/5",
+      "root_bracket_passed": true,
+      "direct_moments_passed": true,
+      "direct_cell_balances_passed": true
+    },
+    {
+      "a": "1/10",
+      "root_bracket_passed": true,
+      "direct_moments_passed": true,
+      "direct_cell_balances_passed": true
+    },
+    {
+      "a": "1/20",
+      "root_bracket_passed": true,
+      "direct_moments_passed": true,
+      "direct_cell_balances_passed": true
+    },
+    {
+      "a": "1/50",
+      "root_bracket_passed": true,
+      "direct_moments_passed": true,
+      "direct_cell_balances_passed": true
+    },
+    {
+      "a": "1/100",
+      "root_bracket_passed": true,
+      "direct_moments_passed": true,
+      "direct_cell_balances_passed": true
+    },
+    {
+      "a": "1/200",
+      "root_bracket_passed": true,
+      "direct_moments_passed": true,
+      "direct_cell_balances_passed": true
+    }
+  ],
+  "uniform_rational_bounds": {
+    "F_left_max": "-397/40000",
+    "F_d_min": "397/200",
+    "qprime_left_max": "-119/200",
+    "qprime_right_min": "23223/40000",
+    "qsecond_min": "1/2",
+    "T_lower": "7097/15000",
+    "T_plus_aTprime_lower": "2099/5000",
+    "gain_factor_lower": "199/200",
+    "cell_gap_lower": "3/5"
+  },
+  "constants": {
+    "D": "1/2",
+    "Gamma": "2",
+    "G": "256/63",
+    "B": "244/189",
+    "b2": "61/192",
+    "center2": [
+      "-1/8",
+      "-1/8"
+    ],
+    "delta0": "1/4",
+    "C": "1/48"
+  },
+  "source_sha256": "8c2f03d25c41f99bf415bc5cae6cdffd6a0a9a23318bfe52b47c0401a0b74a8d",
+  "interval_substrate_sha256": "4e83c9aff7ee0a66d89df4fd8e911c252bb4df0572d54c7d34523e213b8c8ab2",
+  "certificate_sha256": "b0243fea4b19fee298768e7ebba71ce1d21c0654d2ccdc867d8b301f57cec266",
+  "trust_boundary": "Exact finite polynomial algebra and rational interval checks. Analytic theorem, uniqueness and literature novelty are not mechanically proved."
+}

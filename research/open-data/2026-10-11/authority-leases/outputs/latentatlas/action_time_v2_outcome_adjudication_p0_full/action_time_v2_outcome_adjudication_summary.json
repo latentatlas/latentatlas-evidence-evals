@@ -1,0 +1,179 @@
+{
+  "adapter_summary": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_summary.json",
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "finding": {
+    "adapter_metrics": {
+      "input_v2_packet_count": 2614,
+      "merged_packet_count": 151,
+      "outcome_adjudication_allowed_count": 146,
+      "outcome_adjudication_blocked_count": 2468,
+      "p0_packet_count": 151,
+      "packet_sufficiency_counts": {
+        "insufficient_for_outcome_adjudication": 2468,
+        "sufficient_for_outcome_adjudication": 146
+      },
+      "sidecar_row_count": 151,
+      "sidecar_validation_status": "pass"
+    },
+    "claim_boundary": {
+      "allowed_claims": [
+        "The V2 masked evidence sidecar made a subset of packets outcome-adjudication-ready.",
+        "In this P0 sidecar review set, 146 of 146 outcome-ready packets were reviewed.",
+        "The pilot produced both resolved outcome labels and explicit evidence-insufficiency labels.",
+        "The result is suitable as a protocol finding and article section, not as a production probability claim."
+      ],
+      "blocked_claims": [
+        "The pilot proves a population false-block rate.",
+        "The pilot proves an empirical false-authorization probability.",
+        "The pilot proves all guard decisions are correct.",
+        "A risk signal or blocked PDP is outcome evidence by itself.",
+        "The review mutated production truth."
+      ]
+    },
+    "classification_profile": {
+      "action_type_counts": {
+        "manual_review_before_materialization": 48,
+        "recheck_primary_offer_availability": 94,
+        "resolve_official_truth_identity_guard": 4
+      },
+      "execution_verdict_counts": {
+        "blocked_identity_changed": 4,
+        "revalidation_required": 142
+      },
+      "notes_by_outcome": {
+        "correct_block": {
+          "availability_recheck_correct_when_availability_unconfirmed": 13,
+          "availability_uncertain_not_action_grade_supports_revalidation": 20,
+          "confirmed_unavailable_supports_availability_recheck": 3,
+          "latest_pdp_snapshot_supports_manual_review_when_availability_unconfirmed": 12,
+          "manual_review_correct_when_latest_pdp_flags_not_action_grade": 6,
+          "masked_availability_uncertain_supports_revalidation": 41,
+          "masked_identity_conflict_supports_block": 4
+        },
+        "false_block": {
+          "all_visual_flags_true_revalidation_signal_false_block": 12,
+          "latest_pdp_record_should_supersede_stale_record_price_change_not_block_evidence": 10
+        },
+        "needs_more_evidence": {
+          "availability_confirmation_required_before_outcome_judgment": 2,
+          "blocked_pdp_evidence_insufficient_for_outcome_judgment": 6,
+          "blocked_pdp_fresh_pdp_required_before_outcome_judgment": 1,
+          "fresh_pdp_required_before_outcome_judgment": 10,
+          "fresh_pdp_required_before_stale_price_outcome_judgment": 2,
+          "process_context_missing_price_change_ambiguity": 4
+        }
+      },
+      "notes_code_counts": {
+        "all_visual_flags_true_revalidation_signal_false_block": 12,
+        "availability_confirmation_required_before_outcome_judgment": 2,
+        "availability_recheck_correct_when_availability_unconfirmed": 13,
+        "availability_uncertain_not_action_grade_supports_revalidation": 20,
+        "blocked_pdp_evidence_insufficient_for_outcome_judgment": 6,
+        "blocked_pdp_fresh_pdp_required_before_outcome_judgment": 1,
+        "confirmed_unavailable_supports_availability_recheck": 3,
+        "fresh_pdp_required_before_outcome_judgment": 10,
+        "fresh_pdp_required_before_stale_price_outcome_judgment": 2,
+        "latest_pdp_record_should_supersede_stale_record_price_change_not_block_evidence": 10,
+        "latest_pdp_snapshot_supports_manual_review_when_availability_unconfirmed": 12,
+        "manual_review_correct_when_latest_pdp_flags_not_action_grade": 6,
+        "masked_availability_uncertain_supports_revalidation": 41,
+        "masked_identity_conflict_supports_block": 4,
+        "process_context_missing_price_change_ambiguity": 4
+      },
+      "observed_change_type_counts": {
+        "availability_or_access_uncertain_masked": 112,
+        "identity_conflict_masked": 4,
+        "not_action_grade_masked": 28,
+        "price_or_materialization_conflict_masked": 2
+      },
+      "outcome_by_observed_change_type": {
+        "availability_or_access_uncertain_masked": {
+          "correct_block": 77,
+          "false_block": 12,
+          "needs_more_evidence": 23
+        },
+        "identity_conflict_masked": {
+          "correct_block": 4
+        },
+        "not_action_grade_masked": {
+          "correct_block": 18,
+          "false_block": 10
+        },
+        "price_or_materialization_conflict_masked": {
+          "needs_more_evidence": 2
+        }
+      },
+      "pdp_temporal_authority_evidence_counts": {
+        "latest_pdp_review_pool_snapshot_present": 48,
+        "not_observed": 98
+      }
+    },
+    "finding_verdict": "v2_masked_evidence_outcome_adjudication_pilot_completed",
+    "mode": "action_time_v2_outcome_adjudication_finding",
+    "outcome_metrics": {
+      "correct_block_count": 99,
+      "correct_block_rate_all_reviewed": 0.6781,
+      "correct_block_rate_resolved_only": 0.8182,
+      "false_block_count": 22,
+      "false_block_rate_all_reviewed": 0.1507,
+      "false_block_rate_resolved_only": 0.1818,
+      "needs_more_evidence_count": 25,
+      "needs_more_evidence_rate": 0.1712,
+      "outcome_counts": {
+        "correct_block": 99,
+        "false_block": 22,
+        "needs_more_evidence": 25
+      },
+      "resolved_outcome_count": 121,
+      "resolved_outcome_rate": 0.8288,
+      "reviewed_count": 146
+    },
+    "principle_observations": [
+      {
+        "claim_boundary": "Pilot observation only; not a population probability.",
+        "measured_signal": "identity_conflict_masked",
+        "pilot_observation": "4 of 4 reviewed identity-conflict packets were labeled correct_block.",
+        "principle": "identity change is action-grade block evidence"
+      },
+      {
+        "claim_boundary": "A blocked PDP supports evidence insufficiency, not correctness or falseness.",
+        "measured_signal": "blocked_pdp",
+        "pilot_observation": "7 reviewed packet(s) with blocked PDP reasoning remained needs_more_evidence.",
+        "principle": "PDP block is not outcome evidence"
+      },
+      {
+        "claim_boundary": "Requires packet-visible temporal authority evidence before generalization.",
+        "measured_signal": "false_block with packet-visible PDP temporal authority evidence",
+        "pilot_observation": "14 reviewed packet(s) were labeled false_block with latest PDP temporal authority evidence present.",
+        "principle": "latest PDP state can supersede stale state when current PDP evidence exists"
+      }
+    ],
+    "review_completion": {
+      "outcome_ready_p0_count": 146,
+      "responses_outside_allowed_count": 0,
+      "responses_outside_allowed_queue_ids": [],
+      "reviewed_outcome_ready_count": 146,
+      "unmatched_response_count": 0,
+      "unmatched_response_queue_ids": [],
+      "unreviewed_outcome_ready_count": 0,
+      "unreviewed_outcome_ready_queue_ids": []
+    },
+    "review_scope": "P0 masked-evidence sidecar outcome review",
+    "reviewer_id_hash": "reviewer01_hsyn",
+    "status": "pass"
+  },
+  "generated_at_utc": "2026-07-13T06:45:10.688362+00:00",
+  "internal_index_read": false,
+  "mode": "action_time_v2_outcome_adjudication_finding",
+  "outputs": {
+    "manifest": "outputs/latentatlas/action_time_v2_outcome_adjudication_p0_full/action_time_v2_outcome_adjudication_manifest.json",
+    "report": "outputs/latentatlas/action_time_v2_outcome_adjudication_p0_full/action_time_v2_outcome_adjudication_report.md",
+    "summary": "outputs/latentatlas/action_time_v2_outcome_adjudication_p0_full/action_time_v2_outcome_adjudication_summary.json"
+  },
+  "production_truth_mutation": false,
+  "responses": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/human_review_v2_outcome_responses_reviewer01_hsyn.csv",
+  "reviewer_sheet": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet_p0.csv",
+  "status": "pass"
+}

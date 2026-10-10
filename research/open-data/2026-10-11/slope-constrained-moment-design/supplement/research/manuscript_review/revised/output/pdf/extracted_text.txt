@@ -1,0 +1,912 @@
+Amplitude cost of slope-constrained moment design:
+sharp asymptotics and a validated theta example
+Hüseyin Buldurgan
+21 September 2026
+Revised manuscript for mathematical review (R20)
+Abstract
+We minimize the amplitude of a bounded multiplier subject to finitely many exact
+weightedmomentsandaseparateLipschitzboundM. Underexplicitsimple-switch,sepa-
+ration,summabilityandmoment-raPnkhypotheses,weproveδ(M)=δ∗+C∗M−2+o(M−2).
+The coefficient iRs C∗ = δ
+∗
+3(3D∗)−1
+k
+w(z
+k
+)|r
+∗
+0(z
+k
+)|, where r∗ is an optimal weighted L1
+residual, D∗ = w|r∗ |du, and z
+k
+are its switches. The upper construction corrects all
+prescribed moments exactly by moving finitely many transition centers; the lower bound
+appliestoeveryadmissiblemultiplier. Forapositivethetakernelatacertifiedtriplezero,
+validatedarithmeticverifiesthehypotheseswithinfinitelymanyswitchesandenclosesC∗
+in (9.20340371,9.20340375)×10−25. For every M ≥2×10−5, the remainder lies between
+−9.624×10−33/M3 and 2.167×10−32/M3. We also explain the relation to the classi-
+calmomentdualityandthetwo-parameterKantorovich–Rubinsteinnorm. Thenumerical
+statementsuseanalyticboundsandacompanioncomputationarchive;theyhavenotbeen
+formally verified or externally refereed.
+Keywords: moment problem; amplitude minimization; Lipschitz constraint; weighted L1
+approximation; validated numerics; positive kernels.
+1 Problem and context
+Aboundedmomentdesigncanhaveanoptimalmultiplierthattakesjusttwovaluesandjumps
+between them. Requiring a finite slope replaces those jumps by transitions and increases the
+minimumamplitude. Our question isquantitative: howmuchamplitude mustbe addedwhen
+the moments must still hold exactly? In an oscillatory integral, these moments can pin a zero
+and increase its multiplicity while the kernel remains positive. In the example below, an exact
+triple zero Q of a theta transform is held fixed. Three homogeneous moments preserve its first
+three vanishing derivatives, and a fourth moment cancels its nonzero third derivative. The
+optimization quantifies the smallest relative kernel change needed for this operation under a
+prescribed slope bound.
+The setting is the half-line in its given coordinate u. For a positive density w, let dρ =
+w(u)du, and let real functions p ,...,p belong to L1(ρ). Fix f > 0 and put
+0 m
+Z
+∞
+L (h) = p hdρ, A = {h : L (h) = 0 (j < m), L (h) = −f}, (1.1)
+j j j m
+0
+δ∗ = inf khk ∞, δ(M) = inf khk ∞. (1.2)
+h∈A∩L∞ h∈A∩Lip([0,∞))
+Lip(h)≤M
+Only bounded Lipschitz functions contribute a finite value in the second infimum. There is
+no constraint on the total mass of the kernel. The word cost means the relative amplitude
+khk ∞; it does not mean computation time or a physical resource.
+1
+
+Slope-constrained moment design Research draft, 21 September 2026
+The main result is Theorem 3.1, with a matching lower and upper coefficient. Section 4
+verifies its hypotheses for a specific theta kernel. Theorem 5.1 supplies an explicit bound
+valid for every sufficiently large slope budget, with a specified threshold. These results do not
+characterize the exact finite-M minimizer.
+Relation to established work. The L1 approximation/L ∞ moment duality is classical;
+a formulation of the Markov L-moment problem appears in Yuditskii [1, Problems 1.2–1.3].
+Perfect-splineextremalproblemsrelatemomentstoderivativenormsunderChebyshev-system
+assumptions [2, Sections 7–8]. The oscillatory functions used here do not form a global
+Chebyshev system on the half-line. Amplitude and control-rate constraints also occur in
+minimum-time design [3]; hence the idea of imposing a hard slope bound is not new. Bang-
+bang regularization uses related information about small switching-function values [4], but a
+quadratic penalty parameter cannot be substituted for our hard bound M.
+Our auxiliary support functional is exactly the two-parameter Kantorovich–Rubinstein
+(KR) norm of Lellmann et al. [5]. Its flat-metric and Wasserstein-type context is developed
+in [6, 7]. With the corresponding metric scaling it is also the Fortet–Mourier dual norm: the
+test-function norm uses a maximum of the amplitude and Lipschitz bounds, not their sum.
+Hille and Theewis give finite-dimensional reductions when one measure is atomic [8, Theorem
+2.1] and norming sets of extreme test functions [9, Theorem 5.1 and Corollary 5.1]. These
+results describe the support functional; the exact-moment large-M coefficient below requires
+an additional argument. Section 2 records the precise equivalence, rather than presenting
+a known norm as a new one. The specific result studied here is the full coefficient with
+exact moment preservation, together with an infinite-switch validated example and a uniform
+remainder. The comparison concerns the cited results; it is not a claim that no equivalent
+theorem exists elsewhere in the literature.
+2 Duality and normalization
+For a ∈ Rm, set Z
+X
+r = p − a p , D(a) = |r |dρ. (2.1)
+a m j j a
+j<m
+Suppose that a∗ satisfies
+Z
+p
+j
+sgn(r
+a∗
+)dρ = 0 (j < m), D∗ = D(a∗) > 0. (2.2)
+Write r∗ = r
+a∗
+. Then convexity shows that a∗ minimizes D. Moreover
+f
+δ∗ = , h∗ = −δ∗sgnr∗. (2.3)
+D∗
+R R
+Indeed p
+m
+sgnr∗dρ = D∗, so h∗ is feasible. For every feasible h, f = | r∗hdρ| ≤ khk ∞D∗.
+If r∗ 6= 0 almost everywhere, equality forces h = h∗ almost everywhere.
+For completeness, write q = wp and define
+j j
+Z
+H(A,M;µ) = sup gdµ, (2.4)
+kgk∞≤A, Lip(g)≤M
+Z
+V(A,M) = sup q g. (2.5)
+m
+kgkR∞≤A, Lip(g)≤M
+qjg=0 (j<m)
+2
+
+Slope-constrained moment design Research draft, 21 September 2026
+For A,M > 0, the exact identities are
+(cid:16) (cid:17)
+P
+V(A,M) = inf H A,M;(q − a q )du ,
+a∈Rm m j<m j j (2.6)
+δ(M) = inf{A > 0 : V(A,M) ≥ f}.
+To justify minimax, the set {|g| ≤ A,Lip(g) ≤ M} is compact and convex in the topology
+of uniform convergence on compact intervals by diagonal Arzelà–Ascoli. Its moment maps
+R
+are continuous: local convergence handles a compact interval and A ∞|q | controls the tails
+U j
+uniformly. Apply Sion’s theorem [10] to the affine Lagrangian. The infimum over the multi-
+pliers a imposes the lower moments exactly. The second identity follows by scaling a feasible
+maximizer of V by f/V whenever V ≥ f.
+Our convention is the two separate bounds in (2.4), with
+H(A,M;µ) = AH(1,M/A;µ) = MH(A/M,1;µ). (2.7)
+R
+Total variation, if used, is |dµ| without a factor 1/2. Zero-extending a measure to the full
+line gives the same support functional: a half-line test function extends constantly to the left.
+Neither (2.6) nor our proof assumes that the unrestricted coefficient a∗ remains dual-optimal
+for finite M.
+3 Sharp large-slope asymptotics
+Here are the complete local hypotheses used for the asymptotic result. Assume m ≥ 1, w > 0,
+and w,p ,...,p are C2 on the half-line (one-sided at zero), with p ∈ L1(ρ). Assume (2.2).
+0 m j
+In addition:
+(H1) r∗(0) 6= 0, and all positive zeros z
+k
+of r∗ are simple. The zero set is nonempty, finite
+or countably infinite. The signed set {z ,−z } is uniformly separated by a positive
+k k
+number d.
+(H2) Forsomefixedb > 0, theintervals[z −b,z +b]aredisjointandcontainedin(0,∞),
+k k
+and for 0 ≤ j ≤ m, 0 ≤ ℓ ≤ 2,
+X
+sup |q (ℓ) (u)| < ∞. (3.1)
+j
+k
+|u−z
+k
+|≤b
+(H3) There are m selected switches such that the matrix (p j (z k )) 0≤j<m, 1≤k≤m is nonsin-
+gular, after relabeling.
+In particular X
+0 < Γ = w(z )|r 0 (z )| < ∞. (3.2)
+k ∗ k
+k
+0 0
+Finiteness follows from (3.1), since (wr∗)(z
+k
+) = w(z
+k
+)r
+∗
+(z
+k
+).
+Theorem 3.1. Under (H1)–(H3) and (2.2), the feasible Lipschitz class is nonempty for all
+sufficiently large M, and
+δ(M) = δ∗+
+C∗
++o(M
+−2),
+C∗ =
+δ
+∗
+3Γ
+=
+δ
+∗
+4Γ
+> 0. (3.3)
+M2 3D∗ 3f
+If δ∗ < 1, the upper construction has 1 + h > 0 for all sufficiently large M. The result is
+conditional on the stated switch and rank hypotheses.
+3
+
+Slope-constrained moment design Research draft, 21 September 2026
+3.1 Lower bound for all feasible multipliers
+Let h be feasible, Lip(h) ≤ M, and δ = khk ∞. The exact duality gap is
+Z
+∞
+(δ−δ∗)D∗ = |r∗ |[δ+sgn(r∗)h]dρ. (3.4)
+0
+The integrand is nonnegative. Fix finitely many switches. At z , put γ = w(z )|r 0 (z )|. In
+k k k ∗ k
+a sufficiently small neighborhood, |(wr∗)(z
+k
+±v)| ≥ (γ
+k
+−ε)v and the signs are opposite. The
+two bracketed defects b± in (3.4) satisfy
+b
++
++b− ≥ 2δ−2Mv ≥ 2δ∗ −2Mv. (3.5)
+For sufficiently large M integrate over 0 ≤ v ≤ δ∗/M to obtain
+Z
+(δ−δ∗)D∗ ≥
+X
+(γ
+k
+−ε)
+δ∗/M
+v(2δ∗ −2Mv)dv =
+3M
+δ
+∗
+3
+2
+X
+(γ
+k
+−ε). (3.6)
+k∈E 0 k∈E
+Taking the infimum over h, then the lower limit as M → ∞, then ε ↓ 0, and finally increasing
+the finite set E, proves liminfM2(δ(M)−δ∗) ≥ C∗. This order of limits avoids a uniform
+Taylor assertion over infinitely many switches.
+3.2 Exact moment correction and the matching upper bound
+Evenly extend the sign profile s = sgnr∗ to the real line. Move only the selected positive
+centers to c , reflect them, and denote the new step profile by s . For a > 0 small set
+k c
+Z Z
+1 a ∞
+s (u) = s (u−v)dv, S (c,a) = q (u)s (u)du. (3.7)
+c,a c j j c,a
+2a −a 0
+Transitions are disjoint and avoid zero. Thus ks c,a k ∞ = 1 and Lip(s c,a ) = 1/a. Negative
+reflected centers add no transition on the positive half-line. The jump at a positive switch is
+0
+d = 2sgnr (z ).
+k ∗ k
+For an upward unit step at c, its change in a moment with density q is
+Z
+a 1 a2
+I (c,a) = − (1−v)[q(c+av)−q(c−av)]dv = − q 0 (c)+o(a2). (3.8)
+q
+2 6
+0
+The same formula defines an even function of signed a at zero. If Q bounds |q(ℓ)| on the
+ℓ
+neighborhood, direct differentiation gives
+|I | ≤ a2Q /6, |∂ I | ≤ |a|Q /3, |∂2I | ≤ Q /3+|a|Q /12, ∂2I (c,0) = −q 0 (c)/3. (3.9)
+q 1 a q 1 a q 1 2 a q
+Hypothesis (H2) therefore permits summation and two differentiations of the local smoothing
+errors. Only finitely many centers move, so their center and mixed derivatives are local
+derivatives. Thesearesumsoflocaldifferences,notsumsofindividualsteptails. Consequently
+S 0:m−1 (c,a) has an even C2 extension near (z,0).
+At (z,0) its center Jacobian is
+J = −d q (z ), 0 ≤ j < m, 1 ≤ k ≤ m. (3.10)
+jk k j k
+It is nonsingular by (H3). The implicit-function theorem supplies an even C2 function c(a) =
+z+O(a2) with S (c(a),a) = 0 for every j < m.
+j
+4
+
+Slope-constrained moment design Research draft, 21 September 2026
+Figure 1: The local mechanism behind the coefficient 1/3. A sign profile taking values ±1
+is replaced locally by a linear transition. The integral of |x|(1−|x|) on [−1,1] is 1/3. The
+figure illustrates the construction; exact moment correction and the lower bound are supplied
+by the proof.
+Let q
+r
+= wr∗. Since q
+r
+(z
+k
+) = 0, moving finitely many centers by O(a2) changes its
+unsmoothed moment by O(a4). The corresponding change in the smoothing correction is also
+O(a4), by the local C2 bounds. Summing (3.8) with the factors d yields
+k
+Z
+Γa2
+S
+m
+(c(a),a) = q
+r
+s
+c(a),a
+= D∗ −
+3
++o(a2). (3.11)
+Define
+f
+α(a) = , h = −α(a)s . (3.12)
+S (c(a),a) a c(a),a
+m
+All moments in (1.1) are exact. Furthermore
+kh a k ∞ = α(a) = δ∗+
+δ∗Γ
+a2+o(a2), Lip(h a ) =
+α(a)
+, α 0 (a) = O(a). (3.13)
+3D∗ a
+The map a 7→ α(a)/a is strictly decreasing for small positive a and tends to infinity. Thus
+every sufficiently large M is obtained, with a(M) = δ∗/M +O(M
+−3).
+Substitution gives the
+matching upper bound in (3.3), completing the proof. □
+4 A positive theta kernel at a pinned triple zero
+Consider the fixed-kernel family
+X
+Φ(u) = (2π2n4e9u−3πn2e5u)e −πn2e4u , (4.1)
+n≥1
+Z
+∞
+F (t,λ,µ,ν) =
+Φ(u)(1+h(u))eλu2+µu4+νu6
+cos(2tu)du. (4.2)
+h
+0
+Every summand of Φ is positive for u ≥ 0. Double exponential decay gives joint analyticity
+in the four moving coordinates for bounded h. The multiplier h is a single fixed function,
+independent of those coordinates.
+5
+
+Slope-constrained moment design Research draft, 21 September 2026
+Let Q = (τ,λ ,µ ,0) be the unique solution of F = (F ) = (F ) = 0 in the exact box
+Q Q 0 0 t 0 tt
+of certificate C1 (Appendix A). Its approximate location is
+(τ,λ ,µ ) ' (41.40034135868425,−3.645692061604919,8.335120498918607). (4.3)
+Q Q
+These decimals locate Q; they do not replace the exact dyadic center and the certified dis-
+placement bound. Set
+Z
+w = ΦeλQu2+µQu4 , p = (2u)jcos(2τu+jπ/2), f = p dρ. (4.4)
+j j j
+Here f = f = f = 0 and f = f > 0. Taking m = 3 in (1.1) pins Q and makes ∂jF (Q) = 0
+0 1 2 3 t h
+for 0 ≤ j ≤ 3. It imposes a zero of order at least four.
+4.1 The geometric interpretation
+The parameter identities are
+(F ) = −1(F ) , (F ) = 1 (F ) , (F ) = − 1 (F ) . (4.5)
+h λ 4 h tt h µ 16 h t4 h ν 64 h t6
+At the unmodified Q, certificate C1 encloses
+3.33563055×10 −13 < f < 3.33563057×10 −13,
+3
+(4.6)
+−9.71679534×10 −13 < f < −9.71679532×10 −13.
+4
+The two-control determinant is f f /64 6= 0. Thus Q is a transverse triple zero, called a
+4 3
+cusp of the equilibrium equation F = 0. For a local potential with V = F , this is the A
+0 t 0 3
+convention.
+Write g = ∂jF (Q). At the constrained target, direct use of (4.5) gives
+j t h
+g (g g −g g )
+4 4 7 5 6
+det∂ (g ,g ,g ) = . (4.7)
+(λ,µ,ν) 0 1 2 4096
+A nonzero value ensures both exact order four and rank three of the unfolding. This is the
+swallowtail (A ) condition in the potential convention, not a statement about a fourth-order
+4
+zero of the original unmodified transform.
+Proposition 4.1. For this theta example and every M > 0, δ(M) is also the infimum over
+smooth multipliers with Lip(h) ≤ M, khk ∞ < 1, the same four exact moments, and nonzero
+determinant (4.7). This is equality of infima, not attainment in the smooth class.
+Proof. The functions p ,...,p are independent on every open interval. A relation would
+0 N
+give P(u)cos(2τu)+Q(u)sin(2τu) = 0 with polynomials P,Q. Analytic continuation would
+express e4iτz as a rational function unless P = Q = 0, which is impossible since τ 6= 0. For a
+nonnegative compactly supported smooth bump χ positive on an interval, the Gram matrix
+R
+B = χp p dρ is positive definite. Hence
+ij i j
+XN
+R v = χ (B
+−1v)
+p (4.8)
+N j j
+j=0
+is a right inverse of the first N +1 moments, bounded in the C1 norm.
+Sinceδ∗ < 1(Table1),firstcutoffh∗ andthenmollifyitsevenextensionusingnonnegative
+kernels. The resulting smooth compactly supported functions have amplitude at most δ∗ and
+converge in the weighted moments through order seven. The strict gap between δ∗ and one
+6
+
+Slope-constrained moment design Research draft, 21 September 2026
+Quantity Certified enclosure or bound
+Unrestricted amplitude δ∗ (9.1787079603827,9.1787079608363)×10−10
+Weighted switch sum Γ (1.297542117,1.297542121)
+Leading coefficient C∗ (9.20340371,9.20340375)×10−25
+Positive switches in [0,1] 28 simple roots; 113 complementary sign leaves
+Tail of Γ beyond u=1 <5.705×10−63
+Signed-switch separation >1/200
+First three switch moment determinant positive, approximately 5.30861×10−6
+Table 1: Outward decimal bounds from certificates C2–C3. The last approximation is a
+locator; exclusion of zero is checked with the exact interval in C3. No rounded center is
+treated as an exact optimizer.
+leaves room for the following corrections. Use R to correct the first four moment errors
+3
+exactly, and an arbitrarily small R correction in jets 4–7 to avoid the zero set of the nonzero
+7
+polynomial in (4.7). This gives a smooth feasible anchor h 0 with kh 0 k ∞ < 1 and finite slope.
+Thefamilyh = −1+θ(1+h ), 0 < θ ≤ 1, remainsfeasible, has1+h > 0, andhasarbitrarily
+θ 0 θ
+small slope. Its nonzero jets and determinant scale by θ and θ3, respectively.
+For any M > 0 a bounded feasible anchor exists. A minimizing sequence has a locally
+uniformly convergent subsequence by Arzelà–Ascoli; integrable tails preserve the moments.
+Thus a Lipschitz minimizer exists, and the anchor shows δ(M) < 1. Mix it with a smooth
+anchorofslopestrictlylessthanM. Themixturehasastrictslopemarginandcostarbitrarily
+closetoδ(M). Evenextensionfollowedbyanonnegativeevenmollifierpreservestheamplitude
+and does not increase the slope. Moment errors tend to zero. Correct them with R ; then
+3
+perturb jets 4–7 with R to make (4.7) nonzero. Both C1 corrections can fit the strict slope
+7
+and positivity margins. This proves the claim.
+4.2 Validated hypotheses and the leading coefficient
+The weighted L1 objective D(a) is coercive: independence of the first three p gives
+P j
+k a p k ≥ c|a|. Every residual is nonzero analytic, so its zeros have measure zero and
+j j L1(ρ)
+D is differentiable, with gradient given by the sign moments. The following bounds apply to
+the exact Q.
+Certificate C3 starts from an exact dyadic vector a¯, approximately
+a¯ ' (−0.0001172686588251,−0.0646797594922349,0.00388087037678106). (4.9)
+Throughout ka−a¯k ∞ ≤ R = 2 −40, it isolates the 28 simple roots in [0,1] and excludes other
+roots there by a sign cover. Let I be fixed disjoint neighborhoods containing these root
+k
+boxes, with no other zero of any residual in the coefficient cube. If w is the first positive
+1
+theta summand times the deformation factor, define
+Z
+D (a) = S w (u)|r (u)|du. (4.10)
+loc 1 a
+28 I
+k=1 k
+Its Hessian is
+X28
+w (z (a))
+H(a) = 2 1 k p(z (a))p(z (a))T, p = (p ,p ,p )T, (4.11)
+|r0(z (a))| k k 0 1 2
+k=1 a k
+Positive leading principal minors certify H−(1/200)I (cid:31) 0 uniformly. The difference D−D
+loc
+is an integral of |r | against a nonnegative density on a fixed set, hence is convex. Therefore
+a
+7
+
+Slope-constrained moment design Research draft, 21 September 2026
+D is strongly convex on the cube. Also k∇D(a¯)k < 2.065×10 −16 and R/200−2k∇D(a¯)k >
+1 1
+4.1345×10 −15. StrongconvexitymakesD > D(a¯)ontheEuclideansphereofradiusR, giving
+aninteriorstationarypoint. Convexitymakesitaglobalminimizer;localstrictconvexityrules
+out any second global minimizer. Thus the exact a∗ is unique and localized in the recorded
+cube.
+For u ≥ 1 the residual is
+r = A(u)sin(2τu)+B(u)cos(2τu), A = 8u3+2a u, B = 4a u2−a . (4.12)
+a 1 2 0
+The uniform coefficient bounds |a | < 10 −3, |a | < 1/10, |a | < 1/200 imply A > 7u3. With
+0 1 2
+ϑ = arctan(B/A),
+AB 0−BA 0 = −32a u4+(8a a +24a )u2+2a a , |ϑ 0| ≤ (200u2) −1. (4.13)
+2 1 2 0 0 1
+The phase derivative lies between 81 and 85. Consequently there are infinitely many simple
+tail switches, spaced by more than 3/85. The finite cover and the transition across u = 1
+complete (H1).
+Differentiating the theta series gives, for ℓ = 0,1,2,
+
+C
+0
+= 4π2+6π,
+|Φ(ℓ)(u)| ≤ C e(9+4ℓ)u−πe4u , C = 60π2+30π+16π3, (4.14)
+ℓ  1
+C = 660π2+150π+448π3+64π4.
+2
+Forexample, thederivativepolynomialsaregeneratedbyT(P) = (5−4x)P+4xP 0 fromP =
+0
+−3+2x. Their absolute monomial terms have successive-index ratios at most 256e −3π < 1/2;
+twice the first term bounds each series. Polynomial factors times this double exponential
+envelope prove (H2). The first three switches satisfy (H3). The finite contributions to Γ use
+12 theta terms with an explicit series tail; beyond u = 1 one uses |r 0| < 900u3 and the phase
+a
+spacing. In particular
+900C exp(9+µ −πe4)
+Γ ≤ 0 + < 5.705×10 −63, (4.15)
+u>1 1−50−4
+where µ is the recorded upper bound for µ . For this envelope the logarithmic derivative is
++ Q
+3/u+9+4µ u3 −4πe4u. After division by e4u, each positive term is decreasing for u ≥ 1.
++
+Thusitsvalueatoneboundsthedecayratethroughoutthetail. Thatratetimes3/85exceeds
+16 and e4 > 50, giving the displayed geometric denominator. These checks give Table 1 and
+apply Theorem 3.1.
+5 An explicit uniform remainder
+Theorem 5.1. For the exact theta problem in Section 4, for every M ≥ M = 2×10 −5,
+0
+C∗
+−
+9.624×10 −33
+< δ(M)−δ∗ <
+C∗
++
+2.167×10 −32
+. (5.1)
+M2 M3 M2 M3
+In particular (cid:12) (cid:12)
+(cid:12)
+(cid:12) (cid:12)
+δ(M)−δ∗
+−1
+(cid:12)
+(cid:12) (cid:12) < 0.001178
+M
+0 . (5.2)
+C∗/M2 M
+No sharpness of the order M
+−3
+or second asymptotic coefficient is asserted. The relative error
+is for the excess above δ∗.
+8
+
+Slope-constrained moment design Research draft, 21 September 2026
+Figure 2: Contributions to Γ in the theta example. The plotted values are interval midpoints,
+with widths below the drawing resolution; the infinite tail is included analytically. These
+switches are zeros of the optimal dual residual, not zeros of the transform F .
+h
+5.1 Uniform correction over a continuum of transition widths
+Put a = 2 −14 and V = (512,768,384). Move only the first three centers: c = z +a2v ,
+max k k k
+|v | ≤ V , 0 < a ≤ a . Let U contain the exact root and a radius a +a2 V for k ≤ 3,
+k k max k max max k
+or a otherwise, and define
+max
+Q = sup|q (ℓ)|, R = sup|q(ℓ)|,
+jℓk j ℓk r
+U U
+k k
+X X3 (5.3)
+B = R , A = B /12, A = (R V2+R V /3).
+2 2k 3 2 4 1k k 2k k
+k k=1
+BothB andA includetheinfinitetail; A includesonlythethreemovedcenters. Certificate
+2 3 4
+C4 supplies
+B < 59.125014562, A < 4.927084547, A < 132801.204. (5.4)
+2 3 4
+Taylor’s theorem in (3.8) gives
+|I (c,a)+a2q 0 (c)/6| ≤ a3sup|q 00|/24. (5.5)
+q
+P P
+Let F = 1 d q 0 (z ) and let J be (3.10). Then |S (z,a)/a2 +F | ≤ (a/12) Q . For
+j 6 k k j k j j k j2k
+the exact dyadic preconditioner B recorded in C4, use
+T (v) = v−BS (z+a2v,a)/a2, kvk = max|v |/V . (5.6)
+a 0:2 V k k
+k
+The exact center derivative is −d times the symmetric average of q on [c −a,c +a]. Hence
+k j k k
+|∂ S −J | ≤ ∆ := 2a2 (V Q +Q /6). (5.7)
+c k j jk jk max k j1k j2k
+With E = I −BJ, define the row bounds
+X X
+κ = V −1 (|E |+ |B |∆ )V , (5.8)
+i i ik ij jk k
+k j
+ 
+X X
+a
+η = V −1|(BF) |+ max |B | Q  . (5.9)
+i i i 12 ij j2k
+j k
+9
+
+Slope-constrained moment design Research draft, 21 September 2026
+Outward bounds are
+κ < (0.129747,0.118233,0.071040), η < (0.397772,0.406040,0.324017). (5.10)
+Thus T is a uniform contraction mapping the V-box to its interior. Since kI −BJk < 1,
+a V
+BJ and therefore B are invertible; its fixed point solves S = 0. Also, uniformly in bounded
+0:2
+v,
+S (z+a2v,a)/a2 = Jv−F +O(a). (5.11)
+0:2
+Thus T (v) = (I − BJ)v + BF is its continuous extension to a = 0. Uniform contraction
+0
+gives continuous fixed points v(a) for the entire interval. This is a continuum argument, not
+a sampling of budgets.
+5.2 Upper and lower error bounds
+R
+Let L(a) = D∗ − q
+r
+s
+c(a),a
+. Positivity of the sign deficit gives L ≥ 0. Put ∆
+k
+= c
+k
+−z
+k
+. Since
+q (z ) = 0, the unsmoothed center displacement satisfies
+r k
+(cid:12)Z (cid:12)
+(cid:12) (cid:12) X3
+(cid:12) (cid:12) q r (s c −s z )du (cid:12) (cid:12) ≤ R 1k |∆ k |2. (5.12)
+k=1
+Indeed the jump has magnitude two and |q (z +x)| ≤ R |x|. Differentiating (3.8) in c also
+r k 1k
+gives |∂ I | ≤ a2R /6, and hence
+c qr 2k
+|d [I (c ,a)−I (z ,a)]| ≤ a2R |∆ |/3. (5.13)
+k qr k qr k 2k k
+Using |∆ | ≤ a2V produces exactly the finite sum A . At the original centers, summing (5.5)
+k k 4
+produces A . Therefore
+3
+L(a) ≤ Γa2/3+A a3+A a4. (5.14)
+3 4
+Let f− be the certified lower bound for f
+3
+, and let U
+δ
+, Γ
++
+and C
++
+denote certified upper
+bounds for δ∗, Γ and C∗, respectively. Define
+D
+min
+= f−/U
+δ
+, E
+0
+= Γ
++
+a2
+max
+/3+A
+3
+a3
+max
++A
+4
+a4
+max
+, (5.15)
+U
+δ
+U = . (5.16)
+1−E /D
+0 min
+Upper bounds are used on the right. C4 checks E < D , U < 1, and U/a < M . For
+0 min max 0
+the feasible ramp h
+a
+= −α(a)s
+c(a),a
+, α = f
+3
+/(D∗ − L) lies between δ∗ and U. Continuity,
+the divergence of α(a)/a at zero, and its value below M at a give every M ≥ M by the
+0 max 0
+intermediate-value theorem. Monotonicity on this full interval is not required.
+Put e
+a
+= α−δ∗ and choose a = α/M. The exact relation is D∗e
+a
+= αL, so
+Γα3 A α4 A α5
+D∗e
+a
+≤
+3M2
++
+M
+3
+3
++
+M
+4
+4
+. (5.17)
+Using α3−δ3 ≤ 3U 2 e and absorbing this difference,
+∗ a
+e
+a
+−C∗/M2 ≤
+A
+3
+U 4 /M3
+D
++
+∗
+(
+−
+A
+4
+Γ
+U
+U
+5
+2
++
+/M
+Γ
+2
+U 2 C∗)/M4
+. (5.18)
+The denominator is positive. Exact rational arithmetic on the certified enclosures gives
+4 5 2
+A U +(A U +Γ U C )/M
+3 4 + + 0 < 2.167×10 −32. (5.19)
+D −Γ U 2 /M2
+min + 0
+10
+
+Slope-constrained moment design Research draft, 21 September 2026
+Figure 3: The enclosure for the deviation from the leading excess C∗/M2. The band follows
+from (5.1); it is not a statistical confidence interval. The hollow point is a separate numerical
+ramp witness and does not assert an exact finite-budget optimizer.
+Since δ(M) ≤ α, this proves the upper inequality.
+For any admissible h, Taylor’s theorem gives |q (z ±v)| ≥ P (v) := γ v−R v2/2. The
+r k k k 2k
+true weights and the defects b± in the lower-bound proof are nonnegative. For 0 ≤ v ≤ δ∗/M
+their paired contribution is at least
+max(0,P
+k
+)(b
++
++b−) ≥ max(0,P
+k
+)(2δ∗ −2Mv) ≥ P
+k
+(2δ∗ −2Mv). (5.20)
+This positive-part step matters when the Taylor lower bound is negative. Integration gives
+γ δ3/(3M2)−R δ4/(12M3). Sum finite sets and pass to the absolutely convergent sums to
+k ∗ 2k ∗
+obtain
+δ5B U5B
+δ(M)−δ∗ ≥ C∗/M2− ∗ 2 , δ 2 < 9.624×10 −33. (5.21)
+12f
+3
+M3 12f−
+The neighborhoods contain the required intervals for all M ≥ M . The strict slack in the
+0
+rounded constants gives (5.1). Dividing by the lower bound on C∗ proves (5.2). □
+At the threshold M the total amplitude is enclosed by
+0
+0.00000000091787309568619750 < δ(M )
+0
+(5.22)
+< 0.00000000091787309964331750.
+Theboundin(5.2)isbelow0.1178%there,forthemuchsmallerexcess,notthetotalamplitude.
+The theorem applies to the smooth nondegenerate class as an infimum by Proposition 4.1.
+Here “large slope” is relative to the amplitude: at M
+0
+the leading transition half-width δ∗/M
+0
+is approximately 4.5894×10 −5 in the original u coordinate, well below the switch separation.
+6 Interpretation and scope
+Thebaselineamplitudeδ∗ measurestheleastboundedrelativechangethatraisesthemultiplic-
+ity at a fixed triple zero. A finite slope adds a positive cost whose leading coefficient weights
+11
+
+Slope-constrained moment design Research draft, 21 September 2026
+every simple switch by the local density and the slope of the optimal residual. Even though
+there are infinitely many switches in this example, their contributions are summable and the
+tail is bounded explicitly. The scale and the coefficient depend on the original coordinate u;
+rescaling that coordinate also rescales the Lipschitz budget.
+The conditional theorem extends beyond the theta density, but it requires verification of
+its hypotheses for each new example. It does not cover multiple residual zeros, accumulating
+switches, aboundaryswitch, orasingularselectedmomentmatrix. Thevalidatedapplication
+is at one exact base point Q, not a uniform result along the entire cusp curve. It gives no
+global count of transform zeros or swallowtails, no result about undeformed zeta zeros, and
+no physical model or trained statistical model. The feasible ramps used for the upper bound
+are not proved to be the exact finite-M optimizers, and smooth attainment is not claimed.
+A Certificate interface and reproducibility
+The companion research archive contains exact inputs, analytic bounds, producer programs,
+separate arithmetic checkers, numerical crosschecks, and file hashes. Table 2 defines the
+certificate identifiers used above. Paths are relative to the archive’s research/ folder. The
+full filename in each folder is under results/.
+ID Folder Certificate filename
+C1 cusp_verified quartic_cusp_certificate.json
+C2 kernel_norm_threshold threshold_certificate.json
+C3 kernel_slope_asymptotics asymptotic_certificate.json
+C4 kernel_slope_remainder remainder_certificate.json
+Table2: Machine-readablecompanionsofthenumericalclaims. TheirSHA-256identitiesand
+the claim-to-source map are recorded in the manuscript package. The archive is presently a
+local research artifact; a public version and persistent identifier remain to be assigned.
+Arithmetic representation and the base point. A recorded ball has midpoint m2e
+and radius r2s, with exact integers. The enclosing set is [m2e − r2s,m2e + r2s]; printed
+decimal summaries are not inputs. C1 applies a fixed-preconditioner contraction to G =
+(F ,(F ) ,(F ) )onacubeofradiusapproximately10
+−24.
+WithauniformHessianboundM ,
+0 0 t 0 tt 2
+itverifiesq = kI−YDG(x )k+kYkM R < 5.408×10 −13 andη+qR < R,whereη = kYG(x )k.
+0 2 0
+Nonsingularity of Y and Banach’s theorem give the unique zero and kQ−x 0 k ∞ ≤ η/(1−q) <
+9.099×10 −88. Derivative uncertainty is propagated from the exact center to that root.
+The finite theta sum is integrated on [0,U] with validated complex quadrature using Arb
+[11, 12]; separate bounds cover the omitted theta terms and u > U. For C in (4.14) and
+0
+P+(u) = λ u2 +µ u4 +ν u6, where each coefficient is the maximum of zero and its upper
++ + +
+parameter-box bound, one may use
+Z
+∞ C (2U)n
+|∂n(ΦeP cos(2tu))|du ≤ 0 e9U+P+(U)−πe4U ,
+U t c n (A.1)
+c = 4πe4U −9−n/U −(P+) 0 (U) > 0.
+n
+ThechoiceofU alsomakeseachpositivepolynomialderivativetermtimese
+−4u
+nonincreasing,
+so the bound holds on the entire tail. C1 uses U = 2, 16 theta terms and 110 decimal working
+precision, with a separate higher-precision check. C2 obtains a lower amplitude bound from
+an upper bound for D, and an upper amplitude bound from an exactly moment-corrected
+feasible design. Thus the two certificate directions are not interchanged.
+12
+
+Slope-constrained moment design Research draft, 21 September 2026
+Remainder derivative tails. C4 uses (4.14) and |P 0| ≤ 44(1+u)3, |P 00| ≤ 116(1+u)2.
+Let
+W = C , W = C +44C , W = C +88C +2052C , (A.2)
+0 0 1 1 0 2 2 1 0
+T = 2jW , T = 2j[W +(j +84)W ]. (A.3)
+j0 0 j1 1 0
+For j ≤ 3 set T = 2j[W +2(j+84)W +(j(j−1)+168j+7056)W ]. Then, for 0 ≤ ℓ ≤ 2,
+j2 2 1 0
+|q (ℓ) (u)| ≤ T (1+u)9exp(17u+µ u4−πe4u). (A.4)
+j jℓ +
+For u
+0
+= 1−a
+max
+the logarithmic decay rate of this envelope is at least c = 4πe4u0 −4µ
++
+u3
+0
+−
+17−9/(1+u ) throughout u ≥ u . To see why a bound at u suffices, divide the logarithmic
+0 0 0
+derivative 9/(1+u)+17+4µ u3−4πe4u by e4u. All three positive terms are decreasing for
++
+u ≥ u
+0
+> 3/4. The logarithmic derivative is consequently at most −ce4(u−u0) ≤ −c. Since
+c(3/85) > 16, the sum of neighborhood suprema is bounded by the envelope at u divided
+0
+by 1−50 −4. Combining these bounds with the coefficient bounds gives the q tails. Finite
+r
+interval evaluations and these infinite-tail bounds, rather than samples of derivatives, supply
+the constants in (5.3).
+Checks and trust boundary. The recorded runtime is Python 3.12.14, python-flint 0.9.0
+and FLINT 3.6.0. Separate rational checkers reconstruct the containment, sign, contraction
+and remainder inequalities from dyadic balls. Independent mpmath runs corroborate selected
+roots, integrals and coefficients, but do not replace interval enclosures. File hashes establish
+provenance,notmathematicalvalidity. Theanalyticproofsandintervalcomputationsdepend
+on the correctness of the stated bounds, producer code and arithmetic libraries; there is no
+proof-assistant verification or independent referee report. The original claim-to-source map
+remains in manuscript_core/CLAIM_SOURCE_MAP.md. Fresh producer replays, the equation
+review and reproduction commands for this revision are in manuscript_review/README.md.
+The recorded replay reproduces the mathematical endpoints of 7,010 stored balls; repeated
+occurrences are counted separately. It does not constitute an independent implementation of
+every enclosure.
+References
+[1] P. Yuditskii, On the L1 extremal problem for entire functions, J. Approx. Theory 179 (2014),
+63–93. doi:10.1016/j.jat.2013.11.011.
+[2] S. Karlin, Interpolation properties of generalized perfect splines and the solutions of certain
+extremal problems. I, Trans. Amer. Math. Soc. 206 (1975), 25–66.
+doi:10.1090/S0002-9947-1975-0367512-0.
+[3] B. A. Albassam, Optimal near-minimum-time control design for flexible structures, J. Guidance
+Control Dynam. 25 (2002), 618–625. doi:10.2514/2.4945.
+[4] D. Wachsmuth, Adaptive regularization and discretization of bang-bang optimal control
+problems, Electron. Trans. Numer. Anal. 40 (2013), 249–267. Journal full text.
+[5] J.Lellmann, D. A.Lorenz, C. SchönliebandT. Valkonen, Imagingwith Kantorovich–Rubinstein
+discrepancy, SIAM J. Imaging Sci. 7 (2014), 2833–2859. doi:10.1137/140975528.
+[6] B. Piccoli and F. Rossi, On properties of the generalized Wasserstein distance, Arch. Ration.
+Mech. Anal. 222 (2016), 1339–1365. doi:10.1007/s00205-016-1026-7.
+[7] B. Schmitzer and B. Wirth, A framework for Wasserstein-1-type metrics, J. Convex Anal. 26
+(2019), 353–396. Journal article page.
+13
+
+Slope-constrained moment design Research draft, 21 September 2026
+[8] S. C. Hille and E. S. Theewis, Explicit expressions and computational methods for the
+Fortet–Mourier distance of positive measures to finite weighted sums of Dirac measures, J.
+Approx. Theory 294 (2023), 105947. doi:10.1016/j.jat.2023.105947.
+[9] S. C. Hille and E. S. Theewis, Norming and dense sets of extreme points of the unit ball in
+spaces of bounded Lipschitz functions, J. Math. Anal. Appl. 536 (2024), 128200.
+doi:10.1016/j.jmaa.2024.128200.
+[10] M. Sion, On general minimax theorems, Pacific J. Math. 8 (1958), 171–176.
+doi:10.2140/pjm.1958.8.171.
+[11] F. Johansson, Arb: efficient arbitrary-precision midpoint-radius interval arithmetic, IEEE
+Trans. Comput. 66 (2017), 1281–1292. doi:10.1109/TC.2017.2690633.
+[12] F. Johansson, Numerical integration in arbitrary-precision ball arithmetic, in Mathematical
+Software—ICMS 2018, Lecture Notes in Computer Science (2018), 255–263. arXiv:1802.07942.
+14

@@ -1,0 +1,237 @@
+{
+  "created_utc": "2026-09-20T12:17:39.343126+00:00",
+  "scope": "R05 finite-width monotonicity and centered nesting, nu in [-29,0], 0<ell<=1e-6; two paper figures.",
+  "audit": {
+    "status": "all_snapshot_links_and_preservation_checks_passed",
+    "input_packages": [
+      {
+        "package": "cusp_verified",
+        "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96",
+        "verified_files": 25
+      },
+      {
+        "package": "cusp_region",
+        "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5",
+        "verified_files": 24
+      },
+      {
+        "package": "cusp_connection",
+        "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1",
+        "verified_files": 27
+      },
+      {
+        "package": "cusp_geometry",
+        "manifest_sha256": "b3a1846431be58d2f3c5d45749f218aa4efebaca431e3ebd2ffe454ff7e22621",
+        "verified_files": 25
+      }
+    ],
+    "original_files_unchanged": 40,
+    "width_cells": 58,
+    "endpoint_fold_contractions": 128,
+    "test_groups": 5,
+    "direct_integral_comparisons": 96,
+    "mpmath_derivative_comparisons": 27,
+    "paper_figures": 2,
+    "source_sha256": "5bc2a8f17600dacc517672cefdd73591e4424680097be488ba5abf13de6a4d9a",
+    "trust_boundary": "Provenance and preservation audit; does not replace mathematical review or reintegration.",
+    "ongoing_notebook": "../CALISMA_DEFTERI.md is intentionally outside this frozen snapshot."
+  },
+  "files": [
+    {
+      "path": "ARASTIRMA_NOTU.md",
+      "sha256": "db12e0e0782cbc8d2317eed8b260b8f05d6cb93bd345943c20fcb32a5a7d1035"
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "2de965fa1c9d919311c88b6a26f5c00223d71cea1f610fc543f7f09eb51ce4b7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7a1ec875e554200892e499af2e5e0f7ddb689a7faf734660d28e6c18e2d8f194"
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "5bc2a8f17600dacc517672cefdd73591e4424680097be488ba5abf13de6a4d9a"
+    },
+    {
+      "path": "certify_width.py",
+      "sha256": "9047f594d65dc3c0717e0dc90b96b33ee7fb402529578d2f0d4bc914dbacc3a1"
+    },
+    {
+      "path": "check_endpoints.py",
+      "sha256": "5c5180768395065b249d8c78d97526dece941768703a0db825649138963b668a"
+    },
+    {
+      "path": "check_independent.py",
+      "sha256": "a74dd0731d9d82ee5ab9035322be86ad4c129b8b406f1ed7922bc7f083b17c82"
+    },
+    {
+      "path": "check_width.py",
+      "sha256": "873166fef492982971eee75d9e76cf9ba0cfa3e4815c37f3c56265a2546e502a"
+    },
+    {
+      "path": "diagnostics/README.md",
+      "sha256": "544b752deec15ac3fee662063693384173ffa100315849e05ed892c6fc57ce9c"
+    },
+    {
+      "path": "diagnostics/probe.log",
+      "sha256": "c162579dabae5d528a0651fb019f136943c8ab651de25c0d2695158001b67f51"
+    },
+    {
+      "path": "diagnostics/refined_probe.log",
+      "sha256": "79bb27068edd862213389d8e46b444ec459969adc6de40d17a46d0ad8cf84656"
+    },
+    {
+      "path": "diagnostics/trial_certificate.json",
+      "sha256": "a9367a404ac1b55ee9c4fe5561985b753a3eafd26cce7084252a23d8980bbf99"
+    },
+    {
+      "path": "diagnostics/trial_run.log",
+      "sha256": "93462f799020dc616caf1b684227cb6044871d2e457196eab355cafd777014f8"
+    },
+    {
+      "path": "endpoint_folds.py",
+      "sha256": "558c9339c58653fac0eb97e78aad780909adab4478bf52e65cc403f92347c9f6"
+    },
+    {
+      "path": "fold_jets.py",
+      "sha256": "a610826864f592b6d2c015c200a74a0fe0409a9dcf017b88e71655e8bbb31c4e"
+    },
+    {
+      "path": "output/pdf/figure_1_cusp_geometry.pdf",
+      "sha256": "0848778ea5db45890bde94a977e9852439807f204d11fe632853b292f14a3337"
+    },
+    {
+      "path": "output/pdf/figure_2_finite_width.pdf",
+      "sha256": "341bf3daab44df3da3e0f27cfbc0ec125a6f2955197b3ed60fea71e51de2a0c2"
+    },
+    {
+      "path": "paper/MAKALEYE_YERLESTIRME.md",
+      "sha256": "75fdf7629d65af1f215c558fa3b2a075b25efb6d9bcdd3835fd2bc46092127a9"
+    },
+    {
+      "path": "paper/figure_1_cusp_geometry.eps",
+      "sha256": "f2c30f173b8c8cbf2404546bfa4acc542e76ea666549a5d048f6612e7969635e"
+    },
+    {
+      "path": "paper/figure_1_cusp_geometry.png",
+      "sha256": "a8ae4163c713e47b8024db2539a969ca382f433d0fd008dcd99b32dc73c7efda"
+    },
+    {
+      "path": "paper/figure_1_cusp_geometry.svg",
+      "sha256": "804319094ba9e04619496f0d97a3202d97c8b428494d981889a3798181ae304a"
+    },
+    {
+      "path": "paper/figure_2_finite_width.eps",
+      "sha256": "4fb39841fd4a0138fad274a66b8e1459750a443c51a4acc0a931f79017048514"
+    },
+    {
+      "path": "paper/figure_2_finite_width.png",
+      "sha256": "780bce3b2af195116dd4619109d91a37a63c3b6dd7930a683a342de6ea9820b7"
+    },
+    {
+      "path": "paper/figure_2_finite_width.svg",
+      "sha256": "13bd20255d8bed9bf12b7fb1f811d3383d297fe1344c75295e9def684c719e88"
+    },
+    {
+      "path": "paper/figures.tex",
+      "sha256": "319c999ce7510c6f58b6ea47fbd09cfef4c317717b7924230867f5f0b40fea83"
+    },
+    {
+      "path": "paper/finite_width_section.tex",
+      "sha256": "12b56fe3c6e9526228ac0878b426adeefa6ac1a636e8ff279d9725af8aff33dc"
+    },
+    {
+      "path": "plot_paper.py",
+      "sha256": "b0538cebd6638e407d48678368d861f9d321f19ac97b6f9f79f7962d41b7f681"
+    },
+    {
+      "path": "probe.py",
+      "sha256": "45acb964756b3b64ce4daa98d0d1eb678dfccf9f6ddfb07a77e1536bde334456"
+    },
+    {
+      "path": "probe_refined.py",
+      "sha256": "eb1a5cb32fb4ec6ab0903b40af7ef6abf67c8efd2e5dfb3112b29e096c0ee61d"
+    },
+    {
+      "path": "results/audit_report.json",
+      "sha256": "4b78d3b75d0c4993bbe6b0be484e284a8dd3be1716b120978c53358e6d037101"
+    },
+    {
+      "path": "results/endpoint_check.json",
+      "sha256": "ed30830a89bf0b25266b7024ef7c7bc166f05090f26f6ce761c75cf4822df6b4"
+    },
+    {
+      "path": "results/endpoint_check.log",
+      "sha256": "60eb8faface7da67a0a747dd361ba22e3b2f01afbd4a425738cdda3a5b0ccf41"
+    },
+    {
+      "path": "results/endpoint_folds.json",
+      "sha256": "36bdfc61dcb653d3b3193c577858579d98d12987617c7f57fb78e623a8c59c44"
+    },
+    {
+      "path": "results/endpoint_folds.log",
+      "sha256": "4d0c7002c544365f53304970fef6ba5181a719f77fcd0b132cb0ba1982e3e943"
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "968b91a175abe206da8bd3310dac4f0f6dbafeb3dd654a787d977b673148043b"
+    },
+    {
+      "path": "results/independent_check.json",
+      "sha256": "2b6c6c9f84dd7ec3f2308be1c6fbe943d1ffb11dbf67e5f14fb8c6737df5a811"
+    },
+    {
+      "path": "results/independent_check.log",
+      "sha256": "0e22186ff7121c54d512e11ad6bf287dfeabd4c9dc8847be4651bef8869e1f10"
+    },
+    {
+      "path": "results/plot_metadata.json",
+      "sha256": "921cf3a486e474f937b3193fe7f93b858197b6455bf732d7241d7f6aa2ce142f"
+    },
+    {
+      "path": "results/plot_run.log",
+      "sha256": "7872f60b3d241b9909e472b3decfbbefcb6c90d79432669954184062d6632fce"
+    },
+    {
+      "path": "results/rational_check.json",
+      "sha256": "a31e6475dc06acfe397a6c4256b3b69fe749bded34d78cb400aa5798d961ea26"
+    },
+    {
+      "path": "results/rational_check.log",
+      "sha256": "53df5be3dec1b6b4e285778a9189f174dfe943875b30c13c0c57335eb3965ded"
+    },
+    {
+      "path": "results/test_report.json",
+      "sha256": "168550734f5f890c2612dbce3b1b54b929eb8e91269cbe6c56be461eae89646e"
+    },
+    {
+      "path": "results/tests.log",
+      "sha256": "bfa5d92ac56a24e2e81530625d59c65723d90736c7846611008cde7cc47fde59"
+    },
+    {
+      "path": "results/tests_with_endpoints.log",
+      "sha256": "11c8c655b3807922e7458f3bd2e0285560a58e929b326cb347880d259ee7894e"
+    },
+    {
+      "path": "results/validation_tests.log",
+      "sha256": "e4eb3f983eae9b9a264a4412aa13f186b8386367aa0e98c674cc2fd4742375cc"
+    },
+    {
+      "path": "results/width_certificate.json",
+      "sha256": "7755870df155973dbc086926300ea2ab3d3e74c2839c89c705833f25ad832924"
+    },
+    {
+      "path": "results/width_run.log",
+      "sha256": "277a13c10a4876128398bb8854eee7971943ccfe37f55590e7473311ed77494b"
+    },
+    {
+      "path": "test_width.py",
+      "sha256": "b02e92ad852501cebe63668951cfec78dcc51b1c1f763dcf2f2b8a8d55d396d3"
+    },
+    {
+      "path": "transport_model.py",
+      "sha256": "74f3b72fd5523bb1cd3d62a6f42853d41141b6ddd313a8d367bbdcf628a56a77"
+    }
+  ]
+}

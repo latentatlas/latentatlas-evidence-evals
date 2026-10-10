@@ -1,0 +1,20 @@
+{
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "failure_family_count": 6,
+  "generated_at_utc": "2026-07-16T10:48:28.158394+00:00",
+  "level4_probability_claim_allowed": false,
+  "mode": "latentatlas_concurrent_evidence_failure_note",
+  "outputs": {
+    "failure_matrix": "outputs/latentatlas/concurrent_evidence_failure_v1/concurrent_evidence_failure_matrix.csv",
+    "manifest": "outputs/latentatlas/concurrent_evidence_failure_v1/concurrent_evidence_failure_manifest.json",
+    "note": "outputs/latentatlas/concurrent_evidence_failure_v1/concurrent_evidence_failure_note.md",
+    "summary": "outputs/latentatlas/concurrent_evidence_failure_v1/concurrent_evidence_failure_summary.json"
+  },
+  "production_truth_mutation": false,
+  "raw_source_rows_read": false,
+  "research_track": "concurrent_evidence_failure",
+  "schema_version": "latentatlas_concurrent_evidence_failure_note_v1",
+  "status": "pass"
+}

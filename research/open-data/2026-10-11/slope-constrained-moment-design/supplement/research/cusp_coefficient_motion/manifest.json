@@ -1,0 +1,201 @@
+{
+  "created_utc": "2026-09-21T23:20:13.583331+00:00",
+  "scope": "Strict increase and quantified derivative of exact C4 along nu in [-2^-16,0].",
+  "files": [
+    {
+      "path": "BULGU_NOTU_TR.md",
+      "sha256": "bffcc914e4f2a06a881d53dafe33dda4ccbd699191fd9fd3846b63d0e17d3f15",
+      "bytes": 2843
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "sha256": "1867bb99b187eb4cf626b1c4c9e4646104023b6cbb61f0e7ae22d9dc5bc3ff72",
+      "bytes": 1275
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "e96f505d4bf0d152db26af329132de44fabb069b80817d371e9d589c8bc124e5",
+      "bytes": 11998
+    },
+    {
+      "path": "README.md",
+      "sha256": "efc3e75b26bb181a5dde53bab0256eb0525e50a8f026ef7939a229b2be0a8c05",
+      "bytes": 2967
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "3b3f4566222d2f5ac06255698f1ad7eaa32ad76d72009ca8e660760babd6609f",
+      "bytes": 3771
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "3d3aa0a7b4d2becbf0badaad999c37a9c16a55ef90c4964d5a96eafa772b1406",
+      "bytes": 1351
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "fce9aa03bfd4e1e57c238f7c4bae2295fbc8b6c10c05c8d2a5c43d83c414d022",
+      "bytes": 14222
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "f34f6b7df2e94bf2de08ee2fa3b8e97f635a26338999a8159d69bd0ed685ad06",
+      "bytes": 3101
+    },
+    {
+      "path": "certify_motion.py",
+      "sha256": "6950135381425a0f5cfddaf65c3f720757a8f2330921ea93ba4bc4e09e621a31",
+      "bytes": 1972
+    },
+    {
+      "path": "check_algebra.py",
+      "sha256": "69a689e56565ea9caf51463a4324e71818b6dee90e3e3ebd0efe3f41ec5f886b",
+      "bytes": 6242
+    },
+    {
+      "path": "check_bounds.py",
+      "sha256": "83ea42c5101ee5cbcffe40de9f2d43363ff15d5126e5d3e1f1d66392eb6c5493",
+      "bytes": 6529
+    },
+    {
+      "path": "crosscheck.py",
+      "sha256": "8d0201f80cfd6f8daf3e17efc3c7c2c99146dfcbc2cc77dddca0fca69966a84c",
+      "bytes": 8476
+    },
+    {
+      "path": "diagnostics/README.md",
+      "sha256": "b8e418ba0668540b3f3a647764063623924ca82db33118b561dd6592240150f6",
+      "bytes": 1353
+    },
+    {
+      "path": "diagnostics/audit_before_scope_marker_fix.py",
+      "sha256": "47416507b2016278fe034915bf0db9e45e34ba7f81acf2f1c6bee31a309c730a",
+      "bytes": 14215
+    },
+    {
+      "path": "diagnostics/audit_scope_marker_failure.json",
+      "sha256": "5dd40efd89c666a7aa48c41b7eaf4e60fb41b07c22beb346fa9ef93153868387",
+      "bytes": 511
+    },
+    {
+      "path": "diagnostics/first_derivative_probe.json",
+      "sha256": "ddf3bee41f8445946c80db87dc1bad659ec5511342506d14ba827b36700dde9e",
+      "bytes": 2262194
+    },
+    {
+      "path": "figures/coefficient_motion.png",
+      "sha256": "56a0f39b19baa9d6d589fc1ab9e31880a1bea76109638e9db1065573f703ba0d",
+      "bytes": 172372
+    },
+    {
+      "path": "figures/coefficient_motion.svg",
+      "sha256": "e95f2acf6565d8b0f296bc0b523ef1b38913dda32865771bc665f121e5c07cb8",
+      "bytes": 123076
+    },
+    {
+      "path": "motion.py",
+      "sha256": "dcd404ff91531d79b7edcec66daa5e115e0705bd4e2cb58d84677e8a9b104d42",
+      "bytes": 9073
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "ec7a4298e67a24c7b462b008406e2cf455f81f381be28ca19f6f81af16a884ef",
+      "bytes": 4615
+    },
+    {
+      "path": "probe.py",
+      "sha256": "4f4288a91c8b72d7764981962a77948fa247b515e904063a83fc686fc0fa6a44",
+      "bytes": 1226
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "5dd2dfa677555a58a0545938dbb4e5a3b4dd8f655846b1831d390e848c9cf145",
+      "bytes": 66
+    },
+    {
+      "path": "results/TABLE.md",
+      "sha256": "cebae40aa226fe8a6c5f1f87704d6e4f03dde8e957b59cd048b83c7461370f44",
+      "bytes": 2489
+    },
+    {
+      "path": "results/algebra.json",
+      "sha256": "b4bd4d537b61765ca0c7d24c4c2fc93c0f9e21ce6a8faf3adf0f30e8c818414f",
+      "bytes": 3545
+    },
+    {
+      "path": "results/certificate.json",
+      "sha256": "96ea457c7c7c8f1198ff3bf04034d9bbbcfa8b09365de042ad417c843e1f44ce",
+      "bytes": 2263180
+    },
+    {
+      "path": "results/direct_check.json",
+      "sha256": "00100cbc9becbdb83dd4a84e09c89fb7cef48bcca6622aa36eca52c8005ef2ce",
+      "bytes": 75445
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "9bec46f5b821d62db229d735ba92df1169edcacb0a27d9ae1779a8048704e390",
+      "bytes": 607
+    },
+    {
+      "path": "results/plot_data.json",
+      "sha256": "a5fe13188aa1a3dba5857cdd0831f7147afa1f213e2bf8dc43480353df164970",
+      "bytes": 21192
+    },
+    {
+      "path": "results/rational_check.json",
+      "sha256": "5a321c075c8f87a78ffb140f3e35e9a184209d2e7ae5d309b44c8dd958dfa10e",
+      "bytes": 4362
+    },
+    {
+      "path": "results/sign_moment9.json",
+      "sha256": "0ea2b1353b0f89194f28583d9db89b9026eb6f5d66d7e11752ec271f0065ef70",
+      "bytes": 27138
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "8d76ae1645cf112a11824cb7ce14a5c17d181d23612c542ddc37576dadaad9cd",
+      "bytes": 140
+    },
+    {
+      "path": "sign_moment.py",
+      "sha256": "4e716c3678365a8e8131194101c622ecea459d1af2643328e7f4e46cedf97bd0",
+      "bytes": 2747
+    }
+  ],
+  "audit": {
+    "status": "R28_coefficient_motion_evidence_and_preservation_passed",
+    "prior_manifests": 28,
+    "prior_frozen_file_entries": 1130,
+    "exact_check_groups": 26,
+    "rational_AD_decisions": 44,
+    "diagnostic_integral_solves": 26,
+    "diagnostic_comparisons": 146,
+    "recorded_residual_checks": 52,
+    "two_step_comparisons": 6,
+    "precision_comparisons": 72,
+    "published_C4_prime_bounds": [
+      "2.82e-40",
+      "4.35e-40"
+    ],
+    "driver_interval": [
+      "-1/65536",
+      "0"
+    ],
+    "strict_increase_of_C4_on_this_arc": true,
+    "uniform_finite_M_optimum_monotonicity": false,
+    "whole_original_arc_covered": false,
+    "C4_convexity_claimed": false,
+    "new_sixth_coefficient": false,
+    "previous_packages_modified": false,
+    "manuscripts_modified": false,
+    "external_referee_review": false,
+    "formal_proof": false,
+    "literature_priority_established": false,
+    "public_release_or_submission": false,
+    "audit_source_sha256": "fce9aa03bfd4e1e57c238f7c4bae2295fbc8b6c10c05c8d2a5c43d83c414d022",
+    "trust_boundary": "Provenance, fresh exact and rational AD replay, recorded independent finite differences and optional Arb reproduction. Analytic implicit differentiation, moving boundaries and infinite-series differentiation are not mechanically proved by this audit.",
+    "closed_utc": "2026-09-21T23:20:13.583331+00:00",
+    "Arb_replayed_at_freeze": true
+  }
+}

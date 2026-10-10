@@ -1,0 +1,17 @@
+{
+  "id": "09_certify_boundaries",
+  "package": "cusp_shape_design",
+  "script": "certify_boundaries.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.1896397500022431,
+  "source_sha256": "ccd3b27f3e8785addd29eb14cd14eefc8e4f905811ec4938b4e09c84a88d6404",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_shape_design/certify_boundaries.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/09_certify_boundaries/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:08.574164+00:00"
+}

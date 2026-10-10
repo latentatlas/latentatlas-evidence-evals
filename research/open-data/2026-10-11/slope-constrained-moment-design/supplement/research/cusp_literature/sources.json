@@ -1,0 +1,228 @@
+{
+  "package": "R06",
+  "access_date": "2026-09-20",
+  "scope": "Primary-source positioning, with reading depth recorded. This is not an exhaustive priority search or an independent proof audit.",
+  "sources": [
+    {
+      "id": "LP2025",
+      "bibkey": "LessardPugliese2025",
+      "title": "Cusp bifurcations: Numerical detection via two-parameter continuation and computer-assisted proofs of existence",
+      "authors": [
+        "Jean-Philippe Lessard",
+        "Alessandro Pugliese"
+      ],
+      "status": "published_journal_article",
+      "journal": "Discrete and Continuous Dynamical Systems - B",
+      "year": 2025,
+      "volume": "30",
+      "issue": "6",
+      "pages": "2135-2158",
+      "doi": "10.3934/dcdsb.2024181",
+      "urls": [
+        "https://www.aimsciences.org/article/doi/10.3934/dcdsb.2024181",
+        "https://arxiv.org/html/2404.00535v2",
+        "https://www.alessandropugliese.com/research"
+      ],
+      "read_scope": [
+        "Introduction; Lemma 1.1",
+        "Section 3: Theorems 3.2 and 3.3, validation procedure",
+        "Application scope; publisher metadata"
+      ],
+      "correction": "The arXiv landing-page journal field conflicted with publisher/author records. The latter identify this paper. Previous local LAA metadata corrected in D011."
+    },
+    {
+      "id": "GLP2016",
+      "bibkey": "GameiroLessardPugliese2016",
+      "title": "Computation of smooth manifolds via rigorous multi-parameter continuation in infinite dimensions",
+      "authors": [
+        "Marcio Gameiro",
+        "Jean-Philippe Lessard",
+        "Alessandro Pugliese"
+      ],
+      "status": "published_journal_article",
+      "journal": "Foundations of Computational Mathematics",
+      "year": 2016,
+      "volume": "16",
+      "issue": "2",
+      "pages": "531-575",
+      "doi": "10.1007/s10208-015-9259-7",
+      "urls": [
+        "https://www.math.mcgill.ca/jplessard/papers/galepu.pdf",
+        "https://www.math.mcgill.ca/jplessard/papers.html"
+      ],
+      "read_scope": [
+        "Abstract and introduction",
+        "Beginning of Section 2: local charts and contraction setup",
+        "Section 4 purpose identified from the authors' section map; full gluing proof not audited"
+      ]
+    },
+    {
+      "id": "LSW2017",
+      "bibkey": "LessardSanderWanner2017",
+      "title": "Rigorous continuation of bifurcation points in the diblock copolymer equation",
+      "authors": [
+        "Jean-Philippe Lessard",
+        "Evelyn Sander",
+        "Thomas Wanner"
+      ],
+      "status": "published_journal_article",
+      "journal": "Journal of Computational Dynamics",
+      "year": 2017,
+      "volume": "4",
+      "issue": "1-2",
+      "pages": "71-118",
+      "doi": "10.3934/jcd.2017003",
+      "urls": [
+        "https://www.aimsciences.org/article/doi/10.3934/jcd.2017003",
+        "https://www.math.mcgill.ca/jplessard/papers/rigbpcont.pdf"
+      ],
+      "read_scope": [
+        "Publisher abstract and metadata",
+        "Author PDF abstract and introduction; no full theorem audit"
+      ]
+    },
+    {
+      "id": "PKS2021",
+      "bibkey": "PapanicolaouKallitsiSmyrlis2021",
+      "title": "Entire solutions for the heat equation",
+      "authors": [
+        "V. G. Papanicolaou",
+        "E. Kallitsi",
+        "G. Smyrlis"
+      ],
+      "status": "published_journal_article",
+      "journal": "Electronic Journal of Differential Equations",
+      "year": 2021,
+      "volume": "2021",
+      "issue": "44",
+      "pages": "1-25",
+      "urls": [
+        "https://ejde.math.txstate.edu/Volumes/2021/44/papanicolaou.pdf"
+      ],
+      "read_scope": [
+        "Introduction and heat-polynomial setting",
+        "Theorem 4.1, proof setup, and following zero discussion"
+      ],
+      "application": "With fixed mu and nu, tau=-lambda/4 and z=t put our family in the caloric normalization."
+    },
+    {
+      "id": "NW2020",
+      "bibkey": "NewmanWu2020",
+      "title": "Constants of de Bruijn-Newman type in analytic number theory and statistical physics",
+      "authors": [
+        "Charles M. Newman",
+        "Wei Wu"
+      ],
+      "status": "published_survey_with_original_results",
+      "journal": "Bulletin of the American Mathematical Society",
+      "year": 2020,
+      "volume": "57",
+      "issue": "4",
+      "pages": "595-614",
+      "doi": "10.1090/bull/1668",
+      "urls": [
+        "https://www.ams.org/bull/2020-57-04/S0273-0979-2019-01668-1/",
+        "https://www.ams.org/bull/2020-57-04/S0273-0979-2019-01668-1/S0273-0979-2019-01668-1.pdf",
+        "https://sites.google.com/view/weiwu-nyushanghai/publications",
+        "https://arxiv.org/pdf/1901.06596"
+      ],
+      "read_scope": [
+        "Introduction: general measures and normalization",
+        "Section 2 universal-factor discussion as background only",
+        "Section 3 classification scope and examples"
+      ],
+      "use": "The authors' general-measure framework; no separate claim based on their retelling of Polya is needed.",
+      "access_note": "AMS direct opens returned HTTP 403 on final recheck. Publisher PDF header was available as a search extract, with author publication-page corroboration; substantive reading used the arXiv PDF."
+    },
+    {
+      "id": "RT2020",
+      "bibkey": "RodgersTao2020",
+      "title": "The de Bruijn-Newman constant is non-negative",
+      "authors": [
+        "Brad Rodgers",
+        "Terence Tao"
+      ],
+      "status": "published_journal_article",
+      "journal": "Forum of Mathematics, Pi",
+      "year": 2020,
+      "volume": "8",
+      "article": "e6",
+      "doi": "10.1017/fmp.2020.6",
+      "urls": [
+        "https://doi.org/10.1017/fmp.2020.6",
+        "https://arxiv.org/pdf/1801.05914"
+      ],
+      "read_scope": [
+        "Abstract and introduction equations (1)-(4)",
+        "Publisher identity and main result; proof not re-audited"
+      ],
+      "application": "F(t;lambda,0,0)=H_lambda(2t); F(t;0,0,0)=xi(1/2+it)/8."
+    },
+    {
+      "id": "BL2026",
+      "bibkey": "BlancoLessard2026",
+      "title": "Rigorous Validation of Cusp Bifurcations of Stationary Periodic Patterns in Partial Differential Equations",
+      "authors": [
+        "Dominic Blanco",
+        "Jean-Philippe Lessard"
+      ],
+      "status": "preprint",
+      "year": 2026,
+      "arxiv": "2608.15613",
+      "version": "v1",
+      "version_date": "2026-08-16",
+      "urls": [
+        "https://arxiv.org/abs/2608.15613v1",
+        "https://arxiv.org/html/2608.15613v1",
+        "https://www.math.mcgill.ca/jplessard/papers.html"
+      ],
+      "read_scope": [
+        "Abstract and Section 1",
+        "Preprint status cross-check; no full proof audit"
+      ]
+    },
+    {
+      "id": "M2026v2",
+      "bibkey": "Michalowski2026v2",
+      "title": "On the Polya Frequency Order of the de Bruijn-Newman Kernel: Certified Failure at Order Five",
+      "authors": [
+        "Wojciech Michalowski"
+      ],
+      "status": "preprint",
+      "year": 2026,
+      "arxiv": "2602.20313",
+      "version": "v2",
+      "version_date": "2026-07-20",
+      "urls": [
+        "https://arxiv.org/abs/2602.20313v2"
+      ],
+      "read_scope": [
+        "Author abstract, comments, and version history only"
+      ],
+      "correction": "Author withdraws version-1 global C5 sign and unique-threshold certificate claims; local PF5 counterexample is reported unaffected. No independent verification here.",
+      "dependency": "Not a mathematical input to R01-R05."
+    },
+    {
+      "id": "DP2026",
+      "bibkey": "DieciPugliese2026",
+      "title": "Generic Cuspidal Points and their Localization",
+      "authors": [
+        "Luca Dieci",
+        "Alessandro Pugliese"
+      ],
+      "status": "published_journal_article",
+      "journal": "SIAM Journal on Matrix Analysis and Applications",
+      "year": 2026,
+      "doi": "10.1137/25M1780857",
+      "urls": [
+        "https://epubs.siam.org/doi/10.1137/25M1780857",
+        "https://arxiv.org/abs/2507.15762"
+      ],
+      "read_scope": [
+        "Publisher abstract and author publication listing"
+      ],
+      "use": "Terminology disambiguation: matrix eigenvalue coalescence, not an identified direct predecessor for this scalar triple-zero problem."
+    }
+  ],
+  "priority_conclusion": "No direct match for the full model-specific theorem chain was located in this bounded search. Novelty is a candidate, not established priority."
+}

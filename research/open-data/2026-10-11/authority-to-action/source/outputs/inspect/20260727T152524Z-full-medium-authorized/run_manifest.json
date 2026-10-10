@@ -1,0 +1,96 @@
+{
+  "analytical_provider_spend_usd": {
+    "anthropic": 6.202753,
+    "openai": 2.371455
+  },
+  "calculated_provider_spend_usd": {
+    "anthropic": 6.3214685,
+    "openai": 2.371455
+  },
+  "completed_at_utc": "2026-07-27T16:48:19.141866+00:00",
+  "completion": {
+    "calculated_total_cost_usd": 8.6929235,
+    "complete": true,
+    "expected_protocol_complete_runs": 600,
+    "expected_provider_batch_checkpoints": 10,
+    "missing_units": [],
+    "protocol_complete_runs": 600,
+    "verified_provider_batch_checkpoints": 10
+  },
+  "created_at_utc": "2026-07-27T15:26:54.142255+00:00",
+  "credential_values_logged": false,
+  "dataset_sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900",
+  "execution_authorization": {
+    "approved_at_utc": "2026-07-27T15:14:50Z",
+    "authorization_id": "latentatlas-authority-action-v0-8-2-full-medium-authorization-20260727T151450Z",
+    "authorization_sha256": "7c8f0195e15beb94b73f5d728464200608daef24ba965d0d1ac6d4d3ea175d1b",
+    "credential_values_logged": false,
+    "expires_at_utc": "2026-07-27T21:14:50Z"
+  },
+  "experiment_id": "latentatlas-authority-action-v0-8-2-full-medium-preauthorization-20260727",
+  "finalization": {
+    "credential_values_logged": false,
+    "final_summary": "final_audit_summary.json",
+    "finalized_at_utc": "2026-07-27T16:48:19.141866+00:00",
+    "source_of_truth": "verified_provider_batch_checkpoints",
+    "status": "success"
+  },
+  "gross_provider_attempts_by_provider": {
+    "anthropic": 303,
+    "openai": 300
+  },
+  "manifest_sha256": "5484140737942a7c3f6314b446b279fe6ce955755cdbf6cbfc7cda4b1aefe0f7",
+  "operational_overhead_provider_spend_usd": {
+    "anthropic": 0.1187155,
+    "openai": 0.0
+  },
+  "provider_batches": {
+    "batch_01:anthropic": {
+      "checkpoint": "checkpoints/batch_01/anthropic.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_01:openai": {
+      "checkpoint": "checkpoints/batch_01/openai.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_02:anthropic": {
+      "checkpoint": "checkpoints/batch_02/anthropic.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_02:openai": {
+      "checkpoint": "checkpoints/batch_02/openai.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_03:anthropic": {
+      "checkpoint": "checkpoints/batch_03/anthropic.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_03:openai": {
+      "checkpoint": "checkpoints/batch_03/openai.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_04:anthropic": {
+      "calculated_total_cost_usd": 1.2567085,
+      "checkpoint": "checkpoints/batch_04/anthropic.json",
+      "status": "success"
+    },
+    "batch_04:openai": {
+      "calculated_total_cost_usd": 0.4983,
+      "checkpoint": "checkpoints/batch_04/openai.json",
+      "status": "success"
+    },
+    "batch_05:anthropic": {
+      "checkpoint": "checkpoints/batch_05/anthropic.json",
+      "status": "skipped_verified_checkpoint"
+    },
+    "batch_05:openai": {
+      "calculated_total_cost_usd": 0.467055,
+      "checkpoint": "checkpoints/batch_05/openai.json",
+      "status": "success"
+    }
+  },
+  "run_root": "outputs/inspect/20260727T152524Z-full-medium-authorized",
+  "schema_version": "authority_action_full_batch_run_v0.1",
+  "status": "success",
+  "updated_at_utc": "2026-07-27T16:48:19.141866+00:00"
+}

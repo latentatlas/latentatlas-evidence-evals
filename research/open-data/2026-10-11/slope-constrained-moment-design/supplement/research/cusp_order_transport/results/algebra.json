@@ -1,0 +1,166 @@
+{
+  "status": "R31_exact_transport_and_tail_algebra_passed",
+  "checks": [
+    {
+      "name": "moment_scaling_0",
+      "passed": true
+    },
+    {
+      "name": "moment_scaling_1",
+      "passed": true
+    },
+    {
+      "name": "moment_scaling_2",
+      "passed": true
+    },
+    {
+      "name": "moment_scaling_3",
+      "passed": true
+    },
+    {
+      "name": "missing_jacobian_negative_control",
+      "passed": true
+    },
+    {
+      "name": "transport_generator",
+      "passed": true
+    },
+    {
+      "name": "weighted_norm_generator_-1",
+      "passed": true
+    },
+    {
+      "name": "weighted_norm_generator_1",
+      "passed": true
+    },
+    {
+      "name": "first_theta_log_derivative",
+      "passed": true
+    },
+    {
+      "name": "relative_theta_log_derivative",
+      "passed": true
+    },
+    {
+      "name": "relative_term_product_rule",
+      "passed": true
+    },
+    {
+      "name": "ratio_majorant_x_ge_3",
+      "passed": true
+    },
+    {
+      "name": "second_log_difference",
+      "passed": true
+    },
+    {
+      "name": "second_relative_derivative",
+      "passed": true
+    },
+    {
+      "name": "uniform_geometric_tail_ratio",
+      "passed": true
+    },
+    {
+      "name": "tail_geometric_ratio",
+      "passed": true
+    },
+    {
+      "name": "theta_relative_tail_jets_below_quarter",
+      "passed": true
+    },
+    {
+      "name": "logarithm_tail_second_derivative_below_one",
+      "passed": true
+    },
+    {
+      "name": "leading_log_curvature_correction",
+      "passed": true
+    },
+    {
+      "name": "exp4_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "pi_exp4_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "exponential_polynomial_positive_quadratic",
+      "passed": true
+    },
+    {
+      "name": "exponential_polynomial_positive_higher_terms",
+      "passed": true
+    },
+    {
+      "name": "negative_weight_log_upper_on_tail",
+      "passed": true
+    },
+    {
+      "name": "effective_exponential_coefficient",
+      "passed": true
+    },
+    {
+      "name": "positive_tail_polynomial_derivative_coefficients",
+      "passed": true
+    },
+    {
+      "name": "decreasing_dissipativity_majorant",
+      "passed": true
+    },
+    {
+      "name": "tail_dissipativity_strict_rate",
+      "passed": true
+    },
+    {
+      "name": "optimal_profiles_fit_weighted_norm",
+      "passed": true
+    },
+    {
+      "name": "published_linear_value_rate",
+      "passed": true
+    },
+    {
+      "name": "positive_contraction_rate",
+      "passed": true
+    }
+  ],
+  "check_groups": 31,
+  "contraction_rate": "1/50",
+  "a0": "1/16384",
+  "minimum_budget": "1/50000",
+  "optimal_amplitude_upper": "9181/10000000000000",
+  "optimal_amplitude_lower": "917/1000000000000",
+  "logarithmic_value_rate": "2259/100000",
+  "linear_value_rate": "2.07e-11",
+  "theta_tail_jet_constants_at_x150": [
+    "64",
+    "192000",
+    "1152000000"
+  ],
+  "exponential_polynomial_coefficients": [
+    "5/2",
+    "-42",
+    "352",
+    "5852/3",
+    "3882",
+    "13142/3",
+    "27904/15"
+  ],
+  "tail_effective_kappa": "1060539/409600000",
+  "tail_polynomial": [
+    "-2514931/81920000",
+    "1062613/40960000",
+    "204/625",
+    "1939/20480000",
+    "4843/12500",
+    "480117/1310720000",
+    "1"
+  ],
+  "tail_derivative_margin": "1038162099/6553600000",
+  "tail_dissipativity_upper_at_one": "-334997831/6553600000",
+  "source_sha256": "86bd536d4db416a79fe867aa2c8c23c2bad5c4bab051501671a40c67c833b8d8",
+  "symbolic_helper_sha256": "3ac355cf549b8790d098e0be701e97136cbd8d36478f087aa553f2435e696f23",
+  "trust_boundary": "Exact product/Jacobian identities, Laurent-polynomial identities and rational tail inequalities. pi>3.14 is checked from the Arb cover. Change of variables, characteristic comparison and the optimal-value inference are separate analytic arguments."
+}

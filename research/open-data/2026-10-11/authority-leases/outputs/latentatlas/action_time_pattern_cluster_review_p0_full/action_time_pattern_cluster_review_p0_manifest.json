@@ -1,0 +1,25 @@
+{
+  "cluster_count": 18,
+  "clusters": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_clusters.csv",
+  "clusters_with_unreviewed_rows": 0,
+  "duplicate_event_id_count": 0,
+  "duplicate_queue_id_count": 0,
+  "duplicate_subject_hash_count": 0,
+  "external_calls_used_by_builder": false,
+  "generated_at": "2026-07-13T06:44:36.130336+00:00",
+  "internal_index_read": false,
+  "mode": "latentatlas_action_time_pattern_cluster_review_p0",
+  "outputs": {
+    "clusters": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_clusters.csv",
+    "manifest": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_manifest.json",
+    "report": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_report.md",
+    "summary": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_summary.json"
+  },
+  "pattern_schema_version": "p0_pattern_v2_pdp_temporal_authority",
+  "production_truth_mutation": false,
+  "report": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_report.md",
+  "reviewer_sheet": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet_p0.csv",
+  "status": "pass",
+  "summary": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_summary.json",
+  "unreviewed_outcome_ready_row_count": 0
+}

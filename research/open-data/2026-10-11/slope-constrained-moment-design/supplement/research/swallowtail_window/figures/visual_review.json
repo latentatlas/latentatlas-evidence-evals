@@ -1,0 +1,14 @@
+{
+  "status": "visually_reviewed",
+  "reviewed_utc": "2026-09-20T20:31:54.677427+00:00",
+  "files": {
+    "finite_root_regimes.png": "d1a7977ff4ea14fb765545dffca07e1ba1ba1554c8aeedaa31df7663369ee1d9",
+    "certified_swallowtail_section.png": "7eced9f8e0370efc43a11d041ccbdb4a02775a5c6c820a975046c702f4bb693c"
+  },
+  "checks": [
+    "Both PNGs directly viewed. Titles, axes, root markers, legends, cusp annotations and captions are legible and not clipped.",
+    "Gray unresolved cells are visibly distinct from 0/2/4 classifications; the chart is explicitly described as an affine display of original controls.",
+    "Regeneration after the literal-escape fix produced byte-identical PNGs; this visual review applies to the final images."
+  ],
+  "external_review": false
+}

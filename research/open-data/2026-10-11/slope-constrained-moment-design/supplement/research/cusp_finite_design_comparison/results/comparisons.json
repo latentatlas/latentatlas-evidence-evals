@@ -1,0 +1,323 @@
+{
+  "status": "R30_exact_finite_value_comparisons_passed",
+  "checks": [
+    "32_rational_cells",
+    "delta0_derivative_cell_0",
+    "C2_derivative_cell_0",
+    "C4_derivative_cell_0",
+    "remainder_cell_0",
+    "delta0_derivative_cell_1",
+    "C2_derivative_cell_1",
+    "C4_derivative_cell_1",
+    "remainder_cell_1",
+    "delta0_derivative_cell_2",
+    "C2_derivative_cell_2",
+    "C4_derivative_cell_2",
+    "remainder_cell_2",
+    "delta0_derivative_cell_3",
+    "C2_derivative_cell_3",
+    "C4_derivative_cell_3",
+    "remainder_cell_3",
+    "delta0_derivative_cell_4",
+    "C2_derivative_cell_4",
+    "C4_derivative_cell_4",
+    "remainder_cell_4",
+    "delta0_derivative_cell_5",
+    "C2_derivative_cell_5",
+    "C4_derivative_cell_5",
+    "remainder_cell_5",
+    "delta0_derivative_cell_6",
+    "C2_derivative_cell_6",
+    "C4_derivative_cell_6",
+    "remainder_cell_6",
+    "delta0_derivative_cell_7",
+    "C2_derivative_cell_7",
+    "C4_derivative_cell_7",
+    "remainder_cell_7",
+    "delta0_derivative_cell_8",
+    "C2_derivative_cell_8",
+    "C4_derivative_cell_8",
+    "remainder_cell_8",
+    "delta0_derivative_cell_9",
+    "C2_derivative_cell_9",
+    "C4_derivative_cell_9",
+    "remainder_cell_9",
+    "delta0_derivative_cell_10",
+    "C2_derivative_cell_10",
+    "C4_derivative_cell_10",
+    "remainder_cell_10",
+    "delta0_derivative_cell_11",
+    "C2_derivative_cell_11",
+    "C4_derivative_cell_11",
+    "remainder_cell_11",
+    "delta0_derivative_cell_12",
+    "C2_derivative_cell_12",
+    "C4_derivative_cell_12",
+    "remainder_cell_12",
+    "delta0_derivative_cell_13",
+    "C2_derivative_cell_13",
+    "C4_derivative_cell_13",
+    "remainder_cell_13",
+    "delta0_derivative_cell_14",
+    "C2_derivative_cell_14",
+    "C4_derivative_cell_14",
+    "remainder_cell_14",
+    "delta0_derivative_cell_15",
+    "C2_derivative_cell_15",
+    "C4_derivative_cell_15",
+    "remainder_cell_15",
+    "delta0_derivative_cell_16",
+    "C2_derivative_cell_16",
+    "C4_derivative_cell_16",
+    "remainder_cell_16",
+    "delta0_derivative_cell_17",
+    "C2_derivative_cell_17",
+    "C4_derivative_cell_17",
+    "remainder_cell_17",
+    "delta0_derivative_cell_18",
+    "C2_derivative_cell_18",
+    "C4_derivative_cell_18",
+    "remainder_cell_18",
+    "delta0_derivative_cell_19",
+    "C2_derivative_cell_19",
+    "C4_derivative_cell_19",
+    "remainder_cell_19",
+    "delta0_derivative_cell_20",
+    "C2_derivative_cell_20",
+    "C4_derivative_cell_20",
+    "remainder_cell_20",
+    "delta0_derivative_cell_21",
+    "C2_derivative_cell_21",
+    "C4_derivative_cell_21",
+    "remainder_cell_21",
+    "delta0_derivative_cell_22",
+    "C2_derivative_cell_22",
+    "C4_derivative_cell_22",
+    "remainder_cell_22",
+    "delta0_derivative_cell_23",
+    "C2_derivative_cell_23",
+    "C4_derivative_cell_23",
+    "remainder_cell_23",
+    "delta0_derivative_cell_24",
+    "C2_derivative_cell_24",
+    "C4_derivative_cell_24",
+    "remainder_cell_24",
+    "delta0_derivative_cell_25",
+    "C2_derivative_cell_25",
+    "C4_derivative_cell_25",
+    "remainder_cell_25",
+    "delta0_derivative_cell_26",
+    "C2_derivative_cell_26",
+    "C4_derivative_cell_26",
+    "remainder_cell_26",
+    "delta0_derivative_cell_27",
+    "C2_derivative_cell_27",
+    "C4_derivative_cell_27",
+    "remainder_cell_27",
+    "delta0_derivative_cell_28",
+    "C2_derivative_cell_28",
+    "C4_derivative_cell_28",
+    "remainder_cell_28",
+    "delta0_derivative_cell_29",
+    "C2_derivative_cell_29",
+    "C4_derivative_cell_29",
+    "remainder_cell_29",
+    "delta0_derivative_cell_30",
+    "C2_derivative_cell_30",
+    "C4_derivative_cell_30",
+    "remainder_cell_30",
+    "delta0_derivative_cell_31",
+    "C2_derivative_cell_31",
+    "C4_derivative_cell_31",
+    "remainder_cell_31",
+    "rounded_actual_resolution",
+    "exact_fourth_resolution",
+    "uniform_grid_fourth_order",
+    "uniform_grid_actual_order",
+    "all_budgets_resolution_scaling",
+    "tiny_actual_comparison_unresolved",
+    "tiny_fourth_comparison_unresolved",
+    "exact_33_node_grid",
+    "positive_comparison_full_arc_1/50000",
+    "positive_comparison_one_cell_1/50000",
+    "positive_comparison_full_arc_1/25000",
+    "positive_comparison_one_cell_1/25000",
+    "positive_comparison_full_arc_1/5000",
+    "positive_comparison_one_cell_1/5000",
+    "positive_comparison_full_arc_1/500",
+    "positive_comparison_one_cell_1/500",
+    "positive_fourth_correction"
+  ],
+  "check_count": 146,
+  "driver_interval": [
+    "-1/64",
+    "0"
+  ],
+  "minimum_slope_budget": "1/50000",
+  "lower_derivatives": [
+    "27/1000000000000",
+    "37/500000000000000000000000000",
+    "19/100000000000000000000000000000000000000000"
+  ],
+  "upper_derivatives": [
+    "3/100000000000",
+    "87/1000000000000000000000000000",
+    "53/100000000000000000000000000000000000000000"
+  ],
+  "remainder_constants": [
+    "51/5000000000000000000000000000000000000000000000000000000",
+    "41/2500000000000000000000000000000000000000000000000000000"
+  ],
+  "actual_resolution_simple_exact_at_M0": "133/8640000000000000",
+  "actual_resolution_stronger_at_M0": "133/8640059200380000",
+  "actual_resolution_published_at_M0": "77/5000000000000000",
+  "fourth_resolution_at_M0": "7/20000",
+  "ordered_grid": [
+    "-1/64",
+    "-31/2048",
+    "-15/1024",
+    "-29/2048",
+    "-7/512",
+    "-27/2048",
+    "-13/1024",
+    "-25/2048",
+    "-3/256",
+    "-23/2048",
+    "-11/1024",
+    "-21/2048",
+    "-5/512",
+    "-19/2048",
+    "-9/1024",
+    "-17/2048",
+    "-1/128",
+    "-15/2048",
+    "-7/1024",
+    "-13/2048",
+    "-3/512",
+    "-11/2048",
+    "-5/1024",
+    "-9/2048",
+    "-1/256",
+    "-7/2048",
+    "-3/1024",
+    "-5/2048",
+    "-1/512",
+    "-3/2048",
+    "-1/1024",
+    "-1/2048",
+    "0"
+  ],
+  "cases": [
+    {
+      "budget": "1/50000",
+      "separation": "1/64",
+      "label": "full_arc",
+      "actual_difference": [
+        "270001850011609/640000000000000000000000000",
+        "300002175033391/640000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "11609/4000000000000000000000000000000000000000000000",
+        "33391/4000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/50000",
+      "separation": "1/2048",
+      "label": "one_cell",
+      "actual_difference": [
+        "270001850003363/20480000000000000000000000000",
+        "300002175041637/20480000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "3363/128000000000000000000000000000000000000000000000",
+        "41637/128000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/25000",
+      "separation": "1/64",
+      "label": "full_arc",
+      "actual_difference": [
+        "8640014800023617/20480000000000000000000000000",
+        "9600017400066383/20480000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "23617/8000000000000000000000000000000000000000000000",
+        "66383/8000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/25000",
+      "separation": "1/2048",
+      "label": "one_cell",
+      "actual_difference": [
+        "4320007400009747/327680000000000000000000000000",
+        "4800008700035253/327680000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "9747/128000000000000000000000000000000000000000000000",
+        "35253/128000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/5000",
+      "separation": "1/64",
+      "label": "full_arc",
+      "actual_difference": [
+        "135000009250000593617/320000000000000000000000000000000",
+        "150000010875001656383/320000000000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "593617/200000000000000000000000000000000000000000000000",
+        "1656383/200000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/5000",
+      "separation": "1/2048",
+      "label": "one_cell",
+      "actual_difference": [
+        "67500004625000294747/5120000000000000000000000000000000",
+        "75000005437500830253/5120000000000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "294747/3200000000000000000000000000000000000000000000000",
+        "830253/3200000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/500",
+      "separation": "1/64",
+      "label": "full_arc",
+      "actual_difference": [
+        "135000000092500000059374867/320000000000000000000000000000000000000",
+        "150000000108750000165625133/320000000000000000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "59374867/20000000000000000000000000000000000000000000000000",
+        "165625133/20000000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "budget": "1/500",
+      "separation": "1/2048",
+      "label": "one_cell",
+      "actual_difference": [
+        "16875000011562500007421343/1280000000000000000000000000000000000000",
+        "18750000013593750020703657/1280000000000000000000000000000000000000"
+      ],
+      "normalized_fourth_difference": [
+        "7421343/80000000000000000000000000000000000000000000000000",
+        "20703657/80000000000000000000000000000000000000000000000000"
+      ]
+    }
+  ],
+  "relative_fourth_error_at_M0": [
+    "-150/14610287",
+    "4100/248374879"
+  ],
+  "source_sha256": "5488ddfdebddff9e684db7b85777e9d68b06ae536c47ca53527bb4d037ed49e4",
+  "rational_check_sha256": "ee80f8d872480b5818dceb402a510610e27600a4a8f28da5afc9e37abb5b5c7e",
+  "scope": "Strict pairwise inequalities at the same M, for exact parameter-dependent coefficients. Z_M=M^4(delta-delta0-C2/M^2). Each driver permits a separate perturbation. These value bounds do not prove monotonicity for all distinct drivers, a derivative of the finite-M optimum, or a common profile for the whole arc."
+}

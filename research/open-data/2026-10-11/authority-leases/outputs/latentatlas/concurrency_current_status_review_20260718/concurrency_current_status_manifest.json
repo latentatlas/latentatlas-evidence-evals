@@ -1,0 +1,19 @@
+{
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "generated_at_utc": "2026-07-18T05:16:59.095818+00:00",
+  "level4_probability_claim_allowed": false,
+  "mode": "latentatlas_concurrency_current_status_review",
+  "outputs": {
+    "gap_matrix": "outputs/latentatlas/concurrency_current_status_review_20260718/concurrency_gap_matrix.csv",
+    "manifest": "outputs/latentatlas/concurrency_current_status_review_20260718/concurrency_current_status_manifest.json",
+    "next_work_plan": "outputs/latentatlas/concurrency_current_status_review_20260718/concurrency_next_work_plan.md",
+    "report": "outputs/latentatlas/concurrency_current_status_review_20260718/concurrency_current_status_review.md",
+    "summary": "outputs/latentatlas/concurrency_current_status_review_20260718/concurrency_current_status_summary.json"
+  },
+  "production_truth_mutation": false,
+  "research_maturity_level": "level3_5_protocol_plus_descriptive_local_evidence",
+  "schema_version": "latentatlas_concurrency_current_status_review_v1",
+  "status": "pass"
+}

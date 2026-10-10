@@ -1,0 +1,7 @@
+{
+  "status": "resolved",
+  "stage": "metadata construction after numerical checks, before output write",
+  "error": "AttributeError: str object has no attribute read_bytes in sha(__file__)",
+  "resolution": "Normalize the hash helper argument with pathlib.Path. No mathematical formula or bound changed.",
+  "certificate_written_by_failed_run": false
+}

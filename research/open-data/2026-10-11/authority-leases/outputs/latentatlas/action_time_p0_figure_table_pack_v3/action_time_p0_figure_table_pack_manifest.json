@@ -1,0 +1,43 @@
+{
+  "generated_at_utc": "2026-07-18T16:45:39.094992+00:00",
+  "inputs": {
+    "baseline_replay": "outputs/latentatlas/concurrency_closure_pack_20260718/concurrency_baseline_replay.csv",
+    "closure_summary": "outputs/latentatlas/concurrency_closure_pack_20260718/concurrency_closure_summary.json",
+    "family_overlap_matrix": "outputs/latentatlas/concurrency_closure_pack_20260718/concurrency_family_overlap_matrix.csv",
+    "negative_control_assertions": "outputs/latentatlas/concurrency_closure_pack_20260718/concurrency_negative_control_assertions.csv",
+    "publication_summary": "outputs/latentatlas/action_time_p0_publication_package_v3/publication_package_summary.json",
+    "required_fields_validation": "outputs/latentatlas/concurrency_closure_pack_20260718/concurrency_required_fields_validation.csv"
+  },
+  "outputs": {
+    "figure_1_authority_lease_timeline": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_1_authority_lease_timeline.mmd",
+    "figure_1_authority_lease_timeline_png": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_1_authority_lease_timeline.png",
+    "figure_1_authority_lease_timeline_svg": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_1_authority_lease_timeline.svg",
+    "figure_2_evidence_boundary_ladder": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_2_evidence_boundary_ladder.mmd",
+    "figure_2_evidence_boundary_ladder_png": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_2_evidence_boundary_ladder.png",
+    "figure_2_evidence_boundary_ladder_svg": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_2_evidence_boundary_ladder.svg",
+    "figure_3_concurrent_evidence_validity_gate": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_3_concurrent_evidence_validity_gate.mmd",
+    "figure_3_concurrent_evidence_validity_gate_png": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_3_concurrent_evidence_validity_gate.png",
+    "figure_3_concurrent_evidence_validity_gate_svg": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_3_concurrent_evidence_validity_gate.svg",
+    "figure_4_decision_time_vs_action_time_replay": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_4_decision_time_vs_action_time_replay.mmd",
+    "figure_4_decision_time_vs_action_time_replay_png": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_4_decision_time_vs_action_time_replay.png",
+    "figure_4_decision_time_vs_action_time_replay_svg": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_4_decision_time_vs_action_time_replay.svg",
+    "figure_5_fail_closed_measurement_gate": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_5_fail_closed_measurement_gate.mmd",
+    "figure_5_fail_closed_measurement_gate_png": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_5_fail_closed_measurement_gate.png",
+    "figure_5_fail_closed_measurement_gate_svg": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_5_fail_closed_measurement_gate.svg",
+    "figure_captions_csv": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_captions.csv",
+    "figure_captions_markdown": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/figure_captions.md",
+    "manifest": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/action_time_p0_figure_table_pack_manifest.json",
+    "report": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/action_time_p0_figure_table_pack.md",
+    "summary": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/action_time_p0_figure_table_pack_summary.json",
+    "table_1_claim_ladder": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_1_claim_ladder.csv",
+    "table_2_frozen_p0_outcomes": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_2_frozen_p0_outcomes.csv",
+    "table_3_concurrent_failure_families": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_3_concurrent_failure_families.csv",
+    "table_4_required_fields_validation": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_4_required_fields_validation.csv",
+    "table_5_negative_control_assertions": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_5_negative_control_assertions.csv",
+    "table_6_local_baseline_replay": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_6_local_baseline_replay.csv",
+    "table_7_family_overlap_matrix": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_7_family_overlap_matrix.csv",
+    "table_8_preprint_readiness_gates": "outputs/latentatlas/action_time_p0_figure_table_pack_v3/table_8_preprint_readiness_gates.csv"
+  },
+  "schema_version": "latentatlas_action_time_p0_figure_table_pack_v3",
+  "status": "pass"
+}

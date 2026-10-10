@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "test_groups": 5,
+  "direct_integral_comparisons": 96,
+  "source_sha256": {
+    "test_width.py": "b02e92ad852501cebe63668951cfec78dcc51b1c1f763dcf2f2b8a8d55d396d3",
+    "transport_model.py": "74f3b72fd5523bb1cd3d62a6f42853d41141b6ddd313a8d367bbdcf628a56a77",
+    "fold_jets.py": "a610826864f592b6d2c015c200a74a0fe0409a9dcf017b88e71655e8bbb31c4e",
+    "check_width.py": "873166fef492982971eee75d9e76cf9ba0cfa3e4815c37f3c56265a2546e502a",
+    "endpoint_folds.py": "558c9339c58653fac0eb97e78aad780909adab4478bf52e65cc403f92347c9f6"
+  },
+  "certificate_sha256": "7755870df155973dbc086926300ea2ab3d3e74c2839c89c705833f25ad832924",
+  "endpoint_certificate_sha256": "36bdfc61dcb653d3b3193c577858579d98d12987617c7f57fb78e623a8c59c44",
+  "elapsed_seconds": 6.906541374999506
+}

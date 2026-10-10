@@ -1,0 +1,4 @@
+outcome,count,denominator,rate,description
+packet_supported_block,99,146,0.6781,Review-packet evidence supported the block.
+packet_unsupported_block,22,146,0.1507,Review-packet evidence did not support the block.
+insufficient_evidence,25,146,0.1712,The review packet did not support a resolved outcome.

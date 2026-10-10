@@ -1,0 +1,6 @@
+flowchart TB
+    A["Observation"] --> B["Evidence packet"]
+    B --> C["Decision evidence"]
+    C --> D["Action authority"]
+    D --> E["Execution"]
+    C -. "not automatically" .-> E

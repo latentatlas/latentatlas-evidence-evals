@@ -1,0 +1,15 @@
+{
+  "id": "01_test_validated_flow",
+  "package": "cusp_verified",
+  "script": "test_validated_flow.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 1.1140816249971977,
+  "source_sha256": "3fbf7323d31400d39bef552b66eddf0194d40cd5bdd9287ce2abd0e883104cfc",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_verified/test_validated_flow.py"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:11:11.435219+00:00"
+}

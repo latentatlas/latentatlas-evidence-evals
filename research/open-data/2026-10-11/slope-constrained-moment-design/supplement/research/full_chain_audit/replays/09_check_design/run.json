@@ -1,0 +1,17 @@
+{
+  "id": "09_check_design",
+  "package": "cusp_shape_design",
+  "script": "check_design.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.3401739999972051,
+  "source_sha256": "3804733b922801789802d3db471aacca4fb985fc7a43c76dbaa3fc1bbd774ae6",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_shape_design/check_design.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/replays/09_check_design/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:13:46.522927+00:00"
+}

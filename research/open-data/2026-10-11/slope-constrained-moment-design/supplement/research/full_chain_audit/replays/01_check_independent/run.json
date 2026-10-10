@@ -1,0 +1,21 @@
+{
+  "id": "01_check_independent",
+  "package": "cusp_verified",
+  "script": "check_independent.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 8.180950249996386,
+  "source_sha256": "3c872e1f1834d6eae921378f8063d382f1c0d37df817da0307e1aa1dd53af7cd",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_verified/check_independent.py"
+  ],
+  "changed_clone_files": [
+    {
+      "path": "cusp_verified/results/independent_check.json",
+      "sha256": "bbd370f44a9f94b4048cb44fccc2b50c3e788bc2801b60fb23531c351dd7aa0b",
+      "previous_sha256": "f7651f9c66af1cf7a8a74c7041fc3ab92c88a7ca9a5f32c93e0363af0592f9d4"
+    }
+  ],
+  "completed_utc": "2026-09-20T23:11:18.502041+00:00"
+}

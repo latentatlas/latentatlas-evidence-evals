@@ -1,0 +1,17 @@
+{
+  "id": "10_certify_chart",
+  "package": "swallowtail_window",
+  "script": "certify_chart.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.823975999999675,
+  "source_sha256": "0c01a996e317dc6b9d71cd7a62613348df8d548c6ff3de46089188d4112b0e06",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/swallowtail_window/certify_chart.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/10_certify_chart/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:12.940650+00:00"
+}

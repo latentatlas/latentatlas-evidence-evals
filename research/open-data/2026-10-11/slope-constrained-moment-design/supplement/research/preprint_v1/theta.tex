@@ -1,0 +1,163 @@
+\section{A positive theta-kernel family}\label{sec:theta}
+Define, for \(u\geq0\),
+\begin{align}
+ \Phi(u)&=\sum_{n\geq1}\pi n^2e^{5u}
+       (2\pi n^2e^{4u}-3)\exp(-\pi n^2e^{4u}),\label{eq:theta}\\
+ F(t;\lambda,\mu,\nu)&=\int_0^\infty
+       \Phi(u)e^{\lambda u^2+\mu u^4+\nu u^6}\cos(2tu)\dd u .
+                                                        \label{eq:F}
+\end{align}
+Every summand of \(\Phi\) is positive on this domain.
+Double exponential decay permits parameter differentiation on compact
+sets, including complex parameter sets.
+Write \(D_j=\partial_t^jF\). Then
+\begin{equation}\label{eq:momentdictionary}
+ \partial_\lambda D_j=-D_{j+2}/4,\qquad
+ \partial_\mu D_j=D_{j+4}/16,\qquad
+ \partial_\nu D_j=-D_{j+6}/64 .
+\end{equation}
+
+\subsection{The cusp branch and the design problem}
+A validated zero of \((D_0,D_1,D_2)\) at \(\nu=0\) has the rounded
+location
+\[
+ (t,\lambda,\mu)\simeq
+ (41.4003413586842508894,\,
+  -3.64569206160491909881,\,
+   8.33512049891860723771).
+\]
+These displayed coordinates are explanatory approximations; the
+companion certificate specifies the actual enclosing box.
+At that zero,
+\begin{align*}
+ 3.33563055\cdot10^{-13}&<D_3<3.33563057\cdot10^{-13},\\
+ -9.71679534\cdot10^{-13}&<D_4<-9.71679532\cdot10^{-13}.
+\end{align*}
+In particular the control determinant for the equations \(D_0=D_1=0\)
+is \(D_3D_4/64\ne0\), and \(D_3\ne0\) gives the usual local cusp
+geometry of the zero set of \(F\). A computer-assisted continuation
+defines a single analytic branch
+\[
+ Q(\nu)=(\tau(\nu),\lambda(\nu),\mu(\nu)),\qquad
+ \nu\in I=[-1/64,0].
+\]
+Shared parameter faces are joined by root containment in the next
+uniqueness box, not merely by overlap of the surrounding boxes.
+The validated continuation methods are used to establish the particular
+branch and bounds here; cusp validation as a general method is established
+in the literature \cite{lessard}.
+
+Differentiating the three cusp equations gives the useful identities
+\begin{align}
+ \mu'&=D_6/(4D_4),&
+ \lambda'&=(4D_5\mu'-D_7)/(16D_3),\nonumber\\
+ \tau'&=(D_8/64+D_4\lambda'/4-D_6\mu'/16)/D_3 .\label{eq:velocity}
+\end{align}
+Set
+\[
+ w_\nu(u)=\Phi(u)e^{\lambda(\nu)u^2+\mu(\nu)u^4+\nu u^6},\qquad
+ p_{j,\nu}(u)=(2u)^j\cos(2\tau(\nu)u+j\pi/2),
+\]
+and let \(q_{j,\nu}=w_\nu p_{j,\nu}\), \(0\leq j\leq3\).
+In \eqref{eq:problem} take \(m=3\) and
+\(f_\nu=D_3(Q(\nu),\nu)>0\), and denote its value by \(\delta_\nu(M)\).
+All coefficients in Section~\ref{sec:general} now depend on \(\nu\).
+
+If \(g\) is feasible, multiplying the kernel by \(1-g\) makes the
+first four \(t\)-derivatives, of orders \(0,1,2,3\), vanish at the
+prescribed point. If \(\norm{g}_\infty<1\), the modified kernel is still
+positive. The size \(\delta_\nu(M)\) is therefore the least amplitude of
+such a constrained change, with its roughness controlled by \(M\).
+This interpretation concerns a separate profile for each \(\nu\).
+
+\begin{theorem}[Theta value enclosure]\label{thm:theta}
+For every \(\nu\in I\), the sign certificate and hypotheses of
+Theorem~\ref{thm:infinite} hold for the kernels just defined.
+For every \(M\geq M_0=2\cdot10^{-5}\), the optimum is attained and
+\[
+ 9.17\cdot10^{-10}<\delta_\nu(M)<9.181\cdot10^{-10}<1 .
+\]
+With \(P_{4,\nu}(M)=\delta_{0,\nu}+C_{2,\nu}M^{-2}+C_{4,\nu}M^{-4}\),
+\begin{equation}\label{eq:thetaerror}
+ -\frac{1.02\cdot10^{-53}}{M^6}
+ <\delta_\nu(M)-P_{4,\nu}(M)
+ <\frac{1.64\cdot10^{-53}}{M^6}.
+\end{equation}
+Furthermore, throughout \(I\),
+\begin{align}
+ 2.48374879\cdot10^{-39}&<C_{4,\nu}<2.49203006\cdot10^{-39},
+                                                        \label{eq:C4range}\\
+ 2.7\cdot10^{-11}&<\delta_{0,\nu}'<3.0\cdot10^{-11},\nonumber\\
+ 7.4\cdot10^{-26}&<C_{2,\nu}'<8.7\cdot10^{-26},\nonumber\\
+ 1.9\cdot10^{-40}&<C_{4,\nu}'<5.3\cdot10^{-40}.\label{eq:coefficientmotion}
+\end{align}
+\end{theorem}
+
+\begin{proof}[Proof structure and computational evidence]
+The branch construction, sign equations, invertible moment Jacobian,
+simple residual zeros, and derivative bounds are established on
+32 closed driver cells
+\[
+ I_i=[-(i+1)/2048,-i/2048],\qquad 0\leq i<32.
+\]
+The moment Jacobian is \(-G\); its nonsingularity and the convexity of
+\(\int|q_b|\) identify the local dual solution as the unique global
+minimizer. For clarity, a second minimizer would make the objective
+constant on their joining segment, contradicting its positive
+definite Hessian near the certified minimizer.
+
+The residual without its positive weight has the form
+\begin{equation}\label{eq:rawresidual}
+ r_b(u)=(8u^3+2b_1u)\sin(2\tau u)
+                  +(4b_2u^2-b_0)\cos(2\tau u).
+\end{equation}
+On \([0,1]\), the evidence isolates 28 simple zeros and covers their
+complement by sign enclosures. On \(u\geq1\), put
+\(T=( (8u^3+2b_1u)^2+(4b_2u^2-b_0)^2)^{1/2}\) and
+\(\phi=2\tau u+\arctan((4b_2u^2-b_0)/(8u^3+2b_1u))\).
+The uniform bounds
+\[
+ T>7u^3,\quad |T'|<25u^2,\quad 81<\phi'<85
+\]
+give separated, simple zeros, with spacing greater than \(3/85\) and
+\(|r_b'|>567u^3\) at each zero.
+They also bound root motion with \(b\), since
+\(|\partial_{b_j}z|\leq1/(81z)\) for the tail zeros.
+
+The weight decay verifies the stronger, weighted hypothesis
+\eqref{eq:weighted}, rather than only unweighted convergence.
+For \(H=1/64\) and \(\rho\leq1/1000\), suitable uniform constants give
+\begin{align*}
+ E_k&\leq C(1+z_k+\rho)^{18}
+ e^{21(z_k+\rho)+9(z_k+\rho)^4-\pi e^{4(z_k-\rho)}},\\
+ L_k&=e^{-4(z_k+\rho)^2-H(z_k+\rho)^6-\pi e^{4(z_k+\rho)}}.
+\end{align*}
+The ratio \(E_k^3/L_k^2\) is bounded by a polynomial times
+\[
+ \exp\{63(z_k+\rho)+27(z_k+\rho)^4+8(z_k+\rho)^2
+       +2H(z_k+\rho)^6-\pi c_\rho e^{4z_k}\},
+ \quad c_\rho=3e^{-4\rho}-2e^{4\rho}>0.97 .
+\]
+The separated zeros and this double exponential decay prove
+\eqref{eq:weighted}. Finite initial neighborhoods are covered directly.
+Theorem~\ref{thm:infinite} now applies.
+
+The explicit remainder requires additional estimates and does not
+follow just from that theorem. Appendix~\ref{app:effective} constructs
+finite ramp profiles with exact moments and an accompanying support
+bound, uniformly on all 32 cells. Scalar comparison, without continuity
+of the number of active ramps, proves \eqref{eq:thetaerror} and
+feasibility for every stated \(M\).
+Differentiated coefficient identities and interval enclosures give
+\eqref{eq:C4range}--\eqref{eq:coefficientmotion}.
+The exact input-output map and replay commands appear in
+Appendix~\ref{app:evidence}; those finite computations are part of this
+computer-assisted theorem.
+\end{proof}
+
+At \(M=M_0\), the absolute error in \eqref{eq:thetaerror} lies between
+\(-1.59375\cdot10^{-25}\) and \(2.5625\cdot10^{-25}\).
+These figures measure the truncation error once the coefficients are
+known; rounding the coefficients separately introduces additional
+error. In particular the broad uniform ranges above are not substitutes
+for pointwise coefficient enclosures.

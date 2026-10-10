@@ -1,0 +1,2 @@
+{"decision_id":"indexed-remote-access-001","query_or_claim":"Can we approve contractor remote access after security training and manager approval are complete","policy":"audit_safe","domain_context":"enterprise_it_policy"}
+{"decision_id":"indexed-contract-renewal-002","query_or_claim":"Does contract ACME-42 permit automatic renewal","policy":"audit_safe","domain_context":"contract_review"}

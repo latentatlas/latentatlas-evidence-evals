@@ -1,0 +1,33 @@
+{
+  "allowed_expected_count": 270,
+  "allowed_preserved_count": 270,
+  "blocked_reason_counts": {
+    "boundary_grants_action_ready": 90,
+    "boundary_grants_evidence_support": 100,
+    "boundary_grants_publish_safe": 80,
+    "bridge_context_does_not_grant_evidence_support": 80,
+    "candidate_contradicts_requested_claim": 98,
+    "evidence_support_does_not_grant_action_ready": 90,
+    "evidence_support_does_not_grant_publish_safe": 90,
+    "freshness_state_deprecated": 22,
+    "freshness_state_expired": 30,
+    "freshness_state_stale": 23,
+    "freshness_state_superseded": 23,
+    "peer_comparison_does_not_grant_same_identity": 90,
+    "privacy_boundary_blocks_all_use": 88,
+    "related_does_not_grant_customer_safe": 8,
+    "related_does_not_grant_publish_safe": 80,
+    "source_authority_low": 8
+  },
+  "boundary_false_authority_count": 0,
+  "customer_surface_mutation_allowed_count": 0,
+  "expected_mismatch_count": 0,
+  "generated_at_utc": "2026-07-20T00:06:57.131962+00:00",
+  "high_similarity_cases": 1000,
+  "naive_false_authority_count": 730,
+  "naive_similarity_allow_count": 1000,
+  "similarity_threshold": 0.82,
+  "status": "pass",
+  "total_cases": 1000,
+  "truth_mutation_allowed_count": 0
+}

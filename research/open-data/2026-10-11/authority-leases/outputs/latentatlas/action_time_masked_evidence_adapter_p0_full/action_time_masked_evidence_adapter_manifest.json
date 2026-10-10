@@ -1,0 +1,29 @@
+{
+  "adapter_status": "merged_sidecar",
+  "external_calls_used_by_builder": false,
+  "generated_at": "2026-07-13T01:29:38.291477+00:00",
+  "input": "outputs/latentatlas/action_time_review_packet_v2/action_time_review_packet_v2_queue.jsonl",
+  "internal_index_read": false,
+  "mode": "latentatlas_action_time_masked_evidence_adapter",
+  "outcome_adjudication_allowed_count": 146,
+  "outputs": {
+    "manifest": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_manifest.json",
+    "merged_queue": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_merged_v2_queue.jsonl",
+    "report": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_report.md",
+    "reviewer_sheet": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet.csv",
+    "reviewer_sheet_p0": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet_p0.csv",
+    "sidecar_template": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_sidecar_template.csv",
+    "sidecar_template_p0": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_sidecar_template_p0.csv",
+    "summary": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_summary.json"
+  },
+  "packet_sufficiency_counts": {
+    "insufficient_for_outcome_adjudication": 2468,
+    "sufficient_for_outcome_adjudication": 146
+  },
+  "production_truth_mutation": false,
+  "report": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_report.md",
+  "sidecar": "outputs/latentatlas/action_time_masked_evidence_sidecar_p0_full/action_time_masked_evidence_sidecar_p0_full.csv",
+  "sidecar_template": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_sidecar_template.csv",
+  "status": "pass",
+  "summary": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_summary.json"
+}

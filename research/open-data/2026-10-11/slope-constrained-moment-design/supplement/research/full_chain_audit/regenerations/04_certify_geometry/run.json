@@ -1,0 +1,21 @@
+{
+  "id": "04_certify_geometry",
+  "package": "cusp_geometry",
+  "script": "certify_geometry.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 18.03389129199786,
+  "source_sha256": "cf3ca4ed830b4c87816722329349f0d4efe68d8f6247d20308b3d94cbe4b0897",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_geometry/certify_geometry.py"
+  ],
+  "changed_clone_files": [
+    {
+      "path": "cusp_geometry/results/geometry_certificate.json",
+      "sha256": "b60ad57fb0c14a0e122bcde4a9077dca6284acfdeebce73ee4afa2f96a1763cf",
+      "previous_sha256": "567f6193e7238a862e16156aaadb939454d273dcca8a634faee4aa6319762200"
+    }
+  ],
+  "completed_utc": "2026-09-20T23:13:18.821254+00:00"
+}

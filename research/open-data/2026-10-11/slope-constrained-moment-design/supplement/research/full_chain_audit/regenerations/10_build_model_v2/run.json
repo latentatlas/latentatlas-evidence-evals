@@ -1,0 +1,17 @@
+{
+  "id": "10_build_model_v2",
+  "package": "swallowtail_window",
+  "script": "build_model_v2.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.21939787500014063,
+  "source_sha256": "366bfd330bc79d1e265a4d453ec30c0e70fa96772f514766d027042c594d91a4",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/swallowtail_window/build_model_v2.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/10_build_model_v2/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:10.965035+00:00"
+}

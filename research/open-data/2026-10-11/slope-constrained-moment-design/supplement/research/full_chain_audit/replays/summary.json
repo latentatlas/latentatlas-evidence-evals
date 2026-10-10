@@ -1,0 +1,586 @@
+[
+  {
+    "id": "01_test_validated_flow",
+    "package": "cusp_verified",
+    "script": "test_validated_flow.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 1.1140816249971977,
+    "source_sha256": "3fbf7323d31400d39bef552b66eddf0194d40cd5bdd9287ce2abd0e883104cfc",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_verified/test_validated_flow.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:11.435219+00:00"
+  },
+  {
+    "id": "02_check_witnesses",
+    "package": "cusp_region",
+    "script": "check_witnesses.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.2072764160038787,
+    "source_sha256": "ea26eab481c05db6691861539f27a401c7cd87ad842fb2022f4d0a360171c57d",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_region/check_witnesses.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:11.663789+00:00"
+  },
+  {
+    "id": "02_test_region",
+    "package": "cusp_region",
+    "script": "test_region.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 1.0250621670056717,
+    "source_sha256": "3af4258ed23fc0ac11694185345d176692a515678ba59158304c76d7ada268a3",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_region/test_region.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:12.708905+00:00"
+  },
+  {
+    "id": "02_check_independent",
+    "package": "cusp_region",
+    "script": "check_independent.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 5.760800582997035,
+    "source_sha256": "6dd7e9e045e6ec9811dc74910b976ce69375128d81f4d106a43785504a54144d",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_region/check_independent.py"
+    ],
+    "changed_clone_files": [
+      {
+        "path": "cusp_region/results/independent_check.json",
+        "sha256": "f1debe8a472aea4d9c6c55f246c69477fd1abf115412a9459dc0e1ebbe1b523b",
+        "previous_sha256": "4937ffa7b2c2020be807f514ffee6fc5c7242acde6070b74a0438d228c3fbf77"
+      }
+    ],
+    "completed_utc": "2026-09-20T23:11:16.082060+00:00"
+  },
+  {
+    "id": "01_check_independent",
+    "package": "cusp_verified",
+    "script": "check_independent.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 8.180950249996386,
+    "source_sha256": "3c872e1f1834d6eae921378f8063d382f1c0d37df817da0307e1aa1dd53af7cd",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_verified/check_independent.py"
+    ],
+    "changed_clone_files": [
+      {
+        "path": "cusp_verified/results/independent_check.json",
+        "sha256": "bbd370f44a9f94b4048cb44fccc2b50c3e788bc2801b60fb23531c351dd7aa0b",
+        "previous_sha256": "f7651f9c66af1cf7a8a74c7041fc3ab92c88a7ca9a5f32c93e0363af0592f9d4"
+      }
+    ],
+    "completed_utc": "2026-09-20T23:11:18.502041+00:00"
+  },
+  {
+    "id": "03_check_connection",
+    "package": "cusp_connection",
+    "script": "check_connection.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 8.11661358299898,
+    "source_sha256": "3f83a08380f0526b6c5c5637b6feb40b7c2162d025216a086f382a28788696b8",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_connection/check_connection.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:20.844871+00:00"
+  },
+  {
+    "id": "03_test_connection",
+    "package": "cusp_connection",
+    "script": "test_connection.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 6.653317832999164,
+    "source_sha256": "e6cf3f97c61941a6b094263469798d1cdea99173fc07f11b9c2e4038a148d57a",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_connection/test_connection.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:25.176394+00:00"
+  },
+  {
+    "id": "03_check_independent",
+    "package": "cusp_connection",
+    "script": "check_independent.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 16.36721125000622,
+    "source_sha256": "adb7eaa0a80c1d1307b24b7a86c86dedad7c8ceea339196cddd587f93184a2dd",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_connection/check_independent.py"
+    ],
+    "changed_clone_files": [
+      {
+        "path": "cusp_connection/results/independent_check.json",
+        "sha256": "0f1c4e89d51779fdca9f3ea62d1ed9d85f1b5fa6adc7c526b696299bb5cbbda1",
+        "previous_sha256": "10f1e98f56377b2ce122f31074d0e17d17e377dc0859081e80e44bd3f861e47f"
+      }
+    ],
+    "completed_utc": "2026-09-20T23:11:32.469354+00:00"
+  },
+  {
+    "id": "04_test_geometry",
+    "package": "cusp_geometry",
+    "script": "test_geometry.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 4.498165832999803,
+    "source_sha256": "a0fb1dcbc6db1c65a2b251ad24c81e3efe54e74c3d04df2712cff82d25b78cd7",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_geometry/test_geometry.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:36.987584+00:00"
+  },
+  {
+    "id": "05_check_endpoints",
+    "package": "cusp_width",
+    "script": "check_endpoints.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.27321437500359025,
+    "source_sha256": "5c5180768395065b249d8c78d97526dece941768703a0db825649138963b668a",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_width/check_endpoints.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:11:37.279879+00:00"
+  },
+  {
+    "id": "04_check_independent",
+    "package": "cusp_geometry",
+    "script": "check_independent.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 22.228146250003192,
+    "source_sha256": "201983d7e9dfb5268171a785f00d33b2255bf2719b8c34d3e91d1c030791b0b1",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_geometry/check_independent.py"
+    ],
+    "changed_clone_files": [
+      {
+        "path": "cusp_geometry/results/independent_check.json",
+        "sha256": "63b28f5a57f058c3c8c5c6ad992227a689a2383dd20ead815a548806104f74db",
+        "previous_sha256": "6157f77501dd1053e494c57b0c209e047da9214130befca74604b620ada13b8c"
+      }
+    ],
+    "completed_utc": "2026-09-20T23:11:47.424370+00:00"
+  },
+  {
+    "id": "05_check_independent",
+    "package": "cusp_width",
+    "script": "check_independent.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 25.988578666998364,
+    "source_sha256": "a74dd0731d9d82ee5ab9035322be86ad4c129b8b406f1ed7922bc7f083b17c82",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_width/check_independent.py"
+    ],
+    "changed_clone_files": [
+      {
+        "path": "cusp_width/results/independent_check.json",
+        "sha256": "3649002c6d1a7624319a99301988b036c2c288b3ce7656f236c7969b806581ff",
+        "previous_sha256": "2b6c6c9f84dd7ec3f2308be1c6fbe943d1ffb11dbf67e5f14fb8c6737df5a811"
+      }
+    ],
+    "completed_utc": "2026-09-20T23:12:03.288165+00:00"
+  },
+  {
+    "id": "05_test_width",
+    "package": "cusp_width",
+    "script": "test_width.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 7.131092167001043,
+    "source_sha256": "b02e92ad852501cebe63668951cfec78dcc51b1c1f763dcf2f2b8a8d55d396d3",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_width/test_width.py"
+    ],
+    "changed_clone_files": [
+      {
+        "path": "cusp_width/results/test_report.json",
+        "sha256": "64e18b3c0dd5cda3ee77b977203126fa0b5d881bc4e16fc2a75e4186307bf7f1",
+        "previous_sha256": "168550734f5f890c2612dbce3b1b54b929eb8e91269cbe6c56be461eae89646e"
+      }
+    ],
+    "completed_utc": "2026-09-20T23:12:10.439897+00:00"
+  },
+  {
+    "id": "06_check_structural_example",
+    "package": "cusp_literature",
+    "script": "check_structural_example.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.1831108749975101,
+    "source_sha256": "c5076b98f6282489a8457d33e77ea38cc8d18cf6fdff00945840a7d64c1ba796",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_literature/check_structural_example.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/06_check_structural_example/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:12:10.644201+00:00"
+  },
+  {
+    "id": "05_check_width",
+    "package": "cusp_width",
+    "script": "check_width.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 28.558977041000617,
+    "source_sha256": "873166fef492982971eee75d9e76cf9ba0cfa3e4815c37f3c56265a2546e502a",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_width/check_width.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:12:16.003857+00:00"
+  },
+  {
+    "id": "07_check_condition",
+    "package": "cusp_robustness",
+    "script": "check_condition.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 5.772331624997605,
+    "source_sha256": "75ac340e2aa6af2e11995b03d7d75bf4f964f12ffe446f07eea1087e4760458c",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_robustness/check_condition.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/07_check_condition/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:12:16.436727+00:00"
+  },
+  {
+    "id": "07_check_pinned",
+    "package": "cusp_robustness",
+    "script": "check_pinned.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 7.211597125002299,
+    "source_sha256": "66d167e8861e5de388ad49ed73c24b6836adfc3c4e0535d81116cf037a8efae4",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_robustness/check_pinned.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/07_check_pinned/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:12:23.236614+00:00"
+  },
+  {
+    "id": "08_check_family",
+    "package": "cusp_pinned_family",
+    "script": "check_family.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 44.26121237500047,
+    "source_sha256": "c33c935dda3656378812a243fa45ce1ec7596ad298c4ad298ad3ff1217c8e2d9",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_pinned_family/check_family.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/08_check_family/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:13:07.520679+00:00"
+  },
+  {
+    "id": "08_check_samples",
+    "package": "cusp_pinned_family",
+    "script": "check_samples.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.6951783330005128,
+    "source_sha256": "795e86873539ad6d41f596612f2c14133bd8b823fe1b1821f01de78632b4280b",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_pinned_family/check_samples.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/08_check_samples/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:13:08.246767+00:00"
+  },
+  {
+    "id": "07_check_robustness",
+    "package": "cusp_robustness",
+    "script": "check_robustness.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 89.69416050000291,
+    "source_sha256": "98bd0a820fdddb5b587d4cc9553dda6941f02c9a4df23ef0a18a77113a0cc277",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_robustness/check_robustness.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/07_check_robustness/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:13:46.153918+00:00"
+  },
+  {
+    "id": "09_check_design",
+    "package": "cusp_shape_design",
+    "script": "check_design.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.3401739999972051,
+    "source_sha256": "3804733b922801789802d3db471aacca4fb985fc7a43c76dbaa3fc1bbd774ae6",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_shape_design/check_design.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/09_check_design/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:13:46.522927+00:00"
+  },
+  {
+    "id": "09_check_local",
+    "package": "cusp_shape_design",
+    "script": "check_local.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 7.1544664169996395,
+    "source_sha256": "9c0ca285739ee1a53a1b3662fc6bc68e871852dfd87db0727f3ea46ff0efa070",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_shape_design/check_local.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/09_check_local/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:13:53.702490+00:00"
+  },
+  {
+    "id": "09_check_samples",
+    "package": "cusp_shape_design",
+    "script": "check_samples.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.5129316669990658,
+    "source_sha256": "62120749a613656c4f848ebdae4045ad567e7ea5d37f9770d0a7b22c931a497d",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_shape_design/check_samples.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/09_check_samples/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:13:54.239435+00:00"
+  },
+  {
+    "id": "08_crosscheck_integrals",
+    "package": "cusp_pinned_family",
+    "script": "crosscheck_integrals.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 67.64261295799952,
+    "source_sha256": "59591a72ed638b6b8621da011921f8d36d4fa94fc604fbafe82a1fe10df88561",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_pinned_family/crosscheck_integrals.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/08_crosscheck_integrals/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:15.917961+00:00"
+  },
+  {
+    "id": "10_check_chart",
+    "package": "swallowtail_window",
+    "script": "check_chart.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 23.976315208004962,
+    "source_sha256": "b40de15b28bf0dd904d3a072004e8e56922286e0b6bc1ea07f92452df0dcbd1f",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/swallowtail_window/check_chart.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/10_check_chart/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:39.918777+00:00"
+  },
+  {
+    "id": "04_check_geometry",
+    "package": "cusp_geometry",
+    "script": "check_geometry.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 208.46906624999974,
+    "source_sha256": "9dd00ed34c06aa17cd01ec130443674237a69db0aa305977127b00436ce2b3d7",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_geometry/check_geometry.py"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:49.333576+00:00"
+  },
+  {
+    "id": "10_check_window",
+    "package": "swallowtail_window",
+    "script": "check_window.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.9412671250029234,
+    "source_sha256": "52e6e0b1f76dda28859db585443228f1e0069776ec53cce501d0050d135e57d1",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/swallowtail_window/check_window.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/10_check_window/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:50.305697+00:00"
+  },
+  {
+    "id": "09_crosscheck_integrals",
+    "package": "cusp_shape_design",
+    "script": "crosscheck_integrals.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 61.10279158299818,
+    "source_sha256": "481103087920f9f9bac021b2836f0c364782de4c7e484a5969d3a39341951806",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/cusp_shape_design/crosscheck_integrals.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/09_crosscheck_integrals/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:55.367418+00:00"
+  },
+  {
+    "id": "11_check_candidate",
+    "package": "kernel_design_principle",
+    "script": "check_candidate.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.2416553750008461,
+    "source_sha256": "08f9b319a8d251c876832ec3461576cd412c0d6472e4db9342fd42802be9a1d2",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/kernel_design_principle/check_candidate.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/11_check_candidate/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:55.634280+00:00"
+  },
+  {
+    "id": "10_check_samples",
+    "package": "swallowtail_window",
+    "script": "check_samples.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 16.11989491699933,
+    "source_sha256": "09782b04d0c0103693887557ba0b51f91c7cf7bb24a59f84ba8bd082cb4a2a3c",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/swallowtail_window/check_samples.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/10_check_samples/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:56.064438+00:00"
+  },
+  {
+    "id": "12_check_threshold",
+    "package": "kernel_norm_threshold",
+    "script": "check_threshold.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 0.3175582920011948,
+    "source_sha256": "a351a07fcaeb076b90dbfbc4ce0c9d425565ff3711f2fc4c96199663613a564c",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/kernel_norm_threshold/check_threshold.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/12_check_threshold/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:14:56.407296+00:00"
+  },
+  {
+    "id": "12_crosscheck_moments",
+    "package": "kernel_norm_threshold",
+    "script": "crosscheck_moments.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 6.6497924590003095,
+    "source_sha256": "1f77ecfc02d40f10504ec01a633e6965cab1cf78c00d68ddfa99072b40a913ce",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/kernel_norm_threshold/crosscheck_moments.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/12_crosscheck_moments/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:15:03.085781+00:00"
+  },
+  {
+    "id": "11_crosscheck_integrals",
+    "package": "kernel_design_principle",
+    "script": "crosscheck_integrals.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 49.646582166998996,
+    "source_sha256": "5e2bdeaae2cbbb7a90da60992caa2ab2095c8511101fb78931ec37267dd9540b",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/kernel_design_principle/crosscheck_integrals.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/11_crosscheck_integrals/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:15:45.305926+00:00"
+  },
+  {
+    "id": "10_crosscheck_integrals",
+    "package": "swallowtail_window",
+    "script": "crosscheck_integrals.py",
+    "args": [],
+    "exit_code": 0,
+    "elapsed_seconds": 58.65076095799304,
+    "source_sha256": "4e7510254a69c8fc6cb1b685385a2fb40d30604ecba0ce5d1a72cbcd4edee162",
+    "command_template": [
+      "/PROJECT/.venv-math/bin/python",
+      "<fresh-clone>/research/swallowtail_window/crosscheck_integrals.py",
+      "--output",
+      "/PROJECT/research/full_chain_audit/replays/10_crosscheck_integrals/result.json"
+    ],
+    "changed_clone_files": [],
+    "completed_utc": "2026-09-20T23:15:48.984022+00:00"
+  }
+]

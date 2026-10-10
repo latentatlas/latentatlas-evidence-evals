@@ -1,0 +1,160 @@
+% R09 manuscript fragment; requires amsmath, amssymb, graphicx.
+% Exact definitions and proof details are in PROOF.md.
+% No standalone LaTeX compilation or external review is asserted.
+\section{Pinned-cusp shape design in a positive kernel family}
+
+Let $F(t;\lambda,\mu,\nu)$ be the theta-kernel integral of the paper,
+and let $Q=(t_Q,\lambda_Q,\mu_Q)$, $\nu=0$, be the exact certified
+zero of $F_0=F_1=F_2=0$, with $F_3>0>F_4$. Subscripts denote
+$t$ derivatives. For $1\leq j\leq16$, let $M_{nj}$ be the exact
+$n$th derivative moment at $Q$ with the multiplier $\cos(2ju)$.
+For the four columns $J=(10,13,15,16)$ of the three-row moment
+matrix, define $c_i=(-1)^{i-1}\det M_{\widehat i}$,
+$Z=\sum_i|c_i|$, and $w_i=\sigma c_i/Z$, where $\sigma=\pm1$
+chooses the positive objective below. Put
+\[
+ h_*(u)=\sum_{i=1}^4w_i\cos(2J_i u),\qquad
+ G_\epsilon=F+\epsilon H,
+\]
+where $H$ is the same integral with the multiplier $h_*$. All
+cofactors are nonzero. The exact cofactor identity gives
+$H_0(Q)=H_1(Q)=H_2(Q)=0$, while $\sum|w_i|=1$ gives
+$\|h_*\|_\infty\leq1$. Thus $Q$ remains a zero of order at least
+three, and $\Phi_\epsilon=\Phi(1+\epsilon h_*)>0$ for $|\epsilon|<1$.
+
+\paragraph{Theorem 1 (finite-class optimum).}
+Among $h=\sum_{j=1}^{16}v_j\cos(2ju)$ with three vanishing $Q$
+moments and $\sum|v_j|\leq1$, the oriented vector $w$ is the unique
+maximizer of $-\partial_\epsilon\log C(0)$, where $C$ is the
+leading local fold-width coefficient in the original controls.
+Writing $a=H_3(Q)/F_3(Q)$ and $b=H_4(Q)/F_4(Q)$, its value is
+\[
+ S=b-a\in[83.766976561083,83.766976561084],
+\]
+\[
+ a\in[-53.279001512222,-53.279001512221],\qquad
+ b\in[30.487975048861,30.487975048862].
+\]
+To certify the optimum, row-scale the constraint matrix to $A$,
+put $d_j=M_{4j}/F_4-M_{3j}/F_3$, and solve exactly
+$d_j-A_j^Ty=z\operatorname{sign}(w_j)$ on $J$. The computed
+enclosures prove $z>0$ and $|d_j-A_j^Ty|<z$ off $J$, with
+strict slack greater than $10.51$. Every feasible vector obeys
+$d^Tv\leq z\|v\|_1\leq z$ and $w$ attains equality. Strict
+off-support slack and rank three give uniqueness. This is an
+optimum of the initial rate in the declared finite coefficient
+class, not an optimum over all bounded perturbations or of a
+finite fold width.
+
+\paragraph{Theorem 2 (prescribed leading opening).}
+For every $r>0$, the amplitude
+\[
+ \epsilon(r)=\frac{1-r}{rb-a}
+\]
+keeps $Q$ a nondegenerate cusp in the $(\lambda,\mu)$ controls,
+satisfies $\Phi_\epsilon>0.9672\Phi$, and gives exactly
+$C(\epsilon)=rC(0)$. Indeed
+\[
+ C(\epsilon)=\frac{8\sqrt2}{3}\frac{-G_3(Q)}{G_4(Q)},\qquad
+ \frac{C(\epsilon)}{C(0)}=\frac{1+a\epsilon}{1+b\epsilon},
+\]
+and $1+a\epsilon=r(b-a)/(rb-a)>0$,
+$1+b\epsilon=(b-a)/(rb-a)>0$. These amplitudes fill
+$(-1/b,-1/a)$, whose endpoints satisfy
+\[
+ -1/b\in[-0.032799816925,-0.032799816924],\qquad
+ -1/a\in[0.018769120509,0.018769120510].
+\]
+This concerns the leading coefficient in
+$W=C\ell^{3/2}+O(\ell^2)$. No common finite window over that
+whole open interval, or unbounded finite width at fixed $\ell$,
+is asserted. $C$ depends on the original control units.
+
+\paragraph{Theorem 3 (finite geometry and strict nesting).}
+For every $|\epsilon|\leq1/128$, at $\nu=0$, use the exact
+translations $s=t-t_Q$, $\ell=\lambda-\lambda_Q$, $m=\mu-\mu_Q$.
+In the common window
+\[
+ |s|\leq0.003,\qquad |\ell|\leq10^{-6},\qquad |m|\leq2\,10^{-9},
+\]
+the discriminant consists of $Q$ and two folds
+$m_-(\ell,\epsilon)<0<m_+(\ell,\epsilon)$ for
+$0<\ell\leq10^{-6}$. Between them there are exactly three
+simple real zeros in the stated $s$ window; off the discriminant
+outside that strip there is exactly one. A noncusp fold has one
+double and one simple zero; $Q$ has one triple zero. No zero
+crosses the $s$ endpoints. Moreover
+\[
+ \partial_\epsilon m_+<0<\partial_\epsilon m_-,\qquad
+ 10\ell^{3/2}<-\partial_\epsilon(m_+-m_-)<500\ell^{3/2}.
+\]
+At $\ell=10^{-6}$, direct finite fold contractions give
+\[
+ 100\left[\frac{W(+1/128)}{W(-1/128)}-1\right]
+ \in[-74.63952481,-74.63952480]\quad\text{percent}.
+\]
+The old four-mode direction at the same amplitudes instead gives
+$[-0.00078034,-0.00078033]$ percent. The new leading-$C$
+percentage change is $[-74.6395459500,-74.6395459499]$;
+it is not substituted for the finite-width result.
+
+Sixteen amplitude intervals and fifteen common-uniqueness-box
+joins establish the continuum statement. The auxiliary fold
+box has radii $2^{-13},2^{-19}$ in $(\ell,m)$.
+Weighted contraction bounds satisfy $q+\eta<1$. The signs
+$G_3>0>G_4$ and $\Delta=G_3G_4-G_2G_5<0$ yield the fold ODE
+\[
+ \ell_s=4G_2G_4/\Delta,\qquad m_s=16G_2^2/\Delta.
+\]
+At fixed $\ell$, $\partial_\epsilon m=B(s)=-16H_0/G_4$.
+At $Q$, $B=B'=B''=0$,
+$B'''=-32k_\epsilon>0$, and
+$B''''=96k(A_3)_\epsilon$, where
+$k=-G_3/G_4$ and $A_3=\frac43(G_5/G_4-G_4/G_3)$.
+Verified fifth-derivative remainders keep $B'''(s)>0$ on
+$|s|\leq0.001$, which covers all needed positive $\ell$.
+The negative-$s$ fold is the upper branch; hence the signs above.
+
+\paragraph{Theorem 4 (constructed order-four zero).}
+At $\epsilon_4=-1/a$, the modified integral has an exact zero
+of order four at $Q$, and its $(\lambda,\mu,\nu)$ unfolding has
+local zero equation analytically equivalent to
+\[
+ x^4+ux^2+vx+w=0.
+\]
+The exact pinning identities and definition of $\epsilon_4$ give
+$G_0=G_1=G_2=G_3=0$, and the certificate gives
+\[
+ 10^{12}G_4\in[-1.527706119921,-1.527706119920].
+\]
+For the parameter Jacobian of $(G_0,G_1,G_2)$,
+\[
+ \det J_p=\frac{G_4(G_4G_7-G_5G_6)}{4096},\qquad
+ 10^{38}\det J_p\in[-1.247577850654,-1.247577850653].
+\]
+Weierstrass preparation factors $G$ into a nonvanishing unit
+and a monic quartic. The rank-three jet matrix gives rank three
+for its constant, linear and quadratic coefficient map. Removing
+the cubic term preserves that rank, and the inverse function
+theorem gives the displayed control coordinates. Its antiderivative
+is the standard quintic swallowtail potential. At the other
+endpoint $\epsilon_\mu=-1/b$, only $G_4$ vanishes: $G_3>0$
+and the $(\lambda,\mu)$ cusp unfolding loses rank; the root
+does not become fourth order.
+
+\paragraph{Evidence and scope.}
+The package records 288 rigorous frequency-shift integrals,
+110 direct new $F/H$ integrals, 34 old-direction comparison
+integrals, separate rational dual and rank checks, independent
+rational reconstruction of all new local Taylor bounds, and
+176 checked finite fold contractions. Nine direct moments also
+agree under separate mpmath integration at two precisions.
+The rational checkers assume the saved rigorous integral
+enclosures and positive majorants; the sample checker also
+assumes saved point Taylor enclosures. These are internal
+independent implementations, not external peer review.
+The new finite-window result is at $\nu=0$ and uses a changed
+kernel. It does not prove an order-four zero for the original
+undeformed kernel, a global discriminant, or physical stability.
+
+% Figure captions are provided in FIGURE_CAPTIONS.tex.

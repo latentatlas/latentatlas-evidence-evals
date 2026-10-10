@@ -1,0 +1,51 @@
+{
+  "cases_path": "research/concept_boundary_engine/concept_boundary_1000_test_content.jsonl",
+  "coverage_by_model": [
+    {
+      "coverage_pct": 100.0,
+      "expected_case_count": 1000,
+      "extra_case_count": 0,
+      "missing_case_count": 0,
+      "model_id": "anthropic:claude-opus-4-7",
+      "observed_case_count": 1000
+    },
+    {
+      "coverage_pct": 99.0,
+      "expected_case_count": 1000,
+      "extra_case_count": 0,
+      "missing_case_count": 10,
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "observed_case_count": 990
+    },
+    {
+      "coverage_pct": 100.0,
+      "expected_case_count": 1000,
+      "extra_case_count": 0,
+      "missing_case_count": 0,
+      "model_id": "openai:gpt-5.5",
+      "observed_case_count": 1000
+    },
+    {
+      "coverage_pct": 100.0,
+      "expected_case_count": 1000,
+      "extra_case_count": 0,
+      "missing_case_count": 0,
+      "model_id": "voyage:rerank-2.5",
+      "observed_case_count": 1000
+    }
+  ],
+  "decision_outputs_path": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs_cleaned.jsonl",
+  "duplicate_case_count_total": 0,
+  "generated_at_utc": "2026-05-13T03:36:07.391401+00:00",
+  "missing_case_count_total": 10,
+  "mode": "real_llm_boundary_coverage_audit",
+  "model_count": 4,
+  "outputs": {
+    "coverage_by_model": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/coverage_by_model.csv",
+    "duplicate_cases": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/duplicate_cases.csv",
+    "manifest": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/manifest.json",
+    "missing_cases": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/missing_cases.csv"
+  },
+  "rerank_outputs_path": "outputs/latentatlas/concept_boundary_real_llm_runs/voyage_rerank_outputs.jsonl",
+  "status": "needs_review"
+}

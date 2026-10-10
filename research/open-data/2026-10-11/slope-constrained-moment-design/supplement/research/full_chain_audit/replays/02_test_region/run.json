@@ -1,0 +1,15 @@
+{
+  "id": "02_test_region",
+  "package": "cusp_region",
+  "script": "test_region.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 1.0250621670056717,
+  "source_sha256": "3af4258ed23fc0ac11694185345d176692a515678ba59158304c76d7ada268a3",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_region/test_region.py"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:11:12.708905+00:00"
+}

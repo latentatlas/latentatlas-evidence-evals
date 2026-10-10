@@ -1,0 +1,73 @@
+{
+  "appended_replacement_count": 0,
+  "appended_sample": [],
+  "duplicate_primary_key_count": 0,
+  "duplicate_primary_key_sample": [],
+  "generated_at_utc": "2026-05-13T02:20:01.899290+00:00",
+  "merged_row_count": 2180,
+  "mode": "real_llm_output_clean_merge",
+  "output_path": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs_cleaned_snapshot.jsonl",
+  "primary_path": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs.jsonl",
+  "primary_row_count": 2180,
+  "replaced_count": 10,
+  "replacement_candidate_count": 10,
+  "replacement_paths": [
+    "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+  ],
+  "replacement_sample": [
+    {
+      "case_id": "cbe1000-0001",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0002",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0003",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0004",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0005",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0006",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0007",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0008",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0009",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    },
+    {
+      "case_id": "cbe1000-0010",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "replacement_source": "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl"
+    }
+  ],
+  "replacement_source_counts": {
+    "outputs/latentatlas/concept_boundary_real_llm_runs_cohere_rerun/real_llm_outputs.jsonl": 10
+  },
+  "status": "pass"
+}

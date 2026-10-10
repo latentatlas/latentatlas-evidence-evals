@@ -1,0 +1,191 @@
+{
+  "created_utc": "2026-09-20T10:29:07.443736+00:00",
+  "scope": "R03: one regular analytic cusp graph on nu in [-29,0] inside recorded tubes, containing the original quartic and sextic cusps; unique mu=0 intersection on this graph",
+  "status": "local_computer_assisted_result_with_checks",
+  "external_expert_review": false,
+  "literature_priority_established": false,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.6.1-arm64-arm-64bit",
+    "python-flint": "0.9.0",
+    "mpmath": "1.4.1",
+    "matplotlib": "3.11.2"
+  },
+  "input_packages": [
+    {
+      "package": "cusp_verified",
+      "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96",
+      "verified_files": 25
+    },
+    {
+      "package": "cusp_region",
+      "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5",
+      "verified_files": 24
+    }
+  ],
+  "checks": {
+    "generator_source_hashes_current": true,
+    "downstream_source_and_certificate_hashes_current": true,
+    "frozen_R01_files_unchanged": 25,
+    "frozen_R02_files_unchanged": 24,
+    "original_project_files_unchanged": 40,
+    "uniform_tubes_certified": 58,
+    "root_containment_joins_certified": 57,
+    "previous_cusps_identified": 2,
+    "exact_rational_continuation_check_passed": true,
+    "four_regression_groups_passed": true,
+    "direct_derivative_comparisons": 42,
+    "preconditioned_jacobian_sample_points": 6,
+    "direct_predictor_residual_components": 18,
+    "independent_mpmath_comparisons": 18,
+    "plot_visually_inspected": true
+  },
+  "display_bounds": {
+    "q_max_display": 0.5017061630445572,
+    "eta_plus_q_max_display": 0.5594601471297069,
+    "seam_containment_ratio_max_display": 0.1163036055761876,
+    "F_ttt_min_display": 8.439939804382052e-14,
+    "mu_prime_range_display": [
+      0.26047381245382917,
+      0.3314931610806679
+    ]
+  },
+  "trust_boundary": "Integral enclosures and derivative majorants are recomputed by the frozen R01 Arb-based integrator. The separate rational checker accepts these as inputs; mpmath tests are numerical support only. Analytical proof and implementation are not externally reviewed.",
+  "files": [
+    {
+      "path": "ARASTIRMA_NOTU.md",
+      "bytes": 8698,
+      "sha256": "ce2fb3dfd98eae0145925697feb1b1c3489e9a75f4ee7f8e9c2d58833004bc7a"
+    },
+    {
+      "path": "PROOF.md",
+      "bytes": 9822,
+      "sha256": "ad4ca97032a6473f3bff257fa23e32354a5b25e87f75580e34b804f3df7d17f8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5445,
+      "sha256": "d5275189195058998bd2c1c4419d2296a16a423c118f206e7258182fe082bb0b"
+    },
+    {
+      "path": "bridge_taylor.py",
+      "bytes": 5081,
+      "sha256": "a9f19171864ee87129dfcb4482235124b6aa85a5098b3425b4a2ee46cefb389e"
+    },
+    {
+      "path": "certify_connection.py",
+      "bytes": 8666,
+      "sha256": "b7774e48cf8d6a3d5add265a05afb64469009c8742a3d452d2bc0521428399d6"
+    },
+    {
+      "path": "check_connection.py",
+      "bytes": 8555,
+      "sha256": "3f83a08380f0526b6c5c5637b6feb40b7c2162d025216a086f382a28788696b8"
+    },
+    {
+      "path": "check_independent.py",
+      "bytes": 2325,
+      "sha256": "adb7eaa0a80c1d1307b24b7a86c86dedad7c8ceea339196cddd587f93184a2dd"
+    },
+    {
+      "path": "diagnostics/README.md",
+      "bytes": 1146,
+      "sha256": "e7c7251e084aa7577dfcc660565bf43a8e666c2a2eb0165255b5cd14ac4cb0f5"
+    },
+    {
+      "path": "diagnostics/coarse_interval_bound_failure.log",
+      "bytes": 1121,
+      "sha256": "cc00facf7e507480dd7588f919ca18605ffc1fe170bfe693e2bc08ddacbc0658"
+    },
+    {
+      "path": "diagnostics/refined_trial.log",
+      "bytes": 81,
+      "sha256": "aa77bec5e9f170762cfc6a3695237b6ae3d5eae19c436c0695f50caf13ab4e87"
+    },
+    {
+      "path": "diagnostics/trial_cell.json",
+      "bytes": 54681,
+      "sha256": "d95ee9c477949ee4e25ce865df7373846106383bd8fb395d6fcac78aa38176b4"
+    },
+    {
+      "path": "explore.py",
+      "bytes": 5083,
+      "sha256": "6d81030f0d4a00dd6b4cbd373cbc2e086a27f2bff695cbb7b0532fed79cb40e3"
+    },
+    {
+      "path": "plot_connection.py",
+      "bytes": 4799,
+      "sha256": "3a378744b55e14581d7487c476cfb608f2c31ea40b5817b716a316a044ccb23a"
+    },
+    {
+      "path": "results/connection_certificate.json",
+      "bytes": 3751000,
+      "sha256": "7f7128036189106fadf466e9a3438440461eb607633b5820aece818ef7dc53bc"
+    },
+    {
+      "path": "results/connection_run.log",
+      "bytes": 1197,
+      "sha256": "4de029b3bca91613bcd78c051d8e48face4752f03a7e2ddd7223b20d8f4421d4"
+    },
+    {
+      "path": "results/cusp_connection.png",
+      "bytes": 196088,
+      "sha256": "181496b27b9df53116e8b68397ad0d02a7ee851956b8fb93a29ff8ab6e1fd96f"
+    },
+    {
+      "path": "results/cusp_connection.svg",
+      "bytes": 159902,
+      "sha256": "6f9118f753c1aafa10cc9a136c238e06c6d6434db06b0ffbd842ca11d3711be3"
+    },
+    {
+      "path": "results/exact_check.json",
+      "bytes": 261089,
+      "sha256": "b503fa8b0f78d16f5978f6967bdc245ab253adc1eb01eb3fba07647432b4d1de"
+    },
+    {
+      "path": "results/exact_check.log",
+      "bytes": 563,
+      "sha256": "daa3c17a9bfafce67ab61a6627988a304e173b39cf523f6e853f5b01714868cf"
+    },
+    {
+      "path": "results/exploration.json",
+      "bytes": 209377,
+      "sha256": "95512f72d8170dccc451a72e8d30e2ffa2929a7eb120fe41786170b984afdbd4"
+    },
+    {
+      "path": "results/exploration_run.log",
+      "bytes": 1856,
+      "sha256": "fc5066dadcc30e8922c9981c0b04dc81825b0f866768d7572f110b9d6a04d284"
+    },
+    {
+      "path": "results/independent_check.json",
+      "bytes": 9099,
+      "sha256": "10f1e98f56377b2ce122f31074d0e17d17e377dc0859081e80e44bd3f861e47f"
+    },
+    {
+      "path": "results/independent_check.log",
+      "bytes": 149,
+      "sha256": "bcff5b97852d5a90e7657d6292a735ed947ca7b405e8357a8fb0948599be3827"
+    },
+    {
+      "path": "results/plot_metadata.json",
+      "bytes": 278,
+      "sha256": "0221740d1fa8df2b5cb40dc65c109e1f788aee23daff17f17752d14ea494ddfa"
+    },
+    {
+      "path": "results/plot_run.log",
+      "bytes": 50,
+      "sha256": "006f109e36e4b630b7c25dbbf7e753cd4e0cb034753c883fe56c10c374f3a0b5"
+    },
+    {
+      "path": "results/tests.log",
+      "bytes": 662,
+      "sha256": "7c0215703602182509d9ef79fde01d7807ca255ce545fd64c029705ec8c5f70a"
+    },
+    {
+      "path": "test_connection.py",
+      "bytes": 3208,
+      "sha256": "e6cf3f97c61941a6b094263469798d1cdea99173fc07f11b9c2e4038a148d57a"
+    }
+  ]
+}

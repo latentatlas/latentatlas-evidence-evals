@@ -1,0 +1,33 @@
+name: Research or evaluation question
+description: Propose an evaluation case, architecture question, or negative control.
+title: "[Research]: "
+labels: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: State the question or failure mode precisely.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why it matters
+      description: Explain the affected decision, evidence, identity, or action-authority behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Proposed evaluation
+      description: Describe packets, controls, verdicts, reason codes, or scoring that could test it.
+    validations:
+      required: true
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Data check
+      options:
+        - label: The proposal contains only synthetic or deliberately public data.
+          required: true

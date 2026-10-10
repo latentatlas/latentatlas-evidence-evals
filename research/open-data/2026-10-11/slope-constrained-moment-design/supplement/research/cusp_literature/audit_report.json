@@ -1,0 +1,41 @@
+{
+  "status": "r06_provenance_and_exact_algebra_passed",
+  "preserved_packages": [
+    {
+      "package": "cusp_verified",
+      "files": 25,
+      "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96"
+    },
+    {
+      "package": "cusp_region",
+      "files": 24,
+      "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5"
+    },
+    {
+      "package": "cusp_connection",
+      "files": 27,
+      "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1"
+    },
+    {
+      "package": "cusp_geometry",
+      "files": 25,
+      "manifest_sha256": "b3a1846431be58d2f3c5d45749f218aa4efebaca431e3ebd2ffe454ff7e22621"
+    },
+    {
+      "package": "cusp_width",
+      "files": 49,
+      "manifest_sha256": "eb7847154285acfa09fecb73aece53863409e29c62ed8045bde87f4974cf6dc8"
+    }
+  ],
+  "preserved_scientific_files": 150,
+  "preserved_original_files": 40,
+  "r05_dependency_audit": "passed",
+  "exact_polynomial_examples": 2,
+  "source_records": 9,
+  "resolved_tex_citations": 7,
+  "local_markdown_links_checked": 19,
+  "latex_compiled": false,
+  "external_mathematical_review": false,
+  "exhaustive_literature_priority_proved": false,
+  "audit_source_sha256": "5b0558344860fb6d20168642c13e592d699ed5c56776d097563454981dd0cb3e"
+}

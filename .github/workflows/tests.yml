@@ -27,6 +27,9 @@ jobs:
         run: |
           python -B verify_snapshot.py
           python -B -m unittest test_snapshot -v
+      - name: Verify six-paper open research release offline
+        working-directory: research/open-data/2026-10-11
+        run: python -B verify_release.py
 
   inspect-eval-tests:
     runs-on: ubuntu-latest

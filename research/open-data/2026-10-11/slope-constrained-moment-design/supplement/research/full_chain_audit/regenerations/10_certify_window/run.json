@@ -1,0 +1,17 @@
+{
+  "id": "10_certify_window",
+  "package": "swallowtail_window",
+  "script": "certify_window.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.22428762500203447,
+  "source_sha256": "5682f660b7eda7c53503292849feef128a00dfbd679e3b87d37aeec27b49e285",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/swallowtail_window/certify_window.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/10_certify_window/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:11.209019+00:00"
+}

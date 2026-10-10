@@ -1,0 +1,4 @@
+model_id,row_count,correct_count,accuracy_pct,false_authority_count,false_block_valid_count,primary_failure
+anthropic:claude-opus-4-7,1000,789,78.9,44,51,wrong_block_or_route
+cohere:command-a-reasoning-08-2025,990,723,73.03,139,21,wrong_block_or_route
+openai:gpt-5.5,1000,924,92.4,31,5,wrong_block_or_route

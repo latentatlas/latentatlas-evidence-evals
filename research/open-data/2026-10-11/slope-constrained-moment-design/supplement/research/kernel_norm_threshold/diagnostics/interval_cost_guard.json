@@ -1,0 +1,51 @@
+{
+  "status": "failed_before_certificate_interval_comparison_too_strong",
+  "prior_source_sha256": "22ead8c9999305279e577e743224ba979b50bd58501f030e4cb292f07385a98a",
+  "failed_check": "Norm bracket inconsistent",
+  "lower": {
+    "enclosure": "[9.17870796038273878823440475269e-10 +/- 4.29e-40]",
+    "mid_man_exp": [
+      1185085875584683231646229088076007688015391015004776119033258457070274699464039374110395205785833470170025591247,
+      -399
+    ],
+    "rad_man_exp": [
+      282318731,
+      -308
+    ]
+  },
+  "raw_cost_ball": {
+    "enclosure": "[9.178707960e-10 +/- 8.37e-20]",
+    "mid_man_exp": [
+      581769732765595116911,
+      -99
+    ],
+    "rad_man_exp": [
+      27431241,
+      -89
+    ]
+  },
+  "usable_cost_upper_endpoint": {
+    "enclosure": "[9.17870796083624551551138662463e-10 +/- 3.27e-40]",
+    "mid_man_exp": [
+      581769732793684707695,
+      -99
+    ],
+    "rad_man_exp": [
+      0,
+      0
+    ]
+  },
+  "alpha": {
+    "enclosure": "[9.17870796038277188241682256722e-10 +/- 4.69e-40]",
+    "mid_man_exp": [
+      8877101635207251,
+      -83
+    ],
+    "rad_man_exp": [
+      0,
+      0
+    ]
+  },
+  "diagnosis": "The raw Arb enclosure of alpha+sum(abs(w)) overlaps the certified lower-bound interval. A norm upper certificate must use its outward upper endpoint. Requiring strict order of the entire cost ball is unnecessarily strong; its lower endpoint is not a norm upper bound. No certificate was emitted by the failed run.",
+  "arithmetic_changed": false
+}

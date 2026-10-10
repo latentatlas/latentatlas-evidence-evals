@@ -1,0 +1,17 @@
+{
+  "id": "09_moment_dictionary",
+  "package": "cusp_shape_design",
+  "script": "moment_dictionary.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 6.975955458001408,
+  "source_sha256": "cab295a5d8baad5f83715aa31b051f8a93db03b632251c17f9820e9cbf748a83",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_shape_design/moment_dictionary.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/09_moment_dictionary/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:05.119890+00:00"
+}

@@ -1,0 +1,95 @@
+% R11 research fragment, 21 September 2026.
+% Not a complete manuscript. Requires amsmath/amssymb and theorem environments.
+% Analytic arguments are in PROOF.md. This fragment has not been compiled.
+\section{Relative kernel distance to a pinned order-four zero}
+
+Fix $Q=(\tau,\lambda_0,\mu_0,\nu_0)$ with $\tau\ne0$ and set
+\[
+ d\rho(u)=K(u)e^{\lambda_0u^2+\mu_0u^4+\nu_0u^6}\,du,
+ \qquad p_j(u)=(2u)^j\cos(2\tau u+j\pi/2).
+\]
+Assume $K\ge0$, positive density almost everywhere on a nonempty open
+interval, and $\int e^{\eta(u+u^2+u^4+u^6)}d\rho<\infty$ for some
+$\eta>0$. Write $f_j=\int p_jd\rho$ and $L_j(h)=\int p_jh\,d\rho$,
+where $h$ is a single real bounded function independent of all controls.
+Suppose $f_0=f_1=f_2=0$ and $f_3\ne0$. The relative cost of replacing
+$K$ by $K(1+h)$ is $\|h\|_\infty$, with no bandwidth restriction.
+
+\paragraph{Local moment control.}
+For every finite $m$, the map $h\mapsto(L_0(h),\ldots,L_m(h))$ has a
+bounded linear right inverse taking values in smooth compactly supported
+functions. Indeed, choose a smooth nonnegative bump $\chi$ in the
+positive-density interval. The matrix
+$B_{ij}=\int\chi p_i p_j\,d\rho$ is positive definite, and
+$R_mv=\chi\sum_j(B^{-1}v)_jp_j$ is a right inverse. Thus sufficiently
+small finite jet changes are realizable with a positive relative factor.
+This is a use of classical moment methods, not a new general method.
+
+\paragraph{Minimum-cost identity.}
+Define
+\[
+ \delta_* = \inf\{\|h\|_\infty:L_0(h)=L_1(h)=L_2(h)=0,
+                                  L_3(h)=-f_3\},
+ \quad
+ D=\min_{a\in\mathbb R^3}\int\left|p_3-\sum_{i=0}^2a_ip_i\right|d\rho.
+\]
+Then $D>0$, the minimum is attained, and
+\[
+ \delta_* = \frac{|f_3|}{D}.
+\]
+For a minimizer $a$, let $r_a=p_3-\sum a_ip_i$.
+The minimum-norm measurable multiplier is
+$h_*=-f_3\operatorname{sgn}(r_a)/D$, uniquely up to $\rho$-null sets.
+Finite-dimensional coercivity gives a minimizing $a$. The residual is
+analytic and nonzero, so its zeros have zero measure. Differentiating
+the convex objective gives $\int p_i\operatorname{sgn}(r_a)d\rho=0$,
+$i=0,1,2$. Hence the displayed multiplier is feasible. Every feasible
+$h$ satisfies $|f_3|=|\int r_ah\,d\rho|\le\|h\|_\infty D$.
+This is standard $L^1/L^\infty$ duality specialized to the pinned target.
+
+If $\delta_*<1$, the optimal measurable design has a uniformly positive
+relative factor almost everywhere. If the density is positive almost
+everywhere on all of $(0,\infty)$, then $\delta_*<1$ follows: $r_a$
+takes both signs on open intervals and
+$D=\int|r_a|d\rho>|\int r_ad\rho|=|f_3|$.
+
+\paragraph{Smooth nondegenerate designs.}
+When $\delta_*<1$, the infimum over real smooth compactly supported $h$
+with positive relative factor, an exact order-four zero at $Q$, and a
+rank-three $(\lambda,\mu,\nu)$ unfolding also equals $\delta_*$.
+No minimum attainment in this smooth class is asserted. Approximate
+$h_*$ in weighted $L^1$, correct moments $0,\ldots,3$ with $R_3$, then
+make arbitrarily small changes to moments $4,\ldots,7$ with $R_7$.
+Writing $g_j=f_j+L_j(h)$, the unfolding determinant at $g_0=\cdots=g_3=0$
+is
+\[
+ \det\partial_{(\lambda,\mu,\nu)}(g_0,g_1,g_2)
+       =\frac{g_4(g_4g_7-g_5g_6)}{4096}.
+\]
+The nonvanishing locus of this polynomial is dense. The moment
+corrections can therefore secure both exact order four and rank three
+at an arbitrarily small additional norm cost.
+
+\paragraph{Certified theta example.}
+For the original theta kernel and the exact R01 cusp point at $\nu_0=0$,
+define $h_c=\sum_{j=40}^{43}w_j\cos(2ju)$ by the exact system
+$Aw=(0,0,0,-f_3)^T$, $A_{nj}=\int p_n\cos(2ju)d\rho$, $0\le n\le3$.
+The matrix is certified nonsingular and
+\[
+ \|h_c\|_\infty\le\sum_{j=40}^{43}|w_j|<2.381\times10^{-7},
+ \qquad
+ 3.96\times10^{-10}<\delta_*<2.381\times10^{-7}.
+\]
+More precise outward endpoints are
+$[0.00000000039603640200,\;0.00000023803280902557]$.
+For this candidate,
+\[
+ 10^{13}g_4\in[-9.7629645301,-9.7629645300],\qquad
+ 10^{40}\det J\in[-4.4646224041,-4.4646224040].
+\]
+The universal lower bound is $|f_3|/\int(2u)^3d\rho$. The coefficient
+$\ell^1$ sum is only an upper bound on $\|h_c\|_\infty$.
+The endpoint ratio is about $601.04$; a sharp minimum has not been
+computed. This candidate uses a different modified kernel from R09/R10,
+whose finite root window has not been transferred. The analytic proofs
+await external review and a quantitative literature-priority assessment.

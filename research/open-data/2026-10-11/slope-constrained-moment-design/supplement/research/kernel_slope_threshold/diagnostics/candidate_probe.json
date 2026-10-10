@@ -1,0 +1,139 @@
+{
+  "status": "nonrigorous_candidate_only",
+  "source_sha256": "22dacef2a4af77267d08c9742cbb09fdf28a66e8952dc0e2ee6cbcecf70dd050",
+  "input_sha256": {
+    "R12": "d829941f8ca516e2eedcd70be04e89fcfc0618363c3d91f03e06c75d2a3c00cd",
+    "jets": "763ad4b5e59c3eb2ba2eea8e322f585b00faf357c0dbcb9bc8bae7d91d30e1e7"
+  },
+  "smoothing_width_dyadic": [
+    49500,
+    -30
+  ],
+  "transition_cutoff": 32,
+  "first_three_knots": [
+    0.0032703202992944284,
+    0.038318389081010644,
+    0.07627939240616548
+  ],
+  "first_three_knots_dyadic": [
+    [
+      7540845200017693,
+      2305843009213693952
+    ],
+    [
+      5522261849173671,
+      144115188075855872
+    ],
+    [
+      5496509491463275,
+      72057594037927936
+    ]
+  ],
+  "alpha": 9.17876525682397e-10,
+  "alpha_dyadic": [
+    277411157778905,
+    302231454903657293676544
+  ],
+  "smoothed_moments": [
+    -1.943539431351531e-18,
+    3.558634392779694e-21,
+    3.866655773379128e-21,
+    0.0003634073284117117
+  ],
+  "approximate_slope": 1.99103518160202e-05,
+  "approximate_relative_increase": 6.242320972127402e-06,
+  "history": [
+    {
+      "iteration": 0,
+      "first_three_moments": [
+        2.142333146694102e-09,
+        -6.634541238082937e-10,
+        -2.626320641348382e-09
+      ],
+      "first_three_knots": [
+        0.003271316146876031,
+        0.038316851889912476,
+        0.07628001626843198
+      ]
+    },
+    {
+      "iteration": 1,
+      "first_three_moments": [
+        -1.5892379809874074e-11,
+        -8.121954260812991e-12,
+        -3.3471351144728534e-13
+      ],
+      "first_three_knots": [
+        0.0032703516278724844,
+        0.03831834621437997,
+        0.0762794053270978
+      ]
+    },
+    {
+      "iteration": 2,
+      "first_three_moments": [
+        -1.492911591527861e-14,
+        -6.216200770094018e-15,
+        -2.439361118898146e-16
+      ],
+      "first_three_knots": [
+        0.0032703203233134504,
+        0.03831838904814209,
+        0.07627939241607201
+      ]
+    },
+    {
+      "iteration": 3,
+      "first_three_moments": [
+        -2.0759991715620976e-18,
+        -4.897963881594929e-20,
+        8.822501618337455e-20
+      ],
+      "first_three_knots": [
+        0.0032703202992946812,
+        0.038318389081010304,
+        0.07627939240616557
+      ]
+    },
+    {
+      "iteration": 4,
+      "first_three_moments": [
+        -2.317687284479679e-18,
+        4.240851602982804e-21,
+        3.8831993856301884e-21
+      ],
+      "first_three_knots": [
+        0.003270320299294428,
+        0.038318389081010644,
+        0.07627939240616548
+      ]
+    },
+    {
+      "iteration": 5,
+      "first_three_moments": [
+        -1.943539431351531e-18,
+        3.558634392779694e-21,
+        3.866655773379128e-21
+      ],
+      "first_three_knots": [
+        0.0032703202992944284,
+        0.038318389081010644,
+        0.07627939240616548
+      ]
+    },
+    {
+      "iteration": 6,
+      "first_three_moments": [
+        -1.943539431351531e-18,
+        3.558634392779694e-21,
+        3.866655773379128e-21
+      ],
+      "first_three_knots": [
+        0.0032703202992944284,
+        0.038318389081010644,
+        0.07627939240616548
+      ]
+    }
+  ],
+  "method": "96-point floating Gauss-Legendre transition integrals and 24-point shifted steps; approximate Newton with unsmoothed Jacobian. Exact moment correction and interval certification are separate."
+}

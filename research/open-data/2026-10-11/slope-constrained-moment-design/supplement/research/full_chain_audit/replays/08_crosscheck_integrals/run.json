@@ -1,0 +1,17 @@
+{
+  "id": "08_crosscheck_integrals",
+  "package": "cusp_pinned_family",
+  "script": "crosscheck_integrals.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 67.64261295799952,
+  "source_sha256": "59591a72ed638b6b8621da011921f8d36d4fa94fc604fbafe82a1fe10df88561",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_pinned_family/crosscheck_integrals.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/replays/08_crosscheck_integrals/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:14:15.917961+00:00"
+}

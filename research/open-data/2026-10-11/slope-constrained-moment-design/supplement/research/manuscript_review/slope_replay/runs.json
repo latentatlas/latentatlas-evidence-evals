@@ -1,0 +1,115 @@
+[
+  {
+    "id": "kernel_slope_asymptotics_frozen_audit",
+    "exit_code": 0,
+    "elapsed_seconds": 0.13346441699832212,
+    "source_sha256": "07a0c14ea08b477686c2f6f766445f1b28842f63199b38063a77fdd9f4d26b1d",
+    "log": "kernel_slope_asymptotics_frozen_audit.log"
+  },
+  {
+    "id": "kernel_slope_remainder_frozen_audit",
+    "exit_code": 0,
+    "elapsed_seconds": 0.11248670899658464,
+    "source_sha256": "ed88504bd7724f7387607b59493fdb79008719a7aa9cb204dc18312ffc1c0136",
+    "log": "kernel_slope_remainder_frozen_audit.log"
+  },
+  {
+    "id": "R15_producer",
+    "package": "kernel_slope_asymptotics",
+    "script": "certify_asymptotics.py",
+    "source_sha256": "7ad17fa9e327c6e8d7425a575dd7644c6d26dd56f3014a14b2688ee8f7a29b61",
+    "exit_code": 0,
+    "elapsed_seconds": 0.09838704101275653,
+    "output": "R15_producer.json",
+    "log": "R15_producer.log",
+    "output_sha256": "e923bfdcd4902addcb14f33ad135c15409fb4de0aa3e9391ced0165e1aca21b3"
+  },
+  {
+    "id": "R15_rational",
+    "package": "kernel_slope_asymptotics",
+    "script": "check_asymptotics.py",
+    "source_sha256": "162ab5b1bfa5cc1308d5851c3ed7c090518923e8b0df1b694783c13495c0a2ec",
+    "exit_code": 0,
+    "elapsed_seconds": 0.08011575001000892,
+    "output": "R15_rational.json",
+    "log": "R15_rational.log",
+    "output_sha256": "5d52dd4d1669b67fdc3b13b86bc354daa1f9b478b181ee57f1f85f8f358bd962"
+  },
+  {
+    "id": "R15_algebra",
+    "package": "kernel_slope_asymptotics",
+    "script": "check_algebra.py",
+    "source_sha256": "21a958c4fc3a4ac63d030cb51b6672d7a988e07fe10eb521ddd181d7283aafda",
+    "exit_code": 0,
+    "elapsed_seconds": 0.021090916998218745,
+    "output": "R15_algebra.json",
+    "log": "R15_algebra.log",
+    "output_sha256": "4dbb9e9ee781415a7c3028d047158d3bebedd977f6119b5a2fe340808375dbe9"
+  },
+  {
+    "id": "R15_numerical",
+    "package": "kernel_slope_asymptotics",
+    "script": "crosscheck_coefficient.py",
+    "source_sha256": "f9652057870b4927e51c93d65b9bceebc3333e892034ae25cb3edf64c83071fa",
+    "exit_code": 0,
+    "elapsed_seconds": 1.1569449579983484,
+    "output": "R15_numerical.json",
+    "log": "R15_numerical.log",
+    "output_sha256": "9e66a9d3f1df22eeb11ecf49de225f446789cee126408a4d286d2933cee533fe"
+  },
+  {
+    "id": "R16_producer",
+    "package": "kernel_slope_remainder",
+    "script": "certify_remainder.py",
+    "source_sha256": "954b4bfb9f633e8d529cab888f78d96e7d1b2b4b35e2a127d680f77e0d703852",
+    "exit_code": 0,
+    "elapsed_seconds": 0.07914687499578577,
+    "output": "R16_producer.json",
+    "log": "R16_producer.log",
+    "output_sha256": "f3a67b500138f9c86d1499c4300acfecc36ba9cbcca525e1ba2ae5576d244975"
+  },
+  {
+    "id": "R16_rational",
+    "package": "kernel_slope_remainder",
+    "script": "check_remainder.py",
+    "source_sha256": "484f2a409dd3015b26219f474327600f7ef5c6d3a2abe54e4de625b19849ade2",
+    "exit_code": 0,
+    "elapsed_seconds": 0.06810087501071393,
+    "output": "R16_rational.json",
+    "log": "R16_rational.log",
+    "output_sha256": "c55309de95e6e394b3fa39fb0539ce4045c6e965ed656df3d0b1bfbc4565f22f"
+  },
+  {
+    "id": "R16_algebra",
+    "package": "kernel_slope_remainder",
+    "script": "check_algebra.py",
+    "source_sha256": "0a4ac4c66460c3ba71c6d71647f94835f45ba18bde56be8c00b34bd67037dc56",
+    "exit_code": 0,
+    "elapsed_seconds": 0.021637582991388626,
+    "output": "R16_algebra.json",
+    "log": "R16_algebra.log",
+    "output_sha256": "8321f25d29fa4c8762e2db6240e6bce25a6658860996ef9a3463106659280125"
+  },
+  {
+    "id": "R16_derivatives",
+    "package": "kernel_slope_remainder",
+    "script": "crosscheck_derivatives.py",
+    "source_sha256": "735dcec5e02f2bb3456e08dbfaac7ec8f4d736a696616cd30d9398088e58b4a6",
+    "exit_code": 0,
+    "elapsed_seconds": 2.7102579999918817,
+    "output": "R16_derivatives.json",
+    "log": "R16_derivatives.log",
+    "output_sha256": "0e8c0a111a61a097830ef31e44f9ce334156104b393c8344c421a6a4a7792fc0"
+  },
+  {
+    "id": "R16_design",
+    "package": "kernel_slope_remainder",
+    "script": "crosscheck_design.py",
+    "source_sha256": "fb9d15d5d7d152c2b530860fae0815a423d29493ba5b2f8d10bdc7efc9b2b0ea",
+    "exit_code": 0,
+    "elapsed_seconds": 8.543942207994405,
+    "output": "R16_design.json",
+    "log": "R16_design.log",
+    "output_sha256": "644a6c6132e6edb6390fdc2767f0ed25f9c97041c1572022a7acea2ea0b9f5d6"
+  }
+]

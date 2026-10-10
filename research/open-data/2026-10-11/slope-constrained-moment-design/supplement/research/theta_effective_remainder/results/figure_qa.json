@@ -1,0 +1,8 @@
+{
+  "panels": 2,
+  "png_sha256": "3de3e0cb6b91b0dc47e270b3a8d5e6f78f1a1ada18ed907221f2131a352aa8c2",
+  "no_clipped_text": true,
+  "no_overlapping_labels": true,
+  "unknown_optimum_not_plotted_as_known": true,
+  "manual_visual_inspection": "2340x1044 PNG viewed in the tool display at 2048x914; titles, axis labels, legends and finite-window footnote are readable. Bounds and units agree with the proof."
+}

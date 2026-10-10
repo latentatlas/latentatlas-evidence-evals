@@ -1,0 +1,17 @@
+{
+  "id": "12_check_threshold",
+  "package": "kernel_norm_threshold",
+  "script": "check_threshold.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.3175582920011948,
+  "source_sha256": "a351a07fcaeb076b90dbfbc4ce0c9d425565ff3711f2fc4c96199663613a564c",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/kernel_norm_threshold/check_threshold.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/replays/12_check_threshold/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:14:56.407296+00:00"
+}

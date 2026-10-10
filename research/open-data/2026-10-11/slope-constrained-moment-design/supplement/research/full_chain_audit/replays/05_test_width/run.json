@@ -1,0 +1,21 @@
+{
+  "id": "05_test_width",
+  "package": "cusp_width",
+  "script": "test_width.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 7.131092167001043,
+  "source_sha256": "b02e92ad852501cebe63668951cfec78dcc51b1c1f763dcf2f2b8a8d55d396d3",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_width/test_width.py"
+  ],
+  "changed_clone_files": [
+    {
+      "path": "cusp_width/results/test_report.json",
+      "sha256": "64e18b3c0dd5cda3ee77b977203126fa0b5d881bc4e16fc2a75e4186307bf7f1",
+      "previous_sha256": "168550734f5f890c2612dbce3b1b54b929eb8e91269cbe6c56be461eae89646e"
+    }
+  ],
+  "completed_utc": "2026-09-20T23:12:10.439897+00:00"
+}
