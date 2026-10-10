@@ -1,0 +1,157 @@
+{
+  "cases_path": "research/concept_boundary_engine/concept_boundary_1000_test_content.jsonl",
+  "configured_models": [
+    "openai:gpt-5.5",
+    "anthropic:claude-opus-4-7",
+    "cohere:command-a-reasoning-08-2025",
+    "voyage:rerank-2.5"
+  ],
+  "confirm_third_party": true,
+  "contains_customer_data": false,
+  "customer_surface_mutation": false,
+  "data_classification": "synthetic",
+  "decision_llm_success_count": 2990,
+  "external_llm_calls_attempted": true,
+  "external_llm_failure_count": 10,
+  "external_llm_success_count": 3990,
+  "failure_sample": [
+    {
+      "case_id": "cbe1000-0881",
+      "failure": "http_429:{\"id\":\"f1498a8b-1f76-4098-8dee-0f44d1d9ecf6\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0882",
+      "failure": "http_429:{\"id\":\"1d78e4f5-0d46-402e-b353-ceb09e3c0b0f\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0993",
+      "failure": "http_429:{\"id\":\"a80416e7-6062-44a5-b824-5b96bed9b2a7\",\"message\":\"You are past the per-month request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0994",
+      "failure": "http_429:{\"id\":\"c7671587-39c3-4a05-85c1-80bba35f9516\",\"message\":\"You are past the per-month request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0995",
+      "failure": "http_429:{\"id\":\"8b2bb73c-2573-4e78-bb27-aa721e570a67\",\"message\":\"You are past the per-month request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0996",
+      "failure": "http_429:{\"id\":\"6d290e27-5e2c-4411-9ca7-c22e637c1121\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0997",
+      "failure": "http_429:{\"id\":\"a68746ac-1274-440f-8f21-e4370d344821\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0998",
+      "failure": "http_429:{\"id\":\"c317888d-dd7a-4ef7-88b6-40a15ce9a963\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-0999",
+      "failure": "http_429:{\"id\":\"edeb9cca-e947-4a04-8886-8b5c35c1b094\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    },
+    {
+      "case_id": "cbe1000-1000",
+      "failure": "http_429:{\"id\":\"862d0ae5-d949-4c6b-808b-592657e5fabb\",\"message\":\"You are past the per-minute request limit for this model, please wait and try again later.\"}",
+      "model_id": "cohere:command-a-reasoning-08-2025",
+      "provider": "cohere"
+    }
+  ],
+  "full_run": true,
+  "generated_at_utc": "2026-05-13T03:33:55.881183+00:00",
+  "missing_provider_config": [],
+  "mode": "real_llm_boundary_benchmark_runner",
+  "outputs": {
+    "raw_outputs": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs.jsonl",
+    "run_manifest": "outputs/latentatlas/concept_boundary_real_llm_runs/manifest.json",
+    "score_manifest": "outputs/latentatlas/concept_boundary_real_llm_scores_1000/manifest.json",
+    "voyage_rerank_outputs": "outputs/latentatlas/concept_boundary_real_llm_runs/voyage_rerank_outputs.jsonl"
+  },
+  "production_truth_mutation": false,
+  "provider_count_configured": 4,
+  "provider_count_requested": 4,
+  "rerank_success_count": 1000,
+  "resume": true,
+  "score_manifest": {
+    "cases_path": "research/concept_boundary_engine/concept_boundary_1000_test_content.jsonl",
+    "data_classification": "synthetic_benchmark_outputs",
+    "external_llm_calls_used_by_scorer": false,
+    "failure_count": 0,
+    "failure_sample": [],
+    "generated_at_utc": "2026-05-13T03:33:55.880201+00:00",
+    "input": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs.jsonl",
+    "mode": "concept_boundary_real_llm_output_scorer",
+    "model_count": 3,
+    "model_summaries": [
+      {
+        "accuracy_pct": 78.9,
+        "correct_count": 789,
+        "false_authority_count": 44,
+        "false_block_valid_count": 51,
+        "model_id": "anthropic:claude-opus-4-7",
+        "primary_failure": "wrong_block_or_route",
+        "row_count": 1000
+      },
+      {
+        "accuracy_pct": 72.53,
+        "correct_count": 718,
+        "false_authority_count": 138,
+        "false_block_valid_count": 21,
+        "model_id": "cohere:command-a-reasoning-08-2025",
+        "primary_failure": "wrong_block_or_route",
+        "row_count": 990
+      },
+      {
+        "accuracy_pct": 92.4,
+        "correct_count": 924,
+        "false_authority_count": 31,
+        "false_block_valid_count": 5,
+        "model_id": "openai:gpt-5.5",
+        "primary_failure": "wrong_block_or_route",
+        "row_count": 1000
+      }
+    ],
+    "outputs": {
+      "error_category_summary": "outputs/latentatlas/concept_boundary_real_llm_scores_1000/error_category_summary.csv",
+      "manifest": "outputs/latentatlas/concept_boundary_real_llm_scores_1000/manifest.json",
+      "model_summary": "outputs/latentatlas/concept_boundary_real_llm_scores_1000/model_summary.csv",
+      "scored_outputs": "outputs/latentatlas/concept_boundary_real_llm_scores_1000/scored_outputs.csv"
+    },
+    "raw_output_count": 2990,
+    "scored_output_count": 2990,
+    "status": "pass"
+  },
+  "selected_case_count": 1000,
+  "selection": "stratified",
+  "status": "fail",
+  "voyage_relevance_threshold": 0.8,
+  "voyage_rerank_summary": [
+    {
+      "avg_relevance_score": 0.4683,
+      "high_relevance_count": 22,
+      "high_relevance_false_authority_pressure_count": 0,
+      "max_relevance_score": 0.9140625,
+      "model_id": "voyage:rerank-2.5",
+      "row_count": 1000
+    }
+  ]
+}

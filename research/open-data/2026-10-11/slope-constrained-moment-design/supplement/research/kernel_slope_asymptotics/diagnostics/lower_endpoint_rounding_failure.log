@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/PROJECT/research/kernel_slope_asymptotics/check_asymptotics.py", line 150, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/PROJECT/research/kernel_slope_asymptotics/check_asymptotics.py", line 85, in main
+    enclosing(stored,lo,lo);loss+=stored.lo
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/PROJECT/research/kernel_slope_asymptotics/check_asymptotics.py", line 18, in enclosing
+    def enclosing(v,a,b):assert v.lo<=a<=b<=v.hi
+                                ^^^^^^^^^^^^^^^^
+AssertionError

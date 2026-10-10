@@ -1,0 +1,7 @@
+family,definition,local_numerator,local_denominator,local_rate,claim_boundary
+Stale evidence read,"A prior product-detail-page, screenshot, cache, or state observation is treated as current action evidence.",14,48,29.2%,Temporal-authority observation in frozen high-priority only.
+Identity and timing split,The target identity changes or conflicts between evidence capture and action-time judgment.,4,4,100.0%,Pattern-specific observation; not universal identity guard accuracy.
+Expired or missing authority,A risk signal or prior decision no longer authorizes the later action without revalidation.,25,146,17.1%,Descriptive unresolved-evidence rate only; not an error rate.
+State changed before execution,"Price, availability, seller, or workflow state changes while the decision is being materialized.",14,48,29.2%,Local action-type observation; not a general materialization failure rate.
+Visibility mistaken for truth,"Blocked access, timeout, empty page, or unavailable visibility is mistaken for product or workflow truth.",7,7,100.0%,"Blocked access is evidence state, not outcome truth."
+Outside-context contamination,"A reviewer or model imports outside memory, jargon, or domain ontology and replaces evidence visible in the review packet.",0,0,,Qualitative protocol guard; no counted denominator in the frozen high-priority pack.

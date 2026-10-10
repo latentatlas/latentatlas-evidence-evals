@@ -1,0 +1,15 @@
+{
+  "id": "04_test_geometry",
+  "package": "cusp_geometry",
+  "script": "test_geometry.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 4.498165832999803,
+  "source_sha256": "a0fb1dcbc6db1c65a2b251ad24c81e3efe54e74c3d04df2712cff82d25b78cd7",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_geometry/test_geometry.py"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:11:36.987584+00:00"
+}

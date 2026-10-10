@@ -1,0 +1,174 @@
+{
+  "created_utc": "2026-09-21T21:10:42.512838+00:00",
+  "scope": "Fixed-theta fourth-order expansion with a uniform explicit O(M^-6) remainder for all M>=2e-5.",
+  "files": [
+    {
+      "path": "BULGU_NOTU_TR.md",
+      "sha256": "18955fe47645d7aa44b841c0a126549c43410283875e2dc0230bc090777a0f94",
+      "bytes": 3427
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "sha256": "3b554dcd3827cab745343d79b18c688462e2ffe7bf1d9ff3551c74fd4be73226",
+      "bytes": 1290
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "bc94b824124e0784bcaa12279412bbf3b65e9d3e357cbfe5ef739c701ac64986",
+      "bytes": 15559
+    },
+    {
+      "path": "README.md",
+      "sha256": "60c0c9854bcf3fe289d3ef13680c17c97938e3d50d8ec3de9cf50a992bd538a1",
+      "bytes": 3348
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "990ad534d7912e43805bb0994b8162f760291582a22e27eaa842dd734ba3c7f7",
+      "bytes": 6108
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "06d6e59fa4685c5c39860bda207c1bc027002d8041e56b592bb9f41a56b9b794",
+      "bytes": 1638
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "dbbf4d4a7e7109dfad94a228860b7f4f92d9f8a609c889d4bf5bc114b59c4c51",
+      "bytes": 12280
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "bf58822224e16b855ba8f511085c69a00b23747698fdf7b78d7683e77534e016",
+      "bytes": 2877
+    },
+    {
+      "path": "certify_global.py",
+      "sha256": "f171b431466471e0a0f7cdf1516090880854ebab7713f63efeb9ce81e07db05c",
+      "bytes": 6690
+    },
+    {
+      "path": "check_algebra.py",
+      "sha256": "ba34fbd189169191d809407211134ffff08bf9c229370f46e1d6fed169ef318f",
+      "bytes": 5428
+    },
+    {
+      "path": "check_bounds.py",
+      "sha256": "eec6cb137fc85731f9c02a74ab61b0881d5a2a6611d97e1b1c15fba1ee88e47b",
+      "bytes": 5059
+    },
+    {
+      "path": "crosscheck_tail.py",
+      "sha256": "e63f6d609767d8bacee46ff58edfee31e722d7a6a3dcd8507080306b4024e17c",
+      "bytes": 6462
+    },
+    {
+      "path": "diagnostics/README.md",
+      "sha256": "36ee5b603b0f831660a78718333c1f3f04f92143987e4acd6657158458809bf5",
+      "bytes": 1215
+    },
+    {
+      "path": "diagnostics/direct_check_before_explicit_jet_records.json",
+      "sha256": "f4d301b698330aa823f8e3d0ec489d2b98cfea7d01ce435a7d45dda4ff668855",
+      "bytes": 63132
+    },
+    {
+      "path": "figures/global_fourth_order.png",
+      "sha256": "474df3d70eeee054e7f0aa5041cdc293a115014ed2464087b2eae2e1d4b110d1",
+      "bytes": 217107
+    },
+    {
+      "path": "figures/global_fourth_order.svg",
+      "sha256": "cf86eeb7b15543e7b197b6262dbecaa954a1911e57b9d1ef882c94ab3befea97",
+      "bytes": 124929
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "62abd1e9e7113ec8ddb562ff7ed17f4e5bcfc397d3e5b36af905d994ba6982b4",
+      "bytes": 3697
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "5dd2dfa677555a58a0545938dbb4e5a3b4dd8f655846b1831d390e848c9cf145",
+      "bytes": 66
+    },
+    {
+      "path": "results/TABLE.md",
+      "sha256": "bfb1f51038af62f0796fb7bb85bb9c693e3056e27fb9e3dcc7f118effb8e08e8",
+      "bytes": 3414
+    },
+    {
+      "path": "results/algebra.json",
+      "sha256": "8053be2a3dff891f3795e7f46fcb519c63c43746e3c3742cf6287e0e7f09af0b",
+      "bytes": 4761
+    },
+    {
+      "path": "results/certificate.json",
+      "sha256": "ba5ac26698aaf135403b781adfd655a4e0609966fdba4856f6957c4d5529ef62",
+      "bytes": 21437
+    },
+    {
+      "path": "results/direct_check.json",
+      "sha256": "3b89f9bfba12f49bfd9346e3de0fcff49a04628164b629ffab2115b47df7e8a8",
+      "bytes": 87423
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "99ea74487cba835fe12e3c5f2d93b00fa4ef788f6ed7737e22fceb1af8a828eb",
+      "bytes": 590
+    },
+    {
+      "path": "results/plot_data.json",
+      "sha256": "90376f5cc365fccf5afdc2bcfb32b142506596964e105b365ef877961ae2db7c",
+      "bytes": 64588
+    },
+    {
+      "path": "results/rational_check.json",
+      "sha256": "b9937837ae00b3a3d73670bd2dd2c744a92c41dea0aa9de2567ab1492ab8e4e7",
+      "bytes": 4886
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "8d76ae1645cf112a11824cb7ce14a5c17d181d23612c542ddc37576dadaad9cd",
+      "bytes": 140
+    }
+  ],
+  "audit": {
+    "status": "R26_global_remainder_evidence_and_preservation_passed",
+    "prior_manifests": 26,
+    "prior_frozen_file_entries": 1070,
+    "exact_check_groups": 22,
+    "rational_decision_inequalities": 22,
+    "parent_R25_evidence_replayed": true,
+    "independent_precision_runs": 2,
+    "independent_local_inequalities": 600,
+    "precision_comparisons": 40,
+    "minimum_slope_budget": "2e-5",
+    "upper_slope_budget": null,
+    "published_remainder_constants": [
+      "9.593e-54",
+      "1.488e-53"
+    ],
+    "global_sixth_order_remainder_bound": true,
+    "sixth_order_coefficient_claimed": false,
+    "positive_fourth_order_correction_for_all_M_above_onset": true,
+    "onset_claimed_minimal": false,
+    "adaptive_finite_prefix": true,
+    "infinite_tail_retained": true,
+    "prefix_continuity_required": false,
+    "scientific_figure_panels": 2,
+    "figure_curve_points": 241,
+    "cusp_curve_uniformity": false,
+    "exact_finite_M_optimizer_identified": false,
+    "previous_packages_modified": false,
+    "manuscripts_modified": false,
+    "formal_proof": false,
+    "external_referee_review": false,
+    "literature_priority_established": false,
+    "public_release_or_submission": false,
+    "audit_source_sha256": "dbbf4d4a7e7109dfad94a228860b7f4f92d9f8a609c889d4bf5bc114b59c4c51",
+    "trust_boundary": "Fresh exact/rational replay and optional fresh Arb for R26 and R25; recorded independent numerical corroboration. Hashes and arithmetic checks do not mechanically prove the adaptive-prefix, weighted-tail, support, repair or scalar-feasibility arguments, nor the inherited analytic chain.",
+    "closed_utc": "2026-09-21T21:10:42.512838+00:00",
+    "Arb_replayed_at_freeze": true
+  }
+}

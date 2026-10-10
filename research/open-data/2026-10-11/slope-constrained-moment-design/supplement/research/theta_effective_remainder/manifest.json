@@ -1,0 +1,182 @@
+{
+  "created_utc": "2026-09-21T20:29:30.258507+00:00",
+  "scope": "Finite-window fourth-order error theorem, validated bounds and explicit certification terminology.",
+  "files": [
+    {
+      "path": "CERTIFICATION_TERMINOLOGY_TR.md",
+      "sha256": "4f4bab4199f0e11ccd961a077b9c039457befd85e85e8e8299da10a87c0f31e0",
+      "bytes": 4837
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "sha256": "bd9f85d939bd456e3303dfeff9d906ed8fd6c3b083e8921178681b0aa5a858aa",
+      "bytes": 1390
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "b3bfdd985becb07d61bd3254bcb0e0beb18a02f05ad1b60a7ce777e74d6a46e0",
+      "bytes": 12641
+    },
+    {
+      "path": "README.md",
+      "sha256": "0218b67ab79518f25d3c5556a336e4250332a36d967620bfc157b0ef4fab32ff",
+      "bytes": 2799
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "d984583d43037f4e657a0e2e2921011122fca2375ed3d720fe08380885072273",
+      "bytes": 5326
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "3dd248615656f250c41bc26431ccea8c4855357c13f6a279bdfa2629f82becd0",
+      "bytes": 1700
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "17092e8b193f83e11d1ece9204508cf83150838de4f959771b21fab4e7fb124e",
+      "bytes": 10075
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "dbd35bd567d80750d2f6df7592b34dbd396ab2d140ab64032b17a0fbe1124a34",
+      "bytes": 2762
+    },
+    {
+      "path": "certify_remainder.py",
+      "sha256": "65dd6a39a0b42934feaca45f97ca690903c328c4e1077e557c787b4c89392d3c",
+      "bytes": 9790
+    },
+    {
+      "path": "check_algebra.py",
+      "sha256": "6719f1a2f8e92e22084df42c624a412e36038bf56d086feea9d4dbde6d01a254",
+      "bytes": 2552
+    },
+    {
+      "path": "check_bounds.py",
+      "sha256": "8d1b09ef9c8e1b7bf012f6f08443dd24bcf5cbc5b80c92e8cab58ad15f49fcca",
+      "bytes": 7793
+    },
+    {
+      "path": "crosscheck.py",
+      "sha256": "92dc2ae0f343e7d8fa5bff53641f38feb71045dbcd9943dbf8743dfefe0859f1",
+      "bytes": 5424
+    },
+    {
+      "path": "diagnostics/README.md",
+      "sha256": "05ff5eb1a623fe6c42c143061d72e05569e679cc530a0c8b247739e92c0bd6ac",
+      "bytes": 1155
+    },
+    {
+      "path": "diagnostics/first_bounds.json",
+      "sha256": "44a8b8241a3d597ff6684da38a9555acba22813d233bdbb73ab42795f0112063",
+      "bytes": 3067395
+    },
+    {
+      "path": "figures/effective_fourth_order.png",
+      "sha256": "3de3e0cb6b91b0dc47e270b3a8d5e6f78f1a1ada18ed907221f2131a352aa8c2",
+      "bytes": 206785
+    },
+    {
+      "path": "figures/effective_fourth_order.svg",
+      "sha256": "6f9038b396ac4eb53047eddf755e2fd4729de7d9236ed5f25f1bb81be7e62f52",
+      "bytes": 122710
+    },
+    {
+      "path": "jets.py",
+      "sha256": "6050a9a2d4f3a30611924920499bbb778f6bb2a8f4829b7118c7f4779723dd02",
+      "bytes": 2427
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "4bd443d80a199ad0332e25d5bc0aad6f607f2f1a59f4a833a01bb77f136e88b0",
+      "bytes": 4029
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "5dd2dfa677555a58a0545938dbb4e5a3b4dd8f655846b1831d390e848c9cf145",
+      "bytes": 66
+    },
+    {
+      "path": "results/TABLE.md",
+      "sha256": "ea331e235276ad0fb39a6ec10899b83eef2bc28dbf88b4e14dde1c3f448b5937",
+      "bytes": 1827
+    },
+    {
+      "path": "results/algebra.json",
+      "sha256": "057934053620a03b6bb50d18cc2dacda82453263622361b8f687a4f98f9b1664",
+      "bytes": 1513
+    },
+    {
+      "path": "results/certificate.json",
+      "sha256": "69ec3d219479a41ff375e0ffe11ee99c259bdb1c85358182957346f099622bd6",
+      "bytes": 3067395
+    },
+    {
+      "path": "results/direct_check.json",
+      "sha256": "ac34d43bee256eb71d4b2f5132ac71457adee493b2428d4aaeac558195580a70",
+      "bytes": 337173
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "5d5adaf3798c8e7d82d40dabcc21a38522786f89b4475f4608b83f3bcc7e63e7",
+      "bytes": 406
+    },
+    {
+      "path": "results/plot_data.json",
+      "sha256": "ad0160e1a093ca285bc1efd53846fd1aeac4dbfd3356e505fe6f9374d3cd01db",
+      "bytes": 88365
+    },
+    {
+      "path": "results/rational_check.json",
+      "sha256": "004752317582cdf14d0665bac7d5e1b9310d03ebfb4359406d12fb32f45975a5",
+      "bytes": 6207
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "8d76ae1645cf112a11824cb7ce14a5c17d181d23612c542ddc37576dadaad9cd",
+      "bytes": 140
+    }
+  ],
+  "audit": {
+    "status": "R25_effective_finite_window_evidence_and_preservation_passed",
+    "prior_manifests": 25,
+    "prior_frozen_file_entries": 1043,
+    "exact_check_groups": 15,
+    "rational_inequalities_checked": 74,
+    "finite_root_neighborhoods": 28,
+    "finite_sign_leaves": 354,
+    "independent_precision_runs": 2,
+    "independent_jet_comparisons": 1624,
+    "independent_local_remainder_inequalities": 840,
+    "precision_comparisons": 420,
+    "budget_interval": [
+      "2e-5",
+      "2e-3"
+    ],
+    "published_remainder_constants": [
+      "9.593e-54",
+      "1.488e-53"
+    ],
+    "effective_fourth_order_remainder_on_finite_window": true,
+    "leading_approximation_underestimates_on_window": true,
+    "whole_integral_tail_included": true,
+    "exact_moment_repair_proved_by_contraction": true,
+    "scientific_figure_panels": 2,
+    "all_large_M_sixth_order_remainder": false,
+    "sixth_order_coefficient_claimed": false,
+    "global_numerical_asymptotic_onset": false,
+    "cusp_curve_uniformity": false,
+    "exact_finite_M_optimizer_identified": false,
+    "previous_packages_modified": false,
+    "manuscripts_modified": false,
+    "formal_proof": false,
+    "external_referee_review": false,
+    "literature_priority_established": false,
+    "public_release_or_submission": false,
+    "audit_source_sha256": "17092e8b193f83e11d1ece9204508cf83150838de4f959771b21fab4e7fb124e",
+    "trust_boundary": "Fresh exact/rational replay and optionally Arb; recorded independent local numerical checks. The analytic support, contraction, Taylor and tail arguments and inherited Q/b* localization require mathematical review and are not mechanically proved by this script.",
+    "closed_utc": "2026-09-21T20:29:30.258507+00:00",
+    "Arb_replayed_at_freeze": true
+  }
+}

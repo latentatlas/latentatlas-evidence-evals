@@ -1,0 +1,13 @@
+archetype,row_count
+adversarial_mixed_cases,40
+bridge_context_does_not_grant_evidence,80
+contradiction_blocks_allow,90
+evidence_does_not_grant_action,90
+evidence_does_not_grant_publish,90
+peer_comparison_does_not_grant_identity,90
+privacy_blocks_all_downstream_use,80
+related_does_not_grant_publish,80
+stale_or_superseded_evidence_blocks_use,90
+valid_action_ready,90
+valid_evidence_support,100
+valid_publish_safe,80

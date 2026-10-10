@@ -1,0 +1,13 @@
+{
+  "png_sha256": "9a33d7db134e76395adafb22a721caa99fd53b2de99e00fb67e59288e1e9f958",
+  "image_dimensions": [
+    2592,
+    1080
+  ],
+  "panels": 2,
+  "no_clipped_text": true,
+  "no_overlapping_labels": true,
+  "bounds_not_fitted_optimum": true,
+  "domains_and_open_question_visible": true,
+  "review_method": "Rendered PNG inspected visually. Generator axis tightened to display the finite negative margin. Prior comparison and new bound visibly distinguished."
+}

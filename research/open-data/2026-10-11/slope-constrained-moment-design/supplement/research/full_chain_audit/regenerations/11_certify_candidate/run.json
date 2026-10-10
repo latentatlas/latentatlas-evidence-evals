@@ -1,0 +1,17 @@
+{
+  "id": "11_certify_candidate",
+  "package": "kernel_design_principle",
+  "script": "certify_candidate.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 1.9798161670041736,
+  "source_sha256": "ec69d62892059988d1a129275dd4048cb43323e49985e35f0e7fecb74b7407ed",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/kernel_design_principle/certify_candidate.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/11_certify_candidate/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:14.940385+00:00"
+}

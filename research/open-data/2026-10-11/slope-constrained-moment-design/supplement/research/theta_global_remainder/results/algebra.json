@@ -1,0 +1,246 @@
+{
+  "status": "R26_exact_tail_constants_passed",
+  "checks": [
+    {
+      "name": "known_third_theta_derivative",
+      "passed": true
+    },
+    {
+      "name": "tail_theta_absolute_series_ratio",
+      "passed": true
+    },
+    {
+      "name": "potential_derivative_normalization",
+      "passed": true
+    },
+    {
+      "name": "Bell_numbers",
+      "passed": true
+    },
+    {
+      "name": "inherited_log_weight_bounds",
+      "passed": true
+    },
+    {
+      "name": "inherited_raw_bounds",
+      "passed": true
+    },
+    {
+      "name": "coarse_box_phase_monotonicity",
+      "passed": true
+    },
+    {
+      "name": "coarse_box_amplitude_derivative",
+      "passed": true
+    },
+    {
+      "name": "uniform_tail_root_motion",
+      "passed": true
+    },
+    {
+      "name": "active_raw_derivative",
+      "passed": true
+    },
+    {
+      "name": "active_raw_residual",
+      "passed": true
+    },
+    {
+      "name": "log_weight_on_active_cell",
+      "passed": true
+    },
+    {
+      "name": "active_density_derivative_lower",
+      "passed": true
+    },
+    {
+      "name": "neighborhood_product_factor",
+      "passed": true
+    },
+    {
+      "name": "scaled_center_bound",
+      "passed": true
+    },
+    {
+      "name": "cell_geometry",
+      "passed": true
+    },
+    {
+      "name": "tail_B_constant",
+      "passed": true
+    },
+    {
+      "name": "inactive_leading_constant",
+      "passed": true
+    },
+    {
+      "name": "inactive_Xi_constant",
+      "passed": true
+    },
+    {
+      "name": "trial_objective_density_constant",
+      "passed": true
+    },
+    {
+      "name": "weighted_tail_decay",
+      "passed": true
+    },
+    {
+      "name": "inactive_integral_factor_bounds",
+      "passed": true
+    }
+  ],
+  "check_groups": 22,
+  "epsilon": "1/4096",
+  "a_max": "1/16384",
+  "v_absolute_bounds": [
+    "4",
+    "3",
+    "168"
+  ],
+  "theta_polynomials": [
+    [
+      -3,
+      2
+    ],
+    [
+      -15,
+      30,
+      -8
+    ],
+    [
+      -75,
+      330,
+      -224,
+      32
+    ],
+    [
+      -375,
+      3270,
+      -4232,
+      1440,
+      -128
+    ],
+    [
+      -1875,
+      30930,
+      -68096,
+      41408,
+      -8448,
+      512
+    ],
+    [
+      -9375,
+      285870,
+      -1008968,
+      976320,
+      -343040,
+      46592,
+      -2048
+    ]
+  ],
+  "phi_relative_constants": [
+    "1",
+    "134",
+    "3526",
+    "103110",
+    "3276422",
+    "111850502"
+  ],
+  "weight_relative_constants": [
+    "1",
+    "135",
+    "3796",
+    "114497",
+    "3733869",
+    "130481214"
+  ],
+  "p_derivative_constants": [
+    [
+      "1",
+      "84",
+      "7056",
+      "592704",
+      "49787136",
+      "4182119424"
+    ],
+    [
+      "2",
+      "170",
+      "14448",
+      "1227744",
+      "104315904",
+      "8862110208"
+    ],
+    [
+      "4",
+      "344",
+      "29576",
+      "2542176",
+      "218453760",
+      "18767379456"
+    ],
+    [
+      "8",
+      "696",
+      "60528",
+      "5261808",
+      "457244928",
+      "39719296512"
+    ]
+  ],
+  "raw_derivative_constants": [
+    "8221/1000",
+    "178701/250",
+    "7765967/125",
+    "674735748/125",
+    "58602321792/125",
+    "5087940818688/125"
+  ],
+  "q_relative_constants": [
+    [
+      "1",
+      "3417/25",
+      "2657764/625",
+      "2105885213/15625",
+      "1785211042821/390625",
+      "1613893160861232/9765625"
+    ],
+    [
+      "2",
+      "1367/5",
+      "5322362/625",
+      "4219743718/15625",
+      "3578845626494/390625",
+      "3236712376936569/9765625"
+    ],
+    [
+      "4",
+      "13672/25",
+      "10658394/625",
+      "8455454522/15625",
+      "1434914045572/78125",
+      "6491318982005608/9765625"
+    ],
+    [
+      "8",
+      "27348/25",
+      "21344132/625",
+      "16942884226/15625",
+      "14382962273808/390625",
+      "13018510815150516/9765625"
+    ]
+  ],
+  "residual_neighborhood_fourth_constant": "179697112043788719/62500000",
+  "residual_neighborhood_fifth_constant": "93383163357299567629/781250000",
+  "active_moment_constants": [
+    "767774814356651968082353/2061584302080000000",
+    "768105128116956623422879/1030792151040000000",
+    "1536871114903397768385841/1030792151040000000"
+  ],
+  "active_residual_sixth_constant": "2057083052982857676813982310638655334705259/145268109580462718976000000000000",
+  "active_balance_fourth_constant": "48775379053523955677454123918539/131941395333120000000000",
+  "active_dual_eighth_constant": "2379037601814943450358867129841483247866700217725195216307894521/3481706360490132023153786880000000000000000000000",
+  "source_sha256": "ba34fbd189169191d809407211134ffff08bf9c229370f46e1d6fed169ef318f",
+  "trust_boundary": "Exact rational inequalities and derivative coefficients; the analytic use of adaptive prefixes, tail weights and scalar feasibility is stated in PROOF.md."
+}

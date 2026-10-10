@@ -1,0 +1,12 @@
+{
+  "status": "precision_rerun_identical_and_root_contained",
+  "identical_interval_balls": 72,
+  "ignored_metadata_differences": 1,
+  "higher_precision_root_box_inside_110_digit_box": true,
+  "dps": 130,
+  "theta_terms": 20,
+  "integration_panels": 16,
+  "command": "PYTHONDONTWRITEBYTECODE=1 .venv-math/bin/python research/cusp_verified/certify_cusp.py --family quartic --dps 130 --terms 20 --pieces 16 --output research/full_chain_audit/quartic_precision_replay.json",
+  "source_sha256": "46b521a50d37d783abae9c037e298e27746c289ed7c61d3f810f010f15356c4b",
+  "scope": "Existing R01 precision result only; no new scientific claim."
+}

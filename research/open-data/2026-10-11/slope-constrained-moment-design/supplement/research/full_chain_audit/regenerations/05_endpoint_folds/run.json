@@ -1,0 +1,21 @@
+{
+  "id": "05_endpoint_folds",
+  "package": "cusp_width",
+  "script": "endpoint_folds.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 3.7763309579968336,
+  "source_sha256": "558c9339c58653fac0eb97e78aad780909adab4478bf52e65cc403f92347c9f6",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_width/endpoint_folds.py"
+  ],
+  "changed_clone_files": [
+    {
+      "path": "cusp_width/results/endpoint_folds.json",
+      "sha256": "720efd75e086645b3e11fdd51158a60e2b5eea064d25114b9b71ebd6030d6d76",
+      "previous_sha256": "36bdfc61dcb653d3b3193c577858579d98d12987617c7f57fb78e623a8c59c44"
+    }
+  ],
+  "completed_utc": "2026-09-20T23:13:58.691648+00:00"
+}

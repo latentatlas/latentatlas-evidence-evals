@@ -1,0 +1,83 @@
+{
+  "status": "R24_exact_root_and_tail_algebra_passed",
+  "checks": [
+    {
+      "name": "root_B_identity_orientation_-1",
+      "passed": true
+    },
+    {
+      "name": "root_G_identity_orientation_-1",
+      "passed": true
+    },
+    {
+      "name": "root_R_logarithmic_identity_orientation_-1",
+      "passed": true
+    },
+    {
+      "name": "root_B_identity_orientation_1",
+      "passed": true
+    },
+    {
+      "name": "root_G_identity_orientation_1",
+      "passed": true
+    },
+    {
+      "name": "root_R_logarithmic_identity_orientation_1",
+      "passed": true
+    },
+    {
+      "name": "root_third_derivative_product_rule",
+      "passed": true
+    },
+    {
+      "name": "raw_residual_tail_derivative_bounds",
+      "passed": true
+    },
+    {
+      "name": "tail_logarithmic_residual_ratios",
+      "passed": true
+    },
+    {
+      "name": "weight_logarithmic_jet_bounds",
+      "passed": true
+    },
+    {
+      "name": "root_density_second_third_ratios",
+      "passed": true
+    },
+    {
+      "name": "R_tail_absolute_bound",
+      "passed": true
+    },
+    {
+      "name": "G_B_tail_absolute_bounds",
+      "passed": true
+    },
+    {
+      "name": "geometric_switch_sum",
+      "passed": true
+    },
+    {
+      "name": "localization_from_strong_convexity",
+      "passed": true
+    }
+  ],
+  "check_groups": 15,
+  "raw_derivative_constant_upper_before_rounding": [
+    "178701/250",
+    "7765967/125",
+    "674735748/125"
+  ],
+  "weight_first_ratio_constant_upper": "3372/25",
+  "weight_second_ratio_constant_upper": "2351663/625",
+  "R_factor_upper_before_rounding": "27323/12",
+  "tail_log_decay_margins": [
+    552,
+    554,
+    549,
+    544
+  ],
+  "source_sha256": "eaff40a71b80e503f05964848dceeec5aab060d46a136e20471b16afecca3ae2",
+  "algebra_helper_sha256": "3ac355cf549b8790d098e0be701e97136cbd8d36478f087aa553f2435e696f23",
+  "trust_boundary": "Exact finite identities and rational inequalities. The zero identities, inherited localization and analytic theta tail derivation are separate explicit proof inputs."
+}

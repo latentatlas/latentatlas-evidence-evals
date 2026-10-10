@@ -1,0 +1,15 @@
+{
+  "status": "visually_reviewed",
+  "external_review": false,
+  "reviewer": "Codex visual inspection",
+  "files": {
+    "minimum_relative_change.png": "cdc9f048c1b3be46864168c978ccbb766ce698315fa5c0adc6c1e6d729f91281"
+  },
+  "checks": [
+    "Title, logarithmic axis and endpoint labels legible",
+    "Lower, unresolved and feasible regions match the certified budget interpretation",
+    "601.04 ratio is shown as a bound gap, not an optimality guarantee",
+    "No root-count or finite-window geometry is depicted"
+  ],
+  "issues_found": []
+}

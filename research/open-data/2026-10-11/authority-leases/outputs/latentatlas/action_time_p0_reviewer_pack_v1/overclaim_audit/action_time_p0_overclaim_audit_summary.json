@@ -1,0 +1,33 @@
+{
+  "allowed_boundary_context_count": 94,
+  "audit_schema_version": "latentatlas_action_time_p0_overclaim_audit_v1",
+  "claim_boundary": {
+    "allowed_claims": [
+      "Risk phrases may appear only in explicit blocked/negative/boundary context."
+    ],
+    "blocked_claims": [
+      "Positive population probability, zero-risk, proof, or production-readiness claims."
+    ]
+  },
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "generated_at_utc": "2026-07-14T12:12:59.736768+00:00",
+  "issue_count": 0,
+  "mode": "latentatlas_action_time_p0_overclaim_audit",
+  "outputs": {
+    "findings": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/overclaim_audit/action_time_p0_overclaim_audit_findings.csv",
+    "manifest": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/overclaim_audit/action_time_p0_overclaim_audit_manifest.json",
+    "report": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/overclaim_audit/action_time_p0_overclaim_audit.md",
+    "summary": "outputs/latentatlas/action_time_p0_reviewer_pack_v1/overclaim_audit/action_time_p0_overclaim_audit_summary.json"
+  },
+  "production_truth_mutation": false,
+  "source_count": 3,
+  "sources": [
+    "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_instructions.md",
+    "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_adjudication_codebook.md",
+    "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_casebook.md"
+  ],
+  "status": "pass",
+  "total_match_count": 94
+}

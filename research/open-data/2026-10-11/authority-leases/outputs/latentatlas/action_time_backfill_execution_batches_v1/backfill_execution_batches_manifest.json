@@ -1,0 +1,24 @@
+{
+  "batch_count": 27,
+  "completed_response_rows_excluded": 6,
+  "external_services_used": false,
+  "generated_at_utc": "2026-07-15T17:10:53.720134+00:00",
+  "inputs": {
+    "backfill_summary": "outputs/latentatlas/action_time_real_shadow_review_backfill/action_time_review_backfill_summary.json",
+    "existing_responses": "outputs/latentatlas/action_time_real_shadow_review_backfill/human_review_responses_reviewer01_hsyn.csv",
+    "queue": "outputs/latentatlas/action_time_real_shadow_review_backfill/action_time_review_backfill_queue.jsonl"
+  },
+  "outputs": {
+    "batch_manifest": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batch_manifest.csv",
+    "intake_checklist": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_response_intake_checklist.md",
+    "manifest": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batches_manifest.json",
+    "report": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batches_report.md",
+    "summary": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batches_summary.json"
+  },
+  "pending_queue_count": 2608,
+  "production_truth_mutation": false,
+  "raw_customer_data_copied": false,
+  "schema_version": "latentatlas_action_time_backfill_execution_batches_v1",
+  "source_queue_count": 2614,
+  "status": "pass"
+}

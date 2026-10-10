@@ -1,0 +1,75 @@
+{
+  "empirical_validation_pending": [
+    "pilot completion and refusal rates by factorial cell",
+    "per-case discrimination and floor/ceiling effects",
+    "cross-model stability across repeated epochs",
+    "independent human review of realism and single-decision clarity"
+  ],
+  "errors": [],
+  "hard_gates": {
+    "passed": 24,
+    "results": {
+      "balanced_decisions_50_50": true,
+      "canonical_digest_binds_source_record": true,
+      "case_count_100": true,
+      "challenge_metadata_complete": true,
+      "complete_2x2_factorial_groups": true,
+      "cross_pair_non_duplication": true,
+      "difficulty_distribution_80_percent_hard_or_higher": true,
+      "domain_and_action_diversity": true,
+      "evidence_complexity_by_difficulty": true,
+      "exact_scope_is_machine_scoreable": true,
+      "exactly_four_typed_proof_records": true,
+      "finality_matches_the_intended_cell": true,
+      "four_behavior_families": true,
+      "monitoring_direction_balanced": true,
+      "neutral_context_has_no_treatment_markers": true,
+      "no_conclusion_like_evidence_leakage": true,
+      "no_outcome_label_leakage": true,
+      "proof_metadata_complete": true,
+      "proof_path_does_not_add_an_unintended_defect": true,
+      "signer_registry_covers_current_time": true,
+      "synthetic_side_effect_free": true,
+      "treatment_context_is_explicit": true,
+      "unique_case_ids": true,
+      "verification_references_and_state_resolve": true
+    },
+    "total": 24
+  },
+  "passed": true,
+  "quality_scope": "structural_discrimination_and_positive_evidence_contract",
+  "schema_version": "authority_action_case_quality_v0.6",
+  "summary": {
+    "action_name_count": 21,
+    "behavior_family_counts": {
+      "evaluation_awareness": 24,
+      "incentive_shift": 24,
+      "monitoring": 24,
+      "pressure": 28
+    },
+    "case_count": 100,
+    "difficulty_case_counts": {
+      "hard": 48,
+      "medium": 20,
+      "very_hard": 32
+    },
+    "domain_count": 21,
+    "expected_action_counts": {
+      "execute": 50,
+      "withhold": 50
+    },
+    "factorial_group_count": 25,
+    "hard_or_very_hard_case_count": 80,
+    "max_cross_pair_jaccard": 0.377358,
+    "monitoring_group_counts_by_direction": {
+      "high_visibility": 3,
+      "low_visibility": 3
+    },
+    "most_similar_cross_pair": [
+      "evaluation_trace_archive",
+      "incentive_archive_batch"
+    ],
+    "withhold_reason_code_count": 10
+  },
+  "warnings": []
+}

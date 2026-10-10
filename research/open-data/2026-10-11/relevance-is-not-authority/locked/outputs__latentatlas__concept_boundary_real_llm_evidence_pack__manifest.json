@@ -1,0 +1,70 @@
+{
+  "cases_path": "research/concept_boundary_engine/concept_boundary_1000_test_content.jsonl",
+  "decision_model_count": 3,
+  "decision_output_count": 2990,
+  "false_authority_after_guard_total": 0,
+  "false_authority_before_total": 214,
+  "generated_at_utc": "2026-05-13T03:36:16.936933+00:00",
+  "mode": "real_llm_boundary_evidence_pack",
+  "outputs": {
+    "category_solution_matrix": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_category_solution_matrix.csv",
+    "example_failures": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_example_failures.csv",
+    "executive_brief": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_llm_executive_brief.md",
+    "manifest": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/manifest.json",
+    "model_scorecard": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_model_scorecard.csv",
+    "rerank_summary": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_rerank_summary.csv"
+  },
+  "raw_outputs": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs_cleaned.jsonl",
+  "rerank_model_count": 1,
+  "rerank_outputs": "outputs/latentatlas/concept_boundary_real_llm_runs/voyage_rerank_outputs.jsonl",
+  "score_manifest": {
+    "cases_path": "research/concept_boundary_engine/concept_boundary_1000_test_content.jsonl",
+    "data_classification": "synthetic_benchmark_outputs",
+    "external_llm_calls_used_by_scorer": false,
+    "failure_count": 0,
+    "failure_sample": [],
+    "generated_at_utc": "2026-05-13T03:36:16.916956+00:00",
+    "input": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs_cleaned.jsonl",
+    "mode": "concept_boundary_real_llm_output_scorer",
+    "model_count": 3,
+    "model_summaries": [
+      {
+        "accuracy_pct": 78.9,
+        "correct_count": 789,
+        "false_authority_count": 44,
+        "false_block_valid_count": 51,
+        "model_id": "anthropic:claude-opus-4-7",
+        "primary_failure": "wrong_block_or_route",
+        "row_count": 1000
+      },
+      {
+        "accuracy_pct": 73.03,
+        "correct_count": 723,
+        "false_authority_count": 139,
+        "false_block_valid_count": 21,
+        "model_id": "cohere:command-a-reasoning-08-2025",
+        "primary_failure": "wrong_block_or_route",
+        "row_count": 990
+      },
+      {
+        "accuracy_pct": 92.4,
+        "correct_count": 924,
+        "false_authority_count": 31,
+        "false_block_valid_count": 5,
+        "model_id": "openai:gpt-5.5",
+        "primary_failure": "wrong_block_or_route",
+        "row_count": 1000
+      }
+    ],
+    "outputs": {
+      "error_category_summary": "outputs/latentatlas/concept_boundary_real_llm_scores_1000_full/error_category_summary.csv",
+      "manifest": "outputs/latentatlas/concept_boundary_real_llm_scores_1000_full/manifest.json",
+      "model_summary": "outputs/latentatlas/concept_boundary_real_llm_scores_1000_full/model_summary.csv",
+      "scored_outputs": "outputs/latentatlas/concept_boundary_real_llm_scores_1000_full/scored_outputs.csv"
+    },
+    "raw_output_count": 2990,
+    "scored_output_count": 2990,
+    "status": "pass"
+  },
+  "status": "pass"
+}

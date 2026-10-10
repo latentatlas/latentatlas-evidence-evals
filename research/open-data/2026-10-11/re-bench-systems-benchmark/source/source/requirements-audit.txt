@@ -1,0 +1,2 @@
+# Test-only dependency for contract_checks_v0_1.py; not a core runtime dependency.
+numpy==2.3.5

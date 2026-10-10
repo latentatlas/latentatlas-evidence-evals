@@ -1,0 +1,18 @@
+Exact rational cell 1/58 passed
+Exact rational cell 11/58 passed
+Exact rational cell 21/58 passed
+Exact rational cell 31/58 passed
+Exact rational cell 41/58 passed
+Exact rational cell 51/58 passed
+Exact rational cell 58/58 passed
+{
+  "status": "exact_rational_connection_check_passed",
+  "q_max_display": 0.5017061630445572,
+  "eta_plus_q_max_display": 0.5594601471297069,
+  "seam_containment_ratio_max_display": 0.1163036055761876,
+  "F_ttt_min_display": 8.439939804382052e-14,
+  "mu_prime_range_display": [
+    0.26047381245382917,
+    0.3314931610806679
+  ]
+}

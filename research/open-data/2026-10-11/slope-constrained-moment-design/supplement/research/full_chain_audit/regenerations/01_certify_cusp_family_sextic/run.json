@@ -1,0 +1,22 @@
+{
+  "id": "01_certify_cusp_family_sextic",
+  "package": "cusp_verified",
+  "script": "certify_cusp.py",
+  "args": [
+    "--family",
+    "sextic"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.6712325419939589,
+  "source_sha256": "085ec34e3d821875ef8291ecf470ed4ae809d433179b2b67caf8d31fcc100d48",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_verified/certify_cusp.py",
+    "--family",
+    "sextic",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/01_certify_cusp_family_sextic/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:12:58.639312+00:00"
+}

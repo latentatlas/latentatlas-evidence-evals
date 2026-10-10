@@ -1,0 +1,177 @@
+{
+  "created_utc": "2026-09-20T22:08:05.113087+00:00",
+  "scope": "General sufficient moment-control assumptions; analytic L1/L-infinity minimum-norm reduction and smooth nondegenerate infimum; first certified universal bracket and a new four-cosine positive order-four design at the original exact Q.",
+  "audit": {
+    "status": "r11_evidence_links_and_preservation_checks_passed",
+    "preserved_packages": [
+      {
+        "package": "cusp_verified",
+        "files": 25,
+        "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96"
+      },
+      {
+        "package": "cusp_region",
+        "files": 24,
+        "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5"
+      },
+      {
+        "package": "cusp_connection",
+        "files": 27,
+        "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1"
+      },
+      {
+        "package": "cusp_geometry",
+        "files": 25,
+        "manifest_sha256": "b3a1846431be58d2f3c5d45749f218aa4efebaca431e3ebd2ffe454ff7e22621"
+      },
+      {
+        "package": "cusp_width",
+        "files": 49,
+        "manifest_sha256": "eb7847154285acfa09fecb73aece53863409e29c62ed8045bde87f4974cf6dc8"
+      },
+      {
+        "package": "cusp_literature",
+        "files": 12,
+        "manifest_sha256": "2d48fc9cfa5e40c376e1adf8f09b6ff62f9312dc515787d4dba37745d1bf40ab"
+      },
+      {
+        "package": "cusp_robustness",
+        "files": 34,
+        "manifest_sha256": "0036bd2da3d52098743149eb645e934a088bb7a437d72cfa8e97ef7d326489c6"
+      },
+      {
+        "package": "cusp_pinned_family",
+        "files": 98,
+        "manifest_sha256": "b8119dd3f334ab697a7cf3f31ba18c515c0315bcf70a5a706b25dbb406a95aad"
+      },
+      {
+        "package": "cusp_shape_design",
+        "files": 47,
+        "manifest_sha256": "6f2ae4a0518eb3ebf974d0e53ed9ea0aef07aa816336375b46befda74102d642"
+      },
+      {
+        "package": "swallowtail_window",
+        "files": 45,
+        "manifest_sha256": "72fbd3c96d0a6955cf8ceb5d776c70349b8267c7e8dae515057c766d5debe2e1"
+      }
+    ],
+    "preserved_scientific_files": 386,
+    "preserved_original_files": 40,
+    "previous_chain_audit": "passed",
+    "new_shifted_integrals": 72,
+    "new_positive_moments": 1,
+    "new_direct_product_integrals": 9,
+    "total_new_rigorous_integral_evaluations": 82,
+    "separate_mpmath_values_two_precisions": 3,
+    "rational_checker_reports": 1,
+    "readable_minimum_norm_bracket": [
+      "0.00000000039603640200",
+      "0.00000023803280902557"
+    ],
+    "figures_visually_reviewed": 1,
+    "local_links_checked": 19,
+    "recorded_preflight_diagnostics": 1,
+    "latex_compiled": false,
+    "external_mathematical_review": false,
+    "literature_priority_established": false,
+    "sharp_norm_minimum_computed": false,
+    "R10_finite_window_transferred": false,
+    "scope": "General sufficient moment-control assumptions; analytic L1/L-infinity minimum-norm reduction and smooth nondegenerate infimum; first certified universal bracket and a new four-cosine positive order-four design at the original exact Q.",
+    "trust_boundary": "This audit checks recorded evidence and provenance. The rational checker trusts integral enclosures, exact Q and the positive moment. Direct integral crosschecks share analytic tail tools. The general proofs are self-contained drafts, not formally verified or externally reviewed.",
+    "audit_source_sha256": "62c16bc39a58bcffc3498d57014364fec93732481124c0cbabdcbd8989dc8585"
+  },
+  "files": [
+    {
+      "path": "ARASTIRMA_NOTU.md",
+      "sha256": "e9247f086e7ce6ec65666aabbff213b1c9e4b84a438daaf19936c0bf88f13daa"
+    },
+    {
+      "path": "FIGURE_CAPTIONS.tex",
+      "sha256": "c5fb98beca0dfe2b852d912be3c86b0d8dc693669476febe835c4969d5102ccb"
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "56f1411d71b99d865ff83b6045202265641a5f6010cdeefb5b75869c9f73a362"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f1d98ae315e0dea17fdb41ae7232126c05aff65f7907f54f4cd5e9ebc924bf76"
+    },
+    {
+      "path": "REFERENCES.md",
+      "sha256": "ac6aa5f7e5eb2b2f9f469328986ed799dd359d251e076755f96fa258b30d56e2"
+    },
+    {
+      "path": "THEOREM_APPENDIX.tex",
+      "sha256": "857b83dab5171f3365ba3144c5ae6cef5b8bd039d505f9ae56217a6032628315"
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "db6abeacda116f748d75f57dd6c3d62e565edb21ce872f583df1aaeb1edea793"
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "62c16bc39a58bcffc3498d57014364fec93732481124c0cbabdcbd8989dc8585"
+    },
+    {
+      "path": "certify_candidate.py",
+      "sha256": "ec69d62892059988d1a129275dd4048cb43323e49985e35f0e7fecb74b7407ed"
+    },
+    {
+      "path": "check_candidate.py",
+      "sha256": "08f9b319a8d251c876832ec3461576cd412c0d6472e4db9342fd42802be9a1d2"
+    },
+    {
+      "path": "crosscheck_integrals.py",
+      "sha256": "5e2bdeaae2cbbb7a90da60992caa2ab2095c8511101fb78931ec37267dd9540b"
+    },
+    {
+      "path": "diagnostics/audit_repacking_check.json",
+      "sha256": "cb2da66bcf7c8da6a7b1f67b4fd9d9d436bd3e987c182185eccd7d5184242851"
+    },
+    {
+      "path": "diagnostics/audit_v1.py",
+      "sha256": "0e7ddbf1d2e330b12c94be905fcfd27264d7d49a09c7d2286d77cb0907f45c4e"
+    },
+    {
+      "path": "diagnostics/audit_v2.py",
+      "sha256": "be6490b882253e82dcd5d49fa2c3a2e3e337a2f9330f6b8060a754b637fc335e"
+    },
+    {
+      "path": "figures/metadata.json",
+      "sha256": "fcd3816c1c36da3e2e2dcc335c630b6940368c5dd9afb9eeb0f43672bf93a051"
+    },
+    {
+      "path": "figures/minimum_relative_change.png",
+      "sha256": "cdc9f048c1b3be46864168c978ccbb766ce698315fa5c0adc6c1e6d729f91281"
+    },
+    {
+      "path": "figures/minimum_relative_change.svg",
+      "sha256": "c874dc683d814cffb58e3a48c4509d466d1a0c18d26f29ac96197c7fbcf3ad5e"
+    },
+    {
+      "path": "figures/visual_review.json",
+      "sha256": "3e69b8f88c6645a961db70f51259349e415d67548815f4631b83adb62994e0d3"
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "37d3ed7bd2279f3cbfe61c829122a51b2dccfbe47b6fba5491b41f7a060de78d"
+    },
+    {
+      "path": "results/candidate_certificate.json",
+      "sha256": "5a7810a091a900460930e7af31b9d1bbb36a6d4ffaaa2ec3e9d9afc1a20f0626"
+    },
+    {
+      "path": "results/candidate_check.json",
+      "sha256": "6c46737414bca3e74d342d367697b10cc3f47c8069215b3ed12e573e3aa491ff"
+    },
+    {
+      "path": "results/integral_crosscheck.json",
+      "sha256": "9db23f4021e11c8bd106c438ce03bfa1b063f7327cd6d4c2fd55de596ee564f3"
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "6ef78dd3f567c40c7b0632264383ed8e08a0d77bbbd44bc28ce04a6ac33a252e"
+    }
+  ]
+}

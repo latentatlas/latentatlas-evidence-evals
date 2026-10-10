@@ -1,0 +1,35 @@
+{
+  "status": "all_snapshot_links_and_preservation_checks_passed",
+  "input_packages": [
+    {
+      "package": "cusp_verified",
+      "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96",
+      "verified_files": 25
+    },
+    {
+      "package": "cusp_region",
+      "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5",
+      "verified_files": 24
+    },
+    {
+      "package": "cusp_connection",
+      "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1",
+      "verified_files": 27
+    },
+    {
+      "package": "cusp_geometry",
+      "manifest_sha256": "b3a1846431be58d2f3c5d45749f218aa4efebaca431e3ebd2ffe454ff7e22621",
+      "verified_files": 25
+    }
+  ],
+  "original_files_unchanged": 40,
+  "width_cells": 58,
+  "endpoint_fold_contractions": 128,
+  "test_groups": 5,
+  "direct_integral_comparisons": 96,
+  "mpmath_derivative_comparisons": 27,
+  "paper_figures": 2,
+  "source_sha256": "5bc2a8f17600dacc517672cefdd73591e4424680097be488ba5abf13de6a4d9a",
+  "trust_boundary": "Provenance and preservation audit; does not replace mathematical review or reintegration.",
+  "ongoing_notebook": "../CALISMA_DEFTERI.md is intentionally outside this frozen snapshot."
+}

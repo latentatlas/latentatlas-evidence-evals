@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/PROJECT/research/cusp_geometry/geometry_model.py", line 139, in derivatives
+    return [self.evaluate(n,s,l,m) for n in range(upto+1)]
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/PROJECT/research/cusp_geometry/geometry_model.py", line 130, in evaluate
+    rem=upper(((abs(l)/4)**2*abs(self.b[n+4])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/PROJECT/research/cusp_verified/validated_flow.py", line 15, in upper
+    raise ValueError("Nonfinite bound")
+ValueError: Nonfinite bound

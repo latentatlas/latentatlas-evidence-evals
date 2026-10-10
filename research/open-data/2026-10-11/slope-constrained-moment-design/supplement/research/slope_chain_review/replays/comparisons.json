@@ -1,0 +1,104 @@
+[
+  {
+    "job": "R15_producer",
+    "original": "kernel_slope_asymptotics/results/asymptotic_certificate.json",
+    "original_sha256": "cf287743bed1008b1d439d57168731adf887083948de5999158a4b5777f79e59",
+    "replay_sha256": "8972dad16bd56178b977c4a48d2a918c97f34939491333caedc063df536f8ed2",
+    "dyadic_balls": 1734,
+    "equal_other_values": 351,
+    "changed_metadata_paths": [
+      "/elapsed_seconds"
+    ]
+  },
+  {
+    "job": "R15_rational",
+    "original": "kernel_slope_asymptotics/results/asymptotic_check.json",
+    "original_sha256": "9088c1283b5a35148be7122f2403be99efdbd2bb5bebd66101990b4c9dfb8c27",
+    "replay_sha256": "4d0a18fcca3d3eb4307bf9c56bd4bf91ad1bd0060382583f8950a4b2590f69c6",
+    "dyadic_balls": 0,
+    "equal_other_values": 29,
+    "changed_metadata_paths": [
+      "/certificate_sha256"
+    ]
+  },
+  {
+    "job": "R15_algebra",
+    "original": "kernel_slope_asymptotics/results/algebra_check.json",
+    "original_sha256": "4dbb9e9ee781415a7c3028d047158d3bebedd977f6119b5a2fe340808375dbe9",
+    "replay_sha256": "4dbb9e9ee781415a7c3028d047158d3bebedd977f6119b5a2fe340808375dbe9",
+    "dyadic_balls": 0,
+    "equal_other_values": 12,
+    "changed_metadata_paths": []
+  },
+  {
+    "job": "R15_numerical",
+    "original": "kernel_slope_asymptotics/results/coefficient_crosscheck.json",
+    "original_sha256": "776ca05b8ce56ca20cd26ba951874a3d0af354276abc4020e822d5a366498f56",
+    "replay_sha256": "fe2fe8337eb34f1359810a5035000703b52882feb096d12636cfdcb4300f23ca",
+    "dyadic_balls": 0,
+    "equal_other_values": 83,
+    "changed_metadata_paths": [
+      "/input_sha256",
+      "/values/0/elapsed_seconds",
+      "/values/1/elapsed_seconds"
+    ]
+  },
+  {
+    "job": "R16_producer",
+    "original": "kernel_slope_remainder/results/remainder_certificate.json",
+    "original_sha256": "69babdaeb16e96474ed584fbce88209efdd44b17112bc70f2a48d0c063b44949",
+    "replay_sha256": "d364d1761d66df573639adec575989d340a53968b2e3e9054007e7d0baa21d1e",
+    "dyadic_balls": 1232,
+    "equal_other_values": 62,
+    "changed_metadata_paths": [
+      "/input_sha256",
+      "/elapsed_seconds"
+    ]
+  },
+  {
+    "job": "R16_rational",
+    "original": "kernel_slope_remainder/results/remainder_check.json",
+    "original_sha256": "1c7fa1232b4aa833f7dd9c567727cbc34ce1b4279cd64164d6bdabc671f556f9",
+    "replay_sha256": "0439b05be27c5917e4892e2b9930e2c8d20a1512f9f841180df9c284ff78bcee",
+    "dyadic_balls": 0,
+    "equal_other_values": 56,
+    "changed_metadata_paths": [
+      "/certificate_sha256"
+    ]
+  },
+  {
+    "job": "R16_algebra",
+    "original": "kernel_slope_remainder/results/algebra_check.json",
+    "original_sha256": "8321f25d29fa4c8762e2db6240e6bce25a6658860996ef9a3463106659280125",
+    "replay_sha256": "8321f25d29fa4c8762e2db6240e6bce25a6658860996ef9a3463106659280125",
+    "dyadic_balls": 0,
+    "equal_other_values": 11,
+    "changed_metadata_paths": []
+  },
+  {
+    "job": "R16_derivatives",
+    "original": "kernel_slope_remainder/results/derivative_crosscheck.json",
+    "original_sha256": "56cf6f7dd0241c10773ac94ccb863e15a165f97c147aa5b1ca3df8af6540013f",
+    "replay_sha256": "e0f52fb347edd4ac7eeac63645f0885ae0b896195acd756bd30661a49070fcec",
+    "dyadic_balls": 0,
+    "equal_other_values": 180,
+    "changed_metadata_paths": [
+      "/input_sha256",
+      "/values/0/elapsed_seconds",
+      "/values/1/elapsed_seconds"
+    ]
+  },
+  {
+    "job": "R16_design",
+    "original": "kernel_slope_remainder/results/design_crosscheck.json",
+    "original_sha256": "1449744fb371100f43892bfd68c3ca6a09e4844e6b2f8fb0651b836675b63ac6",
+    "replay_sha256": "3f2f6b2732803ec1ee0be639929c67a9d763e31e2f67bf7f9438fb34e6f92ab3",
+    "dyadic_balls": 0,
+    "equal_other_values": 48,
+    "changed_metadata_paths": [
+      "/input_sha256",
+      "/values/0/elapsed_seconds",
+      "/values/1/elapsed_seconds"
+    ]
+  }
+]

@@ -1,0 +1,294 @@
+{
+  "claim_boundary": {
+    "allowed_claims": [
+      "A completed masked P0 human-review outcome set was frozen.",
+      "The frozen set has descriptive empirical outcome counts and rates.",
+      "Pattern-level findings can be reported with explicit denominators."
+    ],
+    "blocked_claims": [
+      "These rates are population probabilities.",
+      "The review proves general system accuracy.",
+      "Unresolved needs_more_evidence rows are failures or successes.",
+      "The pack mutates production truth or customer-facing output."
+    ]
+  },
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "denominators": {
+    "frozen_reviewed_rows": 146,
+    "insufficient_for_outcome_adjudication_p0_rows": 5,
+    "outcome_ready_p0_rows": 146,
+    "p0_rows": 151,
+    "resolved_reviewed_rows": 121
+  },
+  "external_calls_used_by_builder": false,
+  "finding_cards": [
+    {
+      "claim_boundary": "Review completeness only.",
+      "evidence": "freeze_summary + frozen_rows",
+      "finding": "146 of 146 P0 outcome-ready packets were reviewed and frozen.",
+      "finding_id": "F1_review_complete"
+    },
+    {
+      "claim_boundary": "Frozen-set descriptive distribution only.",
+      "evidence": "frozen_rows.reviewed_outcome",
+      "finding": "Outcome distribution: correct_block=99, false_block=22, needs_more_evidence=25.",
+      "finding_id": "F2_outcome_distribution"
+    },
+    {
+      "claim_boundary": "Unresolved cases are not coerced into binary success/failure.",
+      "evidence": "resolved outcome taxonomy",
+      "finding": "121 packets were resolved and 25 remained evidence-insufficient.",
+      "finding_id": "F3_resolved_vs_unresolved"
+    },
+    {
+      "claim_boundary": "Pattern-specific observation, not universal identity-guard accuracy.",
+      "evidence": "observed_change_type=identity_conflict_masked",
+      "finding": "4 of 4 identity_conflict_masked packets were labeled correct_block.",
+      "finding_id": "F4_identity_conflict"
+    },
+    {
+      "claim_boundary": "Blocked PDP supports evidence insufficiency, not correctness or falseness.",
+      "evidence": "operator_visual_verdict=blocked_pdp",
+      "finding": "7 of 7 blocked_pdp packets remained needs_more_evidence.",
+      "finding_id": "F5_blocked_pdp_boundary"
+    },
+    {
+      "claim_boundary": "Requires packet-visible temporal authority evidence.",
+      "evidence": "pdp_temporal_authority_evidence=latest_pdp_review_pool_snapshot_present",
+      "finding": "14 of 48 latest-PDP temporal-authority packets were labeled false_block.",
+      "finding_id": "F6_temporal_authority"
+    }
+  ],
+  "freeze_hash_sha256": "738101038e03bd8d0fe4b1b24c69907ed5ce561226f758ae115fe64c674fb2a3",
+  "freeze_id": "p0_review_freeze_6c1465ff0c315da6",
+  "generated_at_utc": "2026-07-13T08:03:07.494785+00:00",
+  "input": {
+    "freeze_rows": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_rows.csv",
+    "freeze_summary": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_summary.json"
+  },
+  "internal_index_read": false,
+  "level4_missing": [
+    "independent second reviewer and inter-rater agreement",
+    "pre-declared random or stratified sampling frame beyond P0 reviewed packets",
+    "workflow-family denominators and unresolved-case treatment",
+    "holdout or later-period replication",
+    "claim approval separating descriptive frozen-set rates from population probability"
+  ],
+  "metrics": [
+    {
+      "claim_boundary": "Freeze completeness metric, not a population probability.",
+      "denominator": 146,
+      "description": "Reviewed outcome-ready P0 packets in the freeze",
+      "metric_id": "review_completion",
+      "numerator": 146,
+      "rate": 1.0,
+      "wilson_95_high": 1.0,
+      "wilson_95_low": 0.9744
+    },
+    {
+      "claim_boundary": "Descriptive rate within the frozen reviewed set only.",
+      "denominator": 146,
+      "description": "correct_block among all reviewed P0 outcome-ready packets",
+      "metric_id": "correct_block_all_reviewed",
+      "numerator": 99,
+      "rate": 0.6781,
+      "wilson_95_high": 0.7485,
+      "wilson_95_low": 0.5986
+    },
+    {
+      "claim_boundary": "Descriptive rate within the frozen reviewed set only.",
+      "denominator": 146,
+      "description": "false_block among all reviewed P0 outcome-ready packets",
+      "metric_id": "false_block_all_reviewed",
+      "numerator": 22,
+      "rate": 0.1507,
+      "wilson_95_high": 0.2176,
+      "wilson_95_low": 0.1017
+    },
+    {
+      "claim_boundary": "Descriptive unresolved-evidence rate within the frozen reviewed set only.",
+      "denominator": 146,
+      "description": "needs_more_evidence among all reviewed P0 outcome-ready packets",
+      "metric_id": "needs_more_evidence_all_reviewed",
+      "numerator": 25,
+      "rate": 0.1712,
+      "wilson_95_high": 0.2406,
+      "wilson_95_low": 0.1188
+    },
+    {
+      "claim_boundary": "Resolved-only descriptive rate; unresolved packets are explicitly excluded.",
+      "denominator": 121,
+      "description": "correct_block among resolved reviewed outcomes",
+      "metric_id": "correct_block_resolved_only",
+      "numerator": 99,
+      "rate": 0.8182,
+      "wilson_95_high": 0.8768,
+      "wilson_95_low": 0.74
+    },
+    {
+      "claim_boundary": "Resolved-only descriptive rate; unresolved packets are explicitly excluded.",
+      "denominator": 121,
+      "description": "false_block among resolved reviewed outcomes",
+      "metric_id": "false_block_resolved_only",
+      "numerator": 22,
+      "rate": 0.1818,
+      "wilson_95_high": 0.26,
+      "wilson_95_low": 0.1232
+    },
+    {
+      "claim_boundary": "Pattern-specific observation within the frozen set.",
+      "denominator": 4,
+      "description": "identity_conflict_masked packets labeled correct_block",
+      "metric_id": "identity_conflict_correct_block",
+      "numerator": 4,
+      "rate": 1.0,
+      "wilson_95_high": 1.0,
+      "wilson_95_low": 0.5101
+    },
+    {
+      "claim_boundary": "Evidence-boundary observation; blocked PDP is not outcome evidence by itself.",
+      "denominator": 7,
+      "description": "blocked_pdp packets that remained needs_more_evidence",
+      "metric_id": "blocked_pdp_needs_more_evidence",
+      "numerator": 7,
+      "rate": 1.0,
+      "wilson_95_high": 1.0,
+      "wilson_95_low": 0.6457
+    },
+    {
+      "claim_boundary": "Temporal-authority observation within the frozen set.",
+      "denominator": 48,
+      "description": "latest PDP temporal-authority packets labeled false_block",
+      "metric_id": "latest_pdp_temporal_false_block",
+      "numerator": 14,
+      "rate": 0.2917,
+      "wilson_95_high": 0.4318,
+      "wilson_95_low": 0.1824
+    }
+  ],
+  "mode": "latentatlas_action_time_p0_empirical_finding_pack",
+  "outcome_counts": {
+    "correct_block": 99,
+    "false_block": 22,
+    "needs_more_evidence": 25
+  },
+  "outcome_rates_all_reviewed": {
+    "correct_block": 0.6781,
+    "false_block": 0.1507,
+    "needs_more_evidence": 0.1712
+  },
+  "outcome_rates_resolved_only": {
+    "correct_block": 0.8182,
+    "false_block": 0.1818
+  },
+  "outputs": {
+    "manifest": "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_manifest.json",
+    "metrics": "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_metrics.csv",
+    "report": "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_report.md",
+    "summary": "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_summary.json"
+  },
+  "pack_schema_version": "latentatlas_action_time_p0_empirical_finding_pack_v1",
+  "production_truth_mutation": false,
+  "profiles": {
+    "flag_profile_counts": {
+      "identity:false|price:false|seller:false|availability:false": 4,
+      "identity:true|price:false|seller:true|availability:false": 42,
+      "identity:true|price:false|seller:true|availability:true": 24,
+      "identity:true|price:true|seller:true|availability:false": 64,
+      "identity:true|price:true|seller:true|availability:true": 12
+    },
+    "notes_by_outcome": {
+      "correct_block": {
+        "availability_recheck_correct_when_availability_unconfirmed": 13,
+        "availability_uncertain_not_action_grade_supports_revalidation": 20,
+        "confirmed_unavailable_supports_availability_recheck": 3,
+        "latest_pdp_snapshot_supports_manual_review_when_availability_unconfirmed": 12,
+        "manual_review_correct_when_latest_pdp_flags_not_action_grade": 6,
+        "masked_availability_uncertain_supports_revalidation": 41,
+        "masked_identity_conflict_supports_block": 4
+      },
+      "false_block": {
+        "all_visual_flags_true_revalidation_signal_false_block": 12,
+        "latest_pdp_record_should_supersede_stale_record_price_change_not_block_evidence": 10
+      },
+      "needs_more_evidence": {
+        "availability_confirmation_required_before_outcome_judgment": 2,
+        "blocked_pdp_evidence_insufficient_for_outcome_judgment": 6,
+        "blocked_pdp_fresh_pdp_required_before_outcome_judgment": 1,
+        "fresh_pdp_required_before_outcome_judgment": 10,
+        "fresh_pdp_required_before_stale_price_outcome_judgment": 2,
+        "process_context_missing_price_change_ambiguity": 4
+      }
+    },
+    "outcome_by_action_type": {
+      "manual_review_before_materialization": {
+        "correct_block": 18,
+        "false_block": 14,
+        "needs_more_evidence": 16
+      },
+      "recheck_primary_offer_availability": {
+        "correct_block": 77,
+        "false_block": 8,
+        "needs_more_evidence": 9
+      },
+      "resolve_official_truth_identity_guard": {
+        "correct_block": 4
+      }
+    },
+    "outcome_by_observed_change_type": {
+      "availability_or_access_uncertain_masked": {
+        "correct_block": 77,
+        "false_block": 12,
+        "needs_more_evidence": 23
+      },
+      "identity_conflict_masked": {
+        "correct_block": 4
+      },
+      "not_action_grade_masked": {
+        "correct_block": 18,
+        "false_block": 10
+      },
+      "price_or_materialization_conflict_masked": {
+        "needs_more_evidence": 2
+      }
+    },
+    "outcome_by_operator_visual_verdict": {
+      "blank": {
+        "correct_block": 4
+      },
+      "blocked_pdp": {
+        "needs_more_evidence": 7
+      },
+      "confirmed_unavailable": {
+        "correct_block": 3
+      },
+      "not_action_grade": {
+        "correct_block": 51,
+        "false_block": 10
+      },
+      "stale_price": {
+        "needs_more_evidence": 2
+      },
+      "unknown_availability": {
+        "correct_block": 41,
+        "false_block": 12,
+        "needs_more_evidence": 16
+      }
+    },
+    "outcome_by_pdp_temporal_authority_evidence": {
+      "latest_pdp_review_pool_snapshot_present": {
+        "correct_block": 18,
+        "false_block": 14,
+        "needs_more_evidence": 16
+      },
+      "not_observed": {
+        "correct_block": 81,
+        "false_block": 8,
+        "needs_more_evidence": 9
+      }
+    }
+  },
+  "raw_source_rows_read": false,
+  "status": "pass"
+}

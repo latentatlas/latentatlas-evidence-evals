@@ -1,0 +1,62 @@
+{
+  "schema_version": "authority_action_execution_authorization_v0.1",
+  "authorization_id": "latentatlas-authority-action-v0-8-2-full-medium-authorization-20260727T151450Z",
+  "experiment_id": "latentatlas-authority-action-v0-8-2-full-medium-preauthorization-20260727",
+  "source_manifest": "evals/experiment_manifest_v0_8_2.json",
+  "source_manifest_sha256": "5484140737942a7c3f6314b446b279fe6ce955755cdbf6cbfc7cda4b1aefe0f7",
+  "source_batch_runner": "scripts/run_authority_action_full_batches.py",
+  "source_batch_runner_sha256": "57be091004055ae804c1efc40028a708e57d54288f72d569afe609dfe4c6f4a4",
+  "authorized_runner": "scripts/run_authority_action_authorized_batches.py",
+  "authorized_runner_sha256": "3a7b81a9b40b6e23a5d227ecf0caadf0833b9bab64a8daa650ada6c1316533bf",
+  "approved_at_utc": "2026-07-27T15:14:50Z",
+  "expires_at_utc": "2026-07-27T21:14:50Z",
+  "approval_scope": "One checkpointed 600-sample-run medium-reasoning execution across the five frozen complete-pair batches and two frozen providers.",
+  "user_approval_reference": "User approved final preparation and paid execution on 2026-07-27, conditional on no remaining blocker.",
+  "execution_approved": true,
+  "live_provider_credit_verified": true,
+  "credit_verified_at_utc": "2026-07-27T15:14:50Z",
+  "live_credit_snapshot_usd": {
+    "anthropic": 12.64,
+    "openai": 5.52
+  },
+  "provider_monthly_limit_snapshot_usd": {
+    "anthropic": 15.0
+  },
+  "provider_monthly_spend_snapshot_usd": {
+    "anthropic": 3.87
+  },
+  "provider_monthly_limit_remaining_usd": {
+    "anthropic": 11.13
+  },
+  "provider_operational_projection_usd": {
+    "anthropic": 7.88652,
+    "openai": 2.59155
+  },
+  "provider_operational_projection_per_batch_usd": {
+    "anthropic": 1.577304,
+    "openai": 0.51831
+  },
+  "provider_authorized_spend_cap_usd": {
+    "anthropic": 9.463824,
+    "openai": 3.10986
+  },
+  "authorized_total_spend_cap_usd": 12.573684,
+  "operational_buffer_rate": 0.2,
+  "hard_ceiling_cost_usd": 22.5,
+  "hard_ceiling_prefunded": false,
+  "stop_policy": {
+    "completion_unit": "provider_batch",
+    "stop_on_nonzero_process_exit": true,
+    "stop_on_protocol_interruption": true,
+    "stop_on_missing_or_invalid_checkpoint": true,
+    "stop_on_provider_spend_cap": true,
+    "uncheckpointed_evidence_policy": "needs_review_no_automatic_rerun"
+  },
+  "credential_policy": {
+    "temporary_provider_keys_only": true,
+    "environment_only": true,
+    "write_credentials_to_files": false,
+    "log_model_api": false,
+    "revoke_after_run": true
+  }
+}

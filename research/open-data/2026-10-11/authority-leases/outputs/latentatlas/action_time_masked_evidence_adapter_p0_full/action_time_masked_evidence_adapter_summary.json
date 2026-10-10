@@ -1,0 +1,57 @@
+{
+  "adapter_status": "merged_sidecar",
+  "adapter_status_counts": {
+    "merged": 151,
+    "not_provided": 2463
+  },
+  "claim_boundary": {
+    "allowed_claim": "Masked evidence sidecar readiness or merge status was measured.",
+    "not_claimed": "The adapter does not prove outcomes unless sufficient masked evidence is present."
+  },
+  "external_calls_used_by_builder": false,
+  "generated_at": "2026-07-13T01:29:38.291477+00:00",
+  "input": "outputs/latentatlas/action_time_review_packet_v2/action_time_review_packet_v2_queue.jsonl",
+  "input_v2_packet_count": 2614,
+  "internal_index_read": false,
+  "merged_packet_count": 151,
+  "missing_outcome_evidence_field_counts": {
+    "decision_causal_link": 2463,
+    "lease_validity_relationship": 2463,
+    "masked_state_after": 2463,
+    "masked_state_before": 2463,
+    "observed_change_type": 2463,
+    "pdp_temporal_authority_evidence": 2463,
+    "reviewer_visible_contradiction_marker": 2463,
+    "reviewer_visible_insufficiency_marker": 2463
+  },
+  "mode": "latentatlas_action_time_masked_evidence_adapter",
+  "outcome_adjudication_allowed_count": 146,
+  "outcome_adjudication_blocked_count": 2468,
+  "outputs": {
+    "manifest": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_manifest.json",
+    "merged_queue": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_merged_v2_queue.jsonl",
+    "report": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_report.md",
+    "reviewer_sheet": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet.csv",
+    "reviewer_sheet_p0": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet_p0.csv",
+    "sidecar_template": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_sidecar_template.csv",
+    "sidecar_template_p0": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_sidecar_template_p0.csv",
+    "summary": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_adapter_summary.json"
+  },
+  "p0_packet_count": 151,
+  "packet_sufficiency_counts": {
+    "insufficient_for_outcome_adjudication": 2468,
+    "sufficient_for_outcome_adjudication": 146
+  },
+  "production_truth_mutation": false,
+  "sidecar": "outputs/latentatlas/action_time_masked_evidence_sidecar_p0_full/action_time_masked_evidence_sidecar_p0_full.csv",
+  "sidecar_row_count": 151,
+  "sidecar_validation": {
+    "duplicate_keys": [],
+    "finding_count": 0,
+    "forbidden_key_or_url_findings": [],
+    "missing_key_rows": [],
+    "status": "pass",
+    "unexpected_fields": []
+  },
+  "status": "pass"
+}

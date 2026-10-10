@@ -1,0 +1,42 @@
+R31 replay: check_algebra.py
+R31 replay: check_bounds.py
+R31 replay: direct_check.py
+R31 replay: fresh 1024-cell Arb theta logarithmic jets
+R31 prerequisite replay: R30 with Arb
+{
+  "status": "R31_strict_optimal_value_transport_evidence_and_preservation_passed",
+  "prior_manifests": 31,
+  "prior_frozen_file_entries": 1298,
+  "closed_driver_cells": 32,
+  "closed_u_cells": 1024,
+  "whole_half_line_included": true,
+  "exact_algebra_groups": 31,
+  "rational_check_count": 19017,
+  "diagnostic_integral_checks": 24,
+  "diagnostic_derivative_checks": 30,
+  "diagnostic_composition_checks": 10,
+  "driver_interval": [
+    "-1/64",
+    "0"
+  ],
+  "minimum_slope_budget": "2e-5",
+  "contraction_rate": "1/50",
+  "logarithmic_value_rate": ".02259",
+  "linear_value_rate": "2.07e-11",
+  "actual_value_strict_monotonicity_at_arbitrarily_close_drivers": true,
+  "normalized_fourth_value_full_monotonicity_proved": false,
+  "finite_M_optimum_derivative_proved": false,
+  "same_target_or_profile_for_all_drivers_claimed": false,
+  "numerical_finite_M_optimizer_computed": false,
+  "C6_claimed": false,
+  "whole_original_arc_covered": false,
+  "previous_packages_modified": false,
+  "manuscripts_modified": false,
+  "external_referee_review": false,
+  "formal_proof": false,
+  "literature_priority_established": false,
+  "public_release_or_submission": false,
+  "audit_source_sha256": "3de110d766c43dd6f932234eb769e1865b66dce28143a61847f1d1ebc18dd9a4",
+  "trust_boundary": "Analytic moment transport and characteristic comparison with validated whole-domain bounds. Rational checker takes explicit Arb transcendental enclosures as inputs. Frozen R29/R30 analytic results are prerequisites. Numerical replay is not formal verification or external expert review.",
+  "Arb_replayed_in_this_run": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "source_constants_and_exact_endpoint_arithmetic_passed",
+  "threshold_lower_exact": "367149238274479/400000000000000000000000",
+  "threshold_upper_exact": "367149239857327/400000000000000000000000",
+  "relative_excess_error_upper_exact": "1083500/920340371",
+  "macros": {
+    "DeltaLower": "9.1787079603827",
+    "DeltaUpper": "9.1787079608363",
+    "GammaLower": "1.297542117",
+    "GammaUpper": "1.297542121",
+    "CLower": "9.20340371",
+    "CUpper": "9.20340375",
+    "KMinus": "9.624\\times10^{-33}",
+    "KPlus": "2.167\\times10^{-32}",
+    "MZero": "2\\times10^{-5}"
+  },
+  "producer_sha256": "4b6195f0d25aaac6dbf4f8bdeaba8c13208794d253cf5de56016bc92f314e732",
+  "scientific_results_changed": false
+}

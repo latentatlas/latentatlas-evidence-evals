@@ -1,0 +1,13 @@
+{
+  "png_sha256": "38890be71877ed5aa0d597592929634d0cf6dc36f20977ca42a47646cd11d312",
+  "pixel_dimensions": [
+    2700,
+    864
+  ],
+  "panels": 3,
+  "visual_review": "All three panels inspected; signs, scientific-axis multipliers, legends and scope caption are readable.",
+  "clipped_text": false,
+  "overlapping_tick_labels": false,
+  "scope_caption_visible": true,
+  "trust_boundary": "Visual inspection only."
+}

@@ -1,0 +1,53 @@
+{
+  "claim_boundary": {
+    "allowed_claim": "This freezes the completed masked P0 human-review outcome set.",
+    "not_claimed": "The freeze does not prove a population probability or mutate production truth."
+  },
+  "cluster_count": 18,
+  "cluster_review_status_counts": {
+    "fully_reviewed_single_outcome": 18
+  },
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "duplicate_event_ids": [],
+  "duplicate_queue_ids": [],
+  "duplicate_subject_hashes": [],
+  "external_calls_used_by_builder": false,
+  "failure_reasons": [],
+  "freeze_hash_sha256": "738101038e03bd8d0fe4b1b24c69907ed5ce561226f758ae115fe64c674fb2a3",
+  "freeze_id": "p0_review_freeze_6c1465ff0c315da6",
+  "freeze_schema_version": "latentatlas_action_time_p0_review_freeze_v1",
+  "frozen_reviewed_rows": 146,
+  "generated_at_utc": "2026-07-13T08:03:01.337455+00:00",
+  "input": {
+    "clusters": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_clusters.csv",
+    "finding_summary": "outputs/latentatlas/action_time_v2_outcome_adjudication_p0_full/action_time_v2_outcome_adjudication_summary.json",
+    "responses": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/human_review_v2_outcome_responses_reviewer01_hsyn.csv",
+    "reviewer_sheet": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet_p0.csv"
+  },
+  "insufficient_for_outcome_adjudication_p0_rows": 5,
+  "internal_index_read": false,
+  "mode": "latentatlas_action_time_p0_review_freeze",
+  "outcome_counts": {
+    "correct_block": 99,
+    "false_block": 22,
+    "needs_more_evidence": 25
+  },
+  "outcome_ready_p0_rows": 146,
+  "outputs": {
+    "frozen_rows": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_rows.csv",
+    "manifest": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_manifest.json",
+    "report": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_report.md",
+    "summary": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_summary.json"
+  },
+  "p0_rows": 151,
+  "production_truth_mutation": false,
+  "raw_source_rows_read": false,
+  "response_rows": 146,
+  "responses_outside_allowed_queue_ids": [],
+  "reviewer_id_hash": "reviewer01_hsyn",
+  "row_mismatch_queue_ids": [],
+  "status": "pass",
+  "unmatched_response_queue_ids": [],
+  "unreviewed_outcome_ready_rows": 0
+}

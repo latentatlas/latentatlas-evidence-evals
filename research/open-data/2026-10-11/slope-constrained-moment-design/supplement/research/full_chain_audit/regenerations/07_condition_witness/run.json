@@ -1,0 +1,17 @@
+{
+  "id": "07_condition_witness",
+  "package": "cusp_robustness",
+  "script": "condition_witness.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.5846966250028345,
+  "source_sha256": "c09ef19b7236d82cedcb4268ceef3909b374df0afa9b76f05a5fa7573a03c703",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_robustness/condition_witness.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/07_condition_witness/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:14:03.721353+00:00"
+}

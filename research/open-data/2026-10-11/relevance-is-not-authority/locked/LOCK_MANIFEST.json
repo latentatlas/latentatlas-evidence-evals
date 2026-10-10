@@ -1,0 +1,117 @@
+{
+  "artifact_count": 17,
+  "artifacts": [
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_runs__manifest.json",
+      "sha256": "c93ffac448dd091209b98fbae0b9ddc5d7c3e549019a39b772223a3f5c272cc8",
+      "size_bytes": 6731,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_runs/manifest.json"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_runs__real_llm_outputs_cleaned.jsonl",
+      "sha256": "5cfecdd1ad2c2b0ae0c70c8f4824da914d38ac25044321bd1e1fe235402a2e70",
+      "size_bytes": 1633213,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_runs/real_llm_outputs_cleaned.jsonl"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_runs__voyage_rerank_outputs.jsonl",
+      "sha256": "ded9091b101ba1083ae5271918cadba6f96f717addaa007f650e03cb73ff2e93",
+      "size_bytes": 361402,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_runs/voyage_rerank_outputs.jsonl"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_evidence_pack__manifest.json",
+      "sha256": "dec63442d2eb8b6aefe35521f8f4b21417a8f5a905700d19001750cf19d31508",
+      "size_bytes": 3206,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/manifest.json"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_evidence_pack__real_llm_executive_brief.md",
+      "sha256": "e9b3d95e81ca72822797c3db7e7489d571c3029305213891aaa1112ab8cf3c41",
+      "size_bytes": 13264,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_llm_executive_brief.md"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_evidence_pack__real_model_scorecard.csv",
+      "sha256": "7128fea897aee7cbc17f21a7ccb1259450e19509d3d48a03f6a2d53b1f2ab019",
+      "size_bytes": 486,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_evidence_pack/real_model_scorecard.csv"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_openai_anthropic_analysis__openai_anthropic_detailed_analysis.md",
+      "sha256": "87150a223abc5b28c2d2ad7e187ace2f495ab36607df902e1073df6a747e7be9",
+      "size_bytes": 16806,
+      "source": "outputs/latentatlas/concept_boundary_openai_anthropic_analysis/openai_anthropic_detailed_analysis.md"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_openai_anthropic_analysis__openai_anthropic_model_detail.csv",
+      "sha256": "9131c24a219018af4f230fc144e053e4cc884cb5a7acfa2123b694e6b0bec1cd",
+      "size_bytes": 419,
+      "source": "outputs/latentatlas/concept_boundary_openai_anthropic_analysis/openai_anthropic_model_detail.csv"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_coverage_audit__manifest.json",
+      "sha256": "8309d6b5edcc3c3c62065ae78a6193651277a625d39741352fac7c7094c09d06",
+      "size_bytes": 1860,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/manifest.json"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_coverage_audit__coverage_by_model.csv",
+      "sha256": "00ae66a16ec25e56e06c014d6af4bb2b40e0315856137981fd9f8725da7bb6d1",
+      "size_bytes": 276,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/coverage_by_model.csv"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_real_llm_coverage_audit__missing_cases.csv",
+      "sha256": "2c948c84cd5a6a383a5f3f5ab579c66981bd0e31897dddb1cc12417bfba9ff3b",
+      "size_bytes": 508,
+      "source": "outputs/latentatlas/concept_boundary_real_llm_coverage_audit/missing_cases.csv"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_voyage_rerank_analysis__manifest.json",
+      "sha256": "082a00749187e1704add8f792b9d95acbd34d9d4d9f164f26649d9d4f77a4da0",
+      "size_bytes": 3127,
+      "source": "outputs/latentatlas/concept_boundary_voyage_rerank_analysis/manifest.json"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_voyage_rerank_analysis__voyage_rerank_analysis.md",
+      "sha256": "201195670b59b080e34ff1b5ae34f48b020b0acb4216bbccae134d52a07ba83d",
+      "size_bytes": 9632,
+      "source": "outputs/latentatlas/concept_boundary_voyage_rerank_analysis/voyage_rerank_analysis.md"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_voyage_rerank_analysis__voyage_threshold_pressure.csv",
+      "sha256": "fe6eccb2eb5f849cf4984fcea9df25fca5c824ea3763e462f5ad094fcd76f0e3",
+      "size_bytes": 242,
+      "source": "outputs/latentatlas/concept_boundary_voyage_rerank_analysis/voyage_threshold_pressure.csv"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/outputs__latentatlas__concept_boundary_voyage_rerank_analysis__voyage_archetype_summary.csv",
+      "sha256": "e7fa5ca475c52f256002f3bad6673f804fb272750929f2b7eac51fed97083aa7",
+      "size_bytes": 869,
+      "source": "outputs/latentatlas/concept_boundary_voyage_rerank_analysis/voyage_archetype_summary.csv"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/commercial__latentatlas_first_customer__24_real_api_vs_offline_benchmark_comparison.md",
+      "sha256": "1a4a782153a6c5e48a8054354b853f3603ba40c5265d7f334ab43b7865d58e09",
+      "size_bytes": 3989,
+      "source": "commercial/latentatlas_first_customer/24_real_api_vs_offline_benchmark_comparison.md"
+    },
+    {
+      "locked_copy": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/commercial__latentatlas_first_customer__26_real_api_model_performance_breakdown.md",
+      "sha256": "74096ad1b911f672933983a7eb4e8fcedd921f256a06e9450f152b430decc5a4",
+      "size_bytes": 8305,
+      "source": "commercial/latentatlas_first_customer/26_real_api_model_performance_breakdown.md"
+    }
+  ],
+  "generated_at_utc": "2026-05-13T03:50:21.032845+00:00",
+  "lock_dir": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513",
+  "missing_artifacts": [],
+  "mode": "locked_real_llm_boundary_benchmark_artifacts",
+  "outputs": {
+    "checksums": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/sha256_checksums.txt",
+    "manifest": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/LOCK_MANIFEST.json",
+    "readme": "outputs/latentatlas/locked_benchmarks/concept_boundary_real_api_20260513/README.md"
+  },
+  "status": "pass"
+}

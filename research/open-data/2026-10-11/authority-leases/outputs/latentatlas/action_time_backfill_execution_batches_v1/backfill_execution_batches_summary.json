@@ -1,0 +1,386 @@
+{
+  "backfill_summary_status": "pass",
+  "batch_count": 27,
+  "batch_size": 100,
+  "batches": [
+    {
+      "batch_id": "backfill_batch_001",
+      "first_priority_rank": 7,
+      "first_queue_id": "review-backfill-2e345b09f8729b30771fca04",
+      "last_priority_rank": 106,
+      "last_queue_id": "review-backfill-ac2cf42b0cf05a3bcf887dd2",
+      "priority_counts": {
+        "P0": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_001_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_001_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_002",
+      "first_priority_rank": 107,
+      "first_queue_id": "review-backfill-ba14636f9ec61a6c9767b4d3",
+      "last_priority_rank": 206,
+      "last_queue_id": "review-backfill-e744d1b09a6644fb24ea9e35",
+      "priority_counts": {
+        "P0": 45,
+        "P1": 55
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_002_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_002_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_003",
+      "first_priority_rank": 207,
+      "first_queue_id": "review-backfill-5281b0f7f34fc603ff1ac2ad",
+      "last_priority_rank": 306,
+      "last_queue_id": "review-backfill-8c5d5023de603f50943ee1bf",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_003_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_003_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_004",
+      "first_priority_rank": 307,
+      "first_queue_id": "review-backfill-360d8f26aa7b5fbaab7c4e12",
+      "last_priority_rank": 406,
+      "last_queue_id": "review-backfill-8c7449c04a6f9c158c607198",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_004_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_004_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_005",
+      "first_priority_rank": 407,
+      "first_queue_id": "review-backfill-c7b21524bc8dbf406de3efa3",
+      "last_priority_rank": 506,
+      "last_queue_id": "review-backfill-b502e6013d8fe9b4b6586044",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_005_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_005_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_006",
+      "first_priority_rank": 507,
+      "first_queue_id": "review-backfill-391ef767be8d8304f7f66a88",
+      "last_priority_rank": 606,
+      "last_queue_id": "review-backfill-d42b9af8e16d0883ecbf13ad",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_006_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_006_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_007",
+      "first_priority_rank": 607,
+      "first_queue_id": "review-backfill-7b71a700bb96208800c3244c",
+      "last_priority_rank": 706,
+      "last_queue_id": "review-backfill-f953dd475cbe7b70e57fa987",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_007_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_007_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_008",
+      "first_priority_rank": 707,
+      "first_queue_id": "review-backfill-85a975df412192681c32728d",
+      "last_priority_rank": 806,
+      "last_queue_id": "review-backfill-88f8cd68c985d6b1109c18e3",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_008_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_008_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_009",
+      "first_priority_rank": 807,
+      "first_queue_id": "review-backfill-cd218de4cfe0dfae868651da",
+      "last_priority_rank": 906,
+      "last_queue_id": "review-backfill-c722b6bf9a82156a428b9c02",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_009_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_009_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_010",
+      "first_priority_rank": 907,
+      "first_queue_id": "review-backfill-a52746fb3b4294b9f991af57",
+      "last_priority_rank": 1006,
+      "last_queue_id": "review-backfill-6bf823b4ed9790f2b2d9a369",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_010_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_010_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_011",
+      "first_priority_rank": 1007,
+      "first_queue_id": "review-backfill-e5a52e414cecb1ac19f5c029",
+      "last_priority_rank": 1106,
+      "last_queue_id": "review-backfill-abc8ea2fa6c9178adcf5b698",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_011_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_011_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_012",
+      "first_priority_rank": 1107,
+      "first_queue_id": "review-backfill-75bdeb5fc11bb2685f794949",
+      "last_priority_rank": 1206,
+      "last_queue_id": "review-backfill-4027dddac3c40f1089653673",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_012_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_012_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_013",
+      "first_priority_rank": 1207,
+      "first_queue_id": "review-backfill-3f7c3f5fb620231f935d8fe0",
+      "last_priority_rank": 1306,
+      "last_queue_id": "review-backfill-fb2a39b8486f0b07e2edeb32",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_013_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_013_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_014",
+      "first_priority_rank": 1307,
+      "first_queue_id": "review-backfill-9487142b5596172beba77adf",
+      "last_priority_rank": 1406,
+      "last_queue_id": "review-backfill-f2cb96820c3b911b8fab2bf6",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_014_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_014_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_015",
+      "first_priority_rank": 1407,
+      "first_queue_id": "review-backfill-220754012986024d9924a30f",
+      "last_priority_rank": 1506,
+      "last_queue_id": "review-backfill-dd132b4eceaee953791e9735",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_015_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_015_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_016",
+      "first_priority_rank": 1507,
+      "first_queue_id": "review-backfill-c3215dd68368bb479f0b0e82",
+      "last_priority_rank": 1606,
+      "last_queue_id": "review-backfill-82b2c63d1915ca219becdf69",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_016_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_016_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_017",
+      "first_priority_rank": 1607,
+      "first_queue_id": "review-backfill-5ac6d68e55b5b5587a88e958",
+      "last_priority_rank": 1706,
+      "last_queue_id": "review-backfill-b3aea8a5da443948080a83f6",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_017_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_017_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_018",
+      "first_priority_rank": 1707,
+      "first_queue_id": "review-backfill-20bdf01c2fb0774686bce9dc",
+      "last_priority_rank": 1806,
+      "last_queue_id": "review-backfill-651c34af517f86ede788d810",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_018_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_018_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_019",
+      "first_priority_rank": 1807,
+      "first_queue_id": "review-backfill-9a2bbe8910ccf327043793b5",
+      "last_priority_rank": 1906,
+      "last_queue_id": "review-backfill-1c6482698db5da0ca7dc6520",
+      "priority_counts": {
+        "P1": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_019_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_019_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_020",
+      "first_priority_rank": 1907,
+      "first_queue_id": "review-backfill-c5b69d6ee5ed2b37bc10c25a",
+      "last_priority_rank": 2006,
+      "last_queue_id": "review-backfill-1c02d49e7dd2d7c8913037be",
+      "priority_counts": {
+        "P1": 8,
+        "P2": 92
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_020_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_020_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_021",
+      "first_priority_rank": 2007,
+      "first_queue_id": "review-backfill-a3a68f89a06c3e29f61fa967",
+      "last_priority_rank": 2106,
+      "last_queue_id": "review-backfill-8904ca26351c7bc6affc3646",
+      "priority_counts": {
+        "P2": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_021_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_021_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_022",
+      "first_priority_rank": 2107,
+      "first_queue_id": "review-backfill-46f897173cec3b9dab8354b8",
+      "last_priority_rank": 2206,
+      "last_queue_id": "review-backfill-b8d93a64e3f03b29a0ebc084",
+      "priority_counts": {
+        "P2": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_022_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_022_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_023",
+      "first_priority_rank": 2207,
+      "first_queue_id": "review-backfill-92d8b8e1ca083a9c28333cd7",
+      "last_priority_rank": 2306,
+      "last_queue_id": "review-backfill-cb13046b0b3518806f0332ed",
+      "priority_counts": {
+        "P2": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_023_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_023_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_024",
+      "first_priority_rank": 2307,
+      "first_queue_id": "review-backfill-7cff898911e60ec7a81cdb91",
+      "last_priority_rank": 2406,
+      "last_queue_id": "review-backfill-62983320bbbd8d5732b46a79",
+      "priority_counts": {
+        "P2": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_024_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_024_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_025",
+      "first_priority_rank": 2407,
+      "first_queue_id": "review-backfill-febf6fbfd1fba3298b6dea60",
+      "last_priority_rank": 2506,
+      "last_queue_id": "review-backfill-4c0d225bc7d56f807c884473",
+      "priority_counts": {
+        "P2": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_025_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_025_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_026",
+      "first_priority_rank": 2507,
+      "first_queue_id": "review-backfill-285c93d777791e020ee3b29b",
+      "last_priority_rank": 2606,
+      "last_queue_id": "review-backfill-5d497fce9bfa2e6ed362c63e",
+      "priority_counts": {
+        "P2": 100
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_026_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_026_reviewer_packet.csv",
+      "row_count": 100
+    },
+    {
+      "batch_id": "backfill_batch_027",
+      "first_priority_rank": 2607,
+      "first_queue_id": "review-backfill-d4a85ffd717bb874902d642e",
+      "last_priority_rank": 2614,
+      "last_queue_id": "review-backfill-8ca66bc5428906a2e308e8ac",
+      "priority_counts": {
+        "P2": 8
+      },
+      "response_template_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/response_templates/backfill_batch_027_response_template.csv",
+      "reviewer_packet_csv": "outputs/latentatlas/action_time_backfill_execution_batches_v1/batches/backfill_batch_027_reviewer_packet.csv",
+      "row_count": 8
+    }
+  ],
+  "claim_boundary": {
+    "allowed": "Pending masked backfill queue rows were split into controlled execution batches.",
+    "not_allowed": "These batches do not count as independent reviews until returned responses pass intake and adjudication."
+  },
+  "completed_response_rows_excluded": 6,
+  "external_services_used": false,
+  "generated_at_utc": "2026-07-15T17:10:53.720134+00:00",
+  "inputs": {
+    "backfill_summary": "outputs/latentatlas/action_time_real_shadow_review_backfill/action_time_review_backfill_summary.json",
+    "existing_responses": "outputs/latentatlas/action_time_real_shadow_review_backfill/human_review_responses_reviewer01_hsyn.csv",
+    "queue": "outputs/latentatlas/action_time_real_shadow_review_backfill/action_time_review_backfill_queue.jsonl"
+  },
+  "mode": "latentatlas_action_time_backfill_execution_batches",
+  "outputs": {
+    "batch_manifest": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batch_manifest.csv",
+    "intake_checklist": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_response_intake_checklist.md",
+    "manifest": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batches_manifest.json",
+    "report": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batches_report.md",
+    "summary": "outputs/latentatlas/action_time_backfill_execution_batches_v1/backfill_execution_batches_summary.json"
+  },
+  "pending_queue_count": 2608,
+  "production_truth_mutation": false,
+  "raw_customer_data_copied": false,
+  "schema_version": "latentatlas_action_time_backfill_execution_batches_v1",
+  "source_queue_count": 2614,
+  "status": "pass"
+}

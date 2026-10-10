@@ -1,0 +1,128 @@
+{
+  "status": "exact_integer_outward_decimal_summary",
+  "comparison": "epsilon -1/128 to +1/128 at exact Q, nu=0, ell=1e-6",
+  "a": [
+    "-53.279001512222",
+    "-53.279001512221"
+  ],
+  "b": [
+    "30.487975048861",
+    "30.487975048862"
+  ],
+  "S": [
+    "83.766976561083",
+    "83.766976561084"
+  ],
+  "gain_over_reference": [
+    "167731.832452",
+    "167731.832453"
+  ],
+  "selected_finite_W_change_percent": [
+    "-74.63952481",
+    "-74.63952480"
+  ],
+  "reference_finite_W_change_percent": [
+    "-0.00078034",
+    "-0.00078033"
+  ],
+  "selected_leading_C_change_percent": [
+    "-74.6395459500",
+    "-74.6395459499"
+  ],
+  "reference_leading_C_change_percent": [
+    "-0.000780332933",
+    "-0.000780332932"
+  ],
+  "mu_unfolding_boundary": [
+    "-0.032799816925",
+    "-0.032799816924"
+  ],
+  "quartic_boundary": [
+    "0.018769120509",
+    "0.018769120510"
+  ],
+  "quartic_fourth_derivative_times_1e12": [
+    "-1.527706119921",
+    "-1.527706119920"
+  ],
+  "quartic_control_det_times_1e38": [
+    "-1.247577850654",
+    "-1.247577850653"
+  ],
+  "safe_relative_kernel_percent": [
+    "0.78125",
+    "0.78125"
+  ],
+  "kernel_multiplier_common_lower": "0.9672",
+  "widths": [
+    {
+      "model": 0,
+      "direction": "selected",
+      "epsilon": [
+        "-0.0078125",
+        "-0.0078125"
+      ],
+      "W_times_1e9": [
+        "2.4067339885",
+        "2.4067339886"
+      ]
+    },
+    {
+      "model": 4,
+      "direction": "selected",
+      "epsilon": [
+        "0.0000000",
+        "0.0000000"
+      ],
+      "W_times_1e9": [
+        "1.2946095162",
+        "1.2946095163"
+      ]
+    },
+    {
+      "model": 8,
+      "direction": "selected",
+      "epsilon": [
+        "0.0078125",
+        "0.0078125"
+      ],
+      "W_times_1e9": [
+        "0.6103591760",
+        "0.6103591762"
+      ]
+    },
+    {
+      "model": 9,
+      "direction": "reference",
+      "epsilon": [
+        "-0.0078125",
+        "-0.0078125"
+      ],
+      "W_times_1e9": [
+        "1.2946145516",
+        "1.2946145517"
+      ]
+    },
+    {
+      "model": 10,
+      "direction": "reference",
+      "epsilon": [
+        "0.0078125",
+        "0.0078125"
+      ],
+      "W_times_1e9": [
+        "1.2946044493",
+        "1.2946044494"
+      ]
+    }
+  ],
+  "input_sha256": {
+    "design_certificate.json": "b5229c49a066016b1da5f6d03101bcfcfae6b12b9fa9dfe4a33d6bf2d442de2c",
+    "design_check.json": "f8c1fb5f84fe8cda56145107989a2f034cc399233e4e8e09fd88f4ea73a037d9",
+    "boundary_certificate.json": "1a4c6d427387cc29436c1c64114757788731e4e03443e77a097652ce51c64967",
+    "sample_check.json": "0c0bbc133cba43fdae6ddd48123b4941a78162bbe8764fd56caf5f1e10eb26dd",
+    "fold_samples.json": "51ee4b465d4572e582c78ebf597e5daed88d01b4b6ee3e7b21f33c9484863b41"
+  },
+  "source_sha256": "2cc74d94199ab27d972db2b3db4028f864be79f92db3d11b9012735118067c92",
+  "rounding": "Integer floor/ceiling of exact rational bounds; no binary/decimal floating-point rounding assumption."
+}

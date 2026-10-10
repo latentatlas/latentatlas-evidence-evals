@@ -1,0 +1,35 @@
+{
+  "claim_boundary": {
+    "allowed_claim": "P0 outcome-ready packets were grouped by repeated masked decision pattern.",
+    "not_claimed": "Pattern grouping does not apply decisions automatically and does not prove a population probability."
+  },
+  "cluster_count": 18,
+  "clusters_with_unreviewed_rows": 0,
+  "duplicate_event_id_count": 0,
+  "duplicate_queue_id_count": 0,
+  "duplicate_subject_hash_count": 0,
+  "external_calls_used_by_builder": false,
+  "generated_at": "2026-07-13T06:44:36.130336+00:00",
+  "input": "outputs/latentatlas/action_time_masked_evidence_adapter_p0_full/action_time_masked_evidence_reviewer_sheet_p0.csv",
+  "internal_index_read": false,
+  "largest_cluster_size": 27,
+  "largest_unreviewed_cluster_size": 0,
+  "mode": "latentatlas_action_time_pattern_cluster_review_p0",
+  "outcome_ready_row_count": 146,
+  "outputs": {
+    "clusters": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_clusters.csv",
+    "manifest": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_manifest.json",
+    "report": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_report.md",
+    "summary": "outputs/latentatlas/action_time_pattern_cluster_review_p0_full/action_time_pattern_cluster_review_p0_summary.json"
+  },
+  "p0_row_count": 151,
+  "pattern_schema_version": "p0_pattern_v2_pdp_temporal_authority",
+  "production_truth_mutation": false,
+  "review_status_counts": {
+    "fully_reviewed_single_outcome": 18
+  },
+  "reviewed_outcome_ready_row_count": 146,
+  "status": "pass",
+  "unique_subject_hash_count": 151,
+  "unreviewed_outcome_ready_row_count": 0
+}

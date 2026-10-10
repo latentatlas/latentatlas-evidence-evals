@@ -1,0 +1,8 @@
+R07 uniform cell 1 of 58 passed
+R07 uniform cell 11 of 58 passed
+R07 uniform cell 21 of 58 passed
+R07 uniform cell 31 of 58 passed
+R07 uniform cell 41 of 58 passed
+R07 uniform cell 51 of 58 passed
+R07 uniform cell 58 of 58 passed
+58 cells and 57 joins passed; displacement < 4e-5; output /PROJECT/research/full_chain_audit/regenerations/07_certify_robustness/result.json

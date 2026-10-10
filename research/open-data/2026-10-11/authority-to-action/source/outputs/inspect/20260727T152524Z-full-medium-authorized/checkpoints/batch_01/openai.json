@@ -1,0 +1,31 @@
+{
+  "batch_id": "batch_01",
+  "completed_at_utc": "2026-07-27T15:38:08.951484+00:00",
+  "credential_values_logged": false,
+  "dataset_sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900",
+  "expected_sample_runs": 60,
+  "experiment_id": "latentatlas-authority-action-v0-8-2-full-medium-preauthorization-20260727",
+  "log_artifacts": [
+    {
+      "path": "full/batch_01/openai/2026-07-27T15-26-55-00-00_authority-action-eval_oQw7fbjZspZRUEhCDGUmLp.json",
+      "sha256": "2801e11da32a589a55a2806f519e90fced9523b18f88af165778ec23e70965de"
+    }
+  ],
+  "manifest_sha256": "5484140737942a7c3f6314b446b279fe6ce955755cdbf6cbfc7cda4b1aefe0f7",
+  "provider": "openai",
+  "provider_audit": {
+    "calculated_total_cost_usd": 0.45862,
+    "cost_limit_exceeded": 0,
+    "log_count": 1,
+    "other_sample_limit": 0,
+    "protocol_complete_runs": 60,
+    "protocol_interrupted_runs": 0,
+    "sample_runs": 60,
+    "status": "success",
+    "token_limit_exceeded": 0
+  },
+  "sample_ids_sha256": "05c7d2126d1c0dbdb5d306e11ca885d8d8f1884e9fc3915e98be60b1c3f4a4f9",
+  "schema_version": "authority_action_provider_batch_checkpoint_v0.1",
+  "started_at_utc": "2026-07-27T15:26:54.143108+00:00",
+  "status": "success"
+}

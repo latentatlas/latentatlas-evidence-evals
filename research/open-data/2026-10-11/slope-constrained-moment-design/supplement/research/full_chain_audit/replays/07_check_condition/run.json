@@ -1,0 +1,17 @@
+{
+  "id": "07_check_condition",
+  "package": "cusp_robustness",
+  "script": "check_condition.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 5.772331624997605,
+  "source_sha256": "75ac340e2aa6af2e11995b03d7d75bf4f964f12ffe446f07eea1087e4760458c",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_robustness/check_condition.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/replays/07_check_condition/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:12:16.436727+00:00"
+}

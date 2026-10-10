@@ -1,0 +1,102 @@
+{
+  "status": "9_independent_direct_moments_at_two_precisions_passed",
+  "rows": [
+    {
+      "order": 0,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "-2.36567907523369888775271195905960231512741284325888160203350508437974645079219736192086634879010905213087801e-97",
+      "precision_difference": "1.33624090128977e-96",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 1,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "1.56610269560318362093180741889354766408252953934832743875297844617533489010342597040914152038738090888395426e-97",
+      "precision_difference": "1.48087916486866e-97",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 2,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "5.77314530247014658502842421131320419895909954223790028202118993081730854059566014453080039530650453574296442e-99",
+      "precision_difference": "2.62262523844517e-98",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 3,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "-0.0000000000177719065655814844569269211143967632835885940600724628835310728388217275419424226410158232696051788863160702",
+      "precision_difference": "1.02483351694703e-98",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 4,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "-0.0000000000296245413604158608381309948499857684435579870390354974256805623728967317901244785960197672428904363466836342",
+      "precision_difference": "1.74435510734395e-99",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 5,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "0.00000000020269732478541409709837453164949808914326927165547029152084240126409001684096221947820027495897737817197957",
+      "precision_difference": "9.72813911219973e-100",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 6,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "-0.000000000425462015278024515487326419586794886349182385698640511479192904405587860492478413452086881929848597526476289",
+      "precision_difference": "4.96880917683461e-101",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 7,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "0.000000000505506162004668788401120670388991215937717343071017756828001310842378335627631543895392634508876109849352544",
+      "precision_difference": "1.03212936179765e-101",
+      "inside_rigorous_center_ball": true
+    },
+    {
+      "order": 8,
+      "dps": [
+        90,
+        115
+      ],
+      "value": "-0.000000000297571465156356023124324016704730765840360534995351143952360242005964133374002163268976655380438613194771148",
+      "precision_difference": "7.86771254575265e-102",
+      "inside_rigorous_center_ball": true
+    }
+  ],
+  "input_sha256": {
+    "local_jets.json": "763ad4b5e59c3eb2ba2eea8e322f585b00faf357c0dbcb9bc8bae7d91d30e1e7",
+    "design_certificate.json": "b5229c49a066016b1da5f6d03101bcfcfae6b12b9fa9dfe4a33d6bf2d442de2c"
+  },
+  "source_sha256": "481103087920f9f9bac021b2836f0c364782de4c7e484a5969d3a39341951806",
+  "trust_boundary": "Numerical midpoint checks, with the same N=16 finite series and U=2 cutoff. No rigorous mpmath remainder claim. The primary Arb moment enclosures include truncation tails, exact weight uncertainty and exact-Q uncertainty where indicated.",
+  "elapsed_seconds": 60.77056824999454
+}

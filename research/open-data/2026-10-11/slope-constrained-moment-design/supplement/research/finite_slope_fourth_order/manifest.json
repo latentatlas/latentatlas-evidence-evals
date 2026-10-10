@@ -1,0 +1,148 @@
+{
+  "created_utc": "2026-09-21T17:15:07.180285+00:00",
+  "scope": "Finite-switch fourth-order coefficient, moment penalty and regularity/sign counterexamples. No infinite-tail/theta extension.",
+  "files": [
+    {
+      "path": "EXAMPLES.md",
+      "sha256": "471a7f280b0365fe6a9318f06193dbcb83c835663ff33eb8d84d9c00eb44ad01",
+      "bytes": 5830
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "sha256": "25a4478fce77ec894dcbd0909469fa8f66f9ff24052b536abc61bfe86644294d",
+      "bytes": 973
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "61234eeadb4f2b90caecb34c702f7141892053e521e7eda62195da34384c3127",
+      "bytes": 9086
+    },
+    {
+      "path": "README.md",
+      "sha256": "8b3ca5c2569088c3e4fc608927856a18ca1c22e05781f1a6dc51f5996a5bfca0",
+      "bytes": 3160
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "b44109d3103670f904043e2194629d4eba47b9eac2b1d73064558c10f657be9d",
+      "bytes": 6735
+    },
+    {
+      "path": "SEARCH_LOG.md",
+      "sha256": "7e0597785a42d3937e169cb981e272a2f82b31e6952636d13a37da83021fe243",
+      "bytes": 1104
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "e9b2c2066a89759bb5cdc74c4ae07155e4c5681640ba2419ec1e341c59ff0ab7",
+      "bytes": 1185
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "847394b69a21565fc8217c3bea412a71cfbc9bba6c8c537aa430921884205593",
+      "bytes": 8655
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "f5def23ceeb13cd6f9d560aa9b695ff7dae72e94ac3d7b69c59782b600cee1d1",
+      "bytes": 2421
+    },
+    {
+      "path": "certify_fourth_order.py",
+      "sha256": "04428bfe84548daf215ab90f6ea4bca5d8ab2c117632092c85d2c5aa7a7d22e0",
+      "bytes": 3923
+    },
+    {
+      "path": "check_fourth_order.py",
+      "sha256": "3ac355cf549b8790d098e0be701e97136cbd8d36478f087aa553f2435e696f23",
+      "bytes": 8599
+    },
+    {
+      "path": "crosscheck_integrals.py",
+      "sha256": "e17c0734534bae4fbfc6fa9054b5a18bfff6496e5644f1d2b0da43987da782c4",
+      "bytes": 3913
+    },
+    {
+      "path": "figures/fourth_order.png",
+      "sha256": "38890be71877ed5aa0d597592929634d0cf6dc36f20977ca42a47646cd11d312",
+      "bytes": 200707
+    },
+    {
+      "path": "figures/fourth_order.svg",
+      "sha256": "28eb731485d00f9122a3b5da4383723b73cc90e1804f9c109995b3395b009056",
+      "bytes": 126672
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "4c7699866c7ab8b63e2769ef4d294f1572dd36a40f44babb4fcd918544d36148",
+      "bytes": 6058
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "9a59c6506d3e3cab0c0fb69f3b0fbe16dc9672939eee7891e8d5cc76d835f1ef",
+      "bytes": 33
+    },
+    {
+      "path": "results/TABLE.md",
+      "sha256": "18ef00d8129124de5d14b29bbc83bbea9ea0a00d50ff62b908ae3e3cc96fed8d",
+      "bytes": 1593
+    },
+    {
+      "path": "results/algebra.json",
+      "sha256": "2e2420443bd9bf43b495fcbdf80bbf6bf6f804db1f6397a819386b7253eeba62",
+      "bytes": 3265
+    },
+    {
+      "path": "results/certificate.json",
+      "sha256": "2d0f628f47ab9b12212540dc9c75d680541b194997e43ca0ad95488b95d187e6",
+      "bytes": 47320
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "28c2a6b9dbedd25eea09aa96db500a6610ea7a93d6f3e0571fd1226fc5af7301",
+      "bytes": 416
+    },
+    {
+      "path": "results/integrals.json",
+      "sha256": "b43a7b3b0fa34f8ae1e83771e949c835dfa37be6ed2b429304604361819f48e0",
+      "bytes": 62814
+    },
+    {
+      "path": "results/plot_data.json",
+      "sha256": "8c3721bb418f0c3bec65a4896daca5c12302c4bfeea63282f6c233ae02a97740",
+      "bytes": 76256
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "3ac603fa8f9789980fe1069f5d6935d2c38fa2ff8aac6ba50e9b5d27681bd165",
+      "bytes": 329
+    }
+  ],
+  "audit": {
+    "status": "R22_fourth_order_evidence_and_preservation_passed",
+    "prior_manifests": 22,
+    "prior_frozen_file_entries": 968,
+    "exact_algebra_check_groups": 12,
+    "sample_budgets": 16,
+    "rational_interval_records": 132,
+    "independent_precision_runs": 32,
+    "independent_values_compared": 132,
+    "sampled_smooth_budgets_with_lower_approximation_error": 12,
+    "exact_replay_outputs_byte_identical": 2,
+    "general_equation_blocks": 18,
+    "example_equation_blocks": 8,
+    "scientific_figures": 1,
+    "figure_panels": 3,
+    "theta_fourth_order_certificate": false,
+    "uniform_numerical_fourth_order_remainder_bound": false,
+    "previous_frozen_packages_modified": false,
+    "manuscript_modified": false,
+    "formal_proof": false,
+    "external_referee_review": false,
+    "novelty_priority_established": false,
+    "public_release_or_submission": false,
+    "audit_source_sha256": "847394b69a21565fc8217c3bea412a71cfbc9bba6c8c537aa430921884205593",
+    "trust_boundary": "Exact finite algebra, pointwise rational enclosures, reproducibility and recorded numerical comparisons. Analytic remainders and originality are not automatically certified.",
+    "closed_utc": "2026-09-21T17:15:07.180285+00:00"
+  }
+}

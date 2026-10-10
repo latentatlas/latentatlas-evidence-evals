@@ -1,0 +1,17 @@
+{
+  "id": "12_crosscheck_moments",
+  "package": "kernel_norm_threshold",
+  "script": "crosscheck_moments.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 6.6497924590003095,
+  "source_sha256": "1f77ecfc02d40f10504ec01a633e6965cab1cf78c00d68ddfa99072b40a913ce",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/kernel_norm_threshold/crosscheck_moments.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/replays/12_crosscheck_moments/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:15:03.085781+00:00"
+}

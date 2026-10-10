@@ -1,0 +1,27 @@
+{
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "freeze_hash_sha256": "738101038e03bd8d0fe4b1b24c69907ed5ce561226f758ae115fe64c674fb2a3",
+  "freeze_id": "p0_review_freeze_6c1465ff0c315da6",
+  "frozen_reviewed_rows": 146,
+  "frozen_rows": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_rows.csv",
+  "generated_at_utc": "2026-07-13T08:03:01.337455+00:00",
+  "internal_index_read": false,
+  "mode": "latentatlas_action_time_p0_review_freeze",
+  "outcome_counts": {
+    "correct_block": 99,
+    "false_block": 22,
+    "needs_more_evidence": 25
+  },
+  "outputs": {
+    "frozen_rows": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_rows.csv",
+    "manifest": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_manifest.json",
+    "report": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_report.md",
+    "summary": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_summary.json"
+  },
+  "production_truth_mutation": false,
+  "report": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_report.md",
+  "status": "pass",
+  "summary": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_summary.json"
+}

@@ -1,0 +1,58 @@
+{
+  "status": "exact_polynomial_checks_passed",
+  "examples": [
+    {
+      "sigma": -1,
+      "polynomial_monomials": 17,
+      "identities_checked_as_polynomials": 3,
+      "cusp_jet_D0_to_D10": [
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      "cusp_jacobian_determinant": "-1/64",
+      "cusp_tangent": [
+        "0",
+        "0",
+        "0"
+      ],
+      "C_prime_over_sqrt2": "1/24"
+    },
+    {
+      "sigma": 1,
+      "polynomial_monomials": 17,
+      "identities_checked_as_polynomials": 3,
+      "cusp_jet_D0_to_D10": [
+        "0",
+        "0",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "cusp_jacobian_determinant": "-1/64",
+      "cusp_tangent": [
+        "0",
+        "0",
+        "0"
+      ],
+      "C_prime_over_sqrt2": "-1/24"
+    }
+  ],
+  "source_sha256": "c5076b98f6282489a8457d33e77ea38cc8d18cf6fdff00945840a7d64c1ba796",
+  "scope": "Three heat identities alone do not force an opening direction.",
+  "limitation": "Polynomials are not asserted to be transforms of positive Jacobi-type kernels; no priority claim."
+}

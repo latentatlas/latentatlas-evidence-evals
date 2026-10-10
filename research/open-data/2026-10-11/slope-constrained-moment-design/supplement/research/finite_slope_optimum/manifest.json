@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-09-21T14:39:27.593996+00:00",
+  "scope": "Compact finite-switch exact finite-slope optimum theorem and two-switch rational example; theta and higher-order extension open.",
+  "files": [
+    {
+      "path": "EXAMPLE.md",
+      "sha256": "a03c5c4d89e9bf39302f89364e38cd303060620f7fa4be9327720a7c842aee00",
+      "bytes": 6578
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "sha256": "d0aacf79b4f1add972040af580e4821f49630c9174b27134a6ba6172340b5bed",
+      "bytes": 1330
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "883d518ae28ad2595e809b8a6bf07b349606e45e6a7db17f03663450e5c3000f",
+      "bytes": 10348
+    },
+    {
+      "path": "README.md",
+      "sha256": "57f5600dbf57635c0e68a3c26b8534f841fdbba127cfce52012e7dc1c58d05f6",
+      "bytes": 3074
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "a28ade1788977cdaaf639fce08763b607377c2f9e6cfbf5076e29031d34d2a16",
+      "bytes": 7524
+    },
+    {
+      "path": "SEARCH_LOG.md",
+      "sha256": "3541ea275cb3e421ea409ac914cca638f9d3f92e0c4a9828feeacd888d6aa71f",
+      "bytes": 1173
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "d02404d16e60f88d1c0e67b1fca3c53537e3990fcffe5490e513234973a31504",
+      "bytes": 1210
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "78f38a9ecdef82f09c26a58aa5b30bc60044b46529e4936203ee7d61723fbd17",
+      "bytes": 8023
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "2689c92ebbb663b1ee474dcf12376cf2b7449e65b0a1eb47a726845f8e8ae11b",
+      "bytes": 2311
+    },
+    {
+      "path": "certify_example.py",
+      "sha256": "9dd42e820ccf3aa39822fb313fe777fafe16bc371fd0902f8753a2f5fed27bc2",
+      "bytes": 2944
+    },
+    {
+      "path": "check_algebra.py",
+      "sha256": "8c2f03d25c41f99bf415bc5cae6cdffd6a0a9a23318bfe52b47c0401a0b74a8d",
+      "bytes": 7784
+    },
+    {
+      "path": "crosscheck_quadrature.py",
+      "sha256": "a4d8e85dd7440768f5669c9abac47cb8094fa2f7a3faec36a6e8c0438bd45a46",
+      "bytes": 3930
+    },
+    {
+      "path": "exact_interval.py",
+      "sha256": "4e83c9aff7ee0a66d89df4fd8e911c252bb4df0572d54c7d34523e213b8c8ab2",
+      "bytes": 2033
+    },
+    {
+      "path": "figures/finite_optimum.png",
+      "sha256": "df516251ac84adf3f33756a54c5bbdcbc5eff58861fca0f13c8c10e6652e5f0c",
+      "bytes": 204289
+    },
+    {
+      "path": "figures/finite_optimum.svg",
+      "sha256": "65ea105b5ca23210281c99cf413d8ca9f4a44f409b7bcf0a969b250068f76f34",
+      "bytes": 129610
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "df442512ebc2b421ad6e34f0f057245bfd5513405710b7962f1f8c6d59e8b478",
+      "bytes": 329
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "a6f5f03da4bc6cd7a0b4a66d856f2c091798bf05d9d4286f3ca31487cab49f16",
+      "bytes": 6548
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "d44dcfc66a3b1206cad50a154c4086f6a93785c1c48d23f0a71f641447748e2b",
+      "bytes": 46
+    },
+    {
+      "path": "results/NUMERICAL_TABLE.md",
+      "sha256": "1c6958609b2dc02713e30a25f650762829d3585903ef38278b8493be2dbf0b60",
+      "bytes": 1352
+    },
+    {
+      "path": "results/algebra.json",
+      "sha256": "9a321453326ec7f2f22419d1b5863d709e98569c5c35ce0839d218c00c12f659",
+      "bytes": 3538
+    },
+    {
+      "path": "results/certificate.json",
+      "sha256": "b0243fea4b19fee298768e7ebba71ce1d21c0654d2ccdc867d8b301f57cec266",
+      "bytes": 59989
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "0654021ad4115a57b2e7d9748a792680c0f274e950cd920b22c8e47997c9c68d",
+      "bytes": 404
+    },
+    {
+      "path": "results/plot_data.json",
+      "sha256": "c532c6977b2a1c9fcc64b31bf1b691cd77694256cb811239d882d6e49af13c84",
+      "bytes": 68372
+    },
+    {
+      "path": "results/quadrature.json",
+      "sha256": "c69b192fa3bd4a8d2b8e375f3628c5028a3d97473e3f08df2c3cdc9fce1cbe83",
+      "bytes": 19943
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "b61906944a6e98b6096640fae922e8d8620f32519f9462f8f7a73ea59fbdde97",
+      "bytes": 289
+    }
+  ],
+  "audit": {
+    "status": "R21_finite_slope_evidence_and_preservation_passed",
+    "prior_manifests": 21,
+    "prior_frozen_file_entries": 943,
+    "exact_algebra_check_groups": 8,
+    "rational_example_widths": 6,
+    "rational_interval_records": 66,
+    "independent_precision_solves": 12,
+    "independent_values_compared": 42,
+    "exact_replay_outputs_byte_identical": 2,
+    "general_equation_blocks": 17,
+    "example_equation_blocks": 12,
+    "scientific_figures": 1,
+    "figure_panels": 3,
+    "figure_formats": [
+      "PNG",
+      "SVG"
+    ],
+    "previous_frozen_packages_modified": false,
+    "manuscript_modified": false,
+    "formal_proof": false,
+    "external_referee_review": false,
+    "novelty_priority_established": false,
+    "new_theta_optimum_certificate": false,
+    "general_fourth_order_coefficient": false,
+    "public_release_or_submission": false,
+    "audit_source_sha256": "78f38a9ecdef82f09c26a58aa5b30bc60044b46529e4936203ee7d61723fbd17",
+    "trust_boundary": "Analytic proof recorded separately. This audit verifies provenance, exact finite algebra, reproducible rational enclosures and recorded numerical comparisons; it does not automatically certify the theorem or originality.",
+    "closed_utc": "2026-09-21T14:39:27.593996+00:00"
+  }
+}

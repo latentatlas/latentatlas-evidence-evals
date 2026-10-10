@@ -1,0 +1,97 @@
+{
+  "status": "R23_exact_algebra_passed",
+  "checks": [
+    {
+      "name": "third_theta_derivative_recurrence",
+      "passed": true
+    },
+    {
+      "name": "all_third_derivative_theta_series_ratios",
+      "passed": true
+    },
+    {
+      "name": "weighted_cubic_majorant_decay",
+      "passed": true
+    },
+    {
+      "name": "tail_residual_crossing_lower_bound",
+      "passed": true
+    },
+    {
+      "name": "tail_root_motion_bound",
+      "passed": true
+    },
+    {
+      "name": "weighted_tail_log_derivative",
+      "passed": true
+    },
+    {
+      "name": "theta_envelope_constant_positive",
+      "passed": true
+    },
+    {
+      "name": "trial_path_moment_coefficient",
+      "passed": true
+    },
+    {
+      "name": "trial_residual_support_coefficient",
+      "passed": true
+    },
+    {
+      "name": "coefficient_minimization",
+      "passed": true
+    },
+    {
+      "name": "infinite_example_direct_target",
+      "passed": true
+    },
+    {
+      "name": "infinite_example_exact_moment_leading_term",
+      "passed": true
+    }
+  ],
+  "check_groups": 12,
+  "theta_derivative_polynomials": [
+    [
+      -3,
+      2
+    ],
+    [
+      -15,
+      30,
+      -8
+    ],
+    [
+      -75,
+      330,
+      -224,
+      32
+    ],
+    [
+      -375,
+      3270,
+      -4232,
+      1440,
+      -128
+    ]
+  ],
+  "theta_envelope_constant": 4980928512,
+  "theta_phi_constants_integer_upper": [
+    88,
+    2104,
+    56216,
+    1648760
+  ],
+  "expP_derivative_constants": [
+    1,
+    44,
+    2052,
+    100712
+  ],
+  "rho_max": "1/1000",
+  "weighted_decay_coefficient_rational_lower": "61003/62250",
+  "tail_crossing_rational_lower": "28730537/51200",
+  "source_sha256": "740620a7a50a167138d18b1a0fa2f2298f4134b16a3610acc9633c811ffea466",
+  "R22_algebra_helper_sha256": "3ac355cf549b8790d098e0be701e97136cbd8d36478f087aa553f2435e696f23",
+  "trust_boundary": "Exact finite identities and rational inequalities. Dominated convergence, infinite support and the weighted theorem remain analytic proof obligations."
+}

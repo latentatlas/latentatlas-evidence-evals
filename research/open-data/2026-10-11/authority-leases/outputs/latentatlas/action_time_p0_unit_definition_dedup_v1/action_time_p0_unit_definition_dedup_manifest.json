@@ -1,0 +1,21 @@
+{
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "duplicate_subject_cluster_count": 0,
+  "event_level_count": 146,
+  "external_calls_used_by_builder": false,
+  "generated_at_utc": "2026-07-13T13:39:49.307479+00:00",
+  "mode": "latentatlas_action_time_p0_unit_definition_dedup",
+  "outputs": {
+    "manifest": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_definition_dedup_manifest.json",
+    "report": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_definition_dedup_report.md",
+    "subject_clusters": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_subject_clusters.csv",
+    "summary": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_definition_dedup_summary.json",
+    "unit_index": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_index.csv"
+  },
+  "production_truth_mutation": false,
+  "second_reviewer_gate": "ready_for_second_reviewer_queue",
+  "status": "pass",
+  "subject_cluster_count": 146,
+  "unit_schema_version": "latentatlas_action_time_p0_unit_definition_dedup_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "08_check_family",
+  "package": "cusp_pinned_family",
+  "script": "check_family.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 44.26121237500047,
+  "source_sha256": "c33c935dda3656378812a243fa45ce1ec7596ad298c4ad298ad3ff1217c8e2d9",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_pinned_family/check_family.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/replays/08_check_family/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:13:07.520679+00:00"
+}

@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-09-21T10:06:49.240927+00:00",
+  "scope": "Focused KR/flat norm equivalence review; no new scientific theorem or changed certificate.",
+  "audit": {
+    "status": "R18_equivalence_review_evidence_checks_passed",
+    "prior_manifest_count": 18,
+    "prior_frozen_file_entries": 847,
+    "primary_sources_compared": 7,
+    "downloaded_PDF_identities": 6,
+    "recorded_search_queries": 41,
+    "exact_diagnostic_groups": 6,
+    "original_scientific_files_changed": false,
+    "scientific_constants_changed": false,
+    "new_research_theorem_claimed": false,
+    "auxiliary_norm_equivalence": "Exact by matching definitions; see E2.",
+    "moment_value_equivalence": "Classical minimax application; analytic argument in E3, not machine formalized.",
+    "literature_priority": "Unresolved; no equivalent full R15 theorem identified in the reviewed results.",
+    "external_review": false,
+    "formal_verification": false,
+    "publication_acceptance_claimed": false,
+    "full_source_files_redistributed": false,
+    "trust_boundary": "Hashes and rational examples are checked; source interpretation and minimax reasoning are not automatically verified.",
+    "audit_source_sha256": "f04045e3eeaff8f9cc76095f8835ba0bfef98f631dacd01e5d0458b176d4446a",
+    "closed_utc": "2026-09-21T10:06:49.240927+00:00"
+  },
+  "files": [
+    {
+      "path": "CONTRIBUTION_REVIEW.md",
+      "sha256": "2b82142ba2a83c5e00c81455512839b320519ed459c184682b264fda637add8c",
+      "bytes": 5900
+    },
+    {
+      "path": "EQUIVALENCE_MAP.md",
+      "sha256": "71dd9224b9fdc1ba2f1be522e32fcf949322dd0a4a2d9d0c0fa42d7e441fdbb6",
+      "bytes": 9072
+    },
+    {
+      "path": "LITERATURE.md",
+      "sha256": "0f3a5e18a70adb42b0cffbe4918bbed06501c5f557d4211247819562864db067",
+      "bytes": 6602
+    },
+    {
+      "path": "NORMALIZATION_CHECK.md",
+      "sha256": "16f068ab276f8afbc47663b5a817f60fc6375a8c876c67e709418b5dabe3eeb0",
+      "bytes": 2700
+    },
+    {
+      "path": "README.md",
+      "sha256": "dd13799a4c6b90493c04a2dbe124da152ffe2396a0921bbc3d81af8a69441e7c",
+      "bytes": 1476
+    },
+    {
+      "path": "SEARCH_LOG.md",
+      "sha256": "fef44ad65fae88c68d6906eba04f5b998b14167f17b5e75915e8dcebfe53be6a",
+      "bytes": 6003
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "06a6bdfa59b56e49ad90b87f0228e83fe638688d2a082ef89ccad9efe8f4c140",
+      "bytes": 1117
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "f04045e3eeaff8f9cc76095f8835ba0bfef98f631dacd01e5d0458b176d4446a",
+      "bytes": 5488
+    },
+    {
+      "path": "check_normalization.py",
+      "sha256": "dc61a7d23fe4e2213438d71e33e6171eb2d43043ac2ade5cde1401094ce00eb8",
+      "bytes": 6373
+    },
+    {
+      "path": "inputs.json",
+      "sha256": "16d691cc044a920b1d9af074b4837d937e2f8e58e16653a254ff3d870fb426c1",
+      "bytes": 3530
+    },
+    {
+      "path": "results/normalization_checks.json",
+      "sha256": "1844bfac3a7ba1b3dda9bc38dce8ab826f80e19e76bbfeeaac3cc8b3c9bca919",
+      "bytes": 3563
+    },
+    {
+      "path": "sources.json",
+      "sha256": "843f1bf01edea8505abf435373f6e8cf5412eefb1fe6c00c3f75f95f31278d68",
+      "bytes": 6736
+    }
+  ]
+}

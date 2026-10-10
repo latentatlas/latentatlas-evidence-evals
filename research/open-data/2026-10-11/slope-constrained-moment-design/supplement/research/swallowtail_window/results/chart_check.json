@@ -1,0 +1,15 @@
+{
+  "status": "independent_rational_2804_colored_cells_passed",
+  "counts": {
+    "0": 430,
+    "2": 2184,
+    "4": 190,
+    "unresolved": 780
+  },
+  "stationary_graph_stripes": 60,
+  "certificate_sha256": "048d81d05b31812f3e861ac4367066fcf9c3265203d17b9088a5d38fe5f4c8a7",
+  "model_sha256": "ee1e5d54fce3c98884b9bf28776afab6afb7cac6a85a8b68ab1eeccd8c211b61",
+  "source_sha256": "b40de15b28bf0dd904d3a072004e8e56922286e0b6bc1ea07f92452df0dcbd1f",
+  "trust_boundary": "R09 integral balls and R10 unnormalized positive majorants are inputs. Affine directional combinations, all new Taylor remainders, inflection/critical brackets and every colored-cell critical-value sign are rebuilt with rational endpoints. Unresolved cells remain unclassified.",
+  "elapsed_seconds": 16.524364875000174
+}

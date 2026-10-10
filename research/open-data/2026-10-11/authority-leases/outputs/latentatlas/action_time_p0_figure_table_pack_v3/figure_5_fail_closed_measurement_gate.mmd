@@ -1,0 +1,7 @@
+flowchart TB
+    A["Required authority field"] --> B{"Present or derivable?"}
+    B -- "yes" --> C["Eligible for family-specific test"]
+    B -- "no" --> D["fail closed until schema upgrade"]
+    C --> E{"Negative control assertion passes?"}
+    E -- "yes" --> F["bounded measurement artifact"]
+    E -- "no" --> G["blocked: detector not publish-safe"]
