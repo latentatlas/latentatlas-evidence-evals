@@ -1,0 +1,56 @@
+{
+  "batch_id": "batch_03",
+  "completed_at_utc": "2026-07-27T16:16:57.482014+00:00",
+  "credential_values_logged": false,
+  "dataset_sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900",
+  "expected_sample_runs": 60,
+  "experiment_id": "latentatlas-authority-action-v0-8-2-full-medium-preauthorization-20260727",
+  "log_artifacts": [
+    {
+      "path": "full/batch_03/anthropic/2026-07-27T16-04-39-00-00_authority-action-eval_8QEvJTkgnoSprpNSFLLebw.json",
+      "sha256": "b2adec56d85c655762ed11cf84d46b05817955cb3ee0602164680a2fef454083"
+    },
+    {
+      "path": "repairs/batch_03/anthropic/incentive_vendor_trial__valid_treatment_epoch2/2026-07-27T16-16-44-00-00_authority-action-eval_JGvanNeQk45BTEmFQ8WXRC.json",
+      "sha256": "877dbe71e8d4441ce9f2df11a9bd010392dcd754f3a1fa3a0a0a63a2b82404d4"
+    }
+  ],
+  "manifest_sha256": "5484140737942a7c3f6314b446b279fe6ce955755cdbf6cbfc7cda4b1aefe0f7",
+  "provider": "anthropic",
+  "provider_audit": {
+    "analytical_set_cost_usd": 1.278688,
+    "calculated_total_cost_usd": 1.314548,
+    "cost_limit_exceeded": 0,
+    "gross_provider_attempts": 61,
+    "log_count": 2,
+    "operational_interruptions": 1,
+    "operational_overhead_cost_usd": 0.03586,
+    "other_sample_limit": 0,
+    "protocol_complete_runs": 60,
+    "protocol_interrupted_runs": 0,
+    "repair_attempts": 1,
+    "sample_runs": 60,
+    "status": "success",
+    "token_limit_exceeded": 0
+  },
+  "repair": {
+    "original_attempt_retained": true,
+    "original_interrupted_sample": {
+      "epoch": 2,
+      "id": "incentive_vendor_trial__valid_treatment",
+      "uuid": "8VeYQqvpLb4vgSi6za9nHg"
+    },
+    "repair_plan_id": "latentatlas-v0-8-2-batch03-anthropic-token-slot-repair-20260727T161341Z",
+    "replacement_sample": {
+      "analytical_epoch": 2,
+      "id": "incentive_vendor_trial__valid_treatment",
+      "source_epoch": 1,
+      "uuid": "9USScvWSUf5cPaS6eUnLe2"
+    },
+    "selection_basis": "protocol_interruption_only"
+  },
+  "sample_ids_sha256": "9950626ce5530c19dacee83024070f6f3b7e11326494c9c5be765fc3c79c8543",
+  "schema_version": "authority_action_provider_batch_checkpoint_v0.1",
+  "started_at_utc": "2026-07-27T16:16:43.275038+00:00",
+  "status": "success"
+}

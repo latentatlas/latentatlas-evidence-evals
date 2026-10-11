@@ -1,0 +1,21 @@
+{
+  "id": "05_check_independent",
+  "package": "cusp_width",
+  "script": "check_independent.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 25.988578666998364,
+  "source_sha256": "a74dd0731d9d82ee5ab9035322be86ad4c129b8b406f1ed7922bc7f083b17c82",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_width/check_independent.py"
+  ],
+  "changed_clone_files": [
+    {
+      "path": "cusp_width/results/independent_check.json",
+      "sha256": "3649002c6d1a7624319a99301988b036c2c288b3ce7656f236c7969b806581ff",
+      "previous_sha256": "2b6c6c9f84dd7ec3f2308be1c6fbe943d1ffb11dbf67e5f14fb8c6737df5a811"
+    }
+  ],
+  "completed_utc": "2026-09-20T23:12:03.288165+00:00"
+}

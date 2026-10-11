@@ -1,0 +1,15 @@
+{
+  "id": "02_check_witnesses",
+  "package": "cusp_region",
+  "script": "check_witnesses.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2072764160038787,
+  "source_sha256": "ea26eab481c05db6691861539f27a401c7cd87ad842fb2022f4d0a360171c57d",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_region/check_witnesses.py"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:11:11.663789+00:00"
+}

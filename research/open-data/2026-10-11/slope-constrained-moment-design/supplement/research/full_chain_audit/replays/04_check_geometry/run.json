@@ -1,0 +1,15 @@
+{
+  "id": "04_check_geometry",
+  "package": "cusp_geometry",
+  "script": "check_geometry.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 208.46906624999974,
+  "source_sha256": "9dd00ed34c06aa17cd01ec130443674237a69db0aa305977127b00436ce2b3d7",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_geometry/check_geometry.py"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:14:49.333576+00:00"
+}

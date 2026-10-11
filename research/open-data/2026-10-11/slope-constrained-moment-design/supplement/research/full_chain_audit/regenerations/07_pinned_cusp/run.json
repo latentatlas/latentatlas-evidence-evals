@@ -1,0 +1,17 @@
+{
+  "id": "07_pinned_cusp",
+  "package": "cusp_robustness",
+  "script": "pinned_cusp.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 1.9764315420034109,
+  "source_sha256": "d77ef6f67215b216b70190b23894916a6192f628616a90c230479c6784e0cc98",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_robustness/pinned_cusp.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/07_pinned_cusp/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:14:05.724515+00:00"
+}

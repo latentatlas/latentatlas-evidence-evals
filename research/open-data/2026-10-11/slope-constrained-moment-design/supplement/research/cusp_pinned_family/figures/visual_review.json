@@ -1,0 +1,17 @@
+{
+  "status": "visually_reviewed",
+  "files": {
+    "pinned_cusp_sheet.png": "1f238e78878644ee9431087608caa823876955b519b93de0f448f0985693605f",
+    "pinned_cusp_sheet.svg": "6811ca8e120a140a24696d8c4a4a10effb45bad26aa71625cee791d73c77ca91",
+    "finite_fold_comparison.png": "e15772a0b409b5a4dce3719f2471df6019d94d51d14b4a1250d9fd4efe5fa4ef",
+    "finite_fold_comparison.svg": "49cfcc7b816835cea179df5ed01c8a258fdcff650d5ded4df0e64e367681a3e6"
+  },
+  "method": "Both final PNG images inspected directly at 2280x1064; SVGs exported from the same figure objects and checked as XML by the closure audit.",
+  "checks": [
+    "No clipped titles, axes, captions or mathematical labels",
+    "Legends moved off plotted data",
+    "Leading-coefficient and finite-width comparisons explicitly distinguished",
+    "Moving exact-cusp coordinates and sampled interpolation disclosed"
+  ],
+  "scientific_input": false
+}

@@ -1,0 +1,156 @@
+{
+  "status": "R28_exact_derivative_and_tail_algebra_passed",
+  "checks": [
+    {
+      "name": "B_total_derivative_-1",
+      "passed": true
+    },
+    {
+      "name": "R_total_derivative_-1",
+      "passed": true
+    },
+    {
+      "name": "G_total_derivative_-1",
+      "passed": true
+    },
+    {
+      "name": "B_total_derivative_1",
+      "passed": true
+    },
+    {
+      "name": "R_total_derivative_1",
+      "passed": true
+    },
+    {
+      "name": "G_total_derivative_1",
+      "passed": true
+    },
+    {
+      "name": "C4_total_derivative",
+      "passed": true
+    },
+    {
+      "name": "C4_missing_target_motion_negative_control",
+      "passed": true
+    },
+    {
+      "name": "moving_boundary_sign_moment_0",
+      "passed": true
+    },
+    {
+      "name": "moving_boundary_sign_moment_1",
+      "passed": true
+    },
+    {
+      "name": "moving_boundary_sign_moment_2",
+      "passed": true
+    },
+    {
+      "name": "moving_boundary_sign_moment_3",
+      "passed": true
+    },
+    {
+      "name": "envelope_no_boundary_term_at_zero",
+      "passed": true
+    },
+    {
+      "name": "stationary_quadratic_derivative",
+      "passed": true
+    },
+    {
+      "name": "tail_tau_raw_derivative",
+      "passed": true
+    },
+    {
+      "name": "tail_dual_rhs_root_envelope",
+      "passed": true
+    },
+    {
+      "name": "tail_root_velocity_from_solve",
+      "passed": true
+    },
+    {
+      "name": "derivative_envelope_decay_dual_rhs",
+      "passed": true
+    },
+    {
+      "name": "derivative_envelope_decay_Gamma_prime",
+      "passed": true
+    },
+    {
+      "name": "derivative_envelope_decay_G_prime_entry",
+      "passed": true
+    },
+    {
+      "name": "derivative_envelope_decay_B_prime_entry",
+      "passed": true
+    },
+    {
+      "name": "derivative_envelope_decay_R_prime",
+      "passed": true
+    },
+    {
+      "name": "whole_root_sum_ratio",
+      "passed": true
+    },
+    {
+      "name": "sign_moment_tail_all_orders",
+      "passed": true
+    },
+    {
+      "name": "theta_derivative_omission_ratio",
+      "passed": true
+    },
+    {
+      "name": "anchored_common_coefficient_band",
+      "passed": true
+    }
+  ],
+  "check_groups": 26,
+  "tail_envelopes": {
+    "dual_rhs": [
+      "1",
+      3,
+      0
+    ],
+    "Gamma_prime": [
+      "311000021/1000",
+      9,
+      8
+    ],
+    "G_prime_entry": [
+      "2269136084/40186125",
+      7,
+      8
+    ],
+    "B_prime_entry": [
+      "40458915740013343/60279187500",
+      8,
+      16
+    ],
+    "R_prime": [
+      "2545333931630569845466769/723350250000000",
+      9,
+      24
+    ]
+  },
+  "tail_decay_margins": {
+    "dual_rhs": 552,
+    "Gamma_prime": 538,
+    "G_prime_entry": 540,
+    "B_prime_entry": 531,
+    "R_prime": 522
+  },
+  "endpoint_gain_interval": [
+    "141/32768000000000000000000000000000000000000000000",
+    "87/13107200000000000000000000000000000000000000000"
+  ],
+  "anchored_coefficient_bounds": [
+    "510366392817/204800000000000000000000000000000000000000000000000",
+    "124601503/50000000000000000000000000000000000000000000000"
+  ],
+  "source_sha256": "69a689e56565ea9caf51463a4324e71818b6dee90e3e3ebd0efe3f41ec5f886b",
+  "symbolic_helper_sha256": "3ac355cf549b8790d098e0be701e97136cbd8d36478f087aa553f2435e696f23",
+  "R26_algebra_sha256": "8053be2a3dff891f3795e7f46fcb519c63c43746e3c3742cf6287e0e7f09af0b",
+  "trust_boundary": "Exact Laurent-polynomial differentiation and rational inequalities. The moving-boundary differentiation, implicit dual and summability arguments are separate analytic obligations."
+}

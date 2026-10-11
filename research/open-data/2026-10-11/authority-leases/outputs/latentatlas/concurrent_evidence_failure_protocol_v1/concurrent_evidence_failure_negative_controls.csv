@@ -1,0 +1,7 @@
+family_id,negative_control,required_fields,claim_state
+stale_read,"Current evidence timestamp is newer than or equal to action time, identity is stable, and no newer superseding record exists.","evidence_timestamp, action_timestamp, latest_state_timestamp, subject_cluster_hash, source_type",level3_5_protocol_track
+identity_time_split,"Stable canonical identity across capture, review packet, and action target with no conflicting aliases.","subject_cluster_hash, canonical_identity_hash, action_target_hash, identity_conflict_flag",level3_5_protocol_track
+authority_expiry,"Lease-like authority fields are present, unexpired, permission-stable, and policy-stable at action time.","decision_id, authority_issued_at, authority_expires_at, permission_hash, policy_hash",level3_5_protocol_track
+materialization_race,Materialized output matches the latest packet-visible state and no later conflicting state appears before action.,"materialization_timestamp, latest_state_timestamp, action_type, state_delta_hash, output_hash",level3_5_protocol_track
+visibility_truth_confusion,Fresh accessible page or independent source confirms the product/workflow state after visibility is restored.,"visibility_status, fetch_status, unblock_proof_timestamp, independent_source_evidence",level3_5_protocol_track
+context_contamination,Reviewer rationale cites only packet-visible fields and uses no non-packet factual additions.,"reviewer_id, rationale_short, packet_field_citations, non_packet_fact_flags",level3_5_protocol_track

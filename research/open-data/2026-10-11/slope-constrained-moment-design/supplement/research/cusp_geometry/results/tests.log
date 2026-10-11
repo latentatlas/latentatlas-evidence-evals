@@ -1,0 +1,9 @@
+test_correlated_enclosures_with_direct_finer_integrals (__main__.GeometryChecks.test_correlated_enclosures_with_direct_finer_integrals) ... ok
+test_cusp_centered_values_against_direct_integrals (__main__.GeometryChecks.test_cusp_centered_values_against_direct_integrals) ... ok
+test_domain_rejection_and_zero_crossing_power (__main__.GeometryChecks.test_domain_rejection_and_zero_crossing_power) ... ok
+test_opening_derivative_exact_identity_and_partial_derivatives (__main__.GeometryChecks.test_opening_derivative_exact_identity_and_partial_derivatives) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.298s
+
+OK

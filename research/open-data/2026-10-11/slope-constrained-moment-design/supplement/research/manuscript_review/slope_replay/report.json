@@ -1,0 +1,16 @@
+{
+  "status": "R15_R16_fresh_chain_replay_passed",
+  "jobs": 11,
+  "fresh_results": 9,
+  "dyadic_balls": 2966,
+  "equal_other_values": 832,
+  "changed_metadata_entries": 14,
+  "mathematical_changes": 0,
+  "prior_manifest_count": 19,
+  "prior_frozen_file_entries": 848,
+  "original_files_unchanged": true,
+  "temporary_tree_removed": true,
+  "source_sha256": "42563ed3c422f2ea15c3afb4c222cb9cac9fe8303a6ef866c6ededfcda7425a8",
+  "completed_utc": "2026-09-21T12:36:44.858666+00:00",
+  "trust_boundary": "Reproducibility plus separate arithmetic and numerical checks; not an independent implementation of every enclosure or formal verification of the proofs."
+}

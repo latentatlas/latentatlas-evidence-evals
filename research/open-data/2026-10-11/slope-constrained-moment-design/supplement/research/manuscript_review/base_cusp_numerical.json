@@ -1,0 +1,41 @@
+{
+  "status": "five_base_cusp_derivatives_independently_corroborated",
+  "rows": [
+    {
+      "order": 0,
+      "value": "-1.20414950843460155726274500026887758154123227597887232044902999287635271808886322553774227326434215916e-112",
+      "absolute_difference": "1.2053860678746e-112",
+      "agreement_within_1e_96": true
+    },
+    {
+      "order": 1,
+      "value": "-2.37902984468946994560092704756392342583053894458726989815974909138373703873711111988194117649173038362e-113",
+      "absolute_difference": "2.18690504874112e-113",
+      "agreement_within_1e_96": true
+    },
+    {
+      "order": 2,
+      "value": "3.27818713353311418007105102719714507034462440443369879682034901486597435103102031092239802022974530683e-114",
+      "absolute_difference": "3.92408450424422e-114",
+      "agreement_within_1e_96": true
+    },
+    {
+      "order": 3,
+      "value": "0.000000000000333563056010063809601600399793115638862564282925091104193444564621818560721316143611652663500184251652",
+      "absolute_difference": "1.26523996563502e-114",
+      "agreement_within_1e_96": true
+    },
+    {
+      "order": 4,
+      "value": "-0.000000000000971679533092561011757853977162490866251517573755757641655900743800560442989230973863410263817567879235",
+      "absolute_difference": "9.7633700476829e-115",
+      "agreement_within_1e_96": true
+    }
+  ],
+  "fresh_certificate_sha256": "3d314b1385a1ea6a68aa76bee2b0acb61ba35a923eafa1833dceec2c62dff689",
+  "quadrature_source_sha256": "3c872e1f1834d6eae921378f8063d382f1c0d37df817da0307e1aa1dd53af7cd",
+  "runner_source_sha256": "7d0a75bf7b2a22387ce78fc31b90c8f6ac513da89da2adfea8ea6a5ec8386b8b",
+  "method": "mpmath 115 dps, 12 theta terms, 16 Gauss-Legendre subsegments on [0,2]",
+  "elapsed_seconds": 3.820606457986287,
+  "is_rigorous_certificate": false
+}

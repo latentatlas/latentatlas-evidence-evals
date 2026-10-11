@@ -1,0 +1,24 @@
+{
+  "source_sha256": "b0538cebd6638e407d48678368d861f9d321f19ac97b6f9f79f7962d41b7f681",
+  "inputs": {
+    "cusp_connection/results/connection_certificate.json": "7f7128036189106fadf466e9a3438440461eb607633b5820aece818ef7dc53bc",
+    "cusp_geometry/results/geometry_certificate.json": "567f6193e7238a862e16156aaadb939454d273dcca8a634faee4aa6319762200",
+    "cusp_width/results/width_certificate.json": "7755870df155973dbc086926300ea2ab3d3e74c2839c89c705833f25ad832924",
+    "cusp_width/results/endpoint_folds.json": "36bdfc61dcb653d3b3193c577858579d98d12987617c7f57fb78e623a8c59c44",
+    "cusp_width/results/rational_check.json": "a31e6475dc06acfe397a6c4256b3b69fe749bded34d78cb400aa5798d961ea26",
+    "cusp_width/results/endpoint_check.json": "ed30830a89bf0b25266b7024ef7c7bc166f05090f26f6ce761c75cf4822df6b4"
+  },
+  "scope": "Figure 1: common guaranteed root regions and coefficient bounds. Figure 2: certified endpoint samples connected only for display, and uniform finite-width-rate enclosures.",
+  "font": "Times New Roman with STIX mathematical glyphs; embedded TrueType in PDF/EPS",
+  "rendering_only_binary64": true,
+  "outputs": {
+    "paper/figure_1_cusp_geometry.eps": "f2c30f173b8c8cbf2404546bfa4acc542e76ea666549a5d048f6612e7969635e",
+    "paper/figure_1_cusp_geometry.png": "a8ae4163c713e47b8024db2539a969ca382f433d0fd008dcd99b32dc73c7efda",
+    "paper/figure_1_cusp_geometry.svg": "804319094ba9e04619496f0d97a3202d97c8b428494d981889a3798181ae304a",
+    "paper/figure_2_finite_width.eps": "4fb39841fd4a0138fad274a66b8e1459750a443c51a4acc0a931f79017048514",
+    "paper/figure_2_finite_width.png": "780bce3b2af195116dd4619109d91a37a63c3b6dd7930a683a342de6ea9820b7",
+    "paper/figure_2_finite_width.svg": "13bd20255d8bed9bf12b7fb1f811d3383d297fe1344c75295e9def684c719e88",
+    "output/pdf/figure_1_cusp_geometry.pdf": "0848778ea5db45890bde94a977e9852439807f204d11fe632853b292f14a3337",
+    "output/pdf/figure_2_finite_width.pdf": "341bf3daab44df3da3e0f27cfbc0ec125a6f2955197b3ed60fea71e51de2a0c2"
+  }
+}

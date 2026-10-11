@@ -1,0 +1,7 @@
+{
+  "status": "development_failure_preserved",
+  "failed_check": "scope marker: not a formal",
+  "reason": "The required disclaimer was present across a line break; literal substring matching did not normalize whitespace.",
+  "fix": "Normalize document whitespace before testing the scope marker. No mathematical checks or bounds changed.",
+  "original_source": "audit_before_whitespace_fix.py"
+}

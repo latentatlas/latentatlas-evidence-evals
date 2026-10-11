@@ -1,0 +1,60 @@
+{
+  "artifact_id": "latentatlas_frozen_masked_review_v1",
+  "data_handling": {
+    "excluded": [
+      "row identifiers and hashes",
+      "reviewer identifiers and timestamps",
+      "masked state strings",
+      "raw text and prompts",
+      "source URLs and product attributes",
+      "customer, tenant, and personal data"
+    ],
+    "included": [
+      "aggregate selection counts",
+      "aggregate outcome counts and rates",
+      "source freeze identifier and SHA-256 digest"
+    ],
+    "release_level": "aggregate_only"
+  },
+  "public_files": [
+    {
+      "bytes": 1415,
+      "path": "summary.json",
+      "sha256": "3619cba9deff627906087afda23ed59ff32cf05b42454d838fdeffbdc205ff61"
+    },
+    {
+      "bytes": 303,
+      "path": "outcomes.csv",
+      "sha256": "310a36c1fa2e2ad4d8e3ed5cf0cad641ddde4ed0a3bc05c7f526e7ee896882d3"
+    }
+  ],
+  "references": [
+    {
+      "doi": "10.5281/zenodo.20161629",
+      "title": "Relevance Is Not Authority"
+    },
+    {
+      "doi": "10.5281/zenodo.21243387",
+      "title": "Evidence Authority After Retrieval"
+    },
+    {
+      "doi": "10.5281/zenodo.21432540",
+      "title": "Authority Leases and Concurrent Evidence Failure in Safe Agentic Execution"
+    }
+  ],
+  "schema_version": "latentatlas_public_frozen_masked_review_manifest_v1",
+  "source_snapshot": {
+    "freeze_id": "p0_review_freeze_6c1465ff0c315da6",
+    "frozen_at_utc": "2026-07-13T08:03:01.337455+00:00",
+    "masked_rows_sha256": "738101038e03bd8d0fe4b1b24c69907ed5ce561226f758ae115fe64c674fb2a3"
+  },
+  "verification": {
+    "command": "python -m latentatlas verify-frozen-review --artifact-dir data/frozen_masked_review_v1",
+    "verifies": [
+      "public file SHA-256 digests and byte sizes",
+      "selection and outcome-count invariants",
+      "CSV and JSON agreement",
+      "source snapshot identity agreement"
+    ]
+  }
+}

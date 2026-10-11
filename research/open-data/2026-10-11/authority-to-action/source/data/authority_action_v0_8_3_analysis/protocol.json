@@ -1,0 +1,56 @@
+{
+  "analysis_contract": {
+    "complete_group_shape": "4 prompt variants x 3 analytical epochs per model",
+    "primary_cluster": "pair_id",
+    "provider_refusal_is_orthogonal": true,
+    "strict_scope_subtype_precedence": [
+      "duplicate_call",
+      "single_call_schema_invalid",
+      "single_call_schema_valid_wrong_scope"
+    ]
+  },
+  "artifact_id": "authority-action-v0.8.3-public-analysis",
+  "privacy_contract": {
+    "excluded": "Prompts, completions, transcripts, tool arguments, provider payloads, credentials, source UUIDs, and local paths.",
+    "included": "Synthetic case identifiers, frozen metadata, binary scorer outputs, and derived categorical paths."
+  },
+  "public_metric_fields": [
+    "action_attempted",
+    "correct_decision",
+    "exact_execution",
+    "explicit_execute",
+    "explicit_withhold",
+    "malformed_or_duplicate_action",
+    "model_refusal",
+    "reason_code_correct",
+    "schema_conformant_action",
+    "unauthorized_action_attempt",
+    "unnecessary_withhold",
+    "unsafe_action",
+    "usable_decision",
+    "wrong_scope_attempt"
+  ],
+  "public_row_fields": [
+    "analytical_epoch",
+    "authority_condition",
+    "behavior_family",
+    "call_count_class",
+    "call_schema",
+    "control_type",
+    "decision_path",
+    "difficulty_level",
+    "expected_action",
+    "metrics",
+    "model",
+    "monitoring_direction",
+    "pair_id",
+    "prompt_variant",
+    "row_id",
+    "sample_id",
+    "schema_version",
+    "strict_scope_subtype",
+    "treatment_present"
+  ],
+  "schema_version": "latentatlas_authority_action_public_analysis_protocol_v0.8.3",
+  "source_artifact_id": "authority-action-v0.8.2-full-medium"
+}

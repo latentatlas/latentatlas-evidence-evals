@@ -1,0 +1,23 @@
+{
+  "source_tex_sha256": "9a9b2a79e743968b1fb557cf8f6d1addab5a37a768f9acb40ec46144d3ac56ab",
+  "revised_tex_sha256": "7ff48c972820bd7e4d0b436e278d80760a7ea6c276a67921d83710e916a02151",
+  "source_constants_sha256": "61c97203e5b5d061e8f6c4624d6b46c22a06035fbb177c6893b490f24dd2c1b5",
+  "script_sha256": "67331d3f7d90fcd0a3de25334355238026902cf492e4c5483512d2b24b65c0a0",
+  "changes": [
+    "revision_identifier",
+    "early_geometric_motivation",
+    "fortet_mourier_comparison",
+    "anchor_preserves_amplitude",
+    "fixed_local_convex_part",
+    "local_convex_complement",
+    "gamma_tail_global_monotonicity",
+    "finite_center_cost_derivation",
+    "named_upper_constants",
+    "budget_scale_interpretation",
+    "derivative_tail_global_monotonicity",
+    "new_review_provenance",
+    "additional_primary_bibliography"
+  ],
+  "numerical_constants_changed": false,
+  "main_theorem_statements_changed": false
+}

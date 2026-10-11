@@ -1,0 +1,42 @@
+{
+  "status": "R30_finite_design_comparison_evidence_and_preservation_passed",
+  "prior_manifests": 30,
+  "prior_frozen_file_entries": 1235,
+  "closed_cells": 32,
+  "finite_roots_per_cell": 28,
+  "sign_leaves_per_cell": 354,
+  "exact_tail_check_groups": 12,
+  "rational_check_count": 4064,
+  "remainder_decisions": 2592,
+  "derivative_AD_decisions": 1472,
+  "exact_comparison_checks": 146,
+  "ordered_grid_nodes": 33,
+  "driver_interval": [
+    "-1/64",
+    "0"
+  ],
+  "minimum_slope_budget": "2e-5",
+  "uniform_remainder_constants": [
+    "1.02e-53",
+    "1.64e-53"
+  ],
+  "remainder_interval_enlargement_factor": 1024,
+  "actual_value_comparison": true,
+  "normalized_fourth_value_comparison": true,
+  "monotonicity_at_arbitrarily_close_drivers_proved": false,
+  "finite_M_optimum_derivative_proved": false,
+  "same_target_or_profile_for_all_drivers_claimed": false,
+  "numerical_finite_M_optimizer_computed": false,
+  "C6_claimed": false,
+  "whole_original_arc_covered": false,
+  "previous_packages_modified": false,
+  "manuscripts_modified": false,
+  "external_referee_review": false,
+  "formal_proof": false,
+  "literature_priority_established": false,
+  "public_release_or_submission": false,
+  "audit_source_sha256": "6d0bef73702fa5ec222a4214e1f744b0ceae114096f84be9e344a2492fa9580e",
+  "trust_boundary": "Hash preservation, exact and rational replay, optional Arb regeneration including R29, and exact finite-value comparisons. Transcendental enclosures are explicit rational-check inputs. The analytic support, contraction, summability, compactness and differentiation arguments require separate mathematical review.",
+  "closed_utc": "2026-09-22T23:36:52.283473+00:00",
+  "Arb_replayed_at_freeze": true
+}

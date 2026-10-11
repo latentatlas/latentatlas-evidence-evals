@@ -1,0 +1,15 @@
+{
+  "compiler_version": "Tectonic 0.17.0",
+  "command": [
+    "/PROJECT/.tools/tectonic-0.17.0/tectonic",
+    "--keep-logs",
+    "--keep-intermediates",
+    "manuscript.tex"
+  ],
+  "compiler_sha256": "b52b5a730e2b0b33087304f7720f649603953f270a6b1c88bb031e1ae01f7f9c",
+  "pdf_sha256": "c8ce523781ec7b718208d65b79e84424486dd1d8791ebf076eee8939e6a98266",
+  "tex_sha256": "7ff48c972820bd7e4d0b436e278d80760a7ea6c276a67921d83710e916a02151",
+  "layout_or_reference_errors": [],
+  "source_date_epoch": null,
+  "external_upload_of_manuscript": false
+}

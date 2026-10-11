@@ -1,0 +1,2 @@
+model_id,row_count,min_score,p25_score,median_score,p75_score,p90_score,p95_score,max_score,avg_score
+voyage:rerank-2.5,1000,0.2158203125,0.3515625,0.439453125,0.55859375,0.70703125,0.765625,0.9140625,0.4683

@@ -1,0 +1,21 @@
+{
+  "status": "figures_generated_from_recorded_certificates",
+  "files": {
+    "finite_shape_design.png": "3286f50978a49be0c6d25ff862346ad1123f4ddbd17d398bbcc3783d2d245b90",
+    "finite_shape_design.svg": "59bb7e5c9240043c5988eb2a1e511c6f975d5074de98479547fdac0e0bf0bfc6",
+    "opening_boundaries.png": "da075d4a2bb8f6f7a26c7f0d6667ceaac18ee4c646f7f2af820ea7df9aca3e93",
+    "opening_boundaries.svg": "3cfa50f9efad49b403598c9fce010a80b28208b70a3646b0abc6531179457914"
+  },
+  "input_sha256": {
+    "fold_samples.json": "51ee4b465d4572e582c78ebf597e5daed88d01b4b6ee3e7b21f33c9484863b41",
+    "design_check.json": "f8c1fb5f84fe8cda56145107989a2f034cc399233e4e8e09fd88f4ea73a037d9",
+    "boundary_certificate.json": "1a4c6d427387cc29436c1c64114757788731e4e03443e77a097652ce51c64967",
+    "key_results.json": "25f56dfcf1033b893ca08c4d9046e6773da8830bf68ee01096b86191c6d23f00"
+  },
+  "source_sha256": "d962ab42163f8daa9f2cd7bc6af585edf9490aaf2b83505e3afa667ab5b49d6b",
+  "dimensions_png": [
+    2280,
+    1064
+  ],
+  "scope": "First figure: finite certified points, connecting lines are guides; continuum nesting proved in local_certificate.json. Second: exact rational-in-amplitude formulas with certified coefficients, plotted using floating-point midpoints; not a plot of finite width outside the green band."
+}

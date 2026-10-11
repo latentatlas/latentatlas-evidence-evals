@@ -1,0 +1,16 @@
+{
+  "cluster_decision_count": 17,
+  "current_pattern_schema_decision_count": 14,
+  "legacy_pattern_schema_decision_count": 3,
+  "decisions": "/LOCAL_HOME/Documents/New project/outputs/latentatlas/action_time_pattern_cluster_review_p0_full/human_review_v2_pattern_cluster_decisions_reviewer01_hsyn.csv",
+  "external_calls_used": false,
+  "generated_at": "2026-07-13T09:44:18+03:00",
+  "internal_index_read": false,
+  "latest_applied_unreviewed_count": 75,
+  "latest_batch_pattern_count": 14,
+  "latest_pattern_schema_version": "p0_pattern_v2_pdp_temporal_authority",
+  "mode": "latentatlas_v2_pattern_cluster_decisions",
+  "production_truth_mutation": false,
+  "reviewer_id_hash": "reviewer01_hsyn",
+  "status": "pass"
+}

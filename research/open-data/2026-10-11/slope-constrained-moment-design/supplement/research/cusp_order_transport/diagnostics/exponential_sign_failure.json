@@ -1,0 +1,9 @@
+{
+  "status": "development_failure_preserved",
+  "failed_check": "positive_exponential_627_12",
+  "reason": "An outward Arb enclosure of a very small positive exponential can cross zero because it encloses a wide range of inputs. Positivity of the exact function does not imply positivity of every enclosing interval.",
+  "fix": "Check that the upper endpoint is positive and below one; retain the entire enclosing interval in every operation, including any negative lower endpoint. The generator threshold -1/50 is unchanged.",
+  "original_source": "check_bounds_before_exponential_sign_fix.py",
+  "producer_changed": false,
+  "mathematical_acceptance_threshold_changed": false
+}

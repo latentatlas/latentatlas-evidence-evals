@@ -1,0 +1,206 @@
+{
+  "created_utc": "2026-09-20T22:54:08.553676+00:00",
+  "scope": "Universal lower bound and explicit real-analytic positive nondegenerate upper design at the original exact Q, within relative 5e-11 of the minimum L-infinity amplitude; no frequency/derivative budget.",
+  "audit": {
+    "status": "r12_evidence_links_and_preservation_checks_passed",
+    "preserved_packages": [
+      {
+        "package": "cusp_verified",
+        "files": 25,
+        "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96"
+      },
+      {
+        "package": "cusp_region",
+        "files": 24,
+        "manifest_sha256": "62da00f67be0c34236b8529f2377258991c0320ee9bc7f1ab882c39e3cfafbe5"
+      },
+      {
+        "package": "cusp_connection",
+        "files": 27,
+        "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1"
+      },
+      {
+        "package": "cusp_geometry",
+        "files": 25,
+        "manifest_sha256": "b3a1846431be58d2f3c5d45749f218aa4efebaca431e3ebd2ffe454ff7e22621"
+      },
+      {
+        "package": "cusp_width",
+        "files": 49,
+        "manifest_sha256": "eb7847154285acfa09fecb73aece53863409e29c62ed8045bde87f4974cf6dc8"
+      },
+      {
+        "package": "cusp_literature",
+        "files": 12,
+        "manifest_sha256": "2d48fc9cfa5e40c376e1adf8f09b6ff62f9312dc515787d4dba37745d1bf40ab"
+      },
+      {
+        "package": "cusp_robustness",
+        "files": 34,
+        "manifest_sha256": "0036bd2da3d52098743149eb645e934a088bb7a437d72cfa8e97ef7d326489c6"
+      },
+      {
+        "package": "cusp_pinned_family",
+        "files": 98,
+        "manifest_sha256": "b8119dd3f334ab697a7cf3f31ba18c515c0315bcf70a5a706b25dbb406a95aad"
+      },
+      {
+        "package": "cusp_shape_design",
+        "files": 47,
+        "manifest_sha256": "6f2ae4a0518eb3ebf974d0e53ed9ea0aef07aa816336375b46befda74102d642"
+      },
+      {
+        "package": "swallowtail_window",
+        "files": 45,
+        "manifest_sha256": "72fbd3c96d0a6955cf8ceb5d776c70349b8267c7e8dae515057c766d5debe2e1"
+      },
+      {
+        "package": "kernel_design_principle",
+        "files": 23,
+        "manifest_sha256": "c48a51b15d4eb109a7f788eab7aa3e47edb78ef21ac935c34e624782431bedca"
+      }
+    ],
+    "preserved_scientific_files": 409,
+    "preserved_original_files": 40,
+    "previous_chain_audit": "passed",
+    "new_arb_segment_integrals": 261,
+    "residual_root_boxes": 28,
+    "sign_leaves": 113,
+    "complete_sign_partition_pieces": 141,
+    "positive_derivative_envelope_cells": 256,
+    "rational_checker_reports": 1,
+    "separate_numerical_moments_two_precisions": 3,
+    "readable_minimum_norm_bracket": [
+      "0.00000000091787079603827",
+      "0.00000000091787079608363"
+    ],
+    "relative_gap_upper_bound": "5e-11",
+    "figures_visually_reviewed": 2,
+    "local_links_checked": 18,
+    "retained_implementation_diagnostics": 2,
+    "latex_compiled": false,
+    "external_mathematical_review": false,
+    "literature_priority_established": false,
+    "exact_optimal_coefficients_certified": false,
+    "R10_finite_window_transferred": false,
+    "frequency_or_derivative_budget_imposed": false,
+    "smooth_nonattainment_status": "Analytic consequence of R11 dual equality and full positive support; not an arithmetic-only finding.",
+    "scope": "Universal lower bound and explicit real-analytic positive nondegenerate upper design at the original exact Q, within relative 5e-11 of the minimum L-infinity amplitude; no frequency/derivative budget.",
+    "trust_boundary": "Provenance closure checks recorded artifacts and their source identities. Rational arithmetic trusts segment integral enclosures, trigonometric bounds, positive envelopes and analytic tails. Smooth-transition errors are bounded analytically; no claim of a separate direct integration of those transitions or external review.",
+    "audit_source_sha256": "4f05c25093dc3e76b57b7481f498a505fc64dbcddcdad8a64f208b81f91ccce0"
+  },
+  "files": [
+    {
+      "path": "ARASTIRMA_NOTU.md",
+      "sha256": "f88aee7a5cac1ffb4d1361f7159a19ae89e653493054dee358932488921d0043"
+    },
+    {
+      "path": "FIGURE_CAPTIONS.tex",
+      "sha256": "523aba16b9cdc1c29ac5a49365b0ec4f0b73e90efd423e2456e2e56d93d997b7"
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "6715d3527c5f13161e365d01a6717307b830c3fd116356020f316a73df5c1b19"
+    },
+    {
+      "path": "README.md",
+      "sha256": "abb2b87f88990a168bc388d2e14e9a0e7b9fcd46e01fed72fa2a41b127e81b31"
+    },
+    {
+      "path": "REFERENCES.md",
+      "sha256": "1d93007161bae50a148ba6c1c68d38a9dbd60b82a7460b4b64ad943797c0b489"
+    },
+    {
+      "path": "THEOREM_APPENDIX.tex",
+      "sha256": "152760a94071f6cc00b496cc03fb37c03e20fecc938e12bddedc6a184fc4f3f8"
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "73f3a73965bf3677cfaca8bf6fc6b6f393e00104118076239c53d575ac122bb6"
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "4f05c25093dc3e76b57b7481f498a505fc64dbcddcdad8a64f208b81f91ccce0"
+    },
+    {
+      "path": "certify_threshold.py",
+      "sha256": "8b1cfc110a6109c96159abe2da3b8c5d4c366188be49049fbd5dc3b3a5cdf2a2"
+    },
+    {
+      "path": "check_threshold.py",
+      "sha256": "a351a07fcaeb076b90dbfbc4ce0c9d425565ff3711f2fc4c96199663613a564c"
+    },
+    {
+      "path": "crosscheck_moments.py",
+      "sha256": "1f77ecfc02d40f10504ec01a633e6965cab1cf78c00d68ddfa99072b40a913ce"
+    },
+    {
+      "path": "diagnostics/certify_threshold_v1.py",
+      "sha256": "22ead8c9999305279e577e743224ba979b50bd58501f030e4cb292f07385a98a"
+    },
+    {
+      "path": "diagnostics/check_threshold_v1.py",
+      "sha256": "10a767b3641de1d4c69961fd79d56c3c5e00454feed934e18d94e38bc247abb0"
+    },
+    {
+      "path": "diagnostics/interval_cost_guard.json",
+      "sha256": "6e5a728a58833f468a4e747d932d90b77db7334ccadb1d4f0bffb9a253a291f7"
+    },
+    {
+      "path": "diagnostics/l1_probe.json",
+      "sha256": "fafef9cb05c98740a34bbd79ad4f3e52057b30da9c4104ea7c93196abc930874"
+    },
+    {
+      "path": "diagnostics/rational_point_decode.json",
+      "sha256": "e09a361362cbd8aa0adcebb40a8b03475b2cafb71af9e166cd6150689790b3fc"
+    },
+    {
+      "path": "figures/metadata.json",
+      "sha256": "d2605249447925eb43a35de6876e4bfabe2ed64482476f8a666e6e8b4bc530a2"
+    },
+    {
+      "path": "figures/smooth_near_minimum_design.png",
+      "sha256": "d4bd0663812b3777e41235e3462c0c90d034fd25327d6e4797ca634d32103ddc"
+    },
+    {
+      "path": "figures/smooth_near_minimum_design.svg",
+      "sha256": "2b29b847c65d7880d6478bae9761c772ed8cc1f03a1651152f755c6505f95893"
+    },
+    {
+      "path": "figures/threshold_contraction.png",
+      "sha256": "ff43315b449b785dff183fd0bdbf4b6b687d76783671883945f8aab1af1c4afb"
+    },
+    {
+      "path": "figures/threshold_contraction.svg",
+      "sha256": "b8b9f844ece1bc626429a749cb70aba23d8c0a338dec3cb17b7e55dbda83108d"
+    },
+    {
+      "path": "figures/visual_review.json",
+      "sha256": "4a31ac3c8b44db8edd0a18f3d8c70d656a38ee63b13dc8da8ec93e8e41538a05"
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "c0bd95374dcb4010a6f723ab05283eb75785211e94f5d5f277e4c35ae373570c"
+    },
+    {
+      "path": "probe_l1.py",
+      "sha256": "1500aa1ba72bf4c6ac2bc028e46a9f5273c1349fd94765bf6c8c21d48dd3df0c"
+    },
+    {
+      "path": "results/moment_crosscheck.json",
+      "sha256": "b169f1590d5ecbb59d819e79a9cc6689f8bdcb7365fe19e42031f6b1ae34ea13"
+    },
+    {
+      "path": "results/threshold_certificate.json",
+      "sha256": "d829941f8ca516e2eedcd70be04e89fcfc0618363c3d91f03e06c75d2a3c00cd"
+    },
+    {
+      "path": "results/threshold_check.json",
+      "sha256": "06777e24324893bdd74f0e4c8a4843eedad439f9c36be809b5483925b3fe0f71"
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "d6de850ee09392188b5cc411526b4820dc09aa79921feec358fce1c66a67e1ff"
+    }
+  ]
+}

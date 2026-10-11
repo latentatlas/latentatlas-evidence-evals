@@ -1,0 +1,95 @@
+{
+  "claim_boundary": {
+    "allowed_claims": [
+      "The current frozen P0 denominator has been audited at event and subject-cluster levels.",
+      "Second-reviewer expansion can use this unit policy if status is pass."
+    ],
+    "blocked_claims": [
+      "Population probability.",
+      "General system accuracy.",
+      "Counting repeated subject snapshots without pre-registered dedup policy."
+    ]
+  },
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "duplicate_event_ids": [],
+  "duplicate_queue_ids": [],
+  "duplicate_subject_cluster_count": 0,
+  "duplicate_subject_cluster_hashes": [],
+  "event_level_count": 146,
+  "external_calls_used_by_builder": false,
+  "failure_reasons": [],
+  "freeze_hash_sha256": "738101038e03bd8d0fe4b1b24c69907ed5ce561226f758ae115fe64c674fb2a3",
+  "freeze_id": "p0_review_freeze_6c1465ff0c315da6",
+  "generated_at_utc": "2026-07-13T13:39:49.307479+00:00",
+  "input": {
+    "freeze_rows": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_rows.csv",
+    "freeze_summary": "outputs/latentatlas/action_time_p0_review_freeze_v1/action_time_p0_review_freeze_summary.json"
+  },
+  "internal_index_read": false,
+  "missing_subject_cluster_hash_count": 0,
+  "mode": "latentatlas_action_time_p0_unit_definition_dedup",
+  "outcome_counts_event_level": {
+    "correct_block": 99,
+    "false_block": 22,
+    "needs_more_evidence": 25
+  },
+  "outputs": {
+    "manifest": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_definition_dedup_manifest.json",
+    "report": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_definition_dedup_report.md",
+    "subject_clusters": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_subject_clusters.csv",
+    "summary": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_definition_dedup_summary.json",
+    "unit_index": "outputs/latentatlas/action_time_p0_unit_definition_dedup_v1/action_time_p0_unit_index.csv"
+  },
+  "production_truth_mutation": false,
+  "raw_source_rows_read": false,
+  "recommendation": {
+    "current_paper_primary_unit": "action_attempt_event",
+    "level4_sensitivity_unit": "subject_cluster",
+    "rationale": "Current frozen P0 event denominator and subject-cluster denominator match.",
+    "second_reviewer_gate": "ready_for_second_reviewer_queue"
+  },
+  "status": "pass",
+  "subject_cluster_count": 146,
+  "subject_to_event_denominator_ratio": 1.0,
+  "unique_event_id_count": 146,
+  "unique_queue_id_count": 146,
+  "unit_definitions": [
+    {
+      "claim_boundary": "Descriptive frozen-set unit; not a population probability denominator.",
+      "current_count": 146,
+      "key_fields": [
+        "queue_id",
+        "event_id",
+        "action_type"
+      ],
+      "recommended_use": "Primary unit for the current frozen P0 descriptive Paper A denominator.",
+      "unit_type": "action_attempt_event"
+    },
+    {
+      "claim_boundary": "If lower than event count, report both and pre-register duplicate treatment.",
+      "current_count": 146,
+      "key_fields": [
+        "subject_cluster_hash"
+      ],
+      "recommended_use": "Independence sensitivity denominator before Level 4 probability language.",
+      "unit_type": "subject_cluster"
+    },
+    {
+      "claim_boundary": "Do not use workflow-family count as event or subject denominator.",
+      "current_count": 3,
+      "key_fields": [
+        "action_type"
+      ],
+      "recommended_use": "Stratification axis, not a denominator by itself.",
+      "unit_type": "workflow_family"
+    }
+  ],
+  "unit_schema_version": "latentatlas_action_time_p0_unit_definition_dedup_v1",
+  "workflow_family_count": 3,
+  "workflow_family_counts": {
+    "manual_review_before_materialization": 48,
+    "recheck_primary_offer_availability": 94,
+    "resolve_official_truth_identity_guard": 4
+  }
+}

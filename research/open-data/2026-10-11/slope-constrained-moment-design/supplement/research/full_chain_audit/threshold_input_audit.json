@@ -1,0 +1,147 @@
+{
+  "status": "fresh_R12_sign_envelope_integral_and_smooth_design_audit_passed",
+  "residual_root_boxes": 28,
+  "old_sign_leaves_rechecked": 113,
+  "additional_sign_bisections": 30,
+  "Lipschitz_cell_envelopes": 2304,
+  "Lipschitz_tail_envelopes": 9,
+  "step_integrals": 297,
+  "step_orders": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "rescaled_transition_integrals": 1764,
+  "smooth_orders": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "step_moments_contained_in_old_enclosures": true,
+  "smooth_errors_inside_old_budgets": true,
+  "correction_weights_contained_in_old_enclosures": true,
+  "original_cost_upper_bound_verified": true,
+  "original_order_four_and_rank_three_verified": true,
+  "dps": 140,
+  "theta_terms": 12,
+  "step_cutoff": 2,
+  "rescaled_transition_cutoff": 40,
+  "smoothing_corrections": [
+    {
+      "mid_man_exp": [
+        384137702270807888758849512690666302433319577187348651380097023827378218325098065791678985185156691992764260121752869614203339871838882240399,
+        -531
+      ],
+      "rad_man_exp": [
+        244305525,
+        -188
+      ],
+      "enclosure": "[5.464610807869004492480e-20 +/- 3.76e-42]"
+    },
+    {
+      "mid_man_exp": [
+        -237930043810540952396762104587529276165998978094389034614016067686760083681934596762184362737692409202550940511189698143862034809472770755451,
+        -532
+      ],
+      "rad_man_exp": [
+        1022821063,
+        -193
+      ],
+      "enclosure": "[-1.692355477264792663199e-20 +/- 1.28e-42]"
+    },
+    {
+      "mid_man_exp": [
+        -470921896302391877650682608786254685655444542010155584755334250670249577372025229751283197083837532690200292685245878811992716591838385089869,
+        -531
+      ],
+      "rad_man_exp": [
+        550512591,
+        -194
+      ],
+      "enclosure": "[-6.699172898113573785799e-20 +/- 4.28e-42]"
+    },
+    {
+      "mid_man_exp": [
+        -200426719433228479515412340884048288312869621355411431242039997471645104671999367872660855476009554510693620649038700212508507358424390329321,
+        -530
+      ],
+      "rad_man_exp": [
+        379840331,
+        -195
+      ],
+      "enclosure": "[-5.702403126410232484303e-20 +/- 3.52e-42]"
+    },
+    {
+      "mid_man_exp": [
+        447502078455136511799547332955631882633341382718496576155358215046311420342975589172107256832530868629929966313091199712243506641986976303021,
+        -535
+      ],
+      "rad_man_exp": [
+        152623529,
+        -195
+      ],
+      "enclosure": "[3.978756641195649070577e-21 +/- 2.53e-43]"
+    },
+    {
+      "mid_man_exp": [
+        688261391408626565661510936751344512030206365735993798810557303783755514228907442456093961745133008432944290436226114953348528219065261804529,
+        -534
+      ],
+      "rad_man_exp": [
+        548998269,
+        -198
+      ],
+      "enclosure": "[1.223871223749038589275e-20 +/- 4.22e-42]"
+    },
+    {
+      "mid_man_exp": [
+        -696750412250649947509366181746609809093600419863788427044228229977090468729927177875310533094477937014554005316378519973446765438891147386257,
+        -540
+      ],
+      "rad_man_exp": [
+        537190931,
+        -199
+      ],
+      "enclosure": "[-1.935885093796833610406e-22 +/- 3.17e-44]"
+    },
+    {
+      "mid_man_exp": [
+        -660018701625824864757791115064163757417549356829009259108041996091640438695932732054613590989449584898780191835250627068426271771876283685683,
+        -536
+      ],
+      "rad_man_exp": [
+        563741301,
+        -200
+      ],
+      "enclosure": "[-2.934124687725165906584e-21 +/- 1.92e-43]"
+    },
+    {
+      "mid_man_exp": [
+        -407797643707331972547430673084075250686813202193041084612253723776878372026527797380699510326540927700282150356906263485067178847138622346813,
+        -547
+      ],
+      "rad_man_exp": [
+        19584417,
+        -196
+      ],
+      "enclosure": "[-8.851911919627640548737e-25 +/- 1.82e-47]"
+    }
+  ],
+  "method": "Independent integrand arrangement and higher precision; full step moments include [1,2]. Smooth differences integrated in v=(u-b)/eta, paired around each knot, with logistic-tail and theta-tail bounds. Does not import old research computation modules.",
+  "trust_boundary": "Still uses Arb as rigorous integration/arithmetic backend, old exact Q, old absolute derivative majorants for negligible Q transfer, and R11 correction-matrix inputs. These were separately replayed. No external review or formal verification.",
+  "scope": "Verifies old certificate budgets; no improved theorem, interval or new kernel is promoted.",
+  "source_sha256": "16f4c9a6d2dc186824262bdc9aba17bc47575286980f3a3468d3b2fa42bb6ef8",
+  "elapsed_seconds": 71.91904654199607
+}

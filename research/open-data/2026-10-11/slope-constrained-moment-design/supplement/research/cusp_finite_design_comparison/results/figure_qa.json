@@ -1,0 +1,13 @@
+{
+  "png_sha256": "e2c8cd99111596127bceb7c2dfad310432724c02a4b1ff27120fe7b65a79f188",
+  "panels": 3,
+  "image_dimensions": [
+    3132,
+    1026
+  ],
+  "no_clipped_text": true,
+  "no_overlapping_labels": true,
+  "bounds_not_fitted_optimum": true,
+  "fixed_budget_and_scope_labels_visible": true,
+  "review_method": "Rendered PNG inspected visually after explicit log ticks and legend relocation."
+}

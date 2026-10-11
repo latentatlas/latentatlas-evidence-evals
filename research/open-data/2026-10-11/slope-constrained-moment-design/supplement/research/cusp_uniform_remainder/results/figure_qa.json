@@ -1,0 +1,19 @@
+{
+  "inspected_utc": "2026-09-21T22:10:27.801041+00:00",
+  "png_sha256": "b005a3c0ad9d83873b209a4e924dee0abd32e07b1b3155bc1a6b7d7db86ae868",
+  "native_dimensions": [
+    2340,
+    1044
+  ],
+  "review_display_dimensions": [
+    2048,
+    914
+  ],
+  "panels": 2,
+  "no_clipped_text": true,
+  "no_overlapping_labels": true,
+  "proved_band_and_diagnostic_trend_distinguished": true,
+  "constant_band_not_claimed_constant_coefficient": true,
+  "short_arc_scope_labelled": true,
+  "inspection_method": "Assistant visual inspection of the PNG, separate from numerical data validation."
+}

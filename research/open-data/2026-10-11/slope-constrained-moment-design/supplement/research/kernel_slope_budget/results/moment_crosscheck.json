@@ -1,0 +1,21 @@
+{
+  "status": "separate_positive_moment_numerics_agree",
+  "theta_terms": 20,
+  "values": [
+    {
+      "dps": 90,
+      "value": "0.0003177327541462528873565305178770579181376636864671526457753892877321100434818366690005360520951635345",
+      "difference": "0.0",
+      "inside_arb_enclosure": true
+    },
+    {
+      "dps": 115,
+      "value": "0.0003177327541462528873565305178770579181376636864671526457753892877321100434818366690005360521095704275",
+      "difference": "1.06320105893e-110",
+      "inside_arb_enclosure": true
+    }
+  ],
+  "acceptance": "Absolute numerical difference < 1e-80; mpmath is not an interval proof.",
+  "elapsed_seconds": 1.7421424580024905,
+  "source_sha256": "59af8f938b244ef99fdc1e479181e910268d738a4b03dfd5458b84e373ce76d2"
+}

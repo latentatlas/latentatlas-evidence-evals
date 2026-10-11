@@ -1,0 +1,22 @@
+{
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "external_calls_used_by_builder": false,
+  "generated_at_utc": "2026-07-16T10:48:21.650249+00:00",
+  "level4_probability_claim_allowed": false,
+  "mode": "latentatlas_action_time_level3_continuation_pack",
+  "outputs": {
+    "claim_boundary_matrix": "outputs/latentatlas/action_time_level3_continuation_pack_v1/claim_boundary_matrix.csv",
+    "concurrency_note": "outputs/latentatlas/action_time_level3_continuation_pack_v1/concurrent_evidence_failure_note.md",
+    "manifest": "outputs/latentatlas/action_time_level3_continuation_pack_v1/level3_continuation_manifest.json",
+    "micro_review_protocol": "outputs/latentatlas/action_time_level3_continuation_pack_v1/micro_review_protocol.md",
+    "plan": "outputs/latentatlas/action_time_level3_continuation_pack_v1/level3_continuation_plan.md",
+    "summary": "outputs/latentatlas/action_time_level3_continuation_pack_v1/level3_continuation_summary.json"
+  },
+  "primary_route": "level3_5_publish_safe_research",
+  "production_truth_mutation": false,
+  "raw_source_rows_read": false,
+  "reviewer02_required_for_primary_route": false,
+  "schema_version": "latentatlas_action_time_level3_continuation_pack_v1",
+  "status": "pass"
+}

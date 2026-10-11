@@ -1,0 +1,26 @@
+family_a,family_b,family_a_count,family_b_count,overlap_count,overlap_rate_of_a,overlap_rate_of_b,relationship,claim_boundary
+Stale evidence read,Stale evidence read,48,48,48,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Stale evidence read,State changed before execution,48,48,48,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Stale evidence read,Expired or missing authority,48,146,48,1.0000,0.3288,inside Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Stale evidence read,Visibility mistaken for truth,48,7,6,0.1250,0.8571,partial overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Stale evidence read,Identity and timing split,48,4,0,0.0000,0.0000,no overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+State changed before execution,Stale evidence read,48,48,48,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+State changed before execution,State changed before execution,48,48,48,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+State changed before execution,Expired or missing authority,48,146,48,1.0000,0.3288,inside Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+State changed before execution,Visibility mistaken for truth,48,7,6,0.1250,0.8571,partial overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+State changed before execution,Identity and timing split,48,4,0,0.0000,0.0000,no overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Expired or missing authority,Stale evidence read,146,48,48,0.3288,1.0000,contains Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Expired or missing authority,State changed before execution,146,48,48,0.3288,1.0000,contains Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Expired or missing authority,Expired or missing authority,146,146,146,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Expired or missing authority,Visibility mistaken for truth,146,7,7,0.0479,1.0000,contains Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Expired or missing authority,Identity and timing split,146,4,4,0.0274,1.0000,contains Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Visibility mistaken for truth,Stale evidence read,7,48,6,0.8571,0.1250,partial overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Visibility mistaken for truth,State changed before execution,7,48,6,0.8571,0.1250,partial overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Visibility mistaken for truth,Expired or missing authority,7,146,7,1.0000,0.0479,inside Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Visibility mistaken for truth,Visibility mistaken for truth,7,7,7,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Visibility mistaken for truth,Identity and timing split,7,4,0,0.0000,0.0000,no overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Identity and timing split,Stale evidence read,4,48,0,0.0000,0.0000,no overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Identity and timing split,State changed before execution,4,48,0,0.0000,0.0000,no overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Identity and timing split,Expired or missing authority,4,146,4,1.0000,0.0274,inside Family B,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Identity and timing split,Visibility mistaken for truth,4,7,0,0.0000,0.0000,no overlap,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.
+Identity and timing split,Identity and timing split,4,4,4,1.0000,1.0000,same set,Families are non-exclusive diagnostic slices; counts must not be summed as independent evidence.

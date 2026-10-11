@@ -1,0 +1,40 @@
+{
+  "status": "three_step_moments_two_precision_independent_quadrature_passed",
+  "source_sha256": "1f77ecfc02d40f10504ec01a633e6965cab1cf78c00d68ddfa99072b40a913ce",
+  "certificate_sha256": "d829941f8ca516e2eedcd70be04e89fcfc0618363c3d91f03e06c75d2a3c00cd",
+  "rows": [
+    {
+      "order": 0,
+      "precisions": [
+        50,
+        80
+      ],
+      "value": "0.0000000000000000199510234939455201166764709248060063036147433359450298850505072158493432755712",
+      "precision_difference": "2.6714043947417e-54",
+      "inside_certified_interval": true
+    },
+    {
+      "order": 3,
+      "precisions": [
+        50,
+        80
+      ],
+      "value": "0.000363409596916900283792907572700377628315013900231832628538647594179863087002544",
+      "precision_difference": "2.19088582015876e-55",
+      "inside_certified_interval": true
+    },
+    {
+      "order": 4,
+      "precisions": [
+        50,
+        80
+      ],
+      "value": "0.00000047863019615618204068503859126930358885073687001763239811466114585636051598454",
+      "precision_difference": "2.52685120216374e-54",
+      "inside_certified_interval": true
+    }
+  ],
+  "elapsed_seconds": 4.131920250001713,
+  "method": "mpmath Gauss-Legendre on the 29 exact dyadic sign-template intervals; 12 theta terms, cutoff 1. The certificate uses Arb with 8 terms and analytic tails.",
+  "scope": "Numerical corroboration of step moments at the dyadic center. Not an independent rigorous integration, a direct evaluation of the smoothed multiplier, or an exact pinning proof."
+}

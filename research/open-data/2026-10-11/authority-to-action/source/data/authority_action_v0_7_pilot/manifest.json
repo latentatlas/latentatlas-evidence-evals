@@ -1,0 +1,58 @@
+{
+  "schema_version": "latentatlas_public_authority_action_pilot_manifest_v0.7",
+  "artifact_id": "authority_action_v0_7_20260726T180156Z",
+  "experiment_id": "latentatlas-authority-action-proof-contract-v0-7-usable-pilot-20260726",
+  "public_files": [
+    {
+      "path": "summary.json",
+      "bytes": 4096,
+      "sha256": "54aa7d3d66ef7e094cd21d8c2cf57278d6a9a66be796c614dd4a3670c10e817e"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "evals/experiment_manifest_v0_7.json",
+      "sha256": "05f47ce107f42b7b054786bdeec71f639b7863dbefd0adff5d63308cd3baf2ea"
+    },
+    {
+      "path": "evals/authority_action_eval_v0_7.py",
+      "sha256": "59c466842db5bdac206c57e05380cdacc28eaa9ba474391e84bf3f3d5330f190"
+    },
+    {
+      "path": "evals/data/authority_action_cases_v0_6.jsonl",
+      "sha256": "7dc42780d7a28993756a01fce6c585e2e531bad97157dc33c4be441c75292900"
+    },
+    {
+      "path": "evals/analyze_authority_results.py",
+      "sha256": "2d63070c4d92ad35f9585f5d9149459b3dab0fa1c85998b3de12154822c90fe8"
+    }
+  ],
+  "local_run_evidence_fingerprints": [
+    {
+      "id": "run_manifest",
+      "sha256": "1e727b5b2d885882d19cd130159d5e01c958263d5c96d335c371e86573badffa",
+      "published": false
+    },
+    {
+      "id": "aggregate_json",
+      "sha256": "51dce8ea2cc28ba1f24d10bbfca9075d6f14d9367d53e9a532f667fbca01b92e",
+      "published": false
+    },
+    {
+      "id": "anthropic_raw_log",
+      "sha256": "c3b36296d8229fb85fe051fd385a92bc308fc80ebed7e8f0376bc9c3ba9949da",
+      "published": false
+    },
+    {
+      "id": "openai_raw_log",
+      "sha256": "f4142bd51db95f42c63a73eb893c7115ed01bf30c540915a5739fa3d59779bd0",
+      "published": false
+    }
+  ],
+  "data_handling": {
+    "release_level": "aggregate_only",
+    "raw_transcripts_published": false,
+    "provider_payloads_published": false,
+    "credentials_published": false
+  }
+}

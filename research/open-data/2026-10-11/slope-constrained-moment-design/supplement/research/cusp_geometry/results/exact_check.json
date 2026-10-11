@@ -1,0 +1,18 @@
+{
+  "status": "exact_geometry_and_opening_checks_passed",
+  "certificate_sha256": "567f6193e7238a862e16156aaadb939454d273dcca8a634faee4aa6319762200",
+  "source_sha256": "9dd00ed34c06aa17cd01ec130443674237a69db0aa305977127b00436ce2b3d7",
+  "cells_checked": 58,
+  "trust_boundary": "Cusp and neighborhood derivative enclosures and local Taylor values are trusted inputs; reconstructs contraction/growth/root-count inequalities and the nonlinear opening sign using expanded polynomials and fractions.",
+  "q_max_display": 0.5838360952238681,
+  "eta_plus_q_max_display": 0.7334132904461079,
+  "N_lower_min_display": 0.2862105011061259,
+  "kprime_range_display": [
+    -0.00048448967437843537,
+    -0.00018525597191566633
+  ],
+  "endpoint_ratio_display": [
+    1.0249463277454425,
+    1.0249463277454425
+  ]
+}

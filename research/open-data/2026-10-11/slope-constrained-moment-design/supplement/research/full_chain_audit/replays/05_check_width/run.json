@@ -1,0 +1,15 @@
+{
+  "id": "05_check_width",
+  "package": "cusp_width",
+  "script": "check_width.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 28.558977041000617,
+  "source_sha256": "873166fef492982971eee75d9e76cf9ba0cfa3e4815c37f3c56265a2546e502a",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_width/check_width.py"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:12:16.003857+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "title": "RE-Bench Is a Systems Benchmark: What Its Scorers and Selection Rules Actually Support",
+  "version": "0.1",
+  "publication_date": "2026-08-25",
+  "doi": "10.5281/zenodo.22089195",
+  "resource_type": {
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "document_genre": "technical note",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Buldurgan, Huseyin",
+      "affiliation": "LatentAtlas"
+    }
+  ],
+  "publisher": "Zenodo",
+  "copyright": "Copyright (C) 2026 Huseyin Buldurgan",
+  "licenses": [
+    {
+      "id": "cc-by-4.0",
+      "applies_to": "rebench-systems-benchmark-technical-note-v0.1.pdf"
+    },
+    {
+      "id": "mit",
+      "applies_to": "rebench-source-contract-v0.1-source.zip"
+    }
+  ],
+  "keywords": [
+    "RE-Bench",
+    "AI evaluation",
+    "benchmark audit",
+    "agentic systems",
+    "AI research automation",
+    "research engineering",
+    "scorer validity",
+    "evaluator fidelity",
+    "score@k",
+    "selection effects",
+    "source provenance",
+    "benchmark reproducibility"
+  ],
+  "repository": "https://github.com/latentatlas/latentatlas-evidence-evals",
+  "canonical_source": "https://github.com/latentatlas/latentatlas-evidence-evals/tree/35835f8a8c0f90abb785aff8f3ddce3e99e659d9/docs/re-bench",
+  "description": "This version-bounded technical note examines what RE-Bench (Research Engineering Benchmark, V1) directly measures and which inferences its scores can support. It treats the evaluated unit as a complete agent system—including the model, scaffold, tools, execution environment, feedback surface, hardware, time budget, attempt allocation, and selector—rather than as a base model in isolation.\n\nThe review keeps two evidence surfaces separate: results and methods reported in the historical RE-Bench paper, and properties of the public implementation at pinned METR/RE-Bench commit 93b98062e55f6945d4a7e213a3226dd419896170. All seven task packages at that revision were statically inspected. A published eight-test harness additionally checks bounded behaviors in four hash-pinned files across Optimize a Kernel, Scaling Law Experiment, and Optimize LLM Foundry.\n\nThe three detailed cases illustrate distinct measurement boundaries: selected single-call timing and public contract drift in Kernel; a static eleven-point evaluator and one-sided FLOP gate in Scaling Law; and a declared L1 quantity implemented as a sum of per-tensor norms in LLM Foundry, where parameter proximity remains narrower than behavioral equivalence. The note also distinguishes paper-level score@k selection from single-run reliability, within-run aggregation, and an agent's ability to identify its own best artifact.\n\nThis is an unaffiliated, AI-assisted pinned-source contract audit. It is not peer reviewed, independently adjudicated, or an independent benchmark-hardware or headline-result reproduction. Exact mapping between the pinned source and the historical paper-run environments remains unresolved; consequently, the review makes no claim that the identified source properties changed, invalidated, or explain any historical leaderboard result.",
+  "additional_description": {
+    "type": "technical_info",
+    "title": "Status and assistance disclosure",
+    "text": "This record is a public working review, version 0.1. Research synthesis, source navigation, comparison, contract-test development, and drafting were AI-assisted under human direction. AI-generated interpretation was not treated as evidence: central implementation claims are scoped to identified source files, pinned hashes, or bounded executable checks.\n\nThe record has not undergone peer review or independent human adjudication. The executable checks are source-contract tests only; they do not execute a participant submission, protected scorer service, H100 benchmark workload, model trajectory, official solution archive, or RE-Bench headline-result reproduction.\n\nThe exact identity relationship between the pinned public source and the environments used for the historical paper results has not been established. Pinned-source findings are therefore not transferred retrospectively to the reported runs, and this record makes no claim that a historical leaderboard result changed, was invalid, or was exploit-driven. Independent review remains welcome as a future assurance upgrade."
+  }
+}
+

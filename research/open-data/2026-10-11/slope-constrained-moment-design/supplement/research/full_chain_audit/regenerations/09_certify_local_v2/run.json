@@ -1,0 +1,17 @@
+{
+  "id": "09_certify_local_v2",
+  "package": "cusp_shape_design",
+  "script": "certify_local_v2.py",
+  "args": [],
+  "exit_code": 0,
+  "elapsed_seconds": 0.3780566249988624,
+  "source_sha256": "09aeb7ec9c79e5504a8317b6ac41736357c68331965d6358ba8181f8dfc252cd",
+  "command_template": [
+    "/PROJECT/.venv-math/bin/python",
+    "<fresh-clone>/research/cusp_shape_design/certify_local_v2.py",
+    "--output",
+    "/PROJECT/research/full_chain_audit/regenerations/09_certify_local_v2/result.json"
+  ],
+  "changed_clone_files": [],
+  "completed_utc": "2026-09-20T23:17:08.971938+00:00"
+}

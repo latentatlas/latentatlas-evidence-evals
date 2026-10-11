@@ -1,0 +1,12 @@
+{
+  "name": "finite_optimum",
+  "command": [
+    "/PROJECT/.venv-math/bin/python",
+    "-B",
+    "research/finite_slope_optimum/audit_snapshot.py"
+  ],
+  "started_utc": "2026-09-23T10:02:43.629455+00:00",
+  "elapsed_seconds": 0.21088895900174975,
+  "exit_code": 0,
+  "log_sha256": "82dccba6251a1869959580bb9b340ee49bd6bb485d0b3ec9f4747d6bdbfb6658"
+}

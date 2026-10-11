@@ -1,0 +1,70 @@
+{
+  "status": "outward_decimal_summary",
+  "finite_ell": "0.000001",
+  "comparison": "epsilon -1/2 to +1/2",
+  "rows": [
+    {
+      "nu": "0",
+      "finite_W_change_percent_interval": [
+        "-0.05201561",
+        "-0.05201560"
+      ],
+      "leading_C_change_percent_interval": [
+        "-0.0520157034",
+        "-0.0520157033"
+      ],
+      "mu_shift_minus_half_interval": [
+        "-1E-10",
+        "1E-10"
+      ],
+      "mu_shift_plus_half_interval": [
+        "-1E-10",
+        "1E-10"
+      ]
+    },
+    {
+      "nu": "-15",
+      "finite_W_change_percent_interval": [
+        "-0.04707662",
+        "-0.04707661"
+      ],
+      "leading_C_change_percent_interval": [
+        "-0.0470766966",
+        "-0.0470766965"
+      ],
+      "mu_shift_minus_half_interval": [
+        "0.0063414840",
+        "0.0063414841"
+      ],
+      "mu_shift_plus_half_interval": [
+        "-0.0095143189",
+        "-0.0095143188"
+      ]
+    },
+    {
+      "nu": "-29",
+      "finite_W_change_percent_interval": [
+        "-0.04254131",
+        "-0.04254130"
+      ],
+      "leading_C_change_percent_interval": [
+        "-0.0425413748",
+        "-0.0425413747"
+      ],
+      "mu_shift_minus_half_interval": [
+        "0.0113027546",
+        "0.0113027547"
+      ],
+      "mu_shift_plus_half_interval": [
+        "-0.0169544780",
+        "-0.0169544779"
+      ]
+    }
+  ],
+  "input_sha256": {
+    "point_certificates.json": "78e299f9c059b8ded33982cba3b3745c91e198a0efac39fc64a7bb8ccc5baff0",
+    "fold_samples.json": "e5acac0fb789c4a51085204620ca9d666d119016f133a58ceac8496968d28147"
+  },
+  "source_sha256": "75793dd19cdb9fc9df531f7450712e8ce74f70c22d50b5ad402da5ff7a0c03cf",
+  "rounding": "Outward decimal endpoints, computed from exact serialized dyadic balls."
+}

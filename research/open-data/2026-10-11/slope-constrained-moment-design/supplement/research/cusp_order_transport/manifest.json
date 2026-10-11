@@ -1,0 +1,224 @@
+{
+  "created_utc": "2026-09-23T07:00:14.922193+00:00",
+  "scope": "Strict monotonicity of actual finite-slope optimal amplitude on the exact cusp arc [-1/64,0] by moment-preserving contractive transport.",
+  "files": [
+    {
+      "path": "BULGU_NOTU_TR.md",
+      "sha256": "68f832d5879414c5ccaefaaa42722a0a4fdd91dd32110a724c8b7d075b8d4f03",
+      "bytes": 3426
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "sha256": "1ae7392e22cc5e55c074f6af7a008e962115b376af78886a5ca454d943f9460c",
+      "bytes": 937
+    },
+    {
+      "path": "LITERATURE.md",
+      "sha256": "7668e339d07f8e219ba6d08b2458a3ffe1e565a3b3c3cacf6bf98ce518d32eb0",
+      "bytes": 1665
+    },
+    {
+      "path": "PROOF.md",
+      "sha256": "9a4a582fbf7498f7790071ea52bba86e59ce32c73de88ed4af4069c58c84cc49",
+      "bytes": 12398
+    },
+    {
+      "path": "README.md",
+      "sha256": "9aa2222297307c15c88075132cce9b166a2f0ad30bac37b06be271efcaf6b144",
+      "bytes": 2612
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "04cdd48292347891a3e0de33c016a86dad2a7efbe10d7d27c654855df8298bb4",
+      "bytes": 2875
+    },
+    {
+      "path": "audit_report.json",
+      "sha256": "206c34abf3da1225264718d336268907d1cdacba9582afb37b81d7ffe5b206a5",
+      "bytes": 1660
+    },
+    {
+      "path": "audit_snapshot.py",
+      "sha256": "3de110d766c43dd6f932234eb769e1865b66dce28143a61847f1d1ebc18dd9a4",
+      "bytes": 11205
+    },
+    {
+      "path": "baseline.json",
+      "sha256": "53808f8d93766a95886db21758aa2bf19232c01968305d340255ca6390fe5925",
+      "bytes": 3447
+    },
+    {
+      "path": "certify_transport.py",
+      "sha256": "6edae1d51f1d8be4870f58c0ff38bcc658a39f250ec5f15639ba7d6faf90fbd7",
+      "bytes": 5096
+    },
+    {
+      "path": "check_algebra.py",
+      "sha256": "86bd536d4db416a79fe867aa2c8c23c2bad5c4bab051501671a40c67c833b8d8",
+      "bytes": 5447
+    },
+    {
+      "path": "check_bounds.py",
+      "sha256": "eb32b7597361dfcf37646cc2efb4150f240678dac4e3ecc8e28d866eff1c29f0",
+      "bytes": 7381
+    },
+    {
+      "path": "diagnostics/README.md",
+      "sha256": "24d144fb6faae547597b66dc584022c473c4abb01849c1fb8faf44fc78b91eee",
+      "bytes": 1674
+    },
+    {
+      "path": "diagnostics/audit_before_whitespace_fix.py",
+      "sha256": "45875cd65703a61ba93f4b9a7ff165468d05ce522ba3811aa16bfaf2644e1a41",
+      "bytes": 11160
+    },
+    {
+      "path": "diagnostics/audit_whitespace_failure.json",
+      "sha256": "812e2a2a5cd14dc7da34d6b09f6d54af517661f3d30a8c06a4d683925b3f4628",
+      "bytes": 397
+    },
+    {
+      "path": "diagnostics/audit_whitespace_failure.log",
+      "sha256": "ee817deb76f5da02bfacbe7d4401638db1d2d3a052bc8d702a51df2c8eac34a6",
+      "bytes": 1066
+    },
+    {
+      "path": "diagnostics/check_algebra_before_negative_power_fix.py",
+      "sha256": "e40b6d0e43b1ef3f215b9bda9662d7f2ca46f246ed76842e6d2720cf3e3fde90",
+      "bytes": 5455
+    },
+    {
+      "path": "diagnostics/check_bounds_before_exponential_sign_fix.py",
+      "sha256": "10ff4e57ee46a21b0404cae7009d0944351cd96cdba690f0551a352ab07d64d3",
+      "bytes": 7211
+    },
+    {
+      "path": "diagnostics/check_bounds_before_tiny_input_fix.py",
+      "sha256": "dc2e45c2f543e7b43d65db27bcfe8947dcc5fd783febe0926b9c218722096faa",
+      "bytes": 7080
+    },
+    {
+      "path": "diagnostics/exponential_sign_failure.json",
+      "sha256": "8b46bd2e08dcf2a76148db84a525d2752c37ecb8415e7938b2051de77e8bb54f",
+      "bytes": 681
+    },
+    {
+      "path": "diagnostics/negative_power_api_failure.json",
+      "sha256": "a8d16c27261322fa7dce4c034a356715780a0297c14a4591a3506f93303edf8a",
+      "bytes": 451
+    },
+    {
+      "path": "diagnostics/tiny_input_rounding_failure.json",
+      "sha256": "4eb18165b725b6131615ccf54593011e0da2fd5f55e27f4e0284b059a63bec5b",
+      "bytes": 582
+    },
+    {
+      "path": "direct_check.py",
+      "sha256": "9074ff50cd327db8ab1d7c2a48846c2054e481480c3697e26f9d121129536e5f",
+      "bytes": 4708
+    },
+    {
+      "path": "figures/order_transport.png",
+      "sha256": "9a33d7db134e76395adafb22a721caa99fd53b2de99e00fb67e59288e1e9f958",
+      "bytes": 191267
+    },
+    {
+      "path": "figures/order_transport.svg",
+      "sha256": "da0405f54a97b8c14da139230af627ed0eed4d5978fc2426cf326938b3d44e83",
+      "bytes": 121486
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "fa1d7a7a2577db6d3fb5c28141d2c6a09993bb1b9af67df553ddc9595ddb58ee",
+      "bytes": 4397
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "5dd2dfa677555a58a0545938dbb4e5a3b4dd8f655846b1831d390e848c9cf145",
+      "bytes": 66
+    },
+    {
+      "path": "results/TABLE.md",
+      "sha256": "aaa2bb03be213e3fb285d228618863474c266140f2c92246d48b9580dc72d74d",
+      "bytes": 1645
+    },
+    {
+      "path": "results/algebra.json",
+      "sha256": "e469b727d12c8546d14fa02cf185ea2586edfb880af0f430b8955b7accf355d2",
+      "bytes": 3836
+    },
+    {
+      "path": "results/cover/certificate.json",
+      "sha256": "a483e52aac848fc4dce3978aea7ac56d4ad211d30741efa11e88fd4ce5533262",
+      "bytes": 1554
+    },
+    {
+      "path": "results/cover/finite_cover.json.gz",
+      "sha256": "cc30fbe2a41e1224287ac1b97b326d267d79b3103df4646f78246229eb081918",
+      "bytes": 1295323
+    },
+    {
+      "path": "results/direct_check.json",
+      "sha256": "8c1f438e84e39da2d45a2f47413a5b1aeb8bd78bd05958026f5329f5ed43ba82",
+      "bytes": 4172
+    },
+    {
+      "path": "results/figure_qa.json",
+      "sha256": "1260bf556544f3b6ae5465862646972004232ff8a5725e5048c9644f2f974bac",
+      "bytes": 465
+    },
+    {
+      "path": "results/plot_data.json",
+      "sha256": "821e5ad52ab1cdd0e06ee0f41ba9714c7aae4cc6fcf8399971b17f084ce450d0",
+      "bytes": 677012
+    },
+    {
+      "path": "results/rational_check.json",
+      "sha256": "77fa01169c9aed1fe55158e075fe43cf7e832d13718f14c1d4c6984d3fdf24e4",
+      "bytes": 1269476
+    },
+    {
+      "path": "runtime.json",
+      "sha256": "8d76ae1645cf112a11824cb7ce14a5c17d181d23612c542ddc37576dadaad9cd",
+      "bytes": 140
+    }
+  ],
+  "audit": {
+    "status": "R31_strict_optimal_value_transport_evidence_and_preservation_passed",
+    "prior_manifests": 31,
+    "prior_frozen_file_entries": 1298,
+    "closed_driver_cells": 32,
+    "closed_u_cells": 1024,
+    "whole_half_line_included": true,
+    "exact_algebra_groups": 31,
+    "rational_check_count": 19017,
+    "diagnostic_integral_checks": 24,
+    "diagnostic_derivative_checks": 30,
+    "diagnostic_composition_checks": 10,
+    "driver_interval": [
+      "-1/64",
+      "0"
+    ],
+    "minimum_slope_budget": "2e-5",
+    "contraction_rate": "1/50",
+    "logarithmic_value_rate": ".02259",
+    "linear_value_rate": "2.07e-11",
+    "actual_value_strict_monotonicity_at_arbitrarily_close_drivers": true,
+    "normalized_fourth_value_full_monotonicity_proved": false,
+    "finite_M_optimum_derivative_proved": false,
+    "same_target_or_profile_for_all_drivers_claimed": false,
+    "numerical_finite_M_optimizer_computed": false,
+    "C6_claimed": false,
+    "whole_original_arc_covered": false,
+    "previous_packages_modified": false,
+    "manuscripts_modified": false,
+    "external_referee_review": false,
+    "formal_proof": false,
+    "literature_priority_established": false,
+    "public_release_or_submission": false,
+    "audit_source_sha256": "3de110d766c43dd6f932234eb769e1865b66dce28143a61847f1d1ebc18dd9a4",
+    "trust_boundary": "Analytic moment transport and characteristic comparison with validated whole-domain bounds. Rational checker takes explicit Arb transcendental enclosures as inputs. Frozen R29/R30 analytic results are prerequisites. Numerical replay is not formal verification or external expert review.",
+    "closed_utc": "2026-09-23T07:00:14.922193+00:00",
+    "Arb_replayed_at_freeze": true
+  }
+}

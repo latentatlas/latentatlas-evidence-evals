@@ -1,0 +1,27 @@
+{
+  "status": "fresh_base_cusp_and_norm_enclosures_identical",
+  "comparisons": [
+    {
+      "original": "cusp_verified/results/quartic_cusp_certificate.json",
+      "fresh": "base_cusp_fresh.json",
+      "dyadic_balls": 72,
+      "equal_other_values": 22,
+      "changed_metadata_paths": [
+        "/elapsed_seconds"
+      ],
+      "original_sha256": "630ef25f8b7c449089b99fed63b5a2f40aa0a953da9b339469487331cffca158",
+      "fresh_sha256": "3d314b1385a1ea6a68aa76bee2b0acb61ba35a923eafa1833dceec2c62dff689"
+    },
+    {
+      "original": "kernel_norm_threshold/results/threshold_certificate.json",
+      "fresh": "norm_threshold_fresh.json",
+      "dyadic_balls": 3972,
+      "equal_other_values": 303,
+      "changed_metadata_paths": [
+        "/elapsed_seconds"
+      ],
+      "original_sha256": "d829941f8ca516e2eedcd70be04e89fcfc0618363c3d91f03e06c75d2a3c00cd",
+      "fresh_sha256": "f9b36d7b7fe0981786aae05179122cd29656cb0fa5ba9b989f354b45ba98dc0e"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "status": "R30_exact_sextic_tail_extension_passed",
+  "checks": [
+    {
+      "name": "u5_over_exp4u",
+      "passed": true
+    },
+    {
+      "name": "sextic_potential_derivative_1",
+      "passed": true
+    },
+    {
+      "name": "sextic_potential_derivative_2",
+      "passed": true
+    },
+    {
+      "name": "sextic_potential_derivative_3",
+      "passed": true
+    },
+    {
+      "name": "sextic_potential_derivative_4",
+      "passed": true
+    },
+    {
+      "name": "sextic_potential_derivative_5",
+      "passed": true
+    },
+    {
+      "name": "expanded_root_motion_and_kappa",
+      "passed": true
+    },
+    {
+      "name": "expanded_raw_value",
+      "passed": true
+    },
+    {
+      "name": "expanded_raw_derivative_perturbation",
+      "passed": true
+    },
+    {
+      "name": "inactive_leading_188",
+      "passed": true
+    },
+    {
+      "name": "inactive_fourth_2071000",
+      "passed": true
+    },
+    {
+      "name": "enlarged_balance_constant",
+      "passed": true
+    }
+  ],
+  "check_groups": 12,
+  "inherited_R26_check_groups": 22,
+  "driver_width": "1/64",
+  "epsilon": "1/4096",
+  "a_max": "1/16384",
+  "v_absolute_bounds": [
+    "5",
+    "4",
+    "180"
+  ],
+  "potential_relative_bounds": [
+    "5647/6400",
+    "3727/80000",
+    "1743/1000000",
+    "1773/50000000",
+    "9/250000000"
+  ],
+  "active_moment_constants": [
+    "767774814356651968082353/2061584302080000000",
+    "768105128116956623422879/1030792151040000000",
+    "1536871114903397768385841/1030792151040000000"
+  ],
+  "active_residual_sixth_constant": "2057083052982857676813982310638655334705259/145268109580462718976000000000000",
+  "active_balance_fourth_constant": "48776990665621973748127613838539/131941395333120000000000",
+  "active_dual_eighth_constant": "2379194818394173157637978214205643152895791822640130657961654521/3481706360490132023153786880000000000000000000000",
+  "R26_algebra_sha256": "8053be2a3dff891f3795e7f46fcb519c63c43746e3c3742cf6287e0e7f09af0b",
+  "source_sha256": "0f668ecae14972172449c306bc1ed3bcebb8e4100b698950cb29365d636ddc78",
+  "trust_boundary": "Exact added inequalities. The R26 polynomial and weighted-tail proof is inherited; nu<=0 preserves its upper density envelope."
+}

@@ -1,0 +1,212 @@
+{
+  "agreement_calculable": false,
+  "claim_boundary": {
+    "allowed_claims": [
+      "Frozen single-review P0 descriptive outcome distribution.",
+      "Paper A systems/protocol contribution around evidence boundaries and authority leases.",
+      "Failure-family hypotheses grounded in observed masked reason-code patterns.",
+      "Micro-review responses as qualitative method-fit signals after grounding audit."
+    ],
+    "blocked_claims": [
+      "Level 4 probability evidence has been reached.",
+      "The frozen P0 rates generalize to all workflows.",
+      "Inter-reviewer agreement exists before reviewer02 completion.",
+      "A mini-review substitutes for full independent second review.",
+      "Any external context-contaminated response counts as outcome adjudication."
+    ]
+  },
+  "claim_boundary_rows": [
+    {
+      "allowed_wording": "The frozen masked P0 set has a completed single-review descriptive outcome distribution.",
+      "blocked_wording": "The frozen rates are population probabilities.",
+      "claim_id": "frozen_p0_distribution",
+      "current_state": "allowed",
+      "required_evidence": "finding pack summary + freeze hash"
+    },
+    {
+      "allowed_wording": "Authority leases and evidence boundaries can be described as a systems protocol with descriptive support.",
+      "blocked_wording": "The protocol has proven production safety or general agent accuracy.",
+      "claim_id": "paper_a_protocol",
+      "current_state": "allowed",
+      "required_evidence": "paper draft + finding pack + overclaim audit"
+    },
+    {
+      "allowed_wording": "Level 4 remains blocked pending independent review, strata, replay, and promotion gates.",
+      "blocked_wording": "LatentAtlas has reached Level 4 probability evidence.",
+      "claim_id": "level4_probability",
+      "current_state": "blocked",
+      "required_evidence": "Level 4 engine summary"
+    },
+    {
+      "allowed_wording": "No inter-reviewer agreement is available yet; reviewer02 is optional and opportunistic.",
+      "blocked_wording": "Agreement, kappa, or second-review reliability has been measured.",
+      "claim_id": "interreviewer_agreement",
+      "current_state": "blocked",
+      "required_evidence": "completed reviewer02 sheet + agreement artifact"
+    },
+    {
+      "allowed_wording": "Small external mini-reviews can be logged as qualitative method-fit or grounding signals.",
+      "blocked_wording": "A 15-case mini-review substitutes for full reviewer02 or Level 4 evidence.",
+      "claim_id": "micro_review_signal",
+      "current_state": "qualitative_only",
+      "required_evidence": "mini-review packet + response grounding audit"
+    },
+    {
+      "allowed_wording": "Concurrent evidence failure can be developed as a failure-family hypothesis grounded in existing reason codes.",
+      "blocked_wording": "Concurrency failure rates are known for the broader population.",
+      "claim_id": "concurrent_evidence_failure",
+      "current_state": "research_track",
+      "required_evidence": "reason-code profiles + future stratified review"
+    }
+  ],
+  "completed_second_review_rows": 0,
+  "contains_customer_data": false,
+  "contains_personal_data": false,
+  "denominators": {
+    "frozen_reviewed_rows": 146,
+    "insufficient_for_outcome_adjudication_p0_rows": 5,
+    "outcome_ready_p0_rows": 146,
+    "p0_rows": 151,
+    "resolved_reviewed_rows": 121
+  },
+  "external_calls_used_by_builder": false,
+  "generated_at_utc": "2026-07-16T10:48:21.650249+00:00",
+  "inputs": {
+    "agreement_summary": "outputs/latentatlas/action_time_p0_interreviewer_agreement_v1/interreviewer_agreement_summary.json",
+    "finding_summary": "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_summary.json",
+    "level4_summary": "outputs/latentatlas/action_time_level4_data_engine_v1/action_time_level4_data_engine_summary.json"
+  },
+  "level4_probability_claim_allowed": false,
+  "level4_review_metrics": {
+    "additional_source_events_needed_for_target": 542,
+    "agreement_calculable": false,
+    "can_reach_minimum_with_current_source": true,
+    "can_reach_target_with_current_source": false,
+    "current_independent_human_review_count": 386,
+    "independent_review_stratum_gap_count": 7,
+    "minimum_additional_independent_reviews_needed": 2614,
+    "minimum_reviewed_outcome_count": 3000,
+    "p0_frozen_reviewed_rows": 146,
+    "p0_outcome_counts": {
+      "correct_block": 99,
+      "false_block": 22,
+      "needs_more_evidence": 25
+    },
+    "projected_independent_human_review_count_after_queue_completion": 3000,
+    "second_review_completed_rows": 0,
+    "second_review_missing_rows": 146,
+    "selected_backfill_queue_count": 2614,
+    "target_additional_independent_reviews_needed": 4614,
+    "target_reviewed_outcome_count": 5000,
+    "total_stratum_gap_count": 5
+  },
+  "micro_review_guards": [
+    "Reviewer must use only packet-visible evidence.",
+    "Any invented domain scenario, external jargon, or non-packet fact invalidates the response for adjudication.",
+    "15-case mini-reviews are qualitative method-fit checks, not full reviewer02 completion.",
+    "Confidence should be low/medium/high unless the pack explicitly requests another scale.",
+    "Returned labels must include case_id, reviewed_outcome, confidence, and rationale_short.",
+    "Responses must be audited for grounding before any label is counted."
+  ],
+  "missing_second_review_rows": 146,
+  "mode": "latentatlas_action_time_level3_continuation_pack",
+  "outcome_counts": {
+    "correct_block": 99,
+    "false_block": 22,
+    "needs_more_evidence": 25
+  },
+  "outputs": {
+    "claim_boundary_matrix": "outputs/latentatlas/action_time_level3_continuation_pack_v1/claim_boundary_matrix.csv",
+    "concurrency_note": "outputs/latentatlas/action_time_level3_continuation_pack_v1/concurrent_evidence_failure_note.md",
+    "manifest": "outputs/latentatlas/action_time_level3_continuation_pack_v1/level3_continuation_manifest.json",
+    "micro_review_protocol": "outputs/latentatlas/action_time_level3_continuation_pack_v1/micro_review_protocol.md",
+    "plan": "outputs/latentatlas/action_time_level3_continuation_pack_v1/level3_continuation_plan.md",
+    "summary": "outputs/latentatlas/action_time_level3_continuation_pack_v1/level3_continuation_summary.json"
+  },
+  "primary_route": "level3_5_publish_safe_research",
+  "primary_workstreams": [
+    {
+      "action": "Edit and package the existing Paper A draft around authority leases, evidence-is-not-permission, and descriptive P0 findings.",
+      "exit_criteria": "Public-safe draft with explicit Level 4 gap section and no probability overclaim.",
+      "priority": 1,
+      "source_artifacts": [
+        "outputs/latentatlas/action_time_p0_empirical_paper_draft_v4/action_time_p0_empirical_paper_draft.md",
+        "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_summary.json"
+      ],
+      "status": "ready_to_continue",
+      "workstream_id": "paper_a_publication"
+    },
+    {
+      "action": "Turn observed failure families into a compact atlas: stale evidence, identity boundary, authority expiry, blocked access, and needs-more-evidence handling.",
+      "exit_criteria": "Failure-family matrix with reason codes, negative controls, allowed claims, and blocked claims.",
+      "priority": 2,
+      "source_artifacts": [
+        "outputs/latentatlas/ai_operational_failure_atlas/ai_operational_failure_atlas_customer_brief.md",
+        "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_summary.json"
+      ],
+      "status": "ready_to_continue",
+      "workstream_id": "ai_operational_failure_atlas"
+    },
+    {
+      "action": "Draft a research note on Concurrent Evidence Failure: true observations that are not action-valid because identity, freshness, authority, or materialization timing diverged.",
+      "exit_criteria": "Claim-bounded note with failure modes, examples, testable predictions, and required evidence for stronger rates.",
+      "priority": 3,
+      "source_artifacts": [
+        "outputs/latentatlas/action_time_p0_empirical_finding_pack_v1/action_time_p0_empirical_finding_pack_summary.json",
+        "LATENTATLAS_ACTION_TIME_REVALIDATION.md"
+      ],
+      "status": "new_active_track",
+      "workstream_id": "concurrent_evidence_failure_note"
+    },
+    {
+      "action": "Keep 10-15 case packs as low-friction external method-fit probes, not as full agreement evidence.",
+      "exit_criteria": "Mini-review responses pass grounding audit or are logged as context-contaminated invalid examples.",
+      "priority": 4,
+      "source_artifacts": [
+        "outputs/latentatlas/action_time_p0_reviewer02_pdf_batches_v1/reviewer02_pdf_batches_report.md",
+        "outputs/latentatlas/action_time_p0_reviewer_pack_v1/reviewer_pack_casebook.md"
+      ],
+      "status": "optional_supporting_signal",
+      "workstream_id": "micro_review_reproducibility_pack"
+    },
+    {
+      "action": "Keep Level 4 engine, backfill queue, and reviewer02 agreement code fresh, but do not make them the blocker for Paper A.",
+      "exit_criteria": "Level 4 state remains computable from artifacts whenever new review evidence arrives.",
+      "priority": 5,
+      "source_artifacts": [
+        "outputs/latentatlas/action_time_level4_data_engine_v1/action_time_level4_data_engine_summary.json",
+        "outputs/latentatlas/action_time_p0_interreviewer_agreement_v1/interreviewer_agreement_summary.json"
+      ],
+      "status": "blocked_but_preserved",
+      "workstream_id": "level4_backlog_preservation"
+    }
+  ],
+  "production_truth_mutation": false,
+  "raw_source_rows_read": false,
+  "recommended_next_actions": [
+    "Treat the current public path as Paper A / Level 3.5, not Level 4.",
+    "Use the frozen P0 pack as the single source for descriptive counts.",
+    "Build the Concurrent Evidence Failure note as the next differentiating claim.",
+    "Keep external mini-reviews optional and audit them for grounding before use.",
+    "Rerun Level 4 engine only when real new review evidence arrives."
+  ],
+  "reviewer02_required_for_primary_route": false,
+  "reviewer02_strategy": "opportunistic_micro_review_or_future_partner_only",
+  "schema_version": "latentatlas_action_time_level3_continuation_pack_v1",
+  "source_metrics": {
+    "confirmed_shadow_event_count": 4458,
+    "false_authorization_count": 0,
+    "false_block_count": 91,
+    "masked_row_count": 4458,
+    "needs_more_evidence_count": 969,
+    "resolved_reviewed_outcome_count": 3489,
+    "shadow_event_count": 4458,
+    "source_file_count": 153
+  },
+  "status": "pass",
+  "why_pivot_now": [
+    "The 146-case reviewer02 path is useful but too slow and too consulting-shaped to block the research track.",
+    "The current frozen P0 set already supports bounded descriptive reporting.",
+    "Level 4 probability language remains blocked until independent review, strata, replay, and claim-promotion gates pass."
+  ]
+}

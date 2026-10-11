@@ -1,0 +1,220 @@
+[
+  {
+    "id": "R01",
+    "directory": "research/cusp_verified",
+    "proof": "research/cusp_verified/PROOF.md",
+    "manifest_sha256": "345ef0004aad060f9d7746f6a085126b4e857937384dbe29dc298be3578c7b96",
+    "python_entrypoints": [
+      "certify_cusp.py",
+      "check_independent.py",
+      "local_roots.py",
+      "plot_local_roots.py",
+      "test_validated_flow.py",
+      "validated_flow.py"
+    ]
+  },
+  {
+    "id": "R03",
+    "directory": "research/cusp_connection",
+    "proof": "research/cusp_connection/PROOF.md",
+    "manifest_sha256": "45ee9d3d287fad9bbf6752d144de9bd6257c07649ba8e4c9f57a3ca2e387fdd1",
+    "python_entrypoints": [
+      "bridge_taylor.py",
+      "certify_connection.py",
+      "check_connection.py",
+      "check_independent.py",
+      "explore.py",
+      "plot_connection.py",
+      "test_connection.py"
+    ]
+  },
+  {
+    "id": "R09",
+    "directory": "research/cusp_shape_design",
+    "proof": "research/cusp_shape_design/PROOF.md",
+    "manifest_sha256": "6f2ae4a0518eb3ebf974d0e53ed9ea0aef07aa816336375b46befda74102d642",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "build_local_jets.py",
+      "certify_boundaries.py",
+      "certify_design.py",
+      "certify_local.py",
+      "certify_local_v2.py",
+      "certify_samples.py",
+      "check_design.py",
+      "check_local.py",
+      "check_samples.py",
+      "crosscheck_integrals.py",
+      "explore_directions.py",
+      "moment_dictionary.py",
+      "plot_results.py",
+      "shape_model.py",
+      "summarize_results.py"
+    ]
+  },
+  {
+    "id": "R21",
+    "directory": "research/finite_slope_optimum",
+    "proof": "research/finite_slope_optimum/PROOF.md",
+    "manifest_sha256": "43734c797b4c43ed7ffdee394450a545ec63fd6b43584abde11a3031d6f663ea",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_example.py",
+      "check_algebra.py",
+      "crosscheck_quadrature.py",
+      "exact_interval.py",
+      "plot_results.py"
+    ]
+  },
+  {
+    "id": "R22",
+    "directory": "research/finite_slope_fourth_order",
+    "proof": "research/finite_slope_fourth_order/PROOF.md",
+    "manifest_sha256": "d1ee28d8a3d69d6fb4d6d9a3b8c32345a9f21d049608518d8c15a66be329338d",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_fourth_order.py",
+      "check_fourth_order.py",
+      "crosscheck_integrals.py",
+      "plot_results.py"
+    ]
+  },
+  {
+    "id": "R23",
+    "directory": "research/infinite_slope_fourth_order",
+    "proof": "research/infinite_slope_fourth_order/PROOF.md",
+    "manifest_sha256": "5d43277eadbf7b663425ed23124f3a776d498ed90de79888b9c45ea9f6dfb212",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_example.py",
+      "check_algebra.py",
+      "crosscheck_integrals.py",
+      "plot_results.py"
+    ]
+  },
+  {
+    "id": "R24",
+    "directory": "research/theta_fourth_order",
+    "proof": "research/theta_fourth_order/PROOF.md",
+    "manifest_sha256": "f2ecc3a823b2d68d16af35abec11f132cf9067719b66521435638234cbf93c08",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_coefficient.py",
+      "check_algebra.py",
+      "check_certificate.py",
+      "crosscheck_direct.py",
+      "interval_core.py",
+      "plot_results.py",
+      "rational_intervals.py"
+    ]
+  },
+  {
+    "id": "R25",
+    "directory": "research/theta_effective_remainder",
+    "proof": "research/theta_effective_remainder/PROOF.md",
+    "manifest_sha256": "f272ac98ca53af12a57189396cb88bb974505fd450cb06fbfceeb09fc224bc33",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_remainder.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "crosscheck.py",
+      "jets.py",
+      "plot_results.py"
+    ]
+  },
+  {
+    "id": "R26",
+    "directory": "research/theta_global_remainder",
+    "proof": "research/theta_global_remainder/PROOF.md",
+    "manifest_sha256": "dc9ae031a24c0b8741820b9c60f0b4b1641d449fa91e6bb1ece31605b89dbf60",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_global.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "crosscheck_tail.py",
+      "plot_results.py"
+    ]
+  },
+  {
+    "id": "R27",
+    "directory": "research/cusp_uniform_remainder",
+    "proof": "research/cusp_uniform_remainder/PROOF.md",
+    "manifest_sha256": "d182add4e9b100e32b045107c99621c4d53249eb952b2b544f4aaadca870e2cc",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_uniform.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "crosscheck.py",
+      "model.py",
+      "plot_results.py",
+      "probe.py",
+      "remainder.py"
+    ]
+  },
+  {
+    "id": "R28",
+    "directory": "research/cusp_coefficient_motion",
+    "proof": "research/cusp_coefficient_motion/PROOF.md",
+    "manifest_sha256": "f22929493b349d2e356f25122be6987401316de96d3b3a98077a507371e0a36a",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_motion.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "crosscheck.py",
+      "motion.py",
+      "plot_results.py",
+      "probe.py",
+      "sign_moment.py"
+    ]
+  },
+  {
+    "id": "R29",
+    "directory": "research/cusp_motion_continuation",
+    "proof": "research/cusp_motion_continuation/PROOF.md",
+    "manifest_sha256": "81ef907a46735b8411f1ada1739ef2638c2bf3be4e6e4f99f6f50ccff0ee1018",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_continuation.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "continuation.py",
+      "crosscheck.py",
+      "differentiate.py",
+      "plot_results.py",
+      "probe.py"
+    ]
+  },
+  {
+    "id": "R30",
+    "directory": "research/cusp_finite_design_comparison",
+    "proof": "research/cusp_finite_design_comparison/PROOF.md",
+    "manifest_sha256": "fab648bec8006c0d0dc08bf3ed21370f47636459c5d2d6debbe215e099875dad",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_remainder.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "compare_values.py",
+      "derivative_check.py",
+      "plot_results.py"
+    ]
+  },
+  {
+    "id": "R31",
+    "directory": "research/cusp_order_transport",
+    "proof": "research/cusp_order_transport/PROOF.md",
+    "manifest_sha256": "861375adbe3f7cc845a8e5e2c1f127b604fff86c363cd03e0abdfdac513599d9",
+    "python_entrypoints": [
+      "audit_snapshot.py",
+      "certify_transport.py",
+      "check_algebra.py",
+      "check_bounds.py",
+      "direct_check.py",
+      "plot_results.py"
+    ]
+  }
+]

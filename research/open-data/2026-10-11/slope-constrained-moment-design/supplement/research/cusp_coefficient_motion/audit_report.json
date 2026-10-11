@@ -1,0 +1,35 @@
+{
+  "status": "R28_coefficient_motion_evidence_and_preservation_passed",
+  "prior_manifests": 28,
+  "prior_frozen_file_entries": 1130,
+  "exact_check_groups": 26,
+  "rational_AD_decisions": 44,
+  "diagnostic_integral_solves": 26,
+  "diagnostic_comparisons": 146,
+  "recorded_residual_checks": 52,
+  "two_step_comparisons": 6,
+  "precision_comparisons": 72,
+  "published_C4_prime_bounds": [
+    "2.82e-40",
+    "4.35e-40"
+  ],
+  "driver_interval": [
+    "-1/65536",
+    "0"
+  ],
+  "strict_increase_of_C4_on_this_arc": true,
+  "uniform_finite_M_optimum_monotonicity": false,
+  "whole_original_arc_covered": false,
+  "C4_convexity_claimed": false,
+  "new_sixth_coefficient": false,
+  "previous_packages_modified": false,
+  "manuscripts_modified": false,
+  "external_referee_review": false,
+  "formal_proof": false,
+  "literature_priority_established": false,
+  "public_release_or_submission": false,
+  "audit_source_sha256": "fce9aa03bfd4e1e57c238f7c4bae2295fbc8b6c10c05c8d2a5c43d83c414d022",
+  "trust_boundary": "Provenance, fresh exact and rational AD replay, recorded independent finite differences and optional Arb reproduction. Analytic implicit differentiation, moving boundaries and infinite-series differentiation are not mechanically proved by this audit.",
+  "closed_utc": "2026-09-21T23:20:13.583331+00:00",
+  "Arb_replayed_at_freeze": true
+}

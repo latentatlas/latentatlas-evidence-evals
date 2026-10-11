@@ -1,0 +1,16 @@
+{
+  "status": "two_figures_generated_from_certified_points",
+  "proof_input": false,
+  "input_sha256": {
+    "point_certificates.json": "78e299f9c059b8ded33982cba3b3745c91e198a0efac39fc64a7bb8ccc5baff0",
+    "fold_samples.json": "e5acac0fb789c4a51085204620ca9d666d119016f133a58ceac8496968d28147"
+  },
+  "source_sha256": "b27465a6d6d1f5223f8bc9b2ab5491658912ca24d2e297d5fec297beded92049",
+  "files": {
+    "pinned_cusp_sheet.png": "1f238e78878644ee9431087608caa823876955b519b93de0f448f0985693605f",
+    "pinned_cusp_sheet.svg": "6811ca8e120a140a24696d8c4a4a10effb45bad26aa71625cee791d73c77ca91",
+    "finite_fold_comparison.png": "e15772a0b409b5a4dce3719f2471df6019d94d51d14b4a1250d9fd4efe5fa4ef",
+    "finite_fold_comparison.svg": "49cfcc7b816835cea179df5ed01c8a258fdcff650d5ded4df0e64e367681a3e6"
+  },
+  "interpretation": "Point/error enclosures are certified; interpolating lines and binary64 plotting coordinates are explanatory, not proof inputs."
+}
