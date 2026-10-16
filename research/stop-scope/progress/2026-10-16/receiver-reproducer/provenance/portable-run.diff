@@ -1,0 +1,98 @@
+--- original/run.py
++++ portable/run.py
+@@ -17,8 +17,6 @@
+ from audit import audit
+ 
+ HERE=Path(__file__).resolve().parent
+-PREVIOUS=HERE.parent/'f07_live_matched_timing_v01'
+-REFERENCE=PREVIOUS/'live-2026-10-11-before_effect-O_first-healthy-v01'
+ ARMS=('healthy','source_stop','receiver_cancel','receiver_revoke')
+ CUTS=('queued','claimed_before_effect','after_effect_before_completion')
+ GRANTS={r:dict(role=r,origin=('old' if r in {'O','C'} else 'independent' if r=='I' else 'new-human'),
+@@ -27,23 +25,10 @@
+ 
+ 
+ def fixture():
+-    completion=json.loads((REFERENCE/'COMPLETION.json').read_text())
+-    for name,expected in completion['artifact_hashes'].items():
+-        p=(REFERENCE/name).resolve()
+-        require(p.is_relative_to(REFERENCE) and sha(p.read_bytes())==expected,'Reference artifact changed')
+-    events=[json.loads(l) for l in (REFERENCE/'events.jsonl').read_text().splitlines()]
+-    grants={e['invocation_id']:e for e in events if e['kind']=='authority_declared'}
+-    payloads={}
+-    for e in events:
+-        if e['kind']!='native_effect_result' or not e['success']: continue
+-        body=json.loads(e['after_content'])
+-        if body.get('stage')!='final': continue
+-        role=grants[e['op']['invocation_id']]['role']
+-        require(role not in payloads,'Duplicate reference role')
+-        require(sha(e['after_content'])==e['after_sha256'],'Reference byte mismatch')
+-        payloads[role]=dict(content=e['after_content'],sha256=e['after_sha256'],
+-                            source_operation_id=e['op']['operation_id'],source_tool=e['op']['tool'])
+-    require(set(payloads)==set(GRANTS),'Reference missing roles')
++    payloads = json.loads((HERE / 'fixtures/ROLE_PAYLOADS.json').read_text())
++    require(set(payloads) == set(GRANTS), 'Missing fixture role')
++    for role, payload in payloads.items():
++        require(sha(payload['content']) == payload['sha256'], 'Fixture bytes changed: ' + role)
+     return payloads
+ 
+ 
+@@ -52,15 +37,23 @@
+ 
+ 
+ def protect():
+-    plan=json.loads((REFERENCE/'PLAN.json').read_text())
+-    hashes=dict(plan['protected_hashes'])
+-    for p in PREVIOUS.rglob('*'):
+-        if p.is_file() and '__pycache__' not in p.parts: hashes[str(p)]=sha(p.read_bytes())
++    manifest = HERE / 'RELEASE_MANIFEST.json'
++    if not manifest.exists():
++        manifest = HERE / 'SOURCE_MANIFEST.json'
++    hashes = dict(json.loads(manifest.read_text())['artifact_hashes'])
++    hashes[manifest.name] = sha(manifest.read_bytes())
+     for prior in HERE.glob('local-*'):
++        require(not prior.is_symlink(), 'Symlink output directory')
+         if prior.is_dir():
+             for p in prior.rglob('*'):
+-                if p.is_file(): hashes[str(p)]=sha(p.read_bytes())
+-    require(all(Path(p).is_file() and sha(Path(p).read_bytes())==h for p,h in hashes.items()),'Protected data changed')
++                require(not p.is_symlink(), 'Symlink in prior output')
++                if p.is_file():
++                    hashes[p.relative_to(HERE).as_posix()] = sha(p.read_bytes())
++    for name, expected in hashes.items():
++        p = HERE / name
++        require(not Path(name).is_absolute() and '..' not in Path(name).parts
++                and p.resolve().is_relative_to(HERE) and not p.is_symlink(), 'Unsafe protected path')
++        require(p.is_file() and sha(p.read_bytes()) == expected, 'Protected file changed: ' + name)
+     return hashes
+ 
+ 
+@@ -174,8 +167,8 @@
+     out.mkdir(); (out/'instrument').mkdir()
+     for name in frozen: (out/'instrument'/name).write_bytes((HERE/name).read_bytes())
+     save(out/'PLAN.json',dict(created_at_utc=datetime.now(timezone.utc).isoformat(),conditions=conditions,
+-         source_hashes=frozen,protected_hashes=before,fixture_source=str(REFERENCE),
+-         fixture_events_sha256=sha((REFERENCE/'events.jsonl').read_bytes()),actual_provider_calls=0,
++         source_hashes=frozen,protected_hashes=before,fixture_source='fixtures/ROLE_PAYLOADS.json',
++         fixture_sha256=sha((HERE/'fixtures/ROLE_PAYLOADS.json').read_bytes()),actual_provider_calls=0,
+          protocol_sha256=sha((HERE/'PROTOCOL.md').read_bytes()),scope='receiver mechanism qualification; not a new live-model comparison'))
+     results=[]
+     for cut,arm,fault in conditions:
+@@ -189,7 +182,7 @@
+     for cut,arm,fault in conditions:
+         name=cut+'--'+arm+'--'+fault
+         if name not in completed: results.append(dict(cell=name,status='not_attempted'))
+-    unchanged=all(Path(p).is_file() and sha(Path(p).read_bytes())==h for p,h in before.items())
++    unchanged=all((HERE/p).is_file() and sha((HERE/p).read_bytes())==h for p,h in before.items())
+     summary=dict(records=results,actual_provider_calls=0,protected_files_unchanged=unchanged,
+                  protected_file_count=len(before),source_files_unchanged=frozen==sources(),
+                  new_live_model_episodes=0,catalogue_cases_certified=0,publication_performed=False)
+@@ -201,6 +194,8 @@
+ 
+ 
+ if __name__=='__main__':
++    import sys
++    require(os.name == 'posix' and sys.version_info >= (3, 10), 'Use Python 3.10+ on POSIX; SIGTERM is part of this experiment')
+     parser=argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--out',type=Path,required=True); parser.add_argument('--smoke',action='store_true')
+     args=parser.parse_args(); batch(args.out.resolve(),args.smoke)

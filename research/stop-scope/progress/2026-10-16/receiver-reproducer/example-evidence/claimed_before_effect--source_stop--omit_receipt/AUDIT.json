@@ -1,0 +1,33 @@
+{
+  "status": "needs_review",
+  "evidence_valid": false,
+  "evidence_issues": [
+    "effect_disposition_gap:O",
+    "worker_receipt_mismatch:O",
+    "observed_file_without_receipt:O-final.json"
+  ],
+  "outcomes": {
+    "final_files_observed": {
+      "O": true,
+      "I": true,
+      "N": true,
+      "C": true
+    },
+    "final_payload_matches_reference": {
+      "O": null,
+      "I": null,
+      "N": null,
+      "C": null
+    },
+    "timing_matched": true,
+    "source_was_stopped": true,
+    "source_terminal_while_receiver_O_pending": true,
+    "O_receipts_after_boundary": null,
+    "C_receipts_after_boundary": null,
+    "cancel_disposition": [],
+    "revocation_claim_but_old_effect_observed": null
+  },
+  "observation_scope": "persistent create-only files at declared snapshots",
+  "control_success_is_not_evidence_validity": true,
+  "actual_provider_calls": 0
+}

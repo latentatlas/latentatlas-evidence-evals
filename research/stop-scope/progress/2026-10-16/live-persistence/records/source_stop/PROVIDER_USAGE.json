@@ -1,0 +1,276 @@
+{
+  "status": "closed_clean",
+  "actual_provider_calls": 13,
+  "usage_is_synthetic": false,
+  "requests_attempted": 13,
+  "observed_credit_equivalent": "31.58770",
+  "unknown_reserve_retained": "0",
+  "per_role_requests": {
+    "I": 4,
+    "O": 3,
+    "S": 2,
+    "N": 4
+  },
+  "attempts": [
+    {
+      "index": 1,
+      "request_id": "31c25830-9214-4ecf-8b04-566bfa5323c9:1",
+      "binding": {
+        "authority_id": "08e335e8-78b4-47c3-9947-0bd99a2c42d9",
+        "role": "I",
+        "thread_id": "7036218d-340a-4eac-bb1c-4376aa3b1987",
+        "invocation_id": "31c25830-9214-4ecf-8b04-566bfa5323c9",
+        "parent_invocation_id": null,
+        "job_id": "independent",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "5127431209d8cc28d9f4862c",
+        "origin_key": "5127431209d8cc28d9f4862c"
+      },
+      "request_sha256": "062e8bac2a56dad275ab8d246674c0557e297462459c722c92a10b4716453829",
+      "status": "terminal_observed",
+      "credit_equivalent": "1.99325",
+      "provider_status": "completed"
+    },
+    {
+      "index": 2,
+      "request_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685:1",
+      "binding": {
+        "authority_id": "8313ab21-9b64-406e-9f9c-f9fb4c26adcd",
+        "role": "O",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685",
+        "parent_invocation_id": null,
+        "job_id": "old",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "a7c100832ce309a9e1c1528c",
+        "origin_key": "a7c100832ce309a9e1c1528c"
+      },
+      "request_sha256": "d9d0d2213c1f279e71331aad6eb2c0b47b7a4d297783e3b032d24775fbbd2722",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.00225",
+      "provider_status": "completed"
+    },
+    {
+      "index": 3,
+      "request_id": "31c25830-9214-4ecf-8b04-566bfa5323c9:2",
+      "binding": {
+        "authority_id": "08e335e8-78b4-47c3-9947-0bd99a2c42d9",
+        "role": "I",
+        "thread_id": "7036218d-340a-4eac-bb1c-4376aa3b1987",
+        "invocation_id": "31c25830-9214-4ecf-8b04-566bfa5323c9",
+        "parent_invocation_id": null,
+        "job_id": "independent",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "5127431209d8cc28d9f4862c",
+        "origin_key": "5127431209d8cc28d9f4862c"
+      },
+      "request_sha256": "861dcb3dddf5e03a4323ea5641dd19a9feb5b5b736feb339f634e4aa95f5cc8a",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.729",
+      "provider_status": "completed"
+    },
+    {
+      "index": 4,
+      "request_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685:2",
+      "binding": {
+        "authority_id": "8313ab21-9b64-406e-9f9c-f9fb4c26adcd",
+        "role": "O",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685",
+        "parent_invocation_id": null,
+        "job_id": "old",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "a7c100832ce309a9e1c1528c",
+        "origin_key": "a7c100832ce309a9e1c1528c"
+      },
+      "request_sha256": "53df363e64fd2290c56fcc436c5f51a4417cc52d72944b27e00524767502d8ff",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.69325",
+      "provider_status": "completed"
+    },
+    {
+      "index": 5,
+      "request_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685:3",
+      "binding": {
+        "authority_id": "8313ab21-9b64-406e-9f9c-f9fb4c26adcd",
+        "role": "O",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685",
+        "parent_invocation_id": null,
+        "job_id": "old",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "a7c100832ce309a9e1c1528c",
+        "origin_key": "a7c100832ce309a9e1c1528c"
+      },
+      "request_sha256": "41384922a5294bb264cb9ad46a1fe7c1f98b1377414ac55b804195787b03eb71",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.757",
+      "provider_status": "completed"
+    },
+    {
+      "index": 6,
+      "request_id": "a80af1fa-6a98-4d57-bdb4-3a9fe0508e96:1",
+      "binding": {
+        "authority_id": "ddbeace0-327c-4b38-ac04-a8e32cfc27ca",
+        "role": "S",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "a80af1fa-6a98-4d57-bdb4-3a9fe0508e96",
+        "parent_invocation_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685",
+        "job_id": null,
+        "authority_kind": "source_summary",
+        "issuer": "trusted_fixture_workflow",
+        "identity_key": "7f9126043d2a8f4366c8bf76",
+        "origin_key": "a7c100832ce309a9e1c1528c"
+      },
+      "request_sha256": "341a2515cb078b8d83ece635c77119cde169538381f56881c90c3a819b2b6cc0",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.80075",
+      "provider_status": "completed"
+    },
+    {
+      "index": 7,
+      "request_id": "a80af1fa-6a98-4d57-bdb4-3a9fe0508e96:2",
+      "binding": {
+        "authority_id": "ddbeace0-327c-4b38-ac04-a8e32cfc27ca",
+        "role": "S",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "a80af1fa-6a98-4d57-bdb4-3a9fe0508e96",
+        "parent_invocation_id": "23080a7f-a1a9-43a8-89da-97fbd2d47685",
+        "job_id": null,
+        "authority_kind": "source_summary",
+        "issuer": "trusted_fixture_workflow",
+        "identity_key": "7f9126043d2a8f4366c8bf76",
+        "origin_key": "a7c100832ce309a9e1c1528c"
+      },
+      "request_sha256": "5b0d32bfaf4ff01e3d1800f5fc26c7402f6e8bb53762d6a65bebc4965508e12a",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.698",
+      "provider_status": "completed"
+    },
+    {
+      "index": 8,
+      "request_id": "31c25830-9214-4ecf-8b04-566bfa5323c9:3",
+      "binding": {
+        "authority_id": "08e335e8-78b4-47c3-9947-0bd99a2c42d9",
+        "role": "I",
+        "thread_id": "7036218d-340a-4eac-bb1c-4376aa3b1987",
+        "invocation_id": "31c25830-9214-4ecf-8b04-566bfa5323c9",
+        "parent_invocation_id": null,
+        "job_id": "independent",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "5127431209d8cc28d9f4862c",
+        "origin_key": "5127431209d8cc28d9f4862c"
+      },
+      "request_sha256": "dfb9fe1484e53a83e8f4cd613bd03cce1b914e22facf5d7fc69aa4a9e82503f0",
+      "status": "terminal_observed",
+      "credit_equivalent": "1.19965",
+      "provider_status": "completed"
+    },
+    {
+      "index": 9,
+      "request_id": "31c25830-9214-4ecf-8b04-566bfa5323c9:4",
+      "binding": {
+        "authority_id": "08e335e8-78b4-47c3-9947-0bd99a2c42d9",
+        "role": "I",
+        "thread_id": "7036218d-340a-4eac-bb1c-4376aa3b1987",
+        "invocation_id": "31c25830-9214-4ecf-8b04-566bfa5323c9",
+        "parent_invocation_id": null,
+        "job_id": "independent",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "5127431209d8cc28d9f4862c",
+        "origin_key": "5127431209d8cc28d9f4862c"
+      },
+      "request_sha256": "886334266c04122a0934c0996ff5961392431705791feb99e39aa401c024d7c0",
+      "status": "terminal_observed",
+      "credit_equivalent": "0.99115",
+      "provider_status": "completed"
+    },
+    {
+      "index": 10,
+      "request_id": "4a39a725-095c-449a-b97e-b06b4b0baa74:1",
+      "binding": {
+        "authority_id": "6bda6f39-cd35-4820-bfd1-cbabe2b4b1fe",
+        "role": "N",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "4a39a725-095c-449a-b97e-b06b4b0baa74",
+        "parent_invocation_id": null,
+        "job_id": "human",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "f2f0b12046f21334e1b1b7dc",
+        "origin_key": "f2f0b12046f21334e1b1b7dc"
+      },
+      "request_sha256": "5232dee51ca826c10d1287bccea362e868512ee3b961e3cfc589ce586c5eec51",
+      "status": "terminal_observed",
+      "credit_equivalent": "2.8785",
+      "provider_status": "completed"
+    },
+    {
+      "index": 11,
+      "request_id": "4a39a725-095c-449a-b97e-b06b4b0baa74:2",
+      "binding": {
+        "authority_id": "6bda6f39-cd35-4820-bfd1-cbabe2b4b1fe",
+        "role": "N",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "4a39a725-095c-449a-b97e-b06b4b0baa74",
+        "parent_invocation_id": null,
+        "job_id": "human",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "f2f0b12046f21334e1b1b7dc",
+        "origin_key": "f2f0b12046f21334e1b1b7dc"
+      },
+      "request_sha256": "5d9939317aa0694ba1a6dcd93163580d61b5f7b4e595ec09b3f924f8881d2e42",
+      "status": "terminal_observed",
+      "credit_equivalent": "1.83315",
+      "provider_status": "completed"
+    },
+    {
+      "index": 12,
+      "request_id": "4a39a725-095c-449a-b97e-b06b4b0baa74:3",
+      "binding": {
+        "authority_id": "6bda6f39-cd35-4820-bfd1-cbabe2b4b1fe",
+        "role": "N",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "4a39a725-095c-449a-b97e-b06b4b0baa74",
+        "parent_invocation_id": null,
+        "job_id": "human",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "f2f0b12046f21334e1b1b7dc",
+        "origin_key": "f2f0b12046f21334e1b1b7dc"
+      },
+      "request_sha256": "cb56c0b52e0ea1b8ec8c9cd1a39ef66cc92e3600c1532d97a41906b84ffa7747",
+      "status": "terminal_observed",
+      "credit_equivalent": "3.58475",
+      "provider_status": "completed"
+    },
+    {
+      "index": 13,
+      "request_id": "4a39a725-095c-449a-b97e-b06b4b0baa74:4",
+      "binding": {
+        "authority_id": "6bda6f39-cd35-4820-bfd1-cbabe2b4b1fe",
+        "role": "N",
+        "thread_id": "d5fd8ded-4732-4184-9fde-9e9e68a418d6",
+        "invocation_id": "4a39a725-095c-449a-b97e-b06b4b0baa74",
+        "parent_invocation_id": null,
+        "job_id": "human",
+        "authority_kind": "fixture_human_task",
+        "issuer": "trusted_fixture_operator",
+        "identity_key": "f2f0b12046f21334e1b1b7dc",
+        "origin_key": "f2f0b12046f21334e1b1b7dc"
+      },
+      "request_sha256": "823dd21f6809633e3d694b96f532219e0ab5c1d66e2b131ed1dbaa6d11d51626",
+      "status": "terminal_observed",
+      "credit_equivalent": "3.427",
+      "provider_status": "completed"
+    }
+  ]
+}

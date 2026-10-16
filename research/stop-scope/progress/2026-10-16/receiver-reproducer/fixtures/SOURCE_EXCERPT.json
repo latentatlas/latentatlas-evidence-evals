@@ -1,0 +1,31 @@
+{
+  "selected_effects": [
+    {
+      "role": "O",
+      "source_event_sha256": "1a47e5f43b9cbbaa71b643ea5245780df4502fe3775d5b5f6f5b96c4e2307038",
+      "source_operation_id": "5132fad5-2d8b-48cf-bbff-39b698f3aa27",
+      "content_sha256": "771e8f7b99378df7b4e0998af50130870da9c4f6b68d890cb4b6dd4e78cd607e"
+    },
+    {
+      "role": "I",
+      "source_event_sha256": "d6c27fe4769487d706f1661f3eb5372949973a5674d360223bbfceab80c29b67",
+      "source_operation_id": "56c31321-650c-498c-a835-3bf4113cf5e0",
+      "content_sha256": "4a82e5a62b677fcdb72ddfe7a77a1d9dc593c5def6e323922b2deceb2c9ce3b8"
+    },
+    {
+      "role": "N",
+      "source_event_sha256": "3b9196ba1c3fe49624a910140740b1a368dac24feb70b6f3902b1f6b37d0516f",
+      "source_operation_id": "35223c85-beb3-437e-8123-549f17e48ca7",
+      "content_sha256": "4d991752f31e0945e000529f32dd3a2821ab00a1301c3ebbd8a19764fb170bd2"
+    },
+    {
+      "role": "C",
+      "source_event_sha256": "9a7c2df9546d81e47397daa4b23466f317742ff8a34a6c39eef80ca1459d6c8e",
+      "source_operation_id": "b66ee6a2-1e07-4b82-a474-ed7de4b6f0d4",
+      "content_sha256": "3848b8b8ba057470084d3464d3b837168c99ebe8d2c66025b90478f4a504ab29"
+    }
+  ],
+  "historical_events_sha256": "2a6f91dc423b173039b425298da52fcdefc60bf45e2e55a32293a0f40d42d159",
+  "historical_completion_sha256": "a82bbf7d34502e2db74c0a398d2c9d5071e05913a5ef82871ddbb4460d643ff3",
+  "description": "Selected provenance metadata only; not the original full transcript."
+}

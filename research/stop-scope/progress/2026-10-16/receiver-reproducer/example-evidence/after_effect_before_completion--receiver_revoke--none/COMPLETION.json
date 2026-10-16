@@ -1,0 +1,21 @@
+{
+  "condition": {
+    "cut": "after_effect_before_completion",
+    "arm": "receiver_revoke",
+    "fault": "none"
+  },
+  "status": "recorded",
+  "actual_provider_calls": 0,
+  "artifact_hashes": {
+    "AUDIT.json": "916c70ab0b8e06672b1f916f14b40842c5521293564babece7fc73b42c74c58c",
+    "PLAN.json": "a208da357213b14da2b72e3653655e188feb8a0674ef1bb744e2adfb98574295",
+    "PROCESS.json": "3636dfc128e19269247b4ee81e38aef41ad3aa6cd268205aeb065d144611c6f9",
+    "coordinator.jsonl": "4b98b28bae80ae86373a2b2d9bcb4c8046abace8c22fee38c6ae672f6e2c5051",
+    "observer.jsonl": "3c8ac397e2dcc431ff7ad86e7cd58349d0b5db419afdd508eaf324cb8bb85e61",
+    "receiver.jsonl": "c767a998abba5e4a12586b1b24522b4a56515c50994bebe665bae2f59bf25930",
+    "source.jsonl": "7e41b95978f5e5ab4b2e9625b1f9506b6a127a945b8a425882d0683f2df845e1",
+    "store/I-final.json": "4a82e5a62b677fcdb72ddfe7a77a1d9dc593c5def6e323922b2deceb2c9ce3b8",
+    "store/N-final.json": "4d991752f31e0945e000529f32dd3a2821ab00a1301c3ebbd8a19764fb170bd2",
+    "store/O-final.json": "771e8f7b99378df7b4e0998af50130870da9c4f6b68d890cb4b6dd4e78cd607e"
+  }
+}

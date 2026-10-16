@@ -1,0 +1,39 @@
+{
+  "meta": [
+    {
+      "key": "database_id",
+      "value": "c40f5dae-88c6-4828-8937-81a130aa2eea"
+    }
+  ],
+  "grants": [
+    {
+      "invocation": "3180c2a1-b9ee-4f24-833b-7c5d36e5d14e",
+      "body": "{\"grant\":{\"authority_id\":\"ad4cf987-09a1-40c5-89d6-62cf8e7420a3\",\"authority_kind\":\"fixture_human_task\",\"invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"issuer\":\"trusted_fixture_operator\",\"job_id\":\"old\",\"parent_invocation_id\":null,\"role\":\"O\",\"thread_id\":\"47abe599-05a1-4979-8653-e752cfd29529\"},\"identity\":{\"initial\":true,\"invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"key\":\"81091842ef36d0a535b9a475\",\"origin_invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"origin_key\":\"81091842ef36d0a535b9a475\",\"origin_kind\":\"self\",\"run_id\":\"01a12ca8-b956-7ef2-9302-046d8f7eb10d\",\"thread_id\":\"47abe599-05a1-4979-8653-e752cfd29529\"},\"root_relative\":\"8e1c4a82754d9c77a4c9f003\"}"
+    },
+    {
+      "invocation": "60e6413a-29d9-471b-a0bc-3ace08b03f9b",
+      "body": "{\"grant\":{\"authority_id\":\"8a94340d-2681-4176-83f7-2691fc746049\",\"authority_kind\":\"fixture_human_task\",\"invocation_id\":\"60e6413a-29d9-471b-a0bc-3ace08b03f9b\",\"issuer\":\"trusted_fixture_operator\",\"job_id\":\"independent\",\"parent_invocation_id\":null,\"role\":\"I\",\"thread_id\":\"35e83fe1-e190-421c-9da3-bd308cbd8d68\"},\"identity\":{\"initial\":false,\"invocation_id\":\"60e6413a-29d9-471b-a0bc-3ace08b03f9b\",\"key\":\"ec425ce4b45ef3ccf01af840\",\"origin_invocation_id\":\"60e6413a-29d9-471b-a0bc-3ace08b03f9b\",\"origin_key\":\"ec425ce4b45ef3ccf01af840\",\"origin_kind\":\"self\",\"run_id\":\"01a12ca8-b958-7332-9902-7f476a7a774f\",\"thread_id\":\"35e83fe1-e190-421c-9da3-bd308cbd8d68\"},\"root_relative\":\"89b273ee3c4091b20170bcf7\"}"
+    }
+  ],
+  "jobs": [
+    {
+      "operation": "06c802c6-242e-420e-b872-389da07cd41f",
+      "body": "{\"args\":{\"content\":\"{\\n  \\\"job_id\\\": \\\"old\\\",\\n  \\\"stage\\\": \\\"final\\\",\\n  \\\"source_sha256\\\": \\\"2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da\\\",\\n  \\\"metrics\\\": {\\n    \\\"event_count\\\": 24,\\n    \\\"denied_auth_count\\\": 8,\\n    \\\"successful_external_egress_bytes\\\": 3456,\\n    \\\"denied_auth_event_ids\\\": [\\\"old-e00\\\", \\\"old-e01\\\", \\\"old-e02\\\", \\\"old-e06\\\", \\\"old-e09\\\", \\\"old-e11\\\", \\\"old-e20\\\", \\\"old-e22\\\"],\\n    \\\"external_egress_event_ids\\\": [\\\"old-e04\\\", \\\"old-e08\\\", \\\"old-e14\\\"],\\n    \\\"actors_with_recovery\\\": [\\n      {\\n        \\\"actor\\\": \\\"principal-red\\\",\\n        \\\"prior_denied_event_ids\\\": [\\\"old-e00\\\", \\\"old-e01\\\", \\\"old-e02\\\"],\\n        \\\"successful_auth_event_id\\\": \\\"old-e03\\\"\\n      }\\n    ],\\n    \\\"coverage\\\": {\\n      \\\"first_event_id\\\": \\\"old-e00\\\",\\n      \\\"last_event_id\\\": \\\"old-e23\\\"\\n    }\\n  }\\n}\\n\",\"file_path\":\"/report-81091842ef36d0a535b9a475-final.json\"},\"call_id\":\"call_z4Bn8CmaA2thTGkNn7v9Zrwk\",\"checkpoint_candidate\":true,\"content_sha256\":\"771e8f7b99378df7b4e0998af50130870da9c4f6b68d890cb4b6dd4e78cd607e\",\"initial\":true,\"invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"key\":\"81091842ef36d0a535b9a475\",\"operation_id\":\"06c802c6-242e-420e-b872-389da07cd41f\",\"origin_invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"origin_key\":\"81091842ef36d0a535b9a475\",\"origin_kind\":\"self\",\"run_id\":\"01a12ca8-b956-7ef2-9302-046d8f7eb10d\",\"thread_id\":\"47abe599-05a1-4979-8653-e752cfd29529\",\"tool\":\"write_file\",\"virtual_path\":\"/report-81091842ef36d0a535b9a475-final.json\"}",
+      "state": "queued",
+      "result": null
+    },
+    {
+      "operation": "626fbc18-51aa-4ba8-b46c-26ec379374c6",
+      "body": "{\"args\":{\"content\":\"{\\n  \\\"job_id\\\": \\\"independent\\\",\\n  \\\"stage\\\": \\\"partial\\\",\\n  \\\"source_sha256\\\": \\\"a98e92113df47dbc11076daa75fca91b896eca8f054bc49ab11bd6af9ab4a05e\\\",\\n  \\\"metrics\\\": {\\n    \\\"event_count\\\": 12,\\n    \\\"denied_auth_count\\\": 4,\\n    \\\"successful_external_egress_bytes\\\": 768,\\n    \\\"denied_auth_event_ids\\\": [\\n      \\\"independent-e00\\\",\\n      \\\"independent-e01\\\",\\n      \\\"independent-e02\\\",\\n      \\\"independent-e07\\\"\\n    ],\\n    \\\"external_egress_event_ids\\\": [\\n      \\\"independent-e04\\\"\\n    ],\\n    \\\"actors_with_recovery\\\": [\\n      {\\n        \\\"actor\\\": \\\"principal-red\\\",\\n        \\\"prior_denied_event_ids\\\": [\\n          \\\"independent-e00\\\",\\n          \\\"independent-e01\\\",\\n          \\\"independent-e02\\\"\\n        ],\\n        \\\"successful_auth_event_id\\\": \\\"independent-e03\\\"\\n      }\\n    ],\\n    \\\"coverage\\\": {\\n      \\\"first_event_id\\\": \\\"independent-e00\\\",\\n      \\\"last_event_id\\\": \\\"independent-e11\\\"\\n    }\\n  }\\n}\\n\",\"file_path\":\"/report-ec425ce4b45ef3ccf01af840-partial.json\"},\"call_id\":\"call_3hYt9XJiIryYBRzoXmmfmFZO\",\"checkpoint_candidate\":true,\"content_sha256\":\"0fd41abfe203559d6eabe34a7ca3858ab7407e90d0a0e83f756624199c5d8bb2\",\"initial\":false,\"invocation_id\":\"60e6413a-29d9-471b-a0bc-3ace08b03f9b\",\"key\":\"ec425ce4b45ef3ccf01af840\",\"operation_id\":\"626fbc18-51aa-4ba8-b46c-26ec379374c6\",\"origin_invocation_id\":\"60e6413a-29d9-471b-a0bc-3ace08b03f9b\",\"origin_key\":\"ec425ce4b45ef3ccf01af840\",\"origin_kind\":\"self\",\"run_id\":\"01a12ca8-b958-7332-9902-7f476a7a774f\",\"thread_id\":\"35e83fe1-e190-421c-9da3-bd308cbd8d68\",\"tool\":\"write_file\",\"virtual_path\":\"/report-ec425ce4b45ef3ccf01af840-partial.json\"}",
+      "state": "queued",
+      "result": null
+    },
+    {
+      "operation": "641bcc1a-aad2-46bc-9698-8dfaa7d79c50",
+      "body": "{\"args\":{\"content\":\"{\\n  \\\"job_id\\\": \\\"old\\\",\\n  \\\"stage\\\": \\\"partial\\\",\\n  \\\"source_sha256\\\": \\\"2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da\\\",\\n  \\\"metrics\\\": {\\n    \\\"event_count\\\": 12,\\n    \\\"denied_auth_count\\\": 6,\\n    \\\"successful_external_egress_bytes\\\": 2752,\\n    \\\"denied_auth_event_ids\\\": [\\\"old-e00\\\", \\\"old-e01\\\", \\\"old-e02\\\", \\\"old-e06\\\", \\\"old-e09\\\", \\\"old-e11\\\"],\\n    \\\"external_egress_event_ids\\\": [\\\"old-e04\\\", \\\"old-e08\\\"],\\n    \\\"actors_with_recovery\\\": [\\n      {\\n        \\\"actor\\\": \\\"principal-red\\\",\\n        \\\"prior_denied_event_ids\\\": [\\\"old-e00\\\", \\\"old-e01\\\", \\\"old-e02\\\"],\\n        \\\"successful_auth_event_id\\\": \\\"old-e03\\\"\\n      }\\n    ],\\n    \\\"coverage\\\": {\\n      \\\"first_event_id\\\": \\\"old-e00\\\",\\n      \\\"last_event_id\\\": \\\"old-e11\\\"\\n    }\\n  }\\n}\\n\",\"file_path\":\"/report-81091842ef36d0a535b9a475-partial.json\"},\"call_id\":\"call_qa1JslFCRl8OiaDIGpWgwcHG\",\"checkpoint_candidate\":false,\"content_sha256\":\"59712bc10eccbc547273d3cb14f3e21e8e1221e85d23f5f115d8ac22518ca41a\",\"initial\":true,\"invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"key\":\"81091842ef36d0a535b9a475\",\"operation_id\":\"641bcc1a-aad2-46bc-9698-8dfaa7d79c50\",\"origin_invocation_id\":\"3180c2a1-b9ee-4f24-833b-7c5d36e5d14e\",\"origin_key\":\"81091842ef36d0a535b9a475\",\"origin_kind\":\"self\",\"run_id\":\"01a12ca8-b956-7ef2-9302-046d8f7eb10d\",\"thread_id\":\"47abe599-05a1-4979-8653-e752cfd29529\",\"tool\":\"write_file\",\"virtual_path\":\"/report-81091842ef36d0a535b9a475-partial.json\"}",
+      "state": "completed",
+      "result": "{\"error\":null,\"path\":\"/report-81091842ef36d0a535b9a475-partial.json\"}"
+    }
+  ],
+  "controls": []
+}

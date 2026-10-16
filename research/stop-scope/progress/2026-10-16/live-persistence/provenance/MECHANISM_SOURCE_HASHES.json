@@ -1,0 +1,7 @@
+{
+  "f07_persistent_receiver_v01/durable_receiver.py": "009978636d03108ba0452cc799bc8b46f14bf0b698d9febb863f7aa1910e06c0",
+  "f07_live_receiver_v02/receiver_worker.py": "9efa2ff2eb67f774dc081780d7b6782c66a6ace225c780831f24ebcf4e10fd52",
+  "f07_receiver_process_v01/common.py": "82b04992f879a159463842a6952e650aa04beb2f891c2cfeff5b7dac5d266b53",
+  "f07_receiver_process_v01/observer.py": "4c6f3d8e9d74fb06e987c962fb021426449075025117551848f43fe1bf199419",
+  "shared_queue_v05/path_policy.py": "945b8f478539e45262dde4cd7a66f6ecfce1e931dcbc0927c87de0df57c0e658"
+}

@@ -1,0 +1,111 @@
+{
+  "functions": [
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/responses_codec.py",
+      "source_sha256": "e17562fe7ea867259bbfd836f0be0c5b201a4438c7a7bc598bf5d9debcfb6924",
+      "name": "ContractError",
+      "first_line": 20,
+      "last_line": 21,
+      "extracted_sha256": "c48cc67e844db8f36ef0f0fcd7b1fd4cefd7183b4350fa85b0e878ae4e35f95b"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/responses_codec.py",
+      "source_sha256": "e17562fe7ea867259bbfd836f0be0c5b201a4438c7a7bc598bf5d9debcfb6924",
+      "name": "require",
+      "first_line": 24,
+      "last_line": 26,
+      "extracted_sha256": "8095fd60058b64287524e9bd86eb994f23e65a0b551a1d8446877d3db1146cb7"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/responses_codec.py",
+      "source_sha256": "e17562fe7ea867259bbfd836f0be0c5b201a4438c7a7bc598bf5d9debcfb6924",
+      "name": "strict_loads",
+      "first_line": 29,
+      "last_line": 42,
+      "extracted_sha256": "7a00ca35ff51e206013386f66a8003343c7aa33bc6bc5e9d418768334fee709a"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/responses_codec.py",
+      "source_sha256": "e17562fe7ea867259bbfd836f0be0c5b201a4438c7a7bc598bf5d9debcfb6924",
+      "name": "view",
+      "first_line": 50,
+      "last_line": 59,
+      "extracted_sha256": "9eaba993c590867992030cb530843bdf76b1983645042ae2e98ef87f988658bb"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/wire_contract.py",
+      "source_sha256": "1276db5c6cf907fee040acea0e2d75d97d0deca008a9dc6cd2c5bf19d6574ee4",
+      "name": "canonical",
+      "first_line": 8,
+      "last_line": 9,
+      "extracted_sha256": "a731b816653644044b6d1320c4f5c70851be565767d3c4e9ff34da3d17977be4"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/wire_contract.py",
+      "source_sha256": "1276db5c6cf907fee040acea0e2d75d97d0deca008a9dc6cd2c5bf19d6574ee4",
+      "name": "digest",
+      "first_line": 12,
+      "last_line": 13,
+      "extracted_sha256": "7ceb3cf57edf454d1f2853b6c5448a399790096a2eb7780d9decf4a4a057d737"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/wire_contract.py",
+      "source_sha256": "1276db5c6cf907fee040acea0e2d75d97d0deca008a9dc6cd2c5bf19d6574ee4",
+      "name": "validate_history",
+      "first_line": 31,
+      "last_line": 52,
+      "extracted_sha256": "5b321fc51f489f384a06e344c96500bdfd1c74deee343e4dfc5b0c0a9b3f94d0"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_exploration_v01/oauth_codec.py",
+      "source_sha256": "8809778cce2861f4d9b38a63b6f23082dd06a796822088a01a92d421000a22c0",
+      "name": "reconcile",
+      "first_line": 24,
+      "last_line": 95,
+      "extracted_sha256": "5868439a128561259b68973977d6b4b25a69b5525f1e9c6d0c9256a4b0dfdcca"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_exploration_v01/smoke_astra.py",
+      "source_sha256": "24785225c6f52590076892dfdbe2ee9c86b9e57f528243a9709644b7d4df0bd3",
+      "name": "parse_events",
+      "first_line": 105,
+      "last_line": 119,
+      "extracted_sha256": "7e46ee616d2f59396d8ef2b0c4977f7c0ef329ae14ea1a2465312e976e5bdaea"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_exploration_v01/smoke_astra.py",
+      "source_sha256": "24785225c6f52590076892dfdbe2ee9c86b9e57f528243a9709644b7d4df0bd3",
+      "name": "usage_quote",
+      "first_line": 122,
+      "last_line": 151,
+      "extracted_sha256": "9a4bd5b1c945ea06aa747c15a050745b8a292822874b4f4c1217b7b891c62aa7"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_bridge_v01/bridge_codec.py",
+      "source_sha256": "1ca3aee2b89ebc3f76af741c695eb5776a44bf4a32ade00eb7942406ace989fa",
+      "name": "flatten",
+      "first_line": 30,
+      "last_line": 34,
+      "extracted_sha256": "1a22e5553d0148859d1c95592e56bdd93e56a80772563fd3ba40fad5ba0f798f"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_bridge_v01/bridge_codec.py",
+      "source_sha256": "1ca3aee2b89ebc3f76af741c695eb5776a44bf4a32ade00eb7942406ace989fa",
+      "name": "imported_history",
+      "first_line": 37,
+      "last_line": 57,
+      "extracted_sha256": "c0095146ed75f42bc7c419b288e56a72cdd8cc70dca8277e013252967a4e2a22"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_bridge_v01/bridge_codec.py",
+      "source_sha256": "1ca3aee2b89ebc3f76af741c695eb5776a44bf4a32ade00eb7942406ace989fa",
+      "name": "Session",
+      "first_line": 60,
+      "last_line": 173,
+      "extracted_sha256": "722a32f891c0e7149ce68558582ae1fc26c0066d1477362c4210060f5d81fc33"
+    }
+  ],
+  "adapter": "Only AIMessage JSON serialization is replaced; full output equality is checked for all archived exchanges.",
+  "network_imports_executed": false,
+  "reference_source_is_read_only_not_a_live_runner": true
+}

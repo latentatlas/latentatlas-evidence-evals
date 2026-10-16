@@ -1,0 +1,32 @@
+{
+  "schema": "stop-scope-portable-receiver-v1",
+  "source_experiment": "feasibility/f07_receiver_process_v01",
+  "original_source_hashes": {
+    "common.py": "82b04992f879a159463842a6952e650aa04beb2f891c2cfeff5b7dac5d266b53",
+    "receiver.py": "5b508a3bf4965cd8a361ee5011c5e8a4455892e85134dda0f0ea73e04ad4f8f2",
+    "source.py": "e3308bc2e3c9fbd977f703ae702498d0e2f76e8b28b9721960007c55c945aad1",
+    "observer.py": "4c6f3d8e9d74fb06e987c962fb021426449075025117551848f43fe1bf199419",
+    "audit.py": "e8fa0632a0be403f4aaa46888e7bd354d264400d753fa0ca8c570d71f0f544a3",
+    "PROTOCOL.md": "868ee2d307c72edfbaf067f6c09bca9176195867e82085b6e707a71e850d6945",
+    "run.py": "38143d3bd1c2973c7fa2223bbfc7b4180f44cea79d9d1f1a686d6a56a5041b23",
+    "test_receiver.py": "51704ac3a4f48fca528728e1e3067a241ee2b095e7f72167ff2101c7b2409b3d"
+  },
+  "historical_matrix_completion_sha256": "d6d7ad1486fea3b61bb7d3c0b7d1abdb822be9aaa92920a78e22a4310db3e207",
+  "unchanged_episode_implementation": true,
+  "changed_files": [
+    "run.py",
+    "test_receiver.py"
+  ],
+  "changes": "Packaged fixture/protection paths, POSIX/version guard, recorded test location; see diff.",
+  "actor_mode": "programmed replay",
+  "actual_provider_calls": 0,
+  "new_catalogue_acceptances": 0,
+  "source_payloads_live_roles": [
+    "O",
+    "I",
+    "N"
+  ],
+  "source_payloads_programmed_roles": [
+    "C"
+  ]
+}

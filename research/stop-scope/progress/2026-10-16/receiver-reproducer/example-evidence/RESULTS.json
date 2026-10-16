@@ -1,0 +1,501 @@
+{
+  "records": [
+    {
+      "cell": "queued--healthy--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": false,
+        "source_terminal_while_receiver_O_pending": null,
+        "O_receipts_after_boundary": null,
+        "C_receipts_after_boundary": null,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "queued--source_stop--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 1,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "queued--receiver_cancel--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [
+          "cancellation_registered"
+        ],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "queued--receiver_revoke--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": false
+        },
+        "final_payload_matches_reference": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": false
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 0,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": false
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--healthy--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": false,
+        "source_terminal_while_receiver_O_pending": null,
+        "O_receipts_after_boundary": null,
+        "C_receipts_after_boundary": null,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--source_stop--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 1,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--receiver_cancel--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [
+          "cancellation_registered"
+        ],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--receiver_revoke--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": false
+        },
+        "final_payload_matches_reference": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": false
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 0,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": false
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "after_effect_before_completion--healthy--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": false,
+        "source_terminal_while_receiver_O_pending": null,
+        "O_receipts_after_boundary": null,
+        "C_receipts_after_boundary": null,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "after_effect_before_completion--source_stop--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "after_effect_before_completion--receiver_cancel--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [
+          "too_late_effect_applied"
+        ],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "after_effect_before_completion--receiver_revoke--none",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": false
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": false
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 0,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": false
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--receiver_revoke--noop_revoke",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 1,
+        "C_receipts_after_boundary": 1,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": true
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--receiver_revoke--broad_revoke",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": false,
+          "I": false,
+          "N": false,
+          "C": false
+        },
+        "final_payload_matches_reference": {
+          "O": false,
+          "I": false,
+          "N": false,
+          "C": false
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": 0,
+        "C_receipts_after_boundary": 0,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": false
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--source_stop--omit_receipt",
+      "status": "needs_review",
+      "evidence_valid": false,
+      "evidence_issues": [
+        "effect_disposition_gap:O",
+        "worker_receipt_mismatch:O",
+        "observed_file_without_receipt:O-final.json"
+      ],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": null,
+          "I": null,
+          "N": null,
+          "C": null
+        },
+        "timing_matched": true,
+        "source_was_stopped": true,
+        "source_terminal_while_receiver_O_pending": true,
+        "O_receipts_after_boundary": null,
+        "C_receipts_after_boundary": null,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    },
+    {
+      "cell": "claimed_before_effect--healthy--wrong_payload",
+      "status": "recorded",
+      "evidence_valid": true,
+      "evidence_issues": [],
+      "outcomes": {
+        "final_files_observed": {
+          "O": true,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "final_payload_matches_reference": {
+          "O": false,
+          "I": true,
+          "N": true,
+          "C": true
+        },
+        "timing_matched": true,
+        "source_was_stopped": false,
+        "source_terminal_while_receiver_O_pending": null,
+        "O_receipts_after_boundary": null,
+        "C_receipts_after_boundary": null,
+        "cancel_disposition": [],
+        "revocation_claim_but_old_effect_observed": null
+      },
+      "observation_scope": "persistent create-only files at declared snapshots",
+      "control_success_is_not_evidence_validity": true,
+      "actual_provider_calls": 0
+    }
+  ],
+  "actual_provider_calls": 0,
+  "protected_files_unchanged": true,
+  "protected_file_count": 19,
+  "source_files_unchanged": true,
+  "new_live_model_episodes": 0,
+  "catalogue_cases_certified": 0,
+  "publication_performed": false
+}

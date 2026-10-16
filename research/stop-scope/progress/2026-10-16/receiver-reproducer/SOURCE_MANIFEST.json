@@ -1,0 +1,22 @@
+{
+  "artifact_hashes": {
+    "EXPECTED_MECHANISM_OUTCOMES.json": "9182ed627d882c0a2d4b20f265f858508e4db21d58db4a1cadcf56813c688b8d",
+    "PROTOCOL.md": "868ee2d307c72edfbaf067f6c09bca9176195867e82085b6e707a71e850d6945",
+    "PROVENANCE.json": "6c4ceea16a918a59ef0ffb48eaaa8afcddbfd3eacaedaf9ea562ab58982b5763",
+    "README.md": "26e85fa5e020109d53258e322bf66193b1215cce33e04e56c4363d1505e83490",
+    "REPRODUCTION_ENVIRONMENT.json": "f90f0efc30f6ec3688ca6e58269ccdd2cd445c8ea3b357928a9440065200f2d3",
+    "audit.py": "e8fa0632a0be403f4aaa46888e7bd354d264400d753fa0ca8c570d71f0f544a3",
+    "common.py": "82b04992f879a159463842a6952e650aa04beb2f891c2cfeff5b7dac5d266b53",
+    "fixtures/ROLE_PAYLOADS.json": "72974a27d76e42f50d510b1e275801181d34774640829bb89c3ff6a22ed995bb",
+    "fixtures/SOURCE_EXCERPT.json": "10d0823cfa3c9f2ad2d7c4740de7349213f2e287fe52ed654bef1333627ea22b",
+    "observer.py": "4c6f3d8e9d74fb06e987c962fb021426449075025117551848f43fe1bf199419",
+    "provenance/original-run.py": "38143d3bd1c2973c7fa2223bbfc7b4180f44cea79d9d1f1a686d6a56a5041b23",
+    "provenance/portable-run.diff": "6b367cf6a8f7fc4f26e3a591bf2f2f147554f3bf8c794a940869a4f3bcd58f29",
+    "receiver.py": "5b508a3bf4965cd8a361ee5011c5e8a4455892e85134dda0f0ea73e04ad4f8f2",
+    "run.py": "2a4ea006caa7ca2f1456e643eefb686609fbeb91d7091d4f605acb55b44be889",
+    "source.py": "e3308bc2e3c9fbd977f703ae702498d0e2f76e8b28b9721960007c55c945aad1",
+    "test_portable.py": "9a298acea04be107a8263b680b1d8e442f94f3b67e8c4d979bc701bd7c0151da",
+    "test_receiver.py": "942a9b0e0b9e78e852900b02605305764716e6f2d92543d14a98750b7208be10",
+    "verify.py": "d506e04b53862ecaa70b6bfbd0a3cb7170b5067bb9189e2ed06e0076fc3a3955"
+  }
+}

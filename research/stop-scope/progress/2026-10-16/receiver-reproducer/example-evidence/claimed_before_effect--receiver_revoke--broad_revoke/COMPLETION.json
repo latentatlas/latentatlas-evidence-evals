@@ -1,0 +1,18 @@
+{
+  "condition": {
+    "cut": "claimed_before_effect",
+    "arm": "receiver_revoke",
+    "fault": "broad_revoke"
+  },
+  "status": "recorded",
+  "actual_provider_calls": 0,
+  "artifact_hashes": {
+    "AUDIT.json": "6447c09da05fbae661a5b03f34f2c4659ce010d7d5dcc5db66f89c0837e733ee",
+    "PLAN.json": "944c3b8de0b659a08a3d5e476ec57d1b6dd44da487bc3fe5b9f8ca6b9c8beb0f",
+    "PROCESS.json": "77da4f4b4b5f83b007c56ce35b571466b257e1a7b63c59baf0d4a611e93a5b68",
+    "coordinator.jsonl": "a474725b852d007752ea3941cdae6cfb4e67a5b215c3a34e8c9b6a06766eaf3a",
+    "observer.jsonl": "5946075ca47d9610d08f80eebf863d3e7e055d2878a347bfe6869d9f53e6dbfe",
+    "receiver.jsonl": "11ad6e584ed9df317192c9c26fb9bbf2756cf78b5e5e8651916d9eed397b3aa2",
+    "source.jsonl": "899a1c97cc3faad5ea8c9c0dda9830006771ca99c285ad9cdeb1a3f7ddba006d"
+  }
+}

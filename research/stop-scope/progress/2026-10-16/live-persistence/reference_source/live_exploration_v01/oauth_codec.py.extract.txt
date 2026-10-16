@@ -1,0 +1,73 @@
+# Selected unchanged definitions; not the complete source module.
+def reconcile(events):
+    """Join completed stream items, checking identities and text/argument deltas.
+
+Empty terminal output was observed in the connectivity test. It is an explicit
+transport deviation, not permission to fill in missing output-item.done events.
+    """
+    require(isinstance(events, list) and events, "empty stream")
+    require([e.get("sequence_number") for e in events] == list(range(len(events))), "stream sequence gap")
+    require(events[0].get("type") == "response.created", "missing initial response")
+    terminal = [e for e in events if e.get("type") in TERMINALS]
+    require(len(terminal) == 1 and terminal[0] is events[-1], "missing/ambiguous terminal")
+    response = terminal[0].get("response", {})
+    rid = response.get("id")
+    require(isinstance(rid, str) and rid, "missing response ID")
+    require(all(e["response"].get("id") == rid for e in events if "response" in e), "response identity mismatch")
+    require(response.get("status") == TERMINALS[terminal[0]["type"]], "terminal status mismatch")
+    require(not any(e.get("type") == "error" for e in events), "stream error")
+    added, done, deltas, final_parts = {}, {}, {}, {}
+    for event in events:
+        kind = event.get("type", "")
+        if kind == "response.output_item.added":
+            idx, item = event.get("output_index"), event.get("item", {})
+            require(type(idx) is int and idx == len(added), "output index discontinuity")
+            require(item.get("id") and all(v.get("id") != item["id"] for v in added.values()), "duplicate item ID")
+            require(item.get("type") in {"message", "function_call", "reasoning"}, "unsupported output item")
+            added[idx] = item
+        elif kind == "response.output_item.done":
+            idx, item = event.get("output_index"), event.get("item", {})
+            require(idx in added and idx not in done and item.get("id") == added[idx].get("id")
+                    and item.get("type") == added[idx].get("type"), "output completion mismatch")
+            done[idx] = item
+        elif kind.startswith(("response.output_text.", "response.function_call_arguments.")):
+            idx = event.get("output_index")
+            require(idx in added and event.get("item_id") == added[idx].get("id"), "delta item mismatch")
+            field = "text" if kind.startswith("response.output_text.") else "arguments"
+            key = (idx, field, event.get("content_index", 0))
+            if kind.endswith(".delta"):
+                require(key not in final_parts and isinstance(event.get("delta"), str), "late/invalid delta")
+                deltas[key] = deltas.get(key, "") + event["delta"]
+            elif kind.endswith(".done"):
+                require(key not in final_parts and event.get(field) == deltas.get(key, ""), "delta/final mismatch")
+                final_parts[key] = event[field]
+            else:
+                raise ContractError("unsupported output-text/argument event")
+        elif kind in {"response.content_part.added", "response.content_part.done"}:
+            idx = event.get("output_index")
+            require(idx in added and event.get("item_id") == added[idx].get("id"), "content identity mismatch")
+        elif kind.startswith(("response.reasoning_", "response.refusal.")):
+            idx = event.get("output_index")
+            require(idx in added and event.get("item_id") == added[idx].get("id"), "reasoning/refusal identity mismatch")
+        elif kind not in {"response.created", "response.in_progress", *TERMINALS}:
+            raise ContractError("unrecognized stream event")
+    # Incomplete records are retained, but partial calls never reach a tool.
+    if response["status"] != "completed":
+        return {"response": deepcopy(response), "output_items": [], "terminal_output_omitted": False,
+                "actionable": False}
+    require(added and set(added) == set(done), "unfinished output item")
+    outputs = [done[i] for i in range(len(done))]
+    for idx, item in enumerate(outputs):
+        if item["type"] == "function_call":
+            require(final_parts.get((idx, "arguments", 0)) == item.get("arguments"), "function arguments uncorroborated")
+        elif item["type"] == "message":
+            for ci, part in enumerate(item.get("content", [])):
+                if part.get("type") == "output_text":
+                    require(final_parts.get((idx, "text", ci)) == part.get("text"), "message text uncorroborated")
+                    parts = [e.get("part") for e in events if e.get("type") == "response.content_part.done"
+                             and e.get("output_index") == idx and e.get("content_index") == ci]
+                    require(len(parts) == 1 and parts[0] == part, "content part mismatch")
+    aggregate = response.get("output")
+    require(aggregate == [] or aggregate == outputs, "terminal/item output conflict")
+    return {"response": deepcopy(response), "output_items": deepcopy(outputs),
+            "terminal_output_omitted": aggregate == [], "actionable": True}
