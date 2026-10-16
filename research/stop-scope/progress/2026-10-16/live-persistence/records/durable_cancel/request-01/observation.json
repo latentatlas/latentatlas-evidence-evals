@@ -1,0 +1,20 @@
+{
+  "status": "terminal_observed",
+  "usage": {
+    "status": "provider_usage_observed",
+    "input_tokens": 7756,
+    "cached_input_tokens": 7296,
+    "output_tokens": 46,
+    "reasoning_tokens": 17,
+    "total_tokens": 7802,
+    "standard_credit_equivalent": "0.3549",
+    "quote_is_upper_estimate_if_cache_detail_missing": false,
+    "actual_purchased_credit_debit_known": false
+  },
+  "actual_provider_calls": 1,
+  "http_status": 200,
+  "content_type": null,
+  "provider_request_id": "req_65568017ee9d43db870f8c82d6739214",
+  "body_sha256": "5ed90714074819f5155f13caea836df3df2518faa53640b566ed3e179f693fc3",
+  "elapsed_seconds": 4.046432708972134
+}

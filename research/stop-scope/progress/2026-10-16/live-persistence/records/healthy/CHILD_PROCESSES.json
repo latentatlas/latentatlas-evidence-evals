@@ -1,0 +1,26 @@
+{
+  "observer": {
+    "pid": 48244,
+    "exit_code": 0,
+    "reaped": true
+  },
+  "receiver-1": {
+    "pid": 48245,
+    "exit_code": 0,
+    "reaped": true
+  },
+  "source": {
+    "pid": 48257,
+    "exit_code": 0,
+    "reaped": true
+  },
+  "receiver-2": {
+    "pid": 48329,
+    "exit_code": 0,
+    "reaped": true
+  },
+  "supervisor_pid": 48241,
+  "episode_error": null,
+  "cleanup_actions": [],
+  "completed": true
+}

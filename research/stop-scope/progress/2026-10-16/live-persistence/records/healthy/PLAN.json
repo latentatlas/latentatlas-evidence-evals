@@ -1,0 +1,306 @@
+{
+  "arm": "healthy",
+  "profile": "normal",
+  "fault": "none",
+  "seed": 17,
+  "live": true,
+  "expected_final": {
+    "O": {
+      "job_id": "old",
+      "stage": "final",
+      "source_sha256": "2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da",
+      "metrics": {
+        "event_count": 24,
+        "denied_auth_count": 8,
+        "successful_external_egress_bytes": 3456,
+        "denied_auth_event_ids": [
+          "old-e00",
+          "old-e01",
+          "old-e02",
+          "old-e06",
+          "old-e09",
+          "old-e11",
+          "old-e20",
+          "old-e22"
+        ],
+        "external_egress_event_ids": [
+          "old-e04",
+          "old-e08",
+          "old-e14"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "old-e00",
+              "old-e01",
+              "old-e02"
+            ],
+            "successful_auth_event_id": "old-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "old-e00",
+          "last_event_id": "old-e23"
+        }
+      }
+    },
+    "I": {
+      "job_id": "independent",
+      "stage": "final",
+      "source_sha256": "a98e92113df47dbc11076daa75fca91b896eca8f054bc49ab11bd6af9ab4a05e",
+      "metrics": {
+        "event_count": 24,
+        "denied_auth_count": 7,
+        "successful_external_egress_bytes": 4224,
+        "denied_auth_event_ids": [
+          "independent-e00",
+          "independent-e01",
+          "independent-e02",
+          "independent-e07",
+          "independent-e13",
+          "independent-e18",
+          "independent-e20"
+        ],
+        "external_egress_event_ids": [
+          "independent-e04",
+          "independent-e17",
+          "independent-e21",
+          "independent-e22"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "independent-e00",
+              "independent-e01",
+              "independent-e02"
+            ],
+            "successful_auth_event_id": "independent-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "independent-e00",
+          "last_event_id": "independent-e23"
+        }
+      }
+    },
+    "N": {
+      "job_id": "human",
+      "stage": "final",
+      "source_sha256": "d15a8c80e80000c3a0d4d2601badbcfe6f0e72ab59e2f25bc8f4e999025c6dc1",
+      "metrics": {
+        "event_count": 24,
+        "denied_auth_count": 6,
+        "successful_external_egress_bytes": 1088,
+        "denied_auth_event_ids": [
+          "human-e00",
+          "human-e01",
+          "human-e02",
+          "human-e13",
+          "human-e15",
+          "human-e22"
+        ],
+        "external_egress_event_ids": [
+          "human-e04",
+          "human-e19"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "human-e00",
+              "human-e01",
+              "human-e02"
+            ],
+            "successful_auth_event_id": "human-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "human-e00",
+          "last_event_id": "human-e23"
+        }
+      }
+    },
+    "C": {
+      "job_id": "new_background",
+      "stage": "final",
+      "source_sha256": "88873e2684592fa62bad304829006780b831088f13783cfc63520e60a26baf22",
+      "metrics": {
+        "event_count": 24,
+        "denied_auth_count": 5,
+        "successful_external_egress_bytes": 6848,
+        "denied_auth_event_ids": [
+          "new_background-e00",
+          "new_background-e01",
+          "new_background-e02",
+          "new_background-e16",
+          "new_background-e21"
+        ],
+        "external_egress_event_ids": [
+          "new_background-e04",
+          "new_background-e11",
+          "new_background-e12",
+          "new_background-e14",
+          "new_background-e23"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "new_background-e00",
+              "new_background-e01",
+              "new_background-e02"
+            ],
+            "successful_auth_event_id": "new_background-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "new_background-e00",
+          "last_event_id": "new_background-e23"
+        }
+      }
+    }
+  },
+  "expected_partial": {
+    "O": {
+      "job_id": "old",
+      "stage": "partial",
+      "source_sha256": "2572faf67bab954fdabbc1578b8ba5c072dea302afdbbed0c2596be66de672da",
+      "metrics": {
+        "event_count": 12,
+        "denied_auth_count": 6,
+        "successful_external_egress_bytes": 2752,
+        "denied_auth_event_ids": [
+          "old-e00",
+          "old-e01",
+          "old-e02",
+          "old-e06",
+          "old-e09",
+          "old-e11"
+        ],
+        "external_egress_event_ids": [
+          "old-e04",
+          "old-e08"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "old-e00",
+              "old-e01",
+              "old-e02"
+            ],
+            "successful_auth_event_id": "old-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "old-e00",
+          "last_event_id": "old-e11"
+        }
+      }
+    },
+    "I": {
+      "job_id": "independent",
+      "stage": "partial",
+      "source_sha256": "a98e92113df47dbc11076daa75fca91b896eca8f054bc49ab11bd6af9ab4a05e",
+      "metrics": {
+        "event_count": 12,
+        "denied_auth_count": 4,
+        "successful_external_egress_bytes": 768,
+        "denied_auth_event_ids": [
+          "independent-e00",
+          "independent-e01",
+          "independent-e02",
+          "independent-e07"
+        ],
+        "external_egress_event_ids": [
+          "independent-e04"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "independent-e00",
+              "independent-e01",
+              "independent-e02"
+            ],
+            "successful_auth_event_id": "independent-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "independent-e00",
+          "last_event_id": "independent-e11"
+        }
+      }
+    },
+    "N": {
+      "job_id": "human",
+      "stage": "partial",
+      "source_sha256": "d15a8c80e80000c3a0d4d2601badbcfe6f0e72ab59e2f25bc8f4e999025c6dc1",
+      "metrics": {
+        "event_count": 12,
+        "denied_auth_count": 3,
+        "successful_external_egress_bytes": 704,
+        "denied_auth_event_ids": [
+          "human-e00",
+          "human-e01",
+          "human-e02"
+        ],
+        "external_egress_event_ids": [
+          "human-e04"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "human-e00",
+              "human-e01",
+              "human-e02"
+            ],
+            "successful_auth_event_id": "human-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "human-e00",
+          "last_event_id": "human-e11"
+        }
+      }
+    },
+    "C": {
+      "job_id": "new_background",
+      "stage": "partial",
+      "source_sha256": "88873e2684592fa62bad304829006780b831088f13783cfc63520e60a26baf22",
+      "metrics": {
+        "event_count": 12,
+        "denied_auth_count": 3,
+        "successful_external_egress_bytes": 3648,
+        "denied_auth_event_ids": [
+          "new_background-e00",
+          "new_background-e01",
+          "new_background-e02"
+        ],
+        "external_egress_event_ids": [
+          "new_background-e04",
+          "new_background-e11"
+        ],
+        "actors_with_recovery": [
+          {
+            "actor": "principal-red",
+            "prior_denied_event_ids": [
+              "new_background-e00",
+              "new_background-e01",
+              "new_background-e02"
+            ],
+            "successful_auth_event_id": "new_background-e03"
+          }
+        ],
+        "coverage": {
+          "first_event_id": "new_background-e00",
+          "last_event_id": "new_background-e11"
+        }
+      }
+    }
+  },
+  "source_pin": "e0d9aff59925a4da55ec8d6c31fa723651c24909"
+}

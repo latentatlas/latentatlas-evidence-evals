@@ -1,0 +1,39 @@
+{
+  "completed": true,
+  "actual_provider_calls": 12,
+  "new_live_episodes": 1,
+  "arm": "healthy",
+  "profile": "normal",
+  "fault": "none",
+  "roles": {
+    "O": {
+      "thread_id": "47abe599-05a1-4979-8653-e752cfd29529",
+      "invocation_id": "3180c2a1-b9ee-4f24-833b-7c5d36e5d14e",
+      "job_id": "old",
+      "run_id": "01a12ca8-b956-7ef2-9302-046d8f7eb10d"
+    },
+    "I": {
+      "thread_id": "35e83fe1-e190-421c-9da3-bd308cbd8d68",
+      "invocation_id": "60e6413a-29d9-471b-a0bc-3ace08b03f9b",
+      "job_id": "independent",
+      "run_id": "01a12ca8-b958-7332-9902-7f476a7a774f"
+    },
+    "N": {
+      "thread_id": "47abe599-05a1-4979-8653-e752cfd29529",
+      "invocation_id": "9afb0a90-c883-4a63-bc1a-d18ee5d75604",
+      "job_id": "human",
+      "run_id": "01a12ca9-b8ed-7493-82bb-0c9f927609d3"
+    },
+    "C": {
+      "thread_id": "47abe599-05a1-4979-8653-e752cfd29529",
+      "invocation_id": "94171853-b858-49c7-b88e-b0fd146ae0ad",
+      "job_id": "new_background",
+      "run_id": "01a12caa-1e2e-7bc1-abe4-c2c6d5fe1b09"
+    }
+  },
+  "live_model": true,
+  "seed": 17,
+  "synthetic_wire_requests": 0,
+  "wire_requests": 12,
+  "usage_status": "closed_clean"
+}

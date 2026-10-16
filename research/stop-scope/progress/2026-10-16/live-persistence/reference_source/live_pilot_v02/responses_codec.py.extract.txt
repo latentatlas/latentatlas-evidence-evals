@@ -1,0 +1,36 @@
+# Selected unchanged definitions; not the complete source module.
+class ContractError(ValueError):
+    pass
+
+
+def require(value, reason):
+    if not value:
+        raise ContractError(reason)
+
+
+def strict_loads(raw):
+    require(isinstance(raw, (str, bytes)) and len(raw) <= 2_000_000, "unbounded or non-JSON payload")
+    def pairs(items):
+        output = {}
+        for key, value in items:
+            require(key not in output, "duplicate JSON property")
+            output[key] = value
+        return output
+    def reject_constant(value):
+        raise ContractError("non-finite JSON number: " + value)
+    try:
+        return json.loads(raw, object_pairs_hook=pairs, parse_constant=reject_constant)
+    except (ValueError, UnicodeError) as exc:
+        raise ContractError(str(exc)) from exc
+
+
+def view(message):
+    """Only transport semantics, not IDs/metadata later assigned by the graph."""
+    require(isinstance(message.get("content"), str), "this slice supports text messages only")
+    result = {"type": message["type"], "content": message["content"]}
+    if message["type"] == "ai":
+        require(not message.get("invalid_tool_calls"), "invalid graph tool calls")
+        result["tool_calls"] = deepcopy(message.get("tool_calls", []))
+    if message["type"] == "tool":
+        result.update(tool_call_id=message["tool_call_id"], name=message.get("name"), status=message.get("status", "success"))
+    return result

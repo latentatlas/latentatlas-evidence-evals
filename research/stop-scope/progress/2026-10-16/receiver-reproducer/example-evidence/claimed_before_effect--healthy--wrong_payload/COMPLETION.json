@@ -1,0 +1,22 @@
+{
+  "condition": {
+    "cut": "claimed_before_effect",
+    "arm": "healthy",
+    "fault": "wrong_payload"
+  },
+  "status": "recorded",
+  "actual_provider_calls": 0,
+  "artifact_hashes": {
+    "AUDIT.json": "7c9be763bd2f538353c253e966d6528700da2f2046430a169b0d37b6365470ba",
+    "PLAN.json": "00b661220e1fa7f9cd2a730e51edba74c53286c71e2b754b0e89c2310331de52",
+    "PROCESS.json": "37ff8d001ee5a6e4c9741269300540ef60a6cedad370ff5e9d483888b8e18dcd",
+    "coordinator.jsonl": "4b01edf06e68e392b68673317688526e0a575203df65735d31dfe546ba3554a0",
+    "observer.jsonl": "e7d7de97b9d1e391c187cf5f645fbdf44864b4c6a5dbb700e0ff9549b327abca",
+    "receiver.jsonl": "c6bacb6f6fcd53a2ac08558b34b8918a718cd67801f161e6217ea4048c53da50",
+    "source.jsonl": "13bbc81521b651996d2e6d119c07b50bf4b57479f85e931a5fcec79feafee293",
+    "store/C-final.json": "3848b8b8ba057470084d3464d3b837168c99ebe8d2c66025b90478f4a504ab29",
+    "store/I-final.json": "4a82e5a62b677fcdb72ddfe7a77a1d9dc593c5def6e323922b2deceb2c9ce3b8",
+    "store/N-final.json": "4d991752f31e0945e000529f32dd3a2821ab00a1301c3ebbd8a19764fb170bd2",
+    "store/O-final.json": "2a59cc1b61ac9fa7e2d93febdb72fcf1ffbc86b4f945aa129257a2a14ba5a761"
+  }
+}

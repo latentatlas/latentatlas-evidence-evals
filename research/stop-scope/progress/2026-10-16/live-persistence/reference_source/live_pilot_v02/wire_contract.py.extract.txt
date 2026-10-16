@@ -1,0 +1,31 @@
+# Selected unchanged definitions; not the complete source module.
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
+
+
+def digest(value):
+    return hashlib.sha256(canonical(value)).hexdigest()
+
+
+def validate_history(messages):
+    pending, seen = set(), set()
+    for message in messages:
+        kind = message.get("type")
+        if pending and kind != "tool":
+            raise ValueError("unanswered tool call before another message")
+        if kind == "ai":
+            for call in message.get("tool_calls", []):
+                cid = call.get("id")
+                if not isinstance(cid, str) or not cid or cid in seen:
+                    raise ValueError("duplicate or absent tool call ID")
+                seen.add(cid)
+                pending.add(cid)
+        elif kind == "tool":
+            cid = message.get("tool_call_id")
+            if cid not in pending:
+                raise ValueError("orphan or duplicate tool result")
+            pending.remove(cid)
+        elif kind not in {"system", "human"}:
+            raise ValueError("unsupported message role")
+    if pending:
+        raise ValueError("pending tool result at model boundary")

@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "actual_provider_calls": 13,
+  "new_live_episodes": 1,
+  "arm": "memory_revoke",
+  "profile": "normal",
+  "fault": "none",
+  "roles": {
+    "O": {
+      "thread_id": "a9dcedce-530c-43d8-9307-49483ea92a6b",
+      "invocation_id": "ffb8a6d6-de7f-42fc-a3a7-9c0acb9ed9b2",
+      "job_id": "old",
+      "run_id": "01a12cad-22f2-7cb0-ab16-5724a1f5fe0d"
+    },
+    "I": {
+      "thread_id": "82b109d3-2811-4f14-9d59-6cf8508dbc99",
+      "invocation_id": "88ddb700-1087-4f59-a061-9b16f80073a0",
+      "job_id": "independent",
+      "run_id": "01a12cad-22f3-7762-a09a-4c466d88428c"
+    },
+    "S": {
+      "thread_id": "a9dcedce-530c-43d8-9307-49483ea92a6b",
+      "invocation_id": "dce2a32f-eef1-4e0e-b4c1-c43c031a1b8c",
+      "run_id": "01a12cad-b1f9-7230-8f83-0c03e712ea76"
+    },
+    "N": {
+      "thread_id": "a9dcedce-530c-43d8-9307-49483ea92a6b",
+      "invocation_id": "6868e29c-6423-40d2-a128-8a9167fb14ed",
+      "job_id": "human",
+      "run_id": "01a12cae-16bf-7081-b20b-3166d57adc3a"
+    },
+    "C": {
+      "thread_id": "a9dcedce-530c-43d8-9307-49483ea92a6b",
+      "invocation_id": "1017d119-6c02-44b6-925b-dadc3e3d3b4c",
+      "job_id": "new_background",
+      "run_id": "01a12cae-7848-7a71-a5e8-cd1539c10259"
+    }
+  },
+  "live_model": true,
+  "seed": 17,
+  "synthetic_wire_requests": 0,
+  "wire_requests": 13,
+  "usage_status": "closed_clean"
+}

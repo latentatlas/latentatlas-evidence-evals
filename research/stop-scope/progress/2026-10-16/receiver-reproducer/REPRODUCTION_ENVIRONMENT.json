@@ -1,0 +1,8 @@
+{
+  "python_version": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+  "dependency_installation": "none; standard library only",
+  "validation_recipe": "fresh relocated directories and venv --without-pip; see external local QA receipt",
+  "different_host_tested": false,
+  "independent_human_replication": false
+}

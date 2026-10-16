@@ -1,0 +1,6 @@
+{"seq": 1, "pid": 6970, "instance": "2129f21b-ce87-4731-bbb4-a620fd5e875e", "actor": "observer", "monotonic_ns": 111149583395666, "kind": "observer_started"}
+{"seq": 2, "pid": 6970, "instance": "2129f21b-ce87-4731-bbb4-a620fd5e875e", "actor": "observer", "monotonic_ns": 111149583777750, "kind": "snapshot", "label": "initial", "files": [], "request_id": "5cb57a65-9dc5-43f0-ba57-e9ab795829b9"}
+{"seq": 3, "pid": 6970, "instance": "2129f21b-ce87-4731-bbb4-a620fd5e875e", "actor": "observer", "monotonic_ns": 111149628752041, "kind": "snapshot", "label": "checkpoint", "files": [], "request_id": "b3f357bb-0528-4262-8046-a2ea9c690692"}
+{"seq": 4, "pid": 6970, "instance": "2129f21b-ce87-4731-bbb4-a620fd5e875e", "actor": "observer", "monotonic_ns": 111149629784791, "kind": "snapshot", "label": "after_control", "files": [], "request_id": "f49db067-03ef-4169-bb9c-377adfae5b49"}
+{"seq": 5, "pid": 6970, "instance": "2129f21b-ce87-4731-bbb4-a620fd5e875e", "actor": "observer", "monotonic_ns": 111149630824916, "kind": "snapshot", "label": "final", "files": [], "request_id": "05b99b36-f7d6-49d8-8534-69a86ee4f9ec"}
+{"seq": 6, "pid": 6970, "instance": "2129f21b-ce87-4731-bbb4-a620fd5e875e", "actor": "observer", "monotonic_ns": 111149636337583, "kind": "observer_closed"}

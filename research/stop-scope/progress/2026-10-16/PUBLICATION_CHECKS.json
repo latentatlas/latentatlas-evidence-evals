@@ -1,0 +1,87 @@
+{
+  "date_utc": "2026-10-16T17:13:55.045879+00:00",
+  "status": "passed",
+  "publication_scope": "Selected complete packages, unchanged original releases",
+  "checks": [
+    {
+      "check": "repository_tests",
+      "status": "passed",
+      "tests": 48
+    },
+    {
+      "check": "original_export",
+      "status": "passed",
+      "tests": null
+    },
+    {
+      "check": "original_export_tests",
+      "status": "passed",
+      "tests": 8
+    },
+    {
+      "check": "live_evidence",
+      "status": "passed",
+      "tests": null
+    },
+    {
+      "check": "live_tests",
+      "status": "passed",
+      "tests": 17
+    },
+    {
+      "check": "receiver_evidence",
+      "status": "passed",
+      "tests": null
+    },
+    {
+      "check": "receiver_tests",
+      "status": "passed",
+      "tests": 20
+    },
+    {
+      "check": "publication_tests",
+      "status": "passed",
+      "tests": 9
+    },
+    {
+      "check": "fresh_receiver_smoke",
+      "status": "passed",
+      "tests": null
+    },
+    {
+      "check": "fresh_receiver_matrix",
+      "status": "passed",
+      "tests": null
+    }
+  ],
+  "paper": {
+    "version": "1.2",
+    "pages": 8,
+    "visual_review": "All eight final rendered pages inspected by the assistant; no clipping or overlapping tables observed"
+  },
+  "privacy": {
+    "status": "passed_selected_patterns",
+    "files_scanned": 706,
+    "note": "Declared derivative and package-specific JSON-field checks also retained"
+  },
+  "whitespace_policy": "Frozen archive members retain original whitespace, including SSE event separators, one extracted-code trailing blank and patch context lines. Newly authored material is checked separately; archive member hashes remain exact.",
+  "new_provider_calls": 0,
+  "fresh_provider_free_conditions": 17,
+  "independent_human_validation": false,
+  "artifact_hashes": {
+    "paper/v1.2/MANUSCRIPT.md": "871829b980cac5106a8f25a1548473c5702b7a25556a21ad723187bec4a2726c",
+    "paper/v1.2/README.md": "e35402c1f570658ce2abd5208b4a3c1ba5801c575b68c90f8a412922fc74f7f5",
+    "paper/v1.2/Verifying_Stop_Scope_v1.2.docx": "ed07f74db11a44aecd83bbc6b96580a7a9c6ae4081b6d502797855bebe8b056d",
+    "paper/v1.2/Verifying_Stop_Scope_v1.2.pdf": "b200aa36757287ffea6aaf5157c5c41e718f1bd9a96551c140f487a270aee9f8",
+    "paper/v1.2/build_docx.py": "1b507427644dd0ea6882771cf25a1ea7fb12075a213d03bea227449e19d57d6a",
+    "progress/2026-10-16/.gitattributes": "ff720c48c0256f1aa1c103ba5d52eb6fc5a8062df75acc67afd56b9af8b77783",
+    "progress/2026-10-16/.gitignore": "c755e6f794c49664765a9bf4a5bc3d26c90a918d436a98749df5528cedca5569",
+    "progress/2026-10-16/COVERAGE_MAP.json": "11b860bc6f0bbea847e2ed69571687d303d71fcb8cac949ca5618f5b4b2c2d8a",
+    "progress/2026-10-16/PACKAGE_PROVENANCE.json": "e31438bb297052cdd203c92e3688e4d6ab63de00fbe1ff9797277cc69df740dd",
+    "progress/2026-10-16/README.md": "128db121218d87ffdd307e444bfa9dd40fb785057f45f7adfcfc80ab4fc6d872",
+    "progress/2026-10-16/README_TR.md": "59682277feb5e71c4c28a3b504c88e1b785cbf669a17984cf283a6709c4aea96",
+    "progress/2026-10-16/VERSION_NOTES.md": "1f2038b75379f4b8622284d354f7d19888d56d764340ce3be0ba189814354549",
+    "progress/2026-10-16/test_snapshot.py": "06ce64c84430ef21a875fdf5c1a33fce6543ee4a400b0f0ebaff5496f32d4304",
+    "progress/2026-10-16/verify_snapshot.py": "0ab813610e261665f39bfcb191d98f575ab0790c28550eb0bf18a0b825781e8c"
+  }
+}

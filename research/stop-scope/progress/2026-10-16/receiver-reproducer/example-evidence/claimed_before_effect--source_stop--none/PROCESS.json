@@ -1,0 +1,19 @@
+{
+  "receiver": {
+    "pid": 6945,
+    "exit_code": 0,
+    "reaped": true
+  },
+  "observer": {
+    "pid": 6946,
+    "exit_code": 0,
+    "reaped": true
+  },
+  "source": {
+    "pid": 6947,
+    "exit_code": -15,
+    "reaped": true
+  },
+  "episode_error": null,
+  "cleanup_actions": []
+}
