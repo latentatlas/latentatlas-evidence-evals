@@ -13,12 +13,14 @@ reproducible.
 
 ## Start here
 
-- Read [Stop Scope manuscript v1.2 (PDF)](research/stop-scope/paper/v1.2/Verifying_Stop_Scope_v1.2.pdf)
+- Read [Stop Scope manuscript v1.3 (PDF)](research/stop-scope/paper/v1.3/Verifying_Stop_Scope_v1.3.pdf)
   and its [16 October evidence snapshot](research/stop-scope/progress/2026-10-16/README.md):
   five live-model persistence episodes (64 archived requests), a runnable
   provider-free receiver matrix, and an explicit 286-case coverage map.
   Saved evidence can be verified without a model account; a separate experiment
-  can also be rerun locally. The original sprint release remains unchanged.
+  can also be rerun locally. The [v1.3 revision](research/stop-scope/paper/v1.3/CHANGES.md)
+  clarifies the contribution, sequence and tables without adding experimental results.
+  The original sprint release and v1.2 evidence remain unchanged.
 - Inspect the [six-paper open research data release](research/open-data/2026-10-11/README.md)
   dated 11 October 2026: complete available synthetic benchmark inputs,
   retained model decisions and Authority-to-Action transcripts, masked

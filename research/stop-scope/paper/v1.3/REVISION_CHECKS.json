@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-23",
+  "status": "passed",
+  "revision": "1.3",
+  "revision_type": "Explanation and presentation; no new reported observations",
+  "paper": {
+    "pages": 9,
+    "visual_review": "All nine final pages inspected by the assistant; no clipping or overlapping tables observed",
+    "text_check": "All body and table paragraphs occur in PDF after excluding repeated page headers and footers",
+    "paragraphs_checked": 161,
+    "embedded_links_verified": 14
+  },
+  "checks": [
+    {
+      "check": "frozen_evidence_and_v1_2_publication",
+      "status": "passed",
+      "package_files": 691,
+      "publication_files": 14
+    },
+    {
+      "check": "manuscript_table_evidence_and_negative_tests",
+      "status": "passed",
+      "tests": 8
+    },
+    {
+      "check": "repository_tests",
+      "status": "passed",
+      "tests": 48
+    },
+    {
+      "check": "snapshot_tests",
+      "status": "passed",
+      "tests": 9
+    },
+    {
+      "check": "live_package_tests",
+      "status": "passed",
+      "tests": 17
+    },
+    {
+      "check": "receiver_package_tests",
+      "status": "passed",
+      "tests": 20
+    },
+    {
+      "check": "related_work",
+      "status": "passed_bounded_positioning",
+      "sources": [
+        "https://arxiv.org/abs/2607.14166v3",
+        "https://arxiv.org/abs/2609.21284v1",
+        "https://arxiv.org/abs/2608.30091v1",
+        "https://arxiv.org/abs/2608.23623v1"
+      ],
+      "scope": "No implemented head-to-head or priority claim"
+    },
+    {
+      "check": "privacy",
+      "status": "passed_selected_patterns",
+      "scope": "New public manuscript text and package metadata; old derivative export remains unchanged"
+    },
+    {
+      "check": "independent_replication",
+      "status": "open",
+      "scope": "No new independent implementation or human validation"
+    },
+    {
+      "check": "model_resistance",
+      "status": "not-applicable",
+      "scope": "Accepted-work mechanism study; no natural-language stop resistance claim"
+    }
+  ],
+  "reported_new_experiments": 0,
+  "new_provider_calls": 0,
+  "new_catalogue_acceptances": 0,
+  "independent_human_validation": false,
+  "artifact_hashes": {
+    "CHANGES.md": "0d09c1409b871ab960a6e8bc6da510566f86a79c6b656aadb1a0b3e68c2b999d",
+    "MANUSCRIPT.md": "9713e37ffdc0aadbdb1cb0ae5fe472c52442a87e6f1a9b1a77b7a57cf4c893ef",
+    "README.md": "d68d299ae40c688137a2c15a97345ecb8ba1a2c4a68092bfbcd4362ce6cc9187",
+    "Verifying_Stop_Scope_v1.3.docx": "bf6eb5fe62f87b382322dc84085d882bf4e2466fbc60d7d0e98e198fa616aa97",
+    "Verifying_Stop_Scope_v1.3.pdf": "ef8958ad213ea7149db7e5f42ea2f3c3dda8f5b2e7f50b07a644327368d66469",
+    "build_docx.py": "b14439952f8c8172f4a58f8d6d4e14d53988ec7ee8fa376c2ab400fee8a982bf",
+    "test_revision.py": "7c1c96783477df636681f752a88ebad5b03e3f34a97c0ac5a011c943aae129e9",
+    "verify_revision.py": "8e5aae97ddd46c2508455cf7f386ac97c56a93ca05c83a27abb982262e83dbae"
+  }
+}
