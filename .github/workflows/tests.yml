@@ -37,6 +37,11 @@ jobs:
           python -B -m unittest test_snapshot -v
           (cd live-persistence && python -B -m unittest test_package -v)
           (cd receiver-reproducer && python -B -m unittest test_receiver test_portable -v)
+      - name: Verify Stop Scope manuscript revision offline
+        working-directory: research/stop-scope/paper/v1.3
+        run: |
+          python -B verify_revision.py
+          python -B -m unittest test_revision -v
       - name: Rerun provider-free receiver experiment
         working-directory: research/stop-scope/progress/2026-10-16/receiver-reproducer
         run: |

@@ -1,11 +1,13 @@
 # Verifying Stop Scope in Agent Workflows
 
-**Current paper and evidence:** [manuscript v1.2 (PDF)](paper/v1.2/Verifying_Stop_Scope_v1.2.pdf),
-[editable Word](paper/v1.2/Verifying_Stop_Scope_v1.2.docx),
+**Current paper and evidence:** [manuscript v1.3 (PDF)](paper/v1.3/Verifying_Stop_Scope_v1.3.pdf),
+[editable Word](paper/v1.3/Verifying_Stop_Scope_v1.3.docx),
 [16 October 2026 evidence snapshot](progress/2026-10-16/README.md),
 and [Türkçe inceleme özeti](progress/2026-10-16/README_TR.md).
-The new snapshot publishes the complete five-arm live persistence comparison,
+The snapshot publishes the complete five-arm live persistence comparison,
 a runnable provider-free receiver experiment and a labelled 286-case coverage map.
+The [23 October v1.3 revision](paper/v1.3/CHANGES.md) clarifies the contribution,
+event sequence and result tables using that unchanged evidence.
 The rest of this page documents the preserved original sprint supplement.
 
 Huseyin Buldurgan · Retained evidence v1.0.0 · Browsable export prepared 1 October 2026
