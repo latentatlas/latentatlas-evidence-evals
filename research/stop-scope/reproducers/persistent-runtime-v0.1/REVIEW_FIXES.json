@@ -1,0 +1,113 @@
+{
+  "version": "portable-persistence-v0.1",
+  "review_date_utc": "2026-10-25T00:50:18.995293+00:00",
+  "status": "corrected_and_revalidated",
+  "scope": "Publication review fixes only. The experiment runner, receiver, inputs and archived observations are unchanged.",
+  "changes": [
+    {
+      "finding": "Principal checkpoint not enforced by comparison acceptance",
+      "correction": "Every non-early condition with attributed outcomes must reach the planned checkpoint; a mismatch remains recorded_outcome_differs_needs_review."
+    },
+    {
+      "finding": "Incorrect healthy O report accepted by comparison",
+      "correction": "Healthy conditions without injected faults require a correct O report, except the deliberate wrong_final negative control. Missing or unattributed healthy references are reported as comparison differences."
+    },
+    {
+      "finding": "Default local output could be accidentally committed",
+      "correction": "The repository-root stop-scope-work/ directory is ignored by Git."
+    },
+    {
+      "finding": "Unpublished commit carried an automatically derived local user and hostname",
+      "correction": "Use the existing public repository identity LatentAtlas <huseyin@latentatlas.ai> for both author and committer. Repository-local Git identity is configured; previously published history is unchanged."
+    }
+  ],
+  "original_source_manifest_sha256": "0398f9b0be9defaf9ffcc0ab915653dbad32fc0b4050e6cdee319b8e912896e2",
+  "current_source_manifest_sha256": "ecabdafa88a4b2445391c9349f0bd55c740b271c8ccc2aa1c4dbc02fbeb6ca3c",
+  "source_changes": [
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/verify.py",
+      "before_sha256": "19105534bf9c2ed6cd64f5c8ce4426cb374ae6f10d52683113149b6e57d0c045",
+      "after_sha256": "34e7a0a998aab11908ebe7f8ca1e0a0f3df75ec60b97e76e12c6150929fd9da7"
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/test_portable.py",
+      "before_sha256": "d9b458d26cbd1245922a1ab11489c4654c218c19a35bc995a6659e29df35327c",
+      "after_sha256": "80386ea0abcc78a15decf45b633cea5d2db858fb81ecab86aeae12722e73f3bc"
+    }
+  ],
+  "regression_tests": {
+    "before_fix": {
+      "tests": 6,
+      "failed_subtests_and_tests": 19,
+      "errors": 2,
+      "note": "New comparison tests run against the uncorrected verifier. Retained-qualification positive check passed; missed checkpoints, incorrect O, missing/unattributed reference and CLI acceptance exposed the gaps."
+    },
+    "after_fix": {
+      "passed": 55,
+      "new_test_methods": 6,
+      "log": "REVIEW_FIX_TESTS.txt",
+      "log_sha256": "511082bef10d35b122e1ca56bd197da46ab6f6c55dcadc38eb7394ab96dbf67c"
+    },
+    "coverage": "All five principal checkpoints and three healthy output profiles are challenged in both comparison modes. A copied scoring-contract counterexample is re-audited and resealed, then rejected by the actual verifier CLI with exit code 1. All 15 retained qualifications, including intentional faults and early exits, remain accepted as expected.",
+    "live_comparison_testing": "Comparison logic only; no live API execution."
+  },
+  "retained_evidence_reaudit": {
+    "status": "passed",
+    "conditions": 15,
+    "actual_provider_calls": 0,
+    "outcome_differences": [],
+    "byte_matches": 8,
+    "comparison_identical_to_retained_summary": true,
+    "archive_sha256": "a9940790df5941b3ceccdee19f0153703d9ecc5081087f3b816acffaea868741",
+    "archive_member_hashes_verified": 2211,
+    "current_source_files_verified": 491,
+    "temporary_extraction_removed": true
+  },
+  "historical_checks": {
+    "sprint_export_files": 461,
+    "sprint_success": true,
+    "manuscript_status": "passed",
+    "manuscript_revision_files": 8,
+    "frozen_snapshot": {
+      "status": "passed",
+      "package_files_verified": 691,
+      "live": {
+        "conditions": 5,
+        "historical_requests": 64,
+        "reference_pairs": 8,
+        "reviewed_summaries": 4
+      },
+      "publication": {
+        "files_verified": 14,
+        "paper_pages": 8
+      },
+      "receiver": {
+        "conditions": 16,
+        "evidence_statuses": {
+          "recorded": 15,
+          "needs_review": 1
+        },
+        "legitimate_reference_pairs": 18
+      },
+      "coverage": {
+        "cases": 286,
+        "direct": 29,
+        "direct_or_partial": 68,
+        "formal_acceptance": 0,
+        "verification_scope": "Internal mapping consistency, not re-audit of unpublished evidence"
+      },
+      "new_provider_calls": 0,
+      "new_experiments": 0,
+      "independent_human_validation": false
+    }
+  },
+  "new_experiments": 0,
+  "new_provider_calls": 0,
+  "independent_replication": false,
+  "artifact_history": "The validation archive and QUALIFICATION_RESULTS.json are unchanged. FORMATTING_PROVENANCE.json describes an earlier cleanup, before these substantive verifier/test changes. Archived PLAN.json source hashes identify the executed version; SOURCE_MANIFEST.json identifies the current version.",
+  "open_limits": [
+    "Actual live API execution",
+    "Linux CI execution",
+    "Independent operator or host validation"
+  ]
+}

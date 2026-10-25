@@ -8,6 +8,16 @@ The snapshot publishes the complete five-arm live persistence comparison,
 a runnable provider-free receiver experiment and a labelled 286-case coverage map.
 The [23 October v1.3 revision](paper/v1.3/CHANGES.md) clarifies the contribution,
 event sequence and result tables using that unchanged evidence.
+
+**Fresh persistent-receiver execution:** the
+[portable runtime package](reproducers/persistent-runtime-v0.1/README.md)
+installs the pinned environment in a new directory and runs the five control
+scopes through Open-SWE, SQLite and a real receiver restart without a model
+account. It also provides an explicitly enabled live API adaptation; its
+[validation record](reproducers/persistent-runtime-v0.1/VALIDATION.json)
+separates offline execution, mock transport tests and actual live validation.
+This new package does not change the frozen v1.3 evidence.
+
 The rest of this page documents the preserved original sprint supplement.
 
 Huseyin Buldurgan · Retained evidence v1.0.0 · Browsable export prepared 1 October 2026

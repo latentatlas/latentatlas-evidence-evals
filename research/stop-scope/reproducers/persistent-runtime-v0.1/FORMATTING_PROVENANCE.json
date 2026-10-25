@@ -1,0 +1,82 @@
+{
+  "changes": [
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/run.py",
+      "before_sha256": "03b14d98aa33b06621da6a455b9ce55e4e0dd5c776a759485a98642c7656d20c",
+      "after_sha256": "0ca826cf334b23c976d1287cbcc6fa5eed4e8e4c70080eee686ad2e5704e012c",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/bridge_dependencies.py",
+      "before_sha256": "e094b490476b48b61d705d4ab4af6e3d7334cd2860f160aadf5bdc8a4516f53c",
+      "after_sha256": "3e24f8e3e40e824a1ad0ccde5e19c7f024c6a7689856f58c3ae5427f6362d623",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/test_link.py",
+      "before_sha256": "52d8e4b6e25cddf62b2157e43565aa055167c5256895caac784e3eda5ab411cf",
+      "after_sha256": "8f1a42d014a6e99f42bb2547928a7cbb22e4d0c51289919c362e7770b7e17003",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/transport.py",
+      "before_sha256": "09ce4cb7daad2bab579375aaf22a1b4b998d6cf4d5f21650f5365f18f32629e3",
+      "after_sha256": "238833e95c7e1fb9e54ea3c849324e6366ccc7b64701ea097555f3ca2c3c17f5",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/comparison_config.py",
+      "before_sha256": "8059b0b2f47570b572455fefea8a0eba6837da586c9a65619d23cb08630cd874",
+      "after_sha256": "2f9a41f08c9cc90bbd2925f488e1486257567100505a314c7ce2cd00d8b76b9e",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/review.py",
+      "before_sha256": "9b4a0c960a42e34abffb7f71efe1c4d0ef4c6c81c6c469e4cdab3ed7a710ac53",
+      "after_sha256": "e550b1e5365d011b1e2b34d8b3515bbb611d1261862c93da6ce0b3a541bb612b",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/test_transport.py",
+      "before_sha256": "ba5c87bb7229ea3b8244c42259e41b126712f343ddd5e81138b0f03998d847c3",
+      "after_sha256": "d2a696798229acdc52940675ce988cafbd529957cf7e56b5030ca86ea2268db0",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/test_audit.py",
+      "before_sha256": "bc95f4644c288238041167fa124a84e931148c04e299ec8a9c0fd399311a7c37",
+      "after_sha256": "de3ec831b510ae2420b37439bdef959a497d94e3edb257dae9394a787a20965c",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/verify.py",
+      "before_sha256": "9f350c1662fd0c14b023bececb86157771d6bb1ce9a6ad646bc2afeb7cc96851",
+      "after_sha256": "19105534bf9c2ed6cd64f5c8ce4426cb374ae6f10d52683113149b6e57d0c045",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/harness/stop_scope_suite/feasibility/portable_persistence_v01/test_portable.py",
+      "before_sha256": "e25887a661409c4164f994981e59429d60ce20a58466a4175bea82b5060848d7",
+      "after_sha256": "d9b458d26cbd1245922a1ab11489c4654c218c19a35bc995a6659e29df35327c",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    },
+    {
+      "path": "research/stop-scope/reproducers/persistent-runtime-v0.1/setup.py",
+      "before_sha256": "20999401adf1fea58152d5abd2ded80e9f61d921bc0be260b149bfe30d41fd1f",
+      "after_sha256": "e6b6630f877c716e9012c1f1ba466502541dc9309a40111d1b0995b240603321",
+      "change": "trailing blank lines only",
+      "python_ast_equal": true
+    }
+  ],
+  "note": "Historical formatting step before the publication review correction; the after hashes identify that intermediate candidate. Executed source hashes remain in each PLAN.json. Subsequent verifier/test changes are recorded in REVIEW_FIXES.json; SOURCE_MANIFEST.json identifies the current source."
+}

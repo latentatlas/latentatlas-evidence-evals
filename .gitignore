@@ -15,3 +15,6 @@ outputs/quality/*
 .DS_Store
 .env
 .env.*
+
+# Local runtime and raw experiment records from the Stop Scope quickstart.
+/stop-scope-work/

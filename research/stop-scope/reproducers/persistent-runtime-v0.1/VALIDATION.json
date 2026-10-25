@@ -1,0 +1,242 @@
+{
+  "version": "portable-persistence-v0.1",
+  "validation_date_utc": "2026-10-24",
+  "local_date": "2026-10-25",
+  "timezone": "Europe/Istanbul",
+  "status": "offline_reproduction_validated_live_api_execution_open",
+  "environment": {
+    "status": "installed_with_documented_historical_overrides",
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+    "started_at_utc": "2026-10-24T20:54:45.910713+00:00",
+    "source_manifest_sha256": "4b58afd73c6732e264b80a38298c99fb7dde3866d211b91c7405e4463ffe22d3",
+    "provider_calls": 0,
+    "historical_dependency_overrides": [
+      "e2b 2.34.0 has requirement wcmatch<11,>=10.1, but you have wcmatch 11.0.",
+      "langchain-e2b 0.0.6 has requirement deepagents<0.7.0,>=0.6.0, but you have deepagents 0.7.13."
+    ],
+    "dependency_check_exit_code": 1,
+    "manifest_verified": true
+  },
+  "principal_conditions": [
+    {
+      "cell": "healthy--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "source_stop--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "memory_revoke--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_cancel--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_revoke--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 0,
+      "I_correct": true,
+      "N_correct": true
+    }
+  ],
+  "qualification_conditions": 15,
+  "qualification_evidence_statuses": {
+    "recorded": 14,
+    "needs_review_expected_missing_receipt": 1
+  },
+  "outcome_differences": [],
+  "legitimate_reference_checks": [
+    {
+      "cell": "source_stop--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "source_stop--normal--none",
+      "role": "N",
+      "byte_match": true
+    },
+    {
+      "cell": "memory_revoke--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "memory_revoke--normal--none",
+      "role": "N",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_cancel--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_cancel--normal--none",
+      "role": "N",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_revoke--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_revoke--normal--none",
+      "role": "N",
+      "byte_match": true
+    }
+  ],
+  "unit_tests": {
+    "passed": 55,
+    "modules": [
+      "test_audit",
+      "test_link",
+      "test_transport",
+      "test_portable"
+    ],
+    "test_log": "REVIEW_FIX_TESTS.txt",
+    "scope": "Current verifier/test sources against retained qualification records; no new experiment execution."
+  },
+  "actual_provider_calls": 0,
+  "actual_live_episodes": 0,
+  "independent_replication": false,
+  "process_cleanup": {
+    "observed_process_ids": 73,
+    "unique_process_ids": 73,
+    "still_alive": []
+  },
+  "archive": {
+    "file": "validation-evidence.tar.xz",
+    "bytes": 1842068,
+    "sha256": "a9940790df5941b3ceccdee19f0153703d9ecc5081087f3b816acffaea868741"
+  },
+  "archive_validation": {
+    "exported_files_verified": 2211,
+    "reaudit_after_path_minimization": "passed",
+    "native_files_sqlite_and_model_records_unchanged": true,
+    "extracted_reaudit": "passed"
+  },
+  "source_manifest_sha256": "ecabdafa88a4b2445391c9349f0bd55c740b271c8ccc2aa1c4dbc02fbeb6ca3c",
+  "final_formatting": "FORMATTING_PROVENANCE.json records the initial cleanup. REVIEW_FIXES.json records subsequent substantive verifier/test corrections; the unchanged archive retains the executed sources.",
+  "historical_evidence_checks": {
+    "sprint_export": {
+      "passed": true,
+      "files": 461
+    },
+    "october_16_snapshot": {
+      "passed": true,
+      "files": 691
+    },
+    "manuscript_v1_3": {
+      "passed": true,
+      "revision_files": 8
+    },
+    "original_checkout_modified": false
+  },
+  "research_review": {
+    "question_claim_evidence_alignment": "passed for the bounded mechanism comparison",
+    "healthy_reference_and_failure_controls": "passed; publication-review comparison gaps corrected and covered by six additional regression tests (REVIEW_FIXES.json)",
+    "model_resistance_opportunity": "not_applicable: programmed actors; no resistance claim",
+    "sample_and_generalizability": "open: one development input, one host; no rates",
+    "artifact_access": "local package and archive prepared; public publication pending authorization",
+    "literature_change": "not_applicable: packaging extension; no new novelty or comparator superiority claim",
+    "live_transport": "passed with mock HTTP responses only; actual provider execution open",
+    "linux_ci": "configured; not executed locally or on GitHub in this work"
+  },
+  "self_validation": {
+    "claim": "The same framework/receiver boundaries can be freshly exercised and audited outside the private lab directory.",
+    "falsifiers": [
+      "Accepted work or identity lost on restart",
+      "Root revocation restored incorrectly but scored successful",
+      "Collateral I/N failure hidden",
+      "Missing receipt treated as no effect",
+      "Same operation produces a duplicate effect"
+    ],
+    "observation": "Native stop/run state, IPC identities, actual SQLite, separate-process file observer, retained raw wire exchanges and process closure.",
+    "shared_dependencies": "Same author, host, workload, trusted root assignment and record schemas; separate process observation is not external replication.",
+    "result": "15 retained qualification conditions completed and re-audited with unchanged outcomes; intended faults distinguished; current verifier/test sources pass 55 tests; zero provider calls. The original 49-test run is retained separately.",
+    "open_limits": [
+      "Real API validation",
+      "Independent operator/host",
+      "Crash/power-loss consistency",
+      "Multiple concurrent receivers",
+      "General exactly-once effects",
+      "Model resistance"
+    ]
+  },
+  "development_attempts": [
+    {
+      "name": "initial-missing-schema",
+      "status": "retained preparation failure",
+      "reason": "TOOL_SURFACE.json absent from first copied dependency set; zero provider calls; not counted as a principal comparison episode",
+      "evidence": "validation-evidence.tar.xz:development/initial-missing-schema"
+    },
+    {
+      "name": "fixture-path-tests",
+      "status": "corrected before final verification",
+      "reason": "Historical test path replaced with explicit evidence paths; temporary macOS path resolved before source-boundary check."
+    },
+    {
+      "name": "preliminary-qualification",
+      "status": "retained locally",
+      "reason": "Earlier complete 15-condition same-host development qualification; not pooled with final results or called independent replication."
+    }
+  ],
+  "recorded_run_unit_tests": {
+    "passed": 49,
+    "modules": [
+      "test_audit",
+      "test_link",
+      "test_transport",
+      "test_portable"
+    ],
+    "test_log": "validation-evidence.tar.xz:setup/tests-final.txt"
+  },
+  "post_review_validation": {
+    "record": "REVIEW_FIXES.json",
+    "status": "corrected_and_revalidated",
+    "retained_qualification_conditions": 15,
+    "new_test_methods": 6,
+    "current_tests_passed": 55,
+    "comparison_identical_to_retained_summary": true,
+    "new_experiments": 0,
+    "new_provider_calls": 0
+  }
+}

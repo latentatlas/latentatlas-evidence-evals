@@ -1,0 +1,62 @@
+/recorded-validation/.venv/lib/python3.14/site-packages/langchain_core/utils/pydantic.py:42: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1 import BaseModel as BaseModelV1
+test_arm_name_does_not_score (test_audit.EvidenceTests.test_arm_name_does_not_score) ... ok
+test_candidate_content_changed (test_audit.EvidenceTests.test_candidate_content_changed) ... ok
+test_disk_change_rejected (test_audit.EvidenceTests.test_disk_change_rejected) ... ok
+test_durable_job_body_changed (test_audit.EvidenceTests.test_durable_job_body_changed) ... ok
+test_executor_boundary_missing (test_audit.EvidenceTests.test_executor_boundary_missing) ... ok
+test_factory_identity_mismatch (test_audit.EvidenceTests.test_factory_identity_mismatch) ... ok
+test_forced_cleanup_rejected (test_audit.EvidenceTests.test_forced_cleanup_rejected) ... ok
+test_missing_receipt_retains_raw_disk (test_audit.EvidenceTests.test_missing_receipt_retains_raw_disk) ... ok
+test_new_database_rejected (test_audit.EvidenceTests.test_new_database_rejected) ... ok
+test_provider_flag_rejected (test_audit.EvidenceTests.test_provider_flag_rejected) ... ok
+test_real_smoke_reconciles (test_audit.EvidenceTests.test_real_smoke_reconciles) ... ok
+test_recovered_payload_changed (test_audit.EvidenceTests.test_recovered_payload_changed) ... ok
+test_recovery_inventory_gap (test_audit.EvidenceTests.test_recovery_inventory_gap) ... ok
+test_same_receiver_pid_rejected (test_audit.EvidenceTests.test_same_receiver_pid_rejected) ... ok
+test_source_rpc_payload_change (test_audit.EvidenceTests.test_source_rpc_payload_change) ... ok
+test_stop_smoke_reconciles (test_audit.EvidenceTests.test_stop_smoke_reconciles) ... ok
+test_wrong_answer_remains_valid (test_audit.EvidenceTests.test_wrong_answer_remains_valid) ... ok
+test_wrong_tool_surface (test_audit.EvidenceTests.test_wrong_tool_surface) ... ok
+test_all_matches (test_audit.ProjectionTests.test_all_matches) ... ok
+test_ambiguous_edit (test_audit.ProjectionTests.test_ambiguous_edit) ... ok
+test_missing_file (test_audit.ProjectionTests.test_missing_file) ... ok
+test_newline_normalization (test_audit.ProjectionTests.test_newline_normalization) ... ok
+test_no_implicit_eof_repair (test_audit.ProjectionTests.test_no_implicit_eof_repair) ... ok
+test_small_edit (test_audit.ProjectionTests.test_small_edit) ... ok
+test_declared_matrix (test_link.LinkTests.test_declared_matrix) ... ok
+test_dependency_byte_drift_rejected (test_link.LinkTests.test_dependency_byte_drift_rejected) ... ok
+test_dependency_module_conflict_rejected (test_link.LinkTests.test_dependency_module_conflict_rejected) ... ok
+test_environment_does_not_inherit_key (test_link.LinkTests.test_environment_does_not_inherit_key) ... ok
+test_release_only_queued_not_uncertain (test_link.LinkTests.test_release_only_queued_not_uncertain) ... ok
+test_release_prevents_new_holds_before_listing (test_link.LinkTests.test_release_prevents_new_holds_before_listing) ... ok
+test_uncertain_blocks_drain (test_link.LinkTests.test_uncertain_blocks_drain) ... ok
+test_wrong_native_adapter_binding (test_link.LinkTests.test_wrong_native_adapter_binding) ... ok
+test_explicit_key_required (test_transport.TransportTests.test_explicit_key_required) ... ok
+test_http_failure_does_not_retry_or_save_error_body (test_transport.TransportTests.test_http_failure_does_not_retry_or_save_error_body) ... ok
+test_incomplete_terminal_is_preserved_and_stops (test_transport.TransportTests.test_incomplete_terminal_is_preserved_and_stops) ... ok
+test_live_configuration_rejects_unbounded_or_hidden_fields (test_transport.TransportTests.test_live_configuration_rejects_unbounded_or_hidden_fields) ... ok
+test_live_request_limits_and_key_not_retained (test_transport.TransportTests.test_live_request_limits_and_key_not_retained) ... ok
+test_missing_usage_is_unknown_and_no_retry (test_transport.TransportTests.test_missing_usage_is_unknown_and_no_retry) ... ok
+test_offline_does_not_create_client_or_read_key (test_transport.TransportTests.test_offline_does_not_create_client_or_read_key) ... ok
+test_oversize_request_refused_before_dispatch (test_transport.TransportTests.test_oversize_request_refused_before_dispatch) ... ok
+test_healthy_O_report_required_in_both_comparison_modes (test_portable.ComparisonTests.test_healthy_O_report_required_in_both_comparison_modes) ... ok
+test_incorrect_healthy_report_returns_review_status_and_nonzero_cli (test_portable.ComparisonTests.test_incorrect_healthy_report_returns_review_status_and_nonzero_cli) ... ok
+test_missing_healthy_reference_is_reported (test_portable.ComparisonTests.test_missing_healthy_reference_is_reported) ... ok
+test_principal_checkpoint_required_in_both_comparison_modes (test_portable.ComparisonTests.test_principal_checkpoint_required_in_both_comparison_modes) ... ok
+test_retained_qualification_preserves_faults_and_early_exits (test_portable.ComparisonTests.test_retained_qualification_preserves_faults_and_early_exits) ... ok
+test_unattributed_healthy_reference_is_reported_without_crashing (test_portable.ComparisonTests.test_unattributed_healthy_reference_is_reported_without_crashing) ... ok
+test_added_file_rejected (test_portable.PortableTests.test_added_file_rejected) ... ok
+test_existing_output_refused_without_rewriting (test_portable.PortableTests.test_existing_output_refused_without_rewriting) ... ok
+test_extra_executable_source_rejected (test_portable.PortableTests.test_extra_executable_source_rejected) ... ok
+test_live_refused_without_explicit_switches (test_portable.PortableTests.test_live_refused_without_explicit_switches) ... ok
+test_missing_file_rejected (test_portable.PortableTests.test_missing_file_rejected) ... ok
+test_real_evidence_recomputed (test_portable.PortableTests.test_real_evidence_recomputed) ... ok
+test_resigned_usage_tamper_fails_semantic_audit (test_portable.PortableTests.test_resigned_usage_tamper_fails_semantic_audit) ... ok
+test_symlink_rejected (test_portable.PortableTests.test_symlink_rejected) ... ok
+test_unknown_usage_does_not_become_zero (test_portable.PortableTests.test_unknown_usage_does_not_become_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 1.090s
+
+OK

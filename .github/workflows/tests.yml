@@ -50,6 +50,28 @@ jobs:
           python -B run.py --out "$PWD/local-ci-matrix"
           python -B verify.py --run "$PWD/local-ci-matrix"
 
+  persistent-receiver-reproduction:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14.3"
+      - name: Install isolated pinned research runtime
+        run: python research/stop-scope/reproducers/persistent-runtime-v0.1/setup.py --dest "$RUNNER_TEMP/stop-scope-work"
+      - name: Run and audit persistent receiver qualification without a model account
+        run: |
+          scope_python="$RUNNER_TEMP/stop-scope-work/.venv/bin/python"
+          scope_runner="$RUNNER_TEMP/stop-scope-work/runtime/harness/stop_scope_suite/feasibility/portable_persistence_v01"
+          scope_out="$RUNNER_TEMP/stop-scope-work/runs/qualification"
+          "$scope_python" -B "$scope_runner/run.py" --qualification --out "$scope_out"
+          "$scope_python" -B "$scope_runner/verify.py" --out "$scope_out"
+          export STOP_SCOPE_TEST_EVIDENCE="$scope_out/healthy--normal--none"
+          export STOP_SCOPE_TEST_STOP_EVIDENCE="$scope_out/durable_revoke--normal--none"
+          cd "$scope_runner"
+          "$scope_python" -B -m unittest test_audit test_link test_transport test_portable
+
   inspect-eval-tests:
     runs-on: ubuntu-latest
     steps:
