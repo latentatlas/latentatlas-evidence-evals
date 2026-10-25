@@ -1,0 +1,173 @@
+{
+  "version": "portable-persistence-v0.1",
+  "source_date": "2026-10-11",
+  "source_repository_base": "f2bb88d",
+  "files": [
+    {
+      "source": "stop_scope_suite/feasibility/f07_receiver_process_v01/common.py",
+      "destination": "stop_scope_suite/feasibility/f07_receiver_process_v01/common.py",
+      "original_sha256": "82b04992f879a159463842a6952e650aa04beb2f891c2cfeff5b7dac5d266b53"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_receiver_process_v01/observer.py",
+      "destination": "stop_scope_suite/feasibility/f07_receiver_process_v01/observer.py",
+      "original_sha256": "4c6f3d8e9d74fb06e987c962fb021426449075025117551848f43fe1bf199419"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/shared_queue_v05/path_policy.py",
+      "destination": "stop_scope_suite/feasibility/shared_queue_v05/path_policy.py",
+      "original_sha256": "945b8f478539e45262dde4cd7a66f6ecfce1e931dcbc0927c87de0df57c0e658"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/shared_queue_v05/policy.py",
+      "destination": "stop_scope_suite/feasibility/shared_queue_v05/policy.py",
+      "original_sha256": "a44025e676534ad7408c68e60a3796a3124edfa85c31583034ecd119647a3b1b"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/shared_queue_v05/edit_projection.py",
+      "destination": "stop_scope_suite/feasibility/shared_queue_v05/edit_projection.py",
+      "original_sha256": "6942acc35e1952074b9dab77476c63fee4069a620516e668d4685b11783777e1"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/shared_queue_v05/tool_surface.py",
+      "destination": "stop_scope_suite/feasibility/shared_queue_v05/tool_surface.py",
+      "original_sha256": "b2f41c08e3010bf5d5075635dba56717709a63d9c296de347dc20ecb043e6aee"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_persistent_receiver_v01/durable_receiver.py",
+      "destination": "stop_scope_suite/feasibility/f07_persistent_receiver_v01/durable_receiver.py",
+      "original_sha256": "009978636d03108ba0452cc799bc8b46f14bf0b698d9febb863f7aa1910e06c0"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_receiver_v02/receiver_worker.py",
+      "destination": "stop_scope_suite/feasibility/f07_live_receiver_v02/receiver_worker.py",
+      "original_sha256": "9efa2ff2eb67f774dc081780d7b6782c66a6ace225c780831f24ebcf4e10fd52"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_receiver_v02/adapter_bridge.py",
+      "destination": "stop_scope_suite/feasibility/f07_live_receiver_v02/adapter_bridge.py",
+      "original_sha256": "3ddd79971e8d3d49462940172bb171e54850ddd2d3b02afcfe1dbab77736be02"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_receiver_v02/native_bridge.py",
+      "destination": "stop_scope_suite/feasibility/f07_live_receiver_v02/native_bridge.py",
+      "original_sha256": "f1960c651b605eb44301f54983f80da98fd699eb10adf509fdc7d53e0409ab2f"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_direct_after_v01/contract.py",
+      "destination": "stop_scope_suite/feasibility/f07_direct_after_v01/contract.py",
+      "original_sha256": "70d2f0b0c7e4b1fa82a09a9bd459c0680a752d89eb7b0316cabcb6a3171870f5"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_direct_after_v01/authority.py",
+      "destination": "stop_scope_suite/feasibility/f07_direct_after_v01/authority.py",
+      "original_sha256": "c262e5d8d69b9e144b38354d8e92bcd4b2c09ffdaa2c5e028210a7ade0080fbe"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_direct_after_v01/native_adapter.py",
+      "destination": "stop_scope_suite/feasibility/f07_direct_after_v01/native_adapter.py",
+      "original_sha256": "181527103e20a15f56ff7e0d737cd6be762ab61ebd307b812ad65d79b50e8b5c"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_direct_after_v01/scope_controller.py",
+      "destination": "stop_scope_suite/feasibility/f07_direct_after_v01/scope_controller.py",
+      "original_sha256": "83cca9c055e7aba250d9179e22824db6487bebfb96a8b349036c993447a47be3"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_direct_after_v01/termination.py",
+      "destination": "stop_scope_suite/feasibility/f07_direct_after_v01/termination.py",
+      "original_sha256": "f47045a514eca59f77a7b959cb8fe363a26f9cbc40d9ee60908ed8afef10b0ab"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/source_stop_v01/native_adapter.py",
+      "destination": "stop_scope_suite/feasibility/source_stop_v01/native_adapter.py",
+      "original_sha256": "215a324c546f49e56be3f4b3b6aeff0b405af242ca7b25a4ee3aca2cd9a64502"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/source_stop_v01/lineage.py",
+      "destination": "stop_scope_suite/feasibility/source_stop_v01/lineage.py",
+      "original_sha256": "e3e074cdff841be31154accf4fc5bef1956e954096daa1761da896d2f4913c02"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/core_native_v01/native_adapter.py",
+      "destination": "stop_scope_suite/feasibility/core_native_v01/native_adapter.py",
+      "original_sha256": "52523a4fbb5c9d2f79c61b2945cfb186ae7987170c47751b094c42c7f00d01dc"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/core_native_v01/controller.py",
+      "destination": "stop_scope_suite/feasibility/core_native_v01/controller.py",
+      "original_sha256": "08721a99d0ad0228ad982b9c6b3c6b42652a9d3286b00bfc4c81176812300623"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_bridge_v01/bridge_codec.py",
+      "destination": "stop_scope_suite/feasibility/f07_live_bridge_v01/bridge_codec.py",
+      "original_sha256": "1ca3aee2b89ebc3f76af741c695eb5776a44bf4a32ade00eb7942406ace989fa"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/responses_codec.py",
+      "destination": "stop_scope_suite/feasibility/live_pilot_v02/responses_codec.py",
+      "original_sha256": "e17562fe7ea867259bbfd836f0be0c5b201a4438c7a7bc598bf5d9debcfb6924"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/wire_contract.py",
+      "destination": "stop_scope_suite/feasibility/live_pilot_v02/wire_contract.py",
+      "original_sha256": "1276db5c6cf907fee040acea0e2d75d97d0deca008a9dc6cd2c5bf19d6574ee4"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_pilot_v02/tool_binding.py",
+      "destination": "stop_scope_suite/feasibility/live_pilot_v02/tool_binding.py",
+      "original_sha256": "bf39222f69ab5277a40bd796d372fbf3444a7ebbf6e30cc05da3f65787b69e2b"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_exploration_v01/oauth_codec.py",
+      "destination": "stop_scope_suite/feasibility/live_exploration_v01/oauth_codec.py",
+      "original_sha256": "8809778cce2861f4d9b38a63b6f23082dd06a796822088a01a92d421000a22c0"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/summary_transport_v01/fixture_stream.py",
+      "destination": "stop_scope_suite/feasibility/summary_transport_v01/fixture_stream.py",
+      "original_sha256": "9aa2f6b229e8f269e12d0b9d3fa38143fead00cd222ce9522cc93a086fb6bfec"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_persistent_v01/source_driver.py",
+      "destination": "stop_scope_suite/feasibility/portable_persistence_v01/source_driver.py",
+      "original_sha256": "73d3a87ed2c534409d94818ec1447d938f14ca8ef612e173d574f7734a6142b7"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_persistent_v01/supervisor.py",
+      "destination": "stop_scope_suite/feasibility/portable_persistence_v01/supervisor.py",
+      "original_sha256": "4c4b9431750febc1e7d8852fe167130a04e4c1f95bdb42c569b02cab2413592e"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_persistent_v01/runtime_link.py",
+      "destination": "stop_scope_suite/feasibility/portable_persistence_v01/runtime_link.py",
+      "original_sha256": "256c8f3e8966c2fe06e4d912e74a36a6b146f0af606b7adb79b77c6c31d09d8d"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_persistent_v01/audit.py",
+      "destination": "stop_scope_suite/feasibility/portable_persistence_v01/audit.py",
+      "original_sha256": "e6a208481f63553aaaf934707a9c4e1669edbfed81dd9deb7d4f6e33a00d56b5"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_persistent_v01/test_audit.py",
+      "destination": "stop_scope_suite/feasibility/portable_persistence_v01/test_audit.py",
+      "original_sha256": "0f5d528488b68037bc1f778c8d9f74f7f4e49687383f0b55abe9e88042378e40"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/f07_live_persistent_v01/test_link.py",
+      "destination": "stop_scope_suite/feasibility/portable_persistence_v01/test_link.py",
+      "original_sha256": "52d8e4b6e25cddf62b2157e43565aa055167c5256895caac784e3eda5ab411cf"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/live_exploration_v01/oauth_fixture.py",
+      "destination": "stop_scope_suite/feasibility/live_exploration_v01/oauth_fixture.py",
+      "original_sha256": "650d1e7e08fdbb29b2d0b1b15cbb05554afa88074fa63385913445a6608f8d80"
+    },
+    {
+      "source": "stop_scope_suite/feasibility/shared_queue_v05/TOOL_SURFACE.json",
+      "destination": "stop_scope_suite/feasibility/shared_queue_v05/TOOL_SURFACE.json",
+      "original_sha256": "f6d9c13c38cfa71ea4e9dfab6c937c3bbfeaf8bf01af08497aff7517fead1145"
+    }
+  ],
+  "note": "Original hashes identify local research sources. Any adapted destination is listed by the final source manifest. Historical releases are unchanged."
+}

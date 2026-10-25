@@ -50,6 +50,47 @@ jobs:
           python -B run.py --out "$PWD/local-ci-matrix"
           python -B verify.py --run "$PWD/local-ci-matrix"
 
+  persistent-receiver-reproduction:
+    # Python 3.14.3 has a published build for 24.04, not the moving latest image.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.14.3"
+      - name: Install isolated pinned research runtime
+        run: python research/stop-scope/reproducers/persistent-runtime-v0.1/setup.py --dest "$RUNNER_TEMP/stop-scope-work"
+      - name: Run and audit persistent receiver qualification without a model account
+        run: |
+          scope_python="$RUNNER_TEMP/stop-scope-work/.venv/bin/python"
+          scope_runner="$RUNNER_TEMP/stop-scope-work/runtime/harness/stop_scope_suite/feasibility/portable_persistence_v01"
+          scope_out="$RUNNER_TEMP/stop-scope-work/runs/qualification"
+          "$scope_python" -B "$scope_runner/run.py" --qualification --out "$scope_out"
+          "$scope_python" -B "$scope_runner/verify.py" --out "$scope_out"
+          export STOP_SCOPE_TEST_EVIDENCE="$scope_out/healthy--normal--none"
+          export STOP_SCOPE_TEST_STOP_EVIDENCE="$scope_out/durable_revoke--normal--none"
+          cd "$scope_runner"
+          "$scope_python" -B -m unittest test_audit test_link test_transport test_portable
+      - name: Retain offline setup and experiment evidence, including failures
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: persistent-receiver-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/stop-scope-work/SETUP_PLAN.json
+            ${{ runner.temp }}/stop-scope-work/SETUP_RESULT.json
+            ${{ runner.temp }}/stop-scope-work/PACKAGES.json
+            ${{ runner.temp }}/stop-scope-work/install.log
+            ${{ runner.temp }}/stop-scope-work/pip-check.txt
+            ${{ runner.temp }}/stop-scope-work/runtime
+            ${{ runner.temp }}/stop-scope-work/runs
+          if-no-files-found: warn
+          retention-days: 90
+          # Qualification manifests include the generated .langgraph_api records.
+          # Only the explicit offline paths above are uploaded; no venv or account store.
+          include-hidden-files: true
+
   inspect-eval-tests:
     runs-on: ubuntu-latest
     steps:

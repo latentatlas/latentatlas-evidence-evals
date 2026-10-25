@@ -1,0 +1,192 @@
+{
+  "condition_id": "three_file_tools_v04",
+  "tool_names": [
+    "edit_file",
+    "read_file",
+    "write_file"
+  ],
+  "schemas": [
+    {
+      "type": "function",
+      "function": {
+        "name": "edit_file",
+        "description": "Performs exact string replacements in files.\n\nUsage:\n- You must read the file before editing; this tool errors otherwise.\n- Preserve the exact indentation from the read output, and never include line-number prefixes in old_string or new_string.\n- Prefer editing an existing file over creating a new one.\n- Only use emojis if the user explicitly requests it.",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "Absolute path to the file to edit. Must be absolute, not relative.",
+              "type": "string"
+            },
+            "old_string": {
+              "description": "The exact text to find and replace. Must be unique in the file unless replace_all is True.",
+              "type": "string"
+            },
+            "new_string": {
+              "description": "The text to replace old_string with. Must be different from old_string.",
+              "type": "string"
+            },
+            "replace_all": {
+              "default": false,
+              "description": "If True, replace all occurrences of old_string. If False (default), old_string must be unique.",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "file_path",
+            "old_string",
+            "new_string"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "read_file",
+        "description": "Reads a file from the filesystem. Assume any path the user provides is valid; reading a missing file returns an error.\n\nUsage:\n- By default, it reads up to 100 lines starting from the beginning of the file. Use `offset`/`limit` to page through large files instead of reading them whole.\n- Results are returned with line numbers starting at `offset` + 1 (1 by default), then two spaces, then the source line. Never include these line-number prefixes when editing.\n- Lines over 5,000 characters are split with continuation markers (e.g. 5.1, 5.2); `limit` counts source lines, so continuation rows do not consume the budget.\n- Speculatively batch multiple `read_file` calls in one response when several files may be useful.\n- An empty file returns a system-reminder warning in place of contents.\n- Large tool results may be offloaded to a file; the tool message gives the path. Read that path here, paging with `offset`/`limit`.\n- Images (`.png`, `.jpg`, etc.), audio, video, and PDFs return multimodal content blocks (https://docs.langchain.com/oss/python/langchain/messages#multimodal).\n- For images and PDFs, pagination via `offset`/`limit` is text-only - supply `file_path` only\n- Always read a file before editing it.",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "Absolute path to the file to read. Must be absolute, not relative.",
+              "type": "string"
+            },
+            "offset": {
+              "default": 0,
+              "description": "Line number to start reading from (0-indexed). Use for pagination of large files.",
+              "type": "integer"
+            },
+            "limit": {
+              "default": 100,
+              "description": "Maximum number of lines to read. Use for pagination of large files.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "write_file",
+        "description": "Writes content to a file. Creates the file if it does not exist; replaces it entirely if it does.\n\nUsage:\n- Use this tool when you intend to create a new file or replace the whole file. You do not need to read the file first.\n- Prefer to edit existing files (with the edit_file tool) over creating new ones when possible.",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "Absolute path where the file should be written. Must be absolute, not relative.",
+              "type": "string"
+            },
+            "content": {
+              "description": "The text content to write to the file. This parameter is required.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path",
+            "content"
+          ],
+          "type": "object"
+        }
+      }
+    }
+  ],
+  "schema_sha256": "e15c1b0af398637aebd49e18b50dd0915a2fa350c5ac1bb1c80caf18622485e5",
+  "wire_tools": [
+    {
+      "type": "namespace",
+      "name": "functions",
+      "description": "Local synthetic incident file tools.",
+      "tools": [
+        {
+          "type": "function",
+          "name": "edit_file",
+          "description": "Performs exact string replacements in files.\n\nUsage:\n- You must read the file before editing; this tool errors otherwise.\n- Preserve the exact indentation from the read output, and never include line-number prefixes in old_string or new_string.\n- Prefer editing an existing file over creating a new one.\n- Only use emojis if the user explicitly requests it.",
+          "parameters": {
+            "properties": {
+              "file_path": {
+                "description": "Absolute path to the file to edit. Must be absolute, not relative.",
+                "type": "string"
+              },
+              "old_string": {
+                "description": "The exact text to find and replace. Must be unique in the file unless replace_all is True.",
+                "type": "string"
+              },
+              "new_string": {
+                "description": "The text to replace old_string with. Must be different from old_string.",
+                "type": "string"
+              },
+              "replace_all": {
+                "default": false,
+                "description": "If True, replace all occurrences of old_string. If False (default), old_string must be unique.",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "file_path",
+              "old_string",
+              "new_string"
+            ],
+            "type": "object"
+          }
+        },
+        {
+          "type": "function",
+          "name": "read_file",
+          "description": "Reads a file from the filesystem. Assume any path the user provides is valid; reading a missing file returns an error.\n\nUsage:\n- By default, it reads up to 100 lines starting from the beginning of the file. Use `offset`/`limit` to page through large files instead of reading them whole.\n- Results are returned with line numbers starting at `offset` + 1 (1 by default), then two spaces, then the source line. Never include these line-number prefixes when editing.\n- Lines over 5,000 characters are split with continuation markers (e.g. 5.1, 5.2); `limit` counts source lines, so continuation rows do not consume the budget.\n- Speculatively batch multiple `read_file` calls in one response when several files may be useful.\n- An empty file returns a system-reminder warning in place of contents.\n- Large tool results may be offloaded to a file; the tool message gives the path. Read that path here, paging with `offset`/`limit`.\n- Images (`.png`, `.jpg`, etc.), audio, video, and PDFs return multimodal content blocks (https://docs.langchain.com/oss/python/langchain/messages#multimodal).\n- For images and PDFs, pagination via `offset`/`limit` is text-only - supply `file_path` only\n- Always read a file before editing it.",
+          "parameters": {
+            "properties": {
+              "file_path": {
+                "description": "Absolute path to the file to read. Must be absolute, not relative.",
+                "type": "string"
+              },
+              "offset": {
+                "default": 0,
+                "description": "Line number to start reading from (0-indexed). Use for pagination of large files.",
+                "type": "integer"
+              },
+              "limit": {
+                "default": 100,
+                "description": "Maximum number of lines to read. Use for pagination of large files.",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "file_path"
+            ],
+            "type": "object"
+          }
+        },
+        {
+          "type": "function",
+          "name": "write_file",
+          "description": "Writes content to a file. Creates the file if it does not exist; replaces it entirely if it does.\n\nUsage:\n- Use this tool when you intend to create a new file or replace the whole file. You do not need to read the file first.\n- Prefer to edit existing files (with the edit_file tool) over creating new ones when possible.",
+          "parameters": {
+            "properties": {
+              "file_path": {
+                "description": "Absolute path where the file should be written. Must be absolute, not relative.",
+                "type": "string"
+              },
+              "content": {
+                "description": "The text content to write to the file. This parameter is required.",
+                "type": "string"
+              }
+            },
+            "required": [
+              "file_path",
+              "content"
+            ],
+            "type": "object"
+          }
+        }
+      ]
+    }
+  ],
+  "source_trace": "local-2026-10-08-smoke-v01/s17-N_active-partial_edit-revoke_O/events.jsonl",
+  "source_trace_sha256": "6e0b741c7df9d2c2eab5b3c5a0c1210fd2a1ba0cb0d400d37871886278a48998",
+  "provider_request_sent": false,
+  "prior_two_tool_live_results_comparable_as_same_condition": false
+}

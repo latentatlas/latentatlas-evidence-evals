@@ -1,0 +1,214 @@
+{
+  "status": "passed",
+  "conditions": 15,
+  "actual_provider_calls": 0,
+  "independent_replication": false,
+  "rows": [
+    {
+      "cell": "healthy--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "source_stop--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "memory_revoke--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_cancel--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_revoke--normal--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 0,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_revoke--normal--skip_restore_revocation",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_revoke--normal--broad_revoke",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 0,
+      "I_correct": false,
+      "N_correct": false
+    },
+    {
+      "cell": "healthy--normal--omit_receipt",
+      "evidence_status": "needs_review",
+      "transport_status": "recorded",
+      "O_after_restart": null,
+      "C_after_restart": null,
+      "expected_evidence_gap": true
+    },
+    {
+      "cell": "healthy--wrong_final--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "healthy--alternate_final--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_revoke--alternate_final--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 0,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "healthy--edit_final--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 1,
+      "C_after_restart": 2,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "durable_revoke--edit_final--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": true,
+      "restart_observed": true,
+      "O_after_restart": 0,
+      "C_after_restart": 0,
+      "I_correct": true,
+      "N_correct": true
+    },
+    {
+      "cell": "healthy--early_O--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": false,
+      "restart_observed": false,
+      "O_after_restart": null,
+      "C_after_restart": null,
+      "I_correct": true,
+      "N_correct": false
+    },
+    {
+      "cell": "healthy--early_I--none",
+      "evidence_status": "recorded",
+      "transport_status": "recorded",
+      "checkpoint_observed": false,
+      "restart_observed": false,
+      "O_after_restart": null,
+      "C_after_restart": null,
+      "I_correct": false,
+      "N_correct": false
+    }
+  ],
+  "reference_checks": [
+    {
+      "cell": "source_stop--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "source_stop--normal--none",
+      "role": "N",
+      "byte_match": true
+    },
+    {
+      "cell": "memory_revoke--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "memory_revoke--normal--none",
+      "role": "N",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_cancel--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_cancel--normal--none",
+      "role": "N",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_revoke--normal--none",
+      "role": "I",
+      "byte_match": true
+    },
+    {
+      "cell": "durable_revoke--normal--none",
+      "role": "N",
+      "byte_match": true
+    }
+  ],
+  "outcome_differences": [],
+  "note": "Expected patterns are compared after auditing; they do not define evidence validity."
+}

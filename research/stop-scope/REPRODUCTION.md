@@ -2,6 +2,12 @@
 
 There are three distinct activities: reading the source, auditing retained observations, and executing new experiments. Only the last creates new experimental evidence.
 
+For a fresh execution of the **five-condition persistent-receiver comparison**,
+start with the [portable runtime instructions](reproducers/persistent-runtime-v0.1/README.md).
+They include a clean installer, model-free execution, an explicit live API
+option, output audits and recorded limitations. The historical sprint harness
+and its original reproduction boundaries are documented below unchanged.
+
 ## Offline audit
 
 The commands in [README.md](README.md) use the standard library. The original auditor is unchanged. `review_bundle.py` is a new packaging wrapper that verifies frozen sources, checks the released evidence inventory, calls that auditor, and compares recomputed counts and grouped verdicts with the published summaries.
