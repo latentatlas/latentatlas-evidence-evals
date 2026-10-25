@@ -174,11 +174,11 @@
     "question_claim_evidence_alignment": "passed for the bounded mechanism comparison",
     "healthy_reference_and_failure_controls": "passed; publication-review comparison gaps corrected and covered by six additional regression tests (REVIEW_FIXES.json)",
     "model_resistance_opportunity": "not_applicable: programmed actors; no resistance claim",
-    "sample_and_generalizability": "open: one development input, one host; no rates",
-    "artifact_access": "local package and archive prepared; public publication pending authorization",
+    "sample_and_generalizability": "open: one fixed development input; author-controlled macOS and GitHub-hosted Linux execution, no rates or independent-operator replication",
+    "artifact_access": "Public repository contains the source, installer, local raw evidence and audit instructions; the pinned packaging release provides Linux evidence and final publication checks.",
     "literature_change": "not_applicable: packaging extension; no new novelty or comparator superiority claim",
     "live_transport": "passed with mock HTTP responses only; actual provider execution open",
-    "linux_ci": "configured; not executed locally or on GitHub in this work"
+    "linux_ci": "passed: clean Ubuntu 24.04 x64 / Python 3.14.3 installation, 15-condition qualification and 55 tests in run 40150013499. Final publication and downloaded-archive checks are recorded in the pinned release CI_VALIDATION.json."
   },
   "self_validation": {
     "claim": "The same framework/receiver boundaries can be freshly exercised and audited outside the private lab directory.",
@@ -190,11 +190,11 @@
       "Same operation produces a duplicate effect"
     ],
     "observation": "Native stop/run state, IPC identities, actual SQLite, separate-process file observer, retained raw wire exchanges and process closure.",
-    "shared_dependencies": "Same author, host, workload, trusted root assignment and record schemas; separate process observation is not external replication.",
+    "shared_dependencies": "Same author, workload, trusted root assignment and record schemas; the separate GitHub-hosted Linux environment does not establish independent-operator replication.",
     "result": "15 retained qualification conditions completed and re-audited with unchanged outcomes; intended faults distinguished; current verifier/test sources pass 55 tests; zero provider calls. The original 49-test run is retained separately.",
     "open_limits": [
       "Real API validation",
-      "Independent operator/host",
+      "Independent operator replication",
       "Crash/power-loss consistency",
       "Multiple concurrent receivers",
       "General exactly-once effects",
@@ -238,5 +238,6 @@
     "comparison_identical_to_retained_summary": true,
     "new_experiments": 0,
     "new_provider_calls": 0
-  }
+  },
+  "ci_validation_record": "https://github.com/latentatlas/latentatlas-evidence-evals/releases/download/stop-scope-persistent-runtime-v0.1.0/CI_VALIDATION.json"
 }

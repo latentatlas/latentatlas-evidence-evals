@@ -16,11 +16,15 @@ See [validation](VALIDATION.json) for what was actually exercised and what is op
 
 ## Install into a clean directory
 
-Use Python **3.14** on macOS or Linux. Python 3.14.3 was used for the local
-validation. Clone the full repository; this folder alone does not contain the
-pinned upstream tree. From the repository root:
+Use Python **3.14** on macOS or Linux. Python 3.14.3 was validated on macOS
+26.6.1 arm64 and GitHub-hosted Ubuntu 24.04 x64. Clone the full repository;
+this folder alone does not contain the
+pinned upstream tree. Start from the pinned packaging release:
 
 ```sh
+git clone --depth 1 --branch stop-scope-persistent-runtime-v0.1.0 \
+  https://github.com/latentatlas/latentatlas-evidence-evals.git
+cd latentatlas-evidence-evals
 python3.14 research/stop-scope/reproducers/persistent-runtime-v0.1/setup.py \
   --dest "$PWD/stop-scope-work"
 ```
@@ -179,6 +183,15 @@ still audits the original five live episodes. The older
 [16-condition reproducer](../../progress/2026-10-16/receiver-reproducer/README.md)
 is a different, nonpersistent receiver slice. Neither is relabelled as this
 new execution.
+
+The pinned packaging release also provides [Linux CI validation and artifact
+digests](https://github.com/latentatlas/latentatlas-evidence-evals/releases/download/stop-scope-persistent-runtime-v0.1.0/CI_VALIDATION.json)
+and the complete Linux evidence ZIP. The record identifies the tested commit,
+workflow runs, setup environment, qualification results, tests and archive
+re-audit. Earlier setup and export failures are recorded separately. Extract
+the complete ZIP into a new directory and pass its `runs/qualification` folder
+to the same verifier. This is an author-controlled CI execution on another
+platform, not an independent-user replication.
 
 ## Optional live-model execution
 

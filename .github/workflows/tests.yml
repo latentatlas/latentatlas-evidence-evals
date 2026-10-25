@@ -87,6 +87,9 @@ jobs:
             ${{ runner.temp }}/stop-scope-work/runs
           if-no-files-found: warn
           retention-days: 90
+          # Qualification manifests include the generated .langgraph_api records.
+          # Only the explicit offline paths above are uploaded; no venv or account store.
+          include-hidden-files: true
 
   inspect-eval-tests:
     runs-on: ubuntu-latest
